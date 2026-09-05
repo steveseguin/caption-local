@@ -1,0 +1,342 @@
+[
+  {
+    "seconds": 0.0,
+    "preserved_process_cpu_seconds": 41066.765625,
+    "gpu": "2026/09/05 18:34:20.599, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 30.04700000002049,
+    "preserved_process_cpu_seconds": 41066.921875,
+    "gpu": "2026/09/05 18:34:50.644, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 60.09400000004098,
+    "preserved_process_cpu_seconds": 41074.4375,
+    "gpu": "2026/09/05 18:35:20.698, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 90.15600000019185,
+    "preserved_process_cpu_seconds": 41075.4375,
+    "gpu": "2026/09/05 18:35:50.748, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 120.20299999997951,
+    "preserved_process_cpu_seconds": 41075.640625,
+    "gpu": "2026/09/05 18:36:20.796, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 150.25,
+    "preserved_process_cpu_seconds": 41075.65625,
+    "gpu": "2026/09/05 18:36:50.854, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 180.2970000000205,
+    "preserved_process_cpu_seconds": 41076.28125,
+    "gpu": "2026/09/05 18:37:20.909, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 210.35900000017136,
+    "preserved_process_cpu_seconds": 41076.390625,
+    "gpu": "2026/09/05 18:37:50.963, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 240.40600000019185,
+    "preserved_process_cpu_seconds": 41077.5,
+    "gpu": "2026/09/05 18:38:21.019, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 270.469000000041,
+    "preserved_process_cpu_seconds": 41077.65625,
+    "gpu": "2026/09/05 18:38:51.062, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 300.51600000006147,
+    "preserved_process_cpu_seconds": 41077.75,
+    "gpu": "2026/09/05 18:39:21.114, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 330.56300000008196,
+    "preserved_process_cpu_seconds": 41077.96875,
+    "gpu": "2026/09/05 18:39:51.161, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 360.60900000017136,
+    "preserved_process_cpu_seconds": 41078.328125,
+    "gpu": "2026/09/05 18:40:21.211, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 390.65600000019185,
+    "preserved_process_cpu_seconds": 41078.421875,
+    "gpu": "2026/09/05 18:40:51.264, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 420.719000000041,
+    "preserved_process_cpu_seconds": 41079.03125,
+    "gpu": "2026/09/05 18:41:21.306, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 450.75,
+    "preserved_process_cpu_seconds": 41079.1875,
+    "gpu": "2026/09/05 18:41:51.365, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 480.81300000008196,
+    "preserved_process_cpu_seconds": 41079.890625,
+    "gpu": "2026/09/05 18:42:21.416, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 510.85900000017136,
+    "preserved_process_cpu_seconds": 41079.96875,
+    "gpu": "2026/09/05 18:42:51.468, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 540.9220000000205,
+    "preserved_process_cpu_seconds": 41080.125,
+    "gpu": "2026/09/05 18:43:21.525, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 570.969000000041,
+    "preserved_process_cpu_seconds": 41080.21875,
+    "gpu": "2026/09/05 18:43:51.576, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 601.0310000001919,
+    "preserved_process_cpu_seconds": 41080.859375,
+    "gpu": "2026/09/05 18:44:21.625, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 631.0779999999795,
+    "preserved_process_cpu_seconds": 41080.921875,
+    "gpu": "2026/09/05 18:44:51.673, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 661.125,
+    "preserved_process_cpu_seconds": 41080.9375,
+    "gpu": "2026/09/05 18:45:21.719, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 691.1720000000205,
+    "preserved_process_cpu_seconds": 41081.53125,
+    "gpu": "2026/09/05 18:45:51.774, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 721.219000000041,
+    "preserved_process_cpu_seconds": 41082.515625,
+    "gpu": "2026/09/05 18:46:21.821, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 751.2660000000615,
+    "preserved_process_cpu_seconds": 41082.71875,
+    "gpu": "2026/09/05 18:46:51.876, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 781.3279999999795,
+    "preserved_process_cpu_seconds": 41082.78125,
+    "gpu": "2026/09/05 18:47:21.933, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 811.3910000000615,
+    "preserved_process_cpu_seconds": 41082.890625,
+    "gpu": "2026/09/05 18:47:51.977, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 841.4220000000205,
+    "preserved_process_cpu_seconds": 41082.9375,
+    "gpu": "2026/09/05 18:48:22.027, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 871.469000000041,
+    "preserved_process_cpu_seconds": 41083.03125,
+    "gpu": "2026/09/05 18:48:52.077, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 901.5310000001919,
+    "preserved_process_cpu_seconds": 41083.953125,
+    "gpu": "2026/09/05 18:49:22.125, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 931.5779999999795,
+    "preserved_process_cpu_seconds": 41084.15625,
+    "gpu": "2026/09/05 18:49:52.177, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 961.625,
+    "preserved_process_cpu_seconds": 41085.3125,
+    "gpu": "2026/09/05 18:50:22.232, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 991.688000000082,
+    "preserved_process_cpu_seconds": 41085.421875,
+    "gpu": "2026/09/05 18:50:52.280, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 1021.7340000001714,
+    "preserved_process_cpu_seconds": 41085.65625,
+    "gpu": "2026/09/05 18:51:22.327, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 1051.7810000001919,
+    "preserved_process_cpu_seconds": 41085.859375,
+    "gpu": "2026/09/05 18:51:52.384, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 1081.8279999999795,
+    "preserved_process_cpu_seconds": 41085.984375,
+    "gpu": "2026/09/05 18:52:22.438, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 1111.8910000000615,
+    "preserved_process_cpu_seconds": 41086.15625,
+    "gpu": "2026/09/05 18:52:52.488, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 1141.938000000082,
+    "preserved_process_cpu_seconds": 41086.703125,
+    "gpu": "2026/09/05 18:53:22.542, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 1172.0,
+    "preserved_process_cpu_seconds": 41086.828125,
+    "gpu": "2026/09/05 18:53:52.602, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 1202.0470000000205,
+    "preserved_process_cpu_seconds": 41086.96875,
+    "gpu": "2026/09/05 18:54:22.656, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 1232.1090000001714,
+    "preserved_process_cpu_seconds": 41087.0625,
+    "gpu": "2026/09/05 18:54:52.701, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 1262.1560000001919,
+    "preserved_process_cpu_seconds": 41087.21875,
+    "gpu": "2026/09/05 18:55:22.754, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 1292.2029999999795,
+    "preserved_process_cpu_seconds": 41087.421875,
+    "gpu": "2026/09/05 18:55:52.815, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 1322.2660000000615,
+    "preserved_process_cpu_seconds": 41087.5,
+    "gpu": "2026/09/05 18:56:22.860, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 1352.313000000082,
+    "preserved_process_cpu_seconds": 41087.53125,
+    "gpu": "2026/09/05 18:56:52.917, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 1382.3590000001714,
+    "preserved_process_cpu_seconds": 41088.0625,
+    "gpu": "2026/09/05 18:57:22.978, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 1412.438000000082,
+    "preserved_process_cpu_seconds": 41088.109375,
+    "gpu": "2026/09/05 18:57:53.027, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 1442.4840000001714,
+    "preserved_process_cpu_seconds": 41088.109375,
+    "gpu": "2026/09/05 18:58:23.085, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 1472.5310000001919,
+    "preserved_process_cpu_seconds": 41088.15625,
+    "gpu": "2026/09/05 18:58:53.144, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 1502.594000000041,
+    "preserved_process_cpu_seconds": 41088.71875,
+    "gpu": "2026/09/05 18:59:23.198, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 1532.6410000000615,
+    "preserved_process_cpu_seconds": 41088.84375,
+    "gpu": "2026/09/05 18:59:53.246, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 1562.7029999999795,
+    "preserved_process_cpu_seconds": 41089.03125,
+    "gpu": "2026/09/05 19:00:23.304, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 1592.75,
+    "preserved_process_cpu_seconds": 41089.109375,
+    "gpu": "2026/09/05 19:00:53.359, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 1622.813000000082,
+    "preserved_process_cpu_seconds": 41089.59375,
+    "gpu": "2026/09/05 19:01:23.405, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 1652.8590000001714,
+    "preserved_process_cpu_seconds": 41089.71875,
+    "gpu": "2026/09/05 19:01:53.459, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 1682.9060000001919,
+    "preserved_process_cpu_seconds": 41089.75,
+    "gpu": "2026/09/05 19:02:23.511, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 1712.9529999999795,
+    "preserved_process_cpu_seconds": 41090.09375,
+    "gpu": "2026/09/05 19:02:53.556, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 1743.0,
+    "preserved_process_cpu_seconds": 41094.359375,
+    "gpu": "2026/09/05 19:03:23.611, 23318 MiB, 72 %"
+  },
+  {
+    "seconds": 1773.063000000082,
+    "preserved_process_cpu_seconds": 41097.3125,
+    "gpu": "2026/09/05 19:03:53.668, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 1803.125,
+    "preserved_process_cpu_seconds": 41100.140625,
+    "gpu": "2026/09/05 19:04:23.713, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 1833.1560000001919,
+    "preserved_process_cpu_seconds": 41103.171875,
+    "gpu": "2026/09/05 19:04:53.761, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 1863.2029999999795,
+    "preserved_process_cpu_seconds": 41104.015625,
+    "gpu": "2026/09/05 19:05:23.812, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 1893.2660000000615,
+    "preserved_process_cpu_seconds": 41104.625,
+    "gpu": "2026/09/05 19:05:53.859, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 1923.313000000082,
+    "preserved_process_cpu_seconds": 41104.765625,
+    "gpu": "2026/09/05 19:06:23.904, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 1953.3590000001714,
+    "preserved_process_cpu_seconds": 41104.78125,
+    "gpu": "2026/09/05 19:06:53.954, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 1983.4060000001919,
+    "preserved_process_cpu_seconds": 41105.578125,
+    "gpu": "2026/09/05 19:07:23.995, 23318 MiB, 0 %"
+  },
+  {
+    "seconds": 2013.438000000082,
+    "preserved_process_cpu_seconds": 41106.78125,
+    "gpu": "2026/09/05 19:07:54.033, 23318 MiB, 0 %"
+  }
+]

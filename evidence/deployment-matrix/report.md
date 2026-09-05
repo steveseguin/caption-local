@@ -48,6 +48,19 @@ PCM Content-Type on their preliminary quality requests; those requests returned
 The harness was fixed; subsequent quality requests decode real speech correctly.
 Failures were retained, not relabeled as quality passes.
 
+Ready-after-start (including cached model load and warmup) was 2.55–2.58 seconds
+for the eight-worker/two-thread small probes, and 7.14 seconds for the four-worker
+medium probe. Downloads are excluded. These are observed process startup times,
+not cold-disk guarantees.
+
+With eight workers/two threads, twelve transcription API producers used a sampled
+peak 1,426 MiB server RSS and averaged 10.58 CPU cores over the probe. Twenty-four
+used 1,447 MiB and 15.81 cores while falling behind. The twelve mixed producers
+peaked at 1,575 MiB and averaged 12.12 cores. These process measurements exclude
+the browser and other applications. Actual rolling browser capture has retained
+context and different request timing; its measurements below are the more direct
+evidence for capture-page deployment.
+
 ## Accuracy and translation
 
 Small/beam 1 passed the existing complete gate, with mean English WER 7.02%
@@ -134,14 +147,41 @@ recommendation. None of these short samples certifies accuracy for a live event.
 
 ## Scope and remaining validation
 
-An hour-long twelve-stream varied browser run is in progress. Short probes alone
-do not establish an hour-long sustainable count. The final result and resource
-stability assessment will be recorded here, including failures.
+The attempted hour-long twelve-stream varied run **failed after 2,425.74 seconds
+(40.43 minutes)**. One French capture reached 30.08 seconds buffered and stopped
+through the existing overload protection. All twelve pages then drained to zero
+pending audio, but uninterrupted capture and the requested duration failed. This
+configuration is not a sustained twelve-stream pass.
+
+The service completed 5,826 requests with no HTTP errors, failed jobs, queue
+timeouts or watchdog restart. P95 inference was 3.694 seconds, but the maximum
+was 20.025 seconds; slow French results included repetitive incorrect text. P95
+queue time was 1.969 seconds, maximum 3.344 seconds. Peak server RSS was 1,501 MiB,
+and warm-median growth 10.62 MiB, so the memory gates passed while capture failed.
+Initial caption delay ranged from 6.625 to 10.464 seconds. These averages and
+initial delays do not erase the overload or recognition failures.
+
+[Failed hour attempt](browser-12-hour-varied.json),
+[summary with unchanged gates](browser-12-hour-summary.json),
+[resource samples](browser-12-hour-monitor.json).
+
+A new eight-stream hour run is in progress with the same small/int8, eight-worker,
+two-thread, beam-five, six-second configuration and varied fixtures. Only the
+producer count and admission limit were reduced. No buffers were enlarged or
+recognition quality settings lowered. Its outcome will be recorded here.
 
 The current fast regression suite passes all 38 Python tests on native Windows
 and Ubuntu WSL, plus six Node audio-buffer/worklet tests. Source checks and archive
 creation pass. These use fake inference where appropriate; the real inference
 and browser evidence above is separate.
+
+GitHub's native Linux real-inference workflow also passed English/Spanish and
+English-translation smoke checks on this branch
+([run](https://github.com/steveseguin/caption-local/actions/runs/33996255777),
+[artifacts](linux-ci-inference/caption-smoke.json)). Windows and Linux fast CI pass,
+including Linux CPU Docker image build and Compose validation. The initial Docker
+build failed because `.dockerignore` omitted the new modules; the allowlist fix
+was rerun successfully. This validates packaging, not Docker inference on Windows.
 
 No shared batched pipeline was introduced: faster-whisper 1.2.1's
 `BatchedInferencePipeline` keeps mutable `last_speech_timestamp` state, so reusing
