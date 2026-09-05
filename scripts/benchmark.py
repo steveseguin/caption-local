@@ -28,4 +28,4 @@ for name in sys.argv[1:] or ['tiny.en', 'base.en']:
                       load_seconds=round(load,3), text=text)
         results.append(result)
         print(json.dumps(result), flush=True)
-Path('evidence/benchmark.json').write_text(json.dumps(results, indent=2)+'\n')
+Path('evidence/benchmark.json').write_text(json.dumps(results, indent=2)+'\n', encoding='utf-8')

@@ -6,6 +6,7 @@ from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 import json
 import os
 from pathlib import Path
+from browser_support import browser_options
 import threading
 from playwright.sync_api import sync_playwright
 
@@ -20,7 +21,7 @@ server = ThreadingHTTPServer(('127.0.0.1', 8766), partial(QuietHandler, director
 threading.Thread(target=server.serve_forever, daemon=True).start()
 try:
     with sync_playwright() as p:
-        browser = p.chromium.launch(executable_path='/usr/bin/google-chrome', headless=True, args=[
+        browser = p.chromium.launch(**browser_options(), headless=True, args=[
             '--no-sandbox', '--use-fake-ui-for-media-stream', '--use-fake-device-for-media-stream',
             f'--use-file-for-fake-audio-capture={root / "samples/jfk.wav"}',
         ])
@@ -68,7 +69,7 @@ try:
         result = dict(local_text=local_text, editor_received=reviewed,
                       captions_sent=sum('final' in m for m in messages), browser_errors=errors,
                       blocked_external_http=external, relay='mocked locally; no public publishing')
-        (evidence / 'browser-smoke.json').write_text(json.dumps(result, indent=2)+'\n')
+        (evidence / 'browser-smoke.json').write_text(json.dumps(result, indent=2)+'\n', encoding='utf-8')
         page.screenshot(path=str(evidence/'local-captions.png'), full_page=True)
         print(json.dumps(result, indent=2))
         browser.close()

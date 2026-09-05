@@ -5,13 +5,13 @@ from pathlib import Path
 import tarfile
 
 root = Path(__file__).resolve().parents[1]
-version = (root/'VERSION').read_text().strip()
+version = (root/'VERSION').read_text(encoding='utf-8-sig').strip()
 if not version or any(c not in '0123456789.' for c in version):
     raise ValueError('Invalid release version')
 files = ['CONTRIBUTING.md','SECURITY.md','CHANGELOG.md','VERSION','README.md','DEPLOYMENT.md','OPERATIONS.md','API.md','RESEARCH.md',
          'LICENSE','Dockerfile','Dockerfile.gpu','.dockerignore','.env.example','.gitignore',
          'compose.yaml','compose.gpu.yaml','compose.cpu-throughput.yaml','deploy.py','server.py','start.sh','start.ps1',
-         'requirements.txt','requirements-linux.lock','requirements-dev.txt']
+         'requirements.txt','requirements-linux.lock','requirements-dev.txt','requirements-windows-gpu.txt','pytest.ini']
 for folder in ['static','scripts','tests','skills','evidence','docs','.github']:
     for file in (root/folder).rglob('*'):
         if file.is_file() and '__pycache__' not in file.parts:
@@ -29,6 +29,6 @@ with archive.open('wb') as raw, gzip.GzipFile(fileobj=raw, mode='wb', mtime=0, f
             info.mode=0o755 if name.endswith('.sh') else 0o644
             with path.open('rb') as data: tar.addfile(info,data)
 checksum=hashlib.sha256(archive.read_bytes()).hexdigest()
-(dist/'SHA256SUMS').write_text(''.join(f'{hashlib.sha256(item.read_bytes()).hexdigest()}  {item.name}\n' for item in sorted(dist.glob('caption-local-*.tar.gz'))))
+(dist/'SHA256SUMS').write_text(''.join(f'{hashlib.sha256(item.read_bytes()).hexdigest()}  {item.name}\n' for item in sorted(dist.glob('caption-local-*.tar.gz'))), encoding='utf-8')
 print(archive)
 print(checksum)

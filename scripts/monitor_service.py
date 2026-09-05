@@ -23,7 +23,7 @@ while time.monotonic()-start < args.seconds:
         'ready':health['ready'],'running':health['running'],'pending':health['pending'],
         'completed':health['completed'],'failed':health['failed'],
         'rejected':health['rejected'],'queue_timeouts':health['queue_timeouts']})
-    Path(args.output).write_text(json.dumps(samples,indent=2)+'\n')
+    Path(args.output).write_text(json.dumps(samples,indent=2)+'\n', encoding='utf-8')
     assert health['ready'] and health['failed']==0 and health['queue_timeouts']==0, health
     time.sleep(5)
 print(json.dumps({'samples':len(samples),'peak_rss_mib':max(s['rss_mib'] for s in samples),

@@ -11,10 +11,10 @@ for name in roots:
 errors = []
 for path in files:
     if path.suffix == '.py':
-        ast.parse(path.read_text(), filename=str(path))
+        ast.parse(path.read_text(encoding='utf-8-sig'), filename=str(path))
     if path.suffix not in {'.md', '.py', '.js', '.json', '.yaml', '.yml', '.txt', '.sh', '.ps1', '.log'}:
         continue
-    text = path.read_text()
+    text = path.read_text(encoding='utf-8-sig')
     for pattern in [r'gh[pousr]_[A-Za-z0-9]{30,}', r'hf_[A-Za-z0-9]{30,}',
                     r'-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----']:
         if re.search(pattern, text):
@@ -27,12 +27,12 @@ for path in files:
         target = target.split('#')[0]
         if target and not (path.parent/target).exists():
             errors.append(f'Broken local link: {path.relative_to(root)} -> {target}')
-version = (root/'VERSION').read_text().strip()
-server = ast.parse((root/'server.py').read_text())
+version = (root/'VERSION').read_text(encoding='utf-8-sig').strip()
+server = ast.parse((root/'server.py').read_text(encoding='utf-8-sig'))
 values = {n.targets[0].id: n.value.value for n in server.body
           if isinstance(n, ast.Assign) and isinstance(n.targets[0], ast.Name) and isinstance(n.value, ast.Constant)}
 assert values['VERSION'] == version, 'VERSION and server.py disagree'
-assert (root/'LICENSE').read_text().startswith('Mozilla Public License'), 'Expected MPL license'
+assert (root/'LICENSE').read_text(encoding='utf-8-sig').startswith('Mozilla Public License'), 'Expected MPL license'
 if errors:
     raise SystemExit('\n'.join(errors))
 print(f'Release checks passed: {version}; {len(files)} source/documentation/evidence files inspected.')

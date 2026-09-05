@@ -4,13 +4,14 @@ HTTP inference is mocked in this test; microphone worklet and UI run in Chrome.
 import json
 import os
 from pathlib import Path
+from browser_support import browser_options
 from urllib.parse import urlsplit, parse_qs
 from playwright.sync_api import sync_playwright
 root = Path(__file__).resolve().parents[1]
 evidence = Path(os.environ.get("CAPTION_TEST_OUTPUT_DIR", str(root/"evidence")))
 evidence.mkdir(parents=True, exist_ok=True)
 with sync_playwright() as p:
-    browser = p.chromium.launch(executable_path='/usr/bin/google-chrome',headless=True,args=[
+    browser = p.chromium.launch(**browser_options(),headless=True,args=[
         '--no-sandbox','--use-fake-ui-for-media-stream','--use-fake-device-for-media-stream',
         f'--use-file-for-fake-audio-capture={root/"samples/jfk.wav"}'])
     context = browser.new_context(permissions=['microphone'])
@@ -47,5 +48,5 @@ with sync_playwright() as p:
         page.wait_for_function('() => !document.querySelector("#start").disabled',timeout=10000)
     result={'automatic_attempts':4,'same_audio_and_id_on_retry':True,
             'manual_recovery':True,'restart_cycles':3,'browser_errors':errors}
-    (evidence/'browser-recovery.json').write_text(json.dumps(result,indent=2)+'\n')
+    (evidence/'browser-recovery.json').write_text(json.dumps(result,indent=2)+'\n', encoding='utf-8')
     print(result); browser.close()

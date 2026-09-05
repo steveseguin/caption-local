@@ -5,13 +5,14 @@ Only the relay is mocked; no public caption publishing.
 import json
 import os
 from pathlib import Path
+from browser_support import browser_options
 from playwright.sync_api import sync_playwright
 
 root = Path(__file__).resolve().parents[1]
 evidence = Path(os.environ.get("CAPTION_TEST_OUTPUT_DIR", str(root/"evidence")))
 evidence.mkdir(parents=True, exist_ok=True)
 with sync_playwright() as p:
-    browser = p.chromium.launch(executable_path='/usr/bin/google-chrome', headless=True, args=[
+    browser = p.chromium.launch(**browser_options(), headless=True, args=[
         '--no-sandbox', '--use-fake-ui-for-media-stream', '--use-fake-device-for-media-stream',
         f'--use-file-for-fake-audio-capture={root / "samples/spanish.wav"}',
     ])
@@ -54,12 +55,12 @@ with sync_playwright() as p:
     with page.expect_download() as info:
         page.get_by_role('button', name='Download transcript').click()
     download = info.value
-    saved = Path(download.path()).read_text()
+    saved = Path(download.path()).read_text(encoding='utf-8')
     assert 'English:' in saved and finals[0]['final'] in saved
     assert not errors and not external, (errors, external)
     result = {'display':display, 'relay_messages':finals, 'download':saved,
               'browser_errors':errors, 'external_http':external,
               'method':'real Spanish fake microphone and inference; local mock relay'}
-    (evidence/'browser-translation.json').write_text(json.dumps(result, indent=2, ensure_ascii=False)+'\n')
+    (evidence/'browser-translation.json').write_text(json.dumps(result, indent=2, ensure_ascii=False)+'\n', encoding='utf-8')
     print(json.dumps(result, indent=2, ensure_ascii=False))
     browser.close()

@@ -1,4 +1,4 @@
-"""Deterministic CPU regression gate: real speech, rolling boundaries, silence.
+"""Deterministic inference regression gate: real speech, rolling boundaries, silence.
 Downloads a small public LibriSpeech test parquet on first run; samples stay local.
 """
 import argparse
@@ -38,9 +38,12 @@ def wer(reference, hypothesis):
 parser=argparse.ArgumentParser(description=__doc__)
 parser.add_argument('model',nargs='?',default='small')
 parser.add_argument('--beam-size',type=int,default=5)
+parser.add_argument('--device', choices=['cpu', 'cuda'], default='cpu')
+parser.add_argument('--compute-type', default='auto')
+parser.add_argument('--threads', type=int, default=4)
 parser.add_argument('--output',default='evidence/quality-gate.json')
 args=parser.parse_args()
-engine = Engine(args.model, offline=True, beam_size=args.beam_size)
+engine = Engine(args.model, offline=True, beam_size=args.beam_size, device=args.device, compute_type=args.compute_type, threads=args.threads)
 engine.warmup()
 results = []
 # Fixed first eight recordings over eight seconds; avoid selecting by accuracy.
@@ -89,8 +92,9 @@ mean = sum(r['wer'] for r in results if 'wer' in r)/len(fixtures)
 checks['mean_wer_at_most_15_percent']=mean<=.15
 checks['jfk_exact']=results[0]['wer']==0
 checks['faster_than_audio']=all(r['inference_seconds'] < r['audio_seconds'] for r in results if 'inference_seconds' in r)
-report = {'beam_size':args.beam_size,'checks':checks, 'passed':all(checks.values()), 'model':args.model,'results':results,'mean_wer':round(mean,4),
+report = {'device':engine.device, 'compute_type':engine.compute_type, 'threads':args.threads, 'beam_size':args.beam_size,'checks':checks, 'passed':all(checks.values()), 'model':args.model,'results':results,'mean_wer':round(mean,4),
           'gate':'mean WER <= 0.15; JFK exact after punctuation/case normalization; each fixture inference faster than audio; silence/noise empty; Spanish theatre preserved'}
-(root/args.output).write_text(json.dumps(report,indent=2,ensure_ascii=False)+'\n')
+(root/args.output).parent.mkdir(parents=True, exist_ok=True)
+(root/args.output).write_text(json.dumps(report,indent=2,ensure_ascii=False)+'\n', encoding='utf-8')
 assert all(checks.values()), checks
 print('QUALITY GATE PASSED',flush=True)

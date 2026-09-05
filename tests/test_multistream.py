@@ -67,16 +67,40 @@ def test_queue_deadline_releases_slot_without_starting_inference():
     asyncio.run(run())
 
 def test_continuous_busy_watchdog_tracks_oldest_actual_worker():
+    entered = [threading.Event() for _ in range(12)]
+    release = [threading.Event() for _ in range(12)]
+    class Controlled(Engine):
+        workers = 1
+        calls = 0
+        def transcribe(self, audio, language):
+            index = self.calls
+            self.calls += 1
+            entered[index].set()
+            assert release[index].wait(5)
+            return language, language
     async def run():
-        app=create_app(Engine())
+        app=create_app(Controlled())
         async with httpx.AsyncClient(transport=httpx.ASGITransport(app=app),base_url='http://localhost') as c:
             async def call(n):
                 return await c.post('/transcribe',content=AUDIO,headers={**HEADERS,'X-Stream-ID':f'stream-{n:02}'})
             tasks=[asyncio.create_task(call(n)) for n in range(12)]
-            await asyncio.sleep(.015)
-            first=app.state.inference_status['busy_since']
-            await asyncio.sleep(.06)
-            assert app.state.inference_status['busy_since']>first
+            try:
+                assert await asyncio.to_thread(entered[0].wait, 3)
+                first=app.state.inference_status['busy_since']
+                assert first is not None
+                for index in range(1, 12):
+                    # Windows monotonic clock may have a 15.6 ms tick.
+                    async with asyncio.timeout(3):
+                        while time.monotonic() <= first:
+                            await asyncio.sleep(.001)
+                    release[index-1].set()
+                    assert await asyncio.to_thread(entered[index].wait, 3)
+                    current=app.state.inference_status['busy_since']
+                    assert current is not None and current > first
+                    first=current
+            finally:
+                for event in release:
+                    event.set()
             await asyncio.gather(*tasks)
             assert app.state.inference_status['busy_since'] is None
     asyncio.run(run())

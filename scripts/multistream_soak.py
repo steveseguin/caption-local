@@ -28,8 +28,10 @@ audios = [decode_audio(io.BytesIO(r['audio']['bytes']))[:96000] for r in rows[:a
 audios = [np.pad(a,(0,max(0,96000-len(a)))).astype('<f4').tobytes() for a in audios]
 spanish = decode_audio(str(root/'samples/spanish.wav')).astype('<f4').tobytes()
 process = psutil.Process(args.pid)
-results=[]; memory=[]; quality_errors=[]
+results=[]; memory=[]; quality_errors=[]; request_errors=[]
+report={}
 async def main():
+    global report
     async with httpx.AsyncClient(timeout=60, limits=httpx.Limits(max_connections=32)) as client:
         health=(await client.get(args.url+'/health')).json()
         started=time.monotonic(); cpu_start=process.cpu_times(); prefix=uuid.uuid4().hex[:12]
@@ -45,6 +47,8 @@ async def main():
                          'X-Request-ID':f'round-{cycle:08}', 'Content-Type':'application/octet-stream'}
                 response=await client.post(args.url+'/transcribe?'+query,content=data,headers=headers)
                 result=response.json()
+                if response.status_code != 200:
+                    request_errors.append({'stream':n,'round':cycle,'status':response.status_code,'result':result})
                 assert response.status_code==200, (n,cycle,response.status_code,result)
                 assert result['stream_id']==headers['X-Stream-ID'] and result['text'], result
                 if translated:
@@ -58,7 +62,12 @@ async def main():
                 if n==0:
                     memory.append(round(process.memory_info().rss/2**20,2))
                     print(json.dumps({'round':cycle,'rss_mib':memory[-1],'latency':results[-1]['latency']}),flush=True)
-        await asyncio.gather(*(stream(n) for n in range(args.streams)))
+        outcomes=await asyncio.gather(*(stream(n) for n in range(args.streams)), return_exceptions=True)
+        failures=[outcome for outcome in outcomes if isinstance(outcome, BaseException)]
+        if failures:
+            for n in range(args.streams):
+                await client.delete(args.url+f'/streams/{prefix}-{n:02}',headers={'X-Caption-Local':'1'})
+            raise failures[0]
         for n in range(args.streams):
             assert len({r['text'] for r in results if r['stream']==n})==1, 'Concurrent decode changed a repeated input'
         wall=time.monotonic()-started; cpu_end=process.cpu_times()
@@ -69,8 +78,9 @@ async def main():
                 'cpu_seconds':round(cpu_end.user+cpu_end.system-cpu_start.user-cpu_start.system,3),
                 'latency_p50':latency[len(latency)//2], 'latency_p95':latency[int(len(latency)*.95)],
                 'max_lag':max(r['lag'] for r in results),'late_over_6s':sum(r['lag']>6 for r in results),
+                'kept_up_with_arrivals':all(r['lag']<=6 for r in results),
                 'rss_mib':memory,'results':results}
-        Path(args.output).write_text(json.dumps(report,indent=2)+'\n')
+        Path(args.output).write_text(json.dumps(report,indent=2)+'\n', encoding='utf-8')
         print(json.dumps({k:v for k,v in report.items() if k not in ('results','rss_mib','quality_errors')}),flush=True)
         warm=memory[5:] or memory
         middle=max(1,len(warm)//2)
@@ -79,4 +89,15 @@ async def main():
         for n in range(args.streams):
             response=await client.delete(args.url+f'/streams/{prefix}-{n:02}',headers={'X-Caption-Local':'1'})
             assert response.status_code==200,response.text
-asyncio.run(main())
+try:
+    asyncio.run(main())
+except Exception as exc:
+    output=Path(args.output)
+    output.parent.mkdir(parents=True,exist_ok=True)
+    # Preserve partial observations on overload/quality failures, not only passes.
+    # Do not replace a completed report if a final memory/cleanup assertion failed.
+    report.update(passed=False, error=repr(exc), streams=args.streams, rounds=args.rounds,
+                  mixed_translation=args.mixed, results=results, rss_mib=memory,
+                  quality_errors=quality_errors, request_errors=request_errors)
+    output.write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
+    raise

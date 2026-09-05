@@ -9,6 +9,7 @@ import threading
 import time
 import hashlib
 import re
+import sysconfig
 from collections import OrderedDict
 
 import numpy as np
@@ -23,10 +24,31 @@ MAX_BYTES = RATE * 4 * 12
 VERSION = "1.1.0"
 DEFAULT_MODEL_REVISION = "536b0662742c02347bc0e980a01041f333bce120"
 MODEL_REVISIONS = {"small": DEFAULT_MODEL_REVISION, "base": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66"}
+_CUDA_DLL_HANDLES = []
+
+
+def configure_windows_cuda():
+    """Make optional NVIDIA wheels in this environment visible to native loaders.
+
+    Only this process is changed; no driver, registry or system PATH edits.
+    Keep add_dll_directory handles alive for delayed cuDNN dependency loading.
+    """
+    if os.name != 'nt' or _CUDA_DLL_HANDLES:
+        return
+    base = Path(sysconfig.get_path('purelib')) / 'nvidia'
+    directories = [base / name / 'bin' for name in ('cublas', 'cuda_nvrtc', 'cudnn')]
+    directories = [directory for directory in directories if directory.is_dir()]
+    for directory in directories:
+        _CUDA_DLL_HANDLES.append(os.add_dll_directory(str(directory)))
+    if directories:
+        # CTranslate2/cuDNN also use LoadLibrary, which consults process PATH.
+        os.environ['PATH'] = os.pathsep.join(map(str, directories)) + os.pathsep + os.environ.get('PATH', '')
 
 
 class Engine:
     def __init__(self, model, threads=4, offline=False, device="cpu", compute_type="auto", workers=1, beam_size=5):
+        if device in ('cuda', 'auto'):
+            configure_windows_cuda()
         import ctranslate2
         from faster_whisper import WhisperModel
         requested_device = device

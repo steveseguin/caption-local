@@ -3,6 +3,7 @@ import argparse
 import json
 import os
 from pathlib import Path
+from browser_support import browser_options
 import time
 import wave
 import numpy as np
@@ -23,7 +24,7 @@ with wave.open(str(fixture),'wb') as f:
     f.writeframes((loop*32767).astype('<i2').tobytes())
 process=psutil.Process(args.pid)
 with sync_playwright() as p:
-    browser=p.chromium.launch(executable_path='/usr/bin/google-chrome',headless=True,args=[
+    browser=p.chromium.launch(**browser_options(),headless=True,args=[
         '--no-sandbox','--use-fake-ui-for-media-stream','--use-fake-device-for-media-stream',
         f'--use-file-for-fake-audio-capture={fixture}'])
     context=browser.new_context(permissions=['microphone'])
@@ -57,5 +58,5 @@ with sync_playwright() as p:
             'caption_count':len(captions),'max_buffer_seconds':max(s['buffered'] for s in samples),
             'warm_rss_range_mib':[min(warmed),max(warmed)],'browser_errors':errors,'external_requests':external,
             'samples':samples,'first_captions':captions[:6],'last_captions':captions[-6:]}
-    (root/'evidence/browser-soak.json').write_text(json.dumps(result,indent=2)+'\n')
+    (root/'evidence/browser-soak.json').write_text(json.dumps(result,indent=2)+'\n', encoding='utf-8')
     print('BROWSER SOAK PASSED',flush=True); browser.close()

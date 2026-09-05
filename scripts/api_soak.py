@@ -53,5 +53,5 @@ result={'requests':args.requests,'elapsed_seconds':round(time.monotonic()-starte
         'audio_seconds':round(total_audio,1),'inference_seconds':round(total_inference,1),
         'warm_rss_range_mib':[min(warm),max(warm)],'concurrent_admission':'1 accepted, 7 busy',
         'samples':samples,'idempotent_retries':True,'english_and_spanish_translation':True}
-(root/'evidence/api-soak.json').write_text(json.dumps(result,indent=2)+'\n')
+(root/'evidence/api-soak.json').write_text(json.dumps(result,indent=2)+'\n', encoding='utf-8')
 print('API SOAK PASSED',flush=True)

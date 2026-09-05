@@ -47,5 +47,5 @@ if args.spanish:
 text = json.dumps(results, indent=2, ensure_ascii=False)+'\n'
 if args.output:
     args.output.parent.mkdir(exist_ok=True, parents=True)
-    args.output.write_text(text)
+    args.output.write_text(text, encoding='utf-8')
 print(text)

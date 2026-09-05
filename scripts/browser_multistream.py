@@ -3,6 +3,7 @@ import argparse
 import asyncio
 import json
 from pathlib import Path
+from browser_support import browser_options
 import time
 from playwright.async_api import async_playwright
 
@@ -15,7 +16,7 @@ args=parser.parse_args()
 root=Path(__file__).resolve().parents[1]
 async def main():
     async with async_playwright() as p:
-        browser=await p.chromium.launch(executable_path='/usr/bin/google-chrome',headless=True,args=[
+        browser=await p.chromium.launch(**browser_options(),headless=True,args=[
             '--no-sandbox','--use-fake-ui-for-media-stream','--use-fake-device-for-media-stream',
             '--disable-background-timer-throttling','--disable-renderer-backgrounding',
             f'--use-file-for-fake-audio-capture={root/"samples/soak.wav"}'])
@@ -48,7 +49,7 @@ async def main():
         await asyncio.gather(*(page.wait_for_function('() => !processing && !stopping',timeout=120000) for page in pages))
         final=await asyncio.gather(*(page.evaluate('() => ({streamId, transcript, failed, buffered:buffer.length/16000})') for page in pages))
         result={'seconds':round(time.monotonic()-started,2),'streams':args.streams,'observations':observations,'responses':responses,'final':final,'errors':errors,'external':external}
-        Path(args.output).write_text(json.dumps(result,indent=2)+'\n')
+        Path(args.output).write_text(json.dumps(result,indent=2)+'\n', encoding='utf-8')
         await browser.close()
         assert not errors and not external,(errors,external)
         assert len({s['streamId'] for s in final})==args.streams

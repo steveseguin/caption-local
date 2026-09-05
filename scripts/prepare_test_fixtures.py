@@ -1,9 +1,14 @@
-"""Provision public/synthetic fixtures for Linux release tests; never uploads audio."""
+"""Provision public/synthetic fixtures; never uploads audio."""
+import argparse
 from pathlib import Path
 import shutil
 import subprocess
 import urllib.request
 
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--espeak', default=shutil.which('espeak-ng'),
+                    help='Path to espeak-ng executable; needed only if Spanish WAV is missing')
+args = parser.parse_args()
 root = Path(__file__).resolve().parents[1]
 samples = root / 'samples'
 samples.mkdir(exist_ok=True)
@@ -17,9 +22,9 @@ for name, url in {
         urllib.request.urlretrieve(url, temporary)
         temporary.replace(target)
 if not (samples / 'spanish.wav').exists():
-    if not shutil.which('espeak-ng'):
-        raise SystemExit('Install espeak-ng to generate the synthetic Spanish fixture, then rerun this command.')
-    subprocess.run(['espeak-ng', '-v', 'es', '-s', '140', '-w', str(samples/'spanish.wav'),
+    if not args.espeak:
+        raise SystemExit('Supply --espeak PATH or prepare samples/spanish.wav using the exact sentence in DEPLOYMENT.md, then rerun.')
+    subprocess.run([args.espeak, '-v', 'es', '-s', '140', '-w', str(samples/'spanish.wav'),
                     'Hola. Bienvenidos al teatro. Muchas gracias por venir esta noche.'], check=True)
 # The continuous browser test loops speech plus a pause.
 import wave
