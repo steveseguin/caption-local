@@ -1,0 +1,140 @@
+{
+  "requests": 250,
+  "elapsed_seconds": 560.1,
+  "audio_seconds": 2470.0,
+  "inference_seconds": 556.9,
+  "warm_rss_range_mib": [
+    584.5,
+    585.0
+  ],
+  "concurrent_admission": "1 accepted, 7 busy",
+  "samples": [
+    {
+      "request": 0,
+      "elapsed_seconds": 5.3,
+      "rss_mib": 576.9
+    },
+    {
+      "request": 10,
+      "elapsed_seconds": 26.6,
+      "rss_mib": 582.9
+    },
+    {
+      "request": 20,
+      "elapsed_seconds": 49.3,
+      "rss_mib": 582.9
+    },
+    {
+      "request": 30,
+      "elapsed_seconds": 71.5,
+      "rss_mib": 583.0
+    },
+    {
+      "request": 40,
+      "elapsed_seconds": 94.3,
+      "rss_mib": 584.4
+    },
+    {
+      "request": 50,
+      "elapsed_seconds": 116.7,
+      "rss_mib": 584.5
+    },
+    {
+      "request": 60,
+      "elapsed_seconds": 140.5,
+      "rss_mib": 584.5
+    },
+    {
+      "request": 70,
+      "elapsed_seconds": 165.0,
+      "rss_mib": 584.5
+    },
+    {
+      "request": 80,
+      "elapsed_seconds": 191.3,
+      "rss_mib": 584.8
+    },
+    {
+      "request": 90,
+      "elapsed_seconds": 217.0,
+      "rss_mib": 584.8
+    },
+    {
+      "request": 100,
+      "elapsed_seconds": 239.3,
+      "rss_mib": 584.8
+    },
+    {
+      "request": 110,
+      "elapsed_seconds": 261.6,
+      "rss_mib": 584.8
+    },
+    {
+      "request": 120,
+      "elapsed_seconds": 283.5,
+      "rss_mib": 584.9
+    },
+    {
+      "request": 130,
+      "elapsed_seconds": 304.5,
+      "rss_mib": 584.9
+    },
+    {
+      "request": 140,
+      "elapsed_seconds": 326.0,
+      "rss_mib": 584.9
+    },
+    {
+      "request": 150,
+      "elapsed_seconds": 347.7,
+      "rss_mib": 584.9
+    },
+    {
+      "request": 160,
+      "elapsed_seconds": 369.2,
+      "rss_mib": 584.9
+    },
+    {
+      "request": 170,
+      "elapsed_seconds": 390.9,
+      "rss_mib": 584.9
+    },
+    {
+      "request": 180,
+      "elapsed_seconds": 412.2,
+      "rss_mib": 584.9
+    },
+    {
+      "request": 190,
+      "elapsed_seconds": 434.0,
+      "rss_mib": 584.9
+    },
+    {
+      "request": 200,
+      "elapsed_seconds": 455.2,
+      "rss_mib": 584.9
+    },
+    {
+      "request": 210,
+      "elapsed_seconds": 477.1,
+      "rss_mib": 585.0
+    },
+    {
+      "request": 220,
+      "elapsed_seconds": 498.5,
+      "rss_mib": 585.0
+    },
+    {
+      "request": 230,
+      "elapsed_seconds": 519.9,
+      "rss_mib": 585.0
+    },
+    {
+      "request": 240,
+      "elapsed_seconds": 541.0,
+      "rss_mib": 585.0
+    }
+  ],
+  "idempotent_retries": true,
+  "english_and_spanish_translation": true
+}

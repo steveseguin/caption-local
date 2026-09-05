@@ -1,0 +1,38 @@
+[
+  {
+    "model": "base",
+    "beam": 5,
+    "workers": 4,
+    "threads_per_worker": 1,
+    "wall_seconds": 4.89,
+    "audio_seconds": 72,
+    "aggregate_speedup": 14.72,
+    "cpu_seconds": 21.96,
+    "mean_inference_seconds": 1.621,
+    "sample_text": " And so my fellow Americans ask not what you're"
+  },
+  {
+    "model": "base",
+    "beam": 5,
+    "workers": 6,
+    "threads_per_worker": 1,
+    "wall_seconds": 3.704,
+    "audio_seconds": 72,
+    "aggregate_speedup": 19.44,
+    "cpu_seconds": 23.53,
+    "mean_inference_seconds": 1.836,
+    "sample_text": " And so my fellow Americans ask not what you're"
+  },
+  {
+    "model": "base",
+    "beam": 5,
+    "workers": 8,
+    "threads_per_worker": 1,
+    "wall_seconds": 3.982,
+    "audio_seconds": 72,
+    "aggregate_speedup": 18.08,
+    "cpu_seconds": 28.1,
+    "mean_inference_seconds": 2.172,
+    "sample_text": " And so my fellow Americans ask not what you're"
+  }
+]

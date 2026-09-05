@@ -1,0 +1,110 @@
+[
+  {
+    "model": "tiny.en",
+    "fixture": "full",
+    "audio_seconds": 11.0,
+    "inference_seconds": 0.367,
+    "realtime_factor": 0.033,
+    "load_seconds": 3.68,
+    "text": "And so my fellow Americans ask not what your country can do for you ask what you can do for your country."
+  },
+  {
+    "model": "tiny.en",
+    "fixture": "first_6s",
+    "audio_seconds": 6.0,
+    "inference_seconds": 0.274,
+    "realtime_factor": 0.046,
+    "load_seconds": 3.68,
+    "text": "And so my fellow Americans ask not what you are calling"
+  },
+  {
+    "model": "tiny.en",
+    "fixture": "second_6s",
+    "audio_seconds": 5.0,
+    "inference_seconds": 0.285,
+    "realtime_factor": 0.057,
+    "load_seconds": 3.68,
+    "text": "country can do for you ask what you can do for your country."
+  },
+  {
+    "model": "tiny.en",
+    "fixture": "silence",
+    "audio_seconds": 6.0,
+    "inference_seconds": 0.009,
+    "realtime_factor": 0.002,
+    "load_seconds": 3.68,
+    "text": ""
+  },
+  {
+    "model": "base.en",
+    "fixture": "full",
+    "audio_seconds": 11.0,
+    "inference_seconds": 0.478,
+    "realtime_factor": 0.043,
+    "load_seconds": 0.298,
+    "text": "And so my fellow Americans, ask not what your country can do for you, ask what you can do for your country."
+  },
+  {
+    "model": "base.en",
+    "fixture": "first_6s",
+    "audio_seconds": 6.0,
+    "inference_seconds": 0.422,
+    "realtime_factor": 0.07,
+    "load_seconds": 0.298,
+    "text": "And so my fellow Americans ask not what your"
+  },
+  {
+    "model": "base.en",
+    "fixture": "second_6s",
+    "audio_seconds": 5.0,
+    "inference_seconds": 0.44,
+    "realtime_factor": 0.088,
+    "load_seconds": 0.298,
+    "text": "What country can do for you? Ask what you can do for your country."
+  },
+  {
+    "model": "base.en",
+    "fixture": "silence",
+    "audio_seconds": 6.0,
+    "inference_seconds": 0.01,
+    "realtime_factor": 0.002,
+    "load_seconds": 0.298,
+    "text": ""
+  },
+  {
+    "model": "small.en",
+    "fixture": "full",
+    "audio_seconds": 11.0,
+    "inference_seconds": 1.32,
+    "realtime_factor": 0.12,
+    "load_seconds": 15.554,
+    "text": "And so my fellow Americans, ask not what your country can do for you, ask what you can do for your country."
+  },
+  {
+    "model": "small.en",
+    "fixture": "first_6s",
+    "audio_seconds": 6.0,
+    "inference_seconds": 1.166,
+    "realtime_factor": 0.194,
+    "load_seconds": 15.554,
+    "text": "And so, my fellow Americans, ask not what your..."
+  },
+  {
+    "model": "small.en",
+    "fixture": "second_6s",
+    "audio_seconds": 5.0,
+    "inference_seconds": 1.249,
+    "realtime_factor": 0.25,
+    "load_seconds": 15.554,
+    "text": "What country can do for you, ask what you can do for your country."
+  },
+  {
+    "model": "small.en",
+    "fixture": "silence",
+    "audio_seconds": 6.0,
+    "inference_seconds": 0.01,
+    "realtime_factor": 0.002,
+    "load_seconds": 15.554,
+    "text": ""
+  }
+]

@@ -1,0 +1,3414 @@
+{
+  "health": {
+    "ready": true,
+    "version": "1.1.0",
+    "sample_rate": 16000,
+    "max_seconds": 12,
+    "max_streams": 12,
+    "workers": 4,
+    "threads_per_worker": 1,
+    "sessions": 0,
+    "running": 0,
+    "pending": 0,
+    "queue_timeout": 20,
+    "multilingual": true,
+    "model": "base",
+    "languages": [
+      "af",
+      "am",
+      "ar",
+      "as",
+      "az",
+      "ba",
+      "be",
+      "bg",
+      "bn",
+      "bo",
+      "br",
+      "bs",
+      "ca",
+      "cs",
+      "cy",
+      "da",
+      "de",
+      "el",
+      "en",
+      "es",
+      "et",
+      "eu",
+      "fa",
+      "fi",
+      "fo",
+      "fr",
+      "gl",
+      "gu",
+      "ha",
+      "haw",
+      "he",
+      "hi",
+      "hr",
+      "ht",
+      "hu",
+      "hy",
+      "id",
+      "is",
+      "it",
+      "ja",
+      "jw",
+      "ka",
+      "kk",
+      "km",
+      "kn",
+      "ko",
+      "la",
+      "lb",
+      "ln",
+      "lo",
+      "lt",
+      "lv",
+      "mg",
+      "mi",
+      "mk",
+      "ml",
+      "mn",
+      "mr",
+      "ms",
+      "mt",
+      "my",
+      "ne",
+      "nl",
+      "nn",
+      "no",
+      "oc",
+      "pa",
+      "pl",
+      "ps",
+      "pt",
+      "ro",
+      "ru",
+      "sa",
+      "sd",
+      "si",
+      "sk",
+      "sl",
+      "sn",
+      "so",
+      "sq",
+      "sr",
+      "su",
+      "sv",
+      "sw",
+      "ta",
+      "te",
+      "tg",
+      "th",
+      "tk",
+      "tl",
+      "tr",
+      "tt",
+      "uk",
+      "ur",
+      "uz",
+      "vi",
+      "yi",
+      "yo",
+      "yue",
+      "zh"
+    ],
+    "device": "cpu",
+    "compute_type": "int8",
+    "busy": false,
+    "completed": 0,
+    "failed": 0,
+    "modes": [
+      "transcribe",
+      "translate",
+      "both"
+    ],
+    "translation_target": "en"
+  },
+  "streams": 12,
+  "rounds": 30,
+  "mixed_translation": false,
+  "requests": 360,
+  "wall_seconds": 179.23,
+  "cpu_seconds": 776.23,
+  "latency_p50": 3.633,
+  "latency_p95": 5.914,
+  "max_lag": 7.134,
+  "late_over_6s": 19,
+  "rss_mib": [
+    614.29,
+    376.14,
+    612.45,
+    383.39,
+    436.67,
+    384.93,
+    579.04,
+    382.35,
+    460.66,
+    417.56,
+    502.94,
+    388.35,
+    469.68,
+    530.29,
+    385.66,
+    390.89,
+    388.73,
+    385.76,
+    388.57,
+    494.35,
+    548.62,
+    392.88,
+    395.68,
+    418.24,
+    585.61,
+    507.32,
+    429.96,
+    396.89,
+    524.07,
+    391.16
+  ],
+  "results": [
+    {
+      "stream": 1,
+      "round": 0,
+      "latency": 1.831,
+      "lag": 1.832,
+      "queue": 0.0,
+      "inference": 1.78,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 3,
+      "round": 0,
+      "latency": 1.888,
+      "lag": 1.889,
+      "queue": 0.0,
+      "inference": 1.829,
+      "text": "He has grieved doubts whether Sir Frederick Layton's work is really Greek"
+    },
+    {
+      "stream": 2,
+      "round": 0,
+      "latency": 1.894,
+      "lag": 1.895,
+      "queue": 0.0,
+      "inference": 1.843,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 0,
+      "round": 0,
+      "latency": 2.118,
+      "lag": 2.118,
+      "queue": 0.0,
+      "inference": 2.109,
+      "text": "Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his"
+    },
+    {
+      "stream": 4,
+      "round": 0,
+      "latency": 3.738,
+      "lag": 3.739,
+      "queue": 1.776,
+      "inference": 1.907,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 5,
+      "round": 0,
+      "latency": 3.807,
+      "lag": 3.808,
+      "queue": 1.831,
+      "inference": 1.919,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 6,
+      "round": 0,
+      "latency": 3.861,
+      "lag": 3.863,
+      "queue": 1.839,
+      "inference": 1.968,
+      "text": "On the general principles of art, Mr. Quilter writes with equal lucidity."
+    },
+    {
+      "stream": 7,
+      "round": 0,
+      "latency": 4.075,
+      "lag": 4.077,
+      "queue": 2.063,
+      "inference": 1.957,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 8,
+      "round": 0,
+      "latency": 5.592,
+      "lag": 5.594,
+      "queue": 3.684,
+      "inference": 1.855,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 10,
+      "round": 0,
+      "latency": 5.794,
+      "lag": 5.797,
+      "queue": 3.808,
+      "inference": 1.933,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 9,
+      "round": 0,
+      "latency": 5.829,
+      "lag": 5.832,
+      "queue": 3.751,
+      "inference": 2.022,
+      "text": "He laments most bitterly the divorce that has been made between decorative"
+    },
+    {
+      "stream": 11,
+      "round": 0,
+      "latency": 5.96,
+      "lag": 5.963,
+      "queue": 4.021,
+      "inference": 1.887,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 10,
+      "round": 1,
+      "latency": 1.823,
+      "lag": 1.826,
+      "queue": 0.0,
+      "inference": 1.811,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 6,
+      "round": 1,
+      "latency": 1.878,
+      "lag": 1.879,
+      "queue": 0.0,
+      "inference": 1.867,
+      "text": "On the general principles of art, Mr. Quilter writes with equal lucidity."
+    },
+    {
+      "stream": 3,
+      "round": 1,
+      "latency": 1.878,
+      "lag": 1.882,
+      "queue": 0.0,
+      "inference": 1.864,
+      "text": "He has grieved doubts whether Sir Frederick Layton's work is really Greek"
+    },
+    {
+      "stream": 9,
+      "round": 1,
+      "latency": 1.889,
+      "lag": 1.89,
+      "queue": 0.0,
+      "inference": 1.874,
+      "text": "He laments most bitterly the divorce that has been made between decorative"
+    },
+    {
+      "stream": 5,
+      "round": 1,
+      "latency": 3.684,
+      "lag": 3.686,
+      "queue": 1.807,
+      "inference": 1.859,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 2,
+      "round": 1,
+      "latency": 3.735,
+      "lag": 3.738,
+      "queue": 1.86,
+      "inference": 1.855,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 11,
+      "round": 1,
+      "latency": 3.767,
+      "lag": 3.769,
+      "queue": 1.862,
+      "inference": 1.881,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 7,
+      "round": 1,
+      "latency": 3.865,
+      "lag": 3.868,
+      "queue": 1.858,
+      "inference": 1.988,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 4,
+      "round": 1,
+      "latency": 5.521,
+      "lag": 5.526,
+      "queue": 3.709,
+      "inference": 1.786,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 1,
+      "round": 1,
+      "latency": 5.555,
+      "lag": 5.56,
+      "queue": 3.661,
+      "inference": 1.874,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 8,
+      "round": 1,
+      "latency": 5.562,
+      "lag": 5.567,
+      "queue": 3.738,
+      "inference": 1.796,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 0,
+      "round": 1,
+      "latency": 5.862,
+      "lag": 5.868,
+      "queue": 3.836,
+      "inference": 2.0,
+      "text": "Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his"
+    },
+    {
+      "stream": 5,
+      "round": 2,
+      "latency": 1.794,
+      "lag": 1.797,
+      "queue": 0.0,
+      "inference": 1.782,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 1,
+      "round": 2,
+      "latency": 1.871,
+      "lag": 1.872,
+      "queue": 0.0,
+      "inference": 1.861,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 8,
+      "round": 2,
+      "latency": 1.871,
+      "lag": 1.872,
+      "queue": 0.0,
+      "inference": 1.861,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 3,
+      "round": 2,
+      "latency": 2.002,
+      "lag": 2.004,
+      "queue": 0.0,
+      "inference": 1.992,
+      "text": "He has grieved doubts whether Sir Frederick Layton's work is really Greek"
+    },
+    {
+      "stream": 4,
+      "round": 2,
+      "latency": 3.568,
+      "lag": 3.57,
+      "queue": 1.853,
+      "inference": 1.7,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 7,
+      "round": 2,
+      "latency": 3.627,
+      "lag": 3.629,
+      "queue": 1.854,
+      "inference": 1.757,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 2,
+      "round": 2,
+      "latency": 3.633,
+      "lag": 3.635,
+      "queue": 1.782,
+      "inference": 1.834,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 0,
+      "round": 2,
+      "latency": 3.988,
+      "lag": 3.99,
+      "queue": 1.984,
+      "inference": 1.985,
+      "text": "Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his"
+    },
+    {
+      "stream": 9,
+      "round": 2,
+      "latency": 5.37,
+      "lag": 5.373,
+      "queue": 3.609,
+      "inference": 1.742,
+      "text": "He laments most bitterly the divorce that has been made between decorative"
+    },
+    {
+      "stream": 6,
+      "round": 2,
+      "latency": 5.433,
+      "lag": 5.436,
+      "queue": 3.606,
+      "inference": 1.808,
+      "text": "On the general principles of art, Mr. Quilter writes with equal lucidity."
+    },
+    {
+      "stream": 11,
+      "round": 2,
+      "latency": 5.459,
+      "lag": 5.462,
+      "queue": 3.551,
+      "inference": 1.891,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 10,
+      "round": 2,
+      "latency": 5.669,
+      "lag": 5.673,
+      "queue": 3.967,
+      "inference": 1.683,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 3,
+      "round": 3,
+      "latency": 1.686,
+      "lag": 1.689,
+      "queue": 0.0,
+      "inference": 1.677,
+      "text": "He has grieved doubts whether Sir Frederick Layton's work is really Greek"
+    },
+    {
+      "stream": 8,
+      "round": 3,
+      "latency": 1.69,
+      "lag": 1.692,
+      "queue": 0.0,
+      "inference": 1.682,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 4,
+      "round": 3,
+      "latency": 1.708,
+      "lag": 1.712,
+      "queue": 0.0,
+      "inference": 1.694,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 10,
+      "round": 3,
+      "latency": 1.752,
+      "lag": 1.753,
+      "queue": 0.0,
+      "inference": 1.737,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 6,
+      "round": 3,
+      "latency": 3.446,
+      "lag": 3.449,
+      "queue": 1.688,
+      "inference": 1.739,
+      "text": "On the general principles of art, Mr. Quilter writes with equal lucidity."
+    },
+    {
+      "stream": 2,
+      "round": 3,
+      "latency": 3.454,
+      "lag": 3.457,
+      "queue": 1.673,
+      "inference": 1.766,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 9,
+      "round": 3,
+      "latency": 3.464,
+      "lag": 3.467,
+      "queue": 1.672,
+      "inference": 1.776,
+      "text": "He laments most bitterly the divorce that has been made between decorative"
+    },
+    {
+      "stream": 11,
+      "round": 3,
+      "latency": 3.476,
+      "lag": 3.478,
+      "queue": 1.725,
+      "inference": 1.728,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 1,
+      "round": 3,
+      "latency": 5.209,
+      "lag": 5.213,
+      "queue": 3.431,
+      "inference": 1.745,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 5,
+      "round": 3,
+      "latency": 5.243,
+      "lag": 5.247,
+      "queue": 3.426,
+      "inference": 1.798,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 7,
+      "round": 3,
+      "latency": 5.267,
+      "lag": 5.271,
+      "queue": 3.428,
+      "inference": 1.814,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 0,
+      "round": 3,
+      "latency": 5.361,
+      "lag": 5.366,
+      "queue": 3.439,
+      "inference": 1.886,
+      "text": "Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his"
+    },
+    {
+      "stream": 8,
+      "round": 4,
+      "latency": 1.776,
+      "lag": 1.779,
+      "queue": 0.0,
+      "inference": 1.765,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 4,
+      "round": 4,
+      "latency": 1.845,
+      "lag": 1.849,
+      "queue": 0.0,
+      "inference": 1.83,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 11,
+      "round": 4,
+      "latency": 1.902,
+      "lag": 1.908,
+      "queue": 0.0,
+      "inference": 1.883,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 0,
+      "round": 4,
+      "latency": 2.01,
+      "lag": 2.012,
+      "queue": 0.0,
+      "inference": 1.996,
+      "text": "Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his"
+    },
+    {
+      "stream": 6,
+      "round": 4,
+      "latency": 3.688,
+      "lag": 3.691,
+      "queue": 1.759,
+      "inference": 1.911,
+      "text": "On the general principles of art, Mr. Quilter writes with equal lucidity."
+    },
+    {
+      "stream": 2,
+      "round": 4,
+      "latency": 3.74,
+      "lag": 3.744,
+      "queue": 1.828,
+      "inference": 1.887,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 7,
+      "round": 4,
+      "latency": 3.765,
+      "lag": 3.77,
+      "queue": 1.88,
+      "inference": 1.864,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 9,
+      "round": 4,
+      "latency": 3.921,
+      "lag": 3.924,
+      "queue": 1.979,
+      "inference": 1.913,
+      "text": "He laments most bitterly the divorce that has been made between decorative"
+    },
+    {
+      "stream": 5,
+      "round": 4,
+      "latency": 5.528,
+      "lag": 5.535,
+      "queue": 3.66,
+      "inference": 1.843,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 1,
+      "round": 4,
+      "latency": 5.538,
+      "lag": 5.545,
+      "queue": 3.707,
+      "inference": 1.804,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 10,
+      "round": 4,
+      "latency": 5.562,
+      "lag": 5.568,
+      "queue": 3.732,
+      "inference": 1.801,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 3,
+      "round": 4,
+      "latency": 5.67,
+      "lag": 5.677,
+      "queue": 3.889,
+      "inference": 1.753,
+      "text": "He has grieved doubts whether Sir Frederick Layton's work is really Greek"
+    },
+    {
+      "stream": 8,
+      "round": 5,
+      "latency": 1.71,
+      "lag": 1.713,
+      "queue": 0.0,
+      "inference": 1.698,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 9,
+      "round": 5,
+      "latency": 1.74,
+      "lag": 1.744,
+      "queue": 0.0,
+      "inference": 1.726,
+      "text": "He laments most bitterly the divorce that has been made between decorative"
+    },
+    {
+      "stream": 3,
+      "round": 5,
+      "latency": 1.769,
+      "lag": 1.77,
+      "queue": 0.0,
+      "inference": 1.749,
+      "text": "He has grieved doubts whether Sir Frederick Layton's work is really Greek"
+    },
+    {
+      "stream": 10,
+      "round": 5,
+      "latency": 1.769,
+      "lag": 1.77,
+      "queue": 0.0,
+      "inference": 1.75,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 5,
+      "round": 5,
+      "latency": 3.373,
+      "lag": 3.376,
+      "queue": 1.694,
+      "inference": 1.662,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 7,
+      "round": 5,
+      "latency": 3.42,
+      "lag": 3.424,
+      "queue": 1.723,
+      "inference": 1.674,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 1,
+      "round": 5,
+      "latency": 3.422,
+      "lag": 3.424,
+      "queue": 1.741,
+      "inference": 1.644,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 6,
+      "round": 5,
+      "latency": 3.542,
+      "lag": 3.546,
+      "queue": 1.734,
+      "inference": 1.786,
+      "text": "On the general principles of art, Mr. Quilter writes with equal lucidity."
+    },
+    {
+      "stream": 2,
+      "round": 5,
+      "latency": 5.101,
+      "lag": 5.107,
+      "queue": 3.349,
+      "inference": 1.73,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 4,
+      "round": 5,
+      "latency": 5.137,
+      "lag": 5.142,
+      "queue": 3.393,
+      "inference": 1.715,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 11,
+      "round": 5,
+      "latency": 5.193,
+      "lag": 5.198,
+      "queue": 3.395,
+      "inference": 1.775,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 0,
+      "round": 5,
+      "latency": 5.304,
+      "lag": 5.31,
+      "queue": 3.517,
+      "inference": 1.764,
+      "text": "Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his"
+    },
+    {
+      "stream": 10,
+      "round": 6,
+      "latency": 1.769,
+      "lag": 1.771,
+      "queue": 0.0,
+      "inference": 1.76,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 1,
+      "round": 6,
+      "latency": 1.771,
+      "lag": 1.773,
+      "queue": 0.0,
+      "inference": 1.76,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 8,
+      "round": 6,
+      "latency": 1.776,
+      "lag": 1.781,
+      "queue": 0.0,
+      "inference": 1.764,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 4,
+      "round": 6,
+      "latency": 1.779,
+      "lag": 1.782,
+      "queue": 0.0,
+      "inference": 1.767,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 3,
+      "round": 6,
+      "latency": 3.737,
+      "lag": 3.742,
+      "queue": 1.753,
+      "inference": 1.968,
+      "text": "He has grieved doubts whether Sir Frederick Layton's work is really Greek"
+    },
+    {
+      "stream": 5,
+      "round": 6,
+      "latency": 3.739,
+      "lag": 3.743,
+      "queue": 1.759,
+      "inference": 1.961,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 11,
+      "round": 6,
+      "latency": 3.817,
+      "lag": 3.82,
+      "queue": 1.752,
+      "inference": 2.039,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 0,
+      "round": 6,
+      "latency": 3.97,
+      "lag": 3.973,
+      "queue": 1.747,
+      "inference": 2.19,
+      "text": "Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his"
+    },
+    {
+      "stream": 6,
+      "round": 6,
+      "latency": 5.545,
+      "lag": 5.551,
+      "queue": 3.705,
+      "inference": 1.809,
+      "text": "On the general principles of art, Mr. Quilter writes with equal lucidity."
+    },
+    {
+      "stream": 7,
+      "round": 6,
+      "latency": 5.586,
+      "lag": 5.593,
+      "queue": 3.706,
+      "inference": 1.849,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 2,
+      "round": 6,
+      "latency": 5.601,
+      "lag": 5.607,
+      "queue": 3.783,
+      "inference": 1.783,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 9,
+      "round": 6,
+      "latency": 5.745,
+      "lag": 5.752,
+      "queue": 3.935,
+      "inference": 1.779,
+      "text": "He laments most bitterly the divorce that has been made between decorative"
+    },
+    {
+      "stream": 1,
+      "round": 7,
+      "latency": 1.779,
+      "lag": 1.782,
+      "queue": 0.0,
+      "inference": 1.77,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 4,
+      "round": 7,
+      "latency": 1.838,
+      "lag": 1.842,
+      "queue": 0.0,
+      "inference": 1.824,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 8,
+      "round": 7,
+      "latency": 1.887,
+      "lag": 1.888,
+      "queue": 0.0,
+      "inference": 1.879,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 9,
+      "round": 7,
+      "latency": 1.971,
+      "lag": 1.973,
+      "queue": 0.0,
+      "inference": 1.96,
+      "text": "He laments most bitterly the divorce that has been made between decorative"
+    },
+    {
+      "stream": 10,
+      "round": 7,
+      "latency": 3.702,
+      "lag": 3.705,
+      "queue": 1.766,
+      "inference": 1.922,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 2,
+      "round": 7,
+      "latency": 3.869,
+      "lag": 3.872,
+      "queue": 1.82,
+      "inference": 2.032,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 6,
+      "round": 7,
+      "latency": 3.882,
+      "lag": 3.885,
+      "queue": 1.949,
+      "inference": 1.914,
+      "text": "On the general principles of art, Mr. Quilter writes with equal lucidity."
+    },
+    {
+      "stream": 7,
+      "round": 7,
+      "latency": 3.929,
+      "lag": 3.932,
+      "queue": 1.868,
+      "inference": 2.033,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 0,
+      "round": 7,
+      "latency": 5.751,
+      "lag": 5.756,
+      "queue": 3.682,
+      "inference": 2.05,
+      "text": "Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his"
+    },
+    {
+      "stream": 5,
+      "round": 7,
+      "latency": 5.782,
+      "lag": 5.787,
+      "queue": 3.861,
+      "inference": 1.902,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 3,
+      "round": 7,
+      "latency": 5.811,
+      "lag": 5.816,
+      "queue": 3.908,
+      "inference": 1.884,
+      "text": "He has grieved doubts whether Sir Frederick Layton's work is really Greek"
+    },
+    {
+      "stream": 11,
+      "round": 7,
+      "latency": 5.836,
+      "lag": 5.841,
+      "queue": 3.849,
+      "inference": 1.97,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 8,
+      "round": 8,
+      "latency": 1.8,
+      "lag": 1.804,
+      "queue": 0.0,
+      "inference": 1.787,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 1,
+      "round": 8,
+      "latency": 1.803,
+      "lag": 1.804,
+      "queue": 0.0,
+      "inference": 1.791,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 5,
+      "round": 8,
+      "latency": 1.868,
+      "lag": 1.868,
+      "queue": 0.0,
+      "inference": 1.856,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 3,
+      "round": 8,
+      "latency": 1.866,
+      "lag": 1.869,
+      "queue": 0.0,
+      "inference": 1.853,
+      "text": "He has grieved doubts whether Sir Frederick Layton's work is really Greek"
+    },
+    {
+      "stream": 9,
+      "round": 8,
+      "latency": 3.692,
+      "lag": 3.694,
+      "queue": 1.786,
+      "inference": 1.886,
+      "text": "He laments most bitterly the divorce that has been made between decorative"
+    },
+    {
+      "stream": 2,
+      "round": 8,
+      "latency": 3.788,
+      "lag": 3.791,
+      "queue": 1.848,
+      "inference": 1.918,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 11,
+      "round": 8,
+      "latency": 3.841,
+      "lag": 3.842,
+      "queue": 1.847,
+      "inference": 1.962,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 0,
+      "round": 8,
+      "latency": 4.026,
+      "lag": 4.028,
+      "queue": 1.785,
+      "inference": 2.224,
+      "text": "Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his"
+    },
+    {
+      "stream": 4,
+      "round": 8,
+      "latency": 5.973,
+      "lag": 5.978,
+      "queue": 3.668,
+      "inference": 2.285,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 10,
+      "round": 8,
+      "latency": 5.994,
+      "lag": 5.998,
+      "queue": 3.802,
+      "inference": 2.165,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 6,
+      "round": 8,
+      "latency": 6.008,
+      "lag": 6.013,
+      "queue": 3.761,
+      "inference": 2.212,
+      "text": "On the general principles of art, Mr. Quilter writes with equal lucidity."
+    },
+    {
+      "stream": 7,
+      "round": 8,
+      "latency": 6.218,
+      "lag": 6.223,
+      "queue": 3.996,
+      "inference": 2.192,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 1,
+      "round": 9,
+      "latency": 1.966,
+      "lag": 1.968,
+      "queue": 0.0,
+      "inference": 1.954,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 3,
+      "round": 9,
+      "latency": 2.008,
+      "lag": 2.009,
+      "queue": 0.0,
+      "inference": 1.996,
+      "text": "He has grieved doubts whether Sir Frederick Layton's work is really Greek"
+    },
+    {
+      "stream": 9,
+      "round": 9,
+      "latency": 2.076,
+      "lag": 2.08,
+      "queue": 0.0,
+      "inference": 2.063,
+      "text": "He laments most bitterly the divorce that has been made between decorative"
+    },
+    {
+      "stream": 5,
+      "round": 9,
+      "latency": 2.378,
+      "lag": 2.383,
+      "queue": 0.208,
+      "inference": 2.159,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 2,
+      "round": 9,
+      "latency": 4.031,
+      "lag": 4.035,
+      "queue": 1.989,
+      "inference": 2.023,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 8,
+      "round": 9,
+      "latency": 4.077,
+      "lag": 4.082,
+      "queue": 2.06,
+      "inference": 1.997,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 10,
+      "round": 9,
+      "latency": 4.08,
+      "lag": 4.083,
+      "queue": 1.951,
+      "inference": 2.11,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 4,
+      "round": 9,
+      "latency": 4.437,
+      "lag": 4.442,
+      "queue": 2.362,
+      "inference": 2.059,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 6,
+      "round": 9,
+      "latency": 5.847,
+      "lag": 5.861,
+      "queue": 4.057,
+      "inference": 1.772,
+      "text": "On the general principles of art, Mr. Quilter writes with equal lucidity."
+    },
+    {
+      "stream": 11,
+      "round": 9,
+      "latency": 5.914,
+      "lag": 5.916,
+      "queue": 4.013,
+      "inference": 1.881,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 0,
+      "round": 9,
+      "latency": 5.959,
+      "lag": 5.963,
+      "queue": 4.058,
+      "inference": 1.881,
+      "text": "Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his"
+    },
+    {
+      "stream": 7,
+      "round": 9,
+      "latency": 5.973,
+      "lag": 6.196,
+      "queue": 4.215,
+      "inference": 1.752,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 2,
+      "round": 10,
+      "latency": 1.725,
+      "lag": 1.725,
+      "queue": 0.0,
+      "inference": 1.717,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 10,
+      "round": 10,
+      "latency": 1.745,
+      "lag": 1.747,
+      "queue": 0.0,
+      "inference": 1.732,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 8,
+      "round": 10,
+      "latency": 1.846,
+      "lag": 1.849,
+      "queue": 0.181,
+      "inference": 1.653,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 0,
+      "round": 10,
+      "latency": 1.919,
+      "lag": 1.92,
+      "queue": 0.0,
+      "inference": 1.908,
+      "text": "Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his"
+    },
+    {
+      "stream": 4,
+      "round": 10,
+      "latency": 3.391,
+      "lag": 3.393,
+      "queue": 1.71,
+      "inference": 1.667,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 1,
+      "round": 10,
+      "latency": 3.492,
+      "lag": 3.494,
+      "queue": 1.73,
+      "inference": 1.744,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 6,
+      "round": 10,
+      "latency": 3.605,
+      "lag": 3.608,
+      "queue": 1.831,
+      "inference": 1.758,
+      "text": "On the general principles of art, Mr. Quilter writes with equal lucidity."
+    },
+    {
+      "stream": 9,
+      "round": 10,
+      "latency": 3.744,
+      "lag": 3.745,
+      "queue": 1.888,
+      "inference": 1.827,
+      "text": "He laments most bitterly the divorce that has been made between decorative"
+    },
+    {
+      "stream": 5,
+      "round": 10,
+      "latency": 5.04,
+      "lag": 5.044,
+      "queue": 3.36,
+      "inference": 1.651,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 3,
+      "round": 10,
+      "latency": 5.236,
+      "lag": 5.24,
+      "queue": 3.459,
+      "inference": 1.745,
+      "text": "He has grieved doubts whether Sir Frederick Layton's work is really Greek"
+    },
+    {
+      "stream": 11,
+      "round": 10,
+      "latency": 5.284,
+      "lag": 5.288,
+      "queue": 3.573,
+      "inference": 1.679,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 7,
+      "round": 10,
+      "latency": 5.2,
+      "lag": 5.396,
+      "queue": 3.545,
+      "inference": 1.65,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 4,
+      "round": 11,
+      "latency": 1.686,
+      "lag": 1.69,
+      "queue": 0.0,
+      "inference": 1.673,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 6,
+      "round": 11,
+      "latency": 1.686,
+      "lag": 1.691,
+      "queue": 0.0,
+      "inference": 1.673,
+      "text": "On the general principles of art, Mr. Quilter writes with equal lucidity."
+    },
+    {
+      "stream": 5,
+      "round": 11,
+      "latency": 1.711,
+      "lag": 1.713,
+      "queue": 0.0,
+      "inference": 1.694,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 7,
+      "round": 11,
+      "latency": 1.739,
+      "lag": 1.74,
+      "queue": 0.0,
+      "inference": 1.725,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 8,
+      "round": 11,
+      "latency": 3.368,
+      "lag": 3.371,
+      "queue": 1.669,
+      "inference": 1.682,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 2,
+      "round": 11,
+      "latency": 3.404,
+      "lag": 3.408,
+      "queue": 1.671,
+      "inference": 1.715,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 3,
+      "round": 11,
+      "latency": 3.437,
+      "lag": 3.441,
+      "queue": 1.688,
+      "inference": 1.725,
+      "text": "He has grieved doubts whether Sir Frederick Layton's work is really Greek"
+    },
+    {
+      "stream": 9,
+      "round": 11,
+      "latency": 3.507,
+      "lag": 3.51,
+      "queue": 1.715,
+      "inference": 1.769,
+      "text": "He laments most bitterly the divorce that has been made between decorative"
+    },
+    {
+      "stream": 11,
+      "round": 11,
+      "latency": 5.109,
+      "lag": 5.115,
+      "queue": 3.345,
+      "inference": 1.743,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 1,
+      "round": 11,
+      "latency": 5.15,
+      "lag": 5.155,
+      "queue": 3.407,
+      "inference": 1.716,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 10,
+      "round": 11,
+      "latency": 5.212,
+      "lag": 5.218,
+      "queue": 3.48,
+      "inference": 1.708,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 0,
+      "round": 11,
+      "latency": 5.22,
+      "lag": 5.226,
+      "queue": 3.381,
+      "inference": 1.818,
+      "text": "Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his"
+    },
+    {
+      "stream": 9,
+      "round": 12,
+      "latency": 1.7,
+      "lag": 1.701,
+      "queue": 0.0,
+      "inference": 1.69,
+      "text": "He laments most bitterly the divorce that has been made between decorative"
+    },
+    {
+      "stream": 1,
+      "round": 12,
+      "latency": 1.698,
+      "lag": 1.703,
+      "queue": 0.0,
+      "inference": 1.685,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 7,
+      "round": 12,
+      "latency": 1.773,
+      "lag": 1.775,
+      "queue": 0.0,
+      "inference": 1.761,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 0,
+      "round": 12,
+      "latency": 1.896,
+      "lag": 1.9,
+      "queue": 0.0,
+      "inference": 1.884,
+      "text": "Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his"
+    },
+    {
+      "stream": 4,
+      "round": 12,
+      "latency": 3.442,
+      "lag": 3.446,
+      "queue": 1.682,
+      "inference": 1.742,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 10,
+      "round": 12,
+      "latency": 3.455,
+      "lag": 3.46,
+      "queue": 1.753,
+      "inference": 1.684,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 6,
+      "round": 12,
+      "latency": 3.477,
+      "lag": 3.48,
+      "queue": 1.681,
+      "inference": 1.778,
+      "text": "On the general principles of art, Mr. Quilter writes with equal lucidity."
+    },
+    {
+      "stream": 8,
+      "round": 12,
+      "latency": 3.533,
+      "lag": 3.535,
+      "queue": 1.872,
+      "inference": 1.631,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 5,
+      "round": 12,
+      "latency": 5.17,
+      "lag": 5.175,
+      "queue": 3.447,
+      "inference": 1.69,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 2,
+      "round": 12,
+      "latency": 5.169,
+      "lag": 5.175,
+      "queue": 3.427,
+      "inference": 1.714,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 3,
+      "round": 12,
+      "latency": 5.17,
+      "lag": 5.176,
+      "queue": 3.417,
+      "inference": 1.729,
+      "text": "He has grieved doubts whether Sir Frederick Layton's work is really Greek"
+    },
+    {
+      "stream": 11,
+      "round": 12,
+      "latency": 5.256,
+      "lag": 5.263,
+      "queue": 3.499,
+      "inference": 1.73,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 4,
+      "round": 13,
+      "latency": 1.679,
+      "lag": 1.683,
+      "queue": 0.0,
+      "inference": 1.662,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 2,
+      "round": 13,
+      "latency": 1.684,
+      "lag": 1.687,
+      "queue": 0.0,
+      "inference": 1.673,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 3,
+      "round": 13,
+      "latency": 1.698,
+      "lag": 1.7,
+      "queue": 0.0,
+      "inference": 1.685,
+      "text": "He has grieved doubts whether Sir Frederick Layton's work is really Greek"
+    },
+    {
+      "stream": 11,
+      "round": 13,
+      "latency": 1.752,
+      "lag": 1.758,
+      "queue": 0.0,
+      "inference": 1.738,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 1,
+      "round": 13,
+      "latency": 3.333,
+      "lag": 3.337,
+      "queue": 1.658,
+      "inference": 1.658,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 5,
+      "round": 13,
+      "latency": 3.385,
+      "lag": 3.388,
+      "queue": 1.727,
+      "inference": 1.629,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 9,
+      "round": 13,
+      "latency": 3.478,
+      "lag": 3.483,
+      "queue": 1.664,
+      "inference": 1.795,
+      "text": "He laments most bitterly the divorce that has been made between decorative"
+    },
+    {
+      "stream": 0,
+      "round": 13,
+      "latency": 3.529,
+      "lag": 3.534,
+      "queue": 1.674,
+      "inference": 1.833,
+      "text": "Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his"
+    },
+    {
+      "stream": 10,
+      "round": 13,
+      "latency": 5.042,
+      "lag": 5.049,
+      "queue": 3.356,
+      "inference": 1.66,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 7,
+      "round": 13,
+      "latency": 5.043,
+      "lag": 5.049,
+      "queue": 3.305,
+      "inference": 1.712,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 8,
+      "round": 13,
+      "latency": 5.138,
+      "lag": 5.145,
+      "queue": 3.498,
+      "inference": 1.613,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 6,
+      "round": 13,
+      "latency": 5.158,
+      "lag": 5.164,
+      "queue": 3.448,
+      "inference": 1.681,
+      "text": "On the general principles of art, Mr. Quilter writes with equal lucidity."
+    },
+    {
+      "stream": 8,
+      "round": 14,
+      "latency": 1.622,
+      "lag": 1.625,
+      "queue": 0.0,
+      "inference": 1.611,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 7,
+      "round": 14,
+      "latency": 1.693,
+      "lag": 1.695,
+      "queue": 0.0,
+      "inference": 1.681,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 5,
+      "round": 14,
+      "latency": 1.733,
+      "lag": 1.739,
+      "queue": 0.0,
+      "inference": 1.716,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 9,
+      "round": 14,
+      "latency": 1.776,
+      "lag": 1.781,
+      "queue": 0.0,
+      "inference": 1.756,
+      "text": "He laments most bitterly the divorce that has been made between decorative"
+    },
+    {
+      "stream": 4,
+      "round": 14,
+      "latency": 3.36,
+      "lag": 3.364,
+      "queue": 1.606,
+      "inference": 1.737,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 2,
+      "round": 14,
+      "latency": 3.394,
+      "lag": 3.399,
+      "queue": 1.673,
+      "inference": 1.703,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 6,
+      "round": 14,
+      "latency": 3.478,
+      "lag": 3.481,
+      "queue": 1.751,
+      "inference": 1.699,
+      "text": "On the general principles of art, Mr. Quilter writes with equal lucidity."
+    },
+    {
+      "stream": 10,
+      "round": 14,
+      "latency": 3.518,
+      "lag": 3.524,
+      "queue": 1.714,
+      "inference": 1.783,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 1,
+      "round": 14,
+      "latency": 5.038,
+      "lag": 5.045,
+      "queue": 3.328,
+      "inference": 1.681,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 3,
+      "round": 14,
+      "latency": 5.064,
+      "lag": 5.071,
+      "queue": 3.362,
+      "inference": 1.671,
+      "text": "He has grieved doubts whether Sir Frederick Layton's work is really Greek"
+    },
+    {
+      "stream": 11,
+      "round": 14,
+      "latency": 5.181,
+      "lag": 5.187,
+      "queue": 3.441,
+      "inference": 1.708,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 0,
+      "round": 14,
+      "latency": 5.285,
+      "lag": 5.292,
+      "queue": 3.481,
+      "inference": 1.773,
+      "text": "Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his"
+    },
+    {
+      "stream": 1,
+      "round": 15,
+      "latency": 1.69,
+      "lag": 1.691,
+      "queue": 0.0,
+      "inference": 1.677,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 8,
+      "round": 15,
+      "latency": 1.689,
+      "lag": 1.693,
+      "queue": 0.0,
+      "inference": 1.676,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 4,
+      "round": 15,
+      "latency": 1.707,
+      "lag": 1.712,
+      "queue": 0.0,
+      "inference": 1.694,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 0,
+      "round": 15,
+      "latency": 1.763,
+      "lag": 1.765,
+      "queue": 0.0,
+      "inference": 1.745,
+      "text": "Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his"
+    },
+    {
+      "stream": 3,
+      "round": 15,
+      "latency": 3.365,
+      "lag": 3.368,
+      "queue": 1.672,
+      "inference": 1.677,
+      "text": "He has grieved doubts whether Sir Frederick Layton's work is really Greek"
+    },
+    {
+      "stream": 10,
+      "round": 15,
+      "latency": 3.396,
+      "lag": 3.4,
+      "queue": 1.672,
+      "inference": 1.704,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 5,
+      "round": 15,
+      "latency": 3.517,
+      "lag": 3.519,
+      "queue": 1.736,
+      "inference": 1.759,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 11,
+      "round": 15,
+      "latency": 3.517,
+      "lag": 3.522,
+      "queue": 1.69,
+      "inference": 1.808,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 9,
+      "round": 15,
+      "latency": 5.081,
+      "lag": 5.086,
+      "queue": 3.344,
+      "inference": 1.718,
+      "text": "He laments most bitterly the divorce that has been made between decorative"
+    },
+    {
+      "stream": 7,
+      "round": 15,
+      "latency": 5.117,
+      "lag": 5.123,
+      "queue": 3.371,
+      "inference": 1.724,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 6,
+      "round": 15,
+      "latency": 5.219,
+      "lag": 5.225,
+      "queue": 3.492,
+      "inference": 1.704,
+      "text": "On the general principles of art, Mr. Quilter writes with equal lucidity."
+    },
+    {
+      "stream": 2,
+      "round": 15,
+      "latency": 5.218,
+      "lag": 5.225,
+      "queue": 3.494,
+      "inference": 1.701,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 5,
+      "round": 16,
+      "latency": 1.612,
+      "lag": 1.618,
+      "queue": 0.0,
+      "inference": 1.599,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 2,
+      "round": 16,
+      "latency": 1.705,
+      "lag": 1.707,
+      "queue": 0.0,
+      "inference": 1.695,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 6,
+      "round": 16,
+      "latency": 1.771,
+      "lag": 1.774,
+      "queue": 0.0,
+      "inference": 1.754,
+      "text": "On the general principles of art, Mr. Quilter writes with equal lucidity."
+    },
+    {
+      "stream": 11,
+      "round": 16,
+      "latency": 1.881,
+      "lag": 1.885,
+      "queue": 0.0,
+      "inference": 1.866,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 9,
+      "round": 16,
+      "latency": 3.346,
+      "lag": 3.349,
+      "queue": 1.597,
+      "inference": 1.731,
+      "text": "He laments most bitterly the divorce that has been made between decorative"
+    },
+    {
+      "stream": 8,
+      "round": 16,
+      "latency": 3.441,
+      "lag": 3.446,
+      "queue": 1.743,
+      "inference": 1.675,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 3,
+      "round": 16,
+      "latency": 3.574,
+      "lag": 3.579,
+      "queue": 1.685,
+      "inference": 1.871,
+      "text": "He has grieved doubts whether Sir Frederick Layton's work is really Greek"
+    },
+    {
+      "stream": 7,
+      "round": 16,
+      "latency": 3.638,
+      "lag": 3.641,
+      "queue": 1.855,
+      "inference": 1.757,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 1,
+      "round": 16,
+      "latency": 5.049,
+      "lag": 5.055,
+      "queue": 3.317,
+      "inference": 1.705,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 4,
+      "round": 16,
+      "latency": 5.22,
+      "lag": 5.226,
+      "queue": 3.545,
+      "inference": 1.646,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 10,
+      "round": 16,
+      "latency": 5.248,
+      "lag": 5.255,
+      "queue": 3.605,
+      "inference": 1.615,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 0,
+      "round": 16,
+      "latency": 5.329,
+      "lag": 5.336,
+      "queue": 3.413,
+      "inference": 1.89,
+      "text": "Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his"
+    },
+    {
+      "stream": 1,
+      "round": 17,
+      "latency": 1.667,
+      "lag": 1.669,
+      "queue": 0.0,
+      "inference": 1.658,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 10,
+      "round": 17,
+      "latency": 1.711,
+      "lag": 1.713,
+      "queue": 0.0,
+      "inference": 1.689,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 2,
+      "round": 17,
+      "latency": 1.744,
+      "lag": 1.747,
+      "queue": 0.0,
+      "inference": 1.729,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 3,
+      "round": 17,
+      "latency": 1.773,
+      "lag": 1.778,
+      "queue": 0.0,
+      "inference": 1.755,
+      "text": "He has grieved doubts whether Sir Frederick Layton's work is really Greek"
+    },
+    {
+      "stream": 9,
+      "round": 17,
+      "latency": 3.31,
+      "lag": 3.313,
+      "queue": 1.649,
+      "inference": 1.644,
+      "text": "He laments most bitterly the divorce that has been made between decorative"
+    },
+    {
+      "stream": 8,
+      "round": 17,
+      "latency": 3.446,
+      "lag": 3.448,
+      "queue": 1.752,
+      "inference": 1.673,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 5,
+      "round": 17,
+      "latency": 3.474,
+      "lag": 3.478,
+      "queue": 1.682,
+      "inference": 1.766,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 7,
+      "round": 17,
+      "latency": 3.481,
+      "lag": 3.485,
+      "queue": 1.722,
+      "inference": 1.741,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 11,
+      "round": 17,
+      "latency": 5.063,
+      "lag": 5.069,
+      "queue": 3.287,
+      "inference": 1.755,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 4,
+      "round": 17,
+      "latency": 5.133,
+      "lag": 5.138,
+      "queue": 3.421,
+      "inference": 1.69,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 6,
+      "round": 17,
+      "latency": 5.164,
+      "lag": 5.17,
+      "queue": 3.458,
+      "inference": 1.685,
+      "text": "On the general principles of art, Mr. Quilter writes with equal lucidity."
+    },
+    {
+      "stream": 0,
+      "round": 17,
+      "latency": 5.266,
+      "lag": 5.271,
+      "queue": 3.449,
+      "inference": 1.795,
+      "text": "Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his"
+    },
+    {
+      "stream": 4,
+      "round": 18,
+      "latency": 1.699,
+      "lag": 1.703,
+      "queue": 0.0,
+      "inference": 1.657,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 5,
+      "round": 18,
+      "latency": 1.701,
+      "lag": 1.704,
+      "queue": 0.0,
+      "inference": 1.689,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 2,
+      "round": 18,
+      "latency": 1.721,
+      "lag": 1.723,
+      "queue": 0.0,
+      "inference": 1.712,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 3,
+      "round": 18,
+      "latency": 1.739,
+      "lag": 1.744,
+      "queue": 0.0,
+      "inference": 1.689,
+      "text": "He has grieved doubts whether Sir Frederick Layton's work is really Greek"
+    },
+    {
+      "stream": 7,
+      "round": 18,
+      "latency": 3.442,
+      "lag": 3.445,
+      "queue": 1.656,
+      "inference": 1.74,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 6,
+      "round": 18,
+      "latency": 3.461,
+      "lag": 3.466,
+      "queue": 1.676,
+      "inference": 1.741,
+      "text": "On the general principles of art, Mr. Quilter writes with equal lucidity."
+    },
+    {
+      "stream": 0,
+      "round": 18,
+      "latency": 3.48,
+      "lag": 3.485,
+      "queue": 1.656,
+      "inference": 1.777,
+      "text": "Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his"
+    },
+    {
+      "stream": 11,
+      "round": 18,
+      "latency": 3.534,
+      "lag": 3.537,
+      "queue": 1.692,
+      "inference": 1.793,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 10,
+      "round": 18,
+      "latency": 5.136,
+      "lag": 5.142,
+      "queue": 3.419,
+      "inference": 1.676,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 9,
+      "round": 18,
+      "latency": 5.148,
+      "lag": 5.154,
+      "queue": 3.397,
+      "inference": 1.708,
+      "text": "He laments most bitterly the divorce that has been made between decorative"
+    },
+    {
+      "stream": 8,
+      "round": 18,
+      "latency": 5.171,
+      "lag": 5.178,
+      "queue": 3.49,
+      "inference": 1.641,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 1,
+      "round": 18,
+      "latency": 5.19,
+      "lag": 5.196,
+      "queue": 3.438,
+      "inference": 1.71,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 5,
+      "round": 19,
+      "latency": 1.655,
+      "lag": 1.656,
+      "queue": 0.0,
+      "inference": 1.646,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 9,
+      "round": 19,
+      "latency": 1.73,
+      "lag": 1.733,
+      "queue": 0.0,
+      "inference": 1.715,
+      "text": "He laments most bitterly the divorce that has been made between decorative"
+    },
+    {
+      "stream": 6,
+      "round": 19,
+      "latency": 1.733,
+      "lag": 1.735,
+      "queue": 0.0,
+      "inference": 1.718,
+      "text": "On the general principles of art, Mr. Quilter writes with equal lucidity."
+    },
+    {
+      "stream": 3,
+      "round": 19,
+      "latency": 1.834,
+      "lag": 1.838,
+      "queue": 0.0,
+      "inference": 1.82,
+      "text": "He has grieved doubts whether Sir Frederick Layton's work is really Greek"
+    },
+    {
+      "stream": 8,
+      "round": 19,
+      "latency": 3.283,
+      "lag": 3.286,
+      "queue": 1.637,
+      "inference": 1.628,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 4,
+      "round": 19,
+      "latency": 3.366,
+      "lag": 3.37,
+      "queue": 1.71,
+      "inference": 1.638,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 10,
+      "round": 19,
+      "latency": 3.538,
+      "lag": 3.541,
+      "queue": 1.815,
+      "inference": 1.702,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 0,
+      "round": 19,
+      "latency": 3.633,
+      "lag": 3.637,
+      "queue": 1.71,
+      "inference": 1.901,
+      "text": "Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his"
+    },
+    {
+      "stream": 2,
+      "round": 19,
+      "latency": 5.004,
+      "lag": 5.01,
+      "queue": 3.261,
+      "inference": 1.724,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 11,
+      "round": 19,
+      "latency": 5.129,
+      "lag": 5.135,
+      "queue": 3.342,
+      "inference": 1.765,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 1,
+      "round": 19,
+      "latency": 5.213,
+      "lag": 5.218,
+      "queue": 3.513,
+      "inference": 1.677,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 7,
+      "round": 19,
+      "latency": 5.254,
+      "lag": 5.261,
+      "queue": 3.607,
+      "inference": 1.625,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 5,
+      "round": 20,
+      "latency": 1.837,
+      "lag": 1.841,
+      "queue": 0.0,
+      "inference": 1.824,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 7,
+      "round": 20,
+      "latency": 1.853,
+      "lag": 1.854,
+      "queue": 0.0,
+      "inference": 1.842,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 1,
+      "round": 20,
+      "latency": 1.854,
+      "lag": 1.857,
+      "queue": 0.0,
+      "inference": 1.844,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 2,
+      "round": 20,
+      "latency": 1.889,
+      "lag": 1.894,
+      "queue": 0.0,
+      "inference": 1.878,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 3,
+      "round": 20,
+      "latency": 3.957,
+      "lag": 3.962,
+      "queue": 1.836,
+      "inference": 2.104,
+      "text": "He has grieved doubts whether Sir Frederick Layton's work is really Greek"
+    },
+    {
+      "stream": 6,
+      "round": 20,
+      "latency": 3.993,
+      "lag": 3.997,
+      "queue": 1.869,
+      "inference": 2.094,
+      "text": "On the general principles of art, Mr. Quilter writes with equal lucidity."
+    },
+    {
+      "stream": 10,
+      "round": 20,
+      "latency": 4.036,
+      "lag": 4.04,
+      "queue": 1.835,
+      "inference": 2.182,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 11,
+      "round": 20,
+      "latency": 4.13,
+      "lag": 4.134,
+      "queue": 1.82,
+      "inference": 2.285,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 9,
+      "round": 20,
+      "latency": 6.188,
+      "lag": 6.194,
+      "queue": 3.946,
+      "inference": 2.201,
+      "text": "He laments most bitterly the divorce that has been made between decorative"
+    },
+    {
+      "stream": 8,
+      "round": 20,
+      "latency": 6.19,
+      "lag": 6.195,
+      "queue": 3.996,
+      "inference": 2.153,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 4,
+      "round": 20,
+      "latency": 6.214,
+      "lag": 6.22,
+      "queue": 4.084,
+      "inference": 2.087,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 0,
+      "round": 20,
+      "latency": 6.401,
+      "lag": 6.407,
+      "queue": 3.921,
+      "inference": 2.444,
+      "text": "Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his"
+    },
+    {
+      "stream": 3,
+      "round": 21,
+      "latency": 2.141,
+      "lag": 2.146,
+      "queue": 0.193,
+      "inference": 1.928,
+      "text": "He has grieved doubts whether Sir Frederick Layton's work is really Greek"
+    },
+    {
+      "stream": 2,
+      "round": 21,
+      "latency": 2.195,
+      "lag": 2.198,
+      "queue": 0.181,
+      "inference": 2.003,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 11,
+      "round": 21,
+      "latency": 2.219,
+      "lag": 2.221,
+      "queue": 0.183,
+      "inference": 2.021,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 7,
+      "round": 21,
+      "latency": 2.353,
+      "lag": 2.359,
+      "queue": 0.383,
+      "inference": 1.953,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 1,
+      "round": 21,
+      "latency": 3.909,
+      "lag": 3.913,
+      "queue": 2.123,
+      "inference": 1.766,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 6,
+      "round": 21,
+      "latency": 3.976,
+      "lag": 3.981,
+      "queue": 2.173,
+      "inference": 1.782,
+      "text": "On the general principles of art, Mr. Quilter writes with equal lucidity."
+    },
+    {
+      "stream": 10,
+      "round": 21,
+      "latency": 4.114,
+      "lag": 4.12,
+      "queue": 2.191,
+      "inference": 1.903,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 5,
+      "round": 21,
+      "latency": 4.143,
+      "lag": 4.148,
+      "queue": 2.334,
+      "inference": 1.783,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 8,
+      "round": 21,
+      "latency": 5.55,
+      "lag": 5.745,
+      "queue": 3.713,
+      "inference": 1.831,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 4,
+      "round": 21,
+      "latency": 5.699,
+      "lag": 5.919,
+      "queue": 3.895,
+      "inference": 1.799,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 9,
+      "round": 21,
+      "latency": 5.729,
+      "lag": 5.924,
+      "queue": 3.779,
+      "inference": 1.943,
+      "text": "He laments most bitterly the divorce that has been made between decorative"
+    },
+    {
+      "stream": 0,
+      "round": 21,
+      "latency": 5.668,
+      "lag": 6.075,
+      "queue": 3.733,
+      "inference": 1.926,
+      "text": "Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his"
+    },
+    {
+      "stream": 9,
+      "round": 22,
+      "latency": 1.814,
+      "lag": 1.816,
+      "queue": 0.0,
+      "inference": 1.804,
+      "text": "He laments most bitterly the divorce that has been made between decorative"
+    },
+    {
+      "stream": 4,
+      "round": 22,
+      "latency": 1.827,
+      "lag": 1.828,
+      "queue": 0.0,
+      "inference": 1.819,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 5,
+      "round": 22,
+      "latency": 1.864,
+      "lag": 1.868,
+      "queue": 0.056,
+      "inference": 1.796,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 10,
+      "round": 22,
+      "latency": 1.901,
+      "lag": 1.903,
+      "queue": 0.0,
+      "inference": 1.89,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 8,
+      "round": 22,
+      "latency": 3.625,
+      "lag": 3.628,
+      "queue": 1.795,
+      "inference": 1.81,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 1,
+      "round": 22,
+      "latency": 3.633,
+      "lag": 3.636,
+      "queue": 1.807,
+      "inference": 1.806,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 7,
+      "round": 22,
+      "latency": 3.675,
+      "lag": 3.677,
+      "queue": 1.877,
+      "inference": 1.773,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 2,
+      "round": 22,
+      "latency": 3.691,
+      "lag": 3.695,
+      "queue": 1.842,
+      "inference": 1.823,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 6,
+      "round": 22,
+      "latency": 5.479,
+      "lag": 5.483,
+      "queue": 3.6,
+      "inference": 1.855,
+      "text": "On the general principles of art, Mr. Quilter writes with equal lucidity."
+    },
+    {
+      "stream": 3,
+      "round": 22,
+      "latency": 5.537,
+      "lag": 5.542,
+      "queue": 3.609,
+      "inference": 1.906,
+      "text": "He has grieved doubts whether Sir Frederick Layton's work is really Greek"
+    },
+    {
+      "stream": 11,
+      "round": 22,
+      "latency": 5.576,
+      "lag": 5.58,
+      "queue": 3.65,
+      "inference": 1.9,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 0,
+      "round": 22,
+      "latency": 5.557,
+      "lag": 5.632,
+      "queue": 3.605,
+      "inference": 1.938,
+      "text": "Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his"
+    },
+    {
+      "stream": 5,
+      "round": 23,
+      "latency": 1.934,
+      "lag": 1.936,
+      "queue": 0.0,
+      "inference": 1.925,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 6,
+      "round": 23,
+      "latency": 1.975,
+      "lag": 1.978,
+      "queue": 0.0,
+      "inference": 1.954,
+      "text": "On the general principles of art, Mr. Quilter writes with equal lucidity."
+    },
+    {
+      "stream": 7,
+      "round": 23,
+      "latency": 1.978,
+      "lag": 1.978,
+      "queue": 0.0,
+      "inference": 1.965,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 11,
+      "round": 23,
+      "latency": 2.064,
+      "lag": 2.065,
+      "queue": 0.0,
+      "inference": 2.034,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 10,
+      "round": 23,
+      "latency": 4.232,
+      "lag": 4.234,
+      "queue": 1.958,
+      "inference": 2.245,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 9,
+      "round": 23,
+      "latency": 4.299,
+      "lag": 4.301,
+      "queue": 1.953,
+      "inference": 2.318,
+      "text": "He laments most bitterly the divorce that has been made between decorative"
+    },
+    {
+      "stream": 0,
+      "round": 23,
+      "latency": 4.454,
+      "lag": 4.456,
+      "queue": 1.921,
+      "inference": 2.519,
+      "text": "Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his"
+    },
+    {
+      "stream": 3,
+      "round": 23,
+      "latency": 4.622,
+      "lag": 4.623,
+      "queue": 2.026,
+      "inference": 2.572,
+      "text": "He has grieved doubts whether Sir Frederick Layton's work is really Greek"
+    },
+    {
+      "stream": 4,
+      "round": 23,
+      "latency": 6.538,
+      "lag": 6.542,
+      "queue": 4.274,
+      "inference": 2.24,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 8,
+      "round": 23,
+      "latency": 6.888,
+      "lag": 6.892,
+      "queue": 4.596,
+      "inference": 2.271,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 2,
+      "round": 23,
+      "latency": 6.922,
+      "lag": 6.926,
+      "queue": 4.2,
+      "inference": 2.699,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 1,
+      "round": 23,
+      "latency": 7.131,
+      "lag": 7.134,
+      "queue": 4.432,
+      "inference": 2.678,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 7,
+      "round": 24,
+      "latency": 2.721,
+      "lag": 2.725,
+      "queue": 0.524,
+      "inference": 2.176,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 5,
+      "round": 24,
+      "latency": 3.293,
+      "lag": 3.303,
+      "queue": 1.098,
+      "inference": 2.163,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 9,
+      "round": 24,
+      "latency": 3.299,
+      "lag": 3.303,
+      "queue": 0.869,
+      "inference": 2.41,
+      "text": "He laments most bitterly the divorce that has been made between decorative"
+    },
+    {
+      "stream": 11,
+      "round": 24,
+      "latency": 3.405,
+      "lag": 3.41,
+      "queue": 0.902,
+      "inference": 2.481,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 10,
+      "round": 24,
+      "latency": 4.48,
+      "lag": 4.485,
+      "queue": 2.683,
+      "inference": 1.766,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 3,
+      "round": 24,
+      "latency": 5.093,
+      "lag": 5.099,
+      "queue": 3.263,
+      "inference": 1.795,
+      "text": "He has grieved doubts whether Sir Frederick Layton's work is really Greek"
+    },
+    {
+      "stream": 6,
+      "round": 24,
+      "latency": 5.124,
+      "lag": 5.128,
+      "queue": 3.263,
+      "inference": 1.822,
+      "text": "On the general principles of art, Mr. Quilter writes with equal lucidity."
+    },
+    {
+      "stream": 0,
+      "round": 24,
+      "latency": 5.292,
+      "lag": 5.298,
+      "queue": 3.37,
+      "inference": 1.886,
+      "text": "Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his"
+    },
+    {
+      "stream": 4,
+      "round": 24,
+      "latency": 5.705,
+      "lag": 6.247,
+      "queue": 3.935,
+      "inference": 1.761,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 8,
+      "round": 24,
+      "latency": 5.95,
+      "lag": 6.842,
+      "queue": 4.202,
+      "inference": 1.742,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 2,
+      "round": 24,
+      "latency": 5.995,
+      "lag": 6.921,
+      "queue": 4.191,
+      "inference": 1.792,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 1,
+      "round": 24,
+      "latency": 5.909,
+      "lag": 7.043,
+      "queue": 4.16,
+      "inference": 1.745,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 9,
+      "round": 25,
+      "latency": 2.04,
+      "lag": 2.041,
+      "queue": 0.238,
+      "inference": 1.794,
+      "text": "He laments most bitterly the divorce that has been made between decorative"
+    },
+    {
+      "stream": 5,
+      "round": 25,
+      "latency": 2.656,
+      "lag": 2.658,
+      "queue": 0.83,
+      "inference": 1.815,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 6,
+      "round": 25,
+      "latency": 2.73,
+      "lag": 2.733,
+      "queue": 0.902,
+      "inference": 1.812,
+      "text": "On the general principles of art, Mr. Quilter writes with equal lucidity."
+    },
+    {
+      "stream": 7,
+      "round": 25,
+      "latency": 2.882,
+      "lag": 2.887,
+      "queue": 1.024,
+      "inference": 1.842,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 10,
+      "round": 25,
+      "latency": 3.987,
+      "lag": 3.99,
+      "queue": 2.019,
+      "inference": 1.948,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 11,
+      "round": 25,
+      "latency": 4.487,
+      "lag": 4.491,
+      "queue": 2.705,
+      "inference": 1.759,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 0,
+      "round": 25,
+      "latency": 4.655,
+      "lag": 4.658,
+      "queue": 2.633,
+      "inference": 1.999,
+      "text": "Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his"
+    },
+    {
+      "stream": 3,
+      "round": 25,
+      "latency": 4.754,
+      "lag": 4.758,
+      "queue": 2.86,
+      "inference": 1.87,
+      "text": "He has grieved doubts whether Sir Frederick Layton's work is really Greek"
+    },
+    {
+      "stream": 4,
+      "round": 25,
+      "latency": 5.489,
+      "lag": 5.736,
+      "queue": 3.739,
+      "inference": 1.745,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 8,
+      "round": 25,
+      "latency": 5.343,
+      "lag": 6.185,
+      "queue": 3.645,
+      "inference": 1.693,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 2,
+      "round": 25,
+      "latency": 5.478,
+      "lag": 6.399,
+      "queue": 3.732,
+      "inference": 1.74,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 1,
+      "round": 25,
+      "latency": 5.481,
+      "lag": 6.524,
+      "queue": 3.71,
+      "inference": 1.765,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 3,
+      "round": 26,
+      "latency": 1.787,
+      "lag": 1.788,
+      "queue": 0.0,
+      "inference": 1.78,
+      "text": "He has grieved doubts whether Sir Frederick Layton's work is really Greek"
+    },
+    {
+      "stream": 9,
+      "round": 26,
+      "latency": 1.983,
+      "lag": 1.985,
+      "queue": 0.174,
+      "inference": 1.799,
+      "text": "He laments most bitterly the divorce that has been made between decorative"
+    },
+    {
+      "stream": 6,
+      "round": 26,
+      "latency": 2.111,
+      "lag": 2.113,
+      "queue": 0.385,
+      "inference": 1.714,
+      "text": "On the general principles of art, Mr. Quilter writes with equal lucidity."
+    },
+    {
+      "stream": 10,
+      "round": 26,
+      "latency": 2.33,
+      "lag": 2.333,
+      "queue": 0.507,
+      "inference": 1.809,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 11,
+      "round": 26,
+      "latency": 3.749,
+      "lag": 3.752,
+      "queue": 1.964,
+      "inference": 1.767,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 0,
+      "round": 26,
+      "latency": 3.825,
+      "lag": 3.827,
+      "queue": 1.77,
+      "inference": 2.038,
+      "text": "Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his"
+    },
+    {
+      "stream": 4,
+      "round": 26,
+      "latency": 3.87,
+      "lag": 3.874,
+      "queue": 2.091,
+      "inference": 1.76,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 7,
+      "round": 26,
+      "latency": 4.067,
+      "lag": 4.069,
+      "queue": 2.31,
+      "inference": 1.736,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 5,
+      "round": 26,
+      "latency": 5.502,
+      "lag": 5.506,
+      "queue": 3.728,
+      "inference": 1.753,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 8,
+      "round": 26,
+      "latency": 5.382,
+      "lag": 5.567,
+      "queue": 3.638,
+      "inference": 1.739,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 2,
+      "round": 26,
+      "latency": 5.216,
+      "lag": 5.615,
+      "queue": 3.47,
+      "inference": 1.741,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 1,
+      "round": 26,
+      "latency": 5.206,
+      "lag": 5.73,
+      "queue": 3.541,
+      "inference": 1.661,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 8,
+      "round": 27,
+      "latency": 1.661,
+      "lag": 1.664,
+      "queue": 0.0,
+      "inference": 1.648,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 4,
+      "round": 27,
+      "latency": 1.692,
+      "lag": 1.696,
+      "queue": 0.0,
+      "inference": 1.674,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 2,
+      "round": 27,
+      "latency": 1.745,
+      "lag": 1.746,
+      "queue": 0.0,
+      "inference": 1.732,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 6,
+      "round": 27,
+      "latency": 1.748,
+      "lag": 1.75,
+      "queue": 0.0,
+      "inference": 1.736,
+      "text": "On the general principles of art, Mr. Quilter writes with equal lucidity."
+    },
+    {
+      "stream": 1,
+      "round": 27,
+      "latency": 3.341,
+      "lag": 3.343,
+      "queue": 1.644,
+      "inference": 1.679,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 7,
+      "round": 27,
+      "latency": 3.418,
+      "lag": 3.422,
+      "queue": 1.717,
+      "inference": 1.678,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 9,
+      "round": 27,
+      "latency": 3.421,
+      "lag": 3.424,
+      "queue": 1.67,
+      "inference": 1.73,
+      "text": "He laments most bitterly the divorce that has been made between decorative"
+    },
+    {
+      "stream": 11,
+      "round": 27,
+      "latency": 3.501,
+      "lag": 3.503,
+      "queue": 1.722,
+      "inference": 1.751,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 10,
+      "round": 27,
+      "latency": 5.1,
+      "lag": 5.105,
+      "queue": 3.395,
+      "inference": 1.68,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 5,
+      "round": 27,
+      "latency": 5.113,
+      "lag": 5.119,
+      "queue": 3.315,
+      "inference": 1.775,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 3,
+      "round": 27,
+      "latency": 5.127,
+      "lag": 5.133,
+      "queue": 3.47,
+      "inference": 1.633,
+      "text": "He has grieved doubts whether Sir Frederick Layton's work is really Greek"
+    },
+    {
+      "stream": 0,
+      "round": 27,
+      "latency": 5.22,
+      "lag": 5.225,
+      "queue": 3.392,
+      "inference": 1.803,
+      "text": "Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his"
+    },
+    {
+      "stream": 1,
+      "round": 28,
+      "latency": 1.68,
+      "lag": 1.681,
+      "queue": 0.0,
+      "inference": 1.67,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 8,
+      "round": 28,
+      "latency": 1.697,
+      "lag": 1.702,
+      "queue": 0.0,
+      "inference": 1.679,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 3,
+      "round": 28,
+      "latency": 1.747,
+      "lag": 1.751,
+      "queue": 0.0,
+      "inference": 1.736,
+      "text": "He has grieved doubts whether Sir Frederick Layton's work is really Greek"
+    },
+    {
+      "stream": 0,
+      "round": 28,
+      "latency": 1.87,
+      "lag": 1.872,
+      "queue": 0.0,
+      "inference": 1.855,
+      "text": "Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his"
+    },
+    {
+      "stream": 5,
+      "round": 28,
+      "latency": 3.423,
+      "lag": 3.427,
+      "queue": 1.678,
+      "inference": 1.728,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 10,
+      "round": 28,
+      "latency": 3.425,
+      "lag": 3.429,
+      "queue": 1.661,
+      "inference": 1.747,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 9,
+      "round": 28,
+      "latency": 3.595,
+      "lag": 3.599,
+      "queue": 1.729,
+      "inference": 1.848,
+      "text": "He laments most bitterly the divorce that has been made between decorative"
+    },
+    {
+      "stream": 6,
+      "round": 28,
+      "latency": 3.597,
+      "lag": 3.6,
+      "queue": 1.844,
+      "inference": 1.732,
+      "text": "On the general principles of art, Mr. Quilter writes with equal lucidity."
+    },
+    {
+      "stream": 2,
+      "round": 28,
+      "latency": 5.136,
+      "lag": 5.142,
+      "queue": 3.397,
+      "inference": 1.714,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 11,
+      "round": 28,
+      "latency": 5.178,
+      "lag": 5.184,
+      "queue": 3.398,
+      "inference": 1.755,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 4,
+      "round": 28,
+      "latency": 5.273,
+      "lag": 5.28,
+      "queue": 3.569,
+      "inference": 1.679,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 7,
+      "round": 28,
+      "latency": 5.31,
+      "lag": 5.315,
+      "queue": 3.568,
+      "inference": 1.715,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 4,
+      "round": 29,
+      "latency": 1.694,
+      "lag": 1.697,
+      "queue": 0.0,
+      "inference": 1.682,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 7,
+      "round": 29,
+      "latency": 1.707,
+      "lag": 1.709,
+      "queue": 0.0,
+      "inference": 1.696,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 10,
+      "round": 29,
+      "latency": 1.719,
+      "lag": 1.723,
+      "queue": 0.0,
+      "inference": 1.703,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 6,
+      "round": 29,
+      "latency": 1.729,
+      "lag": 1.731,
+      "queue": 0.0,
+      "inference": 1.719,
+      "text": "On the general principles of art, Mr. Quilter writes with equal lucidity."
+    },
+    {
+      "stream": 3,
+      "round": 29,
+      "latency": 3.384,
+      "lag": 3.388,
+      "queue": 1.689,
+      "inference": 1.678,
+      "text": "He has grieved doubts whether Sir Frederick Layton's work is really Greek"
+    },
+    {
+      "stream": 1,
+      "round": 29,
+      "latency": 3.397,
+      "lag": 3.399,
+      "queue": 1.708,
+      "inference": 1.667,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 9,
+      "round": 29,
+      "latency": 3.428,
+      "lag": 3.431,
+      "queue": 1.678,
+      "inference": 1.732,
+      "text": "He laments most bitterly the divorce that has been made between decorative"
+    },
+    {
+      "stream": 11,
+      "round": 29,
+      "latency": 3.531,
+      "lag": 3.535,
+      "queue": 1.699,
+      "inference": 1.814,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 8,
+      "round": 29,
+      "latency": 5.076,
+      "lag": 5.082,
+      "queue": 3.374,
+      "inference": 1.683,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 2,
+      "round": 29,
+      "latency": 5.092,
+      "lag": 5.097,
+      "queue": 3.363,
+      "inference": 1.709,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 0,
+      "round": 29,
+      "latency": 5.225,
+      "lag": 5.23,
+      "queue": 3.396,
+      "inference": 1.798,
+      "text": "Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his"
+    },
+    {
+      "stream": 5,
+      "round": 29,
+      "latency": 5.224,
+      "lag": 5.23,
+      "queue": 3.502,
+      "inference": 1.693,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    }
+  ]
+}

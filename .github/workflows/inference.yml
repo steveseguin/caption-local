@@ -1,0 +1,44 @@
+name: Real CPU inference
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  real-inference:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.12'
+      - name: Provision runtime and test fixtures
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y espeak-ng
+          python -m pip install -r requirements-linux.lock
+          python scripts/prepare_test_fixtures.py
+      - name: Exercise real small-model CPU inference
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -c 'from server import Engine; Engine("small")'
+          python server.py --offline --threads 2 --port 8772 > /tmp/caption-ci.log 2>&1 &
+          caption_pid=$!
+          trap 'kill "$caption_pid" 2>/dev/null || true' EXIT
+          for attempt in $(seq 1 120); do
+            if curl --fail --silent http://127.0.0.1:8772/health > /tmp/caption-health.json; then break; fi
+            kill -0 "$caption_pid" || { cat /tmp/caption-ci.log; exit 1; }
+            sleep 1
+          done
+          python scripts/smoke_api.py --url http://127.0.0.1:8772 --spanish samples/spanish.wav --output /tmp/caption-smoke.json
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        if: always()
+        with:
+          name: cpu-inference-evidence
+          path: |
+            /tmp/caption-smoke.json
+            /tmp/caption-ci.log
+            /tmp/caption-health.json

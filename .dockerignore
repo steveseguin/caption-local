@@ -1,0 +1,8 @@
+*
+!Dockerfile
+!requirements.txt
+!server.py
+!static/
+!static/**
+!LICENSE
+!requirements-linux.lock

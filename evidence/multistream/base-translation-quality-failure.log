@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/code/caption-local/scripts/multistream_soak.py", line 78, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/code/caption-local/scripts/multistream_soak.py", line 58, in main
+    await asyncio.gather(*(stream(n) for n in range(args.streams)))
+  File "/home/ubuntu/code/caption-local/scripts/multistream_soak.py", line 51, in stream
+    assert any(w in result['translation'].lower() for w in ['theater','theatre']),result
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'text': 'Hola, bienvenidos al teatro. Muchas gracias por venir esta noche.', 'transcript': 'Hola, bienvenidos al teatro. Muchas gracias por venir esta noche.', 'translation': 'Hello! Welcome to Alteatro! Thank you very much for coming this night!', 'language': 'es', 'output_language': 'es', 'translation_language': 'en', 'mode': 'both', 'audio_seconds': 5.4001875, 'committed_seconds': 5.4001875, 'request_id': 'round-00000000', 'stream_id': '10e9ee5cbacd-09', 'inference_seconds': 3.729, 'queue_seconds': 0.0}

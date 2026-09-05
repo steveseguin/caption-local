@@ -1,0 +1,10 @@
+# Tested on a six-core Ryzen 5 5500. Base trades accuracy for CPU capacity.
+# This preset explicitly overrides model/workers/threads from the base compose.
+services:
+  captions:
+    environment:
+      CAPTION_MODEL: base
+      CAPTION_BEAM_SIZE: 1
+      CAPTION_WORKERS: 6
+      CAPTION_THREADS: 1
+      CAPTION_MAX_STREAMS: 12

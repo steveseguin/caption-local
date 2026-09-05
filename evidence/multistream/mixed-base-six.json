@@ -1,0 +1,4017 @@
+{
+  "health": {
+    "ready": true,
+    "version": "1.1.0",
+    "sample_rate": 16000,
+    "max_seconds": 12,
+    "max_streams": 12,
+    "workers": 6,
+    "threads_per_worker": 1,
+    "sessions": 0,
+    "running": 0,
+    "pending": 0,
+    "queue_timeout": 20,
+    "multilingual": true,
+    "model": "base",
+    "languages": [
+      "af",
+      "am",
+      "ar",
+      "as",
+      "az",
+      "ba",
+      "be",
+      "bg",
+      "bn",
+      "bo",
+      "br",
+      "bs",
+      "ca",
+      "cs",
+      "cy",
+      "da",
+      "de",
+      "el",
+      "en",
+      "es",
+      "et",
+      "eu",
+      "fa",
+      "fi",
+      "fo",
+      "fr",
+      "gl",
+      "gu",
+      "ha",
+      "haw",
+      "he",
+      "hi",
+      "hr",
+      "ht",
+      "hu",
+      "hy",
+      "id",
+      "is",
+      "it",
+      "ja",
+      "jw",
+      "ka",
+      "kk",
+      "km",
+      "kn",
+      "ko",
+      "la",
+      "lb",
+      "ln",
+      "lo",
+      "lt",
+      "lv",
+      "mg",
+      "mi",
+      "mk",
+      "ml",
+      "mn",
+      "mr",
+      "ms",
+      "mt",
+      "my",
+      "ne",
+      "nl",
+      "nn",
+      "no",
+      "oc",
+      "pa",
+      "pl",
+      "ps",
+      "pt",
+      "ro",
+      "ru",
+      "sa",
+      "sd",
+      "si",
+      "sk",
+      "sl",
+      "sn",
+      "so",
+      "sq",
+      "sr",
+      "su",
+      "sv",
+      "sw",
+      "ta",
+      "te",
+      "tg",
+      "th",
+      "tk",
+      "tl",
+      "tr",
+      "tt",
+      "uk",
+      "ur",
+      "uz",
+      "vi",
+      "yi",
+      "yo",
+      "yue",
+      "zh"
+    ],
+    "device": "cpu",
+    "compute_type": "int8",
+    "busy": false,
+    "completed": 12,
+    "failed": 0,
+    "modes": [
+      "transcribe",
+      "translate",
+      "both"
+    ],
+    "translation_target": "en"
+  },
+  "streams": 12,
+  "rounds": 30,
+  "mixed_translation": true,
+  "quality_errors": [
+    {
+      "stream": 0,
+      "round": 0,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 6,
+      "round": 0,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 9,
+      "round": 0,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 3,
+      "round": 0,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 9,
+      "round": 1,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 0,
+      "round": 1,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 3,
+      "round": 1,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 6,
+      "round": 1,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 6,
+      "round": 2,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 3,
+      "round": 2,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 0,
+      "round": 2,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 9,
+      "round": 2,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 6,
+      "round": 3,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 9,
+      "round": 3,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 0,
+      "round": 3,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 3,
+      "round": 3,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 9,
+      "round": 4,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 0,
+      "round": 4,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 6,
+      "round": 4,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 3,
+      "round": 4,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 9,
+      "round": 5,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 0,
+      "round": 5,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 6,
+      "round": 5,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 3,
+      "round": 5,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 9,
+      "round": 6,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 0,
+      "round": 6,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 3,
+      "round": 6,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 6,
+      "round": 6,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 0,
+      "round": 7,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 9,
+      "round": 7,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 3,
+      "round": 7,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 6,
+      "round": 7,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 0,
+      "round": 8,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 9,
+      "round": 8,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 3,
+      "round": 8,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 6,
+      "round": 8,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 0,
+      "round": 9,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 9,
+      "round": 9,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 3,
+      "round": 9,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 6,
+      "round": 9,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 0,
+      "round": 10,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 9,
+      "round": 10,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 3,
+      "round": 10,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 6,
+      "round": 10,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 0,
+      "round": 11,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 9,
+      "round": 11,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 6,
+      "round": 11,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 3,
+      "round": 11,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 0,
+      "round": 12,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 6,
+      "round": 12,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 9,
+      "round": 12,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 3,
+      "round": 12,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 0,
+      "round": 13,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 6,
+      "round": 13,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 9,
+      "round": 13,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 3,
+      "round": 13,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 0,
+      "round": 14,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 9,
+      "round": 14,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 3,
+      "round": 14,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 6,
+      "round": 14,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 0,
+      "round": 15,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 9,
+      "round": 15,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 6,
+      "round": 15,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 3,
+      "round": 15,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 0,
+      "round": 16,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 9,
+      "round": 16,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 6,
+      "round": 16,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 3,
+      "round": 16,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 0,
+      "round": 17,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 3,
+      "round": 17,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 6,
+      "round": 17,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 9,
+      "round": 17,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 0,
+      "round": 18,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 3,
+      "round": 18,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 9,
+      "round": 18,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 6,
+      "round": 18,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 0,
+      "round": 19,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 3,
+      "round": 19,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 9,
+      "round": 19,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 6,
+      "round": 19,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 0,
+      "round": 20,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 3,
+      "round": 20,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 9,
+      "round": 20,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 6,
+      "round": 20,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 0,
+      "round": 21,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 9,
+      "round": 21,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 3,
+      "round": 21,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 6,
+      "round": 21,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 0,
+      "round": 22,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 9,
+      "round": 22,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 3,
+      "round": 22,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 6,
+      "round": 22,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 0,
+      "round": 23,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 9,
+      "round": 23,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 3,
+      "round": 23,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 6,
+      "round": 23,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 0,
+      "round": 24,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 3,
+      "round": 24,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 9,
+      "round": 24,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 6,
+      "round": 24,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 0,
+      "round": 25,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 9,
+      "round": 25,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 3,
+      "round": 25,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 6,
+      "round": 25,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 0,
+      "round": 26,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 9,
+      "round": 26,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 3,
+      "round": 26,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 6,
+      "round": 26,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 0,
+      "round": 27,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 3,
+      "round": 27,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 9,
+      "round": 27,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 6,
+      "round": 27,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 0,
+      "round": 28,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 3,
+      "round": 28,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 9,
+      "round": 28,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 6,
+      "round": 28,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 3,
+      "round": 29,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 0,
+      "round": 29,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 9,
+      "round": 29,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    },
+    {
+      "stream": 6,
+      "round": 29,
+      "translation": "Hello! Welcome to Alteatro! Thank you very much for coming this night!"
+    }
+  ],
+  "profile_only": true,
+  "requests": 360,
+  "wall_seconds": 187.117,
+  "cpu_seconds": 1194.39,
+  "latency_p50": 4.936,
+  "latency_p95": 6.871,
+  "max_lag": 16.328,
+  "late_over_6s": 139,
+  "rss_mib": [
+    605.73,
+    565.01,
+    521.23,
+    550.74,
+    509.09,
+    657.84,
+    489.33,
+    529.56,
+    651.0,
+    593.21,
+    641.93,
+    495.72,
+    628.95,
+    709.79,
+    644.81,
+    477.24,
+    572.45,
+    563.22,
+    511.75,
+    520.87,
+    666.62,
+    584.19,
+    631.53,
+    658.87,
+    685.73,
+    694.52,
+    737.21,
+    635.62,
+    775.54,
+    558.02
+  ],
+  "results": [
+    {
+      "stream": 1,
+      "round": 0,
+      "latency": 1.994,
+      "lag": 1.995,
+      "queue": 0.0,
+      "inference": 1.978,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 4,
+      "round": 0,
+      "latency": 2.042,
+      "lag": 2.043,
+      "queue": 0.0,
+      "inference": 2.016,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 2,
+      "round": 0,
+      "latency": 2.078,
+      "lag": 2.078,
+      "queue": 0.0,
+      "inference": 2.058,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 0,
+      "round": 0,
+      "latency": 3.811,
+      "lag": 3.811,
+      "queue": 0.0,
+      "inference": 3.805,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 6,
+      "round": 0,
+      "latency": 3.92,
+      "lag": 3.922,
+      "queue": 0.0,
+      "inference": 3.896,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 7,
+      "round": 0,
+      "latency": 4.055,
+      "lag": 4.056,
+      "queue": 2.057,
+      "inference": 1.977,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 9,
+      "round": 0,
+      "latency": 4.055,
+      "lag": 4.057,
+      "queue": 0.0,
+      "inference": 4.032,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 5,
+      "round": 0,
+      "latency": 4.154,
+      "lag": 4.155,
+      "queue": 1.974,
+      "inference": 2.156,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 3,
+      "round": 0,
+      "latency": 5.467,
+      "lag": 5.468,
+      "queue": 2.021,
+      "inference": 3.424,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 8,
+      "round": 0,
+      "latency": 5.537,
+      "lag": 5.539,
+      "queue": 3.789,
+      "inference": 1.727,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 10,
+      "round": 0,
+      "latency": 5.622,
+      "lag": 5.625,
+      "queue": 3.894,
+      "inference": 1.707,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 11,
+      "round": 0,
+      "latency": 5.7,
+      "lag": 5.702,
+      "queue": 4.033,
+      "inference": 1.646,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 8,
+      "round": 1,
+      "latency": 1.988,
+      "lag": 1.99,
+      "queue": 0.0,
+      "inference": 1.976,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 5,
+      "round": 1,
+      "latency": 2.094,
+      "lag": 2.098,
+      "queue": 0.0,
+      "inference": 2.078,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 2,
+      "round": 1,
+      "latency": 2.102,
+      "lag": 2.105,
+      "queue": 0.0,
+      "inference": 2.083,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 11,
+      "round": 1,
+      "latency": 2.109,
+      "lag": 2.112,
+      "queue": 0.0,
+      "inference": 2.096,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 9,
+      "round": 1,
+      "latency": 3.819,
+      "lag": 3.82,
+      "queue": 0.0,
+      "inference": 3.809,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 0,
+      "round": 1,
+      "latency": 3.841,
+      "lag": 3.845,
+      "queue": 0.0,
+      "inference": 3.815,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 4,
+      "round": 1,
+      "latency": 4.074,
+      "lag": 4.08,
+      "queue": 2.074,
+      "inference": 1.967,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 10,
+      "round": 1,
+      "latency": 4.166,
+      "lag": 4.168,
+      "queue": 2.063,
+      "inference": 2.07,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 3,
+      "round": 1,
+      "latency": 5.557,
+      "lag": 5.562,
+      "queue": 2.066,
+      "inference": 3.457,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 1,
+      "round": 1,
+      "latency": 5.607,
+      "lag": 5.614,
+      "queue": 3.806,
+      "inference": 1.762,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 6,
+      "round": 1,
+      "latency": 5.613,
+      "lag": 5.617,
+      "queue": 1.963,
+      "inference": 3.628,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 7,
+      "round": 1,
+      "latency": 5.637,
+      "lag": 5.642,
+      "queue": 3.781,
+      "inference": 1.822,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 10,
+      "round": 2,
+      "latency": 2.107,
+      "lag": 2.111,
+      "queue": 0.0,
+      "inference": 2.09,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 1,
+      "round": 2,
+      "latency": 2.119,
+      "lag": 2.122,
+      "queue": 0.0,
+      "inference": 2.103,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 7,
+      "round": 2,
+      "latency": 2.12,
+      "lag": 2.123,
+      "queue": 0.0,
+      "inference": 2.109,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 2,
+      "round": 2,
+      "latency": 2.121,
+      "lag": 2.125,
+      "queue": 0.0,
+      "inference": 2.108,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 6,
+      "round": 2,
+      "latency": 3.943,
+      "lag": 3.944,
+      "queue": 0.0,
+      "inference": 3.934,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 4,
+      "round": 2,
+      "latency": 4.099,
+      "lag": 4.104,
+      "queue": 2.085,
+      "inference": 1.992,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 3,
+      "round": 2,
+      "latency": 4.105,
+      "lag": 4.107,
+      "queue": 0.0,
+      "inference": 4.094,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 11,
+      "round": 2,
+      "latency": 4.327,
+      "lag": 4.329,
+      "queue": 2.09,
+      "inference": 2.206,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 5,
+      "round": 2,
+      "latency": 5.698,
+      "lag": 5.703,
+      "queue": 3.907,
+      "inference": 1.758,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 0,
+      "round": 2,
+      "latency": 5.792,
+      "lag": 5.798,
+      "queue": 2.091,
+      "inference": 3.674,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 8,
+      "round": 2,
+      "latency": 5.792,
+      "lag": 5.798,
+      "queue": 4.066,
+      "inference": 1.695,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 9,
+      "round": 2,
+      "latency": 5.801,
+      "lag": 5.807,
+      "queue": 2.089,
+      "inference": 3.681,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 8,
+      "round": 3,
+      "latency": 1.992,
+      "lag": 1.993,
+      "queue": 0.0,
+      "inference": 1.981,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 1,
+      "round": 3,
+      "latency": 2.071,
+      "lag": 2.075,
+      "queue": 0.0,
+      "inference": 2.052,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 5,
+      "round": 3,
+      "latency": 2.132,
+      "lag": 2.136,
+      "queue": 0.0,
+      "inference": 2.119,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 6,
+      "round": 3,
+      "latency": 3.854,
+      "lag": 3.857,
+      "queue": 0.0,
+      "inference": 3.838,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 9,
+      "round": 3,
+      "latency": 3.873,
+      "lag": 3.875,
+      "queue": 0.0,
+      "inference": 3.859,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 0,
+      "round": 3,
+      "latency": 3.877,
+      "lag": 3.88,
+      "queue": 0.0,
+      "inference": 3.86,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 7,
+      "round": 3,
+      "latency": 4.026,
+      "lag": 4.028,
+      "queue": 2.043,
+      "inference": 1.949,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 2,
+      "round": 3,
+      "latency": 4.056,
+      "lag": 4.06,
+      "queue": 1.969,
+      "inference": 2.068,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 4,
+      "round": 3,
+      "latency": 4.143,
+      "lag": 4.148,
+      "queue": 2.102,
+      "inference": 2.01,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 10,
+      "round": 3,
+      "latency": 5.437,
+      "lag": 5.443,
+      "queue": 3.844,
+      "inference": 1.563,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 11,
+      "round": 3,
+      "latency": 5.563,
+      "lag": 5.569,
+      "queue": 3.822,
+      "inference": 1.712,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 3,
+      "round": 3,
+      "latency": 7.217,
+      "lag": 7.221,
+      "queue": 3.836,
+      "inference": 3.349,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 1,
+      "round": 4,
+      "latency": 2.003,
+      "lag": 2.005,
+      "queue": 0.0,
+      "inference": 1.989,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 4,
+      "round": 4,
+      "latency": 2.029,
+      "lag": 2.03,
+      "queue": 0.0,
+      "inference": 2.022,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 11,
+      "round": 4,
+      "latency": 2.159,
+      "lag": 2.161,
+      "queue": 0.0,
+      "inference": 2.15,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 2,
+      "round": 4,
+      "latency": 3.503,
+      "lag": 3.506,
+      "queue": 1.203,
+      "inference": 2.283,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 9,
+      "round": 4,
+      "latency": 3.847,
+      "lag": 3.85,
+      "queue": 0.0,
+      "inference": 3.833,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 7,
+      "round": 4,
+      "latency": 3.96,
+      "lag": 3.963,
+      "queue": 1.981,
+      "inference": 1.961,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 5,
+      "round": 4,
+      "latency": 4.014,
+      "lag": 4.016,
+      "queue": 1.995,
+      "inference": 1.983,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 0,
+      "round": 4,
+      "latency": 4.044,
+      "lag": 4.048,
+      "queue": 0.0,
+      "inference": 4.033,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 10,
+      "round": 4,
+      "latency": 4.219,
+      "lag": 4.223,
+      "queue": 2.125,
+      "inference": 2.062,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 8,
+      "round": 4,
+      "latency": 5.534,
+      "lag": 5.538,
+      "queue": 3.813,
+      "inference": 1.688,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 6,
+      "round": 4,
+      "latency": 6.864,
+      "lag": 6.869,
+      "queue": 3.469,
+      "inference": 3.362,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 3,
+      "round": 4,
+      "latency": 6.133,
+      "lag": 7.355,
+      "queue": 2.738,
+      "inference": 3.39,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 8,
+      "round": 5,
+      "latency": 2.139,
+      "lag": 2.14,
+      "queue": 0.0,
+      "inference": 2.131,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 10,
+      "round": 5,
+      "latency": 2.146,
+      "lag": 2.148,
+      "queue": 0.0,
+      "inference": 2.138,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 5,
+      "round": 5,
+      "latency": 3.045,
+      "lag": 3.047,
+      "queue": 0.852,
+      "inference": 2.178,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 1,
+      "round": 5,
+      "latency": 3.354,
+      "lag": 3.357,
+      "queue": 1.331,
+      "inference": 2.001,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 9,
+      "round": 5,
+      "latency": 3.925,
+      "lag": 3.928,
+      "queue": 0.0,
+      "inference": 3.915,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 0,
+      "round": 5,
+      "latency": 4.152,
+      "lag": 4.156,
+      "queue": 0.0,
+      "inference": 4.14,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 7,
+      "round": 5,
+      "latency": 4.317,
+      "lag": 4.321,
+      "queue": 2.115,
+      "inference": 2.18,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 11,
+      "round": 5,
+      "latency": 4.374,
+      "lag": 4.377,
+      "queue": 2.123,
+      "inference": 2.228,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 4,
+      "round": 5,
+      "latency": 4.991,
+      "lag": 4.994,
+      "queue": 3.022,
+      "inference": 1.946,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 2,
+      "round": 5,
+      "latency": 5.192,
+      "lag": 5.197,
+      "queue": 3.331,
+      "inference": 1.839,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 6,
+      "round": 5,
+      "latency": 6.498,
+      "lag": 7.367,
+      "queue": 3.053,
+      "inference": 3.438,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 3,
+      "round": 5,
+      "latency": 6.188,
+      "lag": 7.542,
+      "queue": 2.796,
+      "inference": 3.386,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 1,
+      "round": 6,
+      "latency": 2.014,
+      "lag": 2.016,
+      "queue": 0.0,
+      "inference": 1.997,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 2,
+      "round": 6,
+      "latency": 2.209,
+      "lag": 2.21,
+      "queue": 0.0,
+      "inference": 2.202,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 5,
+      "round": 6,
+      "latency": 2.265,
+      "lag": 2.268,
+      "queue": 0.0,
+      "inference": 2.251,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 7,
+      "round": 6,
+      "latency": 3.518,
+      "lag": 3.521,
+      "queue": 1.347,
+      "inference": 2.153,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 10,
+      "round": 6,
+      "latency": 4.111,
+      "lag": 4.114,
+      "queue": 1.99,
+      "inference": 2.103,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 9,
+      "round": 6,
+      "latency": 4.151,
+      "lag": 4.153,
+      "queue": 0.0,
+      "inference": 4.137,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 4,
+      "round": 6,
+      "latency": 4.28,
+      "lag": 4.282,
+      "queue": 2.243,
+      "inference": 2.016,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 11,
+      "round": 6,
+      "latency": 4.401,
+      "lag": 4.404,
+      "queue": 2.188,
+      "inference": 2.193,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 0,
+      "round": 6,
+      "latency": 5.444,
+      "lag": 5.447,
+      "queue": 1.522,
+      "inference": 3.905,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 8,
+      "round": 6,
+      "latency": 5.508,
+      "lag": 5.512,
+      "queue": 3.498,
+      "inference": 1.991,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 3,
+      "round": 6,
+      "latency": 6.233,
+      "lag": 7.775,
+      "queue": 2.601,
+      "inference": 3.625,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 6,
+      "round": 6,
+      "latency": 6.477,
+      "lag": 7.844,
+      "queue": 2.743,
+      "inference": 3.727,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 4,
+      "round": 7,
+      "latency": 2.054,
+      "lag": 2.057,
+      "queue": 0.0,
+      "inference": 2.04,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 2,
+      "round": 7,
+      "latency": 2.208,
+      "lag": 2.212,
+      "queue": 0.0,
+      "inference": 2.195,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 11,
+      "round": 7,
+      "latency": 2.232,
+      "lag": 2.234,
+      "queue": 0.0,
+      "inference": 2.223,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 7,
+      "round": 7,
+      "latency": 3.98,
+      "lag": 3.983,
+      "queue": 1.824,
+      "inference": 2.14,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 1,
+      "round": 7,
+      "latency": 4.147,
+      "lag": 4.151,
+      "queue": 2.021,
+      "inference": 2.092,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 8,
+      "round": 7,
+      "latency": 4.242,
+      "lag": 4.244,
+      "queue": 1.756,
+      "inference": 2.467,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 5,
+      "round": 7,
+      "latency": 4.327,
+      "lag": 4.331,
+      "queue": 2.177,
+      "inference": 2.117,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 0,
+      "round": 7,
+      "latency": 4.346,
+      "lag": 4.347,
+      "queue": 0.0,
+      "inference": 4.338,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 10,
+      "round": 7,
+      "latency": 4.512,
+      "lag": 4.515,
+      "queue": 2.198,
+      "inference": 2.28,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 9,
+      "round": 7,
+      "latency": 7.561,
+      "lag": 7.565,
+      "queue": 3.948,
+      "inference": 3.581,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 3,
+      "round": 7,
+      "latency": 5.92,
+      "lag": 7.695,
+      "queue": 2.371,
+      "inference": 3.543,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 6,
+      "round": 7,
+      "latency": 5.945,
+      "lag": 7.789,
+      "queue": 2.391,
+      "inference": 3.54,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 5,
+      "round": 8,
+      "latency": 2.027,
+      "lag": 2.029,
+      "queue": 0.0,
+      "inference": 2.018,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 10,
+      "round": 8,
+      "latency": 2.068,
+      "lag": 2.07,
+      "queue": 0.0,
+      "inference": 2.055,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 7,
+      "round": 8,
+      "latency": 2.266,
+      "lag": 2.269,
+      "queue": 0.0,
+      "inference": 2.256,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 4,
+      "round": 8,
+      "latency": 3.692,
+      "lag": 3.697,
+      "queue": 1.548,
+      "inference": 2.131,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 2,
+      "round": 8,
+      "latency": 3.875,
+      "lag": 3.878,
+      "queue": 1.673,
+      "inference": 2.183,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 1,
+      "round": 8,
+      "latency": 4.026,
+      "lag": 4.03,
+      "queue": 1.763,
+      "inference": 2.243,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 11,
+      "round": 8,
+      "latency": 4.3,
+      "lag": 4.303,
+      "queue": 2.04,
+      "inference": 2.231,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 8,
+      "round": 8,
+      "latency": 4.374,
+      "lag": 4.378,
+      "queue": 2.243,
+      "inference": 2.109,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 0,
+      "round": 8,
+      "latency": 5.718,
+      "lag": 5.723,
+      "queue": 2.004,
+      "inference": 3.693,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 9,
+      "round": 8,
+      "latency": 5.69,
+      "lag": 7.256,
+      "queue": 2.121,
+      "inference": 3.558,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 3,
+      "round": 8,
+      "latency": 5.71,
+      "lag": 7.405,
+      "queue": 2.178,
+      "inference": 3.526,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 6,
+      "round": 8,
+      "latency": 5.904,
+      "lag": 7.693,
+      "queue": 2.236,
+      "inference": 3.662,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 8,
+      "round": 9,
+      "latency": 2.09,
+      "lag": 2.091,
+      "queue": 0.0,
+      "inference": 2.075,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 11,
+      "round": 9,
+      "latency": 2.192,
+      "lag": 2.193,
+      "queue": 0.0,
+      "inference": 2.181,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 4,
+      "round": 9,
+      "latency": 2.275,
+      "lag": 2.278,
+      "queue": 0.0,
+      "inference": 2.255,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 7,
+      "round": 9,
+      "latency": 3.421,
+      "lag": 3.426,
+      "queue": 1.239,
+      "inference": 2.169,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 10,
+      "round": 9,
+      "latency": 3.843,
+      "lag": 3.847,
+      "queue": 1.67,
+      "inference": 2.154,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 1,
+      "round": 9,
+      "latency": 4.127,
+      "lag": 4.132,
+      "queue": 2.069,
+      "inference": 2.041,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 2,
+      "round": 9,
+      "latency": 4.434,
+      "lag": 4.436,
+      "queue": 2.168,
+      "inference": 2.244,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 5,
+      "round": 9,
+      "latency": 4.445,
+      "lag": 4.45,
+      "queue": 2.248,
+      "inference": 2.178,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 0,
+      "round": 9,
+      "latency": 5.345,
+      "lag": 5.348,
+      "queue": 1.387,
+      "inference": 3.942,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 9,
+      "round": 9,
+      "latency": 6.039,
+      "lag": 7.294,
+      "queue": 2.166,
+      "inference": 3.867,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 3,
+      "round": 9,
+      "latency": 6.434,
+      "lag": 7.839,
+      "queue": 2.437,
+      "inference": 3.992,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 6,
+      "round": 9,
+      "latency": 6.152,
+      "lag": 7.844,
+      "queue": 2.435,
+      "inference": 3.711,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 8,
+      "round": 10,
+      "latency": 2.141,
+      "lag": 2.144,
+      "queue": 0.0,
+      "inference": 2.126,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 2,
+      "round": 10,
+      "latency": 2.201,
+      "lag": 2.202,
+      "queue": 0.0,
+      "inference": 2.19,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 1,
+      "round": 10,
+      "latency": 2.3,
+      "lag": 2.302,
+      "queue": 0.0,
+      "inference": 2.291,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 10,
+      "round": 10,
+      "latency": 3.522,
+      "lag": 3.526,
+      "queue": 1.276,
+      "inference": 2.231,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 11,
+      "round": 10,
+      "latency": 3.993,
+      "lag": 3.996,
+      "queue": 1.824,
+      "inference": 2.151,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 5,
+      "round": 10,
+      "latency": 4.067,
+      "lag": 4.069,
+      "queue": 1.82,
+      "inference": 2.225,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 4,
+      "round": 10,
+      "latency": 4.285,
+      "lag": 4.289,
+      "queue": 2.28,
+      "inference": 1.986,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 7,
+      "round": 10,
+      "latency": 4.299,
+      "lag": 4.301,
+      "queue": 2.178,
+      "inference": 2.098,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 0,
+      "round": 10,
+      "latency": 5.962,
+      "lag": 5.966,
+      "queue": 2.123,
+      "inference": 3.822,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 9,
+      "round": 10,
+      "latency": 5.855,
+      "lag": 7.15,
+      "queue": 2.225,
+      "inference": 3.623,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 3,
+      "round": 10,
+      "latency": 5.921,
+      "lag": 7.76,
+      "queue": 2.153,
+      "inference": 3.763,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 6,
+      "round": 10,
+      "latency": 5.92,
+      "lag": 7.765,
+      "queue": 2.217,
+      "inference": 3.698,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 8,
+      "round": 11,
+      "latency": 2.018,
+      "lag": 2.019,
+      "queue": 0.0,
+      "inference": 2.008,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 5,
+      "round": 11,
+      "latency": 2.202,
+      "lag": 2.206,
+      "queue": 0.0,
+      "inference": 2.191,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 11,
+      "round": 11,
+      "latency": 2.226,
+      "lag": 2.228,
+      "queue": 0.0,
+      "inference": 2.215,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 10,
+      "round": 11,
+      "latency": 3.2,
+      "lag": 3.205,
+      "queue": 1.132,
+      "inference": 2.055,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 1,
+      "round": 11,
+      "latency": 3.863,
+      "lag": 3.866,
+      "queue": 1.741,
+      "inference": 2.105,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 2,
+      "round": 11,
+      "latency": 4.055,
+      "lag": 4.059,
+      "queue": 1.742,
+      "inference": 2.292,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 4,
+      "round": 11,
+      "latency": 4.274,
+      "lag": 4.277,
+      "queue": 2.181,
+      "inference": 2.071,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 7,
+      "round": 11,
+      "latency": 4.427,
+      "lag": 4.432,
+      "queue": 2.203,
+      "inference": 2.203,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 0,
+      "round": 11,
+      "latency": 5.744,
+      "lag": 5.75,
+      "queue": 1.995,
+      "inference": 3.726,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 9,
+      "round": 11,
+      "latency": 5.86,
+      "lag": 7.01,
+      "queue": 2.05,
+      "inference": 3.804,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 6,
+      "round": 11,
+      "latency": 5.948,
+      "lag": 7.713,
+      "queue": 2.288,
+      "inference": 3.654,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 3,
+      "round": 11,
+      "latency": 6.004,
+      "lag": 7.764,
+      "queue": 2.1,
+      "inference": 3.89,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 10,
+      "round": 12,
+      "latency": 2.148,
+      "lag": 2.148,
+      "queue": 0.0,
+      "inference": 2.138,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 8,
+      "round": 12,
+      "latency": 2.229,
+      "lag": 2.232,
+      "queue": 0.0,
+      "inference": 2.216,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 4,
+      "round": 12,
+      "latency": 3.402,
+      "lag": 3.405,
+      "queue": 0.994,
+      "inference": 2.395,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 7,
+      "round": 12,
+      "latency": 4.144,
+      "lag": 4.147,
+      "queue": 1.692,
+      "inference": 2.432,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 2,
+      "round": 12,
+      "latency": 4.345,
+      "lag": 4.348,
+      "queue": 1.736,
+      "inference": 2.586,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 0,
+      "round": 12,
+      "latency": 4.38,
+      "lag": 4.381,
+      "queue": 0.0,
+      "inference": 4.366,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 5,
+      "round": 12,
+      "latency": 4.543,
+      "lag": 4.545,
+      "queue": 2.21,
+      "inference": 2.313,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 1,
+      "round": 12,
+      "latency": 4.564,
+      "lag": 4.568,
+      "queue": 2.127,
+      "inference": 2.419,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 11,
+      "round": 12,
+      "latency": 5.538,
+      "lag": 5.541,
+      "queue": 3.384,
+      "inference": 2.136,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 6,
+      "round": 12,
+      "latency": 6.134,
+      "lag": 7.847,
+      "queue": 2.63,
+      "inference": 3.499,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 9,
+      "round": 12,
+      "latency": 6.892,
+      "lag": 7.901,
+      "queue": 3.132,
+      "inference": 3.753,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 3,
+      "round": 12,
+      "latency": 6.372,
+      "lag": 8.136,
+      "queue": 2.609,
+      "inference": 3.753,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 8,
+      "round": 13,
+      "latency": 2.218,
+      "lag": 2.226,
+      "queue": 0.0,
+      "inference": 2.185,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 5,
+      "round": 13,
+      "latency": 2.325,
+      "lag": 2.328,
+      "queue": 0.0,
+      "inference": 2.303,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 11,
+      "round": 13,
+      "latency": 2.343,
+      "lag": 2.346,
+      "queue": 0.0,
+      "inference": 2.325,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 4,
+      "round": 13,
+      "latency": 4.102,
+      "lag": 4.116,
+      "queue": 1.817,
+      "inference": 2.268,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 7,
+      "round": 13,
+      "latency": 4.169,
+      "lag": 4.177,
+      "queue": 1.858,
+      "inference": 2.27,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 2,
+      "round": 13,
+      "latency": 4.483,
+      "lag": 4.498,
+      "queue": 2.175,
+      "inference": 2.273,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 10,
+      "round": 13,
+      "latency": 4.508,
+      "lag": 4.516,
+      "queue": 2.09,
+      "inference": 2.38,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 1,
+      "round": 13,
+      "latency": 4.662,
+      "lag": 4.671,
+      "queue": 2.297,
+      "inference": 2.325,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 0,
+      "round": 13,
+      "latency": 6.27,
+      "lag": 6.277,
+      "queue": 2.279,
+      "inference": 3.945,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 6,
+      "round": 13,
+      "latency": 5.988,
+      "lag": 7.835,
+      "queue": 2.264,
+      "inference": 3.716,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 9,
+      "round": 13,
+      "latency": 6.069,
+      "lag": 7.97,
+      "queue": 2.262,
+      "inference": 3.8,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 1,
+      "round": 14,
+      "latency": 2.109,
+      "lag": 2.112,
+      "queue": 0.0,
+      "inference": 2.1,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 10,
+      "round": 14,
+      "latency": 2.161,
+      "lag": 2.163,
+      "queue": 0.0,
+      "inference": 2.147,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 3,
+      "round": 13,
+      "latency": 6.05,
+      "lag": 8.186,
+      "queue": 2.356,
+      "inference": 3.687,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 8,
+      "round": 14,
+      "latency": 2.395,
+      "lag": 2.399,
+      "queue": 0.257,
+      "inference": 2.125,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 4,
+      "round": 14,
+      "latency": 4.051,
+      "lag": 4.056,
+      "queue": 1.816,
+      "inference": 2.222,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 7,
+      "round": 14,
+      "latency": 4.119,
+      "lag": 4.122,
+      "queue": 1.951,
+      "inference": 2.147,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 5,
+      "round": 14,
+      "latency": 4.172,
+      "lag": 4.175,
+      "queue": 2.09,
+      "inference": 2.063,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 2,
+      "round": 14,
+      "latency": 4.295,
+      "lag": 4.299,
+      "queue": 2.137,
+      "inference": 2.137,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 11,
+      "round": 14,
+      "latency": 4.486,
+      "lag": 4.49,
+      "queue": 2.164,
+      "inference": 2.297,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 0,
+      "round": 14,
+      "latency": 5.756,
+      "lag": 6.033,
+      "queue": 2.11,
+      "inference": 3.634,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 9,
+      "round": 14,
+      "latency": 5.741,
+      "lag": 7.711,
+      "queue": 2.144,
+      "inference": 3.592,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 3,
+      "round": 14,
+      "latency": 5.568,
+      "lag": 7.754,
+      "queue": 1.979,
+      "inference": 3.57,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 6,
+      "round": 14,
+      "latency": 5.967,
+      "lag": 7.802,
+      "queue": 2.216,
+      "inference": 3.739,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 4,
+      "round": 15,
+      "latency": 2.033,
+      "lag": 2.037,
+      "queue": 0.0,
+      "inference": 2.02,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 10,
+      "round": 15,
+      "latency": 2.05,
+      "lag": 2.056,
+      "queue": 0.013,
+      "inference": 2.018,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 5,
+      "round": 15,
+      "latency": 2.231,
+      "lag": 2.236,
+      "queue": 0.0,
+      "inference": 2.22,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 8,
+      "round": 15,
+      "latency": 3.881,
+      "lag": 3.887,
+      "queue": 1.687,
+      "inference": 2.174,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 1,
+      "round": 15,
+      "latency": 4.053,
+      "lag": 4.058,
+      "queue": 1.719,
+      "inference": 2.306,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 2,
+      "round": 15,
+      "latency": 4.265,
+      "lag": 4.272,
+      "queue": 1.999,
+      "inference": 2.234,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 11,
+      "round": 15,
+      "latency": 4.304,
+      "lag": 4.309,
+      "queue": 1.767,
+      "inference": 2.506,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 7,
+      "round": 15,
+      "latency": 4.311,
+      "lag": 4.317,
+      "queue": 2.018,
+      "inference": 2.262,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 0,
+      "round": 15,
+      "latency": 5.959,
+      "lag": 5.992,
+      "queue": 2.198,
+      "inference": 3.756,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 9,
+      "round": 15,
+      "latency": 5.97,
+      "lag": 7.681,
+      "queue": 2.17,
+      "inference": 3.791,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 6,
+      "round": 15,
+      "latency": 6.086,
+      "lag": 7.889,
+      "queue": 2.462,
+      "inference": 3.616,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 3,
+      "round": 15,
+      "latency": 6.188,
+      "lag": 7.942,
+      "queue": 2.298,
+      "inference": 3.881,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 10,
+      "round": 16,
+      "latency": 2.166,
+      "lag": 2.17,
+      "queue": 0.0,
+      "inference": 2.101,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 7,
+      "round": 16,
+      "latency": 2.207,
+      "lag": 2.208,
+      "queue": 0.0,
+      "inference": 2.195,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 5,
+      "round": 16,
+      "latency": 2.38,
+      "lag": 2.382,
+      "queue": 0.0,
+      "inference": 2.316,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 4,
+      "round": 16,
+      "latency": 3.802,
+      "lag": 3.806,
+      "queue": 1.603,
+      "inference": 2.128,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 1,
+      "round": 16,
+      "latency": 4.123,
+      "lag": 4.127,
+      "queue": 1.867,
+      "inference": 2.185,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 8,
+      "round": 16,
+      "latency": 4.301,
+      "lag": 4.306,
+      "queue": 2.095,
+      "inference": 2.135,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 11,
+      "round": 16,
+      "latency": 4.438,
+      "lag": 4.441,
+      "queue": 2.131,
+      "inference": 2.235,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 2,
+      "round": 16,
+      "latency": 4.679,
+      "lag": 4.683,
+      "queue": 2.308,
+      "inference": 2.3,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 0,
+      "round": 16,
+      "latency": 5.795,
+      "lag": 5.798,
+      "queue": 1.814,
+      "inference": 3.909,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 9,
+      "round": 16,
+      "latency": 6.203,
+      "lag": 7.884,
+      "queue": 2.12,
+      "inference": 4.077,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 6,
+      "round": 16,
+      "latency": 6.212,
+      "lag": 8.101,
+      "queue": 2.233,
+      "inference": 3.971,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 2,
+      "round": 17,
+      "latency": 2.273,
+      "lag": 2.278,
+      "queue": 0.0,
+      "inference": 2.245,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 5,
+      "round": 17,
+      "latency": 2.376,
+      "lag": 2.378,
+      "queue": 0.0,
+      "inference": 2.345,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 3,
+      "round": 16,
+      "latency": 6.526,
+      "lag": 8.468,
+      "queue": 2.359,
+      "inference": 4.157,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 1,
+      "round": 17,
+      "latency": 4.168,
+      "lag": 4.171,
+      "queue": 1.857,
+      "inference": 2.286,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 8,
+      "round": 17,
+      "latency": 4.366,
+      "lag": 4.37,
+      "queue": 2.25,
+      "inference": 2.086,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 4,
+      "round": 17,
+      "latency": 4.399,
+      "lag": 4.402,
+      "queue": 2.07,
+      "inference": 2.299,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 0,
+      "round": 17,
+      "latency": 4.407,
+      "lag": 4.408,
+      "queue": 0.0,
+      "inference": 4.393,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 11,
+      "round": 17,
+      "latency": 4.721,
+      "lag": 4.726,
+      "queue": 2.334,
+      "inference": 2.351,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 7,
+      "round": 17,
+      "latency": 4.905,
+      "lag": 4.908,
+      "queue": 2.424,
+      "inference": 2.444,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 10,
+      "round": 17,
+      "latency": 6.333,
+      "lag": 6.338,
+      "queue": 4.132,
+      "inference": 2.166,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 4,
+      "round": 18,
+      "latency": 2.561,
+      "lag": 2.562,
+      "queue": 0.0,
+      "inference": 2.535,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 2,
+      "round": 18,
+      "latency": 2.585,
+      "lag": 2.587,
+      "queue": 0.0,
+      "inference": 2.56,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 3,
+      "round": 17,
+      "latency": 6.384,
+      "lag": 8.853,
+      "queue": 1.932,
+      "inference": 4.446,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 6,
+      "round": 17,
+      "latency": 6.881,
+      "lag": 8.982,
+      "queue": 2.292,
+      "inference": 4.581,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 9,
+      "round": 17,
+      "latency": 7.289,
+      "lag": 9.173,
+      "queue": 2.477,
+      "inference": 4.806,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 8,
+      "round": 18,
+      "latency": 4.994,
+      "lag": 5.0,
+      "queue": 2.533,
+      "inference": 2.438,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 7,
+      "round": 18,
+      "latency": 5.18,
+      "lag": 5.184,
+      "queue": 2.557,
+      "inference": 2.596,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 1,
+      "round": 18,
+      "latency": 5.221,
+      "lag": 5.224,
+      "queue": 2.823,
+      "inference": 2.368,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 0,
+      "round": 18,
+      "latency": 5.34,
+      "lag": 5.344,
+      "queue": 0.31,
+      "inference": 5.003,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 5,
+      "round": 18,
+      "latency": 5.575,
+      "lag": 5.58,
+      "queue": 3.142,
+      "inference": 2.405,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 11,
+      "round": 18,
+      "latency": 5.629,
+      "lag": 5.634,
+      "queue": 2.949,
+      "inference": 2.654,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 10,
+      "round": 18,
+      "latency": 7.159,
+      "lag": 7.497,
+      "queue": 4.657,
+      "inference": 2.493,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 5,
+      "round": 19,
+      "latency": 2.473,
+      "lag": 2.474,
+      "queue": 0.0,
+      "inference": 2.464,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 7,
+      "round": 19,
+      "latency": 2.644,
+      "lag": 2.646,
+      "queue": 0.0,
+      "inference": 2.633,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 3,
+      "round": 18,
+      "latency": 6.822,
+      "lag": 9.675,
+      "queue": 2.325,
+      "inference": 4.488,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 9,
+      "round": 18,
+      "latency": 6.692,
+      "lag": 9.865,
+      "queue": 2.164,
+      "inference": 4.518,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 6,
+      "round": 18,
+      "latency": 6.962,
+      "lag": 9.945,
+      "queue": 2.226,
+      "inference": 4.72,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 8,
+      "round": 19,
+      "latency": 3.969,
+      "lag": 3.972,
+      "queue": 1.475,
+      "inference": 2.476,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 1,
+      "round": 19,
+      "latency": 4.787,
+      "lag": 4.791,
+      "queue": 2.452,
+      "inference": 2.316,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 2,
+      "round": 19,
+      "latency": 5.086,
+      "lag": 5.089,
+      "queue": 2.623,
+      "inference": 2.443,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 11,
+      "round": 19,
+      "latency": 6.107,
+      "lag": 6.109,
+      "queue": 3.651,
+      "inference": 2.433,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 10,
+      "round": 19,
+      "latency": 4.857,
+      "lag": 6.354,
+      "queue": 2.461,
+      "inference": 2.382,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 4,
+      "round": 19,
+      "latency": 6.353,
+      "lag": 6.356,
+      "queue": 3.841,
+      "inference": 2.491,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 0,
+      "round": 19,
+      "latency": 8.353,
+      "lag": 8.357,
+      "queue": 3.918,
+      "inference": 4.405,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 2,
+      "round": 20,
+      "latency": 2.625,
+      "lag": 2.627,
+      "queue": 0.34,
+      "inference": 2.27,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 5,
+      "round": 20,
+      "latency": 2.692,
+      "lag": 2.694,
+      "queue": 0.341,
+      "inference": 2.339,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 3,
+      "round": 19,
+      "latency": 5.461,
+      "lag": 9.136,
+      "queue": 1.111,
+      "inference": 4.345,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 9,
+      "round": 19,
+      "latency": 5.875,
+      "lag": 9.74,
+      "queue": 1.218,
+      "inference": 4.649,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 6,
+      "round": 19,
+      "latency": 6.672,
+      "lag": 10.617,
+      "queue": 2.159,
+      "inference": 4.507,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 1,
+      "round": 20,
+      "latency": 4.726,
+      "lag": 4.73,
+      "queue": 2.333,
+      "inference": 2.369,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 8,
+      "round": 20,
+      "latency": 4.956,
+      "lag": 4.959,
+      "queue": 2.608,
+      "inference": 2.331,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 7,
+      "round": 20,
+      "latency": 5.039,
+      "lag": 5.043,
+      "queue": 2.675,
+      "inference": 2.339,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 11,
+      "round": 20,
+      "latency": 5.522,
+      "lag": 5.631,
+      "queue": 3.023,
+      "inference": 2.493,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 10,
+      "round": 20,
+      "latency": 5.719,
+      "lag": 6.073,
+      "queue": 3.38,
+      "inference": 2.332,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 4,
+      "round": 20,
+      "latency": 6.769,
+      "lag": 7.126,
+      "queue": 4.256,
+      "inference": 2.508,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 2,
+      "round": 21,
+      "latency": 2.376,
+      "lag": 2.377,
+      "queue": 0.05,
+      "inference": 2.304,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 0,
+      "round": 20,
+      "latency": 6.748,
+      "lag": 9.105,
+      "queue": 2.354,
+      "inference": 4.384,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 3,
+      "round": 20,
+      "latency": 6.193,
+      "lag": 9.33,
+      "queue": 1.818,
+      "inference": 4.37,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 9,
+      "round": 20,
+      "latency": 5.709,
+      "lag": 9.45,
+      "queue": 1.288,
+      "inference": 4.407,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 5,
+      "round": 21,
+      "latency": 3.561,
+      "lag": 3.563,
+      "queue": 1.103,
+      "inference": 2.436,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 6,
+      "round": 20,
+      "latency": 5.724,
+      "lag": 10.341,
+      "queue": 1.009,
+      "inference": 4.709,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 7,
+      "round": 21,
+      "latency": 4.885,
+      "lag": 4.889,
+      "queue": 2.354,
+      "inference": 2.511,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 8,
+      "round": 21,
+      "latency": 5.45,
+      "lag": 5.452,
+      "queue": 3.08,
+      "inference": 2.346,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 1,
+      "round": 21,
+      "latency": 5.55,
+      "lag": 5.554,
+      "queue": 3.304,
+      "inference": 2.222,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 11,
+      "round": 21,
+      "latency": 5.788,
+      "lag": 5.792,
+      "queue": 3.425,
+      "inference": 2.342,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 10,
+      "round": 21,
+      "latency": 5.866,
+      "lag": 5.939,
+      "queue": 3.483,
+      "inference": 2.374,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 4,
+      "round": 21,
+      "latency": 5.482,
+      "lag": 6.608,
+      "queue": 3.202,
+      "inference": 2.266,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 2,
+      "round": 22,
+      "latency": 2.764,
+      "lag": 2.764,
+      "queue": 0.0,
+      "inference": 2.756,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 11,
+      "round": 22,
+      "latency": 3.28,
+      "lag": 3.282,
+      "queue": 0.594,
+      "inference": 2.672,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 0,
+      "round": 21,
+      "latency": 6.87,
+      "lag": 9.975,
+      "queue": 1.779,
+      "inference": 5.085,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 9,
+      "round": 21,
+      "latency": 6.969,
+      "lag": 10.419,
+      "queue": 2.1,
+      "inference": 4.863,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 3,
+      "round": 21,
+      "latency": 7.212,
+      "lag": 10.542,
+      "queue": 2.118,
+      "inference": 5.088,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 6,
+      "round": 21,
+      "latency": 6.507,
+      "lag": 10.848,
+      "queue": 1.446,
+      "inference": 5.05,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 8,
+      "round": 22,
+      "latency": 5.543,
+      "lag": 5.546,
+      "queue": 2.744,
+      "inference": 2.78,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 7,
+      "round": 22,
+      "latency": 6.154,
+      "lag": 6.156,
+      "queue": 3.26,
+      "inference": 2.873,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 10,
+      "round": 22,
+      "latency": 6.786,
+      "lag": 6.79,
+      "queue": 3.953,
+      "inference": 2.814,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 5,
+      "round": 22,
+      "latency": 7.068,
+      "lag": 7.071,
+      "queue": 4.396,
+      "inference": 2.651,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 1,
+      "round": 22,
+      "latency": 7.197,
+      "lag": 7.2,
+      "queue": 4.519,
+      "inference": 2.657,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 4,
+      "round": 22,
+      "latency": 6.891,
+      "lag": 7.499,
+      "queue": 4.228,
+      "inference": 2.654,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 2,
+      "round": 23,
+      "latency": 3.521,
+      "lag": 3.524,
+      "queue": 1.174,
+      "inference": 2.323,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 8,
+      "round": 23,
+      "latency": 3.905,
+      "lag": 3.908,
+      "queue": 1.472,
+      "inference": 2.409,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 0,
+      "round": 22,
+      "latency": 6.269,
+      "lag": 10.245,
+      "queue": 1.564,
+      "inference": 4.698,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 9,
+      "round": 22,
+      "latency": 6.615,
+      "lag": 11.034,
+      "queue": 1.732,
+      "inference": 4.877,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 3,
+      "round": 22,
+      "latency": 6.801,
+      "lag": 11.343,
+      "queue": 2.239,
+      "inference": 4.552,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 6,
+      "round": 22,
+      "latency": 6.609,
+      "lag": 11.458,
+      "queue": 2.212,
+      "inference": 4.385,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 11,
+      "round": 23,
+      "latency": 5.811,
+      "lag": 5.814,
+      "queue": 3.496,
+      "inference": 2.289,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 7,
+      "round": 23,
+      "latency": 6.145,
+      "lag": 6.301,
+      "queue": 3.746,
+      "inference": 2.392,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 10,
+      "round": 23,
+      "latency": 5.835,
+      "lag": 6.625,
+      "queue": 3.449,
+      "inference": 2.38,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 5,
+      "round": 23,
+      "latency": 6.478,
+      "lag": 7.549,
+      "queue": 3.957,
+      "inference": 2.515,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 1,
+      "round": 23,
+      "latency": 6.528,
+      "lag": 7.728,
+      "queue": 4.138,
+      "inference": 2.382,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 4,
+      "round": 23,
+      "latency": 6.422,
+      "lag": 7.921,
+      "queue": 3.954,
+      "inference": 2.463,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 8,
+      "round": 24,
+      "latency": 3.994,
+      "lag": 3.995,
+      "queue": 1.714,
+      "inference": 2.267,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 0,
+      "round": 23,
+      "latency": 5.918,
+      "lag": 10.162,
+      "queue": 1.564,
+      "inference": 4.348,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 2,
+      "round": 24,
+      "latency": 4.343,
+      "lag": 4.344,
+      "queue": 1.908,
+      "inference": 2.423,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 9,
+      "round": 23,
+      "latency": 5.826,
+      "lag": 10.86,
+      "queue": 1.263,
+      "inference": 4.556,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 3,
+      "round": 23,
+      "latency": 5.844,
+      "lag": 11.187,
+      "queue": 1.277,
+      "inference": 4.561,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 6,
+      "round": 23,
+      "latency": 6.837,
+      "lag": 12.295,
+      "queue": 2.085,
+      "inference": 4.745,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 7,
+      "round": 24,
+      "latency": 6.251,
+      "lag": 6.552,
+      "queue": 3.856,
+      "inference": 2.388,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 11,
+      "round": 24,
+      "latency": 6.671,
+      "lag": 6.674,
+      "queue": 3.98,
+      "inference": 2.679,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 10,
+      "round": 24,
+      "latency": 6.141,
+      "lag": 6.766,
+      "queue": 3.711,
+      "inference": 2.416,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 1,
+      "round": 24,
+      "latency": 5.611,
+      "lag": 7.339,
+      "queue": 3.454,
+      "inference": 2.15,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 5,
+      "round": 24,
+      "latency": 5.983,
+      "lag": 7.532,
+      "queue": 3.304,
+      "inference": 2.672,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 4,
+      "round": 24,
+      "latency": 6.934,
+      "lag": 8.855,
+      "queue": 4.369,
+      "inference": 2.559,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 2,
+      "round": 25,
+      "latency": 3.78,
+      "lag": 3.781,
+      "queue": 1.328,
+      "inference": 2.441,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 8,
+      "round": 25,
+      "latency": 3.971,
+      "lag": 3.973,
+      "queue": 1.52,
+      "inference": 2.441,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 0,
+      "round": 24,
+      "latency": 6.796,
+      "lag": 10.959,
+      "queue": 2.383,
+      "inference": 4.406,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 3,
+      "round": 24,
+      "latency": 5.929,
+      "lag": 11.116,
+      "queue": 1.571,
+      "inference": 4.349,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 9,
+      "round": 24,
+      "latency": 6.283,
+      "lag": 11.143,
+      "queue": 1.808,
+      "inference": 4.461,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 7,
+      "round": 25,
+      "latency": 5.543,
+      "lag": 6.095,
+      "queue": 3.223,
+      "inference": 2.314,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 11,
+      "round": 25,
+      "latency": 5.818,
+      "lag": 6.492,
+      "queue": 3.293,
+      "inference": 2.518,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 6,
+      "round": 24,
+      "latency": 6.819,
+      "lag": 13.114,
+      "queue": 2.555,
+      "inference": 4.258,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 1,
+      "round": 25,
+      "latency": 5.872,
+      "lag": 7.211,
+      "queue": 3.769,
+      "inference": 2.094,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 5,
+      "round": 25,
+      "latency": 5.715,
+      "lag": 7.248,
+      "queue": 3.6,
+      "inference": 2.097,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 10,
+      "round": 25,
+      "latency": 6.482,
+      "lag": 7.248,
+      "queue": 4.185,
+      "inference": 2.279,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 4,
+      "round": 25,
+      "latency": 5.455,
+      "lag": 8.31,
+      "queue": 3.236,
+      "inference": 2.213,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 2,
+      "round": 26,
+      "latency": 3.531,
+      "lag": 3.532,
+      "queue": 1.227,
+      "inference": 2.293,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 8,
+      "round": 26,
+      "latency": 3.531,
+      "lag": 3.533,
+      "queue": 1.226,
+      "inference": 2.291,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 7,
+      "round": 26,
+      "latency": 4.504,
+      "lag": 4.6,
+      "queue": 2.209,
+      "inference": 2.289,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 0,
+      "round": 25,
+      "latency": 5.738,
+      "lag": 10.697,
+      "queue": 1.528,
+      "inference": 4.203,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 9,
+      "round": 25,
+      "latency": 6.17,
+      "lag": 11.314,
+      "queue": 2.06,
+      "inference": 4.1,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 3,
+      "round": 25,
+      "latency": 6.214,
+      "lag": 11.33,
+      "queue": 1.993,
+      "inference": 4.215,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 11,
+      "round": 26,
+      "latency": 5.344,
+      "lag": 5.836,
+      "queue": 3.035,
+      "inference": 2.303,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 1,
+      "round": 26,
+      "latency": 5.722,
+      "lag": 6.933,
+      "queue": 3.379,
+      "inference": 2.332,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 5,
+      "round": 26,
+      "latency": 5.788,
+      "lag": 7.036,
+      "queue": 3.413,
+      "inference": 2.328,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 10,
+      "round": 26,
+      "latency": 6.421,
+      "lag": 7.669,
+      "queue": 4.031,
+      "inference": 2.354,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 4,
+      "round": 26,
+      "latency": 5.413,
+      "lag": 7.723,
+      "queue": 3.015,
+      "inference": 2.393,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 6,
+      "round": 25,
+      "latency": 6.898,
+      "lag": 14.012,
+      "queue": 2.415,
+      "inference": 4.478,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 8,
+      "round": 27,
+      "latency": 4.148,
+      "lag": 4.149,
+      "queue": 1.656,
+      "inference": 2.479,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 2,
+      "round": 27,
+      "latency": 4.262,
+      "lag": 4.264,
+      "queue": 1.706,
+      "inference": 2.537,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 11,
+      "round": 27,
+      "latency": 4.518,
+      "lag": 4.521,
+      "queue": 1.994,
+      "inference": 2.508,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 0,
+      "round": 26,
+      "latency": 5.98,
+      "lag": 10.677,
+      "queue": 1.13,
+      "inference": 4.836,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 9,
+      "round": 26,
+      "latency": 6.136,
+      "lag": 11.45,
+      "queue": 1.614,
+      "inference": 4.516,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 3,
+      "round": 26,
+      "latency": 6.38,
+      "lag": 11.71,
+      "queue": 1.697,
+      "inference": 4.677,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 1,
+      "round": 27,
+      "latency": 5.682,
+      "lag": 6.614,
+      "queue": 3.324,
+      "inference": 2.349,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 7,
+      "round": 27,
+      "latency": 6.676,
+      "lag": 6.679,
+      "queue": 4.13,
+      "inference": 2.527,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 5,
+      "round": 27,
+      "latency": 5.843,
+      "lag": 6.879,
+      "queue": 3.473,
+      "inference": 2.357,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 10,
+      "round": 27,
+      "latency": 5.292,
+      "lag": 6.961,
+      "queue": 2.999,
+      "inference": 2.285,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 4,
+      "round": 27,
+      "latency": 6.13,
+      "lag": 7.853,
+      "queue": 3.718,
+      "inference": 2.403,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 8,
+      "round": 28,
+      "latency": 3.105,
+      "lag": 3.106,
+      "queue": 0.95,
+      "inference": 2.145,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 2,
+      "round": 28,
+      "latency": 4.107,
+      "lag": 4.109,
+      "queue": 1.84,
+      "inference": 2.256,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 6,
+      "round": 26,
+      "latency": 8.304,
+      "lag": 16.316,
+      "queue": 3.693,
+      "inference": 4.605,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 0,
+      "round": 27,
+      "latency": 6.339,
+      "lag": 11.017,
+      "queue": 1.931,
+      "inference": 4.402,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 3,
+      "round": 27,
+      "latency": 5.542,
+      "lag": 11.253,
+      "queue": 1.164,
+      "inference": 4.373,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 9,
+      "round": 27,
+      "latency": 5.841,
+      "lag": 11.291,
+      "queue": 1.222,
+      "inference": 4.607,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 11,
+      "round": 28,
+      "latency": 5.352,
+      "lag": 5.354,
+      "queue": 3.093,
+      "inference": 2.241,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 1,
+      "round": 28,
+      "latency": 5.874,
+      "lag": 6.489,
+      "queue": 3.489,
+      "inference": 2.377,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 7,
+      "round": 28,
+      "latency": 6.113,
+      "lag": 6.792,
+      "queue": 3.621,
+      "inference": 2.474,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 5,
+      "round": 28,
+      "latency": 6.499,
+      "lag": 7.378,
+      "queue": 4.132,
+      "inference": 2.359,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 10,
+      "round": 28,
+      "latency": 6.655,
+      "lag": 7.617,
+      "queue": 4.281,
+      "inference": 2.362,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 4,
+      "round": 28,
+      "latency": 5.92,
+      "lag": 7.774,
+      "queue": 3.426,
+      "inference": 2.486,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 6,
+      "round": 27,
+      "latency": 5.678,
+      "lag": 15.994,
+      "queue": 1.03,
+      "inference": 4.632,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 2,
+      "round": 29,
+      "latency": 4.222,
+      "lag": 4.224,
+      "queue": 1.606,
+      "inference": 2.606,
+      "text": "He tells us that at this festive season of the year with Christmas"
+    },
+    {
+      "stream": 11,
+      "round": 29,
+      "latency": 4.374,
+      "lag": 4.376,
+      "queue": 1.758,
+      "inference": 2.599,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing"
+    },
+    {
+      "stream": 0,
+      "round": 28,
+      "latency": 6.491,
+      "lag": 11.507,
+      "queue": 1.466,
+      "inference": 5.019,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 3,
+      "round": 28,
+      "latency": 6.5,
+      "lag": 11.752,
+      "queue": 1.534,
+      "inference": 4.957,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 9,
+      "round": 28,
+      "latency": 7.057,
+      "lag": 12.348,
+      "queue": 2.08,
+      "inference": 4.968,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 8,
+      "round": 29,
+      "latency": 6.419,
+      "lag": 6.422,
+      "queue": 3.971,
+      "inference": 2.433,
+      "text": "As for etchings, there are two kinds, British and foreign."
+    },
+    {
+      "stream": 7,
+      "round": 29,
+      "latency": 5.818,
+      "lag": 6.61,
+      "queue": 3.577,
+      "inference": 2.232,
+      "text": "Painting, he tells us, is of a different quality to mathematics"
+    },
+    {
+      "stream": 1,
+      "round": 29,
+      "latency": 6.19,
+      "lag": 6.678,
+      "queue": 3.729,
+      "inference": 2.443,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 5,
+      "round": 29,
+      "latency": 6.461,
+      "lag": 7.839,
+      "queue": 4.119,
+      "inference": 2.331,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 10,
+      "round": 29,
+      "latency": 6.532,
+      "lag": 8.148,
+      "queue": 4.124,
+      "inference": 2.399,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 4,
+      "round": 29,
+      "latency": 6.871,
+      "lag": 8.645,
+      "queue": 4.564,
+      "inference": 2.296,
+      "text": "Linille's pictures are a sort of up guards and atom paintings"
+    },
+    {
+      "stream": 6,
+      "round": 28,
+      "latency": 6.334,
+      "lag": 16.328,
+      "queue": 2.42,
+      "inference": 3.908,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 3,
+      "round": 29,
+      "latency": 4.66,
+      "lag": 10.412,
+      "queue": 0.911,
+      "inference": 3.736,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 0,
+      "round": 29,
+      "latency": 4.936,
+      "lag": 10.444,
+      "queue": 1.095,
+      "inference": 3.834,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 9,
+      "round": 29,
+      "latency": 4.943,
+      "lag": 11.291,
+      "queue": 1.485,
+      "inference": 3.452,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    },
+    {
+      "stream": 6,
+      "round": 29,
+      "latency": 2.79,
+      "lag": 13.117,
+      "queue": 0.0,
+      "inference": 2.786,
+      "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche."
+    }
+  ]
+}

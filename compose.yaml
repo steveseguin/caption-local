@@ -1,0 +1,27 @@
+services:
+  captions:
+    build: .
+    image: caption-local:local
+    ports:
+      - "127.0.0.1:${CAPTION_PORT:-8765}:8765"
+    environment:
+      CAPTION_MODEL: ${CAPTION_MODEL:-small}
+      CAPTION_BEAM_SIZE: ${CAPTION_BEAM_SIZE:-5}
+      CAPTION_WORKERS: ${CAPTION_WORKERS:-1}
+      CAPTION_MAX_STREAMS: ${CAPTION_MAX_STREAMS:-12}
+      CAPTION_THREADS: ${CAPTION_THREADS:-4}
+      CAPTION_DEVICE: cpu
+      CAPTION_COMPUTE_TYPE: ${CAPTION_COMPUTE_TYPE:-auto}
+      CAPTION_OFFLINE: ${CAPTION_OFFLINE:-0}
+    volumes:
+      - models:/models
+    init: true
+    restart: unless-stopped
+    stop_grace_period: 100s
+    pids_limit: 128
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+volumes:
+  models:

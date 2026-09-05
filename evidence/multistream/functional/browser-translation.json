@@ -1,0 +1,21 @@
+{
+  "display": "¡Hola! Bienvenidos al teatro. ¡Muchas gracias por venir esta noche!\nEnglish: Hi, welcome to the theater. Thank you very much for coming this night.\nHola, bienvenidos al teatro. Muchas gracias por venir.\nEnglish: Hello, welcome to the theater. Thank you very much for coming.",
+  "relay_messages": [
+    {
+      "msg": true,
+      "final": "Hi, welcome to the theater. Thank you very much for coming this night.",
+      "id": 1788641136303,
+      "ln": "en"
+    },
+    {
+      "msg": true,
+      "final": "Hello, welcome to the theater. Thank you very much for coming.",
+      "id": 1788641136304,
+      "ln": "en"
+    }
+  ],
+  "download": "¡Hola! Bienvenidos al teatro. ¡Muchas gracias por venir esta noche!\nEnglish: Hi, welcome to the theater. Thank you very much for coming this night.\nHola, bienvenidos al teatro. Muchas gracias por venir.\nEnglish: Hello, welcome to the theater. Thank you very much for coming.",
+  "browser_errors": [],
+  "external_http": [],
+  "method": "real Spanish fake microphone and inference; local mock relay"
+}

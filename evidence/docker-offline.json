@@ -1,0 +1,60 @@
+{
+  "health": {
+    "ready": true,
+    "sample_rate": 16000,
+    "max_seconds": 12,
+    "multilingual": true,
+    "device": "cpu",
+    "compute_type": "int8",
+    "modes": [
+      "transcribe",
+      "translate",
+      "both"
+    ],
+    "translation_target": "en"
+  },
+  "english": {
+    "text": "And so my fellow Americans, ask not what your country can do for you, ask what you can do for your country.",
+    "transcript": "And so my fellow Americans, ask not what your country can do for you, ask what you can do for your country.",
+    "translation": "",
+    "language": "en",
+    "output_language": "en",
+    "translation_language": null,
+    "mode": "transcribe",
+    "audio_seconds": 11.0,
+    "inference_seconds": 0.611
+  },
+  "silence": {
+    "text": "",
+    "transcript": "",
+    "translation": "",
+    "language": "en",
+    "output_language": "en",
+    "translation_language": null,
+    "mode": "transcribe",
+    "audio_seconds": 2.0,
+    "inference_seconds": 0.0
+  },
+  "spanish": {
+    "text": "Hola, bienvenido saltado. Muchas gracias por venir esta noche.",
+    "transcript": "Hola, bienvenido saltado. Muchas gracias por venir esta noche.",
+    "translation": "Hello, welcome to the other side. Thank you very much for coming this night.",
+    "language": "es",
+    "output_language": "es",
+    "translation_language": "en",
+    "mode": "both",
+    "audio_seconds": 5.4001875,
+    "inference_seconds": 0.961
+  },
+  "translation_only": {
+    "text": "Hello, welcome to the other side. Thank you very much for coming this night.",
+    "transcript": "",
+    "translation": "Hello, welcome to the other side. Thank you very much for coming this night.",
+    "language": "es",
+    "output_language": "en",
+    "translation_language": "en",
+    "mode": "translate",
+    "audio_seconds": 5.4001875,
+    "inference_seconds": 0.479
+  }
+}

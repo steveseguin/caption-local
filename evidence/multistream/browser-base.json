@@ -1,0 +1,3686 @@
+{
+  "seconds": 191.45,
+  "streams": 12,
+  "observations": [
+    {
+      "seconds": 5.01,
+      "streams": [
+        {
+          "streamId": "260806df-d2b6-4d99-9d29-c5c8a242019f",
+          "running": true,
+          "buffered": 4.8,
+          "captions": 0,
+          "error": ""
+        },
+        {
+          "streamId": "4ea6190d-f99f-4092-aa5b-8f10b623c033",
+          "running": true,
+          "buffered": 4.8,
+          "captions": 0,
+          "error": ""
+        },
+        {
+          "streamId": "b83184e6-8b95-4325-89f6-7e3678dc5318",
+          "running": true,
+          "buffered": 4.8,
+          "captions": 0,
+          "error": ""
+        },
+        {
+          "streamId": "d7d6bbe9-8b33-4f3c-9aef-4423d04ea909",
+          "running": true,
+          "buffered": 4.8,
+          "captions": 0,
+          "error": ""
+        },
+        {
+          "streamId": "8a116986-8c44-4a67-a4b8-d07578b7ec4c",
+          "running": true,
+          "buffered": 4.8,
+          "captions": 0,
+          "error": ""
+        },
+        {
+          "streamId": "8ee5068c-1d2a-4bb1-a371-887a081f348c",
+          "running": true,
+          "buffered": 4.8,
+          "captions": 0,
+          "error": ""
+        },
+        {
+          "streamId": "5a533c46-9f9d-442a-9d1d-8772237b10bd",
+          "running": true,
+          "buffered": 4.8,
+          "captions": 0,
+          "error": ""
+        },
+        {
+          "streamId": "0d766306-7f8e-4173-9236-68e2511e781c",
+          "running": true,
+          "buffered": 4.8,
+          "captions": 0,
+          "error": ""
+        },
+        {
+          "streamId": "0a936a63-2cc9-4758-b77e-669891fb5452",
+          "running": true,
+          "buffered": 4.8,
+          "captions": 0,
+          "error": ""
+        },
+        {
+          "streamId": "f9044bbe-e8ac-4382-a84e-c9a8638ae303",
+          "running": true,
+          "buffered": 4.7,
+          "captions": 0,
+          "error": ""
+        },
+        {
+          "streamId": "13726d78-4e2f-42cd-8734-76b0618a33f8",
+          "running": true,
+          "buffered": 4.7,
+          "captions": 0,
+          "error": ""
+        },
+        {
+          "streamId": "1737c12d-1caf-4658-af66-9d1007b6d299",
+          "running": true,
+          "buffered": 4.8,
+          "captions": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 10.04,
+      "streams": [
+        {
+          "streamId": "260806df-d2b6-4d99-9d29-c5c8a242019f",
+          "running": true,
+          "buffered": 6,
+          "captions": 1,
+          "error": ""
+        },
+        {
+          "streamId": "4ea6190d-f99f-4092-aa5b-8f10b623c033",
+          "running": true,
+          "buffered": 6.03,
+          "captions": 1,
+          "error": ""
+        },
+        {
+          "streamId": "b83184e6-8b95-4325-89f6-7e3678dc5318",
+          "running": true,
+          "buffered": 9.8,
+          "captions": 0,
+          "error": ""
+        },
+        {
+          "streamId": "d7d6bbe9-8b33-4f3c-9aef-4423d04ea909",
+          "running": true,
+          "buffered": 6.03,
+          "captions": 1,
+          "error": ""
+        },
+        {
+          "streamId": "8a116986-8c44-4a67-a4b8-d07578b7ec4c",
+          "running": true,
+          "buffered": 6.09,
+          "captions": 1,
+          "error": ""
+        },
+        {
+          "streamId": "8ee5068c-1d2a-4bb1-a371-887a081f348c",
+          "running": true,
+          "buffered": 6.08,
+          "captions": 1,
+          "error": ""
+        },
+        {
+          "streamId": "5a533c46-9f9d-442a-9d1d-8772237b10bd",
+          "running": true,
+          "buffered": 6.04,
+          "captions": 1,
+          "error": ""
+        },
+        {
+          "streamId": "0d766306-7f8e-4173-9236-68e2511e781c",
+          "running": true,
+          "buffered": 6.08,
+          "captions": 1,
+          "error": ""
+        },
+        {
+          "streamId": "0a936a63-2cc9-4758-b77e-669891fb5452",
+          "running": true,
+          "buffered": 9.8,
+          "captions": 0,
+          "error": ""
+        },
+        {
+          "streamId": "f9044bbe-e8ac-4382-a84e-c9a8638ae303",
+          "running": true,
+          "buffered": 9.8,
+          "captions": 0,
+          "error": ""
+        },
+        {
+          "streamId": "13726d78-4e2f-42cd-8734-76b0618a33f8",
+          "running": true,
+          "buffered": 9.7,
+          "captions": 0,
+          "error": ""
+        },
+        {
+          "streamId": "1737c12d-1caf-4658-af66-9d1007b6d299",
+          "running": true,
+          "buffered": 6.07,
+          "captions": 1,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 15.04,
+      "streams": [
+        {
+          "streamId": "260806df-d2b6-4d99-9d29-c5c8a242019f",
+          "running": true,
+          "buffered": 6.27,
+          "captions": 2,
+          "error": ""
+        },
+        {
+          "streamId": "4ea6190d-f99f-4092-aa5b-8f10b623c033",
+          "running": true,
+          "buffered": 11.03,
+          "captions": 1,
+          "error": ""
+        },
+        {
+          "streamId": "b83184e6-8b95-4325-89f6-7e3678dc5318",
+          "running": true,
+          "buffered": 11.11,
+          "captions": 1,
+          "error": ""
+        },
+        {
+          "streamId": "d7d6bbe9-8b33-4f3c-9aef-4423d04ea909",
+          "running": true,
+          "buffered": 6.34,
+          "captions": 2,
+          "error": ""
+        },
+        {
+          "streamId": "8a116986-8c44-4a67-a4b8-d07578b7ec4c",
+          "running": true,
+          "buffered": 11.09,
+          "captions": 1,
+          "error": ""
+        },
+        {
+          "streamId": "8ee5068c-1d2a-4bb1-a371-887a081f348c",
+          "running": true,
+          "buffered": 11.08,
+          "captions": 1,
+          "error": ""
+        },
+        {
+          "streamId": "5a533c46-9f9d-442a-9d1d-8772237b10bd",
+          "running": true,
+          "buffered": 6.25,
+          "captions": 2,
+          "error": ""
+        },
+        {
+          "streamId": "0d766306-7f8e-4173-9236-68e2511e781c",
+          "running": true,
+          "buffered": 11.08,
+          "captions": 1,
+          "error": ""
+        },
+        {
+          "streamId": "0a936a63-2cc9-4758-b77e-669891fb5452",
+          "running": true,
+          "buffered": 11.09,
+          "captions": 1,
+          "error": ""
+        },
+        {
+          "streamId": "f9044bbe-e8ac-4382-a84e-c9a8638ae303",
+          "running": true,
+          "buffered": 11.13,
+          "captions": 1,
+          "error": ""
+        },
+        {
+          "streamId": "13726d78-4e2f-42cd-8734-76b0618a33f8",
+          "running": true,
+          "buffered": 11.13,
+          "captions": 1,
+          "error": ""
+        },
+        {
+          "streamId": "1737c12d-1caf-4658-af66-9d1007b6d299",
+          "running": true,
+          "buffered": 6.28,
+          "captions": 2,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 20.05,
+      "streams": [
+        {
+          "streamId": "260806df-d2b6-4d99-9d29-c5c8a242019f",
+          "running": true,
+          "buffered": 6.22,
+          "captions": 3,
+          "error": ""
+        },
+        {
+          "streamId": "4ea6190d-f99f-4092-aa5b-8f10b623c033",
+          "running": true,
+          "buffered": 11.28,
+          "captions": 2,
+          "error": ""
+        },
+        {
+          "streamId": "b83184e6-8b95-4325-89f6-7e3678dc5318",
+          "running": true,
+          "buffered": 9.98,
+          "captions": 2,
+          "error": ""
+        },
+        {
+          "streamId": "d7d6bbe9-8b33-4f3c-9aef-4423d04ea909",
+          "running": true,
+          "buffered": 6.78,
+          "captions": 3,
+          "error": ""
+        },
+        {
+          "streamId": "8a116986-8c44-4a67-a4b8-d07578b7ec4c",
+          "running": true,
+          "buffered": 11.02,
+          "captions": 2,
+          "error": ""
+        },
+        {
+          "streamId": "8ee5068c-1d2a-4bb1-a371-887a081f348c",
+          "running": true,
+          "buffered": 11.29,
+          "captions": 2,
+          "error": ""
+        },
+        {
+          "streamId": "5a533c46-9f9d-442a-9d1d-8772237b10bd",
+          "running": true,
+          "buffered": 6.31,
+          "captions": 3,
+          "error": ""
+        },
+        {
+          "streamId": "0d766306-7f8e-4173-9236-68e2511e781c",
+          "running": true,
+          "buffered": 11.29,
+          "captions": 2,
+          "error": ""
+        },
+        {
+          "streamId": "0a936a63-2cc9-4758-b77e-669891fb5452",
+          "running": true,
+          "buffered": 9.98,
+          "captions": 2,
+          "error": ""
+        },
+        {
+          "streamId": "f9044bbe-e8ac-4382-a84e-c9a8638ae303",
+          "running": true,
+          "buffered": 8.2,
+          "captions": 2,
+          "error": ""
+        },
+        {
+          "streamId": "13726d78-4e2f-42cd-8734-76b0618a33f8",
+          "running": true,
+          "buffered": 10,
+          "captions": 2,
+          "error": ""
+        },
+        {
+          "streamId": "1737c12d-1caf-4658-af66-9d1007b6d299",
+          "running": true,
+          "buffered": 6.23,
+          "captions": 3,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 25.06,
+      "streams": [
+        {
+          "streamId": "260806df-d2b6-4d99-9d29-c5c8a242019f",
+          "running": true,
+          "buffered": 11.32,
+          "captions": 3,
+          "error": ""
+        },
+        {
+          "streamId": "4ea6190d-f99f-4092-aa5b-8f10b623c033",
+          "running": true,
+          "buffered": 16.28,
+          "captions": 2,
+          "error": ""
+        },
+        {
+          "streamId": "b83184e6-8b95-4325-89f6-7e3678dc5318",
+          "running": true,
+          "buffered": 9.1,
+          "captions": 3,
+          "error": ""
+        },
+        {
+          "streamId": "d7d6bbe9-8b33-4f3c-9aef-4423d04ea909",
+          "running": true,
+          "buffered": 11.78,
+          "captions": 3,
+          "error": ""
+        },
+        {
+          "streamId": "8a116986-8c44-4a67-a4b8-d07578b7ec4c",
+          "running": true,
+          "buffered": 11.23,
+          "captions": 3,
+          "error": ""
+        },
+        {
+          "streamId": "8ee5068c-1d2a-4bb1-a371-887a081f348c",
+          "running": true,
+          "buffered": 11.21,
+          "captions": 3,
+          "error": ""
+        },
+        {
+          "streamId": "5a533c46-9f9d-442a-9d1d-8772237b10bd",
+          "running": true,
+          "buffered": 11.31,
+          "captions": 3,
+          "error": ""
+        },
+        {
+          "streamId": "0d766306-7f8e-4173-9236-68e2511e781c",
+          "running": true,
+          "buffered": 11.22,
+          "captions": 3,
+          "error": ""
+        },
+        {
+          "streamId": "0a936a63-2cc9-4758-b77e-669891fb5452",
+          "running": true,
+          "buffered": 9.06,
+          "captions": 3,
+          "error": ""
+        },
+        {
+          "streamId": "f9044bbe-e8ac-4382-a84e-c9a8638ae303",
+          "running": true,
+          "buffered": 13.2,
+          "captions": 2,
+          "error": ""
+        },
+        {
+          "streamId": "13726d78-4e2f-42cd-8734-76b0618a33f8",
+          "running": true,
+          "buffered": 9.12,
+          "captions": 3,
+          "error": ""
+        },
+        {
+          "streamId": "1737c12d-1caf-4658-af66-9d1007b6d299",
+          "running": true,
+          "buffered": 11.23,
+          "captions": 3,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 30.07,
+      "streams": [
+        {
+          "streamId": "260806df-d2b6-4d99-9d29-c5c8a242019f",
+          "running": true,
+          "buffered": 11.31,
+          "captions": 4,
+          "error": ""
+        },
+        {
+          "streamId": "4ea6190d-f99f-4092-aa5b-8f10b623c033",
+          "running": true,
+          "buffered": 21.28,
+          "captions": 2,
+          "error": ""
+        },
+        {
+          "streamId": "b83184e6-8b95-4325-89f6-7e3678dc5318",
+          "running": true,
+          "buffered": 8.39,
+          "captions": 4,
+          "error": ""
+        },
+        {
+          "streamId": "d7d6bbe9-8b33-4f3c-9aef-4423d04ea909",
+          "running": true,
+          "buffered": 11.75,
+          "captions": 4,
+          "error": ""
+        },
+        {
+          "streamId": "8a116986-8c44-4a67-a4b8-d07578b7ec4c",
+          "running": true,
+          "buffered": 9.85,
+          "captions": 4,
+          "error": ""
+        },
+        {
+          "streamId": "8ee5068c-1d2a-4bb1-a371-887a081f348c",
+          "running": true,
+          "buffered": 9.83,
+          "captions": 4,
+          "error": ""
+        },
+        {
+          "streamId": "5a533c46-9f9d-442a-9d1d-8772237b10bd",
+          "running": true,
+          "buffered": 11.3,
+          "captions": 4,
+          "error": ""
+        },
+        {
+          "streamId": "0d766306-7f8e-4173-9236-68e2511e781c",
+          "running": true,
+          "buffered": 10.95,
+          "captions": 4,
+          "error": ""
+        },
+        {
+          "streamId": "0a936a63-2cc9-4758-b77e-669891fb5452",
+          "running": true,
+          "buffered": 14.06,
+          "captions": 3,
+          "error": ""
+        },
+        {
+          "streamId": "f9044bbe-e8ac-4382-a84e-c9a8638ae303",
+          "running": true,
+          "buffered": 14.08,
+          "captions": 3,
+          "error": ""
+        },
+        {
+          "streamId": "13726d78-4e2f-42cd-8734-76b0618a33f8",
+          "running": true,
+          "buffered": 14.12,
+          "captions": 3,
+          "error": ""
+        },
+        {
+          "streamId": "1737c12d-1caf-4658-af66-9d1007b6d299",
+          "running": true,
+          "buffered": 11.22,
+          "captions": 4,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 35.19,
+      "streams": [
+        {
+          "streamId": "260806df-d2b6-4d99-9d29-c5c8a242019f",
+          "running": true,
+          "buffered": 9.81,
+          "captions": 5,
+          "error": ""
+        },
+        {
+          "streamId": "4ea6190d-f99f-4092-aa5b-8f10b623c033",
+          "running": true,
+          "buffered": 21.29,
+          "captions": 3,
+          "error": ""
+        },
+        {
+          "streamId": "b83184e6-8b95-4325-89f6-7e3678dc5318",
+          "running": true,
+          "buffered": 13.39,
+          "captions": 4,
+          "error": ""
+        },
+        {
+          "streamId": "d7d6bbe9-8b33-4f3c-9aef-4423d04ea909",
+          "running": true,
+          "buffered": 12.99,
+          "captions": 5,
+          "error": ""
+        },
+        {
+          "streamId": "8a116986-8c44-4a67-a4b8-d07578b7ec4c",
+          "running": true,
+          "buffered": 9.22,
+          "captions": 5,
+          "error": ""
+        },
+        {
+          "streamId": "8ee5068c-1d2a-4bb1-a371-887a081f348c",
+          "running": true,
+          "buffered": 14.83,
+          "captions": 4,
+          "error": ""
+        },
+        {
+          "streamId": "5a533c46-9f9d-442a-9d1d-8772237b10bd",
+          "running": true,
+          "buffered": 13.02,
+          "captions": 5,
+          "error": ""
+        },
+        {
+          "streamId": "0d766306-7f8e-4173-9236-68e2511e781c",
+          "running": true,
+          "buffered": 15.95,
+          "captions": 4,
+          "error": ""
+        },
+        {
+          "streamId": "0a936a63-2cc9-4758-b77e-669891fb5452",
+          "running": true,
+          "buffered": 12.97,
+          "captions": 4,
+          "error": ""
+        },
+        {
+          "streamId": "f9044bbe-e8ac-4382-a84e-c9a8638ae303",
+          "running": true,
+          "buffered": 12.99,
+          "captions": 4,
+          "error": ""
+        },
+        {
+          "streamId": "13726d78-4e2f-42cd-8734-76b0618a33f8",
+          "running": true,
+          "buffered": 12.99,
+          "captions": 4,
+          "error": ""
+        },
+        {
+          "streamId": "1737c12d-1caf-4658-af66-9d1007b6d299",
+          "running": true,
+          "buffered": 9.22,
+          "captions": 5,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 40.2,
+      "streams": [
+        {
+          "streamId": "260806df-d2b6-4d99-9d29-c5c8a242019f",
+          "running": true,
+          "buffered": 9.1,
+          "captions": 6,
+          "error": ""
+        },
+        {
+          "streamId": "4ea6190d-f99f-4092-aa5b-8f10b623c033",
+          "running": true,
+          "buffered": 26.39,
+          "captions": 3,
+          "error": ""
+        },
+        {
+          "streamId": "b83184e6-8b95-4325-89f6-7e3678dc5318",
+          "running": true,
+          "buffered": 12.21,
+          "captions": 5,
+          "error": ""
+        },
+        {
+          "streamId": "d7d6bbe9-8b33-4f3c-9aef-4423d04ea909",
+          "running": true,
+          "buffered": 9.04,
+          "captions": 6,
+          "error": ""
+        },
+        {
+          "streamId": "8a116986-8c44-4a67-a4b8-d07578b7ec4c",
+          "running": true,
+          "buffered": 14.32,
+          "captions": 5,
+          "error": ""
+        },
+        {
+          "streamId": "8ee5068c-1d2a-4bb1-a371-887a081f348c",
+          "running": true,
+          "buffered": 12.78,
+          "captions": 5,
+          "error": ""
+        },
+        {
+          "streamId": "5a533c46-9f9d-442a-9d1d-8772237b10bd",
+          "running": true,
+          "buffered": 9.38,
+          "captions": 6,
+          "error": ""
+        },
+        {
+          "streamId": "0d766306-7f8e-4173-9236-68e2511e781c",
+          "running": true,
+          "buffered": 14.4,
+          "captions": 5,
+          "error": ""
+        },
+        {
+          "streamId": "0a936a63-2cc9-4758-b77e-669891fb5452",
+          "running": true,
+          "buffered": 12.12,
+          "captions": 5,
+          "error": ""
+        },
+        {
+          "streamId": "f9044bbe-e8ac-4382-a84e-c9a8638ae303",
+          "running": true,
+          "buffered": 10.67,
+          "captions": 5,
+          "error": ""
+        },
+        {
+          "streamId": "13726d78-4e2f-42cd-8734-76b0618a33f8",
+          "running": true,
+          "buffered": 10.67,
+          "captions": 5,
+          "error": ""
+        },
+        {
+          "streamId": "1737c12d-1caf-4658-af66-9d1007b6d299",
+          "running": true,
+          "buffered": 14.42,
+          "captions": 5,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 45.21,
+      "streams": [
+        {
+          "streamId": "260806df-d2b6-4d99-9d29-c5c8a242019f",
+          "running": true,
+          "buffered": 14.1,
+          "captions": 6,
+          "error": ""
+        },
+        {
+          "streamId": "4ea6190d-f99f-4092-aa5b-8f10b623c033",
+          "running": true,
+          "buffered": 22.05,
+          "captions": 4,
+          "error": ""
+        },
+        {
+          "streamId": "b83184e6-8b95-4325-89f6-7e3678dc5318",
+          "running": true,
+          "buffered": 11.05,
+          "captions": 6,
+          "error": ""
+        },
+        {
+          "streamId": "d7d6bbe9-8b33-4f3c-9aef-4423d04ea909",
+          "running": true,
+          "buffered": 7.85,
+          "captions": 7,
+          "error": ""
+        },
+        {
+          "streamId": "8a116986-8c44-4a67-a4b8-d07578b7ec4c",
+          "running": true,
+          "buffered": 11.65,
+          "captions": 6,
+          "error": ""
+        },
+        {
+          "streamId": "8ee5068c-1d2a-4bb1-a371-887a081f348c",
+          "running": true,
+          "buffered": 11.54,
+          "captions": 6,
+          "error": ""
+        },
+        {
+          "streamId": "5a533c46-9f9d-442a-9d1d-8772237b10bd",
+          "running": true,
+          "buffered": 8.25,
+          "captions": 7,
+          "error": ""
+        },
+        {
+          "streamId": "0d766306-7f8e-4173-9236-68e2511e781c",
+          "running": true,
+          "buffered": 11.54,
+          "captions": 6,
+          "error": ""
+        },
+        {
+          "streamId": "0a936a63-2cc9-4758-b77e-669891fb5452",
+          "running": true,
+          "buffered": 11.15,
+          "captions": 6,
+          "error": ""
+        },
+        {
+          "streamId": "f9044bbe-e8ac-4382-a84e-c9a8638ae303",
+          "running": true,
+          "buffered": 9.97,
+          "captions": 6,
+          "error": ""
+        },
+        {
+          "streamId": "13726d78-4e2f-42cd-8734-76b0618a33f8",
+          "running": true,
+          "buffered": 11.05,
+          "captions": 6,
+          "error": ""
+        },
+        {
+          "streamId": "1737c12d-1caf-4658-af66-9d1007b6d299",
+          "running": true,
+          "buffered": 12.14,
+          "captions": 6,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 50.22,
+      "streams": [
+        {
+          "streamId": "260806df-d2b6-4d99-9d29-c5c8a242019f",
+          "running": true,
+          "buffered": 12.36,
+          "captions": 7,
+          "error": ""
+        },
+        {
+          "streamId": "4ea6190d-f99f-4092-aa5b-8f10b623c033",
+          "running": true,
+          "buffered": 16.71,
+          "captions": 5,
+          "error": ""
+        },
+        {
+          "streamId": "b83184e6-8b95-4325-89f6-7e3678dc5318",
+          "running": true,
+          "buffered": 10.12,
+          "captions": 7,
+          "error": ""
+        },
+        {
+          "streamId": "d7d6bbe9-8b33-4f3c-9aef-4423d04ea909",
+          "running": true,
+          "buffered": 12.85,
+          "captions": 7,
+          "error": ""
+        },
+        {
+          "streamId": "8a116986-8c44-4a67-a4b8-d07578b7ec4c",
+          "running": true,
+          "buffered": 10.64,
+          "captions": 7,
+          "error": ""
+        },
+        {
+          "streamId": "8ee5068c-1d2a-4bb1-a371-887a081f348c",
+          "running": true,
+          "buffered": 10.21,
+          "captions": 7,
+          "error": ""
+        },
+        {
+          "streamId": "5a533c46-9f9d-442a-9d1d-8772237b10bd",
+          "running": true,
+          "buffered": 13.25,
+          "captions": 7,
+          "error": ""
+        },
+        {
+          "streamId": "0d766306-7f8e-4173-9236-68e2511e781c",
+          "running": true,
+          "buffered": 10.22,
+          "captions": 7,
+          "error": ""
+        },
+        {
+          "streamId": "0a936a63-2cc9-4758-b77e-669891fb5452",
+          "running": true,
+          "buffered": 8.73,
+          "captions": 7,
+          "error": ""
+        },
+        {
+          "streamId": "f9044bbe-e8ac-4382-a84e-c9a8638ae303",
+          "running": true,
+          "buffered": 14.97,
+          "captions": 6,
+          "error": ""
+        },
+        {
+          "streamId": "13726d78-4e2f-42cd-8734-76b0618a33f8",
+          "running": true,
+          "buffered": 8.65,
+          "captions": 7,
+          "error": ""
+        },
+        {
+          "streamId": "1737c12d-1caf-4658-af66-9d1007b6d299",
+          "running": true,
+          "buffered": 12.36,
+          "captions": 7,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 55.23,
+      "streams": [
+        {
+          "streamId": "260806df-d2b6-4d99-9d29-c5c8a242019f",
+          "running": true,
+          "buffered": 12.07,
+          "captions": 8,
+          "error": ""
+        },
+        {
+          "streamId": "4ea6190d-f99f-4092-aa5b-8f10b623c033",
+          "running": true,
+          "buffered": 12.09,
+          "captions": 6,
+          "error": ""
+        },
+        {
+          "streamId": "b83184e6-8b95-4325-89f6-7e3678dc5318",
+          "running": true,
+          "buffered": 9.03,
+          "captions": 8,
+          "error": ""
+        },
+        {
+          "streamId": "d7d6bbe9-8b33-4f3c-9aef-4423d04ea909",
+          "running": true,
+          "buffered": 12.05,
+          "captions": 8,
+          "error": ""
+        },
+        {
+          "streamId": "8a116986-8c44-4a67-a4b8-d07578b7ec4c",
+          "running": true,
+          "buffered": 10.07,
+          "captions": 8,
+          "error": ""
+        },
+        {
+          "streamId": "8ee5068c-1d2a-4bb1-a371-887a081f348c",
+          "running": true,
+          "buffered": 9.1,
+          "captions": 8,
+          "error": ""
+        },
+        {
+          "streamId": "5a533c46-9f9d-442a-9d1d-8772237b10bd",
+          "running": true,
+          "buffered": 12.03,
+          "captions": 8,
+          "error": ""
+        },
+        {
+          "streamId": "0d766306-7f8e-4173-9236-68e2511e781c",
+          "running": true,
+          "buffered": 9.51,
+          "captions": 8,
+          "error": ""
+        },
+        {
+          "streamId": "0a936a63-2cc9-4758-b77e-669891fb5452",
+          "running": true,
+          "buffered": 9.13,
+          "captions": 8,
+          "error": ""
+        },
+        {
+          "streamId": "f9044bbe-e8ac-4382-a84e-c9a8638ae303",
+          "running": true,
+          "buffered": 12.33,
+          "captions": 7,
+          "error": ""
+        },
+        {
+          "streamId": "13726d78-4e2f-42cd-8734-76b0618a33f8",
+          "running": true,
+          "buffered": 13.65,
+          "captions": 7,
+          "error": ""
+        },
+        {
+          "streamId": "1737c12d-1caf-4658-af66-9d1007b6d299",
+          "running": true,
+          "buffered": 10.41,
+          "captions": 8,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 60.23,
+      "streams": [
+        {
+          "streamId": "260806df-d2b6-4d99-9d29-c5c8a242019f",
+          "running": true,
+          "buffered": 10.35,
+          "captions": 9,
+          "error": ""
+        },
+        {
+          "streamId": "4ea6190d-f99f-4092-aa5b-8f10b623c033",
+          "running": true,
+          "buffered": 10.35,
+          "captions": 7,
+          "error": ""
+        },
+        {
+          "streamId": "b83184e6-8b95-4325-89f6-7e3678dc5318",
+          "running": true,
+          "buffered": 8.07,
+          "captions": 9,
+          "error": ""
+        },
+        {
+          "streamId": "d7d6bbe9-8b33-4f3c-9aef-4423d04ea909",
+          "running": true,
+          "buffered": 11.21,
+          "captions": 9,
+          "error": ""
+        },
+        {
+          "streamId": "8a116986-8c44-4a67-a4b8-d07578b7ec4c",
+          "running": true,
+          "buffered": 10.39,
+          "captions": 9,
+          "error": ""
+        },
+        {
+          "streamId": "8ee5068c-1d2a-4bb1-a371-887a081f348c",
+          "running": true,
+          "buffered": 14.1,
+          "captions": 8,
+          "error": ""
+        },
+        {
+          "streamId": "5a533c46-9f9d-442a-9d1d-8772237b10bd",
+          "running": true,
+          "buffered": 11.23,
+          "captions": 9,
+          "error": ""
+        },
+        {
+          "streamId": "0d766306-7f8e-4173-9236-68e2511e781c",
+          "running": true,
+          "buffered": 8.21,
+          "captions": 9,
+          "error": ""
+        },
+        {
+          "streamId": "0a936a63-2cc9-4758-b77e-669891fb5452",
+          "running": true,
+          "buffered": 14.13,
+          "captions": 8,
+          "error": ""
+        },
+        {
+          "streamId": "f9044bbe-e8ac-4382-a84e-c9a8638ae303",
+          "running": true,
+          "buffered": 11.65,
+          "captions": 8,
+          "error": ""
+        },
+        {
+          "streamId": "13726d78-4e2f-42cd-8734-76b0618a33f8",
+          "running": true,
+          "buffered": 13.39,
+          "captions": 8,
+          "error": ""
+        },
+        {
+          "streamId": "1737c12d-1caf-4658-af66-9d1007b6d299",
+          "running": true,
+          "buffered": 10.35,
+          "captions": 9,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 65.24,
+      "streams": [
+        {
+          "streamId": "260806df-d2b6-4d99-9d29-c5c8a242019f",
+          "running": true,
+          "buffered": 8.67,
+          "captions": 10,
+          "error": ""
+        },
+        {
+          "streamId": "4ea6190d-f99f-4092-aa5b-8f10b623c033",
+          "running": true,
+          "buffered": 15.35,
+          "captions": 7,
+          "error": ""
+        },
+        {
+          "streamId": "b83184e6-8b95-4325-89f6-7e3678dc5318",
+          "running": true,
+          "buffered": 13.07,
+          "captions": 9,
+          "error": ""
+        },
+        {
+          "streamId": "d7d6bbe9-8b33-4f3c-9aef-4423d04ea909",
+          "running": true,
+          "buffered": 10.05,
+          "captions": 10,
+          "error": ""
+        },
+        {
+          "streamId": "8a116986-8c44-4a67-a4b8-d07578b7ec4c",
+          "running": true,
+          "buffered": 8.15,
+          "captions": 10,
+          "error": ""
+        },
+        {
+          "streamId": "8ee5068c-1d2a-4bb1-a371-887a081f348c",
+          "running": true,
+          "buffered": 13.18,
+          "captions": 9,
+          "error": ""
+        },
+        {
+          "streamId": "5a533c46-9f9d-442a-9d1d-8772237b10bd",
+          "running": true,
+          "buffered": 10.03,
+          "captions": 10,
+          "error": ""
+        },
+        {
+          "streamId": "0d766306-7f8e-4173-9236-68e2511e781c",
+          "running": true,
+          "buffered": 13.21,
+          "captions": 9,
+          "error": ""
+        },
+        {
+          "streamId": "0a936a63-2cc9-4758-b77e-669891fb5452",
+          "running": true,
+          "buffered": 11.72,
+          "captions": 9,
+          "error": ""
+        },
+        {
+          "streamId": "f9044bbe-e8ac-4382-a84e-c9a8638ae303",
+          "running": true,
+          "buffered": 10.88,
+          "captions": 9,
+          "error": ""
+        },
+        {
+          "streamId": "13726d78-4e2f-42cd-8734-76b0618a33f8",
+          "running": true,
+          "buffered": 11.25,
+          "captions": 9,
+          "error": ""
+        },
+        {
+          "streamId": "1737c12d-1caf-4658-af66-9d1007b6d299",
+          "running": true,
+          "buffered": 8.95,
+          "captions": 10,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 70.25,
+      "streams": [
+        {
+          "streamId": "260806df-d2b6-4d99-9d29-c5c8a242019f",
+          "running": true,
+          "buffered": 13.67,
+          "captions": 10,
+          "error": ""
+        },
+        {
+          "streamId": "4ea6190d-f99f-4092-aa5b-8f10b623c033",
+          "running": true,
+          "buffered": 12.5,
+          "captions": 8,
+          "error": ""
+        },
+        {
+          "streamId": "b83184e6-8b95-4325-89f6-7e3678dc5318",
+          "running": true,
+          "buffered": 12.13,
+          "captions": 10,
+          "error": ""
+        },
+        {
+          "streamId": "d7d6bbe9-8b33-4f3c-9aef-4423d04ea909",
+          "running": true,
+          "buffered": 8.83,
+          "captions": 11,
+          "error": ""
+        },
+        {
+          "streamId": "8a116986-8c44-4a67-a4b8-d07578b7ec4c",
+          "running": true,
+          "buffered": 13.15,
+          "captions": 10,
+          "error": ""
+        },
+        {
+          "streamId": "8ee5068c-1d2a-4bb1-a371-887a081f348c",
+          "running": true,
+          "buffered": 12.1,
+          "captions": 10,
+          "error": ""
+        },
+        {
+          "streamId": "5a533c46-9f9d-442a-9d1d-8772237b10bd",
+          "running": true,
+          "buffered": 9.21,
+          "captions": 11,
+          "error": ""
+        },
+        {
+          "streamId": "0d766306-7f8e-4173-9236-68e2511e781c",
+          "running": true,
+          "buffered": 12.08,
+          "captions": 10,
+          "error": ""
+        },
+        {
+          "streamId": "0a936a63-2cc9-4758-b77e-669891fb5452",
+          "running": true,
+          "buffered": 12.12,
+          "captions": 10,
+          "error": ""
+        },
+        {
+          "streamId": "f9044bbe-e8ac-4382-a84e-c9a8638ae303",
+          "running": true,
+          "buffered": 10.68,
+          "captions": 10,
+          "error": ""
+        },
+        {
+          "streamId": "13726d78-4e2f-42cd-8734-76b0618a33f8",
+          "running": true,
+          "buffered": 12.13,
+          "captions": 10,
+          "error": ""
+        },
+        {
+          "streamId": "1737c12d-1caf-4658-af66-9d1007b6d299",
+          "running": true,
+          "buffered": 8.32,
+          "captions": 11,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 75.26,
+      "streams": [
+        {
+          "streamId": "260806df-d2b6-4d99-9d29-c5c8a242019f",
+          "running": true,
+          "buffered": 13.32,
+          "captions": 11,
+          "error": ""
+        },
+        {
+          "streamId": "4ea6190d-f99f-4092-aa5b-8f10b623c033",
+          "running": true,
+          "buffered": 11.69,
+          "captions": 9,
+          "error": ""
+        },
+        {
+          "streamId": "b83184e6-8b95-4325-89f6-7e3678dc5318",
+          "running": true,
+          "buffered": 11.23,
+          "captions": 11,
+          "error": ""
+        },
+        {
+          "streamId": "d7d6bbe9-8b33-4f3c-9aef-4423d04ea909",
+          "running": true,
+          "buffered": 13.83,
+          "captions": 11,
+          "error": ""
+        },
+        {
+          "streamId": "8a116986-8c44-4a67-a4b8-d07578b7ec4c",
+          "running": true,
+          "buffered": 13.36,
+          "captions": 11,
+          "error": ""
+        },
+        {
+          "streamId": "8ee5068c-1d2a-4bb1-a371-887a081f348c",
+          "running": true,
+          "buffered": 9.92,
+          "captions": 11,
+          "error": ""
+        },
+        {
+          "streamId": "5a533c46-9f9d-442a-9d1d-8772237b10bd",
+          "running": true,
+          "buffered": 8.03,
+          "captions": 12,
+          "error": ""
+        },
+        {
+          "streamId": "0d766306-7f8e-4173-9236-68e2511e781c",
+          "running": true,
+          "buffered": 11.17,
+          "captions": 11,
+          "error": ""
+        },
+        {
+          "streamId": "0a936a63-2cc9-4758-b77e-669891fb5452",
+          "running": true,
+          "buffered": 9.68,
+          "captions": 11,
+          "error": ""
+        },
+        {
+          "streamId": "f9044bbe-e8ac-4382-a84e-c9a8638ae303",
+          "running": true,
+          "buffered": 9.7,
+          "captions": 11,
+          "error": ""
+        },
+        {
+          "streamId": "13726d78-4e2f-42cd-8734-76b0618a33f8",
+          "running": true,
+          "buffered": 9.22,
+          "captions": 11,
+          "error": ""
+        },
+        {
+          "streamId": "1737c12d-1caf-4658-af66-9d1007b6d299",
+          "running": true,
+          "buffered": 13.32,
+          "captions": 11,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 80.27,
+      "streams": [
+        {
+          "streamId": "260806df-d2b6-4d99-9d29-c5c8a242019f",
+          "running": true,
+          "buffered": 10.46,
+          "captions": 12,
+          "error": ""
+        },
+        {
+          "streamId": "4ea6190d-f99f-4092-aa5b-8f10b623c033",
+          "running": true,
+          "buffered": 10.89,
+          "captions": 10,
+          "error": ""
+        },
+        {
+          "streamId": "b83184e6-8b95-4325-89f6-7e3678dc5318",
+          "running": true,
+          "buffered": 10.52,
+          "captions": 12,
+          "error": ""
+        },
+        {
+          "streamId": "d7d6bbe9-8b33-4f3c-9aef-4423d04ea909",
+          "running": true,
+          "buffered": 13.05,
+          "captions": 12,
+          "error": ""
+        },
+        {
+          "streamId": "8a116986-8c44-4a67-a4b8-d07578b7ec4c",
+          "running": true,
+          "buffered": 10.81,
+          "captions": 12,
+          "error": ""
+        },
+        {
+          "streamId": "8ee5068c-1d2a-4bb1-a371-887a081f348c",
+          "running": true,
+          "buffered": 9.14,
+          "captions": 12,
+          "error": ""
+        },
+        {
+          "streamId": "5a533c46-9f9d-442a-9d1d-8772237b10bd",
+          "running": true,
+          "buffered": 13.03,
+          "captions": 12,
+          "error": ""
+        },
+        {
+          "streamId": "0d766306-7f8e-4173-9236-68e2511e781c",
+          "running": true,
+          "buffered": 9.94,
+          "captions": 12,
+          "error": ""
+        },
+        {
+          "streamId": "0a936a63-2cc9-4758-b77e-669891fb5452",
+          "running": true,
+          "buffered": 10.08,
+          "captions": 12,
+          "error": ""
+        },
+        {
+          "streamId": "f9044bbe-e8ac-4382-a84e-c9a8638ae303",
+          "running": true,
+          "buffered": 9.12,
+          "captions": 12,
+          "error": ""
+        },
+        {
+          "streamId": "13726d78-4e2f-42cd-8734-76b0618a33f8",
+          "running": true,
+          "buffered": 14.22,
+          "captions": 11,
+          "error": ""
+        },
+        {
+          "streamId": "1737c12d-1caf-4658-af66-9d1007b6d299",
+          "running": true,
+          "buffered": 13.05,
+          "captions": 12,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 85.27,
+      "streams": [
+        {
+          "streamId": "260806df-d2b6-4d99-9d29-c5c8a242019f",
+          "running": true,
+          "buffered": 9.65,
+          "captions": 13,
+          "error": ""
+        },
+        {
+          "streamId": "4ea6190d-f99f-4092-aa5b-8f10b623c033",
+          "running": true,
+          "buffered": 11.31,
+          "captions": 11,
+          "error": ""
+        },
+        {
+          "streamId": "b83184e6-8b95-4325-89f6-7e3678dc5318",
+          "running": true,
+          "buffered": 9.59,
+          "captions": 13,
+          "error": ""
+        },
+        {
+          "streamId": "d7d6bbe9-8b33-4f3c-9aef-4423d04ea909",
+          "running": true,
+          "buffered": 11.31,
+          "captions": 13,
+          "error": ""
+        },
+        {
+          "streamId": "8a116986-8c44-4a67-a4b8-d07578b7ec4c",
+          "running": true,
+          "buffered": 11.25,
+          "captions": 13,
+          "error": ""
+        },
+        {
+          "streamId": "8ee5068c-1d2a-4bb1-a371-887a081f348c",
+          "running": true,
+          "buffered": 7.88,
+          "captions": 13,
+          "error": ""
+        },
+        {
+          "streamId": "5a533c46-9f9d-442a-9d1d-8772237b10bd",
+          "running": true,
+          "buffered": 12.19,
+          "captions": 13,
+          "error": ""
+        },
+        {
+          "streamId": "0d766306-7f8e-4173-9236-68e2511e781c",
+          "running": true,
+          "buffered": 7.81,
+          "captions": 13,
+          "error": ""
+        },
+        {
+          "streamId": "0a936a63-2cc9-4758-b77e-669891fb5452",
+          "running": true,
+          "buffered": 7.67,
+          "captions": 13,
+          "error": ""
+        },
+        {
+          "streamId": "f9044bbe-e8ac-4382-a84e-c9a8638ae303",
+          "running": true,
+          "buffered": 14.02,
+          "captions": 12,
+          "error": ""
+        },
+        {
+          "streamId": "13726d78-4e2f-42cd-8734-76b0618a33f8",
+          "running": true,
+          "buffered": 12.26,
+          "captions": 12,
+          "error": ""
+        },
+        {
+          "streamId": "1737c12d-1caf-4658-af66-9d1007b6d299",
+          "running": true,
+          "buffered": 11.36,
+          "captions": 13,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 90.28,
+      "streams": [
+        {
+          "streamId": "260806df-d2b6-4d99-9d29-c5c8a242019f",
+          "running": true,
+          "buffered": 8.84,
+          "captions": 14,
+          "error": ""
+        },
+        {
+          "streamId": "4ea6190d-f99f-4092-aa5b-8f10b623c033",
+          "running": true,
+          "buffered": 8.88,
+          "captions": 12,
+          "error": ""
+        },
+        {
+          "streamId": "b83184e6-8b95-4325-89f6-7e3678dc5318",
+          "running": true,
+          "buffered": 8.41,
+          "captions": 14,
+          "error": ""
+        },
+        {
+          "streamId": "d7d6bbe9-8b33-4f3c-9aef-4423d04ea909",
+          "running": true,
+          "buffered": 11.04,
+          "captions": 14,
+          "error": ""
+        },
+        {
+          "streamId": "8a116986-8c44-4a67-a4b8-d07578b7ec4c",
+          "running": true,
+          "buffered": 8.8,
+          "captions": 14,
+          "error": ""
+        },
+        {
+          "streamId": "8ee5068c-1d2a-4bb1-a371-887a081f348c",
+          "running": true,
+          "buffered": 8.06,
+          "captions": 14,
+          "error": ""
+        },
+        {
+          "streamId": "5a533c46-9f9d-442a-9d1d-8772237b10bd",
+          "running": true,
+          "buffered": 10.99,
+          "captions": 14,
+          "error": ""
+        },
+        {
+          "streamId": "0d766306-7f8e-4173-9236-68e2511e781c",
+          "running": true,
+          "buffered": 12.81,
+          "captions": 13,
+          "error": ""
+        },
+        {
+          "streamId": "0a936a63-2cc9-4758-b77e-669891fb5452",
+          "running": true,
+          "buffered": 12.67,
+          "captions": 13,
+          "error": ""
+        },
+        {
+          "streamId": "f9044bbe-e8ac-4382-a84e-c9a8638ae303",
+          "running": true,
+          "buffered": 12.1,
+          "captions": 13,
+          "error": ""
+        },
+        {
+          "streamId": "13726d78-4e2f-42cd-8734-76b0618a33f8",
+          "running": true,
+          "buffered": 11.1,
+          "captions": 13,
+          "error": ""
+        },
+        {
+          "streamId": "1737c12d-1caf-4658-af66-9d1007b6d299",
+          "running": true,
+          "buffered": 11,
+          "captions": 14,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 95.32,
+      "streams": [
+        {
+          "streamId": "260806df-d2b6-4d99-9d29-c5c8a242019f",
+          "running": true,
+          "buffered": 9.28,
+          "captions": 15,
+          "error": ""
+        },
+        {
+          "streamId": "4ea6190d-f99f-4092-aa5b-8f10b623c033",
+          "running": true,
+          "buffered": 9.32,
+          "captions": 13,
+          "error": ""
+        },
+        {
+          "streamId": "b83184e6-8b95-4325-89f6-7e3678dc5318",
+          "running": true,
+          "buffered": 9.25,
+          "captions": 15,
+          "error": ""
+        },
+        {
+          "streamId": "d7d6bbe9-8b33-4f3c-9aef-4423d04ea909",
+          "running": true,
+          "buffered": 10.18,
+          "captions": 15,
+          "error": ""
+        },
+        {
+          "streamId": "8a116986-8c44-4a67-a4b8-d07578b7ec4c",
+          "running": true,
+          "buffered": 9.34,
+          "captions": 15,
+          "error": ""
+        },
+        {
+          "streamId": "8ee5068c-1d2a-4bb1-a371-887a081f348c",
+          "running": true,
+          "buffered": 7.24,
+          "captions": 15,
+          "error": ""
+        },
+        {
+          "streamId": "5a533c46-9f9d-442a-9d1d-8772237b10bd",
+          "running": true,
+          "buffered": 10.2,
+          "captions": 15,
+          "error": ""
+        },
+        {
+          "streamId": "0d766306-7f8e-4173-9236-68e2511e781c",
+          "running": true,
+          "buffered": 13.03,
+          "captions": 14,
+          "error": ""
+        },
+        {
+          "streamId": "0a936a63-2cc9-4758-b77e-669891fb5452",
+          "running": true,
+          "buffered": 13.07,
+          "captions": 14,
+          "error": ""
+        },
+        {
+          "streamId": "f9044bbe-e8ac-4382-a84e-c9a8638ae303",
+          "running": true,
+          "buffered": 13.08,
+          "captions": 14,
+          "error": ""
+        },
+        {
+          "streamId": "13726d78-4e2f-42cd-8734-76b0618a33f8",
+          "running": true,
+          "buffered": 10.24,
+          "captions": 14,
+          "error": ""
+        },
+        {
+          "streamId": "1737c12d-1caf-4658-af66-9d1007b6d299",
+          "running": true,
+          "buffered": 9.85,
+          "captions": 15,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 100.32,
+      "streams": [
+        {
+          "streamId": "260806df-d2b6-4d99-9d29-c5c8a242019f",
+          "running": true,
+          "buffered": 8,
+          "captions": 16,
+          "error": ""
+        },
+        {
+          "streamId": "4ea6190d-f99f-4092-aa5b-8f10b623c033",
+          "running": true,
+          "buffered": 9.04,
+          "captions": 14,
+          "error": ""
+        },
+        {
+          "streamId": "b83184e6-8b95-4325-89f6-7e3678dc5318",
+          "running": true,
+          "buffered": 6.92,
+          "captions": 16,
+          "error": ""
+        },
+        {
+          "streamId": "d7d6bbe9-8b33-4f3c-9aef-4423d04ea909",
+          "running": true,
+          "buffered": 9.4,
+          "captions": 16,
+          "error": ""
+        },
+        {
+          "streamId": "8a116986-8c44-4a67-a4b8-d07578b7ec4c",
+          "running": true,
+          "buffered": 7.69,
+          "captions": 16,
+          "error": ""
+        },
+        {
+          "streamId": "8ee5068c-1d2a-4bb1-a371-887a081f348c",
+          "running": true,
+          "buffered": 12.24,
+          "captions": 15,
+          "error": ""
+        },
+        {
+          "streamId": "5a533c46-9f9d-442a-9d1d-8772237b10bd",
+          "running": true,
+          "buffered": 9.77,
+          "captions": 16,
+          "error": ""
+        },
+        {
+          "streamId": "0d766306-7f8e-4173-9236-68e2511e781c",
+          "running": true,
+          "buffered": 12.07,
+          "captions": 15,
+          "error": ""
+        },
+        {
+          "streamId": "0a936a63-2cc9-4758-b77e-669891fb5452",
+          "running": true,
+          "buffered": 12.19,
+          "captions": 15,
+          "error": ""
+        },
+        {
+          "streamId": "f9044bbe-e8ac-4382-a84e-c9a8638ae303",
+          "running": true,
+          "buffered": 10.93,
+          "captions": 15,
+          "error": ""
+        },
+        {
+          "streamId": "13726d78-4e2f-42cd-8734-76b0618a33f8",
+          "running": true,
+          "buffered": 10.2,
+          "captions": 15,
+          "error": ""
+        },
+        {
+          "streamId": "1737c12d-1caf-4658-af66-9d1007b6d299",
+          "running": true,
+          "buffered": 9.02,
+          "captions": 16,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 105.33,
+      "streams": [
+        {
+          "streamId": "260806df-d2b6-4d99-9d29-c5c8a242019f",
+          "running": true,
+          "buffered": 7.86,
+          "captions": 17,
+          "error": ""
+        },
+        {
+          "streamId": "4ea6190d-f99f-4092-aa5b-8f10b623c033",
+          "running": true,
+          "buffered": 8.2,
+          "captions": 15,
+          "error": ""
+        },
+        {
+          "streamId": "b83184e6-8b95-4325-89f6-7e3678dc5318",
+          "running": true,
+          "buffered": 11.92,
+          "captions": 16,
+          "error": ""
+        },
+        {
+          "streamId": "d7d6bbe9-8b33-4f3c-9aef-4423d04ea909",
+          "running": true,
+          "buffered": 11.12,
+          "captions": 17,
+          "error": ""
+        },
+        {
+          "streamId": "8a116986-8c44-4a67-a4b8-d07578b7ec4c",
+          "running": true,
+          "buffered": 12.69,
+          "captions": 16,
+          "error": ""
+        },
+        {
+          "streamId": "8ee5068c-1d2a-4bb1-a371-887a081f348c",
+          "running": true,
+          "buffered": 11.73,
+          "captions": 16,
+          "error": ""
+        },
+        {
+          "streamId": "5a533c46-9f9d-442a-9d1d-8772237b10bd",
+          "running": true,
+          "buffered": 11.01,
+          "captions": 17,
+          "error": ""
+        },
+        {
+          "streamId": "0d766306-7f8e-4173-9236-68e2511e781c",
+          "running": true,
+          "buffered": 11.02,
+          "captions": 16,
+          "error": ""
+        },
+        {
+          "streamId": "0a936a63-2cc9-4758-b77e-669891fb5452",
+          "running": true,
+          "buffered": 9.3,
+          "captions": 16,
+          "error": ""
+        },
+        {
+          "streamId": "f9044bbe-e8ac-4382-a84e-c9a8638ae303",
+          "running": true,
+          "buffered": 11.11,
+          "captions": 16,
+          "error": ""
+        },
+        {
+          "streamId": "13726d78-4e2f-42cd-8734-76b0618a33f8",
+          "running": true,
+          "buffered": 11.08,
+          "captions": 16,
+          "error": ""
+        },
+        {
+          "streamId": "1737c12d-1caf-4658-af66-9d1007b6d299",
+          "running": true,
+          "buffered": 8.56,
+          "captions": 17,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 110.33,
+      "streams": [
+        {
+          "streamId": "260806df-d2b6-4d99-9d29-c5c8a242019f",
+          "running": true,
+          "buffered": 7.12,
+          "captions": 18,
+          "error": ""
+        },
+        {
+          "streamId": "4ea6190d-f99f-4092-aa5b-8f10b623c033",
+          "running": true,
+          "buffered": 7.31,
+          "captions": 16,
+          "error": ""
+        },
+        {
+          "streamId": "b83184e6-8b95-4325-89f6-7e3678dc5318",
+          "running": true,
+          "buffered": 12.37,
+          "captions": 17,
+          "error": ""
+        },
+        {
+          "streamId": "d7d6bbe9-8b33-4f3c-9aef-4423d04ea909",
+          "running": true,
+          "buffered": 8.21,
+          "captions": 18,
+          "error": ""
+        },
+        {
+          "streamId": "8a116986-8c44-4a67-a4b8-d07578b7ec4c",
+          "running": true,
+          "buffered": 12.35,
+          "captions": 17,
+          "error": ""
+        },
+        {
+          "streamId": "8ee5068c-1d2a-4bb1-a371-887a081f348c",
+          "running": true,
+          "buffered": 12.38,
+          "captions": 17,
+          "error": ""
+        },
+        {
+          "streamId": "5a533c46-9f9d-442a-9d1d-8772237b10bd",
+          "running": true,
+          "buffered": 9.18,
+          "captions": 18,
+          "error": ""
+        },
+        {
+          "streamId": "0d766306-7f8e-4173-9236-68e2511e781c",
+          "running": true,
+          "buffered": 10.75,
+          "captions": 17,
+          "error": ""
+        },
+        {
+          "streamId": "0a936a63-2cc9-4758-b77e-669891fb5452",
+          "running": true,
+          "buffered": 10.18,
+          "captions": 17,
+          "error": ""
+        },
+        {
+          "streamId": "f9044bbe-e8ac-4382-a84e-c9a8638ae303",
+          "running": true,
+          "buffered": 10.18,
+          "captions": 17,
+          "error": ""
+        },
+        {
+          "streamId": "13726d78-4e2f-42cd-8734-76b0618a33f8",
+          "running": true,
+          "buffered": 10.12,
+          "captions": 17,
+          "error": ""
+        },
+        {
+          "streamId": "1737c12d-1caf-4658-af66-9d1007b6d299",
+          "running": true,
+          "buffered": 8.15,
+          "captions": 18,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 115.34,
+      "streams": [
+        {
+          "streamId": "260806df-d2b6-4d99-9d29-c5c8a242019f",
+          "running": true,
+          "buffered": 6.96,
+          "captions": 19,
+          "error": ""
+        },
+        {
+          "streamId": "4ea6190d-f99f-4092-aa5b-8f10b623c033",
+          "running": true,
+          "buffered": 12.31,
+          "captions": 16,
+          "error": ""
+        },
+        {
+          "streamId": "b83184e6-8b95-4325-89f6-7e3678dc5318",
+          "running": true,
+          "buffered": 5.92,
+          "captions": 19,
+          "error": ""
+        },
+        {
+          "streamId": "d7d6bbe9-8b33-4f3c-9aef-4423d04ea909",
+          "running": true,
+          "buffered": 13.21,
+          "captions": 18,
+          "error": ""
+        },
+        {
+          "streamId": "8a116986-8c44-4a67-a4b8-d07578b7ec4c",
+          "running": true,
+          "buffered": 5.86,
+          "captions": 19,
+          "error": ""
+        },
+        {
+          "streamId": "8ee5068c-1d2a-4bb1-a371-887a081f348c",
+          "running": true,
+          "buffered": 10.43,
+          "captions": 18,
+          "error": ""
+        },
+        {
+          "streamId": "5a533c46-9f9d-442a-9d1d-8772237b10bd",
+          "running": true,
+          "buffered": 14.18,
+          "captions": 18,
+          "error": ""
+        },
+        {
+          "streamId": "0d766306-7f8e-4173-9236-68e2511e781c",
+          "running": true,
+          "buffered": 10.45,
+          "captions": 18,
+          "error": ""
+        },
+        {
+          "streamId": "0a936a63-2cc9-4758-b77e-669891fb5452",
+          "running": true,
+          "buffered": 9.49,
+          "captions": 18,
+          "error": ""
+        },
+        {
+          "streamId": "f9044bbe-e8ac-4382-a84e-c9a8638ae303",
+          "running": true,
+          "buffered": 9.65,
+          "captions": 18,
+          "error": ""
+        },
+        {
+          "streamId": "13726d78-4e2f-42cd-8734-76b0618a33f8",
+          "running": true,
+          "buffered": 15.12,
+          "captions": 17,
+          "error": ""
+        },
+        {
+          "streamId": "1737c12d-1caf-4658-af66-9d1007b6d299",
+          "running": true,
+          "buffered": 9.05,
+          "captions": 19,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 120.35,
+      "streams": [
+        {
+          "streamId": "260806df-d2b6-4d99-9d29-c5c8a242019f",
+          "running": true,
+          "buffered": 6.93,
+          "captions": 20,
+          "error": ""
+        },
+        {
+          "streamId": "4ea6190d-f99f-4092-aa5b-8f10b623c033",
+          "running": true,
+          "buffered": 11.89,
+          "captions": 17,
+          "error": ""
+        },
+        {
+          "streamId": "b83184e6-8b95-4325-89f6-7e3678dc5318",
+          "running": true,
+          "buffered": 10.92,
+          "captions": 19,
+          "error": ""
+        },
+        {
+          "streamId": "d7d6bbe9-8b33-4f3c-9aef-4423d04ea909",
+          "running": true,
+          "buffered": 14.09,
+          "captions": 19,
+          "error": ""
+        },
+        {
+          "streamId": "8a116986-8c44-4a67-a4b8-d07578b7ec4c",
+          "running": true,
+          "buffered": 10.86,
+          "captions": 19,
+          "error": ""
+        },
+        {
+          "streamId": "8ee5068c-1d2a-4bb1-a371-887a081f348c",
+          "running": true,
+          "buffered": 10.39,
+          "captions": 19,
+          "error": ""
+        },
+        {
+          "streamId": "5a533c46-9f9d-442a-9d1d-8772237b10bd",
+          "running": true,
+          "buffered": 12.1,
+          "captions": 19,
+          "error": ""
+        },
+        {
+          "streamId": "0d766306-7f8e-4173-9236-68e2511e781c",
+          "running": true,
+          "buffered": 10.37,
+          "captions": 19,
+          "error": ""
+        },
+        {
+          "streamId": "0a936a63-2cc9-4758-b77e-669891fb5452",
+          "running": true,
+          "buffered": 8.66,
+          "captions": 19,
+          "error": ""
+        },
+        {
+          "streamId": "f9044bbe-e8ac-4382-a84e-c9a8638ae303",
+          "running": true,
+          "buffered": 10.31,
+          "captions": 19,
+          "error": ""
+        },
+        {
+          "streamId": "13726d78-4e2f-42cd-8734-76b0618a33f8",
+          "running": true,
+          "buffered": 12,
+          "captions": 18,
+          "error": ""
+        },
+        {
+          "streamId": "1737c12d-1caf-4658-af66-9d1007b6d299",
+          "running": true,
+          "buffered": 8.1,
+          "captions": 20,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 125.36,
+      "streams": [
+        {
+          "streamId": "260806df-d2b6-4d99-9d29-c5c8a242019f",
+          "running": true,
+          "buffered": 7.11,
+          "captions": 21,
+          "error": ""
+        },
+        {
+          "streamId": "4ea6190d-f99f-4092-aa5b-8f10b623c033",
+          "running": true,
+          "buffered": 11.17,
+          "captions": 18,
+          "error": ""
+        },
+        {
+          "streamId": "b83184e6-8b95-4325-89f6-7e3678dc5318",
+          "running": true,
+          "buffered": 11.21,
+          "captions": 20,
+          "error": ""
+        },
+        {
+          "streamId": "d7d6bbe9-8b33-4f3c-9aef-4423d04ea909",
+          "running": true,
+          "buffered": 11.21,
+          "captions": 20,
+          "error": ""
+        },
+        {
+          "streamId": "8a116986-8c44-4a67-a4b8-d07578b7ec4c",
+          "running": true,
+          "buffered": 10.81,
+          "captions": 20,
+          "error": ""
+        },
+        {
+          "streamId": "8ee5068c-1d2a-4bb1-a371-887a081f348c",
+          "running": true,
+          "buffered": 10.03,
+          "captions": 20,
+          "error": ""
+        },
+        {
+          "streamId": "5a533c46-9f9d-442a-9d1d-8772237b10bd",
+          "running": true,
+          "buffered": 10.38,
+          "captions": 20,
+          "error": ""
+        },
+        {
+          "streamId": "0d766306-7f8e-4173-9236-68e2511e781c",
+          "running": true,
+          "buffered": 10.12,
+          "captions": 20,
+          "error": ""
+        },
+        {
+          "streamId": "0a936a63-2cc9-4758-b77e-669891fb5452",
+          "running": true,
+          "buffered": 8.42,
+          "captions": 20,
+          "error": ""
+        },
+        {
+          "streamId": "f9044bbe-e8ac-4382-a84e-c9a8638ae303",
+          "running": true,
+          "buffered": 8.38,
+          "captions": 20,
+          "error": ""
+        },
+        {
+          "streamId": "13726d78-4e2f-42cd-8734-76b0618a33f8",
+          "running": true,
+          "buffered": 10.36,
+          "captions": 19,
+          "error": ""
+        },
+        {
+          "streamId": "1737c12d-1caf-4658-af66-9d1007b6d299",
+          "running": true,
+          "buffered": 7.63,
+          "captions": 21,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 130.48,
+      "streams": [
+        {
+          "streamId": "260806df-d2b6-4d99-9d29-c5c8a242019f",
+          "running": true,
+          "buffered": 8.34,
+          "captions": 22,
+          "error": ""
+        },
+        {
+          "streamId": "4ea6190d-f99f-4092-aa5b-8f10b623c033",
+          "running": true,
+          "buffered": 9.9,
+          "captions": 19,
+          "error": ""
+        },
+        {
+          "streamId": "b83184e6-8b95-4325-89f6-7e3678dc5318",
+          "running": true,
+          "buffered": 12.09,
+          "captions": 21,
+          "error": ""
+        },
+        {
+          "streamId": "d7d6bbe9-8b33-4f3c-9aef-4423d04ea909",
+          "running": true,
+          "buffered": 12.09,
+          "captions": 21,
+          "error": ""
+        },
+        {
+          "streamId": "8a116986-8c44-4a67-a4b8-d07578b7ec4c",
+          "running": true,
+          "buffered": 12.05,
+          "captions": 21,
+          "error": ""
+        },
+        {
+          "streamId": "8ee5068c-1d2a-4bb1-a371-887a081f348c",
+          "running": true,
+          "buffered": 9.25,
+          "captions": 21,
+          "error": ""
+        },
+        {
+          "streamId": "5a533c46-9f9d-442a-9d1d-8772237b10bd",
+          "running": true,
+          "buffered": 9.6,
+          "captions": 21,
+          "error": ""
+        },
+        {
+          "streamId": "0d766306-7f8e-4173-9236-68e2511e781c",
+          "running": true,
+          "buffered": 8.9,
+          "captions": 21,
+          "error": ""
+        },
+        {
+          "streamId": "0a936a63-2cc9-4758-b77e-669891fb5452",
+          "running": true,
+          "buffered": 8.36,
+          "captions": 21,
+          "error": ""
+        },
+        {
+          "streamId": "f9044bbe-e8ac-4382-a84e-c9a8638ae303",
+          "running": true,
+          "buffered": 8.3,
+          "captions": 21,
+          "error": ""
+        },
+        {
+          "streamId": "13726d78-4e2f-42cd-8734-76b0618a33f8",
+          "running": true,
+          "buffered": 9.57,
+          "captions": 20,
+          "error": ""
+        },
+        {
+          "streamId": "1737c12d-1caf-4658-af66-9d1007b6d299",
+          "running": true,
+          "buffered": 8.29,
+          "captions": 22,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 135.49,
+      "streams": [
+        {
+          "streamId": "260806df-d2b6-4d99-9d29-c5c8a242019f",
+          "running": true,
+          "buffered": 13.44,
+          "captions": 22,
+          "error": ""
+        },
+        {
+          "streamId": "4ea6190d-f99f-4092-aa5b-8f10b623c033",
+          "running": true,
+          "buffered": 11.24,
+          "captions": 20,
+          "error": ""
+        },
+        {
+          "streamId": "b83184e6-8b95-4325-89f6-7e3678dc5318",
+          "running": true,
+          "buffered": 11.3,
+          "captions": 22,
+          "error": ""
+        },
+        {
+          "streamId": "d7d6bbe9-8b33-4f3c-9aef-4423d04ea909",
+          "running": true,
+          "buffered": 11.25,
+          "captions": 22,
+          "error": ""
+        },
+        {
+          "streamId": "8a116986-8c44-4a67-a4b8-d07578b7ec4c",
+          "running": true,
+          "buffered": 11.21,
+          "captions": 22,
+          "error": ""
+        },
+        {
+          "streamId": "8ee5068c-1d2a-4bb1-a371-887a081f348c",
+          "running": true,
+          "buffered": 9.3,
+          "captions": 22,
+          "error": ""
+        },
+        {
+          "streamId": "5a533c46-9f9d-442a-9d1d-8772237b10bd",
+          "running": true,
+          "buffered": 9.32,
+          "captions": 22,
+          "error": ""
+        },
+        {
+          "streamId": "0d766306-7f8e-4173-9236-68e2511e781c",
+          "running": true,
+          "buffered": 8.48,
+          "captions": 22,
+          "error": ""
+        },
+        {
+          "streamId": "0a936a63-2cc9-4758-b77e-669891fb5452",
+          "running": true,
+          "buffered": 8.18,
+          "captions": 22,
+          "error": ""
+        },
+        {
+          "streamId": "f9044bbe-e8ac-4382-a84e-c9a8638ae303",
+          "running": true,
+          "buffered": 8.12,
+          "captions": 22,
+          "error": ""
+        },
+        {
+          "streamId": "13726d78-4e2f-42cd-8734-76b0618a33f8",
+          "running": true,
+          "buffered": 9.3,
+          "captions": 21,
+          "error": ""
+        },
+        {
+          "streamId": "1737c12d-1caf-4658-af66-9d1007b6d299",
+          "running": true,
+          "buffered": 8.22,
+          "captions": 23,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 140.51,
+      "streams": [
+        {
+          "streamId": "260806df-d2b6-4d99-9d29-c5c8a242019f",
+          "running": true,
+          "buffered": 11.8,
+          "captions": 23,
+          "error": ""
+        },
+        {
+          "streamId": "4ea6190d-f99f-4092-aa5b-8f10b623c033",
+          "running": true,
+          "buffered": 10.55,
+          "captions": 21,
+          "error": ""
+        },
+        {
+          "streamId": "b83184e6-8b95-4325-89f6-7e3678dc5318",
+          "running": true,
+          "buffered": 10.81,
+          "captions": 23,
+          "error": ""
+        },
+        {
+          "streamId": "d7d6bbe9-8b33-4f3c-9aef-4423d04ea909",
+          "running": true,
+          "buffered": 10.58,
+          "captions": 23,
+          "error": ""
+        },
+        {
+          "streamId": "8a116986-8c44-4a67-a4b8-d07578b7ec4c",
+          "running": true,
+          "buffered": 8.4,
+          "captions": 23,
+          "error": ""
+        },
+        {
+          "streamId": "8ee5068c-1d2a-4bb1-a371-887a081f348c",
+          "running": true,
+          "buffered": 10.18,
+          "captions": 23,
+          "error": ""
+        },
+        {
+          "streamId": "5a533c46-9f9d-442a-9d1d-8772237b10bd",
+          "running": true,
+          "buffered": 10.18,
+          "captions": 23,
+          "error": ""
+        },
+        {
+          "streamId": "0d766306-7f8e-4173-9236-68e2511e781c",
+          "running": true,
+          "buffered": 10.2,
+          "captions": 23,
+          "error": ""
+        },
+        {
+          "streamId": "0a936a63-2cc9-4758-b77e-669891fb5452",
+          "running": true,
+          "buffered": 6.96,
+          "captions": 23,
+          "error": ""
+        },
+        {
+          "streamId": "f9044bbe-e8ac-4382-a84e-c9a8638ae303",
+          "running": true,
+          "buffered": 7.31,
+          "captions": 23,
+          "error": ""
+        },
+        {
+          "streamId": "13726d78-4e2f-42cd-8734-76b0618a33f8",
+          "running": true,
+          "buffered": 10.18,
+          "captions": 22,
+          "error": ""
+        },
+        {
+          "streamId": "1737c12d-1caf-4658-af66-9d1007b6d299",
+          "running": true,
+          "buffered": 13.22,
+          "captions": 23,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 145.51,
+      "streams": [
+        {
+          "streamId": "260806df-d2b6-4d99-9d29-c5c8a242019f",
+          "running": true,
+          "buffered": 11.42,
+          "captions": 24,
+          "error": ""
+        },
+        {
+          "streamId": "4ea6190d-f99f-4092-aa5b-8f10b623c033",
+          "running": true,
+          "buffered": 11.51,
+          "captions": 22,
+          "error": ""
+        },
+        {
+          "streamId": "b83184e6-8b95-4325-89f6-7e3678dc5318",
+          "running": true,
+          "buffered": 11.45,
+          "captions": 24,
+          "error": ""
+        },
+        {
+          "streamId": "d7d6bbe9-8b33-4f3c-9aef-4423d04ea909",
+          "running": true,
+          "buffered": 11.44,
+          "captions": 24,
+          "error": ""
+        },
+        {
+          "streamId": "8a116986-8c44-4a67-a4b8-d07578b7ec4c",
+          "running": true,
+          "buffered": 9.34,
+          "captions": 24,
+          "error": ""
+        },
+        {
+          "streamId": "8ee5068c-1d2a-4bb1-a371-887a081f348c",
+          "running": true,
+          "buffered": 9.21,
+          "captions": 24,
+          "error": ""
+        },
+        {
+          "streamId": "5a533c46-9f9d-442a-9d1d-8772237b10bd",
+          "running": true,
+          "buffered": 9.28,
+          "captions": 24,
+          "error": ""
+        },
+        {
+          "streamId": "0d766306-7f8e-4173-9236-68e2511e781c",
+          "running": true,
+          "buffered": 7.8,
+          "captions": 24,
+          "error": ""
+        },
+        {
+          "streamId": "0a936a63-2cc9-4758-b77e-669891fb5452",
+          "running": true,
+          "buffered": 11.96,
+          "captions": 23,
+          "error": ""
+        },
+        {
+          "streamId": "f9044bbe-e8ac-4382-a84e-c9a8638ae303",
+          "running": true,
+          "buffered": 12.31,
+          "captions": 23,
+          "error": ""
+        },
+        {
+          "streamId": "13726d78-4e2f-42cd-8734-76b0618a33f8",
+          "running": true,
+          "buffered": 9.26,
+          "captions": 23,
+          "error": ""
+        },
+        {
+          "streamId": "1737c12d-1caf-4658-af66-9d1007b6d299",
+          "running": true,
+          "buffered": 12,
+          "captions": 24,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 150.52,
+      "streams": [
+        {
+          "streamId": "260806df-d2b6-4d99-9d29-c5c8a242019f",
+          "running": true,
+          "buffered": 11.1,
+          "captions": 25,
+          "error": ""
+        },
+        {
+          "streamId": "4ea6190d-f99f-4092-aa5b-8f10b623c033",
+          "running": true,
+          "buffered": 10.14,
+          "captions": 23,
+          "error": ""
+        },
+        {
+          "streamId": "b83184e6-8b95-4325-89f6-7e3678dc5318",
+          "running": true,
+          "buffered": 10.09,
+          "captions": 25,
+          "error": ""
+        },
+        {
+          "streamId": "d7d6bbe9-8b33-4f3c-9aef-4423d04ea909",
+          "running": true,
+          "buffered": 9.51,
+          "captions": 25,
+          "error": ""
+        },
+        {
+          "streamId": "8a116986-8c44-4a67-a4b8-d07578b7ec4c",
+          "running": true,
+          "buffered": 9.27,
+          "captions": 25,
+          "error": ""
+        },
+        {
+          "streamId": "8ee5068c-1d2a-4bb1-a371-887a081f348c",
+          "running": true,
+          "buffered": 8.15,
+          "captions": 25,
+          "error": ""
+        },
+        {
+          "streamId": "5a533c46-9f9d-442a-9d1d-8772237b10bd",
+          "running": true,
+          "buffered": 8.17,
+          "captions": 25,
+          "error": ""
+        },
+        {
+          "streamId": "0d766306-7f8e-4173-9236-68e2511e781c",
+          "running": true,
+          "buffered": 8.2,
+          "captions": 25,
+          "error": ""
+        },
+        {
+          "streamId": "0a936a63-2cc9-4758-b77e-669891fb5452",
+          "running": true,
+          "buffered": 11.7,
+          "captions": 24,
+          "error": ""
+        },
+        {
+          "streamId": "f9044bbe-e8ac-4382-a84e-c9a8638ae303",
+          "running": true,
+          "buffered": 11.89,
+          "captions": 24,
+          "error": ""
+        },
+        {
+          "streamId": "13726d78-4e2f-42cd-8734-76b0618a33f8",
+          "running": true,
+          "buffered": 6.3,
+          "captions": 24,
+          "error": ""
+        },
+        {
+          "streamId": "1737c12d-1caf-4658-af66-9d1007b6d299",
+          "running": true,
+          "buffered": 11.51,
+          "captions": 25,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 155.53,
+      "streams": [
+        {
+          "streamId": "260806df-d2b6-4d99-9d29-c5c8a242019f",
+          "running": true,
+          "buffered": 10.64,
+          "captions": 26,
+          "error": ""
+        },
+        {
+          "streamId": "4ea6190d-f99f-4092-aa5b-8f10b623c033",
+          "running": true,
+          "buffered": 9.52,
+          "captions": 24,
+          "error": ""
+        },
+        {
+          "streamId": "b83184e6-8b95-4325-89f6-7e3678dc5318",
+          "running": true,
+          "buffered": 9.48,
+          "captions": 26,
+          "error": ""
+        },
+        {
+          "streamId": "d7d6bbe9-8b33-4f3c-9aef-4423d04ea909",
+          "running": true,
+          "buffered": 9.47,
+          "captions": 26,
+          "error": ""
+        },
+        {
+          "streamId": "8a116986-8c44-4a67-a4b8-d07578b7ec4c",
+          "running": true,
+          "buffered": 9.5,
+          "captions": 26,
+          "error": ""
+        },
+        {
+          "streamId": "8ee5068c-1d2a-4bb1-a371-887a081f348c",
+          "running": true,
+          "buffered": 7.79,
+          "captions": 26,
+          "error": ""
+        },
+        {
+          "streamId": "5a533c46-9f9d-442a-9d1d-8772237b10bd",
+          "running": true,
+          "buffered": 7.81,
+          "captions": 26,
+          "error": ""
+        },
+        {
+          "streamId": "0d766306-7f8e-4173-9236-68e2511e781c",
+          "running": true,
+          "buffered": 7.29,
+          "captions": 26,
+          "error": ""
+        },
+        {
+          "streamId": "0a936a63-2cc9-4758-b77e-669891fb5452",
+          "running": true,
+          "buffered": 13.16,
+          "captions": 25,
+          "error": ""
+        },
+        {
+          "streamId": "f9044bbe-e8ac-4382-a84e-c9a8638ae303",
+          "running": true,
+          "buffered": 13.13,
+          "captions": 25,
+          "error": ""
+        },
+        {
+          "streamId": "13726d78-4e2f-42cd-8734-76b0618a33f8",
+          "running": true,
+          "buffered": 11.3,
+          "captions": 24,
+          "error": ""
+        },
+        {
+          "streamId": "1737c12d-1caf-4658-af66-9d1007b6d299",
+          "running": true,
+          "buffered": 12.29,
+          "captions": 26,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 160.54,
+      "streams": [
+        {
+          "streamId": "260806df-d2b6-4d99-9d29-c5c8a242019f",
+          "running": true,
+          "buffered": 10.27,
+          "captions": 27,
+          "error": ""
+        },
+        {
+          "streamId": "4ea6190d-f99f-4092-aa5b-8f10b623c033",
+          "running": true,
+          "buffered": 9.2,
+          "captions": 25,
+          "error": ""
+        },
+        {
+          "streamId": "b83184e6-8b95-4325-89f6-7e3678dc5318",
+          "running": true,
+          "buffered": 9.18,
+          "captions": 27,
+          "error": ""
+        },
+        {
+          "streamId": "d7d6bbe9-8b33-4f3c-9aef-4423d04ea909",
+          "running": true,
+          "buffered": 9.13,
+          "captions": 27,
+          "error": ""
+        },
+        {
+          "streamId": "8a116986-8c44-4a67-a4b8-d07578b7ec4c",
+          "running": true,
+          "buffered": 7.04,
+          "captions": 27,
+          "error": ""
+        },
+        {
+          "streamId": "8ee5068c-1d2a-4bb1-a371-887a081f348c",
+          "running": true,
+          "buffered": 7.18,
+          "captions": 27,
+          "error": ""
+        },
+        {
+          "streamId": "5a533c46-9f9d-442a-9d1d-8772237b10bd",
+          "running": true,
+          "buffered": 7.48,
+          "captions": 27,
+          "error": ""
+        },
+        {
+          "streamId": "0d766306-7f8e-4173-9236-68e2511e781c",
+          "running": true,
+          "buffered": 12.29,
+          "captions": 26,
+          "error": ""
+        },
+        {
+          "streamId": "0a936a63-2cc9-4758-b77e-669891fb5452",
+          "running": true,
+          "buffered": 10.76,
+          "captions": 26,
+          "error": ""
+        },
+        {
+          "streamId": "f9044bbe-e8ac-4382-a84e-c9a8638ae303",
+          "running": true,
+          "buffered": 11,
+          "captions": 26,
+          "error": ""
+        },
+        {
+          "streamId": "13726d78-4e2f-42cd-8734-76b0618a33f8",
+          "running": true,
+          "buffered": 12.28,
+          "captions": 25,
+          "error": ""
+        },
+        {
+          "streamId": "1737c12d-1caf-4658-af66-9d1007b6d299",
+          "running": true,
+          "buffered": 9.19,
+          "captions": 27,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 165.56,
+      "streams": [
+        {
+          "streamId": "260806df-d2b6-4d99-9d29-c5c8a242019f",
+          "running": true,
+          "buffered": 11.23,
+          "captions": 28,
+          "error": ""
+        },
+        {
+          "streamId": "4ea6190d-f99f-4092-aa5b-8f10b623c033",
+          "running": true,
+          "buffered": 8.77,
+          "captions": 26,
+          "error": ""
+        },
+        {
+          "streamId": "b83184e6-8b95-4325-89f6-7e3678dc5318",
+          "running": true,
+          "buffered": 8.72,
+          "captions": 28,
+          "error": ""
+        },
+        {
+          "streamId": "d7d6bbe9-8b33-4f3c-9aef-4423d04ea909",
+          "running": true,
+          "buffered": 8.36,
+          "captions": 28,
+          "error": ""
+        },
+        {
+          "streamId": "8a116986-8c44-4a67-a4b8-d07578b7ec4c",
+          "running": true,
+          "buffered": 12.04,
+          "captions": 27,
+          "error": ""
+        },
+        {
+          "streamId": "8ee5068c-1d2a-4bb1-a371-887a081f348c",
+          "running": true,
+          "buffered": 12.18,
+          "captions": 27,
+          "error": ""
+        },
+        {
+          "streamId": "5a533c46-9f9d-442a-9d1d-8772237b10bd",
+          "running": true,
+          "buffered": 7.41,
+          "captions": 28,
+          "error": ""
+        },
+        {
+          "streamId": "0d766306-7f8e-4173-9236-68e2511e781c",
+          "running": true,
+          "buffered": 11.76,
+          "captions": 27,
+          "error": ""
+        },
+        {
+          "streamId": "0a936a63-2cc9-4758-b77e-669891fb5452",
+          "running": true,
+          "buffered": 11.26,
+          "captions": 27,
+          "error": ""
+        },
+        {
+          "streamId": "f9044bbe-e8ac-4382-a84e-c9a8638ae303",
+          "running": true,
+          "buffered": 11.2,
+          "captions": 27,
+          "error": ""
+        },
+        {
+          "streamId": "13726d78-4e2f-42cd-8734-76b0618a33f8",
+          "running": true,
+          "buffered": 9.2,
+          "captions": 26,
+          "error": ""
+        },
+        {
+          "streamId": "1737c12d-1caf-4658-af66-9d1007b6d299",
+          "running": true,
+          "buffered": 9.06,
+          "captions": 28,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 170.63,
+      "streams": [
+        {
+          "streamId": "260806df-d2b6-4d99-9d29-c5c8a242019f",
+          "running": true,
+          "buffered": 10.33,
+          "captions": 29,
+          "error": ""
+        },
+        {
+          "streamId": "4ea6190d-f99f-4092-aa5b-8f10b623c033",
+          "running": true,
+          "buffered": 8.33,
+          "captions": 27,
+          "error": ""
+        },
+        {
+          "streamId": "b83184e6-8b95-4325-89f6-7e3678dc5318",
+          "running": true,
+          "buffered": 7.93,
+          "captions": 29,
+          "error": ""
+        },
+        {
+          "streamId": "d7d6bbe9-8b33-4f3c-9aef-4423d04ea909",
+          "running": true,
+          "buffered": 7.47,
+          "captions": 29,
+          "error": ""
+        },
+        {
+          "streamId": "8a116986-8c44-4a67-a4b8-d07578b7ec4c",
+          "running": true,
+          "buffered": 12.48,
+          "captions": 28,
+          "error": ""
+        },
+        {
+          "streamId": "8ee5068c-1d2a-4bb1-a371-887a081f348c",
+          "running": true,
+          "buffered": 12.51,
+          "captions": 28,
+          "error": ""
+        },
+        {
+          "streamId": "5a533c46-9f9d-442a-9d1d-8772237b10bd",
+          "running": true,
+          "buffered": 7.23,
+          "captions": 29,
+          "error": ""
+        },
+        {
+          "streamId": "0d766306-7f8e-4173-9236-68e2511e781c",
+          "running": true,
+          "buffered": 12.45,
+          "captions": 28,
+          "error": ""
+        },
+        {
+          "streamId": "0a936a63-2cc9-4758-b77e-669891fb5452",
+          "running": true,
+          "buffered": 10.36,
+          "captions": 28,
+          "error": ""
+        },
+        {
+          "streamId": "f9044bbe-e8ac-4382-a84e-c9a8638ae303",
+          "running": true,
+          "buffered": 10.37,
+          "captions": 28,
+          "error": ""
+        },
+        {
+          "streamId": "13726d78-4e2f-42cd-8734-76b0618a33f8",
+          "running": true,
+          "buffered": 10.33,
+          "captions": 27,
+          "error": ""
+        },
+        {
+          "streamId": "1737c12d-1caf-4658-af66-9d1007b6d299",
+          "running": true,
+          "buffered": 8.8,
+          "captions": 29,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 175.65,
+      "streams": [
+        {
+          "streamId": "260806df-d2b6-4d99-9d29-c5c8a242019f",
+          "running": true,
+          "buffered": 7.5,
+          "captions": 30,
+          "error": ""
+        },
+        {
+          "streamId": "4ea6190d-f99f-4092-aa5b-8f10b623c033",
+          "running": true,
+          "buffered": 9.33,
+          "captions": 28,
+          "error": ""
+        },
+        {
+          "streamId": "b83184e6-8b95-4325-89f6-7e3678dc5318",
+          "running": true,
+          "buffered": 9.27,
+          "captions": 30,
+          "error": ""
+        },
+        {
+          "streamId": "d7d6bbe9-8b33-4f3c-9aef-4423d04ea909",
+          "running": true,
+          "buffered": 9.29,
+          "captions": 30,
+          "error": ""
+        },
+        {
+          "streamId": "8a116986-8c44-4a67-a4b8-d07578b7ec4c",
+          "running": true,
+          "buffered": 11.2,
+          "captions": 29,
+          "error": ""
+        },
+        {
+          "streamId": "8ee5068c-1d2a-4bb1-a371-887a081f348c",
+          "running": true,
+          "buffered": 12.25,
+          "captions": 29,
+          "error": ""
+        },
+        {
+          "streamId": "5a533c46-9f9d-442a-9d1d-8772237b10bd",
+          "running": true,
+          "buffered": 12.23,
+          "captions": 29,
+          "error": ""
+        },
+        {
+          "streamId": "0d766306-7f8e-4173-9236-68e2511e781c",
+          "running": true,
+          "buffered": 10.91,
+          "captions": 29,
+          "error": ""
+        },
+        {
+          "streamId": "0a936a63-2cc9-4758-b77e-669891fb5452",
+          "running": true,
+          "buffered": 9.84,
+          "captions": 29,
+          "error": ""
+        },
+        {
+          "streamId": "f9044bbe-e8ac-4382-a84e-c9a8638ae303",
+          "running": true,
+          "buffered": 10.06,
+          "captions": 29,
+          "error": ""
+        },
+        {
+          "streamId": "13726d78-4e2f-42cd-8734-76b0618a33f8",
+          "running": true,
+          "buffered": 9.68,
+          "captions": 28,
+          "error": ""
+        },
+        {
+          "streamId": "1737c12d-1caf-4658-af66-9d1007b6d299",
+          "running": true,
+          "buffered": 9.32,
+          "captions": 30,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 180.66,
+      "streams": [
+        {
+          "streamId": "260806df-d2b6-4d99-9d29-c5c8a242019f",
+          "running": true,
+          "buffered": 8.34,
+          "captions": 31,
+          "error": ""
+        },
+        {
+          "streamId": "4ea6190d-f99f-4092-aa5b-8f10b623c033",
+          "running": true,
+          "buffered": 8.42,
+          "captions": 29,
+          "error": ""
+        },
+        {
+          "streamId": "b83184e6-8b95-4325-89f6-7e3678dc5318",
+          "running": true,
+          "buffered": 7.11,
+          "captions": 31,
+          "error": ""
+        },
+        {
+          "streamId": "d7d6bbe9-8b33-4f3c-9aef-4423d04ea909",
+          "running": true,
+          "buffered": 6.87,
+          "captions": 31,
+          "error": ""
+        },
+        {
+          "streamId": "8a116986-8c44-4a67-a4b8-d07578b7ec4c",
+          "running": true,
+          "buffered": 11.08,
+          "captions": 30,
+          "error": ""
+        },
+        {
+          "streamId": "8ee5068c-1d2a-4bb1-a371-887a081f348c",
+          "running": true,
+          "buffered": 11.38,
+          "captions": 30,
+          "error": ""
+        },
+        {
+          "streamId": "5a533c46-9f9d-442a-9d1d-8772237b10bd",
+          "running": true,
+          "buffered": 14.25,
+          "captions": 30,
+          "error": ""
+        },
+        {
+          "streamId": "0d766306-7f8e-4173-9236-68e2511e781c",
+          "running": true,
+          "buffered": 10.56,
+          "captions": 30,
+          "error": ""
+        },
+        {
+          "streamId": "0a936a63-2cc9-4758-b77e-669891fb5452",
+          "running": true,
+          "buffered": 10.51,
+          "captions": 30,
+          "error": ""
+        },
+        {
+          "streamId": "f9044bbe-e8ac-4382-a84e-c9a8638ae303",
+          "running": true,
+          "buffered": 10.5,
+          "captions": 30,
+          "error": ""
+        },
+        {
+          "streamId": "13726d78-4e2f-42cd-8734-76b0618a33f8",
+          "running": true,
+          "buffered": 8.87,
+          "captions": 29,
+          "error": ""
+        },
+        {
+          "streamId": "1737c12d-1caf-4658-af66-9d1007b6d299",
+          "running": true,
+          "buffered": 8.41,
+          "captions": 31,
+          "error": ""
+        }
+      ]
+    }
+  ],
+  "final": [
+    {
+      "streamId": "260806df-d2b6-4d99-9d29-c5c8a242019f",
+      "transcript": [
+        "And so my fellow Americans asked not",
+        "what your country can do for you, ask what you",
+        "can do for your country, and so my fellow Americans.",
+        "Ask not what your country can do for",
+        "you, ask what you can do for your country. And so, my fellow",
+        "Americans, ask not what your country can do for you,",
+        "ask what you can do for your country. And so, my fellow Americans.",
+        "Ask not what your country can do for you.",
+        "ask what you can do for your country, and so my fellow Americans,",
+        "Ask not what your country can do for you. Ask what",
+        "you can do for your country. And so my fellow Americans.",
+        "ask not what your country can do for you, ask what you can do for your",
+        "country. And so, my fellow Americans, ask",
+        "not what your country can do for you, ask what you can do",
+        "for your country. And so my fellow Americans,",
+        "Ask not what your country can do for you. Ask",
+        "what you can do for your country and so my fellow",
+        "Americans, ask not what your country can do for you",
+        "ask what you can do for your country. And",
+        "so my fellow Americans asked not what",
+        "your country can do for you Ask what you can do for your country",
+        "And so my fellow Americans",
+        "Not what your country can do for you. Ask what",
+        "you can do for your country. And so my fellow Americans.",
+        "Ask not what your country can do for you.",
+        "ask what you can do for your country. And so",
+        "my fellow Americans, ask not what your country",
+        "can do for you, ask what you can do for your country.",
+        "and so my fellow Americans ask not",
+        "what your country can do for you, ask what you can do for your country.",
+        "And so my fellow Americans ask not",
+        "what your country can do for you, ask what you can",
+        "do for your country."
+      ],
+      "failed": false,
+      "buffered": 0
+    },
+    {
+      "streamId": "4ea6190d-f99f-4092-aa5b-8f10b623c033",
+      "transcript": [
+        "And so my fellow Americans asked not",
+        "what your country can do for you as what you",
+        "can do for your country, and so my fellow Americans,",
+        "not what your country can do for you, ask what you can do for your country. And",
+        "And so my fellow Americans, ask not what your country can do for you, ask what you can do for",
+        "your country. And so my fellow Americans, ask not what your country can do for you,",
+        "ask what you can do for your country. And so my fellow Americans,",
+        "not what your country can do for you, ask what you can do for your",
+        "country. And so, my fellow Americans, ask",
+        "not what your country can do for you. Ask what you can do",
+        "for your country. And so my fellow Americans,",
+        "not what your country can do for you, ask what you can do",
+        "for your country. And so my fellow Americans,",
+        "ask not what your country can do for you,",
+        "ask what you can do for your country, and so my",
+        "fellow Americans, ask not what your country can do for",
+        "you, ask what you can do for your country. And",
+        "so my fellow Americans ask not what your country",
+        "can do for you, ask what you can do for your country.",
+        "And so my fellow Americans ask not",
+        "what your country can do for you, ask what you can do for your",
+        "country. And so my fellow Americans,",
+        "Ask not what your country can do for you. Ask",
+        "what you can do for your country and so my fellow Americans",
+        "not what your country can do for you",
+        "Ask what you can do for your country. And so",
+        "my fellow Americans ask not what your country",
+        "can do for you, ask what you can do for your country.",
+        "And so my fellow Americans ask not",
+        "what your country can do for you as what you can do for your country.",
+        "And so my-"
+      ],
+      "failed": false,
+      "buffered": 0
+    },
+    {
+      "streamId": "b83184e6-8b95-4325-89f6-7e3678dc5318",
+      "transcript": [
+        "And so my fellow Americans, ask not",
+        "what your country can do for you, ask what you can do for your country.",
+        "and so my fellow Americans asked not",
+        "what your country can do for you as what you can do for your",
+        "country. And so my fellow Americans, ask not!",
+        "what your country can do for you, ask what you can do for your country.",
+        "And so my fellow Americans asked not",
+        "what your country can do for you, ask what you can do for your country.",
+        "And so my fellow Americans asked not",
+        "what your country can do for you, ask what you can do for your country.",
+        "And so my fellow Americans ask not.",
+        "what your country can do for you, ask what you can do for your",
+        "country. And so my fellow Americans, ask",
+        "not what your country can do for you, ask what you can do for your",
+        "country. And so my fellow Americans,",
+        "ask not what your country can do for you, ask what you can do",
+        "for your country. And so, my fellow Americans,",
+        "Ask not what your country can do for you.",
+        "ask what you can do for your country. And so, my fellow",
+        "Americans, ask not what your country",
+        "can do for you, ask what you can do for your country.",
+        "And so my fellow Americans asked not",
+        "what your country can do for you, as what you can do for",
+        "your country. And so, my fellow Americans,",
+        "Ask not what your country can do for you. Ask",
+        "what you can do for your country and so my fellow Americans",
+        "not what your country can do for you",
+        "Ask what you can do for your country. And so",
+        "my fellow Americans, ask not what your country can",
+        "do for you, ask what you can do for your country.",
+        "and so my fellow Americans asked not what",
+        "your country can do for you Ask what you can do for your country"
+      ],
+      "failed": false,
+      "buffered": 0
+    },
+    {
+      "streamId": "d7d6bbe9-8b33-4f3c-9aef-4423d04ea909",
+      "transcript": [
+        "And so my fellow Americans ask not",
+        "what your country can do for you as what you",
+        "can do for your country. And so my fellow",
+        "Americans, ask not what your country can",
+        "do for you, ask what you can do for your country.",
+        "And so my fellow Americans ask not what your country can do for you.",
+        "ask what you can do for your country, and so my fellow",
+        "Americans. Ask not what your country can do for you.",
+        "ask what you can do for your country. And so, my",
+        "fellow Americans, it's not what your country can do for you",
+        "ask what you can do for your country. And so, my fellow",
+        "Americans, ask not what your country can do for you,",
+        "ask what you can do for your country, and so my fellow Americans.",
+        "Ask not what your country can do for you.",
+        "ask what you can do for your country. And so my",
+        "fellow Americans, ask not what your country can do for",
+        "you, ask what you can do for your country.",
+        "And so my fellow Americans ask not what your country",
+        "can do for you, ask what you can do for your country.",
+        "and so my fellow Americans ask not what your country",
+        "can do for you, ask what you can do for your country.",
+        "And so my fellow Americans asked not",
+        "what your country can do for you as what you can do for your",
+        "country. And so, my fellow Americans,",
+        "Ask not what your country can do for you. Ask what you",
+        "can do for your country, and so my fellow Americans.",
+        "It's not what your country can do for you.",
+        "ask what you can do for your country, and so my",
+        "fellow Americans, ask not what your country can do for",
+        "you, ask what you can do for your country.",
+        "And so my fellow Americans asked not what your",
+        "country can do for you, ask what you can do for your country.",
+        "And so my fellow"
+      ],
+      "failed": false,
+      "buffered": 0
+    },
+    {
+      "streamId": "8a116986-8c44-4a67-a4b8-d07578b7ec4c",
+      "transcript": [
+        "And so my fellow Americans ask not",
+        "what your country can do for you as what you can",
+        "do for your country. And so, my fellow Americans,",
+        "Ask not what your country can do for you. Ask",
+        "what you can do for your country and so my fellow Americans",
+        "ask not what your country can do for you, ask what you can do for",
+        "your country. And so my fellow Americans, ask",
+        "not what your country can do for you, ask what you can",
+        "do for your country. And so, my fellow Americans,",
+        "ask not what your country can do for you, ask what you can",
+        "do for your country. And so my fellow Americans,",
+        "Ask not what your country can do for you. Ask what you can do",
+        "for your country. And so my fellow Americans,",
+        "Ask not what your country can do for you. Ask what you can do",
+        "for your country. And so my fellow Americans,",
+        "Ask not what your country can do for you. Ask what",
+        "you can do for your country. And so my fellow Americans.",
+        "Not what your country can do for you.",
+        "ask what you can do for your country, and so my fellow",
+        "Americans, ask not what your country can",
+        "do for you, ask what you can do for your country.",
+        "And so my fellow Americans asked not",
+        "what your country can do for you, ask what you can do for your country.",
+        "And so my fellow Americans ask not",
+        "what your country can do for you as what you can",
+        "do for your country. And so, my fellow Americans,",
+        "not what your country can do for you, ask what you can do",
+        "for your country. And so my fellow Americans,",
+        "Ask not what your country can do for you. Ask",
+        "you can do for your country and so my fellow",
+        "Americans, ask not what your country can do for",
+        "you, ask what you can do for your country. And",
+        "so my fellow America"
+      ],
+      "failed": false,
+      "buffered": 0
+    },
+    {
+      "streamId": "8ee5068c-1d2a-4bb1-a371-887a081f348c",
+      "transcript": [
+        "And so my fellow Americans asked not",
+        "what your country can do for you as what you",
+        "can do for your country. And so, my fellow Americans,",
+        "Ask not what your country can do for you. Ask",
+        "what you can do for your country and so my fellow Americans ask",
+        "not what your country can do for you, ask what you can do for your",
+        "country. And so my fellow Americans asked not",
+        "what your country can do for you, ask what you can do for your country.",
+        "And so my fellow Americans asked not",
+        "what your country can do for you, ask what you can do for your country.",
+        "and so my fellow Americans ask not what",
+        "your country can do for you Ask what you can do for your country and",
+        "And so my fellow Americans asked not what",
+        "your country can do for you Ask what you can do for your country",
+        "and so my fellow Americans ask not",
+        "what your country can do for you, ask what you can do for",
+        "your country. And so my fellow Americans,",
+        "Ask not what your country can do for you, ask what you",
+        "can do for your country. And so, my fellow Americans,",
+        "Not what your country can do for you.",
+        "ask what you can do for your country, and so my",
+        "fellow Americans, ask not what your country",
+        "can do for you, ask what you can do for your country.",
+        "And so my fellow Americans asked not",
+        "what your country can do for you, ask what you can do for your country.",
+        "And so my fellow Americans asked",
+        "not what your country can do for you, ask what you can",
+        "do for your country. And so my fellow Americans",
+        "Ask not what your country can do for you.",
+        "ask what you can do for your country. And so, my",
+        "fellow Americans, ask not what your country can do for",
+        "you, ask what you can do for your country."
+      ],
+      "failed": false,
+      "buffered": 0
+    },
+    {
+      "streamId": "5a533c46-9f9d-442a-9d1d-8772237b10bd",
+      "transcript": [
+        "And so my fellow Americans ask not",
+        "what your country can do for you as what you",
+        "can do for your country and so my fellow Americans",
+        "Ask not what your country can do for",
+        "you, ask what you can do for your country.",
+        "and so my fellow Americans ask not what your country can do for",
+        "you, ask what you can do for your country, and so my",
+        "fellow Americans, ask not what your country can do for you",
+        "ask what you can do for your country, and so my",
+        "fellow Americans, not what your country can do for you,",
+        "ask what you can do for your country, and so my",
+        "fellow Americans, not what your country can do for you,",
+        "ask what you can do for your country, and so my",
+        "fellow Americans, ask not what your country can do for you,",
+        "ask what you can do for your country, and so my",
+        "fellow Americans, ask not what your country can",
+        "do for you, ask what you can do for your country.",
+        "and so my fellow Americans ask not what",
+        "What your country can do for you Ask what you can do for your country",
+        "And so my fellow Americans asked not what your country can do for",
+        "you, ask what you can do for your country. And so",
+        "my fellow Americans, ask not what your country",
+        "can do for you, ask what you can do for your country.",
+        "And so my fellow Americans ask not",
+        "what your country can do for you, ask what you can do for your country.",
+        "And so my fellow Americans asked",
+        "not what your country can do for you, ask what you",
+        "can do for your country. And so my fellow Americans,",
+        "not what your country can do for you",
+        "ask what you can do for your country.",
+        "And so my fellow Americans ask not what your",
+        "country can do for you, ask what you can do for your country.",
+        "And so my fellow American."
+      ],
+      "failed": false,
+      "buffered": 0
+    },
+    {
+      "streamId": "0d766306-7f8e-4173-9236-68e2511e781c",
+      "transcript": [
+        "And so, my fellow Americans, ask not",
+        "what your country can do for you as what you",
+        "can do for your country. And so my fellow Americans.",
+        "Ask NOT what your country can do for you.",
+        "ask what you can do for your country. And so my fellow Americans.",
+        "not what your country can do for you, ask what you can do for your",
+        "country. And so, my fellow Americans, ask not!",
+        "what your country can do for you as what you can do for your",
+        "country. And so my fellow Americans, ask not!",
+        "what your country can do for you, ask what you can do for your country.",
+        "And so my fellow Americans asked not.",
+        "what your country can do for you, ask what you can do for your country.",
+        "And so my fellow Americans asked not what",
+        "your country can do for you Ask what you can do for your country",
+        "And so my fellow Americans asked not",
+        "what your country can do for you, ask what you can do for your country.",
+        "and so my fellow Americans asked",
+        "not what your country can do for you Ask what you",
+        "can do for your country, and so my fellow Americans,",
+        "Ask not what your country can do for you.",
+        "ask what you can do for your country. And so, my fellow",
+        "Americans, ask not what your country can do for",
+        "you, ask what you can do for your country,",
+        "and so my fellow Americans ask not what your",
+        "country can do for you, ask what you can do for your country.",
+        "And so my fellow Americans ask not",
+        "what your country can do for you as what you can do for",
+        "your country. And so my fellow Americans,",
+        "not what your country can do for you ask what",
+        "you can do for your country. And so my fellow Americans.",
+        "Ask not what your country can do for you.",
+        "Ask what you can do for your country. And so my fellow"
+      ],
+      "failed": false,
+      "buffered": 0
+    },
+    {
+      "streamId": "0a936a63-2cc9-4758-b77e-669891fb5452",
+      "transcript": [
+        "And so my fellow Americans ask not",
+        "what your country can do for you, ask what you can do for your country.",
+        "And so my fellow Americans asked not",
+        "what your country can do for you, ask what you can do for your country.",
+        "And so my fellow Americans asked not",
+        "what your country can do for you, ask what you can do for your country.",
+        "And so my fellow Americans ask not what your",
+        "country can do for you, ask what you can do for your country.",
+        "And so my fellow Americans asked not what your",
+        "country can do for you, ask what you can do for your country,",
+        "And so my fellow Americans ask not what your",
+        "country can do for you, ask what you can do for your country.",
+        "And so my fellow Americans ask not what your",
+        "country can do for you, ask what you can do for your country.",
+        "and so my fellow Americans ask not",
+        "what your country can do for you, ask what you can do for your country.",
+        "And so my fellow Americans ask not",
+        "what your country can do for you as what you can do for your",
+        "country. And so my fellow Americans, ask",
+        "not what your country can do for you, ask what you",
+        "can do for your country. And so, my fellow Americans,",
+        "Ask not what your country can do for you.",
+        "ask what you can do for your country, and so my fellow",
+        "Americans, ask not what your country can do",
+        "for you, ask what you can do for your country.",
+        "And so my fellow Americans asked not what your",
+        "country can do for you, ask what you can do for your country.",
+        "and so my fellow Americans ask not",
+        "what your country can do for you as what you can do for",
+        "your country. And so my fellow Americans,",
+        "not what your country can do for you, ask what",
+        "you can do for your country"
+      ],
+      "failed": false,
+      "buffered": 0
+    },
+    {
+      "streamId": "f9044bbe-e8ac-4382-a84e-c9a8638ae303",
+      "transcript": [
+        "And so my fellow Americans, ask not",
+        "what your country can do for you as what you can do for your country.",
+        "And so my fellow Americans asked not",
+        "what your country can do for you, ask what you can do for your country.",
+        "And so my fellow Americans asked not what your",
+        "country can do for you ask what you can do for your country and",
+        "And so my fellow Americans asked not what your country can do for",
+        "you, ask what you can do for your country, and so",
+        "my fellow Americans, ask not what your country can",
+        "do for you, ask what you can do for your country, and",
+        "And so my fellow Americans ask not what your",
+        "country can do for you, ask what you can do for your country, and",
+        "And so my fellow Americans asked not what your country",
+        "can do for you, ask what you can do for your country.",
+        "and so my fellow Americans ask not what",
+        "your country can do for you Ask what you can do for your country",
+        "And so my fellow Americans ask not",
+        "what your country can do for you as what you can do for",
+        "your country. And so my fellow Americans,",
+        "Ask not what your country can do for you. Ask what you",
+        "can do for your country. And so my fellow Americans,",
+        "not what your country can do for you,",
+        "ask what you can do for your country, and so my",
+        "fellow Americans, not what your country can",
+        "do for you, ask what you can do for your country,",
+        "And so my fellow Americans ask not what",
+        "your country can do for you Ask what you can do for your country",
+        "And so my fellow Americans ask not",
+        "what your country can do for you, ask what you can do",
+        "for your country. And so my fellow Americans",
+        "not what your country can do for you",
+        "ask what you can do for your country, and",
+        "And so my fellow"
+      ],
+      "failed": false,
+      "buffered": 0
+    },
+    {
+      "streamId": "13726d78-4e2f-42cd-8734-76b0618a33f8",
+      "transcript": [
+        "And so, my fellow Americans, ask not",
+        "what your country can do for you, ask what you can do for your country.",
+        "And so my fellow Americans ask not.",
+        "what your country can do for you as what you can do for your country.",
+        "And so my fellow Americans asked not what your",
+        "country can do for you, ask what you can do for your country.",
+        "And so my fellow Americans ask not what your",
+        "country can do for you, ask what you can do for your country, and",
+        "And so my fellow Americans asked not what your country",
+        "can do for you, ask what you can do for your country.",
+        "and so my fellow Americans ask not what your country",
+        "can do for you, ask what you can do for your country, and so my",
+        "fellow Americans, ask not what your country can do for you,",
+        "ask what you can do for your country, and so my",
+        "fellow Americans, ask not what your country",
+        "can do for you, ask what you can do for your country.",
+        "And so my fellow Americans asked not",
+        "what your country can do for you, ask what you can do for your country.",
+        "And so my fellow Americans ask not what your country can do for",
+        "you, ask what you can do for your country. And so,",
+        "my fellow Americans, ask not what your country",
+        "can do for you, ask what you can do for your country.",
+        "And so my fellow Americans asked not",
+        "what your country can do for you as what you can do for your country.",
+        "And so my fellow Americans ask not",
+        "what your country can do for you, ask what you can do for your country.",
+        "And so my fellow Americans asked not",
+        "what your country can do for you, ask what you can do for your",
+        "country. And so my fellow Americans, ask",
+        "not what your country can do for you Ask what you",
+        "can do for your country and so my fellow American"
+      ],
+      "failed": false,
+      "buffered": 0
+    },
+    {
+      "streamId": "1737c12d-1caf-4658-af66-9d1007b6d299",
+      "transcript": [
+        "And so my fellow Americans, ask not",
+        "what your country can do for you as what you",
+        "can do for your country. And so my fellow Americans.",
+        "Ask not what your country can do for",
+        "you, ask what you can do for your country. And so, my fellow Americans.",
+        "Ask not what your country can do for you. Ask what you can",
+        "do for your country. And so, my fellow Americans,",
+        "ask not what your country can do for you, ask what you",
+        "can do for your country, and so my fellow Americans,",
+        "Ask not what your country can do for you. Ask",
+        "what you can do for your country and so my fellow Americans",
+        "Ask not what your country can do for you.",
+        "ask what you can do for your country. And so, my fellow Americans.",
+        "Not what your country can do for you.",
+        "ask what you can do for your country, and so my fellow",
+        "Americans. Ask not what your country can do for you.",
+        "Ask what you can do for your country. And so",
+        "my fellow Americans, ask not what your country",
+        "can do for you, ask what you can do for your country.",
+        "And so my fellow Americans asked not",
+        "what your country can do for you, ask what you can do for",
+        "your country. And so, my fellow Americans,",
+        "Ask not what your country can do for you.",
+        "ask what you can do for your country, and so my fellow",
+        "Americans, ask not what your country can do for",
+        "you, ask what you can do for your country. and",
+        "And so my fellow Americans asked not what your country can do for you",
+        "Ask what you can do for your country. And",
+        "so my fellow Americans ask not what your",
+        "country can do for you, ask what you can do for your country.",
+        "And so my fellow Americans asked not",
+        "what your country can do for you, ask what you can",
+        "do for your country."
+      ],
+      "failed": false,
+      "buffered": 0
+    }
+  ],
+  "errors": [],
+  "external": []
+}

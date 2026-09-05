@@ -1,0 +1,5 @@
+faster-whisper==1.2.1
+fastapi==0.141.1
+uvicorn==0.52.4
+numpy==2.5.2
+ctranslate2==4.8.2

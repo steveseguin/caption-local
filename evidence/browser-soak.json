@@ -1,0 +1,991 @@
+{
+  "duration_seconds": 602.8,
+  "model": "small",
+  "device": "cpu",
+  "caption_count": 126,
+  "max_buffer_seconds": 9.31,
+  "warm_rss_range_mib": [
+    565.3,
+    668.5
+  ],
+  "browser_errors": [],
+  "external_requests": [],
+  "samples": [
+    {
+      "running": true,
+      "buffered": 5,
+      "captions": 0,
+      "error": "",
+      "seconds": 5.0,
+      "rss_mib": 522.3
+    },
+    {
+      "running": true,
+      "buffered": 6.22,
+      "captions": 1,
+      "error": "",
+      "seconds": 10.0,
+      "rss_mib": 561.5
+    },
+    {
+      "running": true,
+      "buffered": 6.4,
+      "captions": 2,
+      "error": "",
+      "seconds": 15.0,
+      "rss_mib": 562.6
+    },
+    {
+      "running": true,
+      "buffered": 6.44,
+      "captions": 3,
+      "error": "",
+      "seconds": 20.0,
+      "rss_mib": 564.7
+    },
+    {
+      "running": true,
+      "buffered": 6.62,
+      "captions": 4,
+      "error": "",
+      "seconds": 25.0,
+      "rss_mib": 585.1
+    },
+    {
+      "running": true,
+      "buffered": 6.3,
+      "captions": 5,
+      "error": "",
+      "seconds": 30.0,
+      "rss_mib": 564.8
+    },
+    {
+      "running": true,
+      "buffered": 7.2,
+      "captions": 6,
+      "error": "",
+      "seconds": 35.0,
+      "rss_mib": 564.8
+    },
+    {
+      "running": true,
+      "buffered": 7.37,
+      "captions": 7,
+      "error": "",
+      "seconds": 40.0,
+      "rss_mib": 565.2
+    },
+    {
+      "running": true,
+      "buffered": 7.45,
+      "captions": 8,
+      "error": "",
+      "seconds": 45.0,
+      "rss_mib": 565.2
+    },
+    {
+      "running": true,
+      "buffered": 7.57,
+      "captions": 9,
+      "error": "",
+      "seconds": 50.0,
+      "rss_mib": 565.2
+    },
+    {
+      "running": true,
+      "buffered": 7.3,
+      "captions": 10,
+      "error": "",
+      "seconds": 55.1,
+      "rss_mib": 565.2
+    },
+    {
+      "running": true,
+      "buffered": 8.16,
+      "captions": 11,
+      "error": "",
+      "seconds": 60.1,
+      "rss_mib": 668.2
+    },
+    {
+      "running": true,
+      "buffered": 8.33,
+      "captions": 12,
+      "error": "",
+      "seconds": 65.1,
+      "rss_mib": 565.3
+    },
+    {
+      "running": true,
+      "buffered": 8.38,
+      "captions": 13,
+      "error": "",
+      "seconds": 70.1,
+      "rss_mib": 565.3
+    },
+    {
+      "running": true,
+      "buffered": 3.2,
+      "captions": 15,
+      "error": "",
+      "seconds": 75.1,
+      "rss_mib": 565.3
+    },
+    {
+      "running": true,
+      "buffered": 8.2,
+      "captions": 15,
+      "error": "",
+      "seconds": 80.1,
+      "rss_mib": 565.3
+    },
+    {
+      "running": true,
+      "buffered": 4.29,
+      "captions": 17,
+      "error": "",
+      "seconds": 85.1,
+      "rss_mib": 565.3
+    },
+    {
+      "running": true,
+      "buffered": 4.33,
+      "captions": 18,
+      "error": "",
+      "seconds": 90.1,
+      "rss_mib": 565.3
+    },
+    {
+      "running": true,
+      "buffered": 4.51,
+      "captions": 19,
+      "error": "",
+      "seconds": 95.1,
+      "rss_mib": 565.3
+    },
+    {
+      "running": true,
+      "buffered": 4.3,
+      "captions": 20,
+      "error": "",
+      "seconds": 100.1,
+      "rss_mib": 565.3
+    },
+    {
+      "running": true,
+      "buffered": 5.18,
+      "captions": 21,
+      "error": "",
+      "seconds": 105.1,
+      "rss_mib": 565.3
+    },
+    {
+      "running": true,
+      "buffered": 5.37,
+      "captions": 22,
+      "error": "",
+      "seconds": 110.1,
+      "rss_mib": 565.3
+    },
+    {
+      "running": true,
+      "buffered": 5.47,
+      "captions": 23,
+      "error": "",
+      "seconds": 115.1,
+      "rss_mib": 565.3
+    },
+    {
+      "running": true,
+      "buffered": 5.57,
+      "captions": 24,
+      "error": "",
+      "seconds": 120.1,
+      "rss_mib": 565.3
+    },
+    {
+      "running": true,
+      "buffered": 5.3,
+      "captions": 25,
+      "error": "",
+      "seconds": 125.1,
+      "rss_mib": 565.3
+    },
+    {
+      "running": true,
+      "buffered": 6.12,
+      "captions": 26,
+      "error": "",
+      "seconds": 130.1,
+      "rss_mib": 565.4
+    },
+    {
+      "running": true,
+      "buffered": 6.32,
+      "captions": 27,
+      "error": "",
+      "seconds": 135.1,
+      "rss_mib": 565.4
+    },
+    {
+      "running": true,
+      "buffered": 6.4,
+      "captions": 28,
+      "error": "",
+      "seconds": 140.1,
+      "rss_mib": 565.4
+    },
+    {
+      "running": true,
+      "buffered": 6.52,
+      "captions": 29,
+      "error": "",
+      "seconds": 145.1,
+      "rss_mib": 565.4
+    },
+    {
+      "running": true,
+      "buffered": 6.2,
+      "captions": 30,
+      "error": "",
+      "seconds": 150.1,
+      "rss_mib": 599.5
+    },
+    {
+      "running": true,
+      "buffered": 7.11,
+      "captions": 31,
+      "error": "",
+      "seconds": 155.1,
+      "rss_mib": 668.4
+    },
+    {
+      "running": true,
+      "buffered": 7.28,
+      "captions": 32,
+      "error": "",
+      "seconds": 160.2,
+      "rss_mib": 565.4
+    },
+    {
+      "running": true,
+      "buffered": 7.33,
+      "captions": 33,
+      "error": "",
+      "seconds": 165.2,
+      "rss_mib": 565.4
+    },
+    {
+      "running": true,
+      "buffered": 7.48,
+      "captions": 34,
+      "error": "",
+      "seconds": 170.2,
+      "rss_mib": 574.2
+    },
+    {
+      "running": true,
+      "buffered": 7.2,
+      "captions": 35,
+      "error": "",
+      "seconds": 175.2,
+      "rss_mib": 565.4
+    },
+    {
+      "running": true,
+      "buffered": 8.06,
+      "captions": 36,
+      "error": "",
+      "seconds": 180.2,
+      "rss_mib": 668.4
+    },
+    {
+      "running": true,
+      "buffered": 8.25,
+      "captions": 37,
+      "error": "",
+      "seconds": 185.2,
+      "rss_mib": 660.0
+    },
+    {
+      "running": true,
+      "buffered": 8.33,
+      "captions": 38,
+      "error": "",
+      "seconds": 190.2,
+      "rss_mib": 668.4
+    },
+    {
+      "running": true,
+      "buffered": 3.1,
+      "captions": 40,
+      "error": "",
+      "seconds": 195.2,
+      "rss_mib": 565.4
+    },
+    {
+      "running": true,
+      "buffered": 8.1,
+      "captions": 40,
+      "error": "",
+      "seconds": 200.2,
+      "rss_mib": 574.2
+    },
+    {
+      "running": true,
+      "buffered": 9.14,
+      "captions": 41,
+      "error": "",
+      "seconds": 205.2,
+      "rss_mib": 574.2
+    },
+    {
+      "running": true,
+      "buffered": 9.31,
+      "captions": 42,
+      "error": "",
+      "seconds": 210.2,
+      "rss_mib": 565.4
+    },
+    {
+      "running": true,
+      "buffered": 4.51,
+      "captions": 44,
+      "error": "",
+      "seconds": 215.2,
+      "rss_mib": 565.4
+    },
+    {
+      "running": true,
+      "buffered": 4.2,
+      "captions": 45,
+      "error": "",
+      "seconds": 220.2,
+      "rss_mib": 565.4
+    },
+    {
+      "running": true,
+      "buffered": 5.01,
+      "captions": 46,
+      "error": "",
+      "seconds": 225.2,
+      "rss_mib": 565.4
+    },
+    {
+      "running": true,
+      "buffered": 5.28,
+      "captions": 47,
+      "error": "",
+      "seconds": 230.2,
+      "rss_mib": 565.4
+    },
+    {
+      "running": true,
+      "buffered": 5.34,
+      "captions": 48,
+      "error": "",
+      "seconds": 235.3,
+      "rss_mib": 565.4
+    },
+    {
+      "running": true,
+      "buffered": 5.49,
+      "captions": 49,
+      "error": "",
+      "seconds": 240.3,
+      "rss_mib": 623.8
+    },
+    {
+      "running": true,
+      "buffered": 5.2,
+      "captions": 50,
+      "error": "",
+      "seconds": 245.3,
+      "rss_mib": 565.4
+    },
+    {
+      "running": true,
+      "buffered": 6.08,
+      "captions": 51,
+      "error": "",
+      "seconds": 250.3,
+      "rss_mib": 565.4
+    },
+    {
+      "running": true,
+      "buffered": 6.25,
+      "captions": 52,
+      "error": "",
+      "seconds": 255.3,
+      "rss_mib": 565.4
+    },
+    {
+      "running": true,
+      "buffered": 6.31,
+      "captions": 53,
+      "error": "",
+      "seconds": 260.3,
+      "rss_mib": 565.4
+    },
+    {
+      "running": true,
+      "buffered": 6.45,
+      "captions": 54,
+      "error": "",
+      "seconds": 265.3,
+      "rss_mib": 571.4
+    },
+    {
+      "running": true,
+      "buffered": 6.1,
+      "captions": 55,
+      "error": "",
+      "seconds": 270.3,
+      "rss_mib": 565.4
+    },
+    {
+      "running": true,
+      "buffered": 7.03,
+      "captions": 56,
+      "error": "",
+      "seconds": 275.3,
+      "rss_mib": 668.4
+    },
+    {
+      "running": true,
+      "buffered": 7.21,
+      "captions": 57,
+      "error": "",
+      "seconds": 280.3,
+      "rss_mib": 647.1
+    },
+    {
+      "running": true,
+      "buffered": 7.27,
+      "captions": 58,
+      "error": "",
+      "seconds": 285.3,
+      "rss_mib": 668.5
+    },
+    {
+      "running": true,
+      "buffered": 7.42,
+      "captions": 59,
+      "error": "",
+      "seconds": 290.3,
+      "rss_mib": 574.2
+    },
+    {
+      "running": true,
+      "buffered": 7.1,
+      "captions": 60,
+      "error": "",
+      "seconds": 295.3,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 8,
+      "captions": 61,
+      "error": "",
+      "seconds": 300.3,
+      "rss_mib": 668.5
+    },
+    {
+      "running": true,
+      "buffered": 8.17,
+      "captions": 62,
+      "error": "",
+      "seconds": 305.3,
+      "rss_mib": 668.5
+    },
+    {
+      "running": true,
+      "buffered": 8.26,
+      "captions": 63,
+      "error": "",
+      "seconds": 310.3,
+      "rss_mib": 574.2
+    },
+    {
+      "running": true,
+      "buffered": 3.1,
+      "captions": 65,
+      "error": "",
+      "seconds": 315.3,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 8.2,
+      "captions": 65,
+      "error": "",
+      "seconds": 320.3,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 4.25,
+      "captions": 67,
+      "error": "",
+      "seconds": 325.3,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 4.29,
+      "captions": 68,
+      "error": "",
+      "seconds": 330.3,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 4.21,
+      "captions": 69,
+      "error": "",
+      "seconds": 335.4,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 4.1,
+      "captions": 70,
+      "error": "",
+      "seconds": 340.4,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 5.04,
+      "captions": 71,
+      "error": "",
+      "seconds": 345.4,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 5.21,
+      "captions": 72,
+      "error": "",
+      "seconds": 350.4,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 5.29,
+      "captions": 73,
+      "error": "",
+      "seconds": 355.4,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 5.42,
+      "captions": 74,
+      "error": "",
+      "seconds": 360.4,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 5.1,
+      "captions": 75,
+      "error": "",
+      "seconds": 365.4,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 5.97,
+      "captions": 76,
+      "error": "",
+      "seconds": 370.4,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 6.18,
+      "captions": 77,
+      "error": "",
+      "seconds": 375.4,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 6.25,
+      "captions": 78,
+      "error": "",
+      "seconds": 380.4,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 6.39,
+      "captions": 79,
+      "error": "",
+      "seconds": 385.4,
+      "rss_mib": 668.5
+    },
+    {
+      "running": true,
+      "buffered": 6.1,
+      "captions": 80,
+      "error": "",
+      "seconds": 390.4,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 6.96,
+      "captions": 81,
+      "error": "",
+      "seconds": 395.4,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 7.14,
+      "captions": 82,
+      "error": "",
+      "seconds": 400.4,
+      "rss_mib": 667.2
+    },
+    {
+      "running": true,
+      "buffered": 7.2,
+      "captions": 83,
+      "error": "",
+      "seconds": 405.4,
+      "rss_mib": 608.6
+    },
+    {
+      "running": true,
+      "buffered": 7.34,
+      "captions": 84,
+      "error": "",
+      "seconds": 410.4,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 7,
+      "captions": 85,
+      "error": "",
+      "seconds": 415.4,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 7.92,
+      "captions": 86,
+      "error": "",
+      "seconds": 420.4,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 8.11,
+      "captions": 87,
+      "error": "",
+      "seconds": 425.4,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 8.15,
+      "captions": 88,
+      "error": "",
+      "seconds": 430.4,
+      "rss_mib": 668.5
+    },
+    {
+      "running": true,
+      "buffered": 3,
+      "captions": 90,
+      "error": "",
+      "seconds": 435.5,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 8,
+      "captions": 90,
+      "error": "",
+      "seconds": 440.5,
+      "rss_mib": 574.3
+    },
+    {
+      "running": true,
+      "buffered": 8.91,
+      "captions": 91,
+      "error": "",
+      "seconds": 445.5,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 4.16,
+      "captions": 93,
+      "error": "",
+      "seconds": 450.5,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 4.3,
+      "captions": 94,
+      "error": "",
+      "seconds": 455.5,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 4,
+      "captions": 95,
+      "error": "",
+      "seconds": 460.5,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 4.97,
+      "captions": 96,
+      "error": "",
+      "seconds": 465.5,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 5.14,
+      "captions": 97,
+      "error": "",
+      "seconds": 470.5,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 5.21,
+      "captions": 98,
+      "error": "",
+      "seconds": 475.5,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 5.35,
+      "captions": 99,
+      "error": "",
+      "seconds": 480.5,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 5,
+      "captions": 100,
+      "error": "",
+      "seconds": 485.5,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 5.93,
+      "captions": 101,
+      "error": "",
+      "seconds": 490.5,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 6.11,
+      "captions": 102,
+      "error": "",
+      "seconds": 495.5,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 6.17,
+      "captions": 103,
+      "error": "",
+      "seconds": 500.5,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 6.32,
+      "captions": 104,
+      "error": "",
+      "seconds": 505.5,
+      "rss_mib": 662.5
+    },
+    {
+      "running": true,
+      "buffered": 6,
+      "captions": 105,
+      "error": "",
+      "seconds": 510.5,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 6.9,
+      "captions": 106,
+      "error": "",
+      "seconds": 515.5,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 7.09,
+      "captions": 107,
+      "error": "",
+      "seconds": 520.6,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 7.15,
+      "captions": 108,
+      "error": "",
+      "seconds": 525.6,
+      "rss_mib": 630.6
+    },
+    {
+      "running": true,
+      "buffered": 7.29,
+      "captions": 109,
+      "error": "",
+      "seconds": 530.6,
+      "rss_mib": 574.3
+    },
+    {
+      "running": true,
+      "buffered": 7,
+      "captions": 110,
+      "error": "",
+      "seconds": 535.6,
+      "rss_mib": 627.5
+    },
+    {
+      "running": true,
+      "buffered": 7.86,
+      "captions": 111,
+      "error": "",
+      "seconds": 540.6,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 8.05,
+      "captions": 112,
+      "error": "",
+      "seconds": 545.6,
+      "rss_mib": 668.5
+    },
+    {
+      "running": true,
+      "buffered": 8.13,
+      "captions": 113,
+      "error": "",
+      "seconds": 550.6,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 3,
+      "captions": 115,
+      "error": "",
+      "seconds": 555.6,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 8,
+      "captions": 115,
+      "error": "",
+      "seconds": 560.6,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 8.84,
+      "captions": 116,
+      "error": "",
+      "seconds": 565.6,
+      "rss_mib": 574.3
+    },
+    {
+      "running": true,
+      "buffered": 4.1,
+      "captions": 118,
+      "error": "",
+      "seconds": 570.6,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 4.24,
+      "captions": 119,
+      "error": "",
+      "seconds": 575.6,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 3.9,
+      "captions": 120,
+      "error": "",
+      "seconds": 580.6,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 4.92,
+      "captions": 121,
+      "error": "",
+      "seconds": 585.6,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 1.9,
+      "captions": 123,
+      "error": "",
+      "seconds": 590.6,
+      "rss_mib": 565.5
+    },
+    {
+      "running": true,
+      "buffered": 6.9,
+      "captions": 123,
+      "error": "",
+      "seconds": 595.6,
+      "rss_mib": 668.5
+    },
+    {
+      "running": true,
+      "buffered": 7.9,
+      "captions": 124,
+      "error": "",
+      "seconds": 600.6,
+      "rss_mib": 574.3
+    }
+  ],
+  "first_captions": [
+    "And so, my fellow Americans, ask NOT",
+    "what your country can do for you, ask what you",
+    "can do for your country. And so, my fellow Americans.",
+    "Not what your country can do",
+    "for you, ask what you can do for your country.",
+    "And so, my fellow Americans, ask not"
+  ],
+  "last_captions": [
+    "And so, my fellow Americans, ask not",
+    "what your country can do for you, ask what you",
+    "can do for your country.",
+    "And so, my fellow Americans, ask not",
+    "what your country can do for you, ask what you",
+    "can do for your country."
+  ]
+}

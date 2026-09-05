@@ -1,0 +1,16 @@
+# Use together: docker compose -f compose.yaml -f compose.gpu.yaml up --build -d
+services:
+  captions:
+    build:
+      context: .
+      dockerfile: Dockerfile.gpu
+    image: caption-local:gpu
+    environment:
+      CAPTION_DEVICE: cuda
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
