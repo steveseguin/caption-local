@@ -30,6 +30,20 @@ fail when unavailable; `--device auto` can fall back during model loading. Confi
 does not validate GPU runtime libraries. Do not describe mocked GPU tests or a
 CPU run in a GPU image as GPU validation.
 
+On Windows read `docs/WINDOWS-GPU.md` and `evidence/windows-rtx/report.md` for the
+tested environment and outstanding checks. Optional `requirements-windows-gpu.txt`
+installs NVIDIA runtime wheels inside the venv; CUDA engine setup discovers their
+DLL directories without changing system PATH. This fixes DLL discovery but is not
+itself GPU inference validation. Check for unrelated GPU compute processes before
+profiling; preserve them unless the user authorizes interruption. Use an isolated
+process per model/precision/worker configuration and keep failed accuracy results.
+
+Windows test commands use `.venv\Scripts\python.exe`. Browser scripts select
+installed Edge/Chrome or accept `CAPTION_TEST_BROWSER`; fake microphone tests do
+not authorize physical recording. Prepare the exact Spanish sentence before the
+quality gate. Save evidence as UTF-8 and use the actual Uvicorn server PID for
+monitoring, because the Windows venv launcher may be a separate parent process.
+
 Keep the native bind on 127.0.0.1 and Docker's published port bound to 127.0.0.1.
 The container listens on 0.0.0.0 internally solely to permit Docker forwarding.
 For remote microphones, use SSH local forwarding and open localhost on the

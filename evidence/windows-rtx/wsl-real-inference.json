@@ -1,0 +1,13 @@
+{
+  "device": "cpu",
+  "compute_type": "int8",
+  "load_and_warmup_seconds": 2.6809641830000004,
+  "jfk.wav": {
+    "transcript": "And so my fellow Americans, ask not what your country can do for you, ask what you can do for your country.",
+    "translation": "And so, my fellow Americans, ask not what your country can do for you. Ask what you can do for your country."
+  },
+  "spanish.wav": {
+    "transcript": "¡Hola! Bienvenidos al teatro. ¡Muchas gracias por venir esta noche!",
+    "translation": "Hello. Welcome to the theater. Thank you very much for coming this night."
+  }
+}

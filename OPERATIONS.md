@@ -1,5 +1,10 @@
 # Linux CPU operations
 
+Native Windows CPU functional checks are also available in the
+[Windows validation report](evidence/windows-rtx/report.md). Use the
+[Windows commands](docs/WINDOWS-GPU.md) for that platform. These short tests do
+not establish sustained GPU operation; the Linux results below remain separate.
+
 Supported configuration: Linux x86-64, Python 3.12 or the supplied CPU Docker
 image, up to twelve input sessions, Chrome/Edge capture, multilingual small model on CPU int8.
 The measured host has a Ryzen 5 5500 and 32 GiB RAM. Start with at least 4 GiB RAM

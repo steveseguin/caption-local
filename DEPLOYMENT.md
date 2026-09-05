@@ -23,6 +23,9 @@ elsewhere, use the SSH instructions below.
 
 ## Native scripts and Python
 
+For the tested Windows CPU setup, environment-local NVIDIA runtime provisioning,
+and outstanding GPU checks, read the [Windows/GPU guide](docs/WINDOWS-GPU.md).
+
 Linux:
 
 ```sh
@@ -149,6 +152,11 @@ runtime. Follow the versioned dependencies in
 [faster-whisper's GPU instructions](https://github.com/SYSTRAN/faster-whisper#gpu)
 when installing libraries; Python setup does not install GPU drivers or alter
 system PATH. Docker bundles these libraries if you prefer to avoid native setup.
+
+Windows can provision pinned NVIDIA runtime wheels inside the project environment
+with `.venv\Scripts\python.exe -m pip install -r requirements-windows-gpu.txt`.
+CUDA engine setup adds those DLL directories to its own process search path.
+DLL loading has been tested on Windows; real CUDA inference is still pending.
 
 ```sh
 python3 deploy.py doctor

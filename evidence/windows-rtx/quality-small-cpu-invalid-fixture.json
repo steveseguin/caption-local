@@ -1,0 +1,115 @@
+{
+  "device": "cpu",
+  "compute_type": "int8",
+  "threads": 4,
+  "beam_size": 5,
+  "checks": {
+    "silence_empty": true,
+    "noise_empty": true,
+    "spanish_theatre_preserved": false,
+    "english_theatre_preserved": false,
+    "mean_wer_at_most_15_percent": true,
+    "jfk_exact": true,
+    "faster_than_audio": true
+  },
+  "passed": false,
+  "model": "small",
+  "results": [
+    {
+      "fixture": "jfk",
+      "reference": "And so my fellow Americans ask not what your country can do for you ask what you can do for your country",
+      "transcript": "And so, my fellow Americans, ask not what your country can do for you, ask what you can do for your country.",
+      "wer": 0.0,
+      "audio_seconds": 11.0,
+      "inference_seconds": 3.725,
+      "max_window_seconds": 1.484
+    },
+    {
+      "fixture": "1272-128104-0002",
+      "reference": "HE TELLS US THAT AT THIS FESTIVE SEASON OF THE YEAR WITH CHRISTMAS AND ROAST BEEF LOOMING BEFORE US SIMILES DRAWN FROM EATING AND ITS RESULTS OCCUR MOST READILY TO THE MIND",
+      "transcript": "He tells us that at this festive season of the year, with Christmas and roast beef looming before us, symbolies drawn from eating and its results occur most readily to the mind.",
+      "wer": 0.0312,
+      "audio_seconds": 12.485,
+      "inference_seconds": 3.464,
+      "max_window_seconds": 1.196
+    },
+    {
+      "fixture": "1272-128104-0003",
+      "reference": "HE HAS GRAVE DOUBTS WHETHER SIR FREDERICK LEIGHTON'S WORK IS REALLY GREEK AFTER ALL AND CAN DISCOVER IN IT BUT LITTLE OF ROCKY ITHACA",
+      "transcript": "He has graved doubts whether Sir Frederick Layton's work is really Greek after all, and can discover in it but little of rocky Ithaca.",
+      "wer": 0.0833,
+      "audio_seconds": 9.9,
+      "inference_seconds": 2.339,
+      "max_window_seconds": 1.182
+    },
+    {
+      "fixture": "1272-128104-0004",
+      "reference": "LINNELL'S PICTURES ARE A SORT OF UP GUARDS AND AT EM PAINTINGS AND MASON'S EXQUISITE IDYLLS ARE AS NATIONAL AS A JINGO POEM MISTER BIRKET FOSTER'S LANDSCAPES SMILE AT ONE MUCH IN THE SAME WAY THAT MISTER CARKER USED TO FLASH HIS TEETH AND MISTER JOHN COLLIER GIVES HIS SITTER A CHEERFUL SLAP ON THE BACK BEFORE HE SAYS LIKE A SHAMPOOER IN A TURKISH BATH NEXT MAN",
+      "transcript": "Linnell's pictures are a sort of up-guards-and-adam paintings, and Mason's exquisite Ittle's eras, National as a Jingo poem. Mr. Birkett Foster's landscapes smile at one much in the same way that Mr. Karker used to flash his teeth. and Mr. John Collier gives his sitter a cheerful slap on the back. Before he says, like a shampoo or a Turkish bath, Next, man.",
+      "wer": 0.1765,
+      "audio_seconds": 29.4,
+      "inference_seconds": 8.625,
+      "max_window_seconds": 1.266
+    },
+    {
+      "fixture": "1272-128104-0005",
+      "reference": "IT IS OBVIOUSLY UNNECESSARY FOR US TO POINT OUT HOW LUMINOUS THESE CRITICISMS ARE HOW DELICATE IN EXPRESSION",
+      "transcript": "It is obviously unnecessary for us to point out how luminous these criticisms are how delicate an expression",
+      "wer": 0.0556,
+      "audio_seconds": 9.01,
+      "inference_seconds": 2.643,
+      "max_window_seconds": 1.383
+    },
+    {
+      "fixture": "1272-128104-0007",
+      "reference": "PAINTING HE TELLS US IS OF A DIFFERENT QUALITY TO MATHEMATICS AND FINISH IN ART IS ADDING MORE FACT",
+      "transcript": "Painting, he tells us, is of a different quality to mathematics, and finish in art is adding more factor.",
+      "wer": 0.0526,
+      "audio_seconds": 9.24,
+      "inference_seconds": 2.581,
+      "max_window_seconds": 1.371
+    },
+    {
+      "fixture": "1272-128104-0009",
+      "reference": "HE LAMENTS MOST BITTERLY THE DIVORCE THAT HAS BEEN MADE BETWEEN DECORATIVE ART AND WHAT WE USUALLY CALL PICTURES MAKES THE CUSTOMARY APPEAL TO THE LAST JUDGMENT AND REMINDS US THAT IN THE GREAT DAYS OF ART MICHAEL ANGELO WAS THE FURNISHING UPHOLSTERER",
+      "transcript": "He laments most bitterly the divorce that has been made between decorative art and what we usually call pictures, makes the customary appeal to the last judgment and reminds us that in the great days of art Michelangelo was the furnishing upholsterer.",
+      "wer": 0.0465,
+      "audio_seconds": 18.29,
+      "inference_seconds": 5.365,
+      "max_window_seconds": 1.475
+    },
+    {
+      "fixture": "1272-128104-0011",
+      "reference": "IN FACT HE IS QUITE SEVERE ON MISTER RUSKIN FOR NOT RECOGNISING THAT A PICTURE SHOULD DENOTE THE FRAILTY OF MAN AND REMARKS WITH PLEASING COURTESY AND FELICITOUS GRACE THAT MANY PHASES OF FEELING",
+      "transcript": "In fact, he is quite severe on Mr. Ruskin for not recognizing that a picture should denote the frailty of man. And remarks was pleasing courtesy and felicitous grace that many phases of feeling.",
+      "wer": 0.0882,
+      "audio_seconds": 15.115,
+      "inference_seconds": 3.842,
+      "max_window_seconds": 1.305
+    },
+    {
+      "fixture": "1272-135031-0000",
+      "reference": "BECAUSE YOU WERE SLEEPING INSTEAD OF CONQUERING THE LOVELY ROSE PRINCESS HAS BECOME A FIDDLE WITHOUT A BOW WHILE POOR SHAGGY SITS THERE A COOING DOVE",
+      "transcript": "Because you were sleeping instead of conquering the lovely rose princess has become a fiddle without a bow. All poor shaggy sits there, accuing dove.",
+      "wer": 0.1154,
+      "audio_seconds": 10.885,
+      "inference_seconds": 2.715,
+      "max_window_seconds": 1.377
+    },
+    {
+      "fixture": "silence",
+      "transcript": ""
+    },
+    {
+      "fixture": "noise",
+      "transcript": ""
+    },
+    {
+      "fixture": "synthetic_spanish",
+      "transcript": "Hola.",
+      "translation": "now"
+    }
+  ],
+  "mean_wer": 0.0721,
+  "gate": "mean WER <= 0.15; JFK exact after punctuation/case normalization; each fixture inference faster than audio; silence/noise empty; Spanish theatre preserved"
+}

@@ -1,0 +1,7 @@
+{
+  "automatic_attempts": 4,
+  "same_audio_and_id_on_retry": true,
+  "manual_recovery": true,
+  "restart_cycles": 3,
+  "browser_errors": []
+}

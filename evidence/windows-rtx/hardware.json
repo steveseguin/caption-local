@@ -1,0 +1,17 @@
+{
+  "release_tag": "v1.1.0",
+  "release_commit": "9b585f5749ef819dd63a938b4adf32c9c3459d56",
+  "branch": "windows-rtx-validation",
+  "os": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.10",
+  "cpu": "Intel Core Ultra 7 265K",
+  "physical_cores": 20,
+  "logical_cores": 20,
+  "ram_bytes": 68144631808,
+  "disk_free_bytes": 29788598272,
+  "nvidia_smi": "Sat Sep  5 17:15:58 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 610.47                 KMD Version: 610.47        CUDA UMD Version: 13.3     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                  Driver-Model | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA TITAN RTX             WDDM  |   00000000:02:00.0 Off |                  N/A |\n| 41%   32C    P8             14W /  280W |   23318MiB /  24576MiB |      0%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|    0   N/A  N/A           16912      C   ...pstream-sm75\\llama-server.exe      N/A      |\n+-----------------------------------------------------------------------------------------+",
+  "git": "git version 2.51.0.windows.1",
+  "node": "v22.19.0",
+  "docker_desktop_installed": false,
+  "wsl": "Ubuntu WSL2; Python 3.12.3; kernel 6.6.87.2-microsoft-standard-WSL2"
+}

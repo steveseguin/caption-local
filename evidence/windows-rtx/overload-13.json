@@ -1,0 +1,131 @@
+{
+  "passed": false,
+  "error": "AssertionError((12, 0, 429, {'detail': 'Stream capacity reached; idle sessions expire after 120 seconds'}))",
+  "streams": 13,
+  "rounds": 1,
+  "mixed_translation": true,
+  "results": [
+    {
+      "stream": 0,
+      "round": 0,
+      "latency": 2.234,
+      "lag": 2.234,
+      "queue": 0.0,
+      "inference": 2.231,
+      "text": "\u00a1Hola! Bienvenidos al teatro. \u00a1Muchas gracias por venir esta noche!"
+    },
+    {
+      "stream": 1,
+      "round": 0,
+      "latency": 3.453,
+      "lag": 3.453,
+      "queue": 2.234,
+      "inference": 1.214,
+      "text": "Nor is Mr. Quilter's manner less interesting than his matter."
+    },
+    {
+      "stream": 2,
+      "round": 0,
+      "latency": 4.719,
+      "lag": 4.719,
+      "queue": 3.421,
+      "inference": 1.272,
+      "text": "He tells us that at this festive season of the year, with Christmas"
+    },
+    {
+      "stream": 3,
+      "round": 0,
+      "latency": 6.969,
+      "lag": 6.969,
+      "queue": 4.703,
+      "inference": 2.243,
+      "text": "\u00a1Hola! Bienvenidos al teatro. \u00a1Muchas gracias por venir esta noche!"
+    },
+    {
+      "stream": 4,
+      "round": 0,
+      "latency": 8.234,
+      "lag": 8.234,
+      "queue": 6.953,
+      "inference": 1.278,
+      "text": "Linnell's pictures are a sort of up-guards-and-adam paintings,"
+    },
+    {
+      "stream": 5,
+      "round": 0,
+      "latency": 9.469,
+      "lag": 9.469,
+      "queue": 8.218,
+      "inference": 1.233,
+      "text": "It is obviously unnecessary for us to point out how luminous these"
+    },
+    {
+      "stream": 6,
+      "round": 0,
+      "latency": 11.703,
+      "lag": 11.703,
+      "queue": 9.453,
+      "inference": 2.235,
+      "text": "\u00a1Hola! Bienvenidos al teatro. \u00a1Muchas gracias por venir esta noche!"
+    },
+    {
+      "stream": 7,
+      "round": 0,
+      "latency": 12.953,
+      "lag": 12.953,
+      "queue": 11.687,
+      "inference": 1.242,
+      "text": "Painting, he tells us, is of a different quality to mathematics,"
+    },
+    {
+      "stream": 8,
+      "round": 0,
+      "latency": 14.156,
+      "lag": 14.156,
+      "queue": 12.937,
+      "inference": 1.205,
+      "text": "As for etchings, they are of two kinds, British and foreign."
+    },
+    {
+      "stream": 9,
+      "round": 0,
+      "latency": 16.453,
+      "lag": 16.453,
+      "queue": 14.14,
+      "inference": 2.298,
+      "text": "\u00a1Hola! Bienvenidos al teatro. \u00a1Muchas gracias por venir esta noche!"
+    },
+    {
+      "stream": 10,
+      "round": 0,
+      "latency": 17.656,
+      "lag": 17.656,
+      "queue": 16.437,
+      "inference": 1.206,
+      "text": "near the fire, and the ornaments Fred brought home from India on the mental board."
+    },
+    {
+      "stream": 11,
+      "round": 0,
+      "latency": 18.906,
+      "lag": 18.906,
+      "queue": 17.64,
+      "inference": 1.245,
+      "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing that"
+    }
+  ],
+  "rss_mib": [
+    451.73
+  ],
+  "quality_errors": [],
+  "request_errors": [
+    {
+      "stream": 12,
+      "round": 0,
+      "status": 429,
+      "result": {
+        "detail": "Stream capacity reached; idle sessions expire after 120 seconds"
+      }
+    }
+  ]
+}

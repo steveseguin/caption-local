@@ -25,6 +25,10 @@ validated on that hardware. Twelve simultaneous English streams passed a
 five-minute CPU test with the faster preset; that is not a promise of twelve
 accurate multilingual streams on any computer. [Read the measurements and limits](evidence/multistream/report.md).
 
+**Windows development validation:** native Python and synthetic Edge capture now
+pass on Windows 11 with the small CPU model. NVIDIA inference and sustained GPU
+capacity remain pending. [Windows setup and exact test scope](docs/WINDOWS-GPU.md).
+
 ## What you need
 
 | Requirement | Details |

@@ -1,0 +1,2 @@
+Loading speech model; first run downloads weights. Audio stays on this host.
+Inference ready: cpu / int8

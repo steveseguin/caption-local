@@ -38,14 +38,21 @@ CAPTION_TEST_URL=http://127.0.0.1:8772 .venv/bin/python scripts/browser_translat
 CAPTION_TEST_URL=http://127.0.0.1:8772 .venv/bin/python scripts/browser_recovery.py
 ```
 
-Browser scripts use `/usr/bin/google-chrome` on Linux and Playwright from the dev
-requirements. They use fake microphone fixtures with real browser capture. Relay
+Browser scripts prefer `/usr/bin/google-chrome` on Linux and installed Edge/Chrome
+on Windows, then fall back to Playwright Chromium. Set `CAPTION_TEST_BROWSER` to
+an explicit executable path, or install bundled Chromium with
+`python -m playwright install chromium`. They use fake microphone fixtures with real browser capture. Relay
 traffic is mocked locally. `browser_smoke.py` additionally needs a sibling checkout
 of https://github.com/steveseguin/captionninja named `captionninja` for its editor
 integration test. Do not publish test captions into real rooms.
 
 For twelve streams, follow the [capacity report](evidence/multistream/report.md).
 Run performance tests separately; competing inference makes timings misleading.
+For Windows, use `.venv\Scripts\python.exe` and see the
+[GPU/test tooling guide](docs/WINDOWS-GPU.md). `quality_gate.py` now accepts explicit
+device/precision settings; `profile_gpu.py` samples one isolated configuration
+over 1/2/4/8/12 streams. Neither a short profile nor a detected device establishes
+sustained GPU capacity. Keep failed quality and overload results in evidence.
 Use `CAPTION_TEST_OUTPUT_DIR` with the single-page browser tests or their documented
 `--output` arguments where available to keep new evidence separate from release
 baselines. The manually triggered GitHub inference workflow exercises real CPU

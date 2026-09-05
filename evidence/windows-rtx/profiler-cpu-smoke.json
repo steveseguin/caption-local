@@ -1,0 +1,166 @@
+{
+  "configuration": {
+    "model": "small",
+    "device": "cpu",
+    "compute_type": "int8",
+    "beam_size": 5,
+    "workers": 1,
+    "threads": 4,
+    "streams": [
+      1
+    ],
+    "rounds": 1,
+    "output": "evidence\\windows-rtx\\profiler-cpu-smoke.json"
+  },
+  "results": [
+    {
+      "streams": 1,
+      "mixed": false,
+      "round": 0,
+      "wall_seconds": 1.3703809001017362,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.0004017001483589411,
+          "inference_seconds": 1.3698507999069989,
+          "text": "Mr. Quilter is the Apostle of the Middle Classes, and we are glad to welcome his",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 1,
+      "mixed": true,
+      "round": 0,
+      "wall_seconds": 2.284481900045648,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.00030090007930994034,
+          "inference_seconds": 2.284064000006765,
+          "text": "¡Hola! Bienvenidos al teatro. ¡Muchas gracias por venir esta noche!",
+          "translation": "Hello, welcome to the theater. Thank you very much for coming this night.",
+          "fixture_check": true
+        }
+      ]
+    }
+  ],
+  "samples": [
+    {
+      "time": 1229941.7388342,
+      "rss_mib": 152.25390625,
+      "cpu_seconds": 0.4375
+    },
+    {
+      "time": 1229941.9956397,
+      "rss_mib": 363.3671875,
+      "cpu_seconds": 0.6875
+    },
+    {
+      "time": 1229942.2590219,
+      "rss_mib": 579.46484375,
+      "cpu_seconds": 1.234375
+    },
+    {
+      "time": 1229942.5208716,
+      "rss_mib": 431.94140625,
+      "cpu_seconds": 2.296875
+    },
+    {
+      "time": 1229942.7740188,
+      "rss_mib": 626.3984375,
+      "cpu_seconds": 3.671875
+    },
+    {
+      "time": 1229943.0268878,
+      "rss_mib": 627.7421875,
+      "cpu_seconds": 4.703125
+    },
+    {
+      "time": 1229943.2787269,
+      "rss_mib": 623.34375,
+      "cpu_seconds": 5.703125
+    },
+    {
+      "time": 1229943.5432909,
+      "rss_mib": 608.0234375,
+      "cpu_seconds": 6.75
+    },
+    {
+      "time": 1229943.7955389,
+      "rss_mib": 574.26953125,
+      "cpu_seconds": 7.71875
+    },
+    {
+      "time": 1229944.0462701,
+      "rss_mib": 564.06640625,
+      "cpu_seconds": 8.71875
+    },
+    {
+      "time": 1229944.2974365,
+      "rss_mib": 600.421875,
+      "cpu_seconds": 9.71875
+    },
+    {
+      "time": 1229944.5625052,
+      "rss_mib": 637.73046875,
+      "cpu_seconds": 10.6875
+    },
+    {
+      "time": 1229944.8126095,
+      "rss_mib": 532.2421875,
+      "cpu_seconds": 11.625
+    },
+    {
+      "time": 1229945.0644515,
+      "rss_mib": 607.296875,
+      "cpu_seconds": 12.609375
+    },
+    {
+      "time": 1229945.3178643,
+      "rss_mib": 658.86328125,
+      "cpu_seconds": 13.5
+    },
+    {
+      "time": 1229945.5686429,
+      "rss_mib": 542.27734375,
+      "cpu_seconds": 14.5
+    },
+    {
+      "time": 1229945.8187298,
+      "rss_mib": 660.17578125,
+      "cpu_seconds": 15.5
+    },
+    {
+      "time": 1229946.0690481,
+      "rss_mib": 642.74609375,
+      "cpu_seconds": 16.5
+    },
+    {
+      "time": 1229946.3198945,
+      "rss_mib": 584.43359375,
+      "cpu_seconds": 17.5
+    },
+    {
+      "time": 1229946.5706606,
+      "rss_mib": 546.8671875,
+      "cpu_seconds": 18.5
+    },
+    {
+      "time": 1229946.8350545,
+      "rss_mib": 542.953125,
+      "cpu_seconds": 19.5625
+    },
+    {
+      "time": 1229947.0997414,
+      "rss_mib": 636.69921875,
+      "cpu_seconds": 20.609375
+    }
+  ],
+  "passed": true,
+  "model_load_seconds": 0.90766859985888,
+  "warmup_seconds": 0.9198244998697191,
+  "actual_device": "cpu",
+  "actual_compute_type": "int8_float32"
+}

@@ -1,0 +1,11 @@
+{
+  "before": {
+    "exit": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\ctypes\\__init__.py\", line 379, in __init__\n    self._handle = _dlopen(self._name, mode)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: Could not find module 'cudnn64_9.dll' (or one of its dependencies). Try using the full path with constructor syntax.\n"
+  },
+  "after": {
+    "exit": 0,
+    "stdout": "DLL loading passed; inference not tested\n",
+    "stderr": ""
+  }
+}

@@ -1,0 +1,13 @@
+.venv\Scripts\python.exe : usage: profile_gpu.py [-h] [--model MODEL] [--device {cpu,cuda}]
+At line:2 char:100
++ ...  -Skip 180; .venv\Scripts\python.exe scripts/profile_gpu.py --output  ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (usage: profile_...ice {cpu,cuda}]:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+                      [--compute-type COMPUTE_TYPE] [--beam-size {1,2,3,4,5}]
+                      [--workers {1,2,3,4,5,6,7,8}] [--threads THREADS]
+                      [--streams STREAMS [STREAMS ...]] [--rounds ROUNDS]
+                      --output OUTPUT
+profile_gpu.py: error: GPU has existing compute processes; stop competing workloads first: 16912, 
+C:\Users\Steve\llama-cpp-upstream-sm75\llama-server.exe
