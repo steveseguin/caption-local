@@ -3,12 +3,19 @@
 <title>Local captions</title><style>
 :root{color-scheme:dark;font:18px system-ui;background:#131923;color:#edf2fb}body{max-width:850px;margin:3rem auto;padding:0 1rem}h1{font-size:2rem}p{line-height:1.5;color:#bac9de}label{display:block;margin:1rem 0}input,select,button{font:inherit;padding:.6rem;border:1px solid #8498b3;border-radius:6px;background:#202d40;color:inherit}input:not([type=checkbox]),select{display:block;width:100%;box-sizing:border-box;margin-top:.4rem}button{cursor:pointer}button:disabled{opacity:.5}a{color:#8fc9ff}#captions{font-size:1.6rem;line-height:1.5;min-height:6rem;white-space:pre-wrap}#error{color:#ffb4ad}details{margin:2rem 0}small{color:#bac9de}#meter{width:100%}
 </style></head><body>
-<h1>Local captions <small>1.0</small></h1>
+<h1>Local captions</h1>
+<form id="auth" hidden>
+<label>Service access token<input id="accessToken" type="password" autocomplete="off" spellcheck="false"></label>
+<small>Use the token supplied by the server operator. It stays in this tab and is not sent to caption.ninja.</small>
+<button type="submit">Connect to service</button>
+</form>
 <p>Speech is transcribed on the computer running this service. Audio is not saved. Start with a quiet microphone and review captions before relying on them at an event.</p>
 <label>Microphone<select id="microphone"><option value="">System default</option></select></label>
 <label>Spoken language<select id="language"><option value="en">English</option></select></label>
 <small>Use a multilingual model for languages other than English. Automatic detection is less reliable on short phrases.</small>
 <label>Microphone sensitivity<select id="sensitivity"><option value="0.0008">Quiet speech</option><option value="0.002" selected>Normal</option><option value="0.006">Noisy room</option></select></label>
+<label>Caption interval<select id="captionInterval"><option value="3">3 seconds — earlier captions, more processing</option><option value="6" selected>6 seconds — balanced</option><option value="9">9 seconds — more context, later captions</option></select></label>
+<small>Shorter intervals may reduce recognition accuracy and the number of streams this computer can handle.</small>
 <label>Caption output<select id="mode"><option value="transcribe">Transcription in the spoken language</option><option value="translate">English translation</option><option value="both">Transcription and English translation</option></select></label>
 <p id="capabilities" role="status">Checking model…</p>
 <details><summary>Send captions to caption.ninja</summary>

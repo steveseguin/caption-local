@@ -6,14 +6,16 @@ from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 import json
 import os
 from pathlib import Path
-from browser_support import browser_options
+from browser_support import browser_options, authenticate
 import threading
 from playwright.sync_api import sync_playwright
 
 root = Path(__file__).resolve().parents[1]
 evidence = Path(os.environ.get("CAPTION_TEST_OUTPUT_DIR", str(root/"evidence")))
 evidence.mkdir(parents=True, exist_ok=True)
-caption_root = root.parent / 'captionninja'
+caption_root = Path(os.environ.get('CAPTION_NINJA_CHECKOUT', str(root.parent / 'captionninja')))
+if not (caption_root/'editor.html').is_file():
+    raise SystemExit('Set CAPTION_NINJA_CHECKOUT to a captionninja checkout containing editor.html')
 class QuietHandler(SimpleHTTPRequestHandler):
     def log_message(self, *args):
         pass
@@ -49,6 +51,7 @@ try:
         page = context.new_page()
         page.on('pageerror', lambda e: errors.append(str(e)))
         page.goto(os.environ.get('CAPTION_TEST_URL', 'http://127.0.0.1:8765'))
+        authenticate(page)
         page.get_by_role('button', name='Start captions', exact=True).click()
         page.wait_for_function("() => document.querySelector('#captions').children.length > 0", timeout=45000)
         page.get_by_role('button', name='Stop', exact=True).click()

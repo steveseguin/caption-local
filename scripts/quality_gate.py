@@ -41,6 +41,7 @@ parser.add_argument('--beam-size',type=int,default=5)
 parser.add_argument('--device', choices=['cpu', 'cuda'], default='cpu')
 parser.add_argument('--compute-type', default='auto')
 parser.add_argument('--threads', type=int, default=4)
+parser.add_argument('--window-seconds', type=int, choices=[3,6,9], default=6)
 parser.add_argument('--output',default='evidence/quality-gate.json')
 args=parser.parse_args()
 engine = Engine(args.model, offline=True, beam_size=args.beam_size, device=args.device, compute_type=args.compute_type, threads=args.threads)
@@ -60,7 +61,7 @@ for name, audio, reference in fixtures:
     # and the last second withheld until decoded with future audio.
     offset = 0; context = 0; text = []; times = []
     while offset < len(audio):
-        end = min(len(audio), offset+96000+round(context*16000))
+        end = min(len(audio), offset+args.window_seconds*16000+round(context*16000))
         final = end == len(audio)
         start = time.perf_counter()
         caption, _, committed = engine.window(audio[offset:end], 'en', context, final)
@@ -92,7 +93,7 @@ mean = sum(r['wer'] for r in results if 'wer' in r)/len(fixtures)
 checks['mean_wer_at_most_15_percent']=mean<=.15
 checks['jfk_exact']=results[0]['wer']==0
 checks['faster_than_audio']=all(r['inference_seconds'] < r['audio_seconds'] for r in results if 'inference_seconds' in r)
-report = {'device':engine.device, 'compute_type':engine.compute_type, 'threads':args.threads, 'beam_size':args.beam_size,'checks':checks, 'passed':all(checks.values()), 'model':args.model,'results':results,'mean_wer':round(mean,4),
+report = {'window_seconds':args.window_seconds,'device':engine.device, 'compute_type':engine.compute_type, 'threads':args.threads, 'beam_size':args.beam_size,'checks':checks, 'passed':all(checks.values()), 'model':args.model,'results':results,'mean_wer':round(mean,4),
           'gate':'mean WER <= 0.15; JFK exact after punctuation/case normalization; each fixture inference faster than audio; silence/noise empty; Spanish theatre preserved'}
 (root/args.output).parent.mkdir(parents=True, exist_ok=True)
 (root/args.output).write_text(json.dumps(report,indent=2,ensure_ascii=False)+'\n', encoding='utf-8')

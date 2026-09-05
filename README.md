@@ -110,6 +110,11 @@ producer/editor roles, and what to do if captions fall behind.
 
 ## Several microphones or producers
 
+[Deployment profiles](docs/DEPLOYMENT-PROFILES.md) explain CPU VPS, Windows/NVIDIA,
+model quality, caption interval, optional access tokens and operational logging.
+[API compatibility](API.md#openai-style-wav-api) includes an OpenAI-style WAV subset;
+caption.ninja integration continues through its caption relay/editor.
+
 Each capture tab has its own microphone selection, transcript, retry buffer and
 stream ID. Independent producers can connect to the same inference service through
 separate SSH tunnels. The service admits up to twelve stream sessions by default;

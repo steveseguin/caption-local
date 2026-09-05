@@ -1,6 +1,7 @@
 """Sample CPU, memory and queue state without sending audio."""
 import argparse
 import json
+import os
 from pathlib import Path
 import time
 import urllib.request
@@ -15,7 +16,8 @@ args=parser.parse_args()
 process=psutil.Process(args.pid); samples=[]; start=time.monotonic()
 while time.monotonic()-start < args.seconds:
     workers=[process]+process.children(recursive=True)
-    with urllib.request.urlopen(args.url+'/health',timeout=5) as response: health=json.load(response)
+    headers={'Authorization':'Bearer '+os.environ['CAPTION_API_KEY']} if os.environ.get('CAPTION_API_KEY') else {}
+    with urllib.request.urlopen(urllib.request.Request(args.url+'/health',headers=headers),timeout=5) as response: health=json.load(response)
     samples.append({'seconds':round(time.monotonic()-start,2),
         'rss_mib':round(sum(p.memory_info().rss for p in workers)/2**20,2),
         'cpu_seconds':round(sum(p.cpu_times().user+p.cpu_times().system for p in workers),3),

@@ -6,7 +6,7 @@ import json
 import os
 from pathlib import Path
 from playwright.sync_api import sync_playwright
-from browser_support import browser_options
+from browser_support import browser_options, authenticate
 
 root = Path(__file__).resolve().parents[1]
 output = Path(os.environ.get('CAPTION_TEST_OUTPUT_DIR', str(root/'evidence')))
@@ -22,6 +22,7 @@ with sync_playwright() as p:
     errors = []
     page.on('pageerror', lambda error: errors.append(str(error)))
     page.goto(os.environ.get('CAPTION_TEST_URL', 'http://127.0.0.1:8772'))
+    authenticate(page)
     page.wait_for_function('() => document.querySelector("#microphone").options.length > 1')
     devices = page.locator('#microphone option').evaluate_all('(items) => items.map(x => ({value:x.value, label:x.textContent}))')
     selected = devices[-1]['value']

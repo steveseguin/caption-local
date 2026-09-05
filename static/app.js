@@ -1,6 +1,16 @@
 'use strict';
 const streamId = crypto.randomUUID();
 const $ = id => document.getElementById(id);
+let serviceToken = '';
+function serviceFetch(path, options = {}) {
+  const headers = new Headers(options.headers || {});
+  if (serviceToken) headers.set('Authorization', `Bearer ${serviceToken}`);
+  return fetch(path, {...options, headers});
+}
+$('auth').onsubmit = event => {
+  event.preventDefault(); serviceToken = $('accessToken').value.trim();
+  $('accessToken').value = ''; health();
+};
 let stream, context, node, source, publisher, wakeLock;
 let running = false, starting = false, stopping = false, processing = false, failed = false;
 let ready = false, supportedModes = [], multilingual = false, buffer = new CaptureBuffer();
@@ -10,7 +20,7 @@ let currentRequestStarted = 0, availableLanguages = "";
 function fail(message) { $('error').textContent = message; }
 function controls() {
   const busy = running || starting || stopping || processing || failed;
-  for (const id of ['language', 'microphone', 'room', 'mode', 'relayOutput', 'sensitivity']) $(id).disabled = busy;
+  for (const id of ['language', 'microphone', 'room', 'mode', 'relayOutput', 'sensitivity', 'captionInterval']) $(id).disabled = busy;
   // Operators may always turn sharing off. Turning it back on requires a stopped session.
   $('share').disabled = busy && !$('share').checked;
   $('start').disabled = busy || !ready;
@@ -59,7 +69,7 @@ async function send(snapshot) {
   let error;
   for (let attempt = 0; attempt < 4; attempt++) {
     try {
-      const response = await fetch(`/transcribe?${params}`, {
+      const response = await serviceFetch(`/transcribe?${params}`, {
         method:'POST', headers:{'Content-Type':'application/octet-stream', 'X-Caption-Local':'1', 'X-Request-ID':snapshot.id, 'X-Stream-ID':streamId},
         body:snapshot.audio.buffer, signal:AbortSignal.timeout(30000)
       });
@@ -111,7 +121,7 @@ async function drain() {
     await stop();
   } finally {
     if (!running && !stopping && !failed && !pending) {
-      await fetch(`/streams/${streamId}`, {method:'DELETE', headers:{'X-Caption-Local':'1'},
+      await serviceFetch(`/streams/${streamId}`, {method:'DELETE', headers:{'X-Caption-Local':'1'},
         signal:AbortSignal.timeout(3000)}).catch(() => {});
     }
     processing = false; currentRequestStarted = 0; controls();
@@ -153,7 +163,7 @@ $('start').onclick = async () => {
   starting = true; controls(); fail('');
   activeLanguage = $('language').value.trim().toLowerCase() || 'en';
   activeMode = $('mode').value; activeRelayOutput = $('relayOutput').value;
-  buffer = new CaptureBuffer(Number($('sensitivity').value)); pending = null;
+  buffer = new CaptureBuffer(Number($('sensitivity').value), Number($('captionInterval').value)); pending = null;
   try {
     if (!supportedModes.includes(activeMode)) throw new Error('The loaded model does not support that output mode.');
     if (!multilingual && !['en','auto'].includes(activeLanguage)) throw new Error('This model supports English only.');
@@ -198,8 +208,14 @@ function updateOutputChoice() {
 $('mode').onchange = updateOutputChoice; updateOutputChoice(); controls();
 async function health() {
   try {
-    const response = await fetch('/health', {signal:AbortSignal.timeout(5000)});
+    const response = await serviceFetch('/health', {signal:AbortSignal.timeout(5000)});
+    if (response.status === 401) {
+      ready = false; $('auth').hidden = false;
+      $('capabilities').textContent = 'Enter the service access token to connect.';
+      controls(); return;
+    }
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    $('auth').hidden = true;
     const info = await response.json();
     ready = info.ready && !!navigator.mediaDevices;
     supportedModes = info.modes; multilingual = info.multilingual;

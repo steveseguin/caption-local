@@ -20,6 +20,7 @@ def main():
     parser.add_argument('--max-streams', type=int, default=12)
     parser.add_argument('--threads', type=int, default=4)
     parser.add_argument('--offline', action='store_true')
+    parser.add_argument('--log-requests', action='store_true')
     parser.add_argument('--device', choices=['cpu', 'cuda', 'auto'], default='cpu')
     parser.add_argument('--compute-type', choices=['auto', 'int8', 'float32', 'float16', 'int8_float16'], default='auto')
     args = parser.parse_args()
@@ -58,6 +59,8 @@ def main():
                    '--device', args.device, '--compute-type', args.compute_type]
         if args.offline:
             command.append('--offline')
+        if args.log_requests:
+            command.append('--log-requests')
         if os.name != 'nt':
             os.execv(str(python), command)
         else:

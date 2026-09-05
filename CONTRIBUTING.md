@@ -45,6 +45,8 @@ an explicit executable path, or install bundled Chromium with
 traffic is mocked locally. `browser_smoke.py` additionally needs a sibling checkout
 of https://github.com/steveseguin/captionninja named `captionninja` for its editor
 integration test. Do not publish test captions into real rooms.
+Set `CAPTION_NINJA_CHECKOUT` to use an existing checkout elsewhere. The editor
+test still mocks relay traffic; it must never send synthetic captions to a real room.
 
 For twelve streams, follow the [capacity report](evidence/multistream/report.md).
 Run performance tests separately; competing inference makes timings misleading.
@@ -53,6 +55,12 @@ For Windows, use `.venv\Scripts\python.exe` and see the
 device/precision settings; `profile_gpu.py` samples one isolated configuration
 over 1/2/4/8/12 streams. Neither a short profile nor a detected device establishes
 sustained GPU capacity. Keep failed quality and overload results in evidence.
+The [deployment matrix](evidence/deployment-matrix/report.md) adds six-language
+API/browser loads and 3/6/9-second interval comparisons. Generate its synthetic
+fixtures with `scripts/prepare_multilingual.py`; use `--varied` on
+`scripts/browser_multilingual.py` for reproducible quiet/noisy speech and pauses.
+`scripts/smoke_compat.py` exercises the local WAV API through the official OpenAI
+SDK without cloud calls. `scripts/browser_auth.py` tests the optional service token.
 Use `CAPTION_TEST_OUTPUT_DIR` with the single-page browser tests or their documented
 `--output` arguments where available to keep new evidence separate from release
 baselines. The manually triggered GitHub inference workflow exercises real CPU

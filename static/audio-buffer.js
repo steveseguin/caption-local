@@ -2,7 +2,10 @@
 (function(root) {
   'use strict';
   class CaptureBuffer {
-    constructor(threshold = 0.002) { this.threshold = threshold; this.reset(); }
+    constructor(threshold = 0.002, windowSeconds = 6) {
+      if (![3, 6, 9].includes(windowSeconds)) throw new Error('Caption interval must be 3, 6 or 9 seconds');
+      this.threshold = threshold; this.targetSamples = windowSeconds * 16000; this.reset();
+    }
     reset() { this.parts = []; this.length = 0; this.context = 0; this.speech = false; this.quiet = 0; }
     remove(count) {
       this.length -= count;
@@ -23,7 +26,7 @@
     snapshot(force = false) {
       const fresh = this.length - this.context;
       if (!this.speech || fresh < 160) return null;
-      if (!force && fresh < 96000 && !(this.quiet >= 0.6 && fresh >= 5600)) return null;
+      if (!force && fresh < this.targetSamples && !(this.quiet >= 0.6 && fresh >= 5600)) return null;
       const count = Math.min(this.length, 192000);
       const audio = new Float32Array(count); let offset = 0;
       for (const part of this.parts) {

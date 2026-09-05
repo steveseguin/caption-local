@@ -7,6 +7,14 @@ but they are not user authentication or tenant authorization. Stream IDs are not
 credentials. Public internet hosting requires a separate authenticated deployment
 design.
 
+Optional `CAPTION_API_KEY` gates API access with a shared bearer token. The page
+keeps it only in tab memory and never sends it to caption.ninja. This controls
+service access for trusted producers; it does not add per-user authorization,
+tenant isolation or encryption. Keep localhost/SSH transport. Token setup,
+rotation and metadata-only logging are in [deployment profiles](docs/DEPLOYMENT-PROFILES.md).
+The compatibility API rejects foreign browser Origins, bounds multipart uploads
+to 5 MiB and WAV duration to twelve seconds, and shares native inference limits.
+
 Audio and retry results are held in memory. A process/browser crash loses pending
 work. Transcripts are downloaded explicitly. Optional caption.ninja sharing sends
 text through that external relay; it does not provide end-to-end encryption.

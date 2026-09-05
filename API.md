@@ -1,7 +1,58 @@
 # Caption Local API v1
 
 Loopback-only, multiple trusted producers. Use the local page or a trusted local client. There is
-no CORS allowance, authentication layer, multi-tenant isolation or permanent store.
+no CORS allowance, multi-tenant isolation or permanent store. Optional
+`CAPTION_API_KEY` requires `Authorization: Bearer TOKEN` on all API routes.
+See [deployment profiles](docs/DEPLOYMENT-PROFILES.md) for token and logging setup.
+
+## OpenAI-style WAV API
+
+The local server implements a limited subset of the
+[OpenAI transcription request contract](https://developers.openai.com/api/reference/resources/audio/subresources/transcriptions/methods/create)
+and [English translation contract](https://developers.openai.com/api/reference/python/resources/audio/subresources/translations/methods/create):
+
+- `GET /v1/models`: returns the one loaded local model.
+- `POST /v1/audio/transcriptions`: multipart fields `file`, `model`, optional
+  `language` and `response_format` (`json` or `text`). Default language detection
+  is automatic. JSON responses contain `text`.
+- `POST /v1/audio/translations`: same fields except `language`; detects speech
+  language and translates to English.
+
+Use the loaded local model name, or `whisper-1` as an explicit compatibility alias
+for that local model. This does not load OpenAI's hosted Whisper model or switch
+models per request. Only uncompressed PCM WAV, mono/stereo, 8–48 kHz, 0.01–12
+seconds, within a 5 MiB multipart envelope is supported. Convert/chunk other audio
+before sending it. Uploads have a ten-second deadline and bounded admission.
+
+The adapter uses the native scheduler and retry cache. Optional `X-Stream-ID` and
+`X-Request-ID` retain native retry identity; keep them stable across retries and
+use distinct stream IDs per producer. Without a stream ID, successful calls use
+temporary independent sessions that are closed afterward. Automatic SDK retries
+without both IDs do not promise idempotency. Native `detail` errors and HTTP
+status codes are retained.
+
+Nonzero `temperature`, prompts, streamed responses, timestamps, diarization,
+SRT/VTT, compressed files and other provider fields fail explicitly. There is no
+OpenAI Realtime/WebSocket, Chat/Responses, Google Speech or Gemini endpoint
+emulation. These providers have different protocols and capabilities. This is
+speech-to-text and speech-to-English, not text-to-speech.
+
+Example with the official OpenAI Python SDK, targeting only the local server:
+
+```python
+from openai import OpenAI
+import os
+client = OpenAI(base_url="http://127.0.0.1:8765/v1",
+                api_key=os.environ.get("CAPTION_API_KEY") or "local-unused")
+with open("speech.wav", "rb") as audio:
+    result = client.audio.transcriptions.create(
+        model="small", file=audio, language="fr")
+print(result.text)
+```
+
+No OpenAI account or cloud API key is used. Test with `scripts/smoke_compat.py`;
+the dev requirements pin the SDK version. The native PCM endpoint remains the
+interface for rolling live capture and bilingual output.
 
 ## Health
 
@@ -9,7 +60,8 @@ no CORS allowance, authentication layer, multi-tenant isolation or permanent sto
 returns `ready`, `version`, `sample_rate` (16000), `max_seconds` (12), `multilingual`,
 `model`, `languages`, `device`, `compute_type`, `modes`, `translation_target`, `busy`, `completed`, and
 `failed`. Precision is the requested CTranslate2 compute mode; internal hardware
-fallback may differ. A native watchdog exits if an individual running inference remains busy
+fallback may differ; `actual_compute_type` reports the loaded model's compute type.
+A native watchdog exits if an individual running inference remains busy
 for more than 90 seconds. Use Docker or systemd for automatic restart.
 
 ## Stream scheduling
@@ -106,6 +158,7 @@ caption relays. A client disconnect does not unlock a running worker.
 | Status | Meaning | Client action |
 | --- | --- | --- |
 | 400 | Invalid audio, language, mode, context or ID | Correct input; retain audio if recoverable |
+| 401 | Missing or incorrect service access token | Supply the configured Bearer token |
 | 403 | Wrong/missing local header or foreign Origin | Use the local page/client |
 | 408 | Upload exceeded ten seconds | Retry the same request ID |
 | 409 | Reused ID with different input | Fix client ID handling |

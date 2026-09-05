@@ -3,7 +3,7 @@ import argparse
 import json
 import os
 from pathlib import Path
-from browser_support import browser_options
+from browser_support import browser_options, authenticate
 import time
 import wave
 import numpy as np
@@ -37,6 +37,7 @@ with sync_playwright() as p:
             external.append(route.request.url); route.abort()
     context.route('**/*',guard)
     page.goto(os.environ.get('CAPTION_TEST_URL','http://127.0.0.1:8771'))
+    authenticate(page)
     page.get_by_role('button',name='Start captions',exact=True).click()
     started=time.monotonic()
     while time.monotonic()-started < args.seconds:

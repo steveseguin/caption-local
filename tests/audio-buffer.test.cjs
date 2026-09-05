@@ -4,6 +4,19 @@ const vm = require('node:vm');
 const fs = require('node:fs');
 const CaptureBuffer = require('../static/audio-buffer.js');
 const voice = n => new Float32Array(n).fill(.1);
+
+test('caption intervals change collection without losing retained audio', () => {
+  for (const seconds of [3,6,9]) {
+    const b=new CaptureBuffer(.002,seconds);
+    b.append(voice(seconds*16000-160)); assert.equal(b.snapshot(),null);
+    b.append(voice(160)); const first=b.snapshot();
+    assert.equal(first.audio.length,seconds*16000); assert.equal(first.final,false);
+    b.append(voice(16000)); b.commit(first,seconds-1);
+    assert.equal(b.length,40000); assert.equal(b.context,8000);
+    const final=b.snapshot(true); b.commit(final,2.5); assert.equal(b.length,0);
+  }
+  assert.throws(()=>new CaptureBuffer(.002,1));
+});
 test('idle silence retains only half a second regardless of duration', () => {
   const b = new CaptureBuffer();
   for(let i=0;i<100000;i++) b.append(new Float32Array(160));

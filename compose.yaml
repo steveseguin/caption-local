@@ -13,6 +13,8 @@ services:
       CAPTION_DEVICE: cpu
       CAPTION_COMPUTE_TYPE: ${CAPTION_COMPUTE_TYPE:-auto}
       CAPTION_OFFLINE: ${CAPTION_OFFLINE:-0}
+      CAPTION_API_KEY: ${CAPTION_API_KEY-}
+      CAPTION_LOG_REQUESTS: ${CAPTION_LOG_REQUESTS:-0}
     volumes:
       - models:/models
     init: true

@@ -10,11 +10,13 @@ import time
 import hashlib
 import re
 import sysconfig
+import secrets
+import json
 from collections import OrderedDict
 
 import numpy as np
 from fastapi import FastAPI, HTTPException, Request
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, JSONResponse
 from starlette.middleware.trustedhost import TrustedHostMiddleware
 from starlette.staticfiles import StaticFiles
 
@@ -77,6 +79,7 @@ class Engine:
         self.device = device
         self.model_name = Path(model).name
         self.multilingual = self.model.model.is_multilingual
+        self.actual_compute_type = getattr(self.model.model, 'compute_type', self.compute_type)
         logging.getLogger("uvicorn.error").info("Inference device: %s; compute type: %s", device, self.compute_type)
 
     def transcribe(self, audio, language, task="transcribe"):
@@ -121,7 +124,10 @@ class Engine:
         list(segments)
 
 
-def create_app(engine, max_streams=12, queue_timeout=20):
+def create_app(engine, max_streams=12, queue_timeout=20, api_key=None, log_requests=False):
+    api_key = api_key or None
+    if api_key is not None and (len(api_key) < 24 or not api_key.isascii() or any(c.isspace() for c in api_key)):
+        raise ValueError('CAPTION_API_KEY must contain at least 24 ASCII characters without whitespace')
     pending_tasks = set()
     @asynccontextmanager
     async def lifespan(app):
@@ -165,7 +171,20 @@ def create_app(engine, max_streams=12, queue_timeout=20):
 
     @app.middleware("http")
     async def response_headers(request, call_next):
-        response = await call_next(request)
+        started = time.perf_counter()
+        public_asset = request.url.path == '/' or request.url.path.startswith('/static/')
+        if api_key and not public_asset and not secrets.compare_digest(
+                request.headers.get('authorization', '').encode(), ('Bearer '+api_key).encode()):
+            response = JSONResponse({'detail':'Service access token required'}, status_code=401,
+                                    headers={'WWW-Authenticate':'Bearer'})
+        else:
+            response = await call_next(request)
+        if log_requests and not public_asset:
+            # Fixed route labels only: no URL queries, tokens, IDs, IPs, audio or text.
+            route = request.scope.get('route')
+            print(json.dumps({'event':'http_request','method':request.method,
+                  'route':getattr(route, 'path', 'unmatched'), 'status':response.status_code,
+                  'duration_seconds':round(time.perf_counter()-started,4)}),flush=True)
         response.headers["X-Content-Type-Options"] = "nosniff"
         response.headers["Referrer-Policy"] = "no-referrer"
         response.headers["Cache-Control"] = "no-store"
@@ -195,6 +214,7 @@ def create_app(engine, max_streams=12, queue_timeout=20):
                 "model": getattr(engine, "model_name", "unknown"),
                 "languages": sorted(_LANGUAGE_CODES) if engine.multilingual else ["en"],
                 "device": engine.device, "compute_type": engine.compute_type,
+                "actual_compute_type": getattr(engine, 'actual_compute_type', engine.compute_type),
                 "busy": state["busy_since"] is not None, "completed": state["completed"], "failed": state["failed"],
                 "modes": ["transcribe", "translate", "both"] if engine.multilingual else ["transcribe"],
                 "translation_target": "en" if engine.multilingual else None}
@@ -349,6 +369,12 @@ def create_app(engine, max_streams=12, queue_timeout=20):
             if not handed_to_worker:
                 release(stream_id)
 
+    from api_compat import register_audio_api
+    def close_ephemeral(stream_id):
+        session = streams.get(stream_id)
+        if session and not session['busy']:
+            streams.pop(stream_id, None)
+    register_audio_api(app, transcribe, close_ephemeral, max_streams, getattr(engine, 'model_name', 'local'))
     app.mount("/static", StaticFiles(directory=ROOT / "static"), name="static")
     return app
 
@@ -375,6 +401,8 @@ if __name__ == "__main__":
     parser.add_argument("--threads", type=int, default=int(os.environ.get("CAPTION_THREADS", "4")))
     parser.add_argument("--port", type=int, default=8765)
     parser.add_argument("--offline", action="store_true", default=os.environ.get("CAPTION_OFFLINE") == "1")
+    parser.add_argument("--log-requests", action="store_true", default=os.environ.get("CAPTION_LOG_REQUESTS") == "1",
+                        help="Write request status/duration JSON to stdout; exclude captions and credentials")
     parser.add_argument("--host", choices=["127.0.0.1", "0.0.0.0"], default="127.0.0.1",
                         help="Use 0.0.0.0 only inside a container with a loopback host port mapping")
     parser.add_argument("--device", choices=["cpu", "cuda", "auto"], default=os.environ.get("CAPTION_DEVICE", "cpu"))
@@ -388,6 +416,6 @@ if __name__ == "__main__":
     engine.warmup()
     print(f"Inference ready: {engine.device} / {engine.compute_type}", flush=True)
     import uvicorn
-    app = create_app(engine, args.max_streams)
+    app = create_app(engine, args.max_streams, api_key=os.environ.get('CAPTION_API_KEY'), log_requests=args.log_requests)
     start_watchdog(app.state.inference_status)
     uvicorn.run(app, host=args.host, port=args.port, access_log=False, limit_concurrency=max(32, args.max_streams * 2 + 8), timeout_keep_alive=5, timeout_graceful_shutdown=90)

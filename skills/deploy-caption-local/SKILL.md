@@ -16,6 +16,14 @@ existing installations and model caches. The default model is multilingual `smal
 `.en` models cannot translate. Translate means **into English**, and `both` may run
 two inference passes. Do not promise arbitrary target languages.
 
+Read `docs/DEPLOYMENT-PROFILES.md` when selecting hardware/quality/hosting tradeoffs.
+Optional CAPTION_API_KEY is a shared local-service token, not a provider API key;
+keep it out of command arguments, logs, evidence and relay messages. Token support
+does not replace SSH/TLS or provide tenant isolation. `--log-requests` records
+metadata only. The OpenAI-style WAV routes are a documented subset; use the native
+PCM API for rolling/bilingual capture and do not claim Google/Gemini/Realtime/TTS
+protocol compatibility. Re-test quality when changing caption interval or beam size.
+
 Use `deploy.py` or the checked-in Compose files rather than rewriting setup.
 `start.sh` and `start.ps1` bootstrap the Python environment on first launch. Native
 runtime/model dependencies are installed in a virtual environment; no global pip
@@ -81,3 +89,10 @@ source rooms for separate producers. Never publish test captions to real rooms.
 The CPU throughput preset is validated for English capture. It fails the supplied
 Spanish transcription/translation quality checks; use the default `small` model
 for multilingual work and allow fewer concurrent streams on this CPU.
+
+Read `evidence/deployment-matrix/report.md` for newer Windows CPU measurements;
+do not transfer counts between hosts or transcription and bilingual workloads.
+Use `scripts/prepare_multilingual.py` and `scripts/browser_multilingual.py` for
+independent synthetic capture streams; `--varied` adds quiet/noisy speech and pauses.
+An admission limit is not sustainable capacity. Preserve real-time/accuracy gate
+failures, including shorter caption intervals and noisy speech, in the report.

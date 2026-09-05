@@ -3,6 +3,7 @@ import argparse
 import asyncio
 import io
 import json
+import os
 from pathlib import Path
 import statistics
 import time
@@ -32,7 +33,8 @@ results=[]; memory=[]; quality_errors=[]; request_errors=[]
 report={}
 async def main():
     global report
-    async with httpx.AsyncClient(timeout=60, limits=httpx.Limits(max_connections=32)) as client:
+    headers={'Authorization':'Bearer '+os.environ['CAPTION_API_KEY']} if os.environ.get('CAPTION_API_KEY') else {}
+    async with httpx.AsyncClient(timeout=60, limits=httpx.Limits(max_connections=32),headers=headers) as client:
         health=(await client.get(args.url+'/health')).json()
         started=time.monotonic(); cpu_start=process.cpu_times(); prefix=uuid.uuid4().hex[:12]
         async def stream(n):

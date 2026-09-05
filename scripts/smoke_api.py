@@ -3,6 +3,7 @@ Requires dev environment dependencies. --spanish accepts a supplied test WAV.
 """
 import argparse
 import json
+import os
 from pathlib import Path
 import urllib.request
 from faster_whisper.audio import decode_audio
@@ -17,7 +18,8 @@ base = args.url.rstrip('/')
 
 def request(path, audio=None):
     req = urllib.request.Request(base+path, data=audio, headers={
-        'Content-Type':'application/octet-stream', 'X-Caption-Local':'1'})
+        'Content-Type':'application/octet-stream', 'X-Caption-Local':'1',
+        **({'Authorization':'Bearer '+os.environ['CAPTION_API_KEY']} if os.environ.get('CAPTION_API_KEY') else {})})
     with urllib.request.urlopen(req, timeout=120) as response:
         return json.load(response)
 

@@ -4,7 +4,7 @@ HTTP inference is mocked in this test; microphone worklet and UI run in Chrome.
 import json
 import os
 from pathlib import Path
-from browser_support import browser_options
+from browser_support import browser_options, authenticate
 from urllib.parse import urlsplit, parse_qs
 from playwright.sync_api import sync_playwright
 root = Path(__file__).resolve().parents[1]
@@ -29,6 +29,7 @@ with sync_playwright() as p:
                 'committed_seconds':duration, 'audio_seconds':duration,'inference_seconds':0.01})
     page.route('**/transcribe?*',infer)
     page.goto(os.environ.get('CAPTION_TEST_URL','http://127.0.0.1:8765'))
+    authenticate(page)
     page.get_by_role('button',name='Start captions',exact=True).click()
     page.get_by_role('button',name='Retry pending audio').wait_for(state='visible',timeout=30000)
     assert len(requests)==4

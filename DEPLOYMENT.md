@@ -7,6 +7,10 @@ is required or currently published.
 
 ## Choose a method
 
+See [deployment profiles](docs/DEPLOYMENT-PROFILES.md) to choose model quality,
+worker/thread settings, caption interval, private hosting and optional token/logging
+settings independently. Capacity measurements do not apply to every host.
+
 | Method | Prerequisites | Start |
 | --- | --- | --- |
 | Linux script | Python 3.12 with venv support | `./start.sh` |

@@ -5,7 +5,7 @@ Only the relay is mocked; no public caption publishing.
 import json
 import os
 from pathlib import Path
-from browser_support import browser_options
+from browser_support import browser_options, authenticate
 from playwright.sync_api import sync_playwright
 
 root = Path(__file__).resolve().parents[1]
@@ -31,6 +31,7 @@ with sync_playwright() as p:
     page = context.new_page()
     page.on('pageerror', lambda error: errors.append(str(error)))
     page.goto(os.environ.get('CAPTION_TEST_URL', 'http://127.0.0.1:8765'))
+    authenticate(page)
     page.wait_for_function("() => !document.querySelector('#start').disabled")
     page.locator('#language').select_option('es')
     page.locator('#mode').select_option('translate')

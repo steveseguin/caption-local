@@ -20,3 +20,14 @@ def browser_options():
         return {'executable_path': '/usr/bin/google-chrome'}
     # Install with: python -m playwright install chromium
     return {}
+
+
+def authenticate(page):
+    """Supply a configured local token in tab memory, never as global HTTP headers."""
+    if os.environ.get('CAPTION_API_KEY'):
+        page.evaluate('token => { serviceToken=token; return health(); }', os.environ['CAPTION_API_KEY'])
+
+
+async def authenticate_async(page):
+    if os.environ.get('CAPTION_API_KEY'):
+        await page.evaluate('token => { serviceToken=token; return health(); }', os.environ['CAPTION_API_KEY'])
