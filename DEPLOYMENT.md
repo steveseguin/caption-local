@@ -181,8 +181,9 @@ ssh -N -L 8765:127.0.0.1:8765 USER@SERVER
 Open http://localhost:8765 on that computer. Its microphone audio travels through
 SSH to the inference server. Browser microphone access works on localhost; opening
 an arbitrary server's plain HTTP URL will not provide the same secure context.
-The service has no public authentication or tenant isolation. Public multi-user
-hosting needs a separate deployment design, not just an open firewall port.
+The optional shared service token does not provide per-user authorization or
+tenant isolation. Public multi-user hosting needs a separate deployment design,
+not just an open firewall port.
 
 ## AI prompt / skill
 

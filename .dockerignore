@@ -2,6 +2,8 @@
 !Dockerfile
 !requirements.txt
 !server.py
+!api_compat.py
+!healthcheck.py
 !static/
 !static/**
 !LICENSE

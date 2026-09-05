@@ -75,7 +75,8 @@ The default `small` model is pinned to Hugging Face revision
 `ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66`. Other models use upstream
 resolution unless you supply a local model directory. The runtime graph on Linux
 is pinned in `requirements-linux.lock`; Windows uses the direct requirement file
-and remains unvalidated. Model and audio files are excluded from the release.
+with tested versions recorded in the [Windows report](evidence/windows-rtx/report.md).
+Model and audio files are excluded from the release.
 
 Before going offline, download the selected model and run real inference once.
 Native: `python3 deploy.py run --offline`. Docker: set `CAPTION_OFFLINE=1` in `.env`
@@ -95,10 +96,13 @@ operational messages and errors, not transcripts/audio. Transcript downloads are
 explicit. The browser confirms navigation while capture, retries or relay output
 are pending, but a crashed browser cannot preserve in-memory work.
 
-No public port, authentication, tenant isolation, or TLS termination is supplied.
+An optional shared service token and request metadata logs are described in
+[deployment profiles](docs/DEPLOYMENT-PROFILES.md). Individual accounts, tenant
+isolation and TLS termination are not supplied.
 For remote microphones, keep the inference host on loopback and use SSH. Room
 names are relay access secrets, not encryption. Do not reuse real event rooms in
-tests. Windows, NVIDIA hardware, ARM, background mobile capture, and full-event
-accessibility validation remain outside the Linux CPU release's tested scope.
+tests. Windows CPU development tests are recorded separately from the published
+Linux CPU release. NVIDIA inference, ARM, background mobile capture and full-event
+accessibility validation remain pending.
 
 For multiple streams, tune model, workers and threads using the [capacity report](evidence/multistream/report.md). Monitor `/health` running/pending counts and response queue times. Stop adding streams when delays grow across successive chunks. A twelve-session limit is an admission bound, not a hardware throughput guarantee.

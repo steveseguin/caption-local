@@ -19,9 +19,8 @@ The project is open source and runs independently of caption.ninja.
 - **Automatic captions need review:** names, accents, overlapping voices and noisy rooms can produce mistakes. Rehearse with your actual event audio.
 - **No automatic recording:** audio and text are held in memory. Use Stop, let pending captions finish, then download your transcript before closing the tab.
 
-**Release scope:** Linux x86-64 CPU is tested with native Python and Docker.
-Windows launchers and NVIDIA GPU configurations are supplied but have not been
-validated on that hardware. Twelve simultaneous English streams passed a
+**Published v1.1.0 scope:** Linux x86-64 CPU was tested with native Python and Docker.
+Windows and NVIDIA hardware validation were pending at that release. Twelve simultaneous English streams passed a
 five-minute CPU test with the faster preset; that is not a promise of twelve
 accurate multilingual streams on any computer. [Read the measurements and limits](evidence/multistream/report.md).
 
@@ -91,7 +90,7 @@ unless you intend to delete the model cache. No microphone passthrough is needed
 
 | Option | Instructions |
 | --- | --- |
-| Windows script — not hardware-validated | Run `.\start.ps1`, or `py -3.12 deploy.py run`. [Windows and native setup](DEPLOYMENT.md#native-scripts-and-python) |
+| Windows native Python | Run `py -3.12 deploy.py run`; `.\start.ps1` is also available where scripts are permitted. [Tested setup and scope](docs/WINDOWS-GPU.md) |
 | NVIDIA GPU — not hardware-validated | [GPU requirements and Docker/native commands](DEPLOYMENT.md#cpu-and-gpu-options) |
 | Linux server, microphone on another computer | [SSH tunnel guide](DEPLOYMENT.md#remote-microphone-through-ssh) |
 | Install with an AI assistant | [Copy-and-paste setup prompt and deployment skill](docs/AI-SETUP.md) |

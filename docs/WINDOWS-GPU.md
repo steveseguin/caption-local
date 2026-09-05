@@ -3,6 +3,9 @@
 The native Windows CPU setup and synthetic Edge capture have been exercised on
 Windows 11 Pro build 26200, Python 3.12.10, Core Ultra 7 265K and 64 GiB installed
 RAM. See the [test report](../evidence/windows-rtx/report.md) for exact scope.
+The subsequent [deployment matrix](../evidence/deployment-matrix/report.md) adds
+six-language concurrent capture, translation quality, optional authentication and
+OpenAI SDK compatibility tests, with raw timing and failure evidence.
 **CUDA inference and sustained GPU capacity are still pending.** The TITAN RTX
 was occupied by another inference service. Detecting the device or loading DLLs
 does not establish GPU inference support.
@@ -27,11 +30,22 @@ policy changes are needed. A compatible NVIDIA driver and Microsoft Visual C++
 runtime must already be present. Tested host driver: 610.47; this is an observed
 version, not an established minimum.
 
-Start the tested CPU configuration:
+Start the original single-worker CPU configuration:
 
 ```powershell
 py -3.12 deploy.py run --model small --device cpu --compute-type int8 --workers 1 --threads 4 --beam-size 5 --offline
 ```
+
+On this 20-core host, the stronger concurrent-transcription candidate is below.
+Read the deployment matrix for sustained-run results and limits before using it
+for an event; translation and noisy speech have different costs and failure modes.
+
+```powershell
+py -3.12 deploy.py run --model small --device cpu --compute-type int8 --workers 8 --threads 2 --beam-size 5 --max-streams 12 --offline
+```
+
+The runtime resolves requested CPU `int8` to `int8_float32`, now exposed separately
+as `/health.actual_compute_type`. The requested setting remains in `compute_type`.
 
 After freeing the GPU, the explicit CUDA starting configuration to validate is:
 
