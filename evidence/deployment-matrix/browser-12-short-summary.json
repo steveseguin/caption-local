@@ -1,0 +1,301 @@
+{
+  "streams": 12,
+  "capture_seconds": 180,
+  "wall_seconds": 189.60424609994516,
+  "varied_conditions": null,
+  "mixed": false,
+  "interval": 6,
+  "requests": 410,
+  "http_errors": 0,
+  "checks": {
+    "browser_capture_and_drain": true,
+    "requested_capture_duration": true,
+    "all_responses_successful": true,
+    "continuous_health": true,
+    "rss_below_2048_mib": true,
+    "warm_median_growth_below_128_mib": true
+  },
+  "passed": true,
+  "first_caption_seconds": {
+    "count": 12,
+    "min": 6.6749,
+    "p50": 7.8749,
+    "p95": 10.1562,
+    "max": 10.1964
+  },
+  "max_buffer_seconds": 10.8,
+  "queue_seconds": {
+    "count": 410,
+    "min": 0.0,
+    "p50": 0.0,
+    "p95": 2.1736,
+    "max": 2.485
+  },
+  "inference_seconds": {
+    "count": 410,
+    "min": 2.094,
+    "p50": 2.991,
+    "p95": 3.3342,
+    "max": 3.808
+  },
+  "resource_samples": 24,
+  "peak_rss_mib": 1354.38,
+  "warm_median_growth_mib": -31.84,
+  "warm_sample_policy": "Exclude first five resource samples, compare remaining halves by median",
+  "mean_cpu_cores": 13.59,
+  "per_stream": [
+    {
+      "index": 0,
+      "first_caption_seconds": 7.768399999856949,
+      "caption_count": 34,
+      "final_buffer_seconds": 0,
+      "max_buffer_seconds": 8.6,
+      "inference_seconds": {
+        "count": 34,
+        "min": 2.094,
+        "p50": 3.078,
+        "p95": 3.2494,
+        "max": 3.465
+      },
+      "queue_seconds": {
+        "count": 34,
+        "min": 0.0,
+        "p50": 0.0,
+        "p95": 1.8221,
+        "max": 2.265
+      }
+    },
+    {
+      "index": 1,
+      "first_caption_seconds": 10.196399999856949,
+      "caption_count": 38,
+      "final_buffer_seconds": 0,
+      "max_buffer_seconds": 9.9,
+      "inference_seconds": {
+        "count": 38,
+        "min": 2.415,
+        "p50": 2.865,
+        "p95": 3.3779,
+        "max": 3.612
+      },
+      "queue_seconds": {
+        "count": 38,
+        "min": 0.0,
+        "p50": 0.0,
+        "p95": 2.2217,
+        "max": 2.375
+      }
+    },
+    {
+      "index": 2,
+      "first_caption_seconds": 6.674899999856949,
+      "caption_count": 33,
+      "final_buffer_seconds": 0,
+      "max_buffer_seconds": 8.5,
+      "inference_seconds": {
+        "count": 33,
+        "min": 2.55,
+        "p50": 3.008,
+        "p95": 3.182,
+        "max": 3.437
+      },
+      "queue_seconds": {
+        "count": 33,
+        "min": 0.0,
+        "p50": 0.0,
+        "p95": 0.7718,
+        "max": 2.016
+      }
+    },
+    {
+      "index": 3,
+      "first_caption_seconds": 9.487599999904633,
+      "caption_count": 33,
+      "final_buffer_seconds": 0,
+      "max_buffer_seconds": 10.8,
+      "inference_seconds": {
+        "count": 33,
+        "min": 2.299,
+        "p50": 2.766,
+        "p95": 3.0936,
+        "max": 3.425
+      },
+      "queue_seconds": {
+        "count": 33,
+        "min": 0.0,
+        "p50": 1.547,
+        "p95": 2.4028,
+        "max": 2.422
+      }
+    },
+    {
+      "index": 4,
+      "first_caption_seconds": 7.981300000190735,
+      "caption_count": 33,
+      "final_buffer_seconds": 0,
+      "max_buffer_seconds": 10.3,
+      "inference_seconds": {
+        "count": 33,
+        "min": 2.516,
+        "p50": 2.979,
+        "p95": 3.309,
+        "max": 3.353
+      },
+      "queue_seconds": {
+        "count": 33,
+        "min": 0.0,
+        "p50": 0.89,
+        "p95": 1.953,
+        "max": 2.391
+      }
+    },
+    {
+      "index": 5,
+      "first_caption_seconds": 7.688400000095368,
+      "caption_count": 34,
+      "final_buffer_seconds": 0,
+      "max_buffer_seconds": 9.35,
+      "inference_seconds": {
+        "count": 34,
+        "min": 2.551,
+        "p50": 3.1335,
+        "p95": 3.3345,
+        "max": 3.511
+      },
+      "queue_seconds": {
+        "count": 34,
+        "min": 0.0,
+        "p50": 0.0,
+        "p95": 0.3394,
+        "max": 1.609
+      }
+    },
+    {
+      "index": 6,
+      "first_caption_seconds": 7.726,
+      "caption_count": 34,
+      "final_buffer_seconds": 0,
+      "max_buffer_seconds": 8.6,
+      "inference_seconds": {
+        "count": 34,
+        "min": 2.291,
+        "p50": 3.018,
+        "p95": 3.1764,
+        "max": 3.315
+      },
+      "queue_seconds": {
+        "count": 34,
+        "min": 0.0,
+        "p50": 0.0,
+        "p95": 1.6072,
+        "max": 2.156
+      }
+    },
+    {
+      "index": 7,
+      "first_caption_seconds": 10.123400000095367,
+      "caption_count": 38,
+      "final_buffer_seconds": 0,
+      "max_buffer_seconds": 10.63,
+      "inference_seconds": {
+        "count": 38,
+        "min": 2.436,
+        "p50": 2.96,
+        "p95": 3.3809,
+        "max": 3.808
+      },
+      "queue_seconds": {
+        "count": 38,
+        "min": 0.0,
+        "p50": 0.0,
+        "p95": 1.8472,
+        "max": 2.344
+      }
+    },
+    {
+      "index": 8,
+      "first_caption_seconds": 6.8545,
+      "caption_count": 33,
+      "final_buffer_seconds": 0,
+      "max_buffer_seconds": 9.47,
+      "inference_seconds": {
+        "count": 33,
+        "min": 2.462,
+        "p50": 2.976,
+        "p95": 3.2788,
+        "max": 3.517
+      },
+      "queue_seconds": {
+        "count": 33,
+        "min": 0.0,
+        "p50": 0.0,
+        "p95": 0.9222,
+        "max": 2.234
+      }
+    },
+    {
+      "index": 9,
+      "first_caption_seconds": 9.375400000095368,
+      "caption_count": 33,
+      "final_buffer_seconds": 0,
+      "max_buffer_seconds": 10,
+      "inference_seconds": {
+        "count": 33,
+        "min": 2.368,
+        "p50": 2.794,
+        "p95": 3.169,
+        "max": 3.414
+      },
+      "queue_seconds": {
+        "count": 33,
+        "min": 0.0,
+        "p50": 1.437,
+        "p95": 2.2816,
+        "max": 2.485
+      }
+    },
+    {
+      "index": 10,
+      "first_caption_seconds": 8.010099999904632,
+      "caption_count": 33,
+      "final_buffer_seconds": 0,
+      "max_buffer_seconds": 9.5,
+      "inference_seconds": {
+        "count": 33,
+        "min": 2.51,
+        "p50": 3.117,
+        "p95": 3.3104,
+        "max": 3.394
+      },
+      "queue_seconds": {
+        "count": 33,
+        "min": 0.0,
+        "p50": 0.0,
+        "p95": 1.7816,
+        "max": 2.343
+      }
+    },
+    {
+      "index": 11,
+      "first_caption_seconds": 7.739599999904633,
+      "caption_count": 34,
+      "final_buffer_seconds": 0,
+      "max_buffer_seconds": 9.4,
+      "inference_seconds": {
+        "count": 34,
+        "min": 2.664,
+        "p50": 3.1565,
+        "p95": 3.3562,
+        "max": 3.441
+      },
+      "queue_seconds": {
+        "count": 34,
+        "min": 0.0,
+        "p50": 0.0,
+        "p95": 0.7547,
+        "max": 1.234
+      }
+    }
+  ],
+  "limits": "Repeated synthetic fixtures; no population-wide accuracy or continuous word-aligned caption latency claim"
+}

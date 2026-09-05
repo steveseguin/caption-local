@@ -90,6 +90,12 @@ health, model listing, inference and session deletion; the UI/static files remai
 loadable so users can enter it. Restart with a new token to rotate it. Save pending
 captions first: restarting loses in-memory retry caches.
 
+For Compose, set the same variables in the private `.env` file before recreating
+the service; its health check reads the token from the container environment.
+Do not commit `.env`. A systemd user service does not automatically inherit the
+terminal's variables: configure a private `EnvironmentFile` in a unit override
+and restrict that file to its owner. Keep credentials out of `ExecStart` arguments.
+
 This shared token provides service access control for trusted producers. It does
 not provide individual accounts, per-user quotas, tenant separation or TLS. It
 does not turn the service into a public SaaS endpoint. Public hosting still needs
@@ -130,3 +136,21 @@ at a time. Use `browser_multilingual.py` against a separately started instance f
 real capture buffers and first-voiced-frame-to-first-visible-caption delay. Its
 default six synthetic languages are not a population-wide accuracy evaluation.
 An hour of repeated fixtures does not establish accuracy for an actual event.
+
+For a sustained run, start the selected service configuration on loopback first.
+Run capture and the read-only resource sampler together, replacing `SERVER_PID`
+with the actual server process ID (not the Windows venv launcher parent):
+
+```sh
+python scripts/browser_multilingual.py --url http://127.0.0.1:8772 --streams 12 --seconds 3600 --varied --output evidence/my-hour-browser.json
+# In a second terminal, start this at the same time:
+python scripts/monitor_service.py --url http://127.0.0.1:8772 --pid SERVER_PID --seconds 3660 --output evidence/my-hour-monitor.json
+# After both finish:
+python scripts/summarize_browser_load.py --browser evidence/my-hour-browser.json --monitor evidence/my-hour-monitor.json --output evidence/my-hour-summary.json
+```
+
+The summary preserves the existing 2 GiB peak RSS and 128 MiB warm-median-growth
+limits, alongside uninterrupted capture, requested duration, successful responses
+and Stop/drain. Its warm-memory comparison excludes the first five resource
+samples and compares medians of the remaining halves. Report a larger model's
+memory failure explicitly instead of labeling the existing gate as passed.
