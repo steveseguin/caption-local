@@ -1,0 +1,573 @@
+{
+  "streams": 1,
+  "capture_seconds": 45,
+  "interval": 3,
+  "mixed": false,
+  "varied_conditions": false,
+  "observations": [
+    {
+      "seconds": 5.00774379982613,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 3.58,
+          "captions": 1,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 10.022874099900946,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 3.82,
+          "captions": 3,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 15.034528599819168,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 3.5,
+          "captions": 5,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 20.053897199919447,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 5.24,
+          "captions": 7,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 25.062204299960285,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 4.94,
+          "captions": 10,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 30.06637499993667,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 5.2,
+          "captions": 12,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 35.08072859980166,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 4.61,
+          "captions": 15,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 40.09964929986745,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 4.4,
+          "captions": 17,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 45.09978159982711,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 5.76,
+          "captions": 20,
+          "error": ""
+        }
+      ]
+    }
+  ],
+  "responses": [
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "Welcome to the theater. The",
+        "transcript": "Welcome to the theater. The",
+        "translation": "",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 3.0,
+        "committed_seconds": 1.92,
+        "request_id": "1fc90426-ad8a-4025-b3f3-297d83ca4cac",
+        "stream_id": "02959ac0-7320-4294-b153-111f895253c9",
+        "inference_seconds": 1.776,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "show begins at seven tonight.",
+        "transcript": "show begins at seven tonight.",
+        "translation": "",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 3.28,
+        "committed_seconds": 3.28,
+        "request_id": "96380e9b-9f9b-41d3-93aa-24950ec6981e",
+        "stream_id": "02959ac0-7320-4294-b153-111f895253c9",
+        "inference_seconds": 1.733,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "Welcome to",
+        "transcript": "Welcome to",
+        "translation": "",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 3.0,
+        "committed_seconds": 1.98,
+        "request_id": "e40dc3b5-799d-4317-b124-7cd6e885007a",
+        "stream_id": "02959ac0-7320-4294-b153-111f895253c9",
+        "inference_seconds": 1.719,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "the theater. The show begins",
+        "transcript": "the theater. The show begins",
+        "translation": "",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 3.52,
+        "committed_seconds": 2.34,
+        "request_id": "d6b2ecc8-e483-4e85-8dde-9f180b3e92a5",
+        "stream_id": "02959ac0-7320-4294-b153-111f895253c9",
+        "inference_seconds": 1.803,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "at 7 tonight.",
+        "transcript": "at 7 tonight.",
+        "translation": "",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 3.48,
+        "committed_seconds": 3.48,
+        "request_id": "095dc72d-5a22-49bf-b6ff-f3d31d784ec1",
+        "stream_id": "02959ac0-7320-4294-b153-111f895253c9",
+        "inference_seconds": 1.786,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "Welcome to the theater.",
+        "transcript": "Welcome to the theater.",
+        "translation": "",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 3.0,
+        "committed_seconds": 1.8,
+        "request_id": "1bcd18f3-488a-49b7-a120-98c5e58a335c",
+        "stream_id": "02959ac0-7320-4294-b153-111f895253c9",
+        "inference_seconds": 1.778,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "The show begins at seven",
+        "transcript": "The show begins at seven",
+        "translation": "",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 3.5,
+        "committed_seconds": 2.46,
+        "request_id": "4b56b2c6-df47-4cee-8414-e85398654d6d",
+        "stream_id": "02959ac0-7320-4294-b153-111f895253c9",
+        "inference_seconds": 1.799,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "tonight.",
+        "transcript": "tonight.",
+        "translation": "",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 3.54,
+        "committed_seconds": 1.0,
+        "request_id": "2d7700ca-0f31-40c9-9933-9b5fa2dfa405",
+        "stream_id": "02959ac0-7320-4294-b153-111f895253c9",
+        "inference_seconds": 1.753,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "welcome to the",
+        "transcript": "welcome to the",
+        "translation": "",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 4.74,
+        "committed_seconds": 3.62,
+        "request_id": "b443a5d0-7161-405f-8072-0bdb45524ca5",
+        "stream_id": "02959ac0-7320-4294-b153-111f895253c9",
+        "inference_seconds": 1.747,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "theater. The show begins",
+        "transcript": "theater. The show begins",
+        "translation": "",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 3.52,
+        "committed_seconds": 2.18,
+        "request_id": "f04fa3db-5729-4401-89b5-433f890f60b5",
+        "stream_id": "02959ac0-7320-4294-b153-111f895253c9",
+        "inference_seconds": 1.852,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "at 7 tonight.",
+        "transcript": "at 7 tonight.",
+        "translation": "",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 3.64,
+        "committed_seconds": 3.64,
+        "request_id": "fd99ba83-d300-4e42-bfc2-3d61a7008f62",
+        "stream_id": "02959ac0-7320-4294-b153-111f895253c9",
+        "inference_seconds": 1.746,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "Welcome to the theater.",
+        "transcript": "Welcome to the theater.",
+        "translation": "",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 3.0,
+        "committed_seconds": 1.6,
+        "request_id": "0f80660c-3953-4d11-a054-1f1a4d61941e",
+        "stream_id": "02959ac0-7320-4294-b153-111f895253c9",
+        "inference_seconds": 1.747,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "The show begins at seven",
+        "transcript": "The show begins at seven",
+        "translation": "",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 3.6,
+        "committed_seconds": 2.5,
+        "request_id": "706b6379-bc7a-423c-885a-2cfce7c8421d",
+        "stream_id": "02959ac0-7320-4294-b153-111f895253c9",
+        "inference_seconds": 1.775,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "tonight.",
+        "transcript": "tonight.",
+        "translation": "",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 3.5,
+        "committed_seconds": 1.0,
+        "request_id": "5b6abedd-a230-4d10-acac-57f54bdef71e",
+        "stream_id": "02959ac0-7320-4294-b153-111f895253c9",
+        "inference_seconds": 1.737,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "Welcome to the",
+        "transcript": "Welcome to the",
+        "translation": "",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 4.7,
+        "committed_seconds": 3.59,
+        "request_id": "557e2663-a14a-40b1-aa57-445e9eb302dd",
+        "stream_id": "02959ac0-7320-4294-b153-111f895253c9",
+        "inference_seconds": 1.8,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "theater. The show begins",
+        "transcript": "theater. The show begins",
+        "translation": "",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 3.51,
+        "committed_seconds": 2.2,
+        "request_id": "ee72776a-9b62-43d9-89bb-56fe57943c58",
+        "stream_id": "02959ac0-7320-4294-b153-111f895253c9",
+        "inference_seconds": 1.822,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "at 7 tonight.",
+        "transcript": "at 7 tonight.",
+        "translation": "",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 3.61,
+        "committed_seconds": 3.61,
+        "request_id": "1bf96487-ae9a-4a4a-9ffd-3c2ea5c52722",
+        "stream_id": "02959ac0-7320-4294-b153-111f895253c9",
+        "inference_seconds": 1.764,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "Welcome to the theater.",
+        "transcript": "Welcome to the theater.",
+        "translation": "",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 3.0,
+        "committed_seconds": 1.62,
+        "request_id": "b5b650e8-02b9-490d-9787-19002e4858aa",
+        "stream_id": "02959ac0-7320-4294-b153-111f895253c9",
+        "inference_seconds": 1.89,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "The show begins at seven",
+        "transcript": "The show begins at seven",
+        "translation": "",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 3.78,
+        "committed_seconds": 2.5,
+        "request_id": "831f95fc-eef2-455d-89f6-d478db231bee",
+        "stream_id": "02959ac0-7320-4294-b153-111f895253c9",
+        "inference_seconds": 1.901,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "tonight.",
+        "transcript": "tonight.",
+        "translation": "",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 3.68,
+        "committed_seconds": 1.02,
+        "request_id": "0d5d3598-b4cf-4f94-8ada-4edb30db0e8d",
+        "stream_id": "02959ac0-7320-4294-b153-111f895253c9",
+        "inference_seconds": 1.88,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "welcome to the theater",
+        "transcript": "welcome to the theater",
+        "translation": "",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 5.06,
+        "committed_seconds": 4.04,
+        "request_id": "6b0b7104-9313-4c04-a43d-c5c4cf01e527",
+        "stream_id": "02959ac0-7320-4294-b153-111f895253c9",
+        "inference_seconds": 1.914,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "The show begins at...",
+        "transcript": "The show begins at...",
+        "translation": "",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 2.248,
+        "committed_seconds": 2.248,
+        "request_id": "542a8539-9c39-4bec-849e-8459c24ee53a",
+        "stream_id": "02959ac0-7320-4294-b153-111f895253c9",
+        "inference_seconds": 1.869,
+        "queue_seconds": 0.0
+      }
+    }
+  ],
+  "errors": [],
+  "final": [
+    {
+      "streamId": "02959ac0-7320-4294-b153-111f895253c9",
+      "failed": false,
+      "pending": false,
+      "buffered": 0,
+      "transcript": [
+        "Welcome to the theater. The",
+        "show begins at seven tonight.",
+        "Welcome to",
+        "the theater. The show begins",
+        "at 7 tonight.",
+        "Welcome to the theater.",
+        "The show begins at seven",
+        "tonight.",
+        "welcome to the",
+        "theater. The show begins",
+        "at 7 tonight.",
+        "Welcome to the theater.",
+        "The show begins at seven",
+        "tonight.",
+        "Welcome to the",
+        "theater. The show begins",
+        "at 7 tonight.",
+        "Welcome to the theater.",
+        "The show begins at seven",
+        "tonight.",
+        "welcome to the theater",
+        "The show begins at..."
+      ],
+      "first_caption_seconds": 4.699
+    }
+  ],
+  "wall_seconds": 48.289270899957046,
+  "passed": true
+}

@@ -1,0 +1,18 @@
+Loading speech model; first run downloads weights. Audio stays on this host.
+Inference ready: cpu / int8
+INFO:     Started server process [16568]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8765 (Press CTRL+C to quit)
+{"event": "http_request", "method": "GET", "route": "/health", "status": 200, "duration_seconds": 0.0008}
+{"event": "http_request", "method": "GET", "route": "/health", "status": 200, "duration_seconds": 0.0023}
+{"event": "http_request", "method": "GET", "route": "/v1/models", "status": 200, "duration_seconds": 0.0005}
+{"event": "http_request", "method": "POST", "route": "/v1/audio/transcriptions", "status": 200, "duration_seconds": 1.368}
+{"event": "http_request", "method": "POST", "route": "/v1/audio/transcriptions", "status": 200, "duration_seconds": 1.2118}
+{"event": "http_request", "method": "POST", "route": "/v1/audio/translations", "status": 200, "duration_seconds": 2.1426}
+{"event": "http_request", "method": "GET", "route": "unmatched", "status": 401, "duration_seconds": 0.0}
+{"event": "http_request", "method": "GET", "route": "unmatched", "status": 401, "duration_seconds": 0.0}
+{"event": "http_request", "method": "GET", "route": "/health", "status": 200, "duration_seconds": 0.0003}
+{"event": "http_request", "method": "POST", "route": "/transcribe", "status": 200, "duration_seconds": 1.2543}
+{"event": "http_request", "method": "POST", "route": "/transcribe", "status": 200, "duration_seconds": 1.1872}
+{"event": "http_request", "method": "DELETE", "route": "/streams/{stream_id}", "status": 200, "duration_seconds": 0.0004}

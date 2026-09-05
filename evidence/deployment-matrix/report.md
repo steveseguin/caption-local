@@ -1,0 +1,150 @@
+# Multilingual deployment measurements
+
+Continuation of the [Windows checkpoint](../windows-rtx/report.md), on the same
+Core Ultra 7 265K / Windows 11 host. CUDA remains blocked by the preserved llama
+server occupying 23,318 MiB of the 24,576 MiB TITAN RTX. All timings below are real
+CPU inference, not GPU results. Docker on this Windows host remains untested.
+
+## Method
+
+Six eSpeak NG 1.51 fixtures: English, Spanish, French, German, Italian and Brazilian
+Portuguese. Source durations range from 3.43 to 5.20 seconds. Each independent API
+producer repeats its fixture every six seconds and keeps one request outstanding;
+late work accumulates rather than being dropped. These fixtures contain pauses
+and less than six seconds of speech per arrival, so they are not equivalent to
+uninterrupted speech. The manifest, exact text and SHA256 are reproducible using
+`scripts/prepare_multilingual.py`; recordings remain untracked.
+
+The existing JFK/LibriSpeech/Spanish quality gate remains separate and unchanged
+at the default six-second window. More language fixtures extend the observations,
+not the existing acceptance thresholds. Unicode word-error measurements retain
+spelling/number differences: "theatre" versus "theater", and "seven" versus "7",
+produce English word errors despite equivalent meaning.
+
+## Short CPU load probes
+
+All use small/int8. P95 is request-to-response time and excludes collecting speech.
+Arrival lag includes accumulated producer backlog. A request success is not a
+real-time capacity pass. No buffer or queue limits were enlarged to hide delay.
+
+| Workers × threads; beam | Workload / streams | p95 response | Maximum arrival lag | Late / errors |
+| --- | --- | --- | --- | --- |
+| 4 × 2; 5 | Transcription / 8 | 4.203 s | 4.238 s | 0 / 0 |
+| 4 × 2; 5 | Transcription / 12 | 6.346 s | 6.919 s | 20 / 0 |
+| 4 × 2; 5 | Transcription / 24 | 11.348 s | 32.497 s | 108 / 0 |
+| 8 × 2; 5 | Transcription / 12 | 4.667 s | 4.705 s | 0 / 0 |
+| 8 × 2; 5 | Transcription / 24 | 7.857 s | 14.944 s | 94 / 0 |
+| 8 × 1; 5 | Transcription / 12 | 7.593 s | 7.798 s | 20 / 0 |
+| 8 × 1; 5 | Transcription / 24 | 11.918 s | 35.015 s | 112 / 0 |
+| 8 × 2; 5 | Mixed / 8 | 4.415 s | 4.726 s | 0 / 0 |
+| 8 × 2; 5 | Mixed / 12 | 6.004 s | 7.404 s | 9 / 0 |
+| 8 × 2; 5 | Mixed / 24 | 11.057 s | 48.515 s | 222 / 0 |
+
+Raw data: [4 workers](small-cpu-w4-t2.json), [8 workers](small-cpu-w8-t2.json),
+[one thread per worker](small-cpu-w8-t1.json), [mixed](small-cpu-w8-t2-mixed.json).
+The initial 4×2 and 8×2 transcription probes accidentally omitted the required
+PCM Content-Type on their preliminary quality requests; those requests returned
+415. Their load requests had the correct header and timings remain valid.
+The harness was fixed; subsequent quality requests decode real speech correctly.
+Failures were retained, not relabeled as quality passes.
+
+## Accuracy and translation
+
+Small/beam 1 passed the existing complete gate, with mean English WER 7.02%
+([gate](quality-small-beam1.json)); small/beam 5 previously measured 7.21% on this
+Windows host. This small corpus does not establish superiority of beam 1.
+
+Small transcribed the French fixture exactly but translated its theatre reference
+as "art" and changed the closing phrase. Medium preserved the theatre reference
+in all six translations, including French. Some other phrasing remained imperfect,
+such as Portuguese "coming" becoming "watching". Single-utterance synthetic
+fixtures are not a comprehensive multilingual quality certification.
+
+[Small multilingual results](small-cpu-w8-t2-mixed.json),
+[medium multilingual results](medium-cpu-quality.json).
+Medium's one English request took 5.120 s on CPU in this probe; its stronger
+translation came with substantially greater processing cost. Larger models have
+not been tested on CUDA yet.
+
+## Interfaces, access control and logging
+
+The official OpenAI Python SDK 3.8.0 successfully called local WAV transcription,
+plain-text output and English translation with optional bearer authentication
+([SDK evidence](sdk-smoke.json)). No provider API calls or account keys were used.
+The [API documentation](../../API.md#openai-style-wav-api) lists the supported
+subset and rejects unsupported options explicitly. Google Speech and Gemini audio
+use different request/response protocols and are not emulated.
+
+The authenticated browser test rejected missing/wrong tokens, accepted the correct
+token, captured synthetic speech and drained on Stop. The token was absent from
+local/session storage, the cleared input and server logs
+([browser evidence](browser-auth.json), [metadata logs](auth-server.log)). A shared
+token is not tenant isolation, TLS or a public-hosting certification.
+
+Caption.ninja's inspected revision is `47ef3090ea65441fd1319ff0c40accfae5b12669`.
+Its [TTS integration](https://github.com/steveseguin/captionninja/blob/47ef3090ea65441fd1319ff0c40accfae5b12669/tts-integration.js)
+passes caption text to the downstream TTS library. Caption Local continues to
+publish caption text through the existing relay/editor path; it does not generate
+speech audio. This keeps inference service complexity here while allowing
+caption.ninja's downstream TTS provider choices.
+
+## Real browser capture and recovery
+
+Twelve independent Edge capture pages, distributed across the six languages,
+passed 180 seconds of transcription using small/int8, eight workers, two threads
+per worker and beam five. All 410 requests returned HTTP 200, maximum observed
+buffer was 10.8 seconds, and every page drained on Stop. First voiced capture
+frame to first visible caption ranged from 6.67 to 10.20 seconds. These are initial
+caption delays, not continuous word-aligned latency measurements.
+[Browser evidence](browser-12-transcribe.json), [resource samples](browser-server-monitor.json).
+
+The same twelve-page configuration passed a separate 180-second cycle of clean,
+quiet (-26 dB) and noisy (10 dB SNR, seeded Gaussian noise) speech with pauses.
+Buffering briefly reached 24.86 seconds before recovering. This stresses buffering
+but does not prove recognition quality: the separate condition probe found 70%
+German source WER in noise, versus 10% clean. All 18 condition requests succeeded;
+HTTP success must not be confused with accurate captions.
+[Varied browser run](browser-12-varied.json), [condition results](conditions-small.json).
+
+The actual caption.ninja editor received captions through a locally mocked relay;
+there were no external HTTP requests or browser errors
+([editor evidence](editor/browser-smoke.json)). A real service restart after a
+successful response was deliberately lost preserved the browser request ID and
+audio hash on retry, then completed Stop/drain
+([restart evidence](browser-server-restart.json)). Earlier harness failures from
+Windows port probes are retained separately; listener inspection replaced bind
+and connect probes without changing service acceptance criteria.
+
+## Caption interval tradeoff
+
+A single English browser with the three-second interval showed its first caption
+after 4.699 seconds and passed a 45-second capture/drain test. However, the complete
+existing quality gate failed its faster-than-audio requirement at that interval:
+one 9.24-second LibriSpeech fixture required 11.608 seconds of inference across
+rolling windows. Its other checks passed, with mean English WER 6.34%. The
+nine-second interval passed the complete gate, with mean English WER 6.80%.
+[Three-second browser](browser-window3-single.json),
+[three-second gate failure](quality-small-window3.json),
+[nine-second gate](quality-small-window9.json).
+
+The supplied 3/6/9-second interval choices preserve the same word holdback, retry
+identity, Stop/drain and 30-second protective buffer. Six seconds remains default.
+Three seconds is an explicit setting to benchmark, not a general CPU real-time
+recommendation. None of these short samples certifies accuracy for a live event.
+
+## Scope and remaining validation
+
+An hour-long twelve-stream varied browser run is in progress. Short probes alone
+do not establish an hour-long sustainable count. The final result and resource
+stability assessment will be recorded here, including failures.
+
+The current fast regression suite passes all 38 Python tests on native Windows
+and Ubuntu WSL, plus six Node audio-buffer/worklet tests. Source checks and archive
+creation pass. These use fake inference where appropriate; the real inference
+and browser evidence above is separate.
+
+No shared batched pipeline was introduced: faster-whisper 1.2.1's
+`BatchedInferencePipeline` keeps mutable `last_speech_timestamp` state, so reusing
+one pipeline across independent streams would require additional isolation and
+ordering work. The existing model worker pool remains in use. GPU batching benefit
+has not been measured on this occupied GPU.

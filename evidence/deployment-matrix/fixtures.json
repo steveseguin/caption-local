@@ -1,0 +1,74 @@
+[
+  {
+    "language": "en",
+    "voice": "en-us",
+    "text": "Welcome to the theatre. The show begins at seven tonight.",
+    "speed": 145,
+    "path": "samples/multilingual/en.wav",
+    "loop_path": "samples/multilingual/en-loop.wav",
+    "varied_loop_path": "samples/multilingual/en-varied.wav",
+    "varied_conditions": "clean, -26 dB speech, 10 dB SNR seeded Gaussian noise, pauses; repeats",
+    "sha256": "dbbc9014f0d9b2d61c4964ef1d5285a55564e3fb5e1081aac45a22d3c85a5de7",
+    "seconds": 4.366
+  },
+  {
+    "language": "es",
+    "voice": "es",
+    "text": "Hola. Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+    "speed": 145,
+    "path": "samples/multilingual/es.wav",
+    "loop_path": "samples/multilingual/es-loop.wav",
+    "varied_loop_path": "samples/multilingual/es-varied.wav",
+    "varied_conditions": "clean, -26 dB speech, 10 dB SNR seeded Gaussian noise, pauses; repeats",
+    "sha256": "0a9d0122c39ea19ef11dd9fb4839b54c137da37a1f949a34ac000bde4ae9d50e",
+    "seconds": 5.2006875
+  },
+  {
+    "language": "fr",
+    "voice": "fr-fr",
+    "text": "Bienvenue au théâtre. Merci de venir ce soir.",
+    "speed": 145,
+    "path": "samples/multilingual/fr.wav",
+    "loop_path": "samples/multilingual/fr-loop.wav",
+    "varied_loop_path": "samples/multilingual/fr-varied.wav",
+    "varied_conditions": "clean, -26 dB speech, 10 dB SNR seeded Gaussian noise, pauses; repeats",
+    "sha256": "ae5f626c99adaa07924feb647a3de5259bf5e56b1e0e38dfd990f6c385ea5b81",
+    "seconds": 3.4298125
+  },
+  {
+    "language": "de",
+    "voice": "de",
+    "text": "Willkommen im Theater. Vielen Dank für Ihren Besuch heute Abend.",
+    "speed": 145,
+    "path": "samples/multilingual/de.wav",
+    "loop_path": "samples/multilingual/de-loop.wav",
+    "varied_loop_path": "samples/multilingual/de-varied.wav",
+    "varied_conditions": "clean, -26 dB speech, 10 dB SNR seeded Gaussian noise, pauses; repeats",
+    "sha256": "7466b76b46bd50fde8c6d5acdd78b41d1d962a6f93b65988a9c944d64e9ad138",
+    "seconds": 4.951875
+  },
+  {
+    "language": "it",
+    "voice": "it",
+    "text": "Benvenuti al teatro. Grazie per essere qui questa sera.",
+    "speed": 145,
+    "path": "samples/multilingual/it.wav",
+    "loop_path": "samples/multilingual/it-loop.wav",
+    "varied_loop_path": "samples/multilingual/it-varied.wav",
+    "varied_conditions": "clean, -26 dB speech, 10 dB SNR seeded Gaussian noise, pauses; repeats",
+    "sha256": "678ceeab057bec452c12013dbffb5eda88b86ea4760130c5d35b7aa5bda177d7",
+    "seconds": 4.4541875
+  },
+  {
+    "language": "pt",
+    "voice": "pt-br",
+    "text": "Bem-vindos ao teatro. Obrigado por vir esta noite.",
+    "speed": 145,
+    "path": "samples/multilingual/pt.wav",
+    "loop_path": "samples/multilingual/pt-loop.wav",
+    "varied_loop_path": "samples/multilingual/pt-varied.wav",
+    "varied_conditions": "clean, -26 dB speech, 10 dB SNR seeded Gaussian noise, pauses; repeats",
+    "sha256": "3da326c9e3ee2db5292fd13cd59d94648e9d5583d446d1ea3152ffca7d07861c",
+    "seconds": 4.28475
+  }
+]
