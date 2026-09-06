@@ -1,8 +1,10 @@
 'use strict';
 const streamId = crypto.randomUUID();
 const $ = id => document.getElementById(id);
+const captureAssetBase = new URL('.', document.currentScript.src);
 let serviceToken = '';
 function serviceFetch(path, options = {}) {
+  if (window.captionLocalConnection) return window.captionLocalConnection.fetch(path, options);
   const headers = new Headers(options.headers || {});
   if (serviceToken) headers.set('Authorization', `Bearer ${serviceToken}`);
   return fetch(path, {...options, headers});
@@ -20,6 +22,8 @@ let currentRequestStarted = 0, availableLanguages = "";
 function fail(message) { $('error').textContent = message; }
 function controls() {
   const busy = running || starting || stopping || processing || failed;
+  window.captionLocalConnection?.setBusy(busy);
+  if ($('relayTarget')) $('relayTarget').disabled = busy;
   for (const id of ['language', 'microphone', 'room', 'mode', 'relayOutput', 'sensitivity', 'captionInterval']) $(id).disabled = busy;
   // Operators may always turn sharing off. Turning it back on requires a stopped session.
   $('share').disabled = busy && !$('share').checked;
@@ -48,11 +52,14 @@ function configureRelay() {
     onStats: stats => { $('relay').textContent = `Relay: ${stats.state}; queued ${stats.queueLength}; dropped ${stats.droppedCount}`; }
   });
   publisher.connect();
-  $('editorLink').href = `https://caption.ninja/editor?room=${encodeURIComponent(room)}`;
+  const direct = $('relayTarget')?.value === 'overlay';
+  $('editorLink').href = `https://caption.ninja/${direct ? 'overlay' : 'editor'}?room=${encodeURIComponent(room)}`;
+  $('editorLink').textContent = direct ? 'Open direct caption overlay' : 'Open caption editor';
   $('editorLink').hidden = false;
 }
 $('share').onchange = configureRelay;
 $('room').onchange = () => { if ($('share').checked) configureRelay(); };
+if ($('relayTarget')) $('relayTarget').onchange = () => { if ($('share').checked) configureRelay(); };
 function frame(audio) {
   if (!running && !stopping) return;
   $('meter').value = buffer.append(audio);
@@ -110,6 +117,9 @@ async function drain() {
       $('status').textContent = `Transcribing · ${(buffer.length/16000).toFixed(1)}s buffered`;
       currentRequestStarted = performance.now();
       const result = await send(pending);
+      if (window.captionLocalConnection) window.captionLocalConnection.lastInference = {
+        inference_seconds: result.inference_seconds, queue_seconds: result.queue_seconds || 0
+      };
       buffer.commit(pending, result.committed_seconds);
       pending = null;
       renderResult(result);
@@ -175,7 +185,7 @@ $('start').onclick = async () => {
     }});
     await devices();
     if (context.sampleRate !== 16000) throw new Error('This browser cannot capture at 16 kHz. Try Chrome or Edge.');
-    await context.audioWorklet.addModule('/static/pcm-worklet.js');
+    await context.audioWorklet.addModule(new URL('pcm-worklet.js', captureAssetBase));
     source = context.createMediaStreamSource(stream);
     node = new AudioWorkletNode(context, 'pcm');
     node.port.onmessage = event => { if (event.data === 'stopped') stopAck?.(); else frame(event.data); };
@@ -207,16 +217,20 @@ function updateOutputChoice() {
 }
 $('mode').onchange = updateOutputChoice; updateOutputChoice(); controls();
 async function health() {
+  if (window.captionLocalConnection && !window.captionLocalConnection.connected) return;
+  const revision = window.captionLocalConnection?.revision;
   try {
     const response = await serviceFetch('/health', {signal:AbortSignal.timeout(5000)});
+    if (revision !== window.captionLocalConnection?.revision) return;
     if (response.status === 401) {
-      ready = false; $('auth').hidden = false;
+      ready = false; $('auth').hidden = !!window.captionLocalConnection;
       $('capabilities').textContent = 'Enter the service access token to connect.';
       controls(); return;
     }
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     $('auth').hidden = true;
     const info = await response.json();
+    if (revision !== window.captionLocalConnection?.revision) return;
     ready = info.ready && !!navigator.mediaDevices;
     supportedModes = info.modes; multilingual = info.multilingual;
     const languages = info.languages || ['en'];
@@ -231,7 +245,10 @@ async function health() {
     }
     for (const option of $('mode').options) option.disabled = !supportedModes.includes(option.value);
     $('capabilities').textContent = `${info.multilingual ? 'Multilingual transcription and English translation' : 'English transcription'} · ${info.model || 'Whisper'} · ${info.device} / ${info.compute_type} · ${info.running || 0} processing, ${info.pending || 0} waiting · v${info.version}`;
-  } catch (_) { ready = false; $('capabilities').textContent = 'Service unavailable. Checking again…'; }
+  } catch (_) {
+    if (revision !== window.captionLocalConnection?.revision) return;
+    ready = false; $('capabilities').textContent = 'Service unavailable. Checking again…';
+  }
   controls();
 }
 if (navigator.mediaDevices) {

@@ -24,10 +24,16 @@ def browser_options():
 
 def authenticate(page):
     """Supply a configured local token in tab memory, never as global HTTP headers."""
-    if os.environ.get('CAPTION_API_KEY'):
+    if page.locator('#connection').count():
+        page.fill('#connectionToken', os.environ.get('CAPTION_API_KEY', ''))
+        page.click('#connect')
+    elif os.environ.get('CAPTION_API_KEY'):
         page.evaluate('token => { serviceToken=token; return health(); }', os.environ['CAPTION_API_KEY'])
 
 
 async def authenticate_async(page):
-    if os.environ.get('CAPTION_API_KEY'):
+    if await page.locator('#connection').count():
+        await page.fill('#connectionToken', os.environ.get('CAPTION_API_KEY', ''))
+        await page.click('#connect')
+    elif os.environ.get('CAPTION_API_KEY'):
         await page.evaluate('token => { serviceToken=token; return health(); }', os.environ['CAPTION_API_KEY'])

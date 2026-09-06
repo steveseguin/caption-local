@@ -1,0 +1,28 @@
+{
+  "browser_version": "152.0.4191.62",
+  "devices": [
+    {
+      "value": "",
+      "label": "System default"
+    },
+    {
+      "value": "default",
+      "label": "Fake Default Audio Input"
+    },
+    {
+      "value": "734155f06f9f1057c433b23bfca8a224708665859e9658d1f2a5f345df645737",
+      "label": "Fake Audio Input 1"
+    },
+    {
+      "value": "b48164015a143182a724b67be0620d61be988c3523b378f3aeb706ed6255877e",
+      "label": "Fake Audio Input 2"
+    }
+  ],
+  "explicit_selection": true,
+  "injected_track_ended_drained": true,
+  "changed_to_default_and_restarted": true,
+  "errors": [],
+  "first_caption_from_start_seconds": 7.751300000190735,
+  "delay_definition": "Start click to first visible caption with looping synthetic microphone; includes collection and inference, not word-aligned speech latency",
+  "physical_microphone_tested": false
+}

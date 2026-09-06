@@ -1,0 +1,12 @@
+{
+  "streams": 8,
+  "capture_seconds": 180,
+  "interval": 6,
+  "mixed": false,
+  "varied_conditions": true,
+  "observations": [],
+  "responses": [],
+  "errors": [],
+  "passed": false,
+  "error": "TimeoutError('Locator.select_option: Timeout 30000ms exceeded.\\nCall log:\\n  - waiting for locator(\"#language\")\\n    - locator resolved to <select id=\"language\">…</select>\\n  - attempting select option action\\n    2 × waiting for element to be visible and enabled\\n      - did not find some options\\n    - retrying select option action\\n    - waiting 20ms\\n    2 × waiting for element to be visible and enabled\\n      - did not find some options\\n    - retrying select option action\\n      - waiting 100ms\\n    59 × waiting for element to be visible and enabled\\n       - did not find some options\\n     - retrying select option action\\n       - waiting 500ms\\n')"
+}

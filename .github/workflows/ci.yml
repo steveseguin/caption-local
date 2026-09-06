@@ -26,7 +26,7 @@ jobs:
       - name: Protocol, scheduling and recovery tests
         run: python -m pytest -q
       - name: Audio buffer and worklet tests
-        run: node --test tests/audio-buffer.test.cjs
+        run: node --test tests/audio-buffer.test.cjs tests/local-connection.test.cjs
       - name: Documentation and source checks
         run: python scripts/check_release.py
       - name: Build source archive

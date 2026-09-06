@@ -9,6 +9,7 @@ from service_test_support import TestService
 
 parser=argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--port',type=int,default=8774)
+parser.add_argument('--page',choices=['/', '/capture-local.html'],default='/')
 parser.add_argument('--output',type=Path,required=True)
 args=parser.parse_args()
 args.output.parent.mkdir(parents=True,exist_ok=True)
@@ -40,7 +41,7 @@ try:
             else:
                 route.continue_()
         page.route('**/transcribe?*',infer)
-        page.goto(f'http://127.0.0.1:{args.port}')
+        page.goto(f'http://127.0.0.1:{args.port}{args.page}')
         authenticate(page)
         page.locator('#start').click()
         page.wait_for_function('() => transcript.length>0',timeout=60000)

@@ -60,7 +60,7 @@ try:
         local_text = page.locator('#captions').inner_text()
         editor = context.new_page()
         editor.goto('http://127.0.0.1:8766/editor.html?room=localtestsource&output=localtestoutput')
-        page.locator('summary').click()
+        page.get_by_text('Send captions to caption.ninja', exact=True).first.click()
         page.locator('#room').fill('localtestsource')
         page.locator('#share').check()
         page.get_by_role('button', name='Start captions', exact=True).click()

@@ -1,0 +1,4460 @@
+{
+  "streams": 4,
+  "capture_seconds": 180,
+  "interval": 6,
+  "mixed": true,
+  "varied_conditions": true,
+  "observations": [
+    {
+      "seconds": 5.010991800110787,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 5,
+          "captions": 0,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 5,
+          "captions": 0,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 4.9,
+          "captions": 0,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 4.9,
+          "captions": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 10.021982800215483,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 5.4,
+          "captions": 1,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 4.5,
+          "captions": 1,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 2.5,
+          "captions": 2,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 4.8,
+          "captions": 1,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 15.040790200000629,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 4.5,
+          "captions": 2,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 5.3,
+          "captions": 2,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 3.5,
+          "captions": 3,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 3.9,
+          "captions": 2,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 20.05228090006858,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 5.21,
+          "captions": 3,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 6.05,
+          "captions": 3,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 3.9,
+          "captions": 4,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 8.9,
+          "captions": 2,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 25.06784400017932,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 1.8,
+          "captions": 5,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 6.7,
+          "captions": 4,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 3,
+          "captions": 5,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 5.49,
+          "captions": 4,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 30.085661800112575,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 2.1,
+          "captions": 6,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 5.9,
+          "captions": 5,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 2.1,
+          "captions": 7,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 5.8,
+          "captions": 5,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 35.109543500002474,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 7.2,
+          "captions": 6,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 6.8,
+          "captions": 6,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 2.5,
+          "captions": 8,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 5.5,
+          "captions": 6,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 40.10406080004759,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 7.93,
+          "captions": 7,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 3.2,
+          "captions": 8,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 1.6,
+          "captions": 9,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 6.16,
+          "captions": 7,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 45.10742580005899,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 4.6,
+          "captions": 9,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 2.4,
+          "captions": 9,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 0.7,
+          "captions": 11,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 6.5,
+          "captions": 8,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 50.113701900001615,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 4.8,
+          "captions": 10,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 7.4,
+          "captions": 9,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 5.7,
+          "captions": 11,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 6.63,
+          "captions": 9,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 55.11842800001614,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 5.56,
+          "captions": 11,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 8.2,
+          "captions": 10,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 0.5,
+          "captions": 13,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 6.9,
+          "captions": 10,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 60.121013400144875,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 2.1,
+          "captions": 13,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 4.6,
+          "captions": 12,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 3.2,
+          "captions": 14,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 6.5,
+          "captions": 11,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 65.12434240011498,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 2.5,
+          "captions": 14,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 3.8,
+          "captions": 13,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 4.3,
+          "captions": 15,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 6,
+          "captions": 12,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 70.12693640007637,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 7.5,
+          "captions": 14,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 4.58,
+          "captions": 14,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 4.6,
+          "captions": 16,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 5.1,
+          "captions": 13,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 75.12534460006282,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 8.15,
+          "captions": 15,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 4.55,
+          "captions": 15,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 3.7,
+          "captions": 17,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 5.84,
+          "captions": 14,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 80.11881550005637,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 4.6,
+          "captions": 17,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 6,
+          "captions": 16,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 2.8,
+          "captions": 19,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 5.9,
+          "captions": 15,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 85.14798850007355,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 5.1,
+          "captions": 18,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 5.2,
+          "captions": 17,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 3.2,
+          "captions": 20,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 6.53,
+          "captions": 16,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 90.17500280006789,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 5.76,
+          "captions": 19,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 5.98,
+          "captions": 18,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 2.2,
+          "captions": 21,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 8.29,
+          "captions": 17,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 95.18315470009111,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 2.2,
+          "captions": 21,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 2.3,
+          "captions": 20,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 1.3,
+          "captions": 23,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 8.57,
+          "captions": 18,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 100.19248450011946,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 2.7,
+          "captions": 22,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 7.3,
+          "captions": 20,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 6.3,
+          "captions": 23,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 8.7,
+          "captions": 19,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 105.2095143001061,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 7.8,
+          "captions": 22,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 6.7,
+          "captions": 21,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 0.9,
+          "captions": 25,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 3.7,
+          "captions": 21,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 110.22782920021564,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 8.47,
+          "captions": 23,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 7.47,
+          "captions": 22,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 0.5,
+          "captions": 27,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 8.7,
+          "captions": 21,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 115.24474280001596,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 5,
+          "captions": 25,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 3.8,
+          "captions": 24,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 5,
+          "captions": 27,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 7.7,
+          "captions": 22,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 120.25070910016075,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 5.4,
+          "captions": 26,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 3.1,
+          "captions": 25,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 5.4,
+          "captions": 28,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 7.2,
+          "captions": 23,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 125.24900540011004,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 6.08,
+          "captions": 27,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 3.87,
+          "captions": 26,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 2.5,
+          "captions": 30,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 6.3,
+          "captions": 24,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 130.25562720000744,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 2.6,
+          "captions": 29,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 3.81,
+          "captions": 27,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 3.5,
+          "captions": 31,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 6.84,
+          "captions": 25,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 135.27439680020325,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 3,
+          "captions": 30,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 5.3,
+          "captions": 28,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 3.9,
+          "captions": 32,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 6.85,
+          "captions": 26,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 140.29120770003647,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 3.68,
+          "captions": 31,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 4.5,
+          "captions": 29,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 3,
+          "captions": 33,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 6.87,
+          "captions": 27,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 145.29875360010192,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 3.68,
+          "captions": 32,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 5.27,
+          "captions": 30,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 2.1,
+          "captions": 34,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 7.18,
+          "captions": 28,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 150.29414450004697,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 5.3,
+          "captions": 33,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 5.21,
+          "captions": 31,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 2.5,
+          "captions": 35,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 6.7,
+          "captions": 29,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 155.2930746001657,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 5.6,
+          "captions": 34,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 6.7,
+          "captions": 32,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 1.5,
+          "captions": 36,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 6.2,
+          "captions": 30,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 160.30218300013803,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 6.29,
+          "captions": 35,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 5.9,
+          "captions": 33,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 0.6,
+          "captions": 38,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 5.4,
+          "captions": 31,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 165.32209460018203,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 2.9,
+          "captions": 37,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 6.77,
+          "captions": 34,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 5.7,
+          "captions": 38,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 6,
+          "captions": 32,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 170.33979390002787,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 3.3,
+          "captions": 38,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 3.2,
+          "captions": 36,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 0.5,
+          "captions": 40,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 6.01,
+          "captions": 33,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 175.35664740018547,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 4.02,
+          "captions": 39,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 2.4,
+          "captions": 37,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 3.2,
+          "captions": 41,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 6.03,
+          "captions": 34,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "seconds": 180.37221750011668,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 4.35,
+          "captions": 40,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 7.4,
+          "captions": 37,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 4.3,
+          "captions": 42,
+          "error": ""
+        },
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 6.34,
+          "captions": 35,
+          "error": ""
+        }
+      ]
+    }
+  ],
+  "responses": [
+    {
+      "stream": 2,
+      "status": 200,
+      "result": {
+        "text": "Bienvenue au théâtre. Merci de venir ce soir.",
+        "transcript": "Bienvenue au théâtre. Merci de venir ce soir.",
+        "translation": "",
+        "language": "fr",
+        "output_language": "fr",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 3.7,
+        "committed_seconds": 3.7,
+        "request_id": "6102b001-6385-48f1-b2b5-e12de7f7aac0",
+        "stream_id": "a1113f81-2ebc-4a50-bca9-b091609d564a",
+        "inference_seconds": 1.733,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "Welcome to the theater. The show begins at 7 tonight.",
+        "transcript": "Welcome to the theater. The show begins at 7 tonight.",
+        "translation": "Welcome to the theater. The show begins at 7 tonight.",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 4.6,
+        "committed_seconds": 4.6,
+        "request_id": "dc5b93e7-38d3-4952-ac4a-4046a529a82e",
+        "stream_id": "cbb2fdf3-d35c-4795-ae6b-b4193feeaf41",
+        "inference_seconds": 1.849,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 1,
+      "status": 200,
+      "result": {
+        "text": "¡Hola! Bienvenidos al teatro. ¡Muchas gracias por venir esta noche!",
+        "transcript": "¡Hola! Bienvenidos al teatro. ¡Muchas gracias por venir esta noche!",
+        "translation": "",
+        "language": "es",
+        "output_language": "es",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 5.5,
+        "committed_seconds": 5.5,
+        "request_id": "20935053-1477-4488-8083-8eb4cc0389e3",
+        "stream_id": "920ab083-c76b-4a34-bbd7-b9731b1bc253",
+        "inference_seconds": 1.918,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 3,
+      "status": 200,
+      "result": {
+        "text": "Willkommen im Theater. Vielen Dank für den Besuch heute Abend.",
+        "transcript": "Willkommen im Theater. Vielen Dank für den Besuch heute Abend.",
+        "translation": "Welcome to the theatre. Thank you for your visit tonight.",
+        "language": "de",
+        "output_language": "de",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 5.2,
+        "committed_seconds": 5.2,
+        "request_id": "f65fdc78-6466-46a6-a9ef-b2d2e334aec3",
+        "stream_id": "b0e7185c-0791-4a0f-9969-e43c1b3db303",
+        "inference_seconds": 3.514,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 2,
+      "status": 200,
+      "result": {
+        "text": "Je n'ai pas l'air d'être là.",
+        "transcript": "Je n'ai pas l'air d'être là.",
+        "translation": "",
+        "language": "fr",
+        "output_language": "fr",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 1.9,
+        "committed_seconds": 1.9,
+        "request_id": "16f107a2-a081-4279-af5d-65084c2db692",
+        "stream_id": "a1113f81-2ebc-4a50-bca9-b091609d564a",
+        "inference_seconds": 1.774,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 2,
+      "status": 200,
+      "result": {
+        "text": "et c'est devenu ce swan.",
+        "transcript": "et c'est devenu ce swan.",
+        "translation": "",
+        "language": "fr",
+        "output_language": "fr",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 2.1,
+        "committed_seconds": 2.1,
+        "request_id": "1fb7b0ce-abcd-4258-b626-ea70fb88876b",
+        "stream_id": "a1113f81-2ebc-4a50-bca9-b091609d564a",
+        "inference_seconds": 1.73,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "Welcome to the theater. The show begins at 7 tonight.",
+        "transcript": "Welcome to the theater. The show begins at 7 tonight.",
+        "translation": "Welcome to the theater. The show begins at 7 tonight.",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 5.9,
+        "committed_seconds": 5.9,
+        "request_id": "873a123e-42df-40c2-9ef4-2ea856126111",
+        "stream_id": "cbb2fdf3-d35c-4795-ae6b-b4193feeaf41",
+        "inference_seconds": 1.821,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 1,
+      "status": 200,
+      "result": {
+        "text": "Hola, bienvenidos al teatro, muchas gracias por venir",
+        "transcript": "Hola, bienvenidos al teatro, muchas gracias por venir",
+        "translation": "",
+        "language": "es",
+        "output_language": "es",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 6.0,
+        "committed_seconds": 4.7,
+        "request_id": "c59d5fc5-7a33-4c2e-9b86-f93b0b9570e7",
+        "stream_id": "920ab083-c76b-4a34-bbd7-b9731b1bc253",
+        "inference_seconds": 1.871,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 3,
+      "status": 200,
+      "result": {
+        "text": "Willkommen im Theater. Vielen Dank, für den Besuch heute Abend.",
+        "transcript": "Willkommen im Theater. Vielen Dank, für den Besuch heute Abend.",
+        "translation": "Welcome to the theater! Thank you very much for watching this evening!",
+        "language": "de",
+        "output_language": "de",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 5.9,
+        "committed_seconds": 5.9,
+        "request_id": "7f5e0c7e-295f-48f8-922d-1bfb8cfa00cf",
+        "stream_id": "b0e7185c-0791-4a0f-9969-e43c1b3db303",
+        "inference_seconds": 3.424,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 2,
+      "status": 200,
+      "result": {
+        "text": "Bienvenue au P.A. Merci de venir ce soir",
+        "transcript": "Bienvenue au P.A. Merci de venir ce soir",
+        "translation": "",
+        "language": "fr",
+        "output_language": "fr",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 4.6,
+        "committed_seconds": 4.6,
+        "request_id": "116adf8b-aa92-4cab-896f-5e99e37fc4ba",
+        "stream_id": "a1113f81-2ebc-4a50-bca9-b091609d564a",
+        "inference_seconds": 1.967,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 1,
+      "status": 200,
+      "result": {
+        "text": "esta noche. Hola, bienvenidos al teatro,",
+        "transcript": "esta noche. Hola, bienvenidos al teatro,",
+        "translation": "",
+        "language": "es",
+        "output_language": "es",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 6.5,
+        "committed_seconds": 4.75,
+        "request_id": "3d4cfcc6-b809-43e2-bb76-e56093412824",
+        "stream_id": "920ab083-c76b-4a34-bbd7-b9731b1bc253",
+        "inference_seconds": 2.081,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "Welcome to the theater the show begin at seven",
+        "transcript": "Welcome to the theater the show begin at seven",
+        "translation": "Welcome to the theater the show begin at seven",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 6.0,
+        "committed_seconds": 4.79,
+        "request_id": "aeb26b11-39b7-44cf-a6ae-d8fe054ed09e",
+        "stream_id": "cbb2fdf3-d35c-4795-ae6b-b4193feeaf41",
+        "inference_seconds": 1.943,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 1,
+      "status": 200,
+      "result": {
+        "text": "Muchas gracias por venir esta noche.",
+        "transcript": "Muchas gracias por venir esta noche.",
+        "translation": "",
+        "language": "es",
+        "output_language": "es",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 4.35,
+        "committed_seconds": 4.35,
+        "request_id": "b1b54b03-a715-402f-9259-03245b8b84dc",
+        "stream_id": "920ab083-c76b-4a34-bbd7-b9731b1bc253",
+        "inference_seconds": 1.773,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 3,
+      "status": 200,
+      "result": {
+        "text": "Willkommen im Theater! Vielen Dank! Willkommen im",
+        "transcript": "Willkommen im Theater! Vielen Dank! Willkommen im",
+        "translation": "Welcome to the theater, Elendank, the Elendland.",
+        "language": "de",
+        "output_language": "de",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 6.0,
+        "committed_seconds": 4.25,
+        "request_id": "758a9a32-14eb-4e1f-8c17-60103b983fd2",
+        "stream_id": "b0e7185c-0791-4a0f-9969-e43c1b3db303",
+        "inference_seconds": 3.699,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 2,
+      "status": 200,
+      "result": {
+        "text": "Bienvenue au théâtre. Merci de venir ce soir.",
+        "transcript": "Bienvenue au théâtre. Merci de venir ce soir.",
+        "translation": "",
+        "language": "fr",
+        "output_language": "fr",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 4.0,
+        "committed_seconds": 4.0,
+        "request_id": "786fd844-1163-4927-b269-f8db1468aa0c",
+        "stream_id": "a1113f81-2ebc-4a50-bca9-b091609d564a",
+        "inference_seconds": 1.822,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "Welcome to the theater. The show begins at",
+        "transcript": "Welcome to the theater. The show begins at",
+        "translation": "Welcome to the theater. The show begins at",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 6.51,
+        "committed_seconds": 5.5,
+        "request_id": "1daf8803-a93c-44c8-a277-35a05871c749",
+        "stream_id": "cbb2fdf3-d35c-4795-ae6b-b4193feeaf41",
+        "inference_seconds": 1.863,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 3,
+      "status": 200,
+      "result": {
+        "text": "Willkommen im Theater. Vielen",
+        "transcript": "Willkommen im Theater. Vielen",
+        "translation": "Good evening! Welcome to the theatre!",
+        "language": "de",
+        "output_language": "de",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 6.55,
+        "committed_seconds": 5.16,
+        "request_id": "6fae4f26-f422-40fa-ad29-774079bdcf1a",
+        "stream_id": "b0e7185c-0791-4a0f-9969-e43c1b3db303",
+        "inference_seconds": 3.524,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "seven tonight.",
+        "transcript": "seven tonight.",
+        "translation": "seven tonight.",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 3.41,
+        "committed_seconds": 3.41,
+        "request_id": "f6381c69-df3f-4828-bb83-e461bf69fc58",
+        "stream_id": "cbb2fdf3-d35c-4795-ae6b-b4193feeaf41",
+        "inference_seconds": 1.8,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 2,
+      "status": 200,
+      "result": {
+        "text": "Y'en eut peut-être !",
+        "transcript": "Y'en eut peut-être !",
+        "translation": "",
+        "language": "fr",
+        "output_language": "fr",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 2.0,
+        "committed_seconds": 2.0,
+        "request_id": "bb68d33c-4abc-45a7-bf52-e45a64134a7f",
+        "stream_id": "a1113f81-2ebc-4a50-bca9-b091609d564a",
+        "inference_seconds": 1.847,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 1,
+      "status": 200,
+      "result": {
+        "text": "¡Hola! Bienvenidos al teatro. ¡Muchas gracias por venir esta noche!",
+        "transcript": "¡Hola! Bienvenidos al teatro. ¡Muchas gracias por venir esta noche!",
+        "translation": "",
+        "language": "es",
+        "output_language": "es",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 5.8,
+        "committed_seconds": 5.8,
+        "request_id": "4213b254-37f6-4865-8c29-5c2f7b4f8a00",
+        "stream_id": "920ab083-c76b-4a34-bbd7-b9731b1bc253",
+        "inference_seconds": 1.974,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 2,
+      "status": 200,
+      "result": {
+        "text": "et c'est devenu ce qu'il y a.",
+        "transcript": "et c'est devenu ce qu'il y a.",
+        "translation": "",
+        "language": "fr",
+        "output_language": "fr",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 2.0,
+        "committed_seconds": 2.0,
+        "request_id": "ad92b5c8-f6a6-452a-a280-64a84dc12a9c",
+        "stream_id": "a1113f81-2ebc-4a50-bca9-b091609d564a",
+        "inference_seconds": 1.771,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 3,
+      "status": 200,
+      "result": {
+        "text": "Dank, für den Besuch heute Abend. Willkommen in",
+        "transcript": "Dank, für den Besuch heute Abend. Willkommen in",
+        "translation": "Thank you for even visiting tonight!",
+        "language": "de",
+        "output_language": "de",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 6.59,
+        "committed_seconds": 5.19,
+        "request_id": "ead7322e-37bb-4047-89e9-4f956b0c5b4a",
+        "stream_id": "b0e7185c-0791-4a0f-9969-e43c1b3db303",
+        "inference_seconds": 3.421,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "Welcome to the theater. The show begins at seven tonight.",
+        "transcript": "Welcome to the theater. The show begins at seven tonight.",
+        "translation": "Welcome to the theater. The show begins at seven tonight.",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 4.7,
+        "committed_seconds": 4.7,
+        "request_id": "2f9940fc-03fa-4b61-821b-0923b64719a3",
+        "stream_id": "cbb2fdf3-d35c-4795-ae6b-b4193feeaf41",
+        "inference_seconds": 1.779,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 1,
+      "status": 200,
+      "result": {
+        "text": "Hola, bienvenidos al teatro, muchas gracias por venir",
+        "transcript": "Hola, bienvenidos al teatro, muchas gracias por venir",
+        "translation": "",
+        "language": "es",
+        "output_language": "es",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 6.0,
+        "committed_seconds": 4.7,
+        "request_id": "59d1a0ad-98eb-480b-9b6e-cf3260132c02",
+        "stream_id": "920ab083-c76b-4a34-bbd7-b9731b1bc253",
+        "inference_seconds": 1.819,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 3,
+      "status": 200,
+      "result": {
+        "text": "Theater. Vielen Dank für den Wohlfeuerabend.",
+        "transcript": "Theater. Vielen Dank für den Wohlfeuerabend.",
+        "translation": "theater. Thank you very much, for even visiting tonight.",
+        "language": "de",
+        "output_language": "de",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 5.3,
+        "committed_seconds": 5.3,
+        "request_id": "34a0f218-d225-4048-ae84-0cdce8ca89a5",
+        "stream_id": "b0e7185c-0791-4a0f-9969-e43c1b3db303",
+        "inference_seconds": 3.376,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 2,
+      "status": 200,
+      "result": {
+        "text": "Bienvenue au P.A. Merci de venir ce soir.",
+        "transcript": "Bienvenue au P.A. Merci de venir ce soir.",
+        "translation": "",
+        "language": "fr",
+        "output_language": "fr",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 4.7,
+        "committed_seconds": 4.7,
+        "request_id": "8bd9bc61-2122-40fb-a19d-eb3f5da25387",
+        "stream_id": "a1113f81-2ebc-4a50-bca9-b091609d564a",
+        "inference_seconds": 1.762,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "Welcome to the theater the show begin at seven",
+        "transcript": "Welcome to the theater the show begin at seven",
+        "translation": "Welcome to the theater the show begin at seven",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 6.0,
+        "committed_seconds": 4.77,
+        "request_id": "23ec4474-a0a4-4a96-9f22-740cdcd047db",
+        "stream_id": "cbb2fdf3-d35c-4795-ae6b-b4193feeaf41",
+        "inference_seconds": 1.754,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 1,
+      "status": 200,
+      "result": {
+        "text": "esta noche. Hola, bienvenidos al teatro.",
+        "transcript": "esta noche. Hola, bienvenidos al teatro.",
+        "translation": "",
+        "language": "es",
+        "output_language": "es",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 6.5,
+        "committed_seconds": 4.78,
+        "request_id": "51dcdd92-2878-407a-aad0-1ef69b9ae17d",
+        "stream_id": "920ab083-c76b-4a34-bbd7-b9731b1bc253",
+        "inference_seconds": 1.882,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 2,
+      "status": 200,
+      "result": {
+        "text": "Bienvenue au théâtre. Merci de venir ce soir.",
+        "transcript": "Bienvenue au théâtre. Merci de venir ce soir.",
+        "translation": "",
+        "language": "fr",
+        "output_language": "fr",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 4.0,
+        "committed_seconds": 4.0,
+        "request_id": "d580cd80-5920-4b11-a270-4597bc5e3e49",
+        "stream_id": "a1113f81-2ebc-4a50-bca9-b091609d564a",
+        "inference_seconds": 1.896,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 1,
+      "status": 200,
+      "result": {
+        "text": "Muchas gracias por venir esta noche.",
+        "transcript": "Muchas gracias por venir esta noche.",
+        "translation": "",
+        "language": "es",
+        "output_language": "es",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 4.32,
+        "committed_seconds": 4.32,
+        "request_id": "7274e66f-6b3c-42f8-9d49-a5fa0d8d5224",
+        "stream_id": "920ab083-c76b-4a34-bbd7-b9731b1bc253",
+        "inference_seconds": 1.878,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 3,
+      "status": 200,
+      "result": {
+        "text": "Willkommen im Theater! Elendank! Die Elendemut heute Abend!",
+        "transcript": "Willkommen im Theater! Elendank! Die Elendemut heute Abend!",
+        "translation": "Welcome to the theater, Elon Tank, who even removes the arm.",
+        "language": "de",
+        "output_language": "de",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 6.0,
+        "committed_seconds": 4.84,
+        "request_id": "a329fb62-acd4-413d-89a4-cf466f4b39af",
+        "stream_id": "b0e7185c-0791-4a0f-9969-e43c1b3db303",
+        "inference_seconds": 3.674,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "tonight. Welcome to the theater. The show begins at",
+        "transcript": "tonight. Welcome to the theater. The show begins at",
+        "translation": "tonight. Welcome to the theater. The show begins at",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 6.53,
+        "committed_seconds": 5.5,
+        "request_id": "94b37ef7-81f3-4d08-9d6e-77218bd73873",
+        "stream_id": "cbb2fdf3-d35c-4795-ae6b-b4193feeaf41",
+        "inference_seconds": 1.789,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 2,
+      "status": 200,
+      "result": {
+        "text": "Je n'ai pas l'air.",
+        "transcript": "Je n'ai pas l'air.",
+        "translation": "",
+        "language": "fr",
+        "output_language": "fr",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 1.9,
+        "committed_seconds": 1.9,
+        "request_id": "a112604f-8f59-4601-a974-d2519caa619c",
+        "stream_id": "a1113f81-2ebc-4a50-bca9-b091609d564a",
+        "inference_seconds": 1.879,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "seven tonight.",
+        "transcript": "seven tonight.",
+        "translation": "seven tonight.",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 3.33,
+        "committed_seconds": 3.33,
+        "request_id": "75d5523b-0486-4050-a017-3ba142ef23f3",
+        "stream_id": "cbb2fdf3-d35c-4795-ae6b-b4193feeaf41",
+        "inference_seconds": 1.847,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 3,
+      "status": 200,
+      "result": {
+        "text": "Willkommen im Theater! Vielen Dank für den",
+        "transcript": "Willkommen im Theater! Vielen Dank für den",
+        "translation": "Welcome to the theater. Thank you very much.",
+        "language": "de",
+        "output_language": "de",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 6.56,
+        "committed_seconds": 5.16,
+        "request_id": "71d3a259-7b2b-4382-bca9-1f092e884f63",
+        "stream_id": "b0e7185c-0791-4a0f-9969-e43c1b3db303",
+        "inference_seconds": 3.604,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 2,
+      "status": 200,
+      "result": {
+        "text": "Merci de venir ce soir.",
+        "transcript": "Merci de venir ce soir.",
+        "translation": "",
+        "language": "fr",
+        "output_language": "fr",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 2.1,
+        "committed_seconds": 2.1,
+        "request_id": "5ac5202a-bf7a-48ae-97ae-3607d3f6d5f5",
+        "stream_id": "a1113f81-2ebc-4a50-bca9-b091609d564a",
+        "inference_seconds": 1.827,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 1,
+      "status": 200,
+      "result": {
+        "text": "¡Hola! Bienvenidos al teatro. ¡Muchas gracias por venir esta noche!",
+        "transcript": "¡Hola! Bienvenidos al teatro. ¡Muchas gracias por venir esta noche!",
+        "translation": "",
+        "language": "es",
+        "output_language": "es",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 5.8,
+        "committed_seconds": 5.8,
+        "request_id": "ec1d9e64-6725-4ec6-a7b3-347b4b67ec36",
+        "stream_id": "920ab083-c76b-4a34-bbd7-b9731b1bc253",
+        "inference_seconds": 1.913,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "Welcome to the theater. The show begins at 7 tonight.",
+        "transcript": "Welcome to the theater. The show begins at 7 tonight.",
+        "translation": "Welcome to the theater. The show begins at 7 tonight.",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 4.8,
+        "committed_seconds": 4.8,
+        "request_id": "1b2ca8b0-2999-40e3-9a51-6610c1570d7e",
+        "stream_id": "cbb2fdf3-d35c-4795-ae6b-b4193feeaf41",
+        "inference_seconds": 1.764,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 3,
+      "status": 200,
+      "result": {
+        "text": "besuch heute Abend. Willkommen im Theater. Vielen",
+        "transcript": "besuch heute Abend. Willkommen im Theater. Vielen",
+        "translation": "See you tonight!",
+        "language": "de",
+        "output_language": "de",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 6.5,
+        "committed_seconds": 5.47,
+        "request_id": "f483221d-47a3-446e-9d34-c8f6331a7332",
+        "stream_id": "b0e7185c-0791-4a0f-9969-e43c1b3db303",
+        "inference_seconds": 3.359,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 1,
+      "status": 200,
+      "result": {
+        "text": "Hola, bienvenidos al teatro, muchas gracias por venir",
+        "transcript": "Hola, bienvenidos al teatro, muchas gracias por venir",
+        "translation": "",
+        "language": "es",
+        "output_language": "es",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 6.0,
+        "committed_seconds": 4.7,
+        "request_id": "1c73dd1b-c3ea-475d-a7f9-f25d1238d7e3",
+        "stream_id": "920ab083-c76b-4a34-bbd7-b9731b1bc253",
+        "inference_seconds": 1.852,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 2,
+      "status": 200,
+      "result": {
+        "text": "Bienvenue au P.A. Merci de venir ce soir.",
+        "transcript": "Bienvenue au P.A. Merci de venir ce soir.",
+        "translation": "",
+        "language": "fr",
+        "output_language": "fr",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 4.6,
+        "committed_seconds": 4.6,
+        "request_id": "2b63a57e-7052-4e9a-b6d2-94953c7030d8",
+        "stream_id": "a1113f81-2ebc-4a50-bca9-b091609d564a",
+        "inference_seconds": 1.849,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "Welcome to the theater. The show begin at seven",
+        "transcript": "Welcome to the theater. The show begin at seven",
+        "translation": "Welcome to the theater. The show begin at seven",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 6.0,
+        "committed_seconds": 4.74,
+        "request_id": "56c14f46-5929-46ed-ab70-65e20a0801fd",
+        "stream_id": "cbb2fdf3-d35c-4795-ae6b-b4193feeaf41",
+        "inference_seconds": 1.786,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 3,
+      "status": 200,
+      "result": {
+        "text": "Dank, für Ihren Besuch heute Abend. Willkommen ins",
+        "transcript": "Dank, für Ihren Besuch heute Abend. Willkommen ins",
+        "translation": "Thank you very much, to even the Wolfhäuter Abend. Will come and in.",
+        "language": "de",
+        "output_language": "de",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 6.53,
+        "committed_seconds": 5.23,
+        "request_id": "ac276962-4b08-40d7-82fc-755f2761fdd2",
+        "stream_id": "b0e7185c-0791-4a0f-9969-e43c1b3db303",
+        "inference_seconds": 3.606,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 2,
+      "status": 200,
+      "result": {
+        "text": "Bienvenue au théâtre. Merci de venir ce soir.",
+        "transcript": "Bienvenue au théâtre. Merci de venir ce soir.",
+        "translation": "",
+        "language": "fr",
+        "output_language": "fr",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 4.1,
+        "committed_seconds": 4.1,
+        "request_id": "57996cbf-d48f-43f6-ade7-e8edb74628d7",
+        "stream_id": "a1113f81-2ebc-4a50-bca9-b091609d564a",
+        "inference_seconds": 1.909,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 1,
+      "status": 200,
+      "result": {
+        "text": "esta noche. Hola, bienvenidos al teatro,",
+        "transcript": "esta noche. Hola, bienvenidos al teatro,",
+        "translation": "",
+        "language": "es",
+        "output_language": "es",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 6.5,
+        "committed_seconds": 4.77,
+        "request_id": "c4c9f402-ae12-4a77-be32-49ff25fcee98",
+        "stream_id": "920ab083-c76b-4a34-bbd7-b9731b1bc253",
+        "inference_seconds": 1.995,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 1,
+      "status": 200,
+      "result": {
+        "text": "Muchas gracias por venir esta noche.",
+        "transcript": "Muchas gracias por venir esta noche.",
+        "translation": "",
+        "language": "es",
+        "output_language": "es",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 4.33,
+        "committed_seconds": 4.33,
+        "request_id": "bc6f14f7-99db-4bfc-acfb-668ec244c032",
+        "stream_id": "920ab083-c76b-4a34-bbd7-b9731b1bc253",
+        "inference_seconds": 1.892,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 3,
+      "status": 200,
+      "result": {
+        "text": "Theater! Heel und Tank, du heben den Wunsch heute Abend!",
+        "transcript": "Theater! Heel und Tank, du heben den Wunsch heute Abend!",
+        "translation": "Thank you very much for watching and see you in the next video!",
+        "language": "de",
+        "output_language": "de",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 5.4,
+        "committed_seconds": 5.4,
+        "request_id": "f4426c2c-6494-4fa6-a57c-4fffed0d2bc6",
+        "stream_id": "b0e7185c-0791-4a0f-9969-e43c1b3db303",
+        "inference_seconds": 3.748,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "Welcome to the theater. The show begins at",
+        "transcript": "Welcome to the theater. The show begins at",
+        "translation": "Welcome to the theater. The show begins at",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 6.56,
+        "committed_seconds": 5.53,
+        "request_id": "2ea73145-dedb-438a-8caf-fe34614c5009",
+        "stream_id": "cbb2fdf3-d35c-4795-ae6b-b4193feeaf41",
+        "inference_seconds": 1.906,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 2,
+      "status": 200,
+      "result": {
+        "text": "Y'en eut peut-être.",
+        "transcript": "Y'en eut peut-être.",
+        "translation": "",
+        "language": "fr",
+        "output_language": "fr",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 2.0,
+        "committed_seconds": 2.0,
+        "request_id": "8ccef3d1-f2a3-452c-9d47-76ca1e37894c",
+        "stream_id": "a1113f81-2ebc-4a50-bca9-b091609d564a",
+        "inference_seconds": 1.798,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "seven tonight.",
+        "transcript": "seven tonight.",
+        "translation": "seven tonight.",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 3.43,
+        "committed_seconds": 3.43,
+        "request_id": "ed8722a3-d1f4-4763-9e70-e6fdf2e7c9ae",
+        "stream_id": "cbb2fdf3-d35c-4795-ae6b-b4193feeaf41",
+        "inference_seconds": 1.737,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 2,
+      "status": 200,
+      "result": {
+        "text": "et c'est devenu ce soir.",
+        "transcript": "et c'est devenu ce soir.",
+        "translation": "",
+        "language": "fr",
+        "output_language": "fr",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 2.0,
+        "committed_seconds": 2.0,
+        "request_id": "2c2d0383-7dae-4855-82d1-f8ab30194622",
+        "stream_id": "a1113f81-2ebc-4a50-bca9-b091609d564a",
+        "inference_seconds": 1.833,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 3,
+      "status": 200,
+      "result": {
+        "text": "Willkommen im Theater. Vielen Dank für Ihren Besuch heute Abend.",
+        "transcript": "Willkommen im Theater. Vielen Dank für Ihren Besuch heute Abend.",
+        "translation": "Welcome to the theater. Thank you for your visit tonight.",
+        "language": "de",
+        "output_language": "de",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 5.5,
+        "committed_seconds": 5.5,
+        "request_id": "75028412-d5bb-4ace-a691-57d199523d6f",
+        "stream_id": "b0e7185c-0791-4a0f-9969-e43c1b3db303",
+        "inference_seconds": 3.474,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 1,
+      "status": 200,
+      "result": {
+        "text": "¡Hola! Bienvenidos al teatro. ¡Muchas gracias por venir esta noche!",
+        "transcript": "¡Hola! Bienvenidos al teatro. ¡Muchas gracias por venir esta noche!",
+        "translation": "",
+        "language": "es",
+        "output_language": "es",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 5.8,
+        "committed_seconds": 5.8,
+        "request_id": "d9eb0404-b9b5-44cd-be76-6c57ca56b10c",
+        "stream_id": "920ab083-c76b-4a34-bbd7-b9731b1bc253",
+        "inference_seconds": 1.855,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "Welcome to the theater. The show begins at 7 tonight.",
+        "transcript": "Welcome to the theater. The show begins at 7 tonight.",
+        "translation": "Welcome to the theater. The show begins at 7 tonight.",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 4.6,
+        "committed_seconds": 4.6,
+        "request_id": "2117baf7-87d2-4d9f-8989-72927e54705e",
+        "stream_id": "cbb2fdf3-d35c-4795-ae6b-b4193feeaf41",
+        "inference_seconds": 1.705,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 2,
+      "status": 200,
+      "result": {
+        "text": "Bienvenue au P.A. Merci de venir ce soir.",
+        "transcript": "Bienvenue au P.A. Merci de venir ce soir.",
+        "translation": "",
+        "language": "fr",
+        "output_language": "fr",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 4.7,
+        "committed_seconds": 4.7,
+        "request_id": "6fd83b86-4a71-482d-8b88-81b5a3c23fee",
+        "stream_id": "a1113f81-2ebc-4a50-bca9-b091609d564a",
+        "inference_seconds": 1.822,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 3,
+      "status": 200,
+      "result": {
+        "text": "Willkommen im Theater! Vielen Dank für Ihren Besuch heute Abend!",
+        "transcript": "Willkommen im Theater! Vielen Dank für Ihren Besuch heute Abend!",
+        "translation": "Welcome to the theater! Thank you very much for visiting tonight!",
+        "language": "de",
+        "output_language": "de",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 5.9,
+        "committed_seconds": 5.9,
+        "request_id": "3462ef6c-68f5-4ccb-82db-9b59cae2baed",
+        "stream_id": "b0e7185c-0791-4a0f-9969-e43c1b3db303",
+        "inference_seconds": 3.453,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 1,
+      "status": 200,
+      "result": {
+        "text": "Hola, bienvenidos al teatro, muchas gracias por venir",
+        "transcript": "Hola, bienvenidos al teatro, muchas gracias por venir",
+        "translation": "",
+        "language": "es",
+        "output_language": "es",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 6.0,
+        "committed_seconds": 4.72,
+        "request_id": "1f258c87-c6e4-41af-af08-321d4bedf447",
+        "stream_id": "920ab083-c76b-4a34-bbd7-b9731b1bc253",
+        "inference_seconds": 1.803,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "Welcome to the theater. The show begin at seven",
+        "transcript": "Welcome to the theater. The show begin at seven",
+        "translation": "Welcome to the theater. The show begin at seven",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 6.0,
+        "committed_seconds": 4.85,
+        "request_id": "ba6622fd-0a6d-4b24-98c5-c737b3d167f5",
+        "stream_id": "cbb2fdf3-d35c-4795-ae6b-b4193feeaf41",
+        "inference_seconds": 1.766,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 2,
+      "status": 200,
+      "result": {
+        "text": "Bienvenue au théâtre. Merci de venir ce soir.",
+        "transcript": "Bienvenue au théâtre. Merci de venir ce soir.",
+        "translation": "",
+        "language": "fr",
+        "output_language": "fr",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 4.0,
+        "committed_seconds": 4.0,
+        "request_id": "461740e7-8bb4-4ced-bca0-69085ea978e4",
+        "stream_id": "a1113f81-2ebc-4a50-bca9-b091609d564a",
+        "inference_seconds": 1.747,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 1,
+      "status": 200,
+      "result": {
+        "text": "esta noche. Hola, bienvenidos al teatro. Muchas",
+        "transcript": "esta noche. Hola, bienvenidos al teatro. Muchas",
+        "translation": "",
+        "language": "es",
+        "output_language": "es",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 6.58,
+        "committed_seconds": 5.53,
+        "request_id": "51370946-edd1-45ec-ad7b-6795dede0b13",
+        "stream_id": "920ab083-c76b-4a34-bbd7-b9731b1bc253",
+        "inference_seconds": 1.974,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 3,
+      "status": 200,
+      "result": {
+        "text": "Willkommen im Theater! Healen Tank, du heet an der Wut heute",
+        "transcript": "Willkommen im Theater! Healen Tank, du heet an der Wut heute",
+        "translation": "Welcome to the theater! Healing tank, to even the mood point!",
+        "language": "de",
+        "output_language": "de",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 6.0,
+        "committed_seconds": 4.76,
+        "request_id": "e7be2082-7857-464c-9375-45a18f1e2021",
+        "stream_id": "b0e7185c-0791-4a0f-9969-e43c1b3db303",
+        "inference_seconds": 3.702,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 2,
+      "status": 200,
+      "result": {
+        "text": "Je n'ai pas l'air d'être là.",
+        "transcript": "Je n'ai pas l'air d'être là.",
+        "translation": "",
+        "language": "fr",
+        "output_language": "fr",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 1.9,
+        "committed_seconds": 1.9,
+        "request_id": "3097d958-2c70-41d5-8976-a618d59b0c05",
+        "stream_id": "a1113f81-2ebc-4a50-bca9-b091609d564a",
+        "inference_seconds": 1.947,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "Welcome to the theater. The show begins at",
+        "transcript": "Welcome to the theater. The show begins at",
+        "translation": "Welcome to the theater. The show begins at",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 6.55,
+        "committed_seconds": 5.52,
+        "request_id": "bb938d25-062a-433e-b43d-9c899709cd84",
+        "stream_id": "cbb2fdf3-d35c-4795-ae6b-b4193feeaf41",
+        "inference_seconds": 1.973,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 1,
+      "status": 200,
+      "result": {
+        "text": "gracias por venir esta noche.",
+        "transcript": "gracias por venir esta noche.",
+        "translation": "",
+        "language": "es",
+        "output_language": "es",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 3.55,
+        "committed_seconds": 3.55,
+        "request_id": "d4a37614-06a4-49ad-8f6f-2664bd42863b",
+        "stream_id": "920ab083-c76b-4a34-bbd7-b9731b1bc253",
+        "inference_seconds": 1.893,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 2,
+      "status": 200,
+      "result": {
+        "text": "Merci de venir ce soir.",
+        "transcript": "Merci de venir ce soir.",
+        "translation": "",
+        "language": "fr",
+        "output_language": "fr",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 2.1,
+        "committed_seconds": 2.1,
+        "request_id": "473edb3c-cbfb-4317-854f-fbabe3c50836",
+        "stream_id": "a1113f81-2ebc-4a50-bca9-b091609d564a",
+        "inference_seconds": 1.854,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "seven tonight.",
+        "transcript": "seven tonight.",
+        "translation": "seven tonight.",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 3.53,
+        "committed_seconds": 3.53,
+        "request_id": "875ce482-ccc4-4219-a6bb-0c1c62baea79",
+        "stream_id": "cbb2fdf3-d35c-4795-ae6b-b4193feeaf41",
+        "inference_seconds": 1.779,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 3,
+      "status": 200,
+      "result": {
+        "text": "Willkommen im Theater! Vielen Dank für",
+        "transcript": "Willkommen im Theater! Vielen Dank für",
+        "translation": "Good evening. Welcome to the theater. Thank you very much.",
+        "language": "de",
+        "output_language": "de",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 6.54,
+        "committed_seconds": 5.44,
+        "request_id": "f285e2d3-288b-4f2e-b940-bdb05421e648",
+        "stream_id": "b0e7185c-0791-4a0f-9969-e43c1b3db303",
+        "inference_seconds": 3.366,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 1,
+      "status": 200,
+      "result": {
+        "text": "¡Hola! Bienvenidos al teatro. ¡Muchas gracias por venir esta noche!",
+        "transcript": "¡Hola! Bienvenidos al teatro. ¡Muchas gracias por venir esta noche!",
+        "translation": "",
+        "language": "es",
+        "output_language": "es",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 5.8,
+        "committed_seconds": 5.8,
+        "request_id": "eb427786-b3f4-476e-b1ec-633bde1479c1",
+        "stream_id": "920ab083-c76b-4a34-bbd7-b9731b1bc253",
+        "inference_seconds": 1.929,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "Welcome to the theater. The show begins at seven tonight.",
+        "transcript": "Welcome to the theater. The show begins at seven tonight.",
+        "translation": "Welcome to the theater. The show begins at seven tonight.",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 4.5,
+        "committed_seconds": 4.5,
+        "request_id": "31326047-bc7b-484c-bed7-92c06aeae500",
+        "stream_id": "cbb2fdf3-d35c-4795-ae6b-b4193feeaf41",
+        "inference_seconds": 1.867,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 2,
+      "status": 200,
+      "result": {
+        "text": "Bienvenue au P.A. Merci de venir ce soir.",
+        "transcript": "Bienvenue au P.A. Merci de venir ce soir.",
+        "translation": "",
+        "language": "fr",
+        "output_language": "fr",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 4.6,
+        "committed_seconds": 4.6,
+        "request_id": "bd83855b-dc41-4458-9aca-a2ddebcc7875",
+        "stream_id": "a1113f81-2ebc-4a50-bca9-b091609d564a",
+        "inference_seconds": 1.837,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 3,
+      "status": 200,
+      "result": {
+        "text": "Willkommen im Theater.",
+        "transcript": "Willkommen im Theater.",
+        "translation": "Even the wolf tonight. Welcome into our...",
+        "language": "de",
+        "output_language": "de",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 6.5,
+        "committed_seconds": 4.87,
+        "request_id": "c56a6070-b9fc-48ec-884e-7e987e84c8a4",
+        "stream_id": "b0e7185c-0791-4a0f-9969-e43c1b3db303",
+        "inference_seconds": 3.439,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 1,
+      "status": 200,
+      "result": {
+        "text": "Hola, bienvenidos al teatro, muchas gracias por venir",
+        "transcript": "Hola, bienvenidos al teatro, muchas gracias por venir",
+        "translation": "",
+        "language": "es",
+        "output_language": "es",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 6.0,
+        "committed_seconds": 4.72,
+        "request_id": "07dfbcc6-7e79-4884-b857-bbf5a2c8ea75",
+        "stream_id": "920ab083-c76b-4a34-bbd7-b9731b1bc253",
+        "inference_seconds": 2.08,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "Welcome to the theater the show begin at seven",
+        "transcript": "Welcome to the theater the show begin at seven",
+        "translation": "Welcome to the theater the show begin at seven",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 6.0,
+        "committed_seconds": 4.84,
+        "request_id": "7638699c-1da7-4920-87d6-8628a51df9f9",
+        "stream_id": "cbb2fdf3-d35c-4795-ae6b-b4193feeaf41",
+        "inference_seconds": 2.034,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 2,
+      "status": 200,
+      "result": {
+        "text": "Bienvenue au théâtre. Merci de venir ce soir.",
+        "transcript": "Bienvenue au théâtre. Merci de venir ce soir.",
+        "translation": "",
+        "language": "fr",
+        "output_language": "fr",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 4.1,
+        "committed_seconds": 4.1,
+        "request_id": "6396dad4-d797-45cd-a98f-0e64c270a55c",
+        "stream_id": "a1113f81-2ebc-4a50-bca9-b091609d564a",
+        "inference_seconds": 2.047,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 3,
+      "status": 200,
+      "result": {
+        "text": "Vielen Dank, für Ihren Besuch heute Abend.",
+        "transcript": "Vielen Dank, für Ihren Besuch heute Abend.",
+        "translation": "Thank you very much for watching this video.",
+        "language": "de",
+        "output_language": "de",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 6.53,
+        "committed_seconds": 3.74,
+        "request_id": "0fbcb330-ca6c-4471-b64b-f53409f2af62",
+        "stream_id": "b0e7185c-0791-4a0f-9969-e43c1b3db303",
+        "inference_seconds": 3.618,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 2,
+      "status": 200,
+      "result": {
+        "text": "Je n'en ai pas hâte.",
+        "transcript": "Je n'en ai pas hâte.",
+        "translation": "",
+        "language": "fr",
+        "output_language": "fr",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 1.9,
+        "committed_seconds": 1.9,
+        "request_id": "7d711371-3d84-4225-b3b5-23fd0acfaa41",
+        "stream_id": "a1113f81-2ebc-4a50-bca9-b091609d564a",
+        "inference_seconds": 1.864,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 3,
+      "status": 200,
+      "result": {
+        "text": "Willkommen im Theater! Vielen Dank! Willkommen",
+        "transcript": "Willkommen im Theater! Vielen Dank! Willkommen",
+        "translation": "Welcome to the theater! Thank you very much!",
+        "language": "de",
+        "output_language": "de",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 6.89,
+        "committed_seconds": 5.22,
+        "request_id": "ed3bcf25-c8cd-41aa-ba63-220d7474b858",
+        "stream_id": "b0e7185c-0791-4a0f-9969-e43c1b3db303",
+        "inference_seconds": 3.738,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 1,
+      "status": 200,
+      "result": {
+        "text": "esta noche. Hola, bienvenidos al teatro. Muchas",
+        "transcript": "esta noche. Hola, bienvenidos al teatro. Muchas",
+        "translation": "",
+        "language": "es",
+        "output_language": "es",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 6.58,
+        "committed_seconds": 5.56,
+        "request_id": "e3e6c460-b23d-4482-b9b3-6f2147f989ce",
+        "stream_id": "920ab083-c76b-4a34-bbd7-b9731b1bc253",
+        "inference_seconds": 2.126,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "Welcome to the theater. The show begins at",
+        "transcript": "Welcome to the theater. The show begins at",
+        "translation": "Welcome to the theater. The show begins at",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 6.56,
+        "committed_seconds": 5.52,
+        "request_id": "1adb1643-8b9e-4dff-8ed1-f49846454c18",
+        "stream_id": "cbb2fdf3-d35c-4795-ae6b-b4193feeaf41",
+        "inference_seconds": 2.005,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 2,
+      "status": 200,
+      "result": {
+        "text": "et c'est devenu ce qu'il y a.",
+        "transcript": "et c'est devenu ce qu'il y a.",
+        "translation": "",
+        "language": "fr",
+        "output_language": "fr",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 2.1,
+        "committed_seconds": 2.1,
+        "request_id": "0188623e-5cdb-482d-9588-495dfc81bee9",
+        "stream_id": "a1113f81-2ebc-4a50-bca9-b091609d564a",
+        "inference_seconds": 1.955,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 1,
+      "status": 200,
+      "result": {
+        "text": "gracias por venir esta noche.",
+        "transcript": "gracias por venir esta noche.",
+        "translation": "",
+        "language": "es",
+        "output_language": "es",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 3.62,
+        "committed_seconds": 3.62,
+        "request_id": "4cfa877b-de4d-451a-9c89-767e1dbef6f4",
+        "stream_id": "920ab083-c76b-4a34-bbd7-b9731b1bc253",
+        "inference_seconds": 1.874,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "seven tonight.",
+        "transcript": "seven tonight.",
+        "translation": "seven tonight.",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 3.54,
+        "committed_seconds": 3.54,
+        "request_id": "7eb0b795-0ca7-4c6e-9217-e32cc442f870",
+        "stream_id": "cbb2fdf3-d35c-4795-ae6b-b4193feeaf41",
+        "inference_seconds": 1.824,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 3,
+      "status": 200,
+      "result": {
+        "text": "Willkommen im Theater. Vielen",
+        "transcript": "Willkommen im Theater. Vielen",
+        "translation": "Welcome to the theater!",
+        "language": "de",
+        "output_language": "de",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 6.57,
+        "committed_seconds": 5.37,
+        "request_id": "5ef88bb1-2a79-48ba-8376-47c77728b067",
+        "stream_id": "b0e7185c-0791-4a0f-9969-e43c1b3db303",
+        "inference_seconds": 3.39,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "Welcome to the theater. The show begins at seven tonight.",
+        "transcript": "Welcome to the theater. The show begins at seven tonight.",
+        "translation": "Welcome to the theater. The show begins at seven tonight.",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 4.5,
+        "committed_seconds": 4.5,
+        "request_id": "7c342519-14d4-4dfb-8822-61ca133570b6",
+        "stream_id": "cbb2fdf3-d35c-4795-ae6b-b4193feeaf41",
+        "inference_seconds": 1.835,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 2,
+      "status": 200,
+      "result": {
+        "text": "Bienvenue au P.A., même si le ménage se soit.",
+        "transcript": "Bienvenue au P.A., même si le ménage se soit.",
+        "translation": "",
+        "language": "fr",
+        "output_language": "fr",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 4.6,
+        "committed_seconds": 4.6,
+        "request_id": "01d3abe0-43bc-4e0f-b4b6-58a369b23c86",
+        "stream_id": "a1113f81-2ebc-4a50-bca9-b091609d564a",
+        "inference_seconds": 1.971,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 1,
+      "status": 200,
+      "result": {
+        "text": "¡Hola! Bienvenidos al teatro. ¡Muchas gracias por venir esta noche!",
+        "transcript": "¡Hola! Bienvenidos al teatro. ¡Muchas gracias por venir esta noche!",
+        "translation": "",
+        "language": "es",
+        "output_language": "es",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 5.7,
+        "committed_seconds": 5.7,
+        "request_id": "ebcfaa70-b1dc-46a1-b422-62b893a85884",
+        "stream_id": "920ab083-c76b-4a34-bbd7-b9731b1bc253",
+        "inference_seconds": 2.03,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 3,
+      "status": 200,
+      "result": {
+        "text": "Dank für Ihren Besuch heute Abend. Willkommen im",
+        "transcript": "Dank für Ihren Besuch heute Abend. Willkommen im",
+        "translation": "Thank you, for even visiting this evening. Welcome in...",
+        "language": "de",
+        "output_language": "de",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 6.5,
+        "committed_seconds": 5.17,
+        "request_id": "a69668a0-b6a5-4725-a6c2-184ac5c9172a",
+        "stream_id": "b0e7185c-0791-4a0f-9969-e43c1b3db303",
+        "inference_seconds": 3.582,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 2,
+      "status": 200,
+      "result": {
+        "text": "Bienvenue au théâtre. Merci de venir ce soir.",
+        "transcript": "Bienvenue au théâtre. Merci de venir ce soir.",
+        "translation": "",
+        "language": "fr",
+        "output_language": "fr",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 4.0,
+        "committed_seconds": 4.0,
+        "request_id": "bf3cc099-d736-4fea-9e12-516f935c199f",
+        "stream_id": "a1113f81-2ebc-4a50-bca9-b091609d564a",
+        "inference_seconds": 1.82,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 3,
+      "status": 200,
+      "result": {
+        "text": "Theater. Vielen Dank für even den Wohl heute Abend.",
+        "transcript": "Theater. Vielen Dank für even den Wohl heute Abend.",
+        "translation": "Thank you very much for watching this video and see you in the next one!",
+        "language": "de",
+        "output_language": "de",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 5.43,
+        "committed_seconds": 5.43,
+        "request_id": "f1f7d4a0-e478-447d-b659-608d980beea5",
+        "stream_id": "b0e7185c-0791-4a0f-9969-e43c1b3db303",
+        "inference_seconds": 3.476,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "Welcome to the theater the show begin at seven",
+        "transcript": "Welcome to the theater the show begin at seven",
+        "translation": "Welcome to the theater the show begin at seven",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 6.0,
+        "committed_seconds": 4.83,
+        "request_id": "8510ff34-7271-415d-88a0-27d289fc5786",
+        "stream_id": "cbb2fdf3-d35c-4795-ae6b-b4193feeaf41",
+        "inference_seconds": 1.888,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 1,
+      "status": 200,
+      "result": {
+        "text": "Hola, bienvenidos al teatro, muchas gracias por venir",
+        "transcript": "Hola, bienvenidos al teatro, muchas gracias por venir",
+        "translation": "",
+        "language": "es",
+        "output_language": "es",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 6.0,
+        "committed_seconds": 4.73,
+        "request_id": "baf30293-6fde-432c-9e65-b27cb924f642",
+        "stream_id": "920ab083-c76b-4a34-bbd7-b9731b1bc253",
+        "inference_seconds": 1.821,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 2,
+      "status": 200,
+      "result": {
+        "text": "Y'en eut peut-être !",
+        "transcript": "Y'en eut peut-être !",
+        "translation": "",
+        "language": "fr",
+        "output_language": "fr",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 1.9,
+        "committed_seconds": 1.9,
+        "request_id": "bd0c9e82-22a2-4685-951e-ab61318ba30f",
+        "stream_id": "a1113f81-2ebc-4a50-bca9-b091609d564a",
+        "inference_seconds": 1.664,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 2,
+      "status": 200,
+      "result": {
+        "text": "Merci de venir ce soir.",
+        "transcript": "Merci de venir ce soir.",
+        "translation": "",
+        "language": "fr",
+        "output_language": "fr",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 2.1,
+        "committed_seconds": 2.1,
+        "request_id": "9b5233b7-f935-4040-8c22-22b3ac51dc82",
+        "stream_id": "a1113f81-2ebc-4a50-bca9-b091609d564a",
+        "inference_seconds": 1.82,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "Welcome to the theater. The show begins at",
+        "transcript": "Welcome to the theater. The show begins at",
+        "translation": "Welcome to the theater. The show begins at",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 6.57,
+        "committed_seconds": 5.52,
+        "request_id": "e81620d1-7c8d-415e-924c-bb5392f03dc2",
+        "stream_id": "cbb2fdf3-d35c-4795-ae6b-b4193feeaf41",
+        "inference_seconds": 1.911,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 3,
+      "status": 200,
+      "result": {
+        "text": "Willkommen im Theater! Elendank! Du ehten den Wunsch heute Abend!",
+        "transcript": "Willkommen im Theater! Elendank! Du ehten den Wunsch heute Abend!",
+        "translation": "Welcome to the theater, Elon Tank, to even the most beautiful evening.",
+        "language": "de",
+        "output_language": "de",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 6.0,
+        "committed_seconds": 6.0,
+        "request_id": "50c4b4c5-e01c-424c-8b3c-db6dfe28f67e",
+        "stream_id": "b0e7185c-0791-4a0f-9969-e43c1b3db303",
+        "inference_seconds": 3.806,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 1,
+      "status": 200,
+      "result": {
+        "text": "esta noche hola bienvenido al teatro muchas",
+        "transcript": "esta noche hola bienvenido al teatro muchas",
+        "translation": "",
+        "language": "es",
+        "output_language": "es",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 6.57,
+        "committed_seconds": 5.51,
+        "request_id": "87789459-a404-47b3-8245-97bcd97c13dc",
+        "stream_id": "920ab083-c76b-4a34-bbd7-b9731b1bc253",
+        "inference_seconds": 2.077,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "seven tonight.",
+        "transcript": "seven tonight.",
+        "translation": "seven tonight.",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 3.45,
+        "committed_seconds": 3.45,
+        "request_id": "fc385f99-51a8-4f85-a066-3648314d3a3b",
+        "stream_id": "cbb2fdf3-d35c-4795-ae6b-b4193feeaf41",
+        "inference_seconds": 1.802,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 1,
+      "status": 200,
+      "result": {
+        "text": "gracias por venir esta noche.",
+        "transcript": "gracias por venir esta noche.",
+        "translation": "",
+        "language": "es",
+        "output_language": "es",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 3.66,
+        "committed_seconds": 3.66,
+        "request_id": "5e8b55fe-4dad-4ca2-a66b-c643a3373164",
+        "stream_id": "920ab083-c76b-4a34-bbd7-b9731b1bc253",
+        "inference_seconds": 1.66,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 3,
+      "status": 200,
+      "result": {
+        "text": "Willkommen im Theater. Vielen Dank, für den Besuch heute Abend.",
+        "transcript": "Willkommen im Theater. Vielen Dank, für den Besuch heute Abend.",
+        "translation": "Welcome to the theater! Thank you very much for watching this evening!",
+        "language": "de",
+        "output_language": "de",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 5.5,
+        "committed_seconds": 5.5,
+        "request_id": "4e9787f3-502a-4ec6-80da-ba4ef4046d5d",
+        "stream_id": "b0e7185c-0791-4a0f-9969-e43c1b3db303",
+        "inference_seconds": 3.47,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "Welcome to the theater. The show begins at 7 tonight.",
+        "transcript": "Welcome to the theater. The show begins at 7 tonight.",
+        "translation": "Welcome to the theater. The show begins at 7 tonight.",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 4.6,
+        "committed_seconds": 4.6,
+        "request_id": "3019efaa-cf9b-4fc9-8993-db9f415cdd23",
+        "stream_id": "cbb2fdf3-d35c-4795-ae6b-b4193feeaf41",
+        "inference_seconds": 1.889,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 2,
+      "status": 200,
+      "result": {
+        "text": "Bienvenue au P.A. Merci de venir ce soir",
+        "transcript": "Bienvenue au P.A. Merci de venir ce soir",
+        "translation": "",
+        "language": "fr",
+        "output_language": "fr",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 4.6,
+        "committed_seconds": 4.6,
+        "request_id": "5b3bdbf2-4e25-4767-a7ae-fdd4ed458ec6",
+        "stream_id": "a1113f81-2ebc-4a50-bca9-b091609d564a",
+        "inference_seconds": 1.91,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 1,
+      "status": 200,
+      "result": {
+        "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche.",
+        "transcript": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche.",
+        "translation": "",
+        "language": "es",
+        "output_language": "es",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 5.7,
+        "committed_seconds": 5.7,
+        "request_id": "23c5c103-1eb7-419f-934d-5f42eece1524",
+        "stream_id": "920ab083-c76b-4a34-bbd7-b9731b1bc253",
+        "inference_seconds": 1.718,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 2,
+      "status": 200,
+      "result": {
+        "text": "Bienvenue au théâtre. Merci de venir ce soir.",
+        "transcript": "Bienvenue au théâtre. Merci de venir ce soir.",
+        "translation": "",
+        "language": "fr",
+        "output_language": "fr",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 4.1,
+        "committed_seconds": 4.1,
+        "request_id": "474f7097-ad0f-41ff-83df-f79ec4548ddb",
+        "stream_id": "a1113f81-2ebc-4a50-bca9-b091609d564a",
+        "inference_seconds": 1.792,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 3,
+      "status": 200,
+      "result": {
+        "text": "Willkommen im Theater. Vielen Dank für den Besuch heute Abend.",
+        "transcript": "Willkommen im Theater. Vielen Dank für den Besuch heute Abend.",
+        "translation": "Welcome to the theatre! Thank you very much for visiting this evening!",
+        "language": "de",
+        "output_language": "de",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 5.9,
+        "committed_seconds": 5.9,
+        "request_id": "47a8c7bd-7f48-43ea-95da-150138277e46",
+        "stream_id": "b0e7185c-0791-4a0f-9969-e43c1b3db303",
+        "inference_seconds": 3.455,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "Welcome to the theater. The show begin at seven",
+        "transcript": "Welcome to the theater. The show begin at seven",
+        "translation": "Welcome to the theater. The show begin at seven",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 6.0,
+        "committed_seconds": 4.82,
+        "request_id": "15c880b1-209d-4a4f-bd14-c25f275ce062",
+        "stream_id": "cbb2fdf3-d35c-4795-ae6b-b4193feeaf41",
+        "inference_seconds": 1.748,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 2,
+      "status": 200,
+      "result": {
+        "text": "Y'en eut peut-être.",
+        "transcript": "Y'en eut peut-être.",
+        "translation": "",
+        "language": "fr",
+        "output_language": "fr",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 1.9,
+        "committed_seconds": 1.9,
+        "request_id": "03177cca-2dbe-4270-a34d-983ce76d6af5",
+        "stream_id": "a1113f81-2ebc-4a50-bca9-b091609d564a",
+        "inference_seconds": 1.691,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 1,
+      "status": 200,
+      "result": {
+        "text": "Hola, bienvenidos al teatro, muchas gracias por venir",
+        "transcript": "Hola, bienvenidos al teatro, muchas gracias por venir",
+        "translation": "",
+        "language": "es",
+        "output_language": "es",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 6.0,
+        "committed_seconds": 4.73,
+        "request_id": "82ee4b85-f627-439b-83c7-02ddad994ab4",
+        "stream_id": "920ab083-c76b-4a34-bbd7-b9731b1bc253",
+        "inference_seconds": 1.777,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 2,
+      "status": 200,
+      "result": {
+        "text": "Merci de venir ce soir.",
+        "transcript": "Merci de venir ce soir.",
+        "translation": "",
+        "language": "fr",
+        "output_language": "fr",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 2.1,
+        "committed_seconds": 2.1,
+        "request_id": "e26266c4-9a43-454e-ad51-ecafe1d92597",
+        "stream_id": "a1113f81-2ebc-4a50-bca9-b091609d564a",
+        "inference_seconds": 1.844,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "tonight. Welcome to the theater. The show begins at",
+        "transcript": "tonight. Welcome to the theater. The show begins at",
+        "translation": "tonight. Welcome to the theater. The show begins at",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 6.58,
+        "committed_seconds": 5.5,
+        "request_id": "0398c28b-0eaf-496b-9e40-b59af73a6d9e",
+        "stream_id": "cbb2fdf3-d35c-4795-ae6b-b4193feeaf41",
+        "inference_seconds": 1.925,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 3,
+      "status": 200,
+      "result": {
+        "text": "Willkommen im Theater! Elendank, du elendem Wurzgeister",
+        "transcript": "Willkommen im Theater! Elendank, du elendem Wurzgeister",
+        "translation": "Welcome to the theater! Healing tank, to even remove poison!",
+        "language": "de",
+        "output_language": "de",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 6.0,
+        "committed_seconds": 4.96,
+        "request_id": "19f62821-def9-4601-bb63-a813b2819409",
+        "stream_id": "b0e7185c-0791-4a0f-9969-e43c1b3db303",
+        "inference_seconds": 3.759,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "seven tonight.",
+        "transcript": "seven tonight.",
+        "translation": "seven tonight.",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 3.48,
+        "committed_seconds": 3.48,
+        "request_id": "bc08daa7-ff20-4e87-90c3-066d7168dac1",
+        "stream_id": "cbb2fdf3-d35c-4795-ae6b-b4193feeaf41",
+        "inference_seconds": 1.744,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 1,
+      "status": 200,
+      "result": {
+        "text": "esta noche. Hola, bienvenidos al teatro. Muchas",
+        "transcript": "esta noche. Hola, bienvenidos al teatro. Muchas",
+        "translation": "",
+        "language": "es",
+        "output_language": "es",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 6.57,
+        "committed_seconds": 5.56,
+        "request_id": "7d8bd848-b0ed-4699-a06b-5e3c44fa8070",
+        "stream_id": "920ab083-c76b-4a34-bbd7-b9731b1bc253",
+        "inference_seconds": 1.91,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 1,
+      "status": 200,
+      "result": {
+        "text": "gracias por venir esta noche.",
+        "transcript": "gracias por venir esta noche.",
+        "translation": "",
+        "language": "es",
+        "output_language": "es",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 3.51,
+        "committed_seconds": 3.51,
+        "request_id": "bcc6eb8d-08d4-4488-aad0-87c649b6b069",
+        "stream_id": "920ab083-c76b-4a34-bbd7-b9731b1bc253",
+        "inference_seconds": 1.725,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 2,
+      "status": 200,
+      "result": {
+        "text": "Bienvenue au Père. Merci de venir ce soir.",
+        "transcript": "Bienvenue au Père. Merci de venir ce soir.",
+        "translation": "",
+        "language": "fr",
+        "output_language": "fr",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 4.6,
+        "committed_seconds": 4.6,
+        "request_id": "b33c78f7-8f35-4426-9171-5db31513e165",
+        "stream_id": "a1113f81-2ebc-4a50-bca9-b091609d564a",
+        "inference_seconds": 1.867,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 3,
+      "status": 200,
+      "result": {
+        "text": "Abend. Willkommen im Theater. Vielen Dank für den",
+        "transcript": "Abend. Willkommen im Theater. Vielen Dank für den",
+        "translation": "Welcome to the theater. Thank you very much.",
+        "language": "de",
+        "output_language": "de",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 6.54,
+        "committed_seconds": 5.49,
+        "request_id": "5186c975-a5a4-44be-8840-212dbc54f6eb",
+        "stream_id": "b0e7185c-0791-4a0f-9969-e43c1b3db303",
+        "inference_seconds": 3.512,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "Welcome to the theater. The show begins at 7 tonight.",
+        "transcript": "Welcome to the theater. The show begins at 7 tonight.",
+        "translation": "Welcome to the theater. The show begins at 7 tonight.",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 4.6,
+        "committed_seconds": 4.6,
+        "request_id": "3d4558b5-8111-4ac7-b215-7e7da5ce8329",
+        "stream_id": "cbb2fdf3-d35c-4795-ae6b-b4193feeaf41",
+        "inference_seconds": 1.815,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 2,
+      "status": 200,
+      "result": {
+        "text": "Bienvenue au théâtre. Merci de venir ce soir.",
+        "transcript": "Bienvenue au théâtre. Merci de venir ce soir.",
+        "translation": "",
+        "language": "fr",
+        "output_language": "fr",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 4.0,
+        "committed_seconds": 4.0,
+        "request_id": "e7598b1d-428c-4bf4-8721-971c4b0aac37",
+        "stream_id": "a1113f81-2ebc-4a50-bca9-b091609d564a",
+        "inference_seconds": 1.897,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 1,
+      "status": 200,
+      "result": {
+        "text": "Hola, bienvenidos al teatro, muchas gracias por venir esta noche.",
+        "transcript": "Hola, bienvenidos al teatro, muchas gracias por venir esta noche.",
+        "translation": "",
+        "language": "es",
+        "output_language": "es",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 5.8,
+        "committed_seconds": 5.8,
+        "request_id": "f19cafd9-67d3-46dc-b57f-56f06696c163",
+        "stream_id": "920ab083-c76b-4a34-bbd7-b9731b1bc253",
+        "inference_seconds": 1.936,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 3,
+      "status": 200,
+      "result": {
+        "text": "besuch heute Abend. Willkommen im Theater. Vielen",
+        "transcript": "besuch heute Abend. Willkommen im Theater. Vielen",
+        "translation": "Welcome to the theater!",
+        "language": "de",
+        "output_language": "de",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 6.55,
+        "committed_seconds": 5.48,
+        "request_id": "85f7002e-049f-433a-b2ae-92e84613d7a2",
+        "stream_id": "b0e7185c-0791-4a0f-9969-e43c1b3db303",
+        "inference_seconds": 3.518,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "Welcome to the theater. The show begin at seven",
+        "transcript": "Welcome to the theater. The show begin at seven",
+        "translation": "Welcome to the theater. The show begin at seven",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 6.0,
+        "committed_seconds": 4.82,
+        "request_id": "4d6dc689-4244-4f3e-98e0-a3225654f823",
+        "stream_id": "cbb2fdf3-d35c-4795-ae6b-b4193feeaf41",
+        "inference_seconds": 1.673,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 2,
+      "status": 200,
+      "result": {
+        "text": "Bienvenue au théâtre. Merci de venir ce soir.",
+        "transcript": "Bienvenue au théâtre. Merci de venir ce soir.",
+        "translation": "",
+        "language": "fr",
+        "output_language": "fr",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 4.0,
+        "committed_seconds": 4.0,
+        "request_id": "87bd6dc1-7168-44f3-9fed-64bf3f12acbb",
+        "stream_id": "a1113f81-2ebc-4a50-bca9-b091609d564a",
+        "inference_seconds": 1.867,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 3,
+      "status": 200,
+      "result": {
+        "text": "Dank, für Ihren Besuch heute Abend. Willkommen im",
+        "transcript": "Dank, für Ihren Besuch heute Abend. Willkommen im",
+        "translation": "",
+        "language": "de",
+        "output_language": "de",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 6.57,
+        "committed_seconds": 5.19,
+        "request_id": "c28a80bd-c70a-4062-bb01-ccdfa07008eb",
+        "stream_id": "b0e7185c-0791-4a0f-9969-e43c1b3db303",
+        "inference_seconds": 3.619,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 1,
+      "status": 200,
+      "result": {
+        "text": "Hola, bienvenidos al teatro, muchas gracias por venir",
+        "transcript": "Hola, bienvenidos al teatro, muchas gracias por venir",
+        "translation": "",
+        "language": "es",
+        "output_language": "es",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 6.0,
+        "committed_seconds": 4.73,
+        "request_id": "2d61274b-cf45-4d77-af95-ea00926d2d77",
+        "stream_id": "920ab083-c76b-4a34-bbd7-b9731b1bc253",
+        "inference_seconds": 1.966,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "Welcome to the theater. The show begins at",
+        "transcript": "Welcome to the theater. The show begins at",
+        "translation": "Welcome to the theater. The show begins at",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 6.58,
+        "committed_seconds": 5.5,
+        "request_id": "83da1b64-0741-4dfb-86ab-e58f5b22805b",
+        "stream_id": "cbb2fdf3-d35c-4795-ae6b-b4193feeaf41",
+        "inference_seconds": 1.837,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "seven tonight.",
+        "transcript": "seven tonight.",
+        "translation": "seven tonight.",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 3.38,
+        "committed_seconds": 3.38,
+        "request_id": "f34bbb08-4a43-4b2d-9ace-f5dea20316ca",
+        "stream_id": "cbb2fdf3-d35c-4795-ae6b-b4193feeaf41",
+        "inference_seconds": 1.758,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 3,
+      "status": 200,
+      "result": {
+        "text": "Theater. Ehlen tank, du ehlen den Wunsch heute Abend.",
+        "transcript": "Theater. Ehlen tank, du ehlen den Wunsch heute Abend.",
+        "translation": "Thank you very much, and have a nice evening!",
+        "language": "de",
+        "output_language": "de",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 5.48,
+        "committed_seconds": 5.48,
+        "request_id": "e0a47225-d540-4c6b-8c6e-caf6971e56c9",
+        "stream_id": "b0e7185c-0791-4a0f-9969-e43c1b3db303",
+        "inference_seconds": 3.568,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 1,
+      "status": 200,
+      "result": {
+        "text": "esta noche. Hola, bienvenidos al teatro. Muchas",
+        "transcript": "esta noche. Hola, bienvenidos al teatro. Muchas",
+        "translation": "",
+        "language": "es",
+        "output_language": "es",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 6.57,
+        "committed_seconds": 5.56,
+        "request_id": "609011ae-e56c-4baa-98ff-0162e066b972",
+        "stream_id": "920ab083-c76b-4a34-bbd7-b9731b1bc253",
+        "inference_seconds": 1.898,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 2,
+      "status": 200,
+      "result": {
+        "text": "Bienvenue au Péat. Merci de venir ce soir.",
+        "transcript": "Bienvenue au Péat. Merci de venir ce soir.",
+        "translation": "",
+        "language": "fr",
+        "output_language": "fr",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 4.6,
+        "committed_seconds": 4.6,
+        "request_id": "91b6d5d8-0b62-4081-bec4-065844562864",
+        "stream_id": "a1113f81-2ebc-4a50-bca9-b091609d564a",
+        "inference_seconds": 1.837,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 1,
+      "status": 200,
+      "result": {
+        "text": "gracias por venir esta noche.",
+        "transcript": "gracias por venir esta noche.",
+        "translation": "",
+        "language": "es",
+        "output_language": "es",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 3.51,
+        "committed_seconds": 3.51,
+        "request_id": "c60fedfa-55a0-4807-9885-d3b2e80a37e7",
+        "stream_id": "920ab083-c76b-4a34-bbd7-b9731b1bc253",
+        "inference_seconds": 1.836,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "Welcome to the theater. The show begins at seven tonight.",
+        "transcript": "Welcome to the theater. The show begins at seven tonight.",
+        "translation": "Welcome to the theater. The show begins at seven tonight.",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 4.7,
+        "committed_seconds": 4.7,
+        "request_id": "52280caf-46a0-4308-86e1-3f1290b73336",
+        "stream_id": "cbb2fdf3-d35c-4795-ae6b-b4193feeaf41",
+        "inference_seconds": 1.827,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 3,
+      "status": 200,
+      "result": {
+        "text": "Willkommen im Theater. Vielen Dank, für den Besuch heute Abend.",
+        "transcript": "Willkommen im Theater. Vielen Dank, für den Besuch heute Abend.",
+        "translation": "Welcome to the theatre. Thank you for visiting tonight.",
+        "language": "de",
+        "output_language": "de",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 5.5,
+        "committed_seconds": 5.5,
+        "request_id": "4b0ecd8d-c60a-4846-903a-621a3da0a05a",
+        "stream_id": "b0e7185c-0791-4a0f-9969-e43c1b3db303",
+        "inference_seconds": 3.516,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 2,
+      "status": 200,
+      "result": {
+        "text": "Bienvenue au théâtre. Merci de venir ce soir.",
+        "transcript": "Bienvenue au théâtre. Merci de venir ce soir.",
+        "translation": "",
+        "language": "fr",
+        "output_language": "fr",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 4.1,
+        "committed_seconds": 4.1,
+        "request_id": "bbe98143-a859-4026-bbe6-01b3cbb609c0",
+        "stream_id": "a1113f81-2ebc-4a50-bca9-b091609d564a",
+        "inference_seconds": 1.717,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 1,
+      "status": 200,
+      "result": {
+        "text": "¡Hola! Bienvenidos al teatro. ¡Muchas gracias por venir esta noche!",
+        "transcript": "¡Hola! Bienvenidos al teatro. ¡Muchas gracias por venir esta noche!",
+        "translation": "",
+        "language": "es",
+        "output_language": "es",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 5.8,
+        "committed_seconds": 5.8,
+        "request_id": "d29e5ab6-6726-434f-983a-172b5edd47d8",
+        "stream_id": "920ab083-c76b-4a34-bbd7-b9731b1bc253",
+        "inference_seconds": 1.933,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 2,
+      "status": 200,
+      "result": {
+        "text": "Y'en eut peut-être !",
+        "transcript": "Y'en eut peut-être !",
+        "translation": "",
+        "language": "fr",
+        "output_language": "fr",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 1.9,
+        "committed_seconds": 1.9,
+        "request_id": "12aa8fe3-7b7d-421b-9e2e-16693c4d5843",
+        "stream_id": "a1113f81-2ebc-4a50-bca9-b091609d564a",
+        "inference_seconds": 1.906,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "Welcome to the theater the show begin at seven",
+        "transcript": "Welcome to the theater the show begin at seven",
+        "translation": "Welcome to the theater the show begin at seven",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 6.0,
+        "committed_seconds": 4.81,
+        "request_id": "711ec3bd-060d-4fa9-921e-136075336d93",
+        "stream_id": "cbb2fdf3-d35c-4795-ae6b-b4193feeaf41",
+        "inference_seconds": 1.948,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 3,
+      "status": 200,
+      "result": {
+        "text": "Willkommen im Theater. Vielen Dank für Ihren Besuch heute Abend.",
+        "transcript": "Willkommen im Theater. Vielen Dank für Ihren Besuch heute Abend.",
+        "translation": "Welcome to the theater! Thank you very much for visiting this evening.",
+        "language": "de",
+        "output_language": "de",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 5.8,
+        "committed_seconds": 5.8,
+        "request_id": "2873e774-d0f6-4174-9a94-01874546224d",
+        "stream_id": "b0e7185c-0791-4a0f-9969-e43c1b3db303",
+        "inference_seconds": 3.654,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 2,
+      "status": 200,
+      "result": {
+        "text": "et c'est devenu ce qu'il y a.",
+        "transcript": "et c'est devenu ce qu'il y a.",
+        "translation": "",
+        "language": "fr",
+        "output_language": "fr",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 2.1,
+        "committed_seconds": 2.1,
+        "request_id": "ef5b5d24-a04c-4de2-9672-9c2a65668746",
+        "stream_id": "a1113f81-2ebc-4a50-bca9-b091609d564a",
+        "inference_seconds": 1.712,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 1,
+      "status": 200,
+      "result": {
+        "text": "Hola, bienvenidos al teatro, muchas gracias por venir",
+        "transcript": "Hola, bienvenidos al teatro, muchas gracias por venir",
+        "translation": "",
+        "language": "es",
+        "output_language": "es",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 6.0,
+        "committed_seconds": 4.73,
+        "request_id": "23d70f81-4135-477e-89cc-5633896578d4",
+        "stream_id": "920ab083-c76b-4a34-bbd7-b9731b1bc253",
+        "inference_seconds": 1.914,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "Welcome to the theater. The show begins at",
+        "transcript": "Welcome to the theater. The show begins at",
+        "translation": "Welcome to the theater. The show begins at",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 6.59,
+        "committed_seconds": 5.52,
+        "request_id": "ed43166f-8389-4ea6-8ea5-f825e8674d05",
+        "stream_id": "cbb2fdf3-d35c-4795-ae6b-b4193feeaf41",
+        "inference_seconds": 1.883,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "seven tonight.",
+        "transcript": "seven tonight.",
+        "translation": "seven tonight.",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 3.47,
+        "committed_seconds": 3.47,
+        "request_id": "8fdee0c1-4826-43e1-a57b-895fd09aeceb",
+        "stream_id": "cbb2fdf3-d35c-4795-ae6b-b4193feeaf41",
+        "inference_seconds": 1.772,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 3,
+      "status": 200,
+      "result": {
+        "text": "Willkommen im Theater, Elendank, du E-Van-Glamour-Heuter",
+        "transcript": "Willkommen im Theater, Elendank, du E-Van-Glamour-Heuter",
+        "translation": "Welcome to the theatre! Healing tank, to even remove voices!",
+        "language": "de",
+        "output_language": "de",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 6.0,
+        "committed_seconds": 5.0,
+        "request_id": "d713d245-b3e6-465b-8c25-75eecef7b1aa",
+        "stream_id": "b0e7185c-0791-4a0f-9969-e43c1b3db303",
+        "inference_seconds": 3.697,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 2,
+      "status": 200,
+      "result": {
+        "text": "Bienvenue au P.A. Merci de venir ce soir.",
+        "transcript": "Bienvenue au P.A. Merci de venir ce soir.",
+        "translation": "",
+        "language": "fr",
+        "output_language": "fr",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 4.6,
+        "committed_seconds": 4.6,
+        "request_id": "b983fe9f-9cd7-4001-afaf-a021c5adf61f",
+        "stream_id": "a1113f81-2ebc-4a50-bca9-b091609d564a",
+        "inference_seconds": 1.813,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 1,
+      "status": 200,
+      "result": {
+        "text": "esta noche. Hola, bienvenidos al teatro,",
+        "transcript": "esta noche. Hola, bienvenidos al teatro,",
+        "translation": "",
+        "language": "es",
+        "output_language": "es",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 6.57,
+        "committed_seconds": 4.77,
+        "request_id": "0474d4c2-bf5c-4310-aea2-a844b28c37b6",
+        "stream_id": "920ab083-c76b-4a34-bbd7-b9731b1bc253",
+        "inference_seconds": 1.894,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "Welcome to the theater. The show begins at 7 tonight.",
+        "transcript": "Welcome to the theater. The show begins at 7 tonight.",
+        "translation": "Welcome to the theater. The show begins at 7 tonight.",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 4.6,
+        "committed_seconds": 4.6,
+        "request_id": "fc9c2a1d-7f14-4d46-a5a2-b8800978c3cb",
+        "stream_id": "cbb2fdf3-d35c-4795-ae6b-b4193feeaf41",
+        "inference_seconds": 1.963,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 1,
+      "status": 200,
+      "result": {
+        "text": "Muchas gracias por venir esta noche.",
+        "transcript": "Muchas gracias por venir esta noche.",
+        "translation": "",
+        "language": "es",
+        "output_language": "es",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 4.3,
+        "committed_seconds": 4.3,
+        "request_id": "9769326a-142e-4b44-881b-f9d0b8819ae5",
+        "stream_id": "920ab083-c76b-4a34-bbd7-b9731b1bc253",
+        "inference_seconds": 1.947,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 3,
+      "status": 200,
+      "result": {
+        "text": "Abend. Willkommen im Theater. Vielen Dank für den",
+        "transcript": "Abend. Willkommen im Theater. Vielen Dank für den",
+        "translation": "Welcome to the theater. Thank you very much.",
+        "language": "de",
+        "output_language": "de",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 6.5,
+        "committed_seconds": 5.49,
+        "request_id": "33e98dbe-4efa-4e8a-b12f-dbef12f18edb",
+        "stream_id": "b0e7185c-0791-4a0f-9969-e43c1b3db303",
+        "inference_seconds": 3.643,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 2,
+      "status": 200,
+      "result": {
+        "text": "Bienvenue au théâtre. Merci de venir ce soir.",
+        "transcript": "Bienvenue au théâtre. Merci de venir ce soir.",
+        "translation": "",
+        "language": "fr",
+        "output_language": "fr",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 4.0,
+        "committed_seconds": 4.0,
+        "request_id": "323e1d67-4547-4699-a657-ce6968df3c9e",
+        "stream_id": "a1113f81-2ebc-4a50-bca9-b091609d564a",
+        "inference_seconds": 1.864,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 2,
+      "status": 200,
+      "result": {
+        "text": "Yannou, au revoir.",
+        "transcript": "Yannou, au revoir.",
+        "translation": "",
+        "language": "fr",
+        "output_language": "fr",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 2.0,
+        "committed_seconds": 2.0,
+        "request_id": "2434b9ab-5921-4c24-8cfa-b3346614f3b5",
+        "stream_id": "a1113f81-2ebc-4a50-bca9-b091609d564a",
+        "inference_seconds": 1.828,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 3,
+      "status": 200,
+      "result": {
+        "text": "besuche heute Abend. Willkommen im Theater. Vielen",
+        "transcript": "besuche heute Abend. Willkommen im Theater. Vielen",
+        "translation": "",
+        "language": "de",
+        "output_language": "de",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 6.51,
+        "committed_seconds": 5.48,
+        "request_id": "1ccd97d1-f548-46a1-aff1-3056a173ac37",
+        "stream_id": "b0e7185c-0791-4a0f-9969-e43c1b3db303",
+        "inference_seconds": 3.551,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 1,
+      "status": 200,
+      "result": {
+        "text": "¡Hola! Bienvenidos al teatro. ¡Muchas gracias por venir esta noche!",
+        "transcript": "¡Hola! Bienvenidos al teatro. ¡Muchas gracias por venir esta noche!",
+        "translation": "",
+        "language": "es",
+        "output_language": "es",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 5.8,
+        "committed_seconds": 5.8,
+        "request_id": "06a33789-6967-491c-8383-fb121d8f2e93",
+        "stream_id": "920ab083-c76b-4a34-bbd7-b9731b1bc253",
+        "inference_seconds": 2.051,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "Welcome to the theater the show begin at seven",
+        "transcript": "Welcome to the theater the show begin at seven",
+        "translation": "Welcome to the theater the show begin at seven",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 6.0,
+        "committed_seconds": 4.78,
+        "request_id": "1581d27e-7460-421e-b7f7-3d2c0b7a3ed2",
+        "stream_id": "cbb2fdf3-d35c-4795-ae6b-b4193feeaf41",
+        "inference_seconds": 1.966,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 2,
+      "status": 200,
+      "result": {
+        "text": "et c'est devenu ce qu'il y a.",
+        "transcript": "et c'est devenu ce qu'il y a.",
+        "translation": "",
+        "language": "fr",
+        "output_language": "fr",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 2.0,
+        "committed_seconds": 2.0,
+        "request_id": "66dc7811-ae03-42a9-a4d2-e37439983fcf",
+        "stream_id": "a1113f81-2ebc-4a50-bca9-b091609d564a",
+        "inference_seconds": 1.792,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 3,
+      "status": 200,
+      "result": {
+        "text": "Dank, für den Wunsch heute Abend. Willkommen in",
+        "transcript": "Dank, für den Wunsch heute Abend. Willkommen in",
+        "translation": "Thank you so much for watching this video! See you next time!",
+        "language": "de",
+        "output_language": "de",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 6.53,
+        "committed_seconds": 5.19,
+        "request_id": "d03d85d9-2f50-4226-bfd1-c4526e416488",
+        "stream_id": "b0e7185c-0791-4a0f-9969-e43c1b3db303",
+        "inference_seconds": 3.404,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "Welcome to the theater. The show begins",
+        "transcript": "Welcome to the theater. The show begins",
+        "translation": "Welcome to the theater. The show begins",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 6.52,
+        "committed_seconds": 5.17,
+        "request_id": "d9770e95-189f-4de3-be7a-675e80f6f825",
+        "stream_id": "cbb2fdf3-d35c-4795-ae6b-b4193feeaf41",
+        "inference_seconds": 1.794,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 1,
+      "status": 200,
+      "result": {
+        "text": "Hola, bienvenidos al teatro, muchas gracias por venir",
+        "transcript": "Hola, bienvenidos al teatro, muchas gracias por venir",
+        "translation": "",
+        "language": "es",
+        "output_language": "es",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 6.0,
+        "committed_seconds": 4.75,
+        "request_id": "7f5a4983-2781-40b1-b828-aab794fc5540",
+        "stream_id": "920ab083-c76b-4a34-bbd7-b9731b1bc253",
+        "inference_seconds": 1.934,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "at seven tonight.",
+        "transcript": "at seven tonight.",
+        "translation": "at seven tonight.",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 3.65,
+        "committed_seconds": 3.65,
+        "request_id": "9b0e376d-deb4-402e-8314-fa2caf6c3f4f",
+        "stream_id": "cbb2fdf3-d35c-4795-ae6b-b4193feeaf41",
+        "inference_seconds": 1.884,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 2,
+      "status": 200,
+      "result": {
+        "text": "Bienvenue au P.A., même si nous venons ce soir.",
+        "transcript": "Bienvenue au P.A., même si nous venons ce soir.",
+        "translation": "",
+        "language": "fr",
+        "output_language": "fr",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 4.432,
+        "committed_seconds": 4.432,
+        "request_id": "b73edea5-e7e1-4723-b483-41a8290454fd",
+        "stream_id": "a1113f81-2ebc-4a50-bca9-b091609d564a",
+        "inference_seconds": 2.029,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 1,
+      "status": 200,
+      "result": {
+        "text": "esta noche. ¡Hola!",
+        "transcript": "esta noche. ¡Hola!",
+        "translation": "",
+        "language": "es",
+        "output_language": "es",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 3.258,
+        "committed_seconds": 3.258,
+        "request_id": "20928546-72e4-4603-8248-42921141e3d4",
+        "stream_id": "920ab083-c76b-4a34-bbd7-b9731b1bc253",
+        "inference_seconds": 1.961,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 3,
+      "status": 200,
+      "result": {
+        "text": "Theater! Healen Tank! Du heben den Wunsch heute Abend!",
+        "transcript": "Theater! Healen Tank! Du heben den Wunsch heute Abend!",
+        "translation": "Thank you very much, and have a nice evening!",
+        "language": "de",
+        "output_language": "de",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 5.44,
+        "committed_seconds": 5.44,
+        "request_id": "8e75aa4d-681b-49d5-9d27-50ccef821245",
+        "stream_id": "b0e7185c-0791-4a0f-9969-e43c1b3db303",
+        "inference_seconds": 3.838,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "Welcome",
+        "transcript": "Welcome",
+        "translation": "Welcome",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 0.784,
+        "committed_seconds": 0.784,
+        "request_id": "6c20d7ec-0d9a-4ab9-878d-d057af55c3cf",
+        "stream_id": "cbb2fdf3-d35c-4795-ae6b-b4193feeaf41",
+        "inference_seconds": 1.77,
+        "queue_seconds": 0.0
+      }
+    },
+    {
+      "stream": 3,
+      "status": 200,
+      "result": {
+        "text": "Willkommen im",
+        "transcript": "Willkommen im",
+        "translation": "Welcome to...",
+        "language": "de",
+        "output_language": "de",
+        "translation_language": "en",
+        "mode": "both",
+        "audio_seconds": 1.064,
+        "committed_seconds": 1.064,
+        "request_id": "829a634c-4c99-4447-a5b5-402d5da7a4d0",
+        "stream_id": "b0e7185c-0791-4a0f-9969-e43c1b3db303",
+        "inference_seconds": 2.953,
+        "queue_seconds": 0.0
+      }
+    }
+  ],
+  "errors": [],
+  "final": [
+    {
+      "streamId": "cbb2fdf3-d35c-4795-ae6b-b4193feeaf41",
+      "failed": false,
+      "pending": false,
+      "buffered": 0,
+      "transcript": [
+        "Welcome to the theater. The show begins at 7 tonight.\nEnglish: Welcome to the theater. The show begins at 7 tonight.",
+        "Welcome to the theater. The show begins at 7 tonight.\nEnglish: Welcome to the theater. The show begins at 7 tonight.",
+        "Welcome to the theater the show begin at seven\nEnglish: Welcome to the theater the show begin at seven",
+        "Welcome to the theater. The show begins at\nEnglish: Welcome to the theater. The show begins at",
+        "seven tonight.\nEnglish: seven tonight.",
+        "Welcome to the theater. The show begins at seven tonight.\nEnglish: Welcome to the theater. The show begins at seven tonight.",
+        "Welcome to the theater the show begin at seven\nEnglish: Welcome to the theater the show begin at seven",
+        "tonight. Welcome to the theater. The show begins at\nEnglish: tonight. Welcome to the theater. The show begins at",
+        "seven tonight.\nEnglish: seven tonight.",
+        "Welcome to the theater. The show begins at 7 tonight.\nEnglish: Welcome to the theater. The show begins at 7 tonight.",
+        "Welcome to the theater. The show begin at seven\nEnglish: Welcome to the theater. The show begin at seven",
+        "Welcome to the theater. The show begins at\nEnglish: Welcome to the theater. The show begins at",
+        "seven tonight.\nEnglish: seven tonight.",
+        "Welcome to the theater. The show begins at 7 tonight.\nEnglish: Welcome to the theater. The show begins at 7 tonight.",
+        "Welcome to the theater. The show begin at seven\nEnglish: Welcome to the theater. The show begin at seven",
+        "Welcome to the theater. The show begins at\nEnglish: Welcome to the theater. The show begins at",
+        "seven tonight.\nEnglish: seven tonight.",
+        "Welcome to the theater. The show begins at seven tonight.\nEnglish: Welcome to the theater. The show begins at seven tonight.",
+        "Welcome to the theater the show begin at seven\nEnglish: Welcome to the theater the show begin at seven",
+        "Welcome to the theater. The show begins at\nEnglish: Welcome to the theater. The show begins at",
+        "seven tonight.\nEnglish: seven tonight.",
+        "Welcome to the theater. The show begins at seven tonight.\nEnglish: Welcome to the theater. The show begins at seven tonight.",
+        "Welcome to the theater the show begin at seven\nEnglish: Welcome to the theater the show begin at seven",
+        "Welcome to the theater. The show begins at\nEnglish: Welcome to the theater. The show begins at",
+        "seven tonight.\nEnglish: seven tonight.",
+        "Welcome to the theater. The show begins at 7 tonight.\nEnglish: Welcome to the theater. The show begins at 7 tonight.",
+        "Welcome to the theater. The show begin at seven\nEnglish: Welcome to the theater. The show begin at seven",
+        "tonight. Welcome to the theater. The show begins at\nEnglish: tonight. Welcome to the theater. The show begins at",
+        "seven tonight.\nEnglish: seven tonight.",
+        "Welcome to the theater. The show begins at 7 tonight.\nEnglish: Welcome to the theater. The show begins at 7 tonight.",
+        "Welcome to the theater. The show begin at seven\nEnglish: Welcome to the theater. The show begin at seven",
+        "Welcome to the theater. The show begins at\nEnglish: Welcome to the theater. The show begins at",
+        "seven tonight.\nEnglish: seven tonight.",
+        "Welcome to the theater. The show begins at seven tonight.\nEnglish: Welcome to the theater. The show begins at seven tonight.",
+        "Welcome to the theater the show begin at seven\nEnglish: Welcome to the theater the show begin at seven",
+        "Welcome to the theater. The show begins at\nEnglish: Welcome to the theater. The show begins at",
+        "seven tonight.\nEnglish: seven tonight.",
+        "Welcome to the theater. The show begins at 7 tonight.\nEnglish: Welcome to the theater. The show begins at 7 tonight.",
+        "Welcome to the theater the show begin at seven\nEnglish: Welcome to the theater the show begin at seven",
+        "Welcome to the theater. The show begins\nEnglish: Welcome to the theater. The show begins",
+        "at seven tonight.\nEnglish: at seven tonight.",
+        "Welcome\nEnglish: Welcome"
+      ],
+      "first_caption_seconds": 6.370799999952316
+    },
+    {
+      "streamId": "920ab083-c76b-4a34-bbd7-b9731b1bc253",
+      "failed": false,
+      "pending": false,
+      "buffered": 0,
+      "transcript": [
+        "¡Hola! Bienvenidos al teatro. ¡Muchas gracias por venir esta noche!",
+        "Hola, bienvenidos al teatro, muchas gracias por venir",
+        "esta noche. Hola, bienvenidos al teatro,",
+        "Muchas gracias por venir esta noche.",
+        "¡Hola! Bienvenidos al teatro. ¡Muchas gracias por venir esta noche!",
+        "Hola, bienvenidos al teatro, muchas gracias por venir",
+        "esta noche. Hola, bienvenidos al teatro.",
+        "Muchas gracias por venir esta noche.",
+        "¡Hola! Bienvenidos al teatro. ¡Muchas gracias por venir esta noche!",
+        "Hola, bienvenidos al teatro, muchas gracias por venir",
+        "esta noche. Hola, bienvenidos al teatro,",
+        "Muchas gracias por venir esta noche.",
+        "¡Hola! Bienvenidos al teatro. ¡Muchas gracias por venir esta noche!",
+        "Hola, bienvenidos al teatro, muchas gracias por venir",
+        "esta noche. Hola, bienvenidos al teatro. Muchas",
+        "gracias por venir esta noche.",
+        "¡Hola! Bienvenidos al teatro. ¡Muchas gracias por venir esta noche!",
+        "Hola, bienvenidos al teatro, muchas gracias por venir",
+        "esta noche. Hola, bienvenidos al teatro. Muchas",
+        "gracias por venir esta noche.",
+        "¡Hola! Bienvenidos al teatro. ¡Muchas gracias por venir esta noche!",
+        "Hola, bienvenidos al teatro, muchas gracias por venir",
+        "esta noche hola bienvenido al teatro muchas",
+        "gracias por venir esta noche.",
+        "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche.",
+        "Hola, bienvenidos al teatro, muchas gracias por venir",
+        "esta noche. Hola, bienvenidos al teatro. Muchas",
+        "gracias por venir esta noche.",
+        "Hola, bienvenidos al teatro, muchas gracias por venir esta noche.",
+        "Hola, bienvenidos al teatro, muchas gracias por venir",
+        "esta noche. Hola, bienvenidos al teatro. Muchas",
+        "gracias por venir esta noche.",
+        "¡Hola! Bienvenidos al teatro. ¡Muchas gracias por venir esta noche!",
+        "Hola, bienvenidos al teatro, muchas gracias por venir",
+        "esta noche. Hola, bienvenidos al teatro,",
+        "Muchas gracias por venir esta noche.",
+        "¡Hola! Bienvenidos al teatro. ¡Muchas gracias por venir esta noche!",
+        "Hola, bienvenidos al teatro, muchas gracias por venir",
+        "esta noche. ¡Hola!"
+      ],
+      "first_caption_seconds": 7.357299999952316
+    },
+    {
+      "streamId": "a1113f81-2ebc-4a50-bca9-b091609d564a",
+      "failed": false,
+      "pending": false,
+      "buffered": 0,
+      "transcript": [
+        "Bienvenue au théâtre. Merci de venir ce soir.",
+        "Je n'ai pas l'air d'être là.",
+        "et c'est devenu ce swan.",
+        "Bienvenue au P.A. Merci de venir ce soir",
+        "Bienvenue au théâtre. Merci de venir ce soir.",
+        "Y'en eut peut-être !",
+        "et c'est devenu ce qu'il y a.",
+        "Bienvenue au P.A. Merci de venir ce soir.",
+        "Bienvenue au théâtre. Merci de venir ce soir.",
+        "Je n'ai pas l'air.",
+        "Merci de venir ce soir.",
+        "Bienvenue au P.A. Merci de venir ce soir.",
+        "Bienvenue au théâtre. Merci de venir ce soir.",
+        "Y'en eut peut-être.",
+        "et c'est devenu ce soir.",
+        "Bienvenue au P.A. Merci de venir ce soir.",
+        "Bienvenue au théâtre. Merci de venir ce soir.",
+        "Je n'ai pas l'air d'être là.",
+        "Merci de venir ce soir.",
+        "Bienvenue au P.A. Merci de venir ce soir.",
+        "Bienvenue au théâtre. Merci de venir ce soir.",
+        "Je n'en ai pas hâte.",
+        "et c'est devenu ce qu'il y a.",
+        "Bienvenue au P.A., même si le ménage se soit.",
+        "Bienvenue au théâtre. Merci de venir ce soir.",
+        "Y'en eut peut-être !",
+        "Merci de venir ce soir.",
+        "Bienvenue au P.A. Merci de venir ce soir",
+        "Bienvenue au théâtre. Merci de venir ce soir.",
+        "Y'en eut peut-être.",
+        "Merci de venir ce soir.",
+        "Bienvenue au Père. Merci de venir ce soir.",
+        "Bienvenue au théâtre. Merci de venir ce soir.",
+        "Bienvenue au théâtre. Merci de venir ce soir.",
+        "Bienvenue au Péat. Merci de venir ce soir.",
+        "Bienvenue au théâtre. Merci de venir ce soir.",
+        "Y'en eut peut-être !",
+        "et c'est devenu ce qu'il y a.",
+        "Bienvenue au P.A. Merci de venir ce soir.",
+        "Bienvenue au théâtre. Merci de venir ce soir.",
+        "Yannou, au revoir.",
+        "et c'est devenu ce qu'il y a.",
+        "Bienvenue au P.A., même si nous venons ce soir."
+      ],
+      "first_caption_seconds": 5.3592999999523165
+    },
+    {
+      "streamId": "b0e7185c-0791-4a0f-9969-e43c1b3db303",
+      "failed": false,
+      "pending": false,
+      "buffered": 0,
+      "transcript": [
+        "Willkommen im Theater. Vielen Dank für den Besuch heute Abend.\nEnglish: Welcome to the theatre. Thank you for your visit tonight.",
+        "Willkommen im Theater. Vielen Dank, für den Besuch heute Abend.\nEnglish: Welcome to the theater! Thank you very much for watching this evening!",
+        "Willkommen im Theater! Vielen Dank! Willkommen im\nEnglish: Welcome to the theater, Elendank, the Elendland.",
+        "Willkommen im Theater. Vielen\nEnglish: Good evening! Welcome to the theatre!",
+        "Dank, für den Besuch heute Abend. Willkommen in\nEnglish: Thank you for even visiting tonight!",
+        "Theater. Vielen Dank für den Wohlfeuerabend.\nEnglish: theater. Thank you very much, for even visiting tonight.",
+        "Willkommen im Theater! Elendank! Die Elendemut heute Abend!\nEnglish: Welcome to the theater, Elon Tank, who even removes the arm.",
+        "Willkommen im Theater! Vielen Dank für den\nEnglish: Welcome to the theater. Thank you very much.",
+        "besuch heute Abend. Willkommen im Theater. Vielen\nEnglish: See you tonight!",
+        "Dank, für Ihren Besuch heute Abend. Willkommen ins\nEnglish: Thank you very much, to even the Wolfhäuter Abend. Will come and in.",
+        "Theater! Heel und Tank, du heben den Wunsch heute Abend!\nEnglish: Thank you very much for watching and see you in the next video!",
+        "Willkommen im Theater. Vielen Dank für Ihren Besuch heute Abend.\nEnglish: Welcome to the theater. Thank you for your visit tonight.",
+        "Willkommen im Theater! Vielen Dank für Ihren Besuch heute Abend!\nEnglish: Welcome to the theater! Thank you very much for visiting tonight!",
+        "Willkommen im Theater! Healen Tank, du heet an der Wut heute\nEnglish: Welcome to the theater! Healing tank, to even the mood point!",
+        "Willkommen im Theater! Vielen Dank für\nEnglish: Good evening. Welcome to the theater. Thank you very much.",
+        "Willkommen im Theater.\nEnglish: Even the wolf tonight. Welcome into our...",
+        "Vielen Dank, für Ihren Besuch heute Abend.\nEnglish: Thank you very much for watching this video.",
+        "Willkommen im Theater! Vielen Dank! Willkommen\nEnglish: Welcome to the theater! Thank you very much!",
+        "Willkommen im Theater. Vielen\nEnglish: Welcome to the theater!",
+        "Dank für Ihren Besuch heute Abend. Willkommen im\nEnglish: Thank you, for even visiting this evening. Welcome in...",
+        "Theater. Vielen Dank für even den Wohl heute Abend.\nEnglish: Thank you very much for watching this video and see you in the next one!",
+        "Willkommen im Theater! Elendank! Du ehten den Wunsch heute Abend!\nEnglish: Welcome to the theater, Elon Tank, to even the most beautiful evening.",
+        "Willkommen im Theater. Vielen Dank, für den Besuch heute Abend.\nEnglish: Welcome to the theater! Thank you very much for watching this evening!",
+        "Willkommen im Theater. Vielen Dank für den Besuch heute Abend.\nEnglish: Welcome to the theatre! Thank you very much for visiting this evening!",
+        "Willkommen im Theater! Elendank, du elendem Wurzgeister\nEnglish: Welcome to the theater! Healing tank, to even remove poison!",
+        "Abend. Willkommen im Theater. Vielen Dank für den\nEnglish: Welcome to the theater. Thank you very much.",
+        "besuch heute Abend. Willkommen im Theater. Vielen\nEnglish: Welcome to the theater!",
+        "Dank, für Ihren Besuch heute Abend. Willkommen im\nEnglish: ",
+        "Theater. Ehlen tank, du ehlen den Wunsch heute Abend.\nEnglish: Thank you very much, and have a nice evening!",
+        "Willkommen im Theater. Vielen Dank, für den Besuch heute Abend.\nEnglish: Welcome to the theatre. Thank you for visiting tonight.",
+        "Willkommen im Theater. Vielen Dank für Ihren Besuch heute Abend.\nEnglish: Welcome to the theater! Thank you very much for visiting this evening.",
+        "Willkommen im Theater, Elendank, du E-Van-Glamour-Heuter\nEnglish: Welcome to the theatre! Healing tank, to even remove voices!",
+        "Abend. Willkommen im Theater. Vielen Dank für den\nEnglish: Welcome to the theater. Thank you very much.",
+        "besuche heute Abend. Willkommen im Theater. Vielen\nEnglish: ",
+        "Dank, für den Wunsch heute Abend. Willkommen in\nEnglish: Thank you so much for watching this video! See you next time!",
+        "Theater! Healen Tank! Du heben den Wunsch heute Abend!\nEnglish: Thank you very much, and have a nice evening!",
+        "Willkommen im\nEnglish: Welcome to..."
+      ],
+      "first_caption_seconds": 8.641299999952317
+    }
+  ],
+  "wall_seconds": 186.25694750016555,
+  "passed": true
+}

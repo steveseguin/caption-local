@@ -18,6 +18,8 @@ import numpy as np
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import FileResponse, JSONResponse
 from starlette.middleware.trustedhost import TrustedHostMiddleware
+from starlette.middleware.cors import CORSMiddleware
+from urllib.parse import urlsplit
 from starlette.staticfiles import StaticFiles
 
 ROOT = Path(__file__).resolve().parent
@@ -124,10 +126,22 @@ class Engine:
         list(segments)
 
 
-def create_app(engine, max_streams=12, queue_timeout=20, api_key=None, log_requests=False):
+def create_app(engine, max_streams=12, queue_timeout=20, api_key=None, log_requests=False, allowed_origins=()):
     api_key = api_key or None
     if api_key is not None and (len(api_key) < 24 or not api_key.isascii() or any(c.isspace() for c in api_key)):
         raise ValueError('CAPTION_API_KEY must contain at least 24 ASCII characters without whitespace')
+    allowed_origins = tuple(allowed_origins)
+    if allowed_origins and not api_key:
+        raise ValueError('CAPTION_ALLOWED_ORIGINS requires CAPTION_API_KEY')
+    for origin in allowed_origins:
+        parsed = urlsplit(origin)
+        if (parsed.scheme not in ('https', 'http') or not parsed.hostname or
+                parsed.username or parsed.password or parsed.path or parsed.query or parsed.fragment or
+                origin != f'{parsed.scheme}://{parsed.netloc}' or '*' in origin or
+                any(c.isspace() or ord(c) < 32 for c in origin) or
+                (parsed.scheme == 'http' and parsed.hostname not in ('localhost', '127.0.0.1', '::1'))):
+            raise ValueError('Allowed origins must be exact HTTPS origins (HTTP only for localhost)')
+        parsed.port  # Validate malformed ports before starting.
     pending_tasks = set()
     @asynccontextmanager
     async def lifespan(app):
@@ -136,6 +150,11 @@ def create_app(engine, max_streams=12, queue_timeout=20, api_key=None, log_reque
         if pending_tasks:
             await asyncio.gather(*list(pending_tasks), return_exceptions=True)
     app = FastAPI(docs_url=None, redoc_url=None, openapi_url=None, lifespan=lifespan)
+    app.state.allowed_origins = allowed_origins
+    app.add_middleware(CORSMiddleware, allow_origins=list(allowed_origins),
+                       allow_methods=['GET', 'POST', 'DELETE'],
+                       allow_headers=['Authorization', 'Content-Type', 'X-Caption-Local', 'X-Stream-ID', 'X-Request-ID'],
+                       expose_headers=['Retry-After'], max_age=600)
     app.add_middleware(TrustedHostMiddleware, allowed_hosts=["localhost", "127.0.0.1", "[::1]"])
     # One outstanding request per stream bounds both body memory and queue size.
     # asyncio's semaphore queues waiters FIFO; the model owns matching CT2 workers.
@@ -172,8 +191,9 @@ def create_app(engine, max_streams=12, queue_timeout=20, api_key=None, log_reque
     @app.middleware("http")
     async def response_headers(request, call_next):
         started = time.perf_counter()
-        public_asset = request.url.path == '/' or request.url.path.startswith('/static/')
-        if api_key and not public_asset and not secrets.compare_digest(
+        public_asset = request.url.path in ('/', '/capture-local.html') or request.url.path.startswith('/static/')
+        preflight = request.method == 'OPTIONS' and request.headers.get('origin') and request.headers.get('access-control-request-method')
+        if api_key and not public_asset and not preflight and not secrets.compare_digest(
                 request.headers.get('authorization', '').encode(), ('Bearer '+api_key).encode()):
             response = JSONResponse({'detail':'Service access token required'}, status_code=401,
                                     headers={'WWW-Authenticate':'Bearer'})
@@ -185,6 +205,9 @@ def create_app(engine, max_streams=12, queue_timeout=20, api_key=None, log_reque
             print(json.dumps({'event':'http_request','method':request.method,
                   'route':getattr(route, 'path', 'unmatched'), 'status':response.status_code,
                   'duration_seconds':round(time.perf_counter()-started,4)}),flush=True)
+        if request.headers.get('origin') in allowed_origins:
+            response.headers['Access-Control-Allow-Origin'] = request.headers['origin']
+            response.headers.add_vary_header('Origin')
         response.headers["X-Content-Type-Options"] = "nosniff"
         response.headers["Referrer-Policy"] = "no-referrer"
         response.headers["Cache-Control"] = "no-store"
@@ -198,6 +221,10 @@ def create_app(engine, max_streams=12, queue_timeout=20, api_key=None, log_reque
     @app.get("/")
     async def index():
         return FileResponse(ROOT / "static/index.html")
+
+    @app.get('/capture-local.html')
+    async def capture_local():
+        return FileResponse(ROOT / 'static/capture-local.html')
 
     @app.get("/health")
     async def health():
@@ -222,7 +249,7 @@ def create_app(engine, max_streams=12, queue_timeout=20, api_key=None, log_reque
     @app.delete("/streams/{stream_id}")
     async def close_stream(stream_id: str, request: Request):
         origin = request.headers.get("origin")
-        if request.headers.get("x-caption-local") != "1" or (origin and origin != str(request.base_url).rstrip("/")):
+        if request.headers.get("x-caption-local") != "1" or (origin and origin != str(request.base_url).rstrip("/") and origin not in allowed_origins):
             raise HTTPException(403, "Use the local capture page")
         session = streams.get(stream_id)
         if session and session["busy"]:
@@ -234,7 +261,7 @@ def create_app(engine, max_streams=12, queue_timeout=20, api_key=None, log_reque
     async def transcribe(request: Request):
         origin = request.headers.get("origin")
         if request.headers.get("x-caption-local") != "1" or (
-            origin and origin != str(request.base_url).rstrip("/")
+            origin and origin != str(request.base_url).rstrip("/") and origin not in allowed_origins
         ):
             raise HTTPException(403, "Use the local capture page")
         if request.headers.get("content-type") != "application/octet-stream":
@@ -416,6 +443,9 @@ if __name__ == "__main__":
     engine.warmup()
     print(f"Inference ready: {engine.device} / {engine.compute_type}", flush=True)
     import uvicorn
-    app = create_app(engine, args.max_streams, api_key=os.environ.get('CAPTION_API_KEY'), log_requests=args.log_requests)
+    app = create_app(engine, args.max_streams, api_key=os.environ.get('CAPTION_API_KEY'), log_requests=args.log_requests,
+                     allowed_origins=tuple(s.strip() for s in os.environ.get('CAPTION_ALLOWED_ORIGINS', '').split(',') if s.strip()))
     start_watchdog(app.state.inference_status)
-    uvicorn.run(app, host=args.host, port=args.port, access_log=False, limit_concurrency=max(32, args.max_streams * 2 + 8), timeout_keep_alive=5, timeout_graceful_shutdown=90)
+    # Browsers can retain six HTTP/1.1 connections per origin while loading assets.
+    # This transport bound includes idle sockets; inference admission stays separate.
+    uvicorn.run(app, host=args.host, port=args.port, access_log=False, limit_concurrency=max(64, args.max_streams * 6 + 16), timeout_keep_alive=5, timeout_graceful_shutdown=90)

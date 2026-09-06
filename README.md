@@ -14,6 +14,11 @@ The project is open source and runs independently of caption.ninja.
 The guide includes Windows/Linux commands, saving and shutdown, keyboard use,
 privacy, realistic delay and accuracy expectations, and common next steps.
 
+**Self-hosted caption.ninja capture:** a separate connection/diagnostics page is
+available in this development branch. [Setup and sharing guide](docs/CAPTION-NINJA-LOCAL.md).
+Use the bundled `http://localhost:8765/capture-local.html` first; hosted-page access
+is optional and requires explicit origin permission and a service token.
+
 ## What to expect
 
 - **Transcription:** captions in the language being spoken.

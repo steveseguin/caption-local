@@ -7,6 +7,10 @@ is required or currently published.
 
 ## Choose a method
 
+For the separate caption.ninja-compatible capture page, follow the
+[self-hosted capture guide](docs/CAPTION-NINJA-LOCAL.md). It covers localhost/SSH
+first and opt-in hosted-page origins; it does not require exposing the service.
+
 See [deployment profiles](docs/DEPLOYMENT-PROFILES.md) to choose model quality,
 worker/thread settings, caption interval, private hosting and optional token/logging
 settings independently. Capacity measurements do not apply to every host.

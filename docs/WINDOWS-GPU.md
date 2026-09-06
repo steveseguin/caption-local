@@ -1,5 +1,9 @@
 # Windows and NVIDIA validation
 
+For a separate caption.ninja-compatible capture page with connection diagnostics,
+follow the [self-hosted capture guide](CAPTION-NINJA-LOCAL.md). It uses the same
+inference settings and retained-audio protocol as the original local page.
+
 The native Windows CPU setup and synthetic Edge capture have been exercised on
 Windows 11 Pro build 26200, Python 3.12.10, Core Ultra 7 265K and 64 GiB installed
 RAM. See the [test report](../evidence/windows-rtx/report.md) for exact scope.

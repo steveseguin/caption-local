@@ -97,7 +97,7 @@ def register_audio_api(app, transcribe, close_ephemeral, max_streams, model_name
     @app.post('/v1/audio/translations')
     async def audio_file(request: Request):
         origin=request.headers.get('origin')
-        if origin and origin!=str(request.base_url).rstrip('/'):
+        if origin and origin!=str(request.base_url).rstrip('/') and origin not in app.state.allowed_origins:
             raise HTTPException(403, 'Foreign Origin is not allowed')
         if uploads.locked():
             raise HTTPException(429, 'Upload capacity reached',headers={'Retry-After':'1'})

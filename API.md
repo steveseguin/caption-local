@@ -1,9 +1,12 @@
 # Caption Local API v1
 
 Loopback-only, multiple trusted producers. Use the local page or a trusted local client. There is
-no CORS allowance, multi-tenant isolation or permanent store. Optional
+no default CORS allowance, multi-tenant isolation or permanent store. Optional
 `CAPTION_API_KEY` requires `Authorization: Bearer TOKEN` on all API routes.
 See [deployment profiles](docs/DEPLOYMENT-PROFILES.md) for token and logging setup.
+Hosted capture can opt into exact origins with `CAPTION_ALLOWED_ORIGINS`, which
+requires the service token. [Setup and browser limitations](docs/CAPTION-NINJA-LOCAL.md).
+Preflight OPTIONS requests do not require authorization; actual API requests do.
 
 ## OpenAI-style WAV API
 

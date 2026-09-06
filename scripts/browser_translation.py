@@ -39,7 +39,7 @@ with sync_playwright() as p:
     page.locator('#mode').select_option('transcribe')
     assert page.locator('#relayOutput').input_value() == 'transcript'
     page.locator('#mode').select_option('both')
-    page.locator('summary').click()
+    page.get_by_text('Send captions to caption.ninja', exact=True).first.click()
     page.locator('#relayOutput').select_option('translation')
     page.locator('#room').fill('localtranslationtest')
     page.locator('#share').check()
@@ -62,6 +62,15 @@ with sync_playwright() as p:
     result = {'display':display, 'relay_messages':finals, 'download':saved,
               'browser_errors':errors, 'external_http':external,
               'method':'real Spanish fake microphone and inference; local mock relay'}
+    page.locator('#share').uncheck()
+    page.locator('#mode').select_option('translate')
+    previous_count = page.evaluate('transcript.length')
+    page.locator('#start').click()
+    page.wait_for_function('count => transcript.length > count', arg=previous_count, timeout=45000)
+    page.locator('#stop').click()
+    page.wait_for_function('() => !processing && !running && !stopping && !pending', timeout=30000)
+    result['translation_only'] = page.evaluate('transcript.slice('+str(previous_count)+')')
+    assert result['translation_only'] and all('English:' not in text for text in result['translation_only'])
     (evidence/'browser-translation.json').write_text(json.dumps(result, indent=2, ensure_ascii=False)+'\n', encoding='utf-8')
     print(json.dumps(result, indent=2, ensure_ascii=False))
     browser.close()

@@ -64,6 +64,14 @@ private automatic-caption room and distinguish source-language text from English
 translation. Only the selected text goes to the relay; audio goes to the inference
 host. Use a local/mock relay for tests, not a real room containing event captions.
 
+For the separate self-hosted capture page, read `docs/CAPTION-NINJA-LOCAL.md`.
+Prefer the bundled `/capture-local.html` on localhost or an SSH tunnel. Hosted-page
+access is opt-in via an exact CAPTION_ALLOWED_ORIGINS entry and CAPTION_API_KEY;
+never relax Host checks or browser security to connect. Cross-origin localhost
+browser tests do not establish the public HTTPS site's local-network permission
+behavior. Keep deployment/model controls server-side. Update copied captionninja
+assets with `scripts/sync_capture_page.py` and verify `--check`; no runtime CDN.
+
 Validate the chosen installation with `/health` and `scripts/smoke_api.py`, using
 its public/synthetic fixtures or a user-authorized recording. For offline mode,
 restart using the populated cache and recheck inference. Verify the localhost port

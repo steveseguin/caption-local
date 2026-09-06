@@ -1,0 +1,80 @@
+[
+  {
+    "file": "original.json",
+    "passed": true,
+    "streams": 8,
+    "capture_seconds": 180,
+    "mixed": false,
+    "requests": 309,
+    "http_errors": 0,
+    "first_caption_seconds": {
+      "median": 7.085,
+      "p95": 7.836,
+      "max": 7.836
+    },
+    "inference_seconds": {
+      "median": 2.328,
+      "p95": 2.657,
+      "max": 2.727
+    },
+    "queue_seconds": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.015
+    },
+    "maximum_buffer_seconds": 8.86,
+    "maximum_final_buffer_seconds": 0
+  },
+  {
+    "file": "local-page.json",
+    "passed": true,
+    "streams": 8,
+    "capture_seconds": 180,
+    "mixed": false,
+    "requests": 308,
+    "http_errors": 0,
+    "first_caption_seconds": {
+      "median": 7.101,
+      "p95": 7.81,
+      "max": 7.81
+    },
+    "inference_seconds": {
+      "median": 2.365,
+      "p95": 2.694,
+      "max": 2.835
+    },
+    "queue_seconds": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "maximum_buffer_seconds": 8.76,
+    "maximum_final_buffer_seconds": 0.324
+  },
+  {
+    "file": "mixed.json",
+    "passed": true,
+    "streams": 4,
+    "capture_seconds": 180,
+    "mixed": true,
+    "requests": 161,
+    "http_errors": 0,
+    "first_caption_seconds": {
+      "median": 6.864,
+      "p95": 8.641,
+      "max": 8.641
+    },
+    "inference_seconds": {
+      "median": 1.893,
+      "p95": 3.674,
+      "max": 3.838
+    },
+    "queue_seconds": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "maximum_buffer_seconds": 8.9,
+    "maximum_final_buffer_seconds": 0
+  }
+]

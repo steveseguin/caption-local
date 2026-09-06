@@ -1,0 +1,26 @@
+Loading speech model; first run downloads weights. Audio stays on this host.
+Inference ready: cpu / int8
+INFO:     Started server process [20944]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8772 (Press CTRL+C to quit)
+WARNING:  Exceeded concurrency limit.
+WARNING:  Exceeded concurrency limit.
+WARNING:  Exceeded concurrency limit.
+WARNING:  Exceeded concurrency limit.
+WARNING:  Exceeded concurrency limit.
+WARNING:  Exceeded concurrency limit.
+WARNING:  Exceeded concurrency limit.
+WARNING:  Exceeded concurrency limit.
+Loading speech model; first run downloads weights. Audio stays on this host.
+Inference ready: cpu / int8
+INFO:     Started server process [22576]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8772 (Press CTRL+C to quit)
+Loading speech model; first run downloads weights. Audio stays on this host.
+Inference ready: cpu / int8
+INFO:     Started server process [9668]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8772 (Press CTRL+C to quit)
