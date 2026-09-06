@@ -36,12 +36,15 @@ Start the original single-worker CPU configuration:
 py -3.12 deploy.py run --model small --device cpu --compute-type int8 --workers 1 --threads 4 --beam-size 5 --offline
 ```
 
-On this 20-core host, the stronger concurrent-transcription candidate is below.
-Read the deployment matrix for sustained-run results and limits before using it
-for an event; translation and noisy speech have different costs and failure modes.
+On this 20-core host, the concurrent-transcription configuration below passed an
+hour of eight varied synthetic capture streams while retaining the quality settings.
+Twelve passed short clean tests
+but hit the protective buffer limit after 40 minutes of varied quiet/noisy speech.
+Read the deployment matrix for exact delays and recognition failures before using
+it for an event; translation and noisy speech have different costs and failure modes.
 
 ```powershell
-py -3.12 deploy.py run --model small --device cpu --compute-type int8 --workers 8 --threads 2 --beam-size 5 --max-streams 12 --offline
+py -3.12 deploy.py run --model small --device cpu --compute-type int8 --workers 8 --threads 2 --beam-size 5 --max-streams 8 --offline
 ```
 
 The runtime resolves requested CPU `int8` to `int8_float32`, now exposed separately

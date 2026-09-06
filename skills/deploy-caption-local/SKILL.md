@@ -96,3 +96,11 @@ Use `scripts/prepare_multilingual.py` and `scripts/browser_multilingual.py` for
 independent synthetic capture streams; `--varied` adds quiet/noisy speech and pauses.
 An admission limit is not sustainable capacity. Preserve real-time/accuracy gate
 failures, including shorter caption intervals and noisy speech, in the report.
+
+On the measured Core Ultra 7 265K Windows host, small/int8 with `--workers 8
+--threads 2 --beam-size 5 --max-streams 8` passed an hour of varied six-language
+browser transcription. Twelve reached the protective buffer limit after 40 minutes.
+Recognition errors in noise remain; the eight-stream pass is not a general
+accuracy certification or a translation capacity result. Reproduce with the
+browser load script and resource monitor, then run `scripts/summarize_browser_load.py`
+to retain both capture and the existing memory acceptance checks.

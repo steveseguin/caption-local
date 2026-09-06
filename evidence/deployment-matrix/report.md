@@ -5,6 +5,14 @@ Core Ultra 7 265K / Windows 11 host. CUDA remains blocked by the preserved llama
 server occupying 23,318 MiB of the 24,576 MiB TITAN RTX. All timings below are real
 CPU inference, not GPU results. Docker on this Windows host remains untested.
 
+All Caption Local inference benchmarks ran sequentially. The unrelated GPU-resident
+llama service was preserved. During most of the eight-stream run its sampled CPU
+usage averaged 0.030 cores; aggregate GPU utilization was usually zero but included
+occasional activity (not attributable to a process by this sampler). These are
+measurements on the observed shared Windows host, not an otherwise idle-machine
+certification. No GPU performance comparison was attempted while it was occupied.
+[Background observations](browser-8-background-monitor.json).
+
 ## Method
 
 Six eSpeak NG 1.51 fixtures: English, Spanish, French, German, Italian and Brazilian
@@ -14,6 +22,13 @@ late work accumulates rather than being dropped. These fixtures contain pauses
 and less than six seconds of speech per arrival, so they are not equivalent to
 uninterrupted speech. The manifest, exact text and SHA256 are reproducible using
 `scripts/prepare_multilingual.py`; recordings remain untracked.
+
+The initial mixed-load policy assigns `both` to every third producer and
+transcription to the others. With the fixed six-language order this selects
+English and German for bilingual output. All six languages are tested separately
+with `both` in the preliminary quality probe. The mixed capacity count is specific
+to that assignment; it does not establish the same capacity for arbitrary
+translation-language mixtures.
 
 The existing JFK/LibriSpeech/Spanish quality gate remains separate and unchanged
 at the default six-second window. More language fixtures extend the observations,
@@ -78,6 +93,13 @@ fixtures are not a comprehensive multilingual quality certification.
 Medium's one English request took 5.120 s on CPU in this probe; its stronger
 translation came with substantially greater processing cost. Larger models have
 not been tested on CUDA yet.
+
+The complete medium/int8/beam-five gate with four CPU threads reduced mean English
+WER to 5.07%, with exact normalized JFK and all Spanish/silence/noise checks passing.
+It nevertheless **failed** the unchanged real-time requirement: fixture
+`1272-135031-0000` took 11.088 seconds of inference for 10.885 seconds of audio.
+That failure is retained, even though the margin is small.
+[Medium four-thread gate](quality-medium-cpu.json).
 
 ## Interfaces, access control and logging
 
@@ -165,10 +187,41 @@ initial delays do not erase the overload or recognition failures.
 [summary with unchanged gates](browser-12-hour-summary.json),
 [resource samples](browser-12-hour-monitor.json).
 
-A new eight-stream hour run is in progress with the same small/int8, eight-worker,
-two-thread, beam-five, six-second configuration and varied fixtures. Only the
-producer count and admission limit were reduced. No buffers were enlarged or
-recognition quality settings lowered. Its outcome will be recorded here.
+The eight-stream repeat **passed a full hour** with the same small/int8,
+eight-worker, two-thread, beam-five, six-second configuration and varied fixtures.
+Only producer count and admission limit were reduced. No buffers were enlarged
+or recognition quality settings lowered. The mix is two English, two Spanish,
+and one each French, German, Italian and Portuguese capture.
+
+| Eight-stream hour measurement | Result |
+| --- | --- |
+| Capture duration / including final drain | 3,602.02 s / 3,608.65 s |
+| Successful requests / HTTP errors | 6,050 / 0 |
+| First speech-to-visible-caption, min / median / max | 6.355 / 7.503 / 8.196 s |
+| Inference median / p95 / maximum | 2.568 / 2.990 / 14.554 s |
+| Queue median / p95 / maximum | 0 / 0 / 0.016 s |
+| Maximum observed per-stream buffer | 19.07 s |
+| Peak server RSS / warm-median growth | 1,351.18 MiB / 4.70 MiB |
+| Mean server CPU usage | 9.34 cores |
+| Failed jobs / queue timeouts / watchdog restarts | 0 / 0 / 0 |
+| Final pending requests | 0; all pages passed Stop/drain |
+
+The resource monitor sampled for 3,660 seconds, including the final idle portion;
+CPU mean is over that monitoring interval. The maximum final buffer was 0.088
+seconds, below the unchanged 0.5-second drain allowance. Initial-caption timing
+does not measure every later word's delay. Slow French results still contained
+repetitive incorrect text; lower concurrency fixes this run's overload, not the
+model's recognition weakness in noise.
+
+[Eight-stream hour](browser-8-hour-varied.json),
+[acceptance summary and per-stream timings](browser-8-hour-summary.json),
+[resource samples](browser-8-hour-monitor.json).
+
+Eight is the measured sustainable transcription count for this fixture mix on
+this CPU, not a guarantee for uninterrupted speech, other languages, translation,
+or a live event. Twelve failed; twenty-four short CPU probes also fell behind.
+Use fewer streams when delay spikes or difficult audio are unacceptable, and
+rehearse the exact event's languages and output modes.
 
 The current fast regression suite passes all 38 Python tests on native Windows
 and Ubuntu WSL, plus six Node audio-buffer/worklet tests. Source checks and archive

@@ -27,6 +27,9 @@ accurate multilingual streams on any computer. [Read the measurements and limits
 **Windows development validation:** native Python and synthetic Edge capture now
 pass on Windows 11 with the small CPU model. NVIDIA inference and sustained GPU
 capacity remain pending. [Windows setup and exact test scope](docs/WINDOWS-GPU.md).
+Eight six-language synthetic captures passed an hour on the tested Windows CPU;
+twelve hit the protective buffer limit after 40 minutes. Noisy-speech recognition
+errors remain. [Sustained results and failed configurations](evidence/deployment-matrix/report.md).
 
 ## What you need
 

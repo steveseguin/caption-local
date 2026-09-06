@@ -38,8 +38,13 @@ six seconds unless the selected hardware and languages pass both latency and
 accuracy checks. Short CPU probes supported twelve transcription producers with
 small/int8, eight workers and two threads; mixed transcription/translation kept
 up at eight, while twelve accumulated delay. Twenty-four did not keep up. These
-short measurements are not sustained capacity promises; consult the evidence
-for the hour-long test status and noisy-speech failures.
+short measurements are not sustained capacity promises. The twelve-stream varied
+browser run subsequently hit the protective buffer limit after 40 minutes.
+Eight streams passed a full hour with the same quality settings: first captions
+in 6.35–8.20 seconds, p95 inference 2.99 seconds, maximum buffering 19.07 seconds,
+and no HTTP errors. Consult the evidence before choosing a deployment count.
+Recognition errors in noise remain a separate limit, including repetitive French
+text and the German noise-probe failure. This does not certify arbitrary live audio.
 
 ## Private VPS example
 
@@ -123,6 +128,7 @@ eSpeak NG installation:
 python scripts/prepare_multilingual.py --espeak /path/to/espeak-ng
 python scripts/multilingual_load.py --workers 8 --threads 2 --streams 1 2 4 8 12 24 --rounds 10 --output evidence/my-load.json
 python scripts/multilingual_load.py --workers 8 --threads 2 --streams 8 12 24 --rounds 10 --mixed --output evidence/my-mixed-load.json
+python scripts/multilingual_load.py --workers 8 --threads 2 --streams 8 12 24 --rounds 10 --rotate-modes --output evidence/my-all-language-modes.json
 ```
 
 On Windows substitute `.venv\Scripts\python.exe`. For previously extracted WSL
