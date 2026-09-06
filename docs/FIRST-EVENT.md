@@ -6,7 +6,7 @@ can improve it, but the combination still needs an event-specific accessibility 
 
 ## Rehearse the full route
 
-1. Install the service using the [README](../README.md). Download the model before arriving at a venue with limited connectivity.
+1. Install the service using the [start-here guide](GETTING-STARTED.md). Download the model before arriving at a venue with limited connectivity.
 2. Connect the audio you will actually use. Select an input visible to the browser: a microphone, USB audio interface, or a virtual audio device you have configured separately.
 3. Select the spoken language explicitly when known. Automatic detection is less reliable on short phrases. Keep the `small` model for multilingual use.
 4. Speak quietly and normally, introduce names and theatre terms, pause, and test background noise. Adjust microphone placement/gain first; try Quiet speech sensitivity if the meter moves but captions do not appear.

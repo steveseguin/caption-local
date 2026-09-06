@@ -10,6 +10,10 @@ person to correct before publishing to OBS, a venue screen, phones, or a webpage
 You do not need an API key, a paid transcription account, or an AI assistant.
 The project is open source and runs independently of caption.ninja.
 
+**New here? [Start here: requirements, installation and your first captions](docs/GETTING-STARTED.md).**
+The guide includes Windows/Linux commands, saving and shutdown, keyboard use,
+privacy, realistic delay and accuracy expectations, and common next steps.
+
 ## What to expect
 
 - **Transcription:** captions in the language being spoken.
@@ -35,10 +39,10 @@ errors remain. [Sustained results and failed configurations](evidence/deployment
 
 | Requirement | Details |
 | --- | --- |
-| Inference computer | An Intel/AMD 64-bit Linux computer for the validated configuration. Ubuntu with Python 3.12 is the tested native environment. |
+| Inference computer | Intel/AMD 64-bit Windows or Linux. Native CPU tests cover Windows 11 and Ubuntu; the published v1.1.0 baseline is Linux CPU. |
 | Installation method | Python 3.12 with venv support **or** Docker with the Compose plugin. Docker does not require host Python. |
 | Memory and storage | Start with at least 4 GiB RAM and several GB of free disk for one stream; these are planning allowances, not tested minimums. The twelve-stream test host had a six-core Ryzen 5 5500 and 32 GiB RAM. |
-| Browser and audio | A current desktop Chrome or Edge browser and a microphone/audio input visible to it. Chrome was exercised by the automated browser tests. |
+| Browser and audio | A current desktop Chrome or Edge browser and an audio input visible to it. Automated tests exercise synthetic capture in Chrome/Edge; physical microphone wiring needs your own rehearsal. |
 | Initial internet access | Needed to install dependencies and download a speech model. Later operation can be offline once the selected model is cached. |
 | Remote use | SSH access to the inference computer. Each producer opens the capture page through a local SSH tunnel. |
 
@@ -55,10 +59,28 @@ git clone https://github.com/steveseguin/caption-local.git
 cd caption-local
 ```
 
+The newer Windows, access-token and caption-interval improvements described here
+are development changes after v1.1.0, available in [draft PR #1](https://github.com/steveseguin/caption-local/pull/1).
+They have not been published as a new release. Follow the documentation included
+with the version you download.
+
 Run the following commands **inside the extracted or cloned project folder**.
 Choose one installation method.
 
-### Option 1: Linux script
+### Option 1: Windows with Python
+
+Open PowerShell in the extracted project folder. With Python 3.12 installed:
+
+```powershell
+py -3.12 deploy.py run
+```
+
+This creates the project environment, installs dependencies, downloads the small
+model and starts CPU inference. Wait for readiness, then open **http://localhost:8765**.
+Keep the terminal open; Ctrl+C stops the service. No Docker, WSL or execution-policy
+change is needed. [Step-by-step Windows instructions](docs/GETTING-STARTED.md#windows-with-python).
+
+### Option 2: Linux script
 
 ```sh
 ./start.sh
@@ -71,7 +93,7 @@ the default `small` speech model. If Python's venv support is missing, follow th
 Wait for the server to report that it is ready, then open **http://localhost:8765**.
 Keep the terminal open while using captions. Press **Ctrl+C** to stop the server.
 
-### Option 2: Docker
+### Option 3: Docker
 
 ```sh
 docker compose up --build -d
@@ -142,13 +164,14 @@ queue limits and the failed tests that informed this preset.
 
 | I want to… | Read |
 | --- | --- |
+| Understand requirements and get my first captions | [Start here](docs/GETTING-STARTED.md) |
 | Prepare an event and use the human editor | [First event](docs/FIRST-EVENT.md) |
 | Install, configure hardware, or connect remotely | [Deployment](DEPLOYMENT.md) |
 | Fix a problem | [Troubleshooting](docs/TROUBLESHOOTING.md) |
 | Run unattended, upgrade, or roll back | [Operations](OPERATIONS.md) |
 | Ask an AI assistant to install it | [AI setup](docs/AI-SETUP.md) |
 | Send audio from my own application | [HTTP audio API](API.md) |
-| Check exactly what was tested | [Version 1.1 validation](evidence/multistream/report.md) |
+| Check exactly what was tested | [Published Linux baseline](evidence/multistream/report.md) and [Windows multilingual development results](evidence/deployment-matrix/report.md) |
 | Report a bug or contribute accessibility improvements | [Contributing](CONTRIBUTING.md) |
 
 Use [GitHub issues](https://github.com/steveseguin/caption-local/issues) for bugs and
