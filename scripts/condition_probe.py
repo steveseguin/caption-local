@@ -21,6 +21,8 @@ headers={'X-Caption-Local':'1','Content-Type':'application/octet-stream'}
 if os.environ.get('CAPTION_API_KEY'): headers['Authorization']='Bearer '+os.environ['CAPTION_API_KEY']
 results=[]
 with httpx.Client(timeout=60,headers=headers) as client:
+    ready=client.get(args.url+'/health'); ready.raise_for_status()
+    health=ready.json()
     for item in fixtures:
         audio=decode_audio(str(root/item['path']))
         noise=np.random.default_rng(42).normal(0,float(np.sqrt(np.mean(audio**2)))/3.1623,len(audio))
@@ -31,6 +33,6 @@ with httpx.Client(timeout=60,headers=headers) as client:
                 'wer':wer(item['text'],result.get('transcript','')),'result':result})
     client.delete(args.url+'/streams/legacy')
 args.output.parent.mkdir(parents=True,exist_ok=True)
-args.output.write_text(json.dumps({'seed':42,'results':results,'scope':'Synthetic robustness observations; not a new acceptance gate'},indent=2,ensure_ascii=False),encoding='utf-8')
+args.output.write_text(json.dumps({'health':health,'seed':42,'results':results,'scope':'Synthetic robustness observations; not a new acceptance gate'},indent=2,ensure_ascii=False),encoding='utf-8')
 assert all(result['status']==200 for result in results)
 print('Condition probe recorded all 18 real inference results')

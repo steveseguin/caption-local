@@ -46,6 +46,11 @@ and no HTTP errors. Consult the evidence before choosing a deployment count.
 Recognition errors in noise remain a separate limit, including repetitive French
 text and the German noise-probe failure. This does not certify arbitrary live audio.
 
+For one accuracy-oriented stream on this host, medium/int8/beam five with one
+worker and eight threads passed the complete quality gate at 5.07% mean English
+WER. Four threads failed the real-time check. This supports a single-stream
+starting point; sustained medium concurrency and NVIDIA acceleration remain untested.
+
 ## Private VPS example
 
 On the VPS, from the repository directory:

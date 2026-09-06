@@ -84,6 +84,8 @@ async def main(args, process, report):
                         await asyncio.sleep(max(0, due-time.perf_counter()))
                         before = time.perf_counter()
                         mode = 'both' if args.mixed and index % 3 == 0 else 'transcribe'
+                        if args.rotate_modes:
+                            mode = ('transcribe','translate','both')[(index+cycle)%3]
                         response = await client.post(base+'/transcribe', params={'language':item['language'], 'mode':mode},
                             content=audio.tobytes(), headers={'X-Caption-Local':'1', 'X-Stream-ID':sid,
                             'X-Request-ID':f'cycle-{cycle:08}', 'Content-Type':'application/octet-stream'})
@@ -125,7 +127,9 @@ if __name__ == '__main__':
     parser.add_argument('--beam-size',type=int,default=5)
     parser.add_argument('--streams',type=int,nargs='+',default=[1,2,4,8,12,24])
     parser.add_argument('--rounds',type=int,default=5)
-    parser.add_argument('--mixed',action='store_true')
+    modes=parser.add_mutually_exclusive_group()
+    modes.add_argument('--mixed',action='store_true')
+    modes.add_argument('--rotate-modes',action='store_true',help='Rotate transcription, translation and both across every language and cycle')
     parser.add_argument('--port',type=int,default=8773)
     parser.add_argument('--output',type=Path,required=True)
     args=parser.parse_args()

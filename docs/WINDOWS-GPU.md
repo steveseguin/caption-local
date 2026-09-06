@@ -50,6 +50,15 @@ py -3.12 deploy.py run --model small --device cpu --compute-type int8 --workers 
 The runtime resolves requested CPU `int8` to `int8_float32`, now exposed separately
 as `/health.actual_compute_type`. The requested setting remains in `compute_type`.
 
+For a single accuracy-oriented stream on this host, medium with eight threads
+passed the complete quality/real-time gate (5.07% mean English WER). Four threads
+failed its real-time check. Medium has not passed a sustained concurrency test:
+
+```powershell
+py -3.12 deploy.py download --model medium
+py -3.12 deploy.py run --model medium --device cpu --compute-type int8 --workers 1 --threads 8 --beam-size 5 --max-streams 1 --offline
+```
+
 After freeing the GPU, the explicit CUDA starting configuration to validate is:
 
 ```powershell

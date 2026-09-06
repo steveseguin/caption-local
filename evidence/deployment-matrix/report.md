@@ -30,6 +30,11 @@ with `both` in the preliminary quality probe. The mixed capacity count is specif
 to that assignment; it does not establish the same capacity for arbitrary
 translation-language mixtures.
 
+The added `--rotate-modes` policy instead cycles each producer through
+transcription, English translation and both outputs. This exercises all eighteen
+language/output combinations while retaining the same six-second arrivals and
+request identity rules. Its results are recorded separately from the initial mix.
+
 The existing JFK/LibriSpeech/Spanish quality gate remains separate and unchanged
 at the default six-second window. More language fixtures extend the observations,
 not the existing acceptance thresholds. Unicode word-error measurements retain
@@ -57,6 +62,20 @@ real-time capacity pass. No buffer or queue limits were enlarged to hide delay.
 
 Raw data: [4 workers](small-cpu-w4-t2.json), [8 workers](small-cpu-w8-t2.json),
 [one thread per worker](small-cpu-w8-t1.json), [mixed](small-cpu-w8-t2-mixed.json).
+
+With all six languages rotating through transcription, translation and both,
+small/int8/eight workers/two threads/beam five measured:
+
+| Producers | p95 response | Maximum arrival lag | Late / HTTP errors |
+| --- | --- | --- | --- |
+| 8 | 5.096 s | 5.200 s | 0 / 0 |
+| 12 | 8.035 s | 8.555 s | 9 / 0 |
+| 24 | 14.214 s | 55.493 s | 228 / 0 |
+
+Each producer sent ten requests. All eighteen language/output combinations were
+exercised. Eight kept up in this short API probe; it is not an hour-long mixed-mode
+capacity certification. [Rotating-output evidence](small-cpu-rotating-modes.json).
+
 The initial 4×2 and 8×2 transcription probes accidentally omitted the required
 PCM Content-Type on their preliminary quality requests; those requests returned
 415. Their load requests had the correct header and timings remain valid.
@@ -100,6 +119,20 @@ It nevertheless **failed** the unchanged real-time requirement: fixture
 `1272-135031-0000` took 11.088 seconds of inference for 10.885 seconds of audio.
 That failure is retained, even though the margin is small.
 [Medium four-thread gate](quality-medium-cpu.json).
+
+Repeating the complete medium gate with **eight CPU threads passed every check**,
+including faster-than-audio for every fixture, with the same 5.07% mean English
+WER. This is a single-stream accuracy-oriented option, not a sustained medium
+concurrency result. [Medium eight-thread gate](quality-medium-cpu-t8.json).
+
+The medium condition probe completed all eighteen requests. Noisy German source
+WER improved from small's 70% to 10%; clean/quiet German and all three French
+source transcripts had zero WER. But noisy French English translation was
+incorrect ("Welcome to the Ophéa, even if you become a swan!"). Portuguese source
+WER was 11.1% clean/quiet and 22.2% noisy. A correct source transcript does not
+guarantee translation meaning. These full-utterance observations do not establish
+that medium fixes the repetitive French rolling-window failure.
+[Medium condition evidence](conditions-medium.json).
 
 ## Interfaces, access control and logging
 
