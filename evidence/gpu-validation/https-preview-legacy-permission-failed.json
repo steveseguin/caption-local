@@ -1,0 +1,29 @@
+{
+  "scope": "Intercepted HTTPS-origin page assets with real loopback HTTP requests and fake inference; not a deployed HTTPS site",
+  "scenarios": [
+    {
+      "permission": "denied",
+      "ready": false,
+      "request_failures": [
+        "net::ERR_FAILED"
+      ],
+      "console": [
+        "Access to fetch at 'http://127.0.0.1:8778/health' from origin 'https://caption.ninja' has been blocked by CORS policy: Permission was denied for this request to access the `loopback` address space.",
+        "Failed to load resource: net::ERR_FAILED"
+      ]
+    },
+    {
+      "permission": "granted",
+      "ready": false,
+      "request_failures": [
+        "net::ERR_FAILED"
+      ],
+      "console": [
+        "Access to fetch at 'http://127.0.0.1:8778/health' from origin 'https://caption.ninja' has been blocked by CORS policy: Permission was denied for this request to access the `loopback` address space.",
+        "Failed to load resource: net::ERR_FAILED"
+      ]
+    }
+  ],
+  "browser_version": "152.0.4191.62",
+  "passed": false
+}

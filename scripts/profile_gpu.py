@@ -52,12 +52,19 @@ def main():
             if args.device == 'cuda':
                 result = subprocess.run(['nvidia-smi', '--query-gpu=memory.used,utilization.gpu,power.draw', '--format=csv,noheader,nounits'], capture_output=True, text=True)
                 sample['nvidia_smi'] = result.stdout.strip()
+                active = subprocess.run(['nvidia-smi', '--query-compute-apps=pid,process_name', '--format=csv,noheader'], capture_output=True, text=True)
+                sample['gpu_compute_processes'] = active.stdout.strip().splitlines()
+                if active.returncode:
+                    sample['monitor_error'] = active.stderr
+                foreign = [line for line in sample['gpu_compute_processes'] if line.split(',')[0].strip() != str(process.pid)]
+                if foreign:
+                    report['interference'].append({'time':sample['time'], 'processes':foreign})
                 if result.returncode:
                     sample['monitor_error'] = result.stderr
             samples.append(sample)
             finished.wait(.25)
     thread = threading.Thread(target=monitor, daemon=True)
-    report = {'configuration': vars(args).copy(), 'results': [], 'samples': samples, 'passed': False}
+    report = {'configuration': vars(args).copy(), 'results': [], 'samples': samples, 'passed': False, 'interference': []}
     report['configuration']['output'] = str(args.output)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     thread.start()
@@ -76,6 +83,8 @@ def main():
                 for cycle in range(args.rounds):
                     start = time.perf_counter()
                     def one(index):
+                        if report['interference']:
+                            raise RuntimeError('Competing GPU workload appeared; remaining benchmark work cancelled')
                         began = time.perf_counter()
                         if mixed and index % 3 == 0:
                             text, _ = engine.transcribe(spanish, 'es')
@@ -94,7 +103,7 @@ def main():
                             'wall_seconds': time.perf_counter()-start, 'results': results}
                     report['results'].append(cell)
                     print(json.dumps({k: v for k, v in cell.items() if k != 'results'}), flush=True)
-        report['passed'] = all(r['fixture_check'] for cell in report['results'] for r in cell['results'])
+        report['passed'] = not report['interference'] and not any(s.get('monitor_error') for s in samples) and all(r['fixture_check'] for cell in report['results'] for r in cell['results'])
     except Exception as exc:
         report['error'] = repr(exc)
         raise
@@ -103,7 +112,7 @@ def main():
         thread.join(timeout=5)
         args.output.write_text(json.dumps(report, indent=2, ensure_ascii=False)+'\n', encoding='utf-8')
     if not report['passed']:
-        raise SystemExit('Fixture checks failed; results retained.')
+        raise SystemExit('GPU interference, monitoring or fixture checks failed; see retained results.')
 
 
 if __name__ == '__main__':

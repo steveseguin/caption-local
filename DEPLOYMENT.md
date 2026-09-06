@@ -164,7 +164,9 @@ system PATH. Docker bundles these libraries if you prefer to avoid native setup.
 Windows can provision pinned NVIDIA runtime wheels inside the project environment
 with `.venv\Scripts\python.exe -m pip install -r requirements-windows-gpu.txt`.
 CUDA engine setup adds those DLL directories to its own process search path.
-DLL loading has been tested on Windows; real CUDA inference is still pending.
+Real CUDA decoding now passes on the tested Windows TITAN RTX with these libraries.
+Sustained GPU capacity remains unqualified because other GPU workloads interrupted
+testing. See [GPU evidence and candidate configurations](evidence/gpu-validation/report.md).
 
 ```sh
 python3 deploy.py doctor

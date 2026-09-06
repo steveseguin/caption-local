@@ -7,10 +7,11 @@ import argparse
 import json
 from pathlib import Path
 import statistics
+import math
 
 
 def distribution(values):
-    values=sorted(values)
+    values=sorted(value for value in values if value is not None and math.isfinite(value))
     if not values:
         return None
     def quantile(fraction):

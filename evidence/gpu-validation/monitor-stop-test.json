@@ -1,0 +1,59 @@
+{
+  "streams": 1,
+  "capture_seconds": 60,
+  "interval": 6,
+  "mixed": false,
+  "varied_conditions": false,
+  "observations": [
+    {
+      "seconds": 5.010844300035387,
+      "states": [
+        {
+          "running": true,
+          "failed": false,
+          "buffered": 0.3,
+          "captions": 1,
+          "error": ""
+        }
+      ]
+    }
+  ],
+  "responses": [
+    {
+      "stream": 0,
+      "status": 200,
+      "result": {
+        "text": "Synthetic connection test.",
+        "transcript": "Synthetic connection test.",
+        "translation": "",
+        "language": "en",
+        "output_language": "en",
+        "translation_language": null,
+        "mode": "transcribe",
+        "audio_seconds": 4.6,
+        "committed_seconds": 4.6,
+        "request_id": "d8626fa7-c3a8-4422-9112-2b68c170035a",
+        "stream_id": "1e196d36-38ce-4a35-8c64-deb2fef9ab34",
+        "inference_seconds": 0.0,
+        "queue_seconds": 0.0
+      }
+    }
+  ],
+  "errors": [
+    "Capture stopped by the external benchmark monitor; requested duration was not completed"
+  ],
+  "final": [
+    {
+      "streamId": "1e196d36-38ce-4a35-8c64-deb2fef9ab34",
+      "failed": false,
+      "pending": false,
+      "buffered": 0.4,
+      "transcript": [
+        "Synthetic connection test."
+      ],
+      "first_caption_seconds": 4.5466000001430515
+    }
+  ],
+  "wall_seconds": 5.055686299921945,
+  "passed": false
+}

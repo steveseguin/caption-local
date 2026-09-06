@@ -1,0 +1,3751 @@
+{
+  "configuration": {
+    "model": "medium",
+    "device": "cuda",
+    "compute_type": "int8_float16",
+    "beam_size": 5,
+    "workers": 1,
+    "threads": 4,
+    "streams": [
+      1,
+      2,
+      4,
+      8,
+      12
+    ],
+    "rounds": 2,
+    "output": "evidence\\gpu-validation\\isolated\\medium-int8_float16-w1-b5.json"
+  },
+  "results": [
+    {
+      "streams": 1,
+      "mixed": false,
+      "round": 0,
+      "wall_seconds": 0.4636941999197006,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.0004249000921845436,
+          "inference_seconds": 0.4631509999744594,
+          "text": "Mr. Quilter is the apostle of the middle classes and we are glad to welcome",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 1,
+      "mixed": false,
+      "round": 1,
+      "wall_seconds": 0.3767774999141693,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.0003978998865932226,
+          "inference_seconds": 0.37626280006952584,
+          "text": "Mr. Quilter is the apostle of the middle classes and we are glad to welcome",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 2,
+      "mixed": false,
+      "round": 0,
+      "wall_seconds": 0.6850548998918384,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.0002272001001983881,
+          "inference_seconds": 0.3702601999975741,
+          "text": "Mr. Quilter is the apostle of the middle classes and we are glad to welcome",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.3705082999076694,
+          "inference_seconds": 0.31446760008111596,
+          "text": "Nor is Mr. Quilter's manner less interesting than",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 2,
+      "mixed": false,
+      "round": 1,
+      "wall_seconds": 0.6999071999453008,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.0002554000820964575,
+          "inference_seconds": 0.37535299989394844,
+          "text": "Mr. Quilter is the apostle of the middle classes and we are glad to welcome",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.37562740012072027,
+          "inference_seconds": 0.3241855998057872,
+          "text": "Nor is Mr. Quilter's manner less interesting than",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 4,
+      "mixed": false,
+      "round": 0,
+      "wall_seconds": 1.3512329000514,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.00032199989072978497,
+          "inference_seconds": 0.3737435999792069,
+          "text": "Mr. Quilter is the apostle of the middle classes and we are glad to welcome",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.37408600002527237,
+          "inference_seconds": 0.3132952998857945,
+          "text": "Nor is Mr. Quilter's manner less interesting than",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 2,
+          "queue_seconds": 0.6874021999537945,
+          "inference_seconds": 0.3411880999337882,
+          "text": "He tells us that at this festive season of the year with",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 3,
+          "queue_seconds": 1.0286097000353038,
+          "inference_seconds": 0.3225090999621898,
+          "text": "He has grave doubts whether Sir Frederick Layton's work is really Greek",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 4,
+      "mixed": false,
+      "round": 1,
+      "wall_seconds": 1.3769680999685079,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.00031649996526539326,
+          "inference_seconds": 0.3805096000432968,
+          "text": "Mr. Quilter is the apostle of the middle classes and we are glad to welcome",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.38084719981998205,
+          "inference_seconds": 0.32148220017552376,
+          "text": "Nor is Mr. Quilter's manner less interesting than",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 2,
+          "queue_seconds": 0.702349899802357,
+          "inference_seconds": 0.34471810003742576,
+          "text": "He tells us that at this festive season of the year with",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 3,
+          "queue_seconds": 1.0470882998779416,
+          "inference_seconds": 0.32979580014944077,
+          "text": "He has grave doubts whether Sir Frederick Layton's work is really Greek",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 8,
+      "mixed": false,
+      "round": 0,
+      "wall_seconds": 5.297670500120148,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.00037720007821917534,
+          "inference_seconds": 0.3790309999603778,
+          "text": "Mr. Quilter is the apostle of the middle classes and we are glad to welcome",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.3794267000630498,
+          "inference_seconds": 0.31861789990216494,
+          "text": "Nor is Mr. Quilter's manner less interesting than",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 2,
+          "queue_seconds": 0.698063800111413,
+          "inference_seconds": 0.3447487000375986,
+          "text": "He tells us that at this festive season of the year with",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 3,
+          "queue_seconds": 1.0428353999741375,
+          "inference_seconds": 0.325844099977985,
+          "text": "He has grave doubts whether Sir Frederick Layton's work is really Greek",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 4,
+          "queue_seconds": 1.368702500127256,
+          "inference_seconds": 0.6277771999593824,
+          "text": "Linnell's pictures are a sort of up guards and atom paintings,",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 5,
+          "queue_seconds": 1.9965002001263201,
+          "inference_seconds": 0.31794959981925786,
+          "text": "It is obviously unnecessary for us to point out how luminous these",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 6,
+          "queue_seconds": 2.314469600096345,
+          "inference_seconds": 0.33879309985786676,
+          "text": "On the general principles of art, Mr. Quilter writes with equal",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 7,
+          "queue_seconds": 2.6532833999954164,
+          "inference_seconds": 2.644295300124213,
+          "text": "Painting, he tells us, is of a different quality to mathematics,",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 8,
+      "mixed": false,
+      "round": 1,
+      "wall_seconds": 5.286371900001541,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.00029669981449842453,
+          "inference_seconds": 0.37761970004066825,
+          "text": "Mr. Quilter is the apostle of the middle classes and we are glad to welcome",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.3779442999511957,
+          "inference_seconds": 0.31985830003395677,
+          "text": "Nor is Mr. Quilter's manner less interesting than",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 2,
+          "queue_seconds": 0.6978219000156969,
+          "inference_seconds": 0.3433613998349756,
+          "text": "He tells us that at this festive season of the year with",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 3,
+          "queue_seconds": 1.0412026999983937,
+          "inference_seconds": 0.32877049990929663,
+          "text": "He has grave doubts whether Sir Frederick Layton's work is really Greek",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 4,
+          "queue_seconds": 1.3699930999428034,
+          "inference_seconds": 0.6321926000528038,
+          "text": "Linnell's pictures are a sort of up guards and atom paintings,",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 5,
+          "queue_seconds": 2.0022052999120206,
+          "inference_seconds": 0.3163457999471575,
+          "text": "It is obviously unnecessary for us to point out how luminous these",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 6,
+          "queue_seconds": 2.318571199895814,
+          "inference_seconds": 0.34117150004021823,
+          "text": "On the general principles of art, Mr. Quilter writes with equal",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 7,
+          "queue_seconds": 2.6597627999726683,
+          "inference_seconds": 2.626507099950686,
+          "text": "Painting, he tells us, is of a different quality to mathematics,",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 12,
+      "mixed": false,
+      "round": 0,
+      "wall_seconds": 6.63258760003373,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.0004344000481069088,
+          "inference_seconds": 0.37720969994552433,
+          "text": "Mr. Quilter is the apostle of the middle classes and we are glad to welcome",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.3776660000439733,
+          "inference_seconds": 0.32341669988818467,
+          "text": "Nor is Mr. Quilter's manner less interesting than",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 2,
+          "queue_seconds": 0.7010981999337673,
+          "inference_seconds": 0.3304612999781966,
+          "text": "He tells us that at this festive season of the year with",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 3,
+          "queue_seconds": 1.0315783000551164,
+          "inference_seconds": 0.32980559999123216,
+          "text": "He has grave doubts whether Sir Frederick Layton's work is really Greek",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 4,
+          "queue_seconds": 1.3614043998531997,
+          "inference_seconds": 0.6205667001195252,
+          "text": "Linnell's pictures are a sort of up guards and atom paintings,",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 5,
+          "queue_seconds": 1.9819904998876154,
+          "inference_seconds": 0.3187895000446588,
+          "text": "It is obviously unnecessary for us to point out how luminous these",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 6,
+          "queue_seconds": 2.3008001998532563,
+          "inference_seconds": 0.3408379000611603,
+          "text": "On the general principles of art, Mr. Quilter writes with equal",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 7,
+          "queue_seconds": 2.6416549999266863,
+          "inference_seconds": 2.6388380001299083,
+          "text": "Painting, he tells us, is of a different quality to mathematics,",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 8,
+          "queue_seconds": 5.2805100998375565,
+          "inference_seconds": 0.3159676000941545,
+          "text": "As for etchings, they are of two kinds, British",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 9,
+          "queue_seconds": 5.596496699843556,
+          "inference_seconds": 0.3434412002097815,
+          "text": "He laments most bitterly the divorce that has been made between decorative",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 10,
+          "queue_seconds": 5.9399561998434365,
+          "inference_seconds": 0.3419959000311792,
+          "text": "near the fire, and the ornaments Fred brought home from India on the",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 11,
+          "queue_seconds": 6.281972999917343,
+          "inference_seconds": 0.35052180010825396,
+          "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 12,
+      "mixed": false,
+      "round": 1,
+      "wall_seconds": 6.635832200059667,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.00031240005046129227,
+          "inference_seconds": 0.3846927999984473,
+          "text": "Mr. Quilter is the apostle of the middle classes and we are glad to welcome",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.3850385001860559,
+          "inference_seconds": 0.32329119998030365,
+          "text": "Nor is Mr. Quilter's manner less interesting than",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 2,
+          "queue_seconds": 0.7083475000690669,
+          "inference_seconds": 0.3450666998978704,
+          "text": "He tells us that at this festive season of the year with",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 3,
+          "queue_seconds": 1.0534352001268417,
+          "inference_seconds": 0.3282961999066174,
+          "text": "He has grave doubts whether Sir Frederick Layton's work is really Greek",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 4,
+          "queue_seconds": 1.3817487000487745,
+          "inference_seconds": 0.6257329001091421,
+          "text": "Linnell's pictures are a sort of up guards and atom paintings,",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 5,
+          "queue_seconds": 2.007501400075853,
+          "inference_seconds": 0.319167299894616,
+          "text": "It is obviously unnecessary for us to point out how luminous these",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 6,
+          "queue_seconds": 2.3266887001227587,
+          "inference_seconds": 0.34062130004167557,
+          "text": "On the general principles of art, Mr. Quilter writes with equal",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 7,
+          "queue_seconds": 2.667329400079325,
+          "inference_seconds": 2.620343199931085,
+          "text": "Painting, he tells us, is of a different quality to mathematics,",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 8,
+          "queue_seconds": 5.287690600147471,
+          "inference_seconds": 0.31878139986656606,
+          "text": "As for etchings, they are of two kinds, British",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 9,
+          "queue_seconds": 5.606490800157189,
+          "inference_seconds": 0.33879849989898503,
+          "text": "He laments most bitterly the divorce that has been made between decorative",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 10,
+          "queue_seconds": 5.945311899995431,
+          "inference_seconds": 0.3426547001581639,
+          "text": "near the fire, and the ornaments Fred brought home from India on the",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 11,
+          "queue_seconds": 6.287979900138453,
+          "inference_seconds": 0.34774770005606115,
+          "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 1,
+      "mixed": true,
+      "round": 0,
+      "wall_seconds": 0.6021409002132714,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.0003100000321865082,
+          "inference_seconds": 0.6017414000816643,
+          "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello. Welcome to the theater. Thank you very much for coming tonight.",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 1,
+      "mixed": true,
+      "round": 1,
+      "wall_seconds": 0.6086027999408543,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.00039980001747608185,
+          "inference_seconds": 0.608110300032422,
+          "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello. Welcome to the theater. Thank you very much for coming tonight.",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 2,
+      "mixed": true,
+      "round": 0,
+      "wall_seconds": 0.9305809000506997,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.0003347999881953001,
+          "inference_seconds": 0.6074540000408888,
+          "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello. Welcome to the theater. Thank you very much for coming tonight.",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.6078085999470204,
+          "inference_seconds": 0.32268219999969006,
+          "text": "Nor is Mr. Quilter's manner less interesting than",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 2,
+      "mixed": true,
+      "round": 1,
+      "wall_seconds": 0.9199647000059485,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.00029429979622364044,
+          "inference_seconds": 0.599858800182119,
+          "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello. Welcome to the theater. Thank you very much for coming tonight.",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.6001716998871416,
+          "inference_seconds": 0.3197107999585569,
+          "text": "Nor is Mr. Quilter's manner less interesting than",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 4,
+      "mixed": true,
+      "round": 0,
+      "wall_seconds": 1.8723202999681234,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.0003400000277906656,
+          "inference_seconds": 0.6070884000509977,
+          "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello. Welcome to the theater. Thank you very much for coming tonight.",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.6074530000332743,
+          "inference_seconds": 0.3213196999859065,
+          "text": "Nor is Mr. Quilter's manner less interesting than",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 2,
+          "queue_seconds": 0.9287938000634313,
+          "inference_seconds": 0.34388040006160736,
+          "text": "He tells us that at this festive season of the year with",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 3,
+          "queue_seconds": 1.2726932999212295,
+          "inference_seconds": 0.5995177000295371,
+          "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello. Welcome to the theater. Thank you very much for coming tonight.",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 4,
+      "mixed": true,
+      "round": 1,
+      "wall_seconds": 1.8595259999856353,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.0007991001475602388,
+          "inference_seconds": 0.5996357998810709,
+          "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello. Welcome to the theater. Thank you very much for coming tonight.",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.6004542000591755,
+          "inference_seconds": 0.3215006999671459,
+          "text": "Nor is Mr. Quilter's manner less interesting than",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 2,
+          "queue_seconds": 0.9219746000599116,
+          "inference_seconds": 0.34108370007015765,
+          "text": "He tells us that at this festive season of the year with",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 3,
+          "queue_seconds": 1.263082800200209,
+          "inference_seconds": 0.5963514999020845,
+          "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello. Welcome to the theater. Thank you very much for coming tonight.",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 8,
+      "mixed": true,
+      "round": 0,
+      "wall_seconds": 6.0515728001482785,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.0002812000457197428,
+          "inference_seconds": 0.604524000082165,
+          "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello. Welcome to the theater. Thank you very much for coming tonight.",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.6048253001645207,
+          "inference_seconds": 0.324411700014025,
+          "text": "Nor is Mr. Quilter's manner less interesting than",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 2,
+          "queue_seconds": 0.9292598001193255,
+          "inference_seconds": 0.34548019990324974,
+          "text": "He tells us that at this festive season of the year with",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 3,
+          "queue_seconds": 1.2747592001687735,
+          "inference_seconds": 0.605277800001204,
+          "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello. Welcome to the theater. Thank you very much for coming tonight.",
+          "fixture_check": true
+        },
+        {
+          "stream": 4,
+          "queue_seconds": 1.8800576999783516,
+          "inference_seconds": 0.629481100011617,
+          "text": "Linnell's pictures are a sort of up guards and atom paintings,",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 5,
+          "queue_seconds": 2.50955960014835,
+          "inference_seconds": 0.3140529999509454,
+          "text": "It is obviously unnecessary for us to point out how luminous these",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 6,
+          "queue_seconds": 2.8236287999898195,
+          "inference_seconds": 0.6020408000331372,
+          "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello. Welcome to the theater. Thank you very much for coming tonight.",
+          "fixture_check": true
+        },
+        {
+          "stream": 7,
+          "queue_seconds": 3.4256919999606907,
+          "inference_seconds": 2.625785200158134,
+          "text": "Painting, he tells us, is of a different quality to mathematics,",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 8,
+      "mixed": true,
+      "round": 1,
+      "wall_seconds": 6.034013099968433,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.00039739999920129776,
+          "inference_seconds": 0.600813299883157,
+          "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello. Welcome to the theater. Thank you very much for coming tonight.",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.6012326998170465,
+          "inference_seconds": 0.32054410013370216,
+          "text": "Nor is Mr. Quilter's manner less interesting than",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 2,
+          "queue_seconds": 0.9217974999919534,
+          "inference_seconds": 0.34547269996255636,
+          "text": "He tells us that at this festive season of the year with",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 3,
+          "queue_seconds": 1.2672903998754919,
+          "inference_seconds": 0.6038025999441743,
+          "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello. Welcome to the theater. Thank you very much for coming tonight.",
+          "fixture_check": true
+        },
+        {
+          "stream": 4,
+          "queue_seconds": 1.8711122998502105,
+          "inference_seconds": 0.6287388000637293,
+          "text": "Linnell's pictures are a sort of up guards and atom paintings,",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 5,
+          "queue_seconds": 2.499870899831876,
+          "inference_seconds": 0.31486070016399026,
+          "text": "It is obviously unnecessary for us to point out how luminous these",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 6,
+          "queue_seconds": 2.8147516997996718,
+          "inference_seconds": 0.5939844001550227,
+          "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello. Welcome to the theater. Thank you very much for coming tonight.",
+          "fixture_check": true
+        },
+        {
+          "stream": 7,
+          "queue_seconds": 3.4087565999943763,
+          "inference_seconds": 2.625159899936989,
+          "text": "Painting, he tells us, is of a different quality to mathematics,",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 12,
+      "mixed": true,
+      "round": 0,
+      "wall_seconds": 7.679038100177422,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.0003168999683111906,
+          "inference_seconds": 0.6055164001882076,
+          "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello. Welcome to the theater. Thank you very much for coming tonight.",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.6058547000866383,
+          "inference_seconds": 0.32166139991022646,
+          "text": "Nor is Mr. Quilter's manner less interesting than",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 2,
+          "queue_seconds": 0.9275365001522005,
+          "inference_seconds": 0.34420689987018704,
+          "text": "He tells us that at this festive season of the year with",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 3,
+          "queue_seconds": 1.2717615000437945,
+          "inference_seconds": 0.6030658001545817,
+          "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello. Welcome to the theater. Thank you very much for coming tonight.",
+          "fixture_check": true
+        },
+        {
+          "stream": 4,
+          "queue_seconds": 1.8748472000006586,
+          "inference_seconds": 0.624157499987632,
+          "text": "Linnell's pictures are a sort of up guards and atom paintings,",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 5,
+          "queue_seconds": 2.499023800017312,
+          "inference_seconds": 0.3156753999646753,
+          "text": "It is obviously unnecessary for us to point out how luminous these",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 6,
+          "queue_seconds": 2.814718300011009,
+          "inference_seconds": 0.6057408000342548,
+          "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello. Welcome to the theater. Thank you very much for coming tonight.",
+          "fixture_check": true
+        },
+        {
+          "stream": 7,
+          "queue_seconds": 3.4204758000560105,
+          "inference_seconds": 2.6463919000234455,
+          "text": "Painting, he tells us, is of a different quality to mathematics,",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 8,
+          "queue_seconds": 6.066888200119138,
+          "inference_seconds": 0.31929360004141927,
+          "text": "As for etchings, they are of two kinds, British",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 9,
+          "queue_seconds": 6.386202400084585,
+          "inference_seconds": 0.6014876998960972,
+          "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello. Welcome to the theater. Thank you very much for coming tonight.",
+          "fixture_check": true
+        },
+        {
+          "stream": 10,
+          "queue_seconds": 6.987710300134495,
+          "inference_seconds": 0.33922480000182986,
+          "text": "near the fire, and the ornaments Fred brought home from India on the",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 11,
+          "queue_seconds": 7.326954700052738,
+          "inference_seconds": 0.35199190001003444,
+          "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 12,
+      "mixed": true,
+      "round": 1,
+      "wall_seconds": 7.757743000052869,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.00036530010402202606,
+          "inference_seconds": 0.6052690998185426,
+          "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello. Welcome to the theater. Thank you very much for coming tonight.",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.6056572999805212,
+          "inference_seconds": 0.3229167000390589,
+          "text": "Nor is Mr. Quilter's manner less interesting than",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 2,
+          "queue_seconds": 0.9285941000562161,
+          "inference_seconds": 0.3415099000558257,
+          "text": "He tells us that at this festive season of the year with",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 3,
+          "queue_seconds": 1.2701240999158472,
+          "inference_seconds": 0.606827300041914,
+          "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello. Welcome to the theater. Thank you very much for coming tonight.",
+          "fixture_check": true
+        },
+        {
+          "stream": 4,
+          "queue_seconds": 1.8769718001130968,
+          "inference_seconds": 0.6295882998965681,
+          "text": "Linnell's pictures are a sort of up guards and atom paintings,",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 5,
+          "queue_seconds": 2.506578499916941,
+          "inference_seconds": 0.32242420013062656,
+          "text": "It is obviously unnecessary for us to point out how luminous these",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 6,
+          "queue_seconds": 2.829022000078112,
+          "inference_seconds": 0.60559709998779,
+          "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello. Welcome to the theater. Thank you very much for coming tonight.",
+          "fixture_check": true
+        },
+        {
+          "stream": 7,
+          "queue_seconds": 3.434643799904734,
+          "inference_seconds": 2.7069622001145035,
+          "text": "Painting, he tells us, is of a different quality to mathematics,",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 8,
+          "queue_seconds": 6.141631500096992,
+          "inference_seconds": 0.32011520001105964,
+          "text": "As for etchings, they are of two kinds, British",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 9,
+          "queue_seconds": 6.461770500056446,
+          "inference_seconds": 0.6046800999902189,
+          "text": "Hola, bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello. Welcome to the theater. Thank you very much for coming tonight.",
+          "fixture_check": true
+        },
+        {
+          "stream": 10,
+          "queue_seconds": 7.066465100040659,
+          "inference_seconds": 0.3417452999856323,
+          "text": "near the fire, and the ornaments Fred brought home from India on the",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 11,
+          "queue_seconds": 7.408230100059882,
+          "inference_seconds": 0.3494162999559194,
+          "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    }
+  ],
+  "samples": [
+    {
+      "time": 1249833.6462162,
+      "rss_mib": 160.33203125,
+      "cpu_seconds": 0.4375,
+      "nvidia_smi": "0, 11, 93.79",
+      "gpu_compute_processes": []
+    },
+    {
+      "time": 1249833.9967051,
+      "rss_mib": 501.14453125,
+      "cpu_seconds": 0.765625,
+      "nvidia_smi": "146, 11, 91.27",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249834.3388959,
+      "rss_mib": 1049.734375,
+      "cpu_seconds": 1.140625,
+      "nvidia_smi": "146, 11, 91.90",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249834.6834906,
+      "rss_mib": 1603.39453125,
+      "cpu_seconds": 1.46875,
+      "nvidia_smi": "146, 1, 91.87",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249835.0283208,
+      "rss_mib": 1585.703125,
+      "cpu_seconds": 2.546875,
+      "nvidia_smi": "146, 1, 65.87",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249835.3739777,
+      "rss_mib": 1355.109375,
+      "cpu_seconds": 3.90625,
+      "nvidia_smi": "146, 1, 65.88",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249835.7221688,
+      "rss_mib": 1147.30078125,
+      "cpu_seconds": 5.328125,
+      "nvidia_smi": "146, 0, 65.67",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249836.0949995,
+      "rss_mib": 309.55859375,
+      "cpu_seconds": 6.78125,
+      "nvidia_smi": "1108, 0, 68.15",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249836.442948,
+      "rss_mib": 702.859375,
+      "cpu_seconds": 7.15625,
+      "nvidia_smi": "1280, 0, 79.69",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249836.7815331,
+      "rss_mib": 707.45703125,
+      "cpu_seconds": 7.5,
+      "nvidia_smi": "1184, 35, 130.01",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249837.1288115,
+      "rss_mib": 711.15234375,
+      "cpu_seconds": 7.84375,
+      "nvidia_smi": "1184, 35, 146.23",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249837.5051306,
+      "rss_mib": 711.18359375,
+      "cpu_seconds": 8.21875,
+      "nvidia_smi": "1184, 35, 141.50",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249837.8793064,
+      "rss_mib": 711.19921875,
+      "cpu_seconds": 8.59375,
+      "nvidia_smi": "1280, 63, 145.51",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249838.2182851,
+      "rss_mib": 711.9609375,
+      "cpu_seconds": 8.921875,
+      "nvidia_smi": "1184, 63, 146.49",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249838.5614315,
+      "rss_mib": 711.96875,
+      "cpu_seconds": 9.296875,
+      "nvidia_smi": "1280, 63, 142.76",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249838.9357952,
+      "rss_mib": 711.96875,
+      "cpu_seconds": 9.6875,
+      "nvidia_smi": "1280, 65, 146.43",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249839.3103777,
+      "rss_mib": 712.02734375,
+      "cpu_seconds": 10.046875,
+      "nvidia_smi": "1280, 65, 143.92",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249839.6434728,
+      "rss_mib": 712.03125,
+      "cpu_seconds": 10.390625,
+      "nvidia_smi": "1280, 65, 179.65",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249839.984652,
+      "rss_mib": 712.0390625,
+      "cpu_seconds": 10.734375,
+      "nvidia_smi": "1280, 63, 159.81",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249840.3377886,
+      "rss_mib": 712.0390625,
+      "cpu_seconds": 11.078125,
+      "nvidia_smi": "1447, 63, 176.43",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249840.6906636,
+      "rss_mib": 712.0390625,
+      "cpu_seconds": 11.4375,
+      "nvidia_smi": "1383, 65, 158.92",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249841.0495723,
+      "rss_mib": 712.04296875,
+      "cpu_seconds": 11.8125,
+      "nvidia_smi": "1511, 65, 226.38",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249841.407576,
+      "rss_mib": 712.05078125,
+      "cpu_seconds": 12.171875,
+      "nvidia_smi": "1479, 65, 194.87",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249841.7981933,
+      "rss_mib": 712.0546875,
+      "cpu_seconds": 12.5625,
+      "nvidia_smi": "1479, 65, 220.50",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249842.2220532,
+      "rss_mib": 712.0546875,
+      "cpu_seconds": 12.984375,
+      "nvidia_smi": "1479, 65, 167.16",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249842.5839987,
+      "rss_mib": 712.0625,
+      "cpu_seconds": 13.34375,
+      "nvidia_smi": "1479, 65, 149.64",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249842.9603391,
+      "rss_mib": 712.1015625,
+      "cpu_seconds": 13.71875,
+      "nvidia_smi": "1479, 65, 149.42",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249843.3320522,
+      "rss_mib": 712.125,
+      "cpu_seconds": 14.09375,
+      "nvidia_smi": "1447, 65, 146.88",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249843.6906125,
+      "rss_mib": 712.12890625,
+      "cpu_seconds": 14.4375,
+      "nvidia_smi": "1479, 65, 190.42",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249844.0972196,
+      "rss_mib": 712.12890625,
+      "cpu_seconds": 14.859375,
+      "nvidia_smi": "1511, 65, 149.50",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249844.5351081,
+      "rss_mib": 712.12890625,
+      "cpu_seconds": 15.296875,
+      "nvidia_smi": "1511, 65, 146.44",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249844.910065,
+      "rss_mib": 712.13671875,
+      "cpu_seconds": 15.671875,
+      "nvidia_smi": "1511, 62, 147.10",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249845.2695964,
+      "rss_mib": 712.25,
+      "cpu_seconds": 16.171875,
+      "nvidia_smi": "1511, 62, 156.93",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249845.6504017,
+      "rss_mib": 712.25,
+      "cpu_seconds": 17.65625,
+      "nvidia_smi": "1511, 62, 160.20",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249846.0247052,
+      "rss_mib": 712.25,
+      "cpu_seconds": 19.109375,
+      "nvidia_smi": "1511, 65, 158.14",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249846.3984851,
+      "rss_mib": 712.25,
+      "cpu_seconds": 20.59375,
+      "nvidia_smi": "1415, 65, 163.21",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249846.7585263,
+      "rss_mib": 713.26953125,
+      "cpu_seconds": 21.609375,
+      "nvidia_smi": "1479, 74, 151.88",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249847.1490635,
+      "rss_mib": 713.2734375,
+      "cpu_seconds": 22.015625,
+      "nvidia_smi": "1479, 74, 214.93",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249847.5236229,
+      "rss_mib": 713.2734375,
+      "cpu_seconds": 22.421875,
+      "nvidia_smi": "1479, 74, 148.63",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249847.9321044,
+      "rss_mib": 713.859375,
+      "cpu_seconds": 22.84375,
+      "nvidia_smi": "1351, 64, 150.21",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249848.2909688,
+      "rss_mib": 714.11328125,
+      "cpu_seconds": 23.203125,
+      "nvidia_smi": "1479, 64, 146.32",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249848.7150329,
+      "rss_mib": 714.11328125,
+      "cpu_seconds": 23.625,
+      "nvidia_smi": "1479, 64, 225.72",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249849.1355688,
+      "rss_mib": 714.11328125,
+      "cpu_seconds": 24.0625,
+      "nvidia_smi": "1479, 64, 156.49",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249849.5398189,
+      "rss_mib": 714.125,
+      "cpu_seconds": 24.46875,
+      "nvidia_smi": "1479, 64, 149.72",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249849.9134882,
+      "rss_mib": 714.125,
+      "cpu_seconds": 24.859375,
+      "nvidia_smi": "1479, 63, 147.18",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249850.2874117,
+      "rss_mib": 714.125,
+      "cpu_seconds": 25.234375,
+      "nvidia_smi": "1479, 63, 145.44",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249850.6932784,
+      "rss_mib": 714.125,
+      "cpu_seconds": 26.109375,
+      "nvidia_smi": "1479, 63, 157.85",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249851.068562,
+      "rss_mib": 714.125,
+      "cpu_seconds": 27.578125,
+      "nvidia_smi": "1479, 62, 165.18",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249851.4714662,
+      "rss_mib": 714.125,
+      "cpu_seconds": 29.171875,
+      "nvidia_smi": "1607, 62, 163.49",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249851.9236629,
+      "rss_mib": 714.14453125,
+      "cpu_seconds": 30.984375,
+      "nvidia_smi": "1447, 73, 144.76",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249852.2982493,
+      "rss_mib": 714.1953125,
+      "cpu_seconds": 31.46875,
+      "nvidia_smi": "1447, 73, 161.76",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249852.6401746,
+      "rss_mib": 714.22265625,
+      "cpu_seconds": 31.796875,
+      "nvidia_smi": "1447, 73, 144.07",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249852.9989926,
+      "rss_mib": 714.22265625,
+      "cpu_seconds": 32.25,
+      "nvidia_smi": "1479, 67, 218.31",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249853.404645,
+      "rss_mib": 714.2265625,
+      "cpu_seconds": 32.640625,
+      "nvidia_smi": "1479, 67, 182.53",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249853.7797006,
+      "rss_mib": 714.2265625,
+      "cpu_seconds": 33.0,
+      "nvidia_smi": "1479, 64, 150.04",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249854.1837283,
+      "rss_mib": 714.2265625,
+      "cpu_seconds": 33.4375,
+      "nvidia_smi": "1447, 64, 144.21",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249854.5434771,
+      "rss_mib": 714.2265625,
+      "cpu_seconds": 33.8125,
+      "nvidia_smi": "1447, 64, 147.17",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249854.8877539,
+      "rss_mib": 714.2265625,
+      "cpu_seconds": 34.15625,
+      "nvidia_smi": "1511, 66, 149.11",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249855.2356773,
+      "rss_mib": 714.2265625,
+      "cpu_seconds": 34.515625,
+      "nvidia_smi": "1511, 66, 147.13",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249855.6246833,
+      "rss_mib": 714.2265625,
+      "cpu_seconds": 34.890625,
+      "nvidia_smi": "1511, 66, 146.85",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249855.9936605,
+      "rss_mib": 714.2265625,
+      "cpu_seconds": 35.765625,
+      "nvidia_smi": "1511, 60, 158.10",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249856.4009967,
+      "rss_mib": 714.2265625,
+      "cpu_seconds": 37.390625,
+      "nvidia_smi": "1511, 60, 166.17",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249856.7776836,
+      "rss_mib": 714.2265625,
+      "cpu_seconds": 38.875,
+      "nvidia_smi": "1607, 70, 166.13",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249857.1546391,
+      "rss_mib": 714.25390625,
+      "cpu_seconds": 40.328125,
+      "nvidia_smi": "1351, 70, 211.32",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249857.4979096,
+      "rss_mib": 714.26171875,
+      "cpu_seconds": 40.828125,
+      "nvidia_smi": "1447, 70, 150.80",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249857.8418794,
+      "rss_mib": 714.26171875,
+      "cpu_seconds": 41.171875,
+      "nvidia_smi": "1447, 70, 144.57",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249858.1820191,
+      "rss_mib": 714.26171875,
+      "cpu_seconds": 41.515625,
+      "nvidia_smi": "1447, 70, 150.01",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249858.5267304,
+      "rss_mib": 714.26171875,
+      "cpu_seconds": 41.921875,
+      "nvidia_smi": "1447, 70, 151.43",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249858.8799608,
+      "rss_mib": 714.26953125,
+      "cpu_seconds": 42.265625,
+      "nvidia_smi": "1351, 65, 147.67",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249859.2378463,
+      "rss_mib": 714.2734375,
+      "cpu_seconds": 42.625,
+      "nvidia_smi": "1447, 65, 146.14",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249859.6055719,
+      "rss_mib": 716.16796875,
+      "cpu_seconds": 42.984375,
+      "nvidia_smi": "1447, 65, 148.92",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249859.9492424,
+      "rss_mib": 714.2734375,
+      "cpu_seconds": 43.3125,
+      "nvidia_smi": "1447, 65, 152.89",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249860.3063151,
+      "rss_mib": 714.2734375,
+      "cpu_seconds": 43.671875,
+      "nvidia_smi": "1479, 65, 146.09",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249860.66772,
+      "rss_mib": 714.2734375,
+      "cpu_seconds": 44.1875,
+      "nvidia_smi": "1511, 65, 220.86",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249861.0897004,
+      "rss_mib": 714.28515625,
+      "cpu_seconds": 44.609375,
+      "nvidia_smi": "1479, 63, 150.25",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249861.4942508,
+      "rss_mib": 714.28515625,
+      "cpu_seconds": 45.015625,
+      "nvidia_smi": "1479, 63, 147.37",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249861.8849564,
+      "rss_mib": 714.28515625,
+      "cpu_seconds": 45.4375,
+      "nvidia_smi": "1479, 63, 146.28",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249862.3099021,
+      "rss_mib": 714.28515625,
+      "cpu_seconds": 45.859375,
+      "nvidia_smi": "1479, 63, 156.30",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249862.7007131,
+      "rss_mib": 714.28515625,
+      "cpu_seconds": 46.90625,
+      "nvidia_smi": "1479, 63, 154.75",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249863.1387891,
+      "rss_mib": 714.28515625,
+      "cpu_seconds": 48.640625,
+      "nvidia_smi": "1479, 62, 161.67",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249863.5713281,
+      "rss_mib": 714.28515625,
+      "cpu_seconds": 50.359375,
+      "nvidia_smi": "1639, 62, 172.39",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249863.9319964,
+      "rss_mib": 714.31640625,
+      "cpu_seconds": 51.4375,
+      "nvidia_smi": "1479, 75, 203.78",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249864.3374882,
+      "rss_mib": 714.31640625,
+      "cpu_seconds": 51.828125,
+      "nvidia_smi": "1479, 75, 150.43",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249864.7744557,
+      "rss_mib": 714.31640625,
+      "cpu_seconds": 52.421875,
+      "nvidia_smi": "1351, 66, 150.28",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249865.1288485,
+      "rss_mib": 714.31640625,
+      "cpu_seconds": 52.796875,
+      "nvidia_smi": "1383, 66, 149.13",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249865.5039498,
+      "rss_mib": 714.32421875,
+      "cpu_seconds": 53.171875,
+      "nvidia_smi": "1415, 66, 144.84",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249865.8799264,
+      "rss_mib": 714.328125,
+      "cpu_seconds": 53.546875,
+      "nvidia_smi": "1479, 65, 218.09",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249866.3155184,
+      "rss_mib": 714.328125,
+      "cpu_seconds": 53.984375,
+      "nvidia_smi": "1479, 65, 146.74",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249866.6737083,
+      "rss_mib": 714.3359375,
+      "cpu_seconds": 54.359375,
+      "nvidia_smi": "1447, 65, 146.92",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249867.0187369,
+      "rss_mib": 714.3359375,
+      "cpu_seconds": 54.703125,
+      "nvidia_smi": "1447, 66, 146.01",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249867.3630946,
+      "rss_mib": 714.33984375,
+      "cpu_seconds": 55.03125,
+      "nvidia_smi": "1447, 66, 202.20",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249867.7553529,
+      "rss_mib": 714.34375,
+      "cpu_seconds": 55.5625,
+      "nvidia_smi": "1479, 65, 159.14",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249868.1255424,
+      "rss_mib": 714.34375,
+      "cpu_seconds": 55.921875,
+      "nvidia_smi": "1479, 65, 150.55",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249868.5147536,
+      "rss_mib": 714.34375,
+      "cpu_seconds": 56.3125,
+      "nvidia_smi": "1447, 65, 149.85",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249868.8775572,
+      "rss_mib": 714.34375,
+      "cpu_seconds": 56.671875,
+      "nvidia_smi": "1447, 65, 176.70",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249869.2227617,
+      "rss_mib": 714.34375,
+      "cpu_seconds": 57.015625,
+      "nvidia_smi": "1415, 65, 153.24",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249869.6110111,
+      "rss_mib": 714.34375,
+      "cpu_seconds": 57.40625,
+      "nvidia_smi": "1479, 65, 222.80",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249869.9522845,
+      "rss_mib": 714.34375,
+      "cpu_seconds": 57.71875,
+      "nvidia_smi": "1479, 65, 148.12",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249870.3604385,
+      "rss_mib": 714.34375,
+      "cpu_seconds": 58.140625,
+      "nvidia_smi": "1351, 65, 147.93",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249870.7191305,
+      "rss_mib": 715.87109375,
+      "cpu_seconds": 58.484375,
+      "nvidia_smi": "1447, 65, 145.37",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249871.0634262,
+      "rss_mib": 714.34765625,
+      "cpu_seconds": 58.96875,
+      "nvidia_smi": "1447, 67, 146.99",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249871.4203506,
+      "rss_mib": 714.34765625,
+      "cpu_seconds": 59.296875,
+      "nvidia_smi": "1447, 67, 158.77",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249871.7804002,
+      "rss_mib": 714.34765625,
+      "cpu_seconds": 59.640625,
+      "nvidia_smi": "1479, 65, 197.60",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249872.1909974,
+      "rss_mib": 714.34765625,
+      "cpu_seconds": 60.0625,
+      "nvidia_smi": "1479, 65, 149.28",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249872.5521545,
+      "rss_mib": 714.34765625,
+      "cpu_seconds": 60.4375,
+      "nvidia_smi": "1447, 65, 150.32",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249872.9125609,
+      "rss_mib": 714.34765625,
+      "cpu_seconds": 60.796875,
+      "nvidia_smi": "1447, 65, 141.81",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249873.2547472,
+      "rss_mib": 716.0546875,
+      "cpu_seconds": 61.140625,
+      "nvidia_smi": "1447, 65, 147.36",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249873.6131127,
+      "rss_mib": 714.3515625,
+      "cpu_seconds": 61.5,
+      "nvidia_smi": "1479, 65, 203.90",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249874.0195029,
+      "rss_mib": 714.3515625,
+      "cpu_seconds": 61.90625,
+      "nvidia_smi": "1479, 65, 168.31",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249874.3952969,
+      "rss_mib": 714.3515625,
+      "cpu_seconds": 62.28125,
+      "nvidia_smi": "1479, 65, 150.52",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249874.7535587,
+      "rss_mib": 714.35546875,
+      "cpu_seconds": 62.625,
+      "nvidia_smi": "1351, 65, 151.34",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249875.0981967,
+      "rss_mib": 716.05859375,
+      "cpu_seconds": 63.0,
+      "nvidia_smi": "1447, 63, 156.95",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249875.4564788,
+      "rss_mib": 714.35546875,
+      "cpu_seconds": 63.359375,
+      "nvidia_smi": "1479, 63, 148.37",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249875.8788076,
+      "rss_mib": 714.35546875,
+      "cpu_seconds": 63.765625,
+      "nvidia_smi": "1479, 64, 152.07",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249876.2715553,
+      "rss_mib": 714.35546875,
+      "cpu_seconds": 64.15625,
+      "nvidia_smi": "1479, 64, 149.26",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249876.6625121,
+      "rss_mib": 714.35546875,
+      "cpu_seconds": 64.578125,
+      "nvidia_smi": "1479, 64, 155.40",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249877.102492,
+      "rss_mib": 714.35546875,
+      "cpu_seconds": 66.3125,
+      "nvidia_smi": "1479, 63, 163.21",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249877.480061,
+      "rss_mib": 714.35546875,
+      "cpu_seconds": 67.734375,
+      "nvidia_smi": "1479, 63, 167.20",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249877.8687783,
+      "rss_mib": 714.41796875,
+      "cpu_seconds": 69.265625,
+      "nvidia_smi": "1447, 71, 157.81",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249878.2129101,
+      "rss_mib": 714.421875,
+      "cpu_seconds": 70.078125,
+      "nvidia_smi": "1479, 71, 151.05",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249878.6052814,
+      "rss_mib": 714.42578125,
+      "cpu_seconds": 70.640625,
+      "nvidia_smi": "1447, 71, 137.84",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249878.9616867,
+      "rss_mib": 714.4296875,
+      "cpu_seconds": 70.984375,
+      "nvidia_smi": "1447, 68, 145.40",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249879.3068063,
+      "rss_mib": 714.4296875,
+      "cpu_seconds": 71.359375,
+      "nvidia_smi": "1447, 68, 183.00",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249879.6530882,
+      "rss_mib": 714.4296875,
+      "cpu_seconds": 71.703125,
+      "nvidia_smi": "1479, 68, 184.14",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249880.0254165,
+      "rss_mib": 714.4296875,
+      "cpu_seconds": 72.078125,
+      "nvidia_smi": "1479, 65, 187.93",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249880.386394,
+      "rss_mib": 714.4296875,
+      "cpu_seconds": 72.4375,
+      "nvidia_smi": "1479, 65, 149.84",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249880.7807201,
+      "rss_mib": 714.4296875,
+      "cpu_seconds": 72.828125,
+      "nvidia_smi": "1351, 65, 149.76",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249881.1519458,
+      "rss_mib": 714.4296875,
+      "cpu_seconds": 73.21875,
+      "nvidia_smi": "1447, 61, 141.10",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249881.5064273,
+      "rss_mib": 714.4296875,
+      "cpu_seconds": 73.578125,
+      "nvidia_smi": "1479, 61, 135.45",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249881.8908105,
+      "rss_mib": 714.4296875,
+      "cpu_seconds": 73.9375,
+      "nvidia_smi": "1479, 63, 140.19",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249882.2877934,
+      "rss_mib": 714.4296875,
+      "cpu_seconds": 74.34375,
+      "nvidia_smi": "1479, 63, 148.85",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249882.6665796,
+      "rss_mib": 714.4296875,
+      "cpu_seconds": 74.71875,
+      "nvidia_smi": "1479, 63, 156.41",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249883.0592263,
+      "rss_mib": 714.4296875,
+      "cpu_seconds": 76.21875,
+      "nvidia_smi": "1479, 62, 164.01",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249883.4312784,
+      "rss_mib": 714.4296875,
+      "cpu_seconds": 77.6875,
+      "nvidia_smi": "1479, 62, 162.63",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249883.7877862,
+      "rss_mib": 714.4296875,
+      "cpu_seconds": 79.125,
+      "nvidia_smi": "1607, 62, 169.84",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249884.1447663,
+      "rss_mib": 714.453125,
+      "cpu_seconds": 80.25,
+      "nvidia_smi": "1511, 71, 220.91",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249884.5509664,
+      "rss_mib": 714.453125,
+      "cpu_seconds": 80.65625,
+      "nvidia_smi": "1479, 71, 149.97",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249884.9115572,
+      "rss_mib": 714.453125,
+      "cpu_seconds": 81.015625,
+      "nvidia_smi": "1479, 68, 147.41",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249885.2536847,
+      "rss_mib": 714.453125,
+      "cpu_seconds": 81.34375,
+      "nvidia_smi": "1415, 68, 150.22",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249885.6274575,
+      "rss_mib": 715.68359375,
+      "cpu_seconds": 81.71875,
+      "nvidia_smi": "1447, 68, 149.57",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249885.9798723,
+      "rss_mib": 714.45703125,
+      "cpu_seconds": 82.078125,
+      "nvidia_smi": "1383, 65, 159.91",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249886.3539441,
+      "rss_mib": 714.45703125,
+      "cpu_seconds": 82.46875,
+      "nvidia_smi": "1479, 65, 148.42",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249886.7615883,
+      "rss_mib": 714.45703125,
+      "cpu_seconds": 82.875,
+      "nvidia_smi": "1479, 65, 150.82",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249887.1436286,
+      "rss_mib": 714.45703125,
+      "cpu_seconds": 83.265625,
+      "nvidia_smi": "1447, 63, 144.79",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249887.499237,
+      "rss_mib": 714.45703125,
+      "cpu_seconds": 83.609375,
+      "nvidia_smi": "1447, 63, 145.12",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249887.8396761,
+      "rss_mib": 714.45703125,
+      "cpu_seconds": 83.96875,
+      "nvidia_smi": "1479, 63, 149.12",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249888.2156046,
+      "rss_mib": 714.45703125,
+      "cpu_seconds": 84.34375,
+      "nvidia_smi": "1479, 65, 148.13",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249888.6030384,
+      "rss_mib": 714.45703125,
+      "cpu_seconds": 84.734375,
+      "nvidia_smi": "1479, 65, 155.47",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249889.0584953,
+      "rss_mib": 714.45703125,
+      "cpu_seconds": 86.140625,
+      "nvidia_smi": "1479, 62, 158.04",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249889.445531,
+      "rss_mib": 714.45703125,
+      "cpu_seconds": 87.6875,
+      "nvidia_smi": "1479, 62, 157.78",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249889.8266606,
+      "rss_mib": 714.45703125,
+      "cpu_seconds": 89.09375,
+      "nvidia_smi": "1607, 70, 161.15",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249890.2157264,
+      "rss_mib": 714.484375,
+      "cpu_seconds": 90.40625,
+      "nvidia_smi": "1479, 70, 203.39",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249890.5875152,
+      "rss_mib": 714.484375,
+      "cpu_seconds": 90.78125,
+      "nvidia_smi": "1479, 70, 198.33",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249890.9865344,
+      "rss_mib": 714.484375,
+      "cpu_seconds": 91.1875,
+      "nvidia_smi": "1351, 69, 149.23",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249891.3577824,
+      "rss_mib": 714.484375,
+      "cpu_seconds": 91.53125,
+      "nvidia_smi": "1447, 69, 148.72",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249891.7142754,
+      "rss_mib": 714.48828125,
+      "cpu_seconds": 91.90625,
+      "nvidia_smi": "1447, 69, 150.54",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249892.0739216,
+      "rss_mib": 714.4921875,
+      "cpu_seconds": 92.265625,
+      "nvidia_smi": "1447, 65, 187.46",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249892.4485291,
+      "rss_mib": 715.421875,
+      "cpu_seconds": 92.640625,
+      "nvidia_smi": "1479, 65, 177.79",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249892.8365478,
+      "rss_mib": 714.4921875,
+      "cpu_seconds": 93.046875,
+      "nvidia_smi": "1479, 65, 213.46",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249893.2125347,
+      "rss_mib": 714.43359375,
+      "cpu_seconds": 93.421875,
+      "nvidia_smi": "1479, 65, 149.28",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249893.5853273,
+      "rss_mib": 714.43359375,
+      "cpu_seconds": 93.796875,
+      "nvidia_smi": "1447, 65, 147.18",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249893.9448164,
+      "rss_mib": 714.43359375,
+      "cpu_seconds": 94.328125,
+      "nvidia_smi": "1479, 65, 151.02",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249894.3011998,
+      "rss_mib": 715.3515625,
+      "cpu_seconds": 94.703125,
+      "nvidia_smi": "1479, 65, 188.77",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249894.6793651,
+      "rss_mib": 715.3515625,
+      "cpu_seconds": 95.078125,
+      "nvidia_smi": "1479, 65, 204.42",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249895.1136606,
+      "rss_mib": 715.3515625,
+      "cpu_seconds": 95.515625,
+      "nvidia_smi": "1351, 63, 150.03",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249895.4864276,
+      "rss_mib": 715.3515625,
+      "cpu_seconds": 95.890625,
+      "nvidia_smi": "1479, 63, 147.85",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249895.8521334,
+      "rss_mib": 715.3515625,
+      "cpu_seconds": 96.234375,
+      "nvidia_smi": "1479, 63, 144.14",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249896.2010132,
+      "rss_mib": 715.35546875,
+      "cpu_seconds": 96.59375,
+      "nvidia_smi": "1479, 61, 144.79",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249896.5449932,
+      "rss_mib": 715.35546875,
+      "cpu_seconds": 97.125,
+      "nvidia_smi": "1479, 61, 157.12",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249896.8885039,
+      "rss_mib": 715.35546875,
+      "cpu_seconds": 98.46875,
+      "nvidia_smi": "1479, 63, 165.97",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249897.2464602,
+      "rss_mib": 715.35546875,
+      "cpu_seconds": 99.84375,
+      "nvidia_smi": "1479, 63, 161.11",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249897.6655453,
+      "rss_mib": 715.35546875,
+      "cpu_seconds": 101.5,
+      "nvidia_smi": "1415, 63, 166.39",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249898.0075658,
+      "rss_mib": 715.3984375,
+      "cpu_seconds": 102.5,
+      "nvidia_smi": "1479, 72, 203.16",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249898.3664682,
+      "rss_mib": 715.3984375,
+      "cpu_seconds": 102.890625,
+      "nvidia_smi": "1479, 72, 151.02",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249898.7420169,
+      "rss_mib": 715.3984375,
+      "cpu_seconds": 103.25,
+      "nvidia_smi": "1479, 72, 149.66",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249899.1009657,
+      "rss_mib": 715.3984375,
+      "cpu_seconds": 103.609375,
+      "nvidia_smi": "1351, 66, 146.58",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249899.4587979,
+      "rss_mib": 715.3984375,
+      "cpu_seconds": 104.015625,
+      "nvidia_smi": "1351, 66, 151.54",
+      "gpu_compute_processes": [
+        "20740, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    }
+  ],
+  "passed": false,
+  "interference": [
+    {
+      "time": 1249840.3377886,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249840.6906636,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249841.0495723,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249841.407576,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249841.7981933,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249842.2220532,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249842.5839987,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249842.9603391,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249843.3320522,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249843.6906125,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249844.0972196,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249844.5351081,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249844.910065,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249845.2695964,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249845.6504017,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249846.0247052,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249846.3984851,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249846.7585263,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249847.1490635,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249847.5236229,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249847.9321044,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249848.2909688,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249848.7150329,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249849.1355688,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249849.5398189,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249849.9134882,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249850.2874117,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249850.6932784,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249851.068562,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249851.4714662,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249851.9236629,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249852.2982493,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249852.6401746,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249852.9989926,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249853.404645,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249853.7797006,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249854.1837283,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249854.5434771,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249854.8877539,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249855.2356773,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249855.6246833,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249855.9936605,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249856.4009967,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249856.7776836,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249857.1546391,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249857.4979096,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249857.8418794,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249858.1820191,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249858.5267304,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249858.8799608,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249859.2378463,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249859.6055719,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249859.9492424,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249860.3063151,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249860.66772,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249861.0897004,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249861.4942508,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249861.8849564,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249862.3099021,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249862.7007131,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249863.1387891,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249863.5713281,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249863.9319964,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249864.3374882,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249864.7744557,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249865.1288485,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249865.5039498,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249865.8799264,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249866.3155184,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249866.6737083,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249867.0187369,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249867.3630946,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249867.7553529,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249868.1255424,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249868.5147536,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249868.8775572,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249869.2227617,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249869.6110111,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249869.9522845,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249870.3604385,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249870.7191305,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249871.0634262,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249871.4203506,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249871.7804002,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249872.1909974,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249872.5521545,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249872.9125609,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249873.2547472,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249873.6131127,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249874.0195029,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249874.3952969,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249874.7535587,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249875.0981967,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249875.4564788,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249875.8788076,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249876.2715553,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249876.6625121,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249877.102492,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249877.480061,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249877.8687783,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249878.2129101,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249878.6052814,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249878.9616867,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249879.3068063,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249879.6530882,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249880.0254165,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249880.386394,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249880.7807201,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249881.1519458,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249881.5064273,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249881.8908105,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249882.2877934,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249882.6665796,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249883.0592263,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249883.4312784,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249883.7877862,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249884.1447663,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249884.5509664,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249884.9115572,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249885.2536847,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249885.6274575,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249885.9798723,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249886.3539441,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249886.7615883,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249887.1436286,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249887.499237,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249887.8396761,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249888.2156046,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249888.6030384,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249889.0584953,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249889.445531,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249889.8266606,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249890.2157264,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249890.5875152,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249890.9865344,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249891.3577824,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249891.7142754,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249892.0739216,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249892.4485291,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249892.8365478,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249893.2125347,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249893.5853273,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249893.9448164,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249894.3011998,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249894.6793651,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249895.1136606,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249895.4864276,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249895.8521334,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249896.2010132,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249896.5449932,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249896.8885039,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249897.2464602,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249897.6655453,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249898.0075658,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249898.3664682,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249898.7420169,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249899.1009657,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    },
+    {
+      "time": 1249899.4587979,
+      "processes": [
+        "14276, C:\\Users\\Steve\\code\\game-capture\\native-qt\\dist\\retained-first-frame\\ffmpeg\\bin\\ffmpeg.exe"
+      ]
+    }
+  ],
+  "model_load_seconds": 2.451749799773097,
+  "warmup_seconds": 0.2646978001575917,
+  "actual_device": "cuda",
+  "actual_compute_type": "int8_float16"
+}

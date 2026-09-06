@@ -69,6 +69,9 @@ async def main(args):
                                   'min_captions':min(s['captions'] for s in states)}),flush=True)
                 if any(not state['running'] or state['failed'] for state in states):
                     break
+                if args.stop_file and args.stop_file.exists():
+                    report['errors'].append('Capture stopped by the external benchmark monitor; requested duration was not completed')
+                    break
             for page in pages:
                 if await page.locator('#stop').is_enabled():
                     await page.locator('#stop').click()
@@ -98,4 +101,5 @@ if __name__=='__main__':
     parser.add_argument('--mixed',action='store_true')
     parser.add_argument('--varied',action='store_true',help='Cycle clean, quiet and noisy speech with pauses')
     parser.add_argument('--output',type=Path,required=True)
+    parser.add_argument('--stop-file',type=Path,help='Drain and fail the run if this monitor signal appears')
     asyncio.run(main(parser.parse_args()))

@@ -15,7 +15,7 @@ sys.path.insert(0, str(ROOT))
 TOKEN = 'synthetic-local-connection-test-token'
 
 
-def serve():
+def serve(allowed_origins=None):
     import uvicorn
     from server import create_app
     class Engine:
@@ -27,7 +27,7 @@ def serve():
             return 'Synthetic connection test.', language or 'en'
         def window(self, audio, language, context, final):
             return 'Synthetic connection test.', language or 'en', len(audio)/16000 if final else len(audio)/16000-1
-    uvicorn.run(create_app(Engine(), api_key=TOKEN, allowed_origins=['http://127.0.0.1:8779']),
+    uvicorn.run(create_app(Engine(), api_key=TOKEN, allowed_origins=allowed_origins or ['http://127.0.0.1:8779']),
                 host='127.0.0.1', port=8778, log_level='error')
 
 
@@ -144,4 +144,7 @@ def main():
 
 
 if __name__ == '__main__':
-    serve() if '--serve' in sys.argv else main()
+    if '--serve-https' in sys.argv:
+        serve(['https://caption.ninja'])
+    else:
+        serve() if '--serve' in sys.argv else main()

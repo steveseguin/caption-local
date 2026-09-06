@@ -1,0 +1,1720 @@
+{
+  "configuration": {
+    "model": "large-v3",
+    "device": "cuda",
+    "compute_type": "int8_float16",
+    "beam_size": 5,
+    "workers": 1,
+    "threads": 4,
+    "streams": [
+      1,
+      2,
+      4,
+      8,
+      12
+    ],
+    "rounds": 1,
+    "output": "evidence\\gpu-validation\\large-retry\\large-v3-int8_float16-w1-b5.json"
+  },
+  "results": [
+    {
+      "streams": 1,
+      "mixed": false,
+      "round": 0,
+      "wall_seconds": 0.6183039001189172,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.0003871000371873379,
+          "inference_seconds": 0.6178278001025319,
+          "text": "Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 2,
+      "mixed": false,
+      "round": 0,
+      "wall_seconds": 0.9425373000558466,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.0003333999775350094,
+          "inference_seconds": 0.5303442999720573,
+          "text": "Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.5307006000075489,
+          "inference_seconds": 0.4117443999275565,
+          "text": "Nor is Mr. Quilter's manner less interesting than his",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 4,
+      "mixed": false,
+      "round": 0,
+      "wall_seconds": 1.8460742000024766,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.0002660001628100872,
+          "inference_seconds": 0.5283658998087049,
+          "text": "Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.5286520000081509,
+          "inference_seconds": 0.40841290005482733,
+          "text": "Nor is Mr. Quilter's manner less interesting than his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 2,
+          "queue_seconds": 0.9370832999702543,
+          "inference_seconds": 0.46094000013545156,
+          "text": "He tells us that at this festive season of the year, with Christmas",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 3,
+          "queue_seconds": 1.398043200140819,
+          "inference_seconds": 0.44794359989464283,
+          "text": "He has grave doubts whether Sir Frederick Leighton's work is really Greek after",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 8,
+      "mixed": false,
+      "round": 0,
+      "wall_seconds": 3.7899531999137253,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.00037809996865689754,
+          "inference_seconds": 0.5296763000078499,
+          "text": "Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.5300755999051034,
+          "inference_seconds": 0.411781300092116,
+          "text": "Nor is Mr. Quilter's manner less interesting than his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 2,
+          "queue_seconds": 0.9418768999166787,
+          "inference_seconds": 0.4629287999123335,
+          "text": "He tells us that at this festive season of the year, with Christmas",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 3,
+          "queue_seconds": 1.4048264999873936,
+          "inference_seconds": 0.45281309983693063,
+          "text": "He has grave doubts whether Sir Frederick Leighton's work is really Greek after",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 4,
+          "queue_seconds": 1.8576614998746663,
+          "inference_seconds": 0.5162790999747813,
+          "text": "Linnell's pictures are a sort of up-guards-and-atom paintings,",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 5,
+          "queue_seconds": 2.3739608998876065,
+          "inference_seconds": 0.46652000001631677,
+          "text": "It is obviously unnecessary for us to point out how luminous these",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 6,
+          "queue_seconds": 2.8405029999557883,
+          "inference_seconds": 0.4135167000349611,
+          "text": "on the general principles of art mr quilter writes with equal",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 7,
+          "queue_seconds": 3.25403909990564,
+          "inference_seconds": 0.5358224001247436,
+          "text": "Painting, he tells us, is of a different quality to mathematics,",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 12,
+      "mixed": false,
+      "round": 0,
+      "wall_seconds": 5.545689400052652,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.0003645999822765589,
+          "inference_seconds": 0.5304903001524508,
+          "text": "Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.530874399933964,
+          "inference_seconds": 0.4077001002151519,
+          "text": "Nor is Mr. Quilter's manner less interesting than his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 2,
+          "queue_seconds": 0.9385949000716209,
+          "inference_seconds": 0.46980590000748634,
+          "text": "He tells us that at this festive season of the year, with Christmas",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 3,
+          "queue_seconds": 1.4084179000928998,
+          "inference_seconds": 0.44842479983344674,
+          "text": "He has grave doubts whether Sir Frederick Leighton's work is really Greek after",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 4,
+          "queue_seconds": 1.8568623000755906,
+          "inference_seconds": 0.5029064000118524,
+          "text": "Linnell's pictures are a sort of up-guards-and-atom paintings,",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 5,
+          "queue_seconds": 2.359787200111896,
+          "inference_seconds": 0.438827799865976,
+          "text": "It is obviously unnecessary for us to point out how luminous these",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 6,
+          "queue_seconds": 2.7986354001332074,
+          "inference_seconds": 0.40592910000123084,
+          "text": "on the general principles of art mr quilter writes with equal",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 7,
+          "queue_seconds": 3.204583799932152,
+          "inference_seconds": 0.5295392000116408,
+          "text": "Painting, he tells us, is of a different quality to mathematics,",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 8,
+          "queue_seconds": 3.734142899978906,
+          "inference_seconds": 0.42297319998033345,
+          "text": "As for etchings, they are of two kinds, British and",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 9,
+          "queue_seconds": 4.157136199995875,
+          "inference_seconds": 0.4283968999516219,
+          "text": "he laments most bitterly the divorce that has been made between decorative art",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 10,
+          "queue_seconds": 4.585552399978042,
+          "inference_seconds": 0.4466101999860257,
+          "text": "near the fire, and the ornaments Fred brought home from India on the mental",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 11,
+          "queue_seconds": 5.0321800000965595,
+          "inference_seconds": 0.5134254000149667,
+          "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing that",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 1,
+      "mixed": true,
+      "round": 0,
+      "wall_seconds": 0.7917452999390662,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.00048439996317029,
+          "inference_seconds": 0.7911680999677628,
+          "text": "Hola. Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello. Welcome to the theater. Thank you very much for coming tonight.",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 2,
+      "mixed": true,
+      "round": 0,
+      "wall_seconds": 1.201211999868974,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.0002685999497771263,
+          "inference_seconds": 0.7936692000366747,
+          "text": "Hola. Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello. Welcome to the theater. Thank you very much for coming tonight.",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.7939595999196172,
+          "inference_seconds": 0.4071740999352187,
+          "text": "Nor is Mr. Quilter's manner less interesting than his",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 4,
+      "mixed": true,
+      "round": 0,
+      "wall_seconds": 2.4549500001594424,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.0004935001488775015,
+          "inference_seconds": 0.7912934999912977,
+          "text": "Hola. Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello. Welcome to the theater. Thank you very much for coming tonight.",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.7918066000565886,
+          "inference_seconds": 0.4097536001354456,
+          "text": "Nor is Mr. Quilter's manner less interesting than his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 2,
+          "queue_seconds": 1.2015806001145393,
+          "inference_seconds": 0.46526880003511906,
+          "text": "He tells us that at this festive season of the year, with Christmas",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 3,
+          "queue_seconds": 1.6668689001817256,
+          "inference_seconds": 0.7879903998691589,
+          "text": "Hola. Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello. Welcome to the theater. Thank you very much for coming tonight.",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 8,
+      "mixed": true,
+      "round": 0,
+      "wall_seconds": 4.715162200154737,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.00031230016611516476,
+          "inference_seconds": 0.7890756998676807,
+          "text": "Hola. Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello. Welcome to the theater. Thank you very much for coming tonight.",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.789408199954778,
+          "inference_seconds": 0.40842410014010966,
+          "text": "Nor is Mr. Quilter's manner less interesting than his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 2,
+          "queue_seconds": 1.1978523000143468,
+          "inference_seconds": 0.46923450008034706,
+          "text": "He tells us that at this festive season of the year, with Christmas",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 3,
+          "queue_seconds": 1.667107000015676,
+          "inference_seconds": 0.7979196000378579,
+          "text": "Hola. Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello. Welcome to the theater. Thank you very much for coming tonight.",
+          "fixture_check": true
+        },
+        {
+          "stream": 4,
+          "queue_seconds": 2.46504499996081,
+          "inference_seconds": 0.5065393000841141,
+          "text": "Linnell's pictures are a sort of up-guards-and-atom paintings,",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 5,
+          "queue_seconds": 2.9716042999643832,
+          "inference_seconds": 0.42777330009266734,
+          "text": "It is obviously unnecessary for us to point out how luminous these",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 6,
+          "queue_seconds": 3.3993997001089156,
+          "inference_seconds": 0.7918998999521136,
+          "text": "Hola. Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello. Welcome to the theater. Thank you very much for coming tonight.",
+          "fixture_check": true
+        },
+        {
+          "stream": 7,
+          "queue_seconds": 4.191316199954599,
+          "inference_seconds": 0.5237611001357436,
+          "text": "Painting, he tells us, is of a different quality to mathematics,",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 12,
+      "mixed": true,
+      "round": 0,
+      "wall_seconds": 6.917179899988696,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.0003128000535070896,
+          "inference_seconds": 0.7905091000720859,
+          "text": "Hola. Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello. Welcome to the theater. Thank you very much for coming tonight.",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.7908408001530915,
+          "inference_seconds": 0.40839549992233515,
+          "text": "Nor is Mr. Quilter's manner less interesting than his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 2,
+          "queue_seconds": 1.1992548999842256,
+          "inference_seconds": 0.4659586001653224,
+          "text": "He tells us that at this festive season of the year, with Christmas",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 3,
+          "queue_seconds": 1.6652315000537783,
+          "inference_seconds": 0.793989900033921,
+          "text": "Hola. Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello. Welcome to the theater. Thank you very much for coming tonight.",
+          "fixture_check": true
+        },
+        {
+          "stream": 4,
+          "queue_seconds": 2.4592407001182437,
+          "inference_seconds": 0.5005326999817044,
+          "text": "Linnell's pictures are a sort of up-guards-and-atom paintings,",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 5,
+          "queue_seconds": 2.959793800022453,
+          "inference_seconds": 0.4413173000793904,
+          "text": "It is obviously unnecessary for us to point out how luminous these",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 6,
+          "queue_seconds": 3.4011314001400024,
+          "inference_seconds": 0.7919490998610854,
+          "text": "Hola. Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello. Welcome to the theater. Thank you very much for coming tonight.",
+          "fixture_check": true
+        },
+        {
+          "stream": 7,
+          "queue_seconds": 4.193097300129011,
+          "inference_seconds": 0.5259202998131514,
+          "text": "Painting, he tells us, is of a different quality to mathematics,",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 8,
+          "queue_seconds": 4.719036299968138,
+          "inference_seconds": 0.4212607000954449,
+          "text": "As for etchings, they are of two kinds, British and",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 9,
+          "queue_seconds": 5.140317599987611,
+          "inference_seconds": 0.7918507000431418,
+          "text": "Hola. Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello. Welcome to the theater. Thank you very much for coming tonight.",
+          "fixture_check": true
+        },
+        {
+          "stream": 10,
+          "queue_seconds": 5.932188400067389,
+          "inference_seconds": 0.45334100001491606,
+          "text": "near the fire, and the ornaments Fred brought home from India on the mental",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 11,
+          "queue_seconds": 6.385548900114372,
+          "inference_seconds": 0.5314984999131411,
+          "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing that",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    }
+  ],
+  "samples": [
+    {
+      "time": 1250130.3115364,
+      "rss_mib": 161.484375,
+      "cpu_seconds": 0.46875,
+      "nvidia_smi": "0, 33, 92.61",
+      "gpu_compute_processes": []
+    },
+    {
+      "time": 1250130.6642005,
+      "rss_mib": 514.98046875,
+      "cpu_seconds": 0.796875,
+      "nvidia_smi": "146, 33, 90.15",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1250131.0093734,
+      "rss_mib": 1091.4375,
+      "cpu_seconds": 1.15625,
+      "nvidia_smi": "146, 33, 90.76",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1250131.3512269,
+      "rss_mib": 1662.6875,
+      "cpu_seconds": 1.5,
+      "nvidia_smi": "146, 1, 89.47",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1250131.6888762,
+      "rss_mib": 2227.58984375,
+      "cpu_seconds": 1.84375,
+      "nvidia_smi": "146, 1, 65.28",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1250132.0296476,
+      "rss_mib": 2800.16015625,
+      "cpu_seconds": 2.171875,
+      "nvidia_smi": "146, 1, 65.67",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1250132.3677768,
+      "rss_mib": 3217.67578125,
+      "cpu_seconds": 2.765625,
+      "nvidia_smi": "146, 0, 65.66",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1250132.708917,
+      "rss_mib": 2981.25,
+      "cpu_seconds": 4.15625,
+      "nvidia_smi": "146, 0, 65.54",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1250133.0511609,
+      "rss_mib": 2750.60546875,
+      "cpu_seconds": 5.53125,
+      "nvidia_smi": "146, 0, 65.60",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1250133.3924085,
+      "rss_mib": 2407.58984375,
+      "cpu_seconds": 6.90625,
+      "nvidia_smi": "146, 0, 65.54",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1250133.7346413,
+      "rss_mib": 2131.859375,
+      "cpu_seconds": 8.25,
+      "nvidia_smi": "146, 0, 65.41",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1250134.0739175,
+      "rss_mib": 1863.34375,
+      "cpu_seconds": 9.578125,
+      "nvidia_smi": "146, 0, 65.40",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1250134.4157784,
+      "rss_mib": 495.87890625,
+      "cpu_seconds": 10.890625,
+      "nvidia_smi": "2034, 0, 69.50",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1250134.7869433,
+      "rss_mib": 643.75,
+      "cpu_seconds": 11.25,
+      "nvidia_smi": "2400, 0, 243.13",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1250135.1645927,
+      "rss_mib": 710.42578125,
+      "cpu_seconds": 11.609375,
+      "nvidia_smi": "2368, 52, 167.44",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1250135.5729997,
+      "rss_mib": 713.4765625,
+      "cpu_seconds": 12.21875,
+      "nvidia_smi": "2368, 52, 236.54",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1250136.0766232,
+      "rss_mib": 713.5078125,
+      "cpu_seconds": 12.71875,
+      "nvidia_smi": "2368, 52, 268.95",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1250136.4519116,
+      "rss_mib": 714.4140625,
+      "cpu_seconds": 13.09375,
+      "nvidia_smi": "2272, 76, 160.45",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1250136.8131667,
+      "rss_mib": 714.41796875,
+      "cpu_seconds": 13.484375,
+      "nvidia_smi": "2368, 76, 166.72",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1250137.2078068,
+      "rss_mib": 714.4296875,
+      "cpu_seconds": 14.09375,
+      "nvidia_smi": "2368, 76, 164.43",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1250137.5957492,
+      "rss_mib": 714.4296875,
+      "cpu_seconds": 14.484375,
+      "nvidia_smi": "2368, 76, 168.71",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1250138.0148772,
+      "rss_mib": 714.4375,
+      "cpu_seconds": 14.890625,
+      "nvidia_smi": "2368, 76, 179.54",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1250138.4477062,
+      "rss_mib": 714.4453125,
+      "cpu_seconds": 15.375,
+      "nvidia_smi": "2368, 76, 167.43",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1250138.9004045,
+      "rss_mib": 714.44921875,
+      "cpu_seconds": 15.859375,
+      "nvidia_smi": "2368, 76, 258.26",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1250139.2906297,
+      "rss_mib": 714.45703125,
+      "cpu_seconds": 16.28125,
+      "nvidia_smi": "2368, 76, 264.04",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1250139.6634655,
+      "rss_mib": 712.98828125,
+      "cpu_seconds": 16.640625,
+      "nvidia_smi": "2272, 76, 161.54",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1250140.0044885,
+      "rss_mib": 714.45703125,
+      "cpu_seconds": 17.0,
+      "nvidia_smi": "2368, 76, 165.90",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1250140.3796767,
+      "rss_mib": 714.46484375,
+      "cpu_seconds": 17.375,
+      "nvidia_smi": "2368, 77, 172.75",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1250140.7575921,
+      "rss_mib": 714.46484375,
+      "cpu_seconds": 17.734375,
+      "nvidia_smi": "2530, 77, 238.26",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250141.1323391,
+      "rss_mib": 714.46875,
+      "cpu_seconds": 18.109375,
+      "nvidia_smi": "2289, 77, 181.94",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250141.4758844,
+      "rss_mib": 714.46875,
+      "cpu_seconds": 18.46875,
+      "nvidia_smi": "2289, 76, 163.62",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250141.8346037,
+      "rss_mib": 714.48046875,
+      "cpu_seconds": 18.84375,
+      "nvidia_smi": "2385, 76, 165.44",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250142.1825793,
+      "rss_mib": 714.4921875,
+      "cpu_seconds": 19.203125,
+      "nvidia_smi": "2385, 77, 235.82",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250142.5273084,
+      "rss_mib": 714.4921875,
+      "cpu_seconds": 19.546875,
+      "nvidia_smi": "2129, 77, 163.05",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250142.8872751,
+      "rss_mib": 714.5078125,
+      "cpu_seconds": 19.90625,
+      "nvidia_smi": "2385, 77, 168.44",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250143.2463155,
+      "rss_mib": 714.5078125,
+      "cpu_seconds": 20.390625,
+      "nvidia_smi": "2385, 77, 167.74",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250143.6512127,
+      "rss_mib": 714.5078125,
+      "cpu_seconds": 20.796875,
+      "nvidia_smi": "2385, 77, 201.76",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250144.0463854,
+      "rss_mib": 714.5078125,
+      "cpu_seconds": 21.1875,
+      "nvidia_smi": "2385, 77, 252.36",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250144.4391244,
+      "rss_mib": 714.51171875,
+      "cpu_seconds": 21.765625,
+      "nvidia_smi": "2289, 77, 185.08",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250144.8037335,
+      "rss_mib": 714.51171875,
+      "cpu_seconds": 22.125,
+      "nvidia_smi": "2289, 77, 157.14",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250145.1677408,
+      "rss_mib": 714.515625,
+      "cpu_seconds": 22.640625,
+      "nvidia_smi": "2161, 77, 168.47",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250145.5441482,
+      "rss_mib": 714.515625,
+      "cpu_seconds": 23.015625,
+      "nvidia_smi": "2385, 77, 167.23",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250145.984346,
+      "rss_mib": 714.5234375,
+      "cpu_seconds": 23.46875,
+      "nvidia_smi": "2385, 77, 215.15",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250146.4099377,
+      "rss_mib": 714.5234375,
+      "cpu_seconds": 23.9375,
+      "nvidia_smi": "2385, 76, 169.21",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250146.8179043,
+      "rss_mib": 714.5234375,
+      "cpu_seconds": 24.34375,
+      "nvidia_smi": "2385, 76, 169.55",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250147.2393352,
+      "rss_mib": 714.52734375,
+      "cpu_seconds": 24.84375,
+      "nvidia_smi": "2385, 80, 208.10",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250147.696863,
+      "rss_mib": 714.55078125,
+      "cpu_seconds": 25.296875,
+      "nvidia_smi": "2385, 80, 219.39",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250148.1182286,
+      "rss_mib": 714.55078125,
+      "cpu_seconds": 25.703125,
+      "nvidia_smi": "2385, 80, 200.86",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250148.5094525,
+      "rss_mib": 714.5625,
+      "cpu_seconds": 26.109375,
+      "nvidia_smi": "2385, 77, 224.63",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250148.9306623,
+      "rss_mib": 714.5625,
+      "cpu_seconds": 26.546875,
+      "nvidia_smi": "2385, 77, 189.34",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250149.3863651,
+      "rss_mib": 714.5625,
+      "cpu_seconds": 27.0,
+      "nvidia_smi": "2385, 75, 194.82",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250149.8139761,
+      "rss_mib": 714.57421875,
+      "cpu_seconds": 27.4375,
+      "nvidia_smi": "2385, 75, 166.95",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250150.2360716,
+      "rss_mib": 714.57421875,
+      "cpu_seconds": 27.859375,
+      "nvidia_smi": "2385, 78, 168.60",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250150.6454864,
+      "rss_mib": 714.57421875,
+      "cpu_seconds": 28.40625,
+      "nvidia_smi": "2385, 78, 168.89",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250151.0539542,
+      "rss_mib": 714.578125,
+      "cpu_seconds": 28.8125,
+      "nvidia_smi": "2385, 78, 169.45",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250151.4650248,
+      "rss_mib": 714.58203125,
+      "cpu_seconds": 29.390625,
+      "nvidia_smi": "2385, 76, 167.46",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250151.9042538,
+      "rss_mib": 714.58203125,
+      "cpu_seconds": 29.8125,
+      "nvidia_smi": "2385, 76, 168.41",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250152.3072792,
+      "rss_mib": 714.58203125,
+      "cpu_seconds": 30.21875,
+      "nvidia_smi": "2385, 77, 167.80",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250152.711892,
+      "rss_mib": 714.5859375,
+      "cpu_seconds": 30.625,
+      "nvidia_smi": "2385, 77, 168.36",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250153.1207931,
+      "rss_mib": 714.58984375,
+      "cpu_seconds": 31.015625,
+      "nvidia_smi": "2385, 77, 169.09",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250153.5004059,
+      "rss_mib": 714.59765625,
+      "cpu_seconds": 31.40625,
+      "nvidia_smi": "2385, 76, 164.61",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250153.8934082,
+      "rss_mib": 714.59765625,
+      "cpu_seconds": 32.015625,
+      "nvidia_smi": "2385, 76, 217.15",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250154.3324881,
+      "rss_mib": 714.59765625,
+      "cpu_seconds": 32.4375,
+      "nvidia_smi": "2385, 78, 168.20",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250154.7590518,
+      "rss_mib": 714.59765625,
+      "cpu_seconds": 32.9375,
+      "nvidia_smi": "2385, 78, 169.30",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250155.1513551,
+      "rss_mib": 714.59765625,
+      "cpu_seconds": 33.328125,
+      "nvidia_smi": "2385, 78, 227.69",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250155.5274169,
+      "rss_mib": 714.59765625,
+      "cpu_seconds": 33.71875,
+      "nvidia_smi": "2289, 76, 196.96",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250155.8767653,
+      "rss_mib": 714.59765625,
+      "cpu_seconds": 34.078125,
+      "nvidia_smi": "2289, 76, 200.60",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250156.2246533,
+      "rss_mib": 714.6015625,
+      "cpu_seconds": 34.421875,
+      "nvidia_smi": "2289, 75, 165.59",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250156.572847,
+      "rss_mib": 714.6015625,
+      "cpu_seconds": 34.765625,
+      "nvidia_smi": "2385, 75, 168.62",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250156.9501855,
+      "rss_mib": 714.61328125,
+      "cpu_seconds": 35.296875,
+      "nvidia_smi": "2385, 75, 165.89",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250157.3933314,
+      "rss_mib": 714.61328125,
+      "cpu_seconds": 35.765625,
+      "nvidia_smi": "2385, 79, 169.46",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250157.7898927,
+      "rss_mib": 714.61328125,
+      "cpu_seconds": 36.15625,
+      "nvidia_smi": "2385, 79, 169.46",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250158.2153321,
+      "rss_mib": 714.62109375,
+      "cpu_seconds": 36.5625,
+      "nvidia_smi": "2385, 77, 166.60",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250158.6235784,
+      "rss_mib": 714.625,
+      "cpu_seconds": 36.96875,
+      "nvidia_smi": "2385, 77, 210.43",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250159.0498119,
+      "rss_mib": 714.625,
+      "cpu_seconds": 37.421875,
+      "nvidia_smi": "2385, 77, 195.71",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250159.4720798,
+      "rss_mib": 714.625,
+      "cpu_seconds": 37.84375,
+      "nvidia_smi": "2385, 75, 168.73",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250159.9116651,
+      "rss_mib": 714.62890625,
+      "cpu_seconds": 38.28125,
+      "nvidia_smi": "2385, 75, 200.38",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250160.3202224,
+      "rss_mib": 714.62890625,
+      "cpu_seconds": 38.6875,
+      "nvidia_smi": "2385, 78, 240.79",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250160.7742987,
+      "rss_mib": 714.62890625,
+      "cpu_seconds": 39.140625,
+      "nvidia_smi": "2385, 78, 168.91",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250161.1632487,
+      "rss_mib": 714.62890625,
+      "cpu_seconds": 39.53125,
+      "nvidia_smi": "2385, 78, 228.77",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250161.5575497,
+      "rss_mib": 714.6328125,
+      "cpu_seconds": 40.078125,
+      "nvidia_smi": "2289, 76, 193.82",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250161.9217652,
+      "rss_mib": 714.6328125,
+      "cpu_seconds": 40.625,
+      "nvidia_smi": "2289, 76, 167.34",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250162.2682734,
+      "rss_mib": 714.6328125,
+      "cpu_seconds": 41.0,
+      "nvidia_smi": "2289, 77, 168.85",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250162.6142493,
+      "rss_mib": 714.6328125,
+      "cpu_seconds": 41.34375,
+      "nvidia_smi": "2403, 77, 168.07",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250162.9772517,
+      "rss_mib": 714.6328125,
+      "cpu_seconds": 41.703125,
+      "nvidia_smi": "2403, 77, 166.78",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250163.3868652,
+      "rss_mib": 714.63671875,
+      "cpu_seconds": 42.109375,
+      "nvidia_smi": "2403, 78, 207.93",
+      "gpu_compute_processes": [
+        "23360, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    }
+  ],
+  "passed": false,
+  "interference": [
+    {
+      "time": 1250140.7575921,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250141.1323391,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250141.4758844,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250141.8346037,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250142.1825793,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250142.5273084,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250142.8872751,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250143.2463155,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250143.6512127,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250144.0463854,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250144.4391244,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250144.8037335,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250145.1677408,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250145.5441482,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250145.984346,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250146.4099377,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250146.8179043,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250147.2393352,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250147.696863,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250148.1182286,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250148.5094525,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250148.9306623,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250149.3863651,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250149.8139761,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250150.2360716,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250150.6454864,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250151.0539542,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250151.4650248,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250151.9042538,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250152.3072792,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250152.711892,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250153.1207931,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250153.5004059,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250153.8934082,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250154.3324881,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250154.7590518,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250155.1513551,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250155.5274169,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250155.8767653,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250156.2246533,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250156.572847,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250156.9501855,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250157.3933314,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250157.7898927,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250158.2153321,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250158.6235784,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250159.0498119,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250159.4720798,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250159.9116651,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250160.3202224,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250160.7742987,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250161.1632487,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250161.5575497,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250161.9217652,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250162.2682734,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250162.6142493,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250162.9772517,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "time": 1250163.3868652,
+      "processes": [
+        "4384, C:\\Users\\Steve\\code\\game-capture\\native-qt\\qa\\reports\\fresh-phase-obs-runtime\\_obs-portable\\bin\\64bit\\obs64.exe"
+      ]
+    }
+  ],
+  "model_load_seconds": 4.215393299935386,
+  "warmup_seconds": 0.3101001000031829,
+  "actual_device": "cuda",
+  "actual_compute_type": "int8_float16"
+}

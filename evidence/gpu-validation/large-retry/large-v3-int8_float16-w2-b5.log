@@ -1,0 +1,11 @@
+{"streams": 1, "mixed": false, "round": 0, "wall_seconds": 0.6145742000080645}
+{"streams": 2, "mixed": false, "round": 0, "wall_seconds": 0.9482070000376552}
+{"streams": 4, "mixed": false, "round": 0, "wall_seconds": 1.8188428999856114}
+{"streams": 8, "mixed": false, "round": 0, "wall_seconds": 3.6599242999218404}
+{"streams": 12, "mixed": false, "round": 0, "wall_seconds": 5.416102800052613}
+{"streams": 1, "mixed": true, "round": 0, "wall_seconds": 0.7967934999614954}
+{"streams": 2, "mixed": true, "round": 0, "wall_seconds": 1.2177756999153644}
+{"streams": 4, "mixed": true, "round": 0, "wall_seconds": 2.4459643999580294}
+{"streams": 8, "mixed": true, "round": 0, "wall_seconds": 4.6140856998972595}
+{"streams": 12, "mixed": true, "round": 0, "wall_seconds": 6.725330000044778}
+Fixture checks failed; results retained.

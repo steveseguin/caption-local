@@ -34,8 +34,9 @@ five-minute CPU test with the faster preset; that is not a promise of twelve
 accurate multilingual streams on any computer. [Read the measurements and limits](evidence/multistream/report.md).
 
 **Windows development validation:** native Python and synthetic Edge capture now
-pass on Windows 11 with the small CPU model. NVIDIA inference and sustained GPU
-capacity remain pending. [Windows setup and exact test scope](docs/WINDOWS-GPU.md).
+pass on Windows 11 with the small CPU model. Real CUDA decoding and short model/
+worker comparisons now pass on a TITAN RTX; sustained GPU capacity remains pending.
+[Windows setup](docs/WINDOWS-GPU.md) and [GPU measurements and interruptions](evidence/gpu-validation/report.md).
 Eight six-language synthetic captures passed an hour on the tested Windows CPU;
 twelve hit the protective buffer limit after 40 minutes. Noisy-speech recognition
 errors remain. [Sustained results and failed configurations](evidence/deployment-matrix/report.md).

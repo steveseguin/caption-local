@@ -33,7 +33,7 @@ audio is not captured automatically: it must reach an input your browser can sel
 | Browser | Desktop Chrome or Edge, with permission to use the microphone. |
 | Audio | A microphone, USB audio interface or separately configured virtual audio input visible to the browser. |
 | Internet | Needed initially for software and model downloads. Local captions can work offline afterward; optional caption.ninja sharing still needs connectivity. |
-| GPU | Optional. Start with CPU. NVIDIA runtime setup is supplied, but real NVIDIA inference on the development Windows host remains unvalidated. |
+| GPU | Optional. Start with CPU. Real CUDA decoding is tested on a Windows TITAN RTX; sustained GPU capacity is not yet qualified. See the [GPU guide](WINDOWS-GPU.md). |
 
 The **model** is the downloaded speech-recognition data. The default `small`
 model supports multiple languages; its name does not mean it is English-only.

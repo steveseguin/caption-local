@@ -27,7 +27,9 @@ RATE = 16000
 MAX_BYTES = RATE * 4 * 12
 VERSION = "1.1.0"
 DEFAULT_MODEL_REVISION = "536b0662742c02347bc0e980a01041f333bce120"
-MODEL_REVISIONS = {"small": DEFAULT_MODEL_REVISION, "base": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66"}
+MODEL_REVISIONS = {"small": DEFAULT_MODEL_REVISION, "base": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+                   "medium": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+                   "large-v3": "edaa852ec7e145841d8ffdb056a99866b5f0a478"}
 _CUDA_DLL_HANDLES = []
 
 

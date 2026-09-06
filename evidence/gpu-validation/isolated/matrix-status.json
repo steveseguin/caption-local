@@ -1,0 +1,127 @@
+[
+  {
+    "name": "small-float16-quality-b5",
+    "exit_code": 0,
+    "wall_seconds": 6.625
+  },
+  {
+    "name": "small-float16-w1-b5",
+    "exit_code": 0,
+    "wall_seconds": 22.078
+  },
+  {
+    "name": "small-float16-w2-b5",
+    "exit_code": 0,
+    "wall_seconds": 18.797
+  },
+  {
+    "name": "small-float16-w4-b5",
+    "exit_code": 0,
+    "wall_seconds": 21.453
+  },
+  {
+    "name": "small-int8_float16-quality-b5",
+    "exit_code": 0,
+    "wall_seconds": 7.516
+  },
+  {
+    "name": "small-int8_float16-w1-b5",
+    "exit_code": 0,
+    "wall_seconds": 25.968
+  },
+  {
+    "name": "small-int8_float16-w2-b5",
+    "exit_code": 0,
+    "wall_seconds": 23.344
+  },
+  {
+    "name": "small-int8_float16-w4-b5",
+    "exit_code": 0,
+    "wall_seconds": 26.516
+  },
+  {
+    "name": "medium-float16-quality-b5",
+    "exit_code": 0,
+    "wall_seconds": 12.594
+  },
+  {
+    "name": "medium-float16-w1-b5",
+    "exit_code": 0,
+    "wall_seconds": 51.406
+  },
+  {
+    "name": "medium-float16-w2-b5",
+    "exit_code": 0,
+    "wall_seconds": 48.937
+  },
+  {
+    "name": "medium-float16-w4-b5",
+    "exit_code": 0,
+    "wall_seconds": 54.547
+  },
+  {
+    "name": "medium-int8_float16-quality-b5",
+    "exit_code": 0,
+    "wall_seconds": 16.219
+  },
+  {
+    "name": "medium-int8_float16-w1-b5",
+    "exit_code": 1,
+    "wall_seconds": 66.687
+  },
+  {
+    "name": "medium-int8_float16-w2-b5",
+    "exit_code": 2,
+    "wall_seconds": 0.484
+  },
+  {
+    "name": "medium-int8_float16-w4-b5",
+    "exit_code": 2,
+    "wall_seconds": 0.454
+  },
+  {
+    "name": "large-v3-float16-quality-b5",
+    "exit_code": 0,
+    "wall_seconds": 15.437
+  },
+  {
+    "name": "large-v3-float16-w1-b5",
+    "exit_code": 2,
+    "wall_seconds": 0.453
+  },
+  {
+    "name": "large-v3-float16-w2-b5",
+    "exit_code": 2,
+    "wall_seconds": 0.438
+  },
+  {
+    "name": "large-v3-float16-w4-b5",
+    "exit_code": 2,
+    "wall_seconds": 0.468
+  },
+  {
+    "name": "large-v3-int8_float16-quality-b5",
+    "exit_code": 0,
+    "wall_seconds": 19.532
+  },
+  {
+    "name": "large-v3-int8_float16-w1-b5",
+    "exit_code": 2,
+    "wall_seconds": 0.468
+  },
+  {
+    "name": "large-v3-int8_float16-w2-b5",
+    "exit_code": 2,
+    "wall_seconds": 0.438
+  },
+  {
+    "name": "large-v3-int8_float16-w4-b5",
+    "exit_code": 2,
+    "wall_seconds": 0.453
+  },
+  {
+    "name": "small-cpu-int8-w8-b5",
+    "exit_code": 0,
+    "wall_seconds": 44.234
+  }
+]

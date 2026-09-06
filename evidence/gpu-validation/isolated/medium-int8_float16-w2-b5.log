@@ -1,0 +1,6 @@
+usage: profile_gpu.py [-h] [--model MODEL] [--device {cpu,cuda}]
+                      [--compute-type COMPUTE_TYPE] [--beam-size {1,2,3,4,5}]
+                      [--workers {1,2,3,4,5,6,7,8}] [--threads THREADS]
+                      [--streams STREAMS [STREAMS ...]] [--rounds ROUNDS]
+                      --output OUTPUT
+profile_gpu.py: error: GPU has existing compute processes; stop competing workloads first: 14276, C:\Users\Steve\code\game-capture\native-qt\dist\retained-first-frame\ffmpeg\bin\ffmpeg.exe

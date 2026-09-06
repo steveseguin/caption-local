@@ -1,0 +1,10 @@
+{"streams": 1, "mixed": false, "round": 0, "wall_seconds": 2.2171771998982877}
+{"streams": 2, "mixed": false, "round": 0, "wall_seconds": 2.164080400019884}
+{"streams": 4, "mixed": false, "round": 0, "wall_seconds": 2.641850900137797}
+{"streams": 8, "mixed": false, "round": 0, "wall_seconds": 3.4125868999399245}
+{"streams": 12, "mixed": false, "round": 0, "wall_seconds": 5.766235899878666}
+{"streams": 1, "mixed": true, "round": 0, "wall_seconds": 3.7137692999094725}
+{"streams": 2, "mixed": true, "round": 0, "wall_seconds": 3.8805128999520093}
+{"streams": 4, "mixed": true, "round": 0, "wall_seconds": 4.297283299965784}
+{"streams": 8, "mixed": true, "round": 0, "wall_seconds": 5.3914224000182}
+{"streams": 12, "mixed": true, "round": 0, "wall_seconds": 8.044219800038263}

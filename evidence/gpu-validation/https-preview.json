@@ -1,0 +1,39 @@
+{
+  "scope": "Intercepted HTTPS-origin page assets with real loopback HTTP requests and fake inference; not a deployed HTTPS site",
+  "scenarios": [
+    {
+      "permission": "denied",
+      "ready": false,
+      "request_failures": [
+        {
+          "url": "http://127.0.0.1:8778/health",
+          "error": "net::ERR_FAILED"
+        }
+      ],
+      "console": [
+        "Access to fetch at 'http://127.0.0.1:8778/health' from origin 'https://caption.ninja' has been blocked by CORS policy: Permission was denied for this request to access the `loopback` address space.",
+        "Failed to load resource: net::ERR_FAILED"
+      ]
+    },
+    {
+      "permission": "granted",
+      "ready": true,
+      "request_failures": [
+        {
+          "url": "http://127.0.0.1:8778/streams/a550953a-4b4f-4d59-bcbb-61f6360140d6",
+          "error": "net::ERR_ABORTED"
+        }
+      ],
+      "console": [],
+      "capture_state": {
+        "running": false,
+        "starting": false,
+        "failed": false,
+        "error": "Unable to load a worklet's module."
+      }
+    }
+  ],
+  "browser_version": "152.0.4191.62",
+  "error": "TimeoutError('Page.wait_for_function: Timeout 30000ms exceeded.')",
+  "passed": false
+}

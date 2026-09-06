@@ -1,0 +1,1546 @@
+{
+  "configuration": {
+    "model": "small",
+    "device": "cuda",
+    "compute_type": "float16",
+    "beam_size": 5,
+    "workers": 4,
+    "threads": 4,
+    "streams": [
+      1,
+      2,
+      4,
+      8,
+      12
+    ],
+    "rounds": 2,
+    "output": "evidence\\gpu-validation\\isolated\\small-float16-w4-b5.json"
+  },
+  "results": [
+    {
+      "streams": 1,
+      "mixed": false,
+      "round": 0,
+      "wall_seconds": 0.2922911001369357,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.0003456000704318285,
+          "inference_seconds": 0.2918660999275744,
+          "text": "Mr. Quilter is the Apostle of the Middle Classes, and we are glad to welcome his",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 1,
+      "mixed": false,
+      "round": 1,
+      "wall_seconds": 0.2208845999557525,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.0003355999942868948,
+          "inference_seconds": 0.2204642000142485,
+          "text": "Mr. Quilter is the Apostle of the Middle Classes, and we are glad to welcome his",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 2,
+      "mixed": false,
+      "round": 0,
+      "wall_seconds": 0.30818030005320907,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.00032599992118775845,
+          "inference_seconds": 0.30770680005662143,
+          "text": "Mr. Quilter is the Apostle of the Middle Classes, and we are glad to welcome his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.0005133999511599541,
+          "inference_seconds": 0.2574033001437783,
+          "text": "Nor is Mr. Quilter's manner less interesting than his",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 2,
+      "mixed": false,
+      "round": 1,
+      "wall_seconds": 0.2898103999905288,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.0003725001588463783,
+          "inference_seconds": 0.28579190000891685,
+          "text": "Mr. Quilter is the Apostle of the Middle Classes, and we are glad to welcome his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.000655400101095438,
+          "inference_seconds": 0.28900550003163517,
+          "text": "Nor is Mr. Quilter's manner less interesting than his",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 4,
+      "mixed": false,
+      "round": 0,
+      "wall_seconds": 0.6791576000396162,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.00033240020275115967,
+          "inference_seconds": 0.6786342000123113,
+          "text": "Mr. Quilter is the Apostle of the Middle Classes, and we are glad to welcome his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.0006216000765562057,
+          "inference_seconds": 0.5485994999762625,
+          "text": "Nor is Mr. Quilter's manner less interesting than his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 2,
+          "queue_seconds": 0.0008320000488311052,
+          "inference_seconds": 0.6550201000645757,
+          "text": "He tells us that at this festive season of the year, with Christmas",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 3,
+          "queue_seconds": 0.0010269000194966793,
+          "inference_seconds": 0.6390829000156373,
+          "text": "He has grave doubts whether Sir Frederick Layton's work is really Greek",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 4,
+      "mixed": false,
+      "round": 1,
+      "wall_seconds": 0.6909758001565933,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.000604500062763691,
+          "inference_seconds": 0.6451222999021411,
+          "text": "Mr. Quilter is the Apostle of the Middle Classes, and we are glad to welcome his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.0009038001298904419,
+          "inference_seconds": 0.5459228998515755,
+          "text": "Nor is Mr. Quilter's manner less interesting than his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 2,
+          "queue_seconds": 0.0011341001372784376,
+          "inference_seconds": 0.6896552999969572,
+          "text": "He tells us that at this festive season of the year, with Christmas",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 3,
+          "queue_seconds": 0.0015834001824259758,
+          "inference_seconds": 0.5979299999307841,
+          "text": "He has grave doubts whether Sir Frederick Layton's work is really Greek",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 8,
+      "mixed": false,
+      "round": 0,
+      "wall_seconds": 1.2892884998582304,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.0004996999632567167,
+          "inference_seconds": 0.7921484999824315,
+          "text": "Mr. Quilter is the Apostle of the Middle Classes, and we are glad to welcome his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.0008084999863058329,
+          "inference_seconds": 0.5266767998691648,
+          "text": "Nor is Mr. Quilter's manner less interesting than his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 2,
+          "queue_seconds": 0.001034199958667159,
+          "inference_seconds": 0.7111553000286222,
+          "text": "He tells us that at this festive season of the year, with Christmas",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 3,
+          "queue_seconds": 0.0012610999401658773,
+          "inference_seconds": 0.9358473001047969,
+          "text": "He has grave doubts whether Sir Frederick Layton's work is really Greek",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 4,
+          "queue_seconds": 0.5274989998433739,
+          "inference_seconds": 0.5416889002081007,
+          "text": "Linnell's pictures are a sort of up guards and Adam paintings",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 5,
+          "queue_seconds": 0.7122007999569178,
+          "inference_seconds": 0.45873309997841716,
+          "text": "It is obviously unnecessary for us to point out how luminous these",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 6,
+          "queue_seconds": 0.792666699970141,
+          "inference_seconds": 0.4513546999078244,
+          "text": "On the general principles of art, Mr. Quilter writes with equal",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 7,
+          "queue_seconds": 0.937124399933964,
+          "inference_seconds": 0.35194940003566444,
+          "text": "Painting, he tells us, is of a different quality to mathematics,",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 8,
+      "mixed": false,
+      "round": 1,
+      "wall_seconds": 1.2815809999592602,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.0006987000815570354,
+          "inference_seconds": 0.7524033000227064,
+          "text": "Mr. Quilter is the Apostle of the Middle Classes, and we are glad to welcome his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.0010027000680565834,
+          "inference_seconds": 0.5457138998899609,
+          "text": "Nor is Mr. Quilter's manner less interesting than his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 2,
+          "queue_seconds": 0.0012910999357700348,
+          "inference_seconds": 1.0405018001329154,
+          "text": "He tells us that at this festive season of the year, with Christmas",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 3,
+          "queue_seconds": 0.001504099927842617,
+          "inference_seconds": 0.6358907001558691,
+          "text": "He has grave doubts whether Sir Frederick Layton's work is really Greek",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 4,
+          "queue_seconds": 0.5467292000539601,
+          "inference_seconds": 0.5699275999795645,
+          "text": "Linnell's pictures are a sort of up guards and Adam paintings",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 5,
+          "queue_seconds": 0.6374071999453008,
+          "inference_seconds": 0.5009643000084907,
+          "text": "It is obviously unnecessary for us to point out how luminous these",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 6,
+          "queue_seconds": 0.7531234999187291,
+          "inference_seconds": 0.4566512000747025,
+          "text": "On the general principles of art, Mr. Quilter writes with equal",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 7,
+          "queue_seconds": 1.0418104999698699,
+          "inference_seconds": 0.23958440008573234,
+          "text": "Painting, he tells us, is of a different quality to mathematics,",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 12,
+      "mixed": false,
+      "round": 0,
+      "wall_seconds": 1.899696899810806,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.00033849989995360374,
+          "inference_seconds": 1.1300220000557601,
+          "text": "Mr. Quilter is the Apostle of the Middle Classes, and we are glad to welcome his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.0006587998941540718,
+          "inference_seconds": 0.5339997999835759,
+          "text": "Nor is Mr. Quilter's manner less interesting than his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 2,
+          "queue_seconds": 0.0011253999546170235,
+          "inference_seconds": 0.7079815999604762,
+          "text": "He tells us that at this festive season of the year, with Christmas",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 3,
+          "queue_seconds": 0.001422500004991889,
+          "inference_seconds": 0.637853299966082,
+          "text": "He has grave doubts whether Sir Frederick Layton's work is really Greek",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 4,
+          "queue_seconds": 0.5346768999006599,
+          "inference_seconds": 0.5210466000717133,
+          "text": "Linnell's pictures are a sort of up guards and Adam paintings",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 5,
+          "queue_seconds": 0.6392951000016183,
+          "inference_seconds": 0.5585780998226255,
+          "text": "It is obviously unnecessary for us to point out how luminous these",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 6,
+          "queue_seconds": 0.7091196998953819,
+          "inference_seconds": 0.575472200056538,
+          "text": "On the general principles of art, Mr. Quilter writes with equal",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 7,
+          "queue_seconds": 1.0557336998172104,
+          "inference_seconds": 0.5738080001901835,
+          "text": "Painting, he tells us, is of a different quality to mathematics,",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 8,
+          "queue_seconds": 1.1303770998492837,
+          "inference_seconds": 0.710824399953708,
+          "text": "As for etchings, they are of two kinds, British and",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 9,
+          "queue_seconds": 1.1978958998806775,
+          "inference_seconds": 0.5685634000692517,
+          "text": "He laments most bitterly the divorce that has been made between decorative",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 10,
+          "queue_seconds": 1.2846086998470128,
+          "inference_seconds": 0.5149534000083804,
+          "text": "near the fire, and the ornaments Fred brought home from India on the mental",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 11,
+          "queue_seconds": 1.629560599802062,
+          "inference_seconds": 0.2699191002175212,
+          "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing that",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 12,
+      "mixed": false,
+      "round": 1,
+      "wall_seconds": 1.8954683998599648,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.0004750997759401798,
+          "inference_seconds": 0.7510955000761896,
+          "text": "Mr. Quilter is the Apostle of the Middle Classes, and we are glad to welcome his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.0007563999388366938,
+          "inference_seconds": 0.7567847999744117,
+          "text": "Nor is Mr. Quilter's manner less interesting than his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 2,
+          "queue_seconds": 0.0009775999933481216,
+          "inference_seconds": 0.6759879998862743,
+          "text": "He tells us that at this festive season of the year, with Christmas",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 3,
+          "queue_seconds": 0.0012128998059779406,
+          "inference_seconds": 0.665156900184229,
+          "text": "He has grave doubts whether Sir Frederick Layton's work is really Greek",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 4,
+          "queue_seconds": 0.6663831998594105,
+          "inference_seconds": 0.567498000105843,
+          "text": "Linnell's pictures are a sort of up guards and Adam paintings",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 5,
+          "queue_seconds": 0.6769798998720944,
+          "inference_seconds": 0.5923504999373108,
+          "text": "It is obviously unnecessary for us to point out how luminous these",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 6,
+          "queue_seconds": 0.7515948999207467,
+          "inference_seconds": 0.600993299856782,
+          "text": "On the general principles of art, Mr. Quilter writes with equal",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 7,
+          "queue_seconds": 0.7575548999011517,
+          "inference_seconds": 0.8191257999278605,
+          "text": "Painting, he tells us, is of a different quality to mathematics,",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 8,
+          "queue_seconds": 1.2338972999714315,
+          "inference_seconds": 0.5440076999366283,
+          "text": "As for etchings, they are of two kinds, British and",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 9,
+          "queue_seconds": 1.2693469999358058,
+          "inference_seconds": 0.5036500999704003,
+          "text": "He laments most bitterly the divorce that has been made between decorative",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 10,
+          "queue_seconds": 1.3526045999024063,
+          "inference_seconds": 0.4706043000333011,
+          "text": "near the fire, and the ornaments Fred brought home from India on the mental",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 11,
+          "queue_seconds": 1.5767018999904394,
+          "inference_seconds": 0.31857989984564483,
+          "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing that",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 1,
+      "mixed": true,
+      "round": 0,
+      "wall_seconds": 0.29883269988931715,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.0013836000580340624,
+          "inference_seconds": 0.29722499987110496,
+          "text": "¡Hola! Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello, welcome to the theater. Thank you very much for coming this night.",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 1,
+      "mixed": true,
+      "round": 1,
+      "wall_seconds": 0.3014318000059575,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.00030669989064335823,
+          "inference_seconds": 0.3010350000113249,
+          "text": "¡Hola! Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello, welcome to the theater. Thank you very much for coming this night.",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 2,
+      "mixed": true,
+      "round": 0,
+      "wall_seconds": 0.3988087000325322,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.000341600039973855,
+          "inference_seconds": 0.3983480001334101,
+          "text": "¡Hola! Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello, welcome to the theater. Thank you very much for coming this night.",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.0006356001831591129,
+          "inference_seconds": 0.24255379987880588,
+          "text": "Nor is Mr. Quilter's manner less interesting than his",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 2,
+      "mixed": true,
+      "round": 1,
+      "wall_seconds": 0.398647699970752,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.0004567001014947891,
+          "inference_seconds": 0.3980516998562962,
+          "text": "¡Hola! Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello, welcome to the theater. Thank you very much for coming this night.",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.000753799919039011,
+          "inference_seconds": 0.24093440012075007,
+          "text": "Nor is Mr. Quilter's manner less interesting than his",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 4,
+      "mixed": true,
+      "round": 0,
+      "wall_seconds": 0.8776988999452442,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.0005087000317871571,
+          "inference_seconds": 0.7983230000827461,
+          "text": "¡Hola! Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello, welcome to the theater. Thank you very much for coming this night.",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.0008781000506132841,
+          "inference_seconds": 0.5373849999159575,
+          "text": "Nor is Mr. Quilter's manner less interesting than his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 2,
+          "queue_seconds": 0.0012252000160515308,
+          "inference_seconds": 0.6985585999209434,
+          "text": "He tells us that at this festive season of the year, with Christmas",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 3,
+          "queue_seconds": 0.0016119999345391989,
+          "inference_seconds": 0.8758333001751453,
+          "text": "¡Hola! Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello, welcome to the theater. Thank you very much for coming this night.",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 4,
+      "mixed": true,
+      "round": 1,
+      "wall_seconds": 0.851956499973312,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.0010204999707639217,
+          "inference_seconds": 0.8503521999809891,
+          "text": "¡Hola! Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello, welcome to the theater. Thank you very much for coming this night.",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.0013463001232594252,
+          "inference_seconds": 0.5506452999543399,
+          "text": "Nor is Mr. Quilter's manner less interesting than his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 2,
+          "queue_seconds": 0.0017053999472409487,
+          "inference_seconds": 0.6405482001136988,
+          "text": "He tells us that at this festive season of the year, with Christmas",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 3,
+          "queue_seconds": 0.002102700062096119,
+          "inference_seconds": 0.7860590999480337,
+          "text": "¡Hola! Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello, welcome to the theater. Thank you very much for coming this night.",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 8,
+      "mixed": true,
+      "round": 0,
+      "wall_seconds": 1.6088223000988364,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.0008857001084834337,
+          "inference_seconds": 1.4469725999515504,
+          "text": "¡Hola! Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello, welcome to the theater. Thank you very much for coming this night.",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.001211599912494421,
+          "inference_seconds": 0.5579043000470847,
+          "text": "Nor is Mr. Quilter's manner less interesting than his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 2,
+          "queue_seconds": 0.0014798000920563936,
+          "inference_seconds": 0.6816608998924494,
+          "text": "He tells us that at this festive season of the year, with Christmas",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 3,
+          "queue_seconds": 0.0017146999016404152,
+          "inference_seconds": 1.0792990000918508,
+          "text": "¡Hola! Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello, welcome to the theater. Thank you very much for coming this night.",
+          "fixture_check": true
+        },
+        {
+          "stream": 4,
+          "queue_seconds": 0.5591257000342011,
+          "inference_seconds": 0.5818298000376672,
+          "text": "Linnell's pictures are a sort of up guards and Adam paintings",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 5,
+          "queue_seconds": 0.6831507000606507,
+          "inference_seconds": 0.5187086998485029,
+          "text": "It is obviously unnecessary for us to point out how luminous these",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 6,
+          "queue_seconds": 1.081025900086388,
+          "inference_seconds": 0.5275773999746889,
+          "text": "¡Hola! Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello, welcome to the theater. Thank you very much for coming this night.",
+          "fixture_check": true
+        },
+        {
+          "stream": 7,
+          "queue_seconds": 1.1409650999121368,
+          "inference_seconds": 0.3636110001243651,
+          "text": "Painting, he tells us, is of a different quality to mathematics,",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 8,
+      "mixed": true,
+      "round": 1,
+      "wall_seconds": 1.5742381000891328,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.00119420001283288,
+          "inference_seconds": 1.087771400110796,
+          "text": "¡Hola! Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello, welcome to the theater. Thank you very much for coming this night.",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.0015680999495089054,
+          "inference_seconds": 0.5095920001622289,
+          "text": "Nor is Mr. Quilter's manner less interesting than his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 2,
+          "queue_seconds": 0.001819700002670288,
+          "inference_seconds": 1.0232238001190126,
+          "text": "He tells us that at this festive season of the year, with Christmas",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 3,
+          "queue_seconds": 0.002116600051522255,
+          "inference_seconds": 1.0872156000696123,
+          "text": "¡Hola! Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello, welcome to the theater. Thank you very much for coming this night.",
+          "fixture_check": true
+        },
+        {
+          "stream": 4,
+          "queue_seconds": 0.5111732999794185,
+          "inference_seconds": 0.520950100151822,
+          "text": "Linnell's pictures are a sort of up guards and Adam paintings",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 5,
+          "queue_seconds": 1.0250566001050174,
+          "inference_seconds": 0.47716289991512895,
+          "text": "It is obviously unnecessary for us to point out how luminous these",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 6,
+          "queue_seconds": 1.0321337000932544,
+          "inference_seconds": 0.5419125999324024,
+          "text": "¡Hola! Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello, welcome to the theater. Thank you very much for coming this night.",
+          "fixture_check": true
+        },
+        {
+          "stream": 7,
+          "queue_seconds": 1.0889816000126302,
+          "inference_seconds": 0.3820782001130283,
+          "text": "Painting, he tells us, is of a different quality to mathematics,",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 12,
+      "mixed": true,
+      "round": 0,
+      "wall_seconds": 2.347776100039482,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.0010882001370191574,
+          "inference_seconds": 1.0540424999780953,
+          "text": "¡Hola! Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello, welcome to the theater. Thank you very much for coming this night.",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.0013864000793546438,
+          "inference_seconds": 0.5429680999368429,
+          "text": "Nor is Mr. Quilter's manner less interesting than his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 2,
+          "queue_seconds": 0.001628899946808815,
+          "inference_seconds": 0.7434812001883984,
+          "text": "He tells us that at this festive season of the year, with Christmas",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 3,
+          "queue_seconds": 0.0019521000795066357,
+          "inference_seconds": 1.5459298000205308,
+          "text": "¡Hola! Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello, welcome to the theater. Thank you very much for coming this night.",
+          "fixture_check": true
+        },
+        {
+          "stream": 4,
+          "queue_seconds": 0.5443686000071466,
+          "inference_seconds": 0.547337100142613,
+          "text": "Linnell's pictures are a sort of up guards and Adam paintings",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 5,
+          "queue_seconds": 0.7451241000089794,
+          "inference_seconds": 0.5341505999676883,
+          "text": "It is obviously unnecessary for us to point out how luminous these",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 6,
+          "queue_seconds": 1.0551555000711232,
+          "inference_seconds": 1.2225164999254048,
+          "text": "¡Hola! Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello, welcome to the theater. Thank you very much for coming this night.",
+          "fixture_check": true
+        },
+        {
+          "stream": 7,
+          "queue_seconds": 1.0917184001300484,
+          "inference_seconds": 0.5772003999445587,
+          "text": "Painting, he tells us, is of a different quality to mathematics,",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 8,
+          "queue_seconds": 1.2792855999432504,
+          "inference_seconds": 0.5273674000054598,
+          "text": "As for etchings, they are of two kinds, British and",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 9,
+          "queue_seconds": 1.5478988999966532,
+          "inference_seconds": 0.7994453001301736,
+          "text": "¡Hola! Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello, welcome to the theater. Thank you very much for coming this night.",
+          "fixture_check": true
+        },
+        {
+          "stream": 10,
+          "queue_seconds": 1.668933100067079,
+          "inference_seconds": 0.5264967000111938,
+          "text": "near the fire, and the ornaments Fred brought home from India on the mental",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 11,
+          "queue_seconds": 1.8066616000141948,
+          "inference_seconds": 0.49902290012687445,
+          "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing that",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 12,
+      "mixed": true,
+      "round": 1,
+      "wall_seconds": 2.322700700024143,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.0013325000181794167,
+          "inference_seconds": 1.0967761999927461,
+          "text": "¡Hola! Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello, welcome to the theater. Thank you very much for coming this night.",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.0015920998994261026,
+          "inference_seconds": 0.7651831000111997,
+          "text": "Nor is Mr. Quilter's manner less interesting than his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 2,
+          "queue_seconds": 0.0018275000620633364,
+          "inference_seconds": 0.6863819998688996,
+          "text": "He tells us that at this festive season of the year, with Christmas",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 3,
+          "queue_seconds": 0.0020308000966906548,
+          "inference_seconds": 1.0263335998170078,
+          "text": "¡Hola! Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello, welcome to the theater. Thank you very much for coming this night.",
+          "fixture_check": true
+        },
+        {
+          "stream": 4,
+          "queue_seconds": 0.6882211999036372,
+          "inference_seconds": 0.54289670009166,
+          "text": "Linnell's pictures are a sort of up guards and Adam paintings",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 5,
+          "queue_seconds": 0.7667870000004768,
+          "inference_seconds": 0.7331143000628799,
+          "text": "It is obviously unnecessary for us to point out how luminous these",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 6,
+          "queue_seconds": 1.0283804000355303,
+          "inference_seconds": 0.996369699947536,
+          "text": "¡Hola! Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello, welcome to the theater. Thank you very much for coming this night.",
+          "fixture_check": true
+        },
+        {
+          "stream": 7,
+          "queue_seconds": 1.0981266000308096,
+          "inference_seconds": 0.5731011000461876,
+          "text": "Painting, he tells us, is of a different quality to mathematics,",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 8,
+          "queue_seconds": 1.231138400034979,
+          "inference_seconds": 0.5049689998850226,
+          "text": "As for etchings, they are of two kinds, British and",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 9,
+          "queue_seconds": 1.4999236001167446,
+          "inference_seconds": 0.8224589999299496,
+          "text": "¡Hola! Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello, welcome to the theater. Thank you very much for coming this night.",
+          "fixture_check": true
+        },
+        {
+          "stream": 10,
+          "queue_seconds": 1.6712422000709921,
+          "inference_seconds": 0.4839589998591691,
+          "text": "near the fire, and the ornaments Fred brought home from India on the mental",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 11,
+          "queue_seconds": 1.7361185001209378,
+          "inference_seconds": 0.4419923999812454,
+          "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing that",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    }
+  ],
+  "samples": [
+    {
+      "time": 1249545.0750944,
+      "rss_mib": 160.71875,
+      "cpu_seconds": 0.484375,
+      "nvidia_smi": "0, 58, 88.26",
+      "gpu_compute_processes": []
+    },
+    {
+      "time": 1249545.4074428,
+      "rss_mib": 465.82421875,
+      "cpu_seconds": 0.8125,
+      "nvidia_smi": "146, 1, 83.71",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249545.7610474,
+      "rss_mib": 339.29296875,
+      "cpu_seconds": 1.171875,
+      "nvidia_smi": "724, 1, 86.16",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249546.1102629,
+      "rss_mib": 720.390625,
+      "cpu_seconds": 1.5,
+      "nvidia_smi": "952, 1, 82.81",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249546.4647273,
+      "rss_mib": 731.3671875,
+      "cpu_seconds": 1.734375,
+      "nvidia_smi": "1208, 28, 121.36",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249546.807363,
+      "rss_mib": 735.3828125,
+      "cpu_seconds": 2.203125,
+      "nvidia_smi": "1176, 28, 129.51",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249547.200284,
+      "rss_mib": 742.05078125,
+      "cpu_seconds": 2.859375,
+      "nvidia_smi": "1304, 28, 240.20",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249547.5765809,
+      "rss_mib": 742.0625,
+      "cpu_seconds": 3.640625,
+      "nvidia_smi": "1272, 56, 125.47",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249547.9821995,
+      "rss_mib": 742.08984375,
+      "cpu_seconds": 4.71875,
+      "nvidia_smi": "1336, 56, 122.62",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249548.3654119,
+      "rss_mib": 742.09765625,
+      "cpu_seconds": 5.5625,
+      "nvidia_smi": "1304, 47, 136.47",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249548.7285134,
+      "rss_mib": 743.0078125,
+      "cpu_seconds": 6.453125,
+      "nvidia_smi": "1304, 47, 122.46",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249549.1006195,
+      "rss_mib": 743.01171875,
+      "cpu_seconds": 7.109375,
+      "nvidia_smi": "1304, 47, 137.11",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249549.4757285,
+      "rss_mib": 744.06640625,
+      "cpu_seconds": 7.96875,
+      "nvidia_smi": "1304, 50, 147.92",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249549.8464682,
+      "rss_mib": 742.04296875,
+      "cpu_seconds": 8.84375,
+      "nvidia_smi": "1336, 50, 155.01",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249550.2562155,
+      "rss_mib": 742.046875,
+      "cpu_seconds": 9.671875,
+      "nvidia_smi": "1368, 50, 124.88",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249550.6187379,
+      "rss_mib": 742.05078125,
+      "cpu_seconds": 10.515625,
+      "nvidia_smi": "1304, 50, 147.94",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249550.9789446,
+      "rss_mib": 742.05078125,
+      "cpu_seconds": 11.203125,
+      "nvidia_smi": "1112, 50, 132.03",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249551.3343731,
+      "rss_mib": 742.05859375,
+      "cpu_seconds": 12.03125,
+      "nvidia_smi": "1336, 51, 121.94",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249551.7097089,
+      "rss_mib": 742.0625,
+      "cpu_seconds": 12.96875,
+      "nvidia_smi": "1304, 51, 164.88",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249552.083606,
+      "rss_mib": 742.07421875,
+      "cpu_seconds": 13.75,
+      "nvidia_smi": "1272, 51, 158.00",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249552.4499679,
+      "rss_mib": 742.0859375,
+      "cpu_seconds": 14.5625,
+      "nvidia_smi": "1304, 51, 122.55",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249552.8293348,
+      "rss_mib": 742.0859375,
+      "cpu_seconds": 15.296875,
+      "nvidia_smi": "1176, 51, 131.46",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249553.20106,
+      "rss_mib": 742.109375,
+      "cpu_seconds": 16.25,
+      "nvidia_smi": "1304, 51, 120.74",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249553.5624597,
+      "rss_mib": 742.1171875,
+      "cpu_seconds": 17.09375,
+      "nvidia_smi": "1400, 48, 158.64",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249553.9306181,
+      "rss_mib": 742.12890625,
+      "cpu_seconds": 18.015625,
+      "nvidia_smi": "1304, 48, 125.06",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249554.379232,
+      "rss_mib": 742.1328125,
+      "cpu_seconds": 18.96875,
+      "nvidia_smi": "1304, 51, 168.63",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249554.7631156,
+      "rss_mib": 742.13671875,
+      "cpu_seconds": 19.71875,
+      "nvidia_smi": "1048, 51, 133.18",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249555.1297106,
+      "rss_mib": 741.80078125,
+      "cpu_seconds": 20.109375,
+      "nvidia_smi": "1112, 51, 123.33",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249555.4940646,
+      "rss_mib": 741.9140625,
+      "cpu_seconds": 20.515625,
+      "nvidia_smi": "1176, 51, 191.66",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249555.9493225,
+      "rss_mib": 741.9140625,
+      "cpu_seconds": 21.140625,
+      "nvidia_smi": "1176, 51, 190.01",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249556.3118534,
+      "rss_mib": 742.14453125,
+      "cpu_seconds": 21.796875,
+      "nvidia_smi": "1304, 51, 246.94",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249556.6643879,
+      "rss_mib": 742.1796875,
+      "cpu_seconds": 22.609375,
+      "nvidia_smi": "1304, 57, 123.20",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249557.0139488,
+      "rss_mib": 742.1875,
+      "cpu_seconds": 23.265625,
+      "nvidia_smi": "1176, 57, 164.88",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249557.3821388,
+      "rss_mib": 742.1953125,
+      "cpu_seconds": 24.203125,
+      "nvidia_smi": "1304, 51, 121.40",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249557.7777562,
+      "rss_mib": 742.19921875,
+      "cpu_seconds": 24.96875,
+      "nvidia_smi": "1208, 51, 166.72",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249558.1772843,
+      "rss_mib": 743.12109375,
+      "cpu_seconds": 25.75,
+      "nvidia_smi": "1336, 51, 128.38",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249558.5282841,
+      "rss_mib": 743.125,
+      "cpu_seconds": 26.359375,
+      "nvidia_smi": "1336, 51, 174.36",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249558.9158798,
+      "rss_mib": 743.1484375,
+      "cpu_seconds": 27.28125,
+      "nvidia_smi": "1336, 51, 125.91",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249559.2987708,
+      "rss_mib": 743.15234375,
+      "cpu_seconds": 28.15625,
+      "nvidia_smi": "1304, 51, 127.38",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249559.7035437,
+      "rss_mib": 742.0390625,
+      "cpu_seconds": 28.953125,
+      "nvidia_smi": "1304, 51, 237.35",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249560.0998221,
+      "rss_mib": 742.0390625,
+      "cpu_seconds": 29.65625,
+      "nvidia_smi": "1368, 51, 125.54",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249560.4455387,
+      "rss_mib": 742.0390625,
+      "cpu_seconds": 30.421875,
+      "nvidia_smi": "1304, 52, 125.08",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249560.8645147,
+      "rss_mib": 742.05078125,
+      "cpu_seconds": 31.421875,
+      "nvidia_smi": "1272, 52, 127.92",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249561.2605753,
+      "rss_mib": 743.76953125,
+      "cpu_seconds": 32.265625,
+      "nvidia_smi": "1336, 52, 228.96",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249561.681463,
+      "rss_mib": 742.78515625,
+      "cpu_seconds": 33.1875,
+      "nvidia_smi": "1432, 54, 126.83",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249562.0797856,
+      "rss_mib": 742.79296875,
+      "cpu_seconds": 34.25,
+      "nvidia_smi": "1304, 54, 128.11",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249562.4510117,
+      "rss_mib": 742.79296875,
+      "cpu_seconds": 34.984375,
+      "nvidia_smi": "1304, 51, 161.24",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249562.844663,
+      "rss_mib": 742.79296875,
+      "cpu_seconds": 35.765625,
+      "nvidia_smi": "1304, 51, 162.86",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249563.2438799,
+      "rss_mib": 742.8046875,
+      "cpu_seconds": 36.609375,
+      "nvidia_smi": "1304, 51, 158.70",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249563.6346376,
+      "rss_mib": 742.8046875,
+      "cpu_seconds": 37.4375,
+      "nvidia_smi": "1336, 50, 130.75",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249563.9995908,
+      "rss_mib": 742.8125,
+      "cpu_seconds": 38.21875,
+      "nvidia_smi": "1304, 50, 125.48",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249564.3495331,
+      "rss_mib": 742.82421875,
+      "cpu_seconds": 39.0625,
+      "nvidia_smi": "1304, 50, 141.81",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249564.7648359,
+      "rss_mib": 742.82421875,
+      "cpu_seconds": 39.96875,
+      "nvidia_smi": "1304, 52, 162.62",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249565.1676251,
+      "rss_mib": 743.765625,
+      "cpu_seconds": 40.828125,
+      "nvidia_smi": "1336, 52, 148.73",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1249565.546866,
+      "rss_mib": 742.828125,
+      "cpu_seconds": 41.40625,
+      "nvidia_smi": "1272, 52, 127.14",
+      "gpu_compute_processes": [
+        "14032, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    }
+  ],
+  "passed": true,
+  "interference": [],
+  "model_load_seconds": 0.6589793001767248,
+  "warmup_seconds": 0.21624960005283356,
+  "actual_device": "cuda",
+  "actual_compute_type": "float16"
+}

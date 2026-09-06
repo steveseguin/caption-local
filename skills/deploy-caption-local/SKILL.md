@@ -42,7 +42,12 @@ On Windows read `docs/WINDOWS-GPU.md` and `evidence/windows-rtx/report.md` for t
 tested environment and outstanding checks. Optional `requirements-windows-gpu.txt`
 installs NVIDIA runtime wheels inside the venv; CUDA engine setup discovers their
 DLL directories without changing system PATH. This fixes DLL discovery but is not
-itself GPU inference validation. Check for unrelated GPU compute processes before
+itself GPU inference validation. The later `evidence/gpu-validation/report.md`
+records real TITAN RTX decoding and short small/medium/large-v3 comparisons, but
+not a sustained GPU stream count. Start candidate profiling with float16, two
+workers and beam five; four workers were slower in these measurements. Reserve
+the GPU for a soak: recurring video jobs invalidated several timing cells. Check
+for unrelated GPU compute processes before
 profiling; preserve them unless the user authorizes interruption. Use an isolated
 process per model/precision/worker configuration and keep failed accuracy results.
 

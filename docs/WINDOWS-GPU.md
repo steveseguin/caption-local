@@ -10,9 +10,12 @@ RAM. See the [test report](../evidence/windows-rtx/report.md) for exact scope.
 The subsequent [deployment matrix](../evidence/deployment-matrix/report.md) adds
 six-language concurrent capture, translation quality, optional authentication and
 OpenAI SDK compatibility tests, with raw timing and failure evidence.
-**CUDA inference and sustained GPU capacity are still pending.** The TITAN RTX
-was occupied by another inference service. Detecting the device or loading DLLs
-does not establish GPU inference support.
+**Real CUDA decoding is now verified; sustained GPU capacity remains pending.**
+With the owner's permission, the llama service was temporarily stopped and later
+restored with identical arguments. Small, medium and large-v3 passed the supplied
+quality gate on the TITAN RTX. Recurring unrelated video GPU jobs prevented a
+reliable sustained test. Read the [GPU report](../evidence/gpu-validation/report.md)
+for clean short comparisons, rejected timings and remaining checks.
 
 ## Native setup
 
@@ -63,12 +66,30 @@ py -3.12 deploy.py download --model medium
 py -3.12 deploy.py run --model medium --device cpu --compute-type int8 --workers 1 --threads 8 --beam-size 5 --max-streams 1 --offline
 ```
 
-After freeing the GPU, the explicit CUDA starting configuration to validate is:
+After reserving the GPU, the verified engine starting configuration is:
 
 ```powershell
 nvidia-smi
 py -3.12 deploy.py run --model small --device cuda --compute-type float16 --workers 1 --threads 4 --beam-size 5 --offline
 ```
+
+The next accuracy candidate is large-v3, float16, two workers and beam five;
+the next throughput candidate is small with those same settings. Large-v3's
+short twelve-task mixed batch took 5.37 seconds, versus small's 1.94–1.96 seconds.
+These are queued engine requests, not sustainable live-stream counts or caption
+delays. Do not copy the CPU worker count to CUDA: four GPU workers were slower
+than two in these probes. Download large-v3 before using offline mode.
+
+```powershell
+py -3.12 deploy.py download --model large-v3
+py -3.12 deploy.py run --model large-v3 --device cuda --compute-type float16 --workers 2 --threads 4 --beam-size 5 --max-streams 12 --offline
+```
+
+The twelve-session limit above is a benchmark starting point, not a capacity
+recommendation. Validate your intended language/output mix with
+`scripts/gpu_accuracy.py` and `scripts/gpu_browser_run.py` before an event. Large-v3
+used about 4.7 GiB VRAM and peaked near 2.8 GiB host RSS during model startup in one
+short probe; memory needs and available VRAM vary across hosts.
 
 Open `http://localhost:8765`. Press **Ctrl+C in the server terminal** to shut down.
 Stop browser capture and wait for drain first. If PowerShell permits scripts,
@@ -104,7 +125,9 @@ nvidia-smi --query-gpu=timestamp,name,memory.used,utilization.gpu,power.draw --f
 
 Stop monitoring with Ctrl+C. Confirm the inference process and activity belong to
 Caption Local. Do not stop an unrelated service without its owner's authorization.
-The GPU profiler refuses to start when another compute process is present.
+The GPU profiler refuses to start when another compute process is present and
+rejects a run if interference appears later. The GPU browser runner stops/drains
+on interference; this is a failed benchmark, not a sustainable-capacity result.
 
 ## Reproducible tests
 

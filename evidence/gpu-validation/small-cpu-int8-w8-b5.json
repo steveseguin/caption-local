@@ -1,0 +1,1390 @@
+{
+  "configuration": {
+    "model": "small",
+    "device": "cpu",
+    "compute_type": "int8",
+    "beam_size": 5,
+    "workers": 8,
+    "threads": 2,
+    "streams": [
+      1,
+      2,
+      4,
+      8,
+      12
+    ],
+    "rounds": 1,
+    "output": "evidence\\gpu-validation\\small-cpu-int8-w8-b5.json"
+  },
+  "results": [
+    {
+      "streams": 1,
+      "mixed": false,
+      "round": 0,
+      "wall_seconds": 2.2171771998982877,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.00031160004436969757,
+          "inference_seconds": 2.2167354999110103,
+          "text": "Mr. Quilter is the Apostle of the Middle Classes, and we are glad to welcome his",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 2,
+      "mixed": false,
+      "round": 0,
+      "wall_seconds": 2.164080400019884,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.00033829989843070507,
+          "inference_seconds": 2.16347170015797,
+          "text": "Mr. Quilter is the Apostle of the Middle Classes, and we are glad to welcome his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.0006524999625980854,
+          "inference_seconds": 2.0685996001120657,
+          "text": "Nor is Mr. Quilter's manner less interesting than his",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 4,
+      "mixed": false,
+      "round": 0,
+      "wall_seconds": 2.641850900137797,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.00031530018895864487,
+          "inference_seconds": 2.6413328999187797,
+          "text": "Mr. Quilter is the Apostle of the Middle Classes, and we are glad to welcome his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.0006273000035434961,
+          "inference_seconds": 2.435496099991724,
+          "text": "Nor is Mr. Quilter's manner less interesting than his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 2,
+          "queue_seconds": 0.0009173001162707806,
+          "inference_seconds": 2.5331075999420136,
+          "text": "He tells us that at this festive season of the year, with Christmas",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 3,
+          "queue_seconds": 0.0012876000255346298,
+          "inference_seconds": 2.5468290999997407,
+          "text": "He has graved doubts whether Sir Frederick Layton's work is really Greek",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 8,
+      "mixed": false,
+      "round": 0,
+      "wall_seconds": 3.4125868999399245,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.00024170009419322014,
+          "inference_seconds": 3.3688471999485046,
+          "text": "Mr. Quilter is the Apostle of the Middle Classes, and we are glad to welcome his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.0006920001469552517,
+          "inference_seconds": 3.2638600999489427,
+          "text": "Nor is Mr. Quilter's manner less interesting than his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 2,
+          "queue_seconds": 0.0010824999772012234,
+          "inference_seconds": 3.262669099960476,
+          "text": "He tells us that at this festive season of the year, with Christmas",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 3,
+          "queue_seconds": 0.0012902000453323126,
+          "inference_seconds": 3.297109999926761,
+          "text": "He has graved doubts whether Sir Frederick Layton's work is really Greek",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 4,
+          "queue_seconds": 0.001572800101712346,
+          "inference_seconds": 3.4106312000658363,
+          "text": "Linnell's pictures are a sort of up-guards-and-adam paintings,",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 5,
+          "queue_seconds": 0.001843899954110384,
+          "inference_seconds": 3.2952817000914365,
+          "text": "It is obviously unnecessary for us to point out how luminous these",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 6,
+          "queue_seconds": 0.002148600062355399,
+          "inference_seconds": 3.1982515999116004,
+          "text": "On the general principles of art, Mr. Quilter writes with equal",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 7,
+          "queue_seconds": 0.00286280014552176,
+          "inference_seconds": 3.3264051999431103,
+          "text": "Painting, he tells us, is of a different quality to mathematics,",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 12,
+      "mixed": false,
+      "round": 0,
+      "wall_seconds": 5.766235899878666,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.0002770000137388706,
+          "inference_seconds": 3.3869071998633444,
+          "text": "Mr. Quilter is the Apostle of the Middle Classes, and we are glad to welcome his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.0005214998964220285,
+          "inference_seconds": 3.19019030011259,
+          "text": "Nor is Mr. Quilter's manner less interesting than his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 2,
+          "queue_seconds": 0.0007684000302106142,
+          "inference_seconds": 3.3622405999340117,
+          "text": "He tells us that at this festive season of the year, with Christmas",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 3,
+          "queue_seconds": 0.0010083999950438738,
+          "inference_seconds": 3.215244899969548,
+          "text": "He has graved doubts whether Sir Frederick Layton's work is really Greek",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 4,
+          "queue_seconds": 0.0012246998958289623,
+          "inference_seconds": 3.486653400119394,
+          "text": "Linnell's pictures are a sort of up-guards-and-adam paintings,",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 5,
+          "queue_seconds": 0.001567099941894412,
+          "inference_seconds": 3.2783695000689477,
+          "text": "It is obviously unnecessary for us to point out how luminous these",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 6,
+          "queue_seconds": 0.0018756999634206295,
+          "inference_seconds": 3.3328531000297517,
+          "text": "On the general principles of art, Mr. Quilter writes with equal",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 7,
+          "queue_seconds": 0.0021701999939978123,
+          "inference_seconds": 3.2890051999129355,
+          "text": "Painting, he tells us, is of a different quality to mathematics,",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 8,
+          "queue_seconds": 3.190732100047171,
+          "inference_seconds": 2.4531912999227643,
+          "text": "As for etchings, they are of two kinds, British and",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 9,
+          "queue_seconds": 3.216268999967724,
+          "inference_seconds": 2.468761899974197,
+          "text": "He laments most bitterly the divorce that has been made between decorative",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 10,
+          "queue_seconds": 3.2799539000261575,
+          "inference_seconds": 2.4604032000061125,
+          "text": "near the fire, and the ornaments Fred brought home from India on the mental",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 11,
+          "queue_seconds": 3.2911910000257194,
+          "inference_seconds": 2.4742437000386417,
+          "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing that",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 1,
+      "mixed": true,
+      "round": 0,
+      "wall_seconds": 3.7137692999094725,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.0003307999577373266,
+          "inference_seconds": 3.7131264000199735,
+          "text": "¡Hola! Bienvenidos al teatro. ¡Muchas gracias por venir esta noche!",
+          "translation": "Hello, welcome to the theater. Thank you very much for coming this night.",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 2,
+      "mixed": true,
+      "round": 0,
+      "wall_seconds": 3.8805128999520093,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.0002848000731319189,
+          "inference_seconds": 3.880053199827671,
+          "text": "¡Hola! Bienvenidos al teatro. ¡Muchas gracias por venir esta noche!",
+          "translation": "Hello, welcome to the theater. Thank you very much for coming this night.",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.0006617999169975519,
+          "inference_seconds": 2.1050078000407666,
+          "text": "Nor is Mr. Quilter's manner less interesting than his",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 4,
+      "mixed": true,
+      "round": 0,
+      "wall_seconds": 4.297283299965784,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.00031269993633031845,
+          "inference_seconds": 4.296726500149816,
+          "text": "¡Hola! Bienvenidos al teatro. ¡Muchas gracias por venir esta noche!",
+          "translation": "Hello, welcome to the theater. Thank you very much for coming this night.",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.0006039000581949949,
+          "inference_seconds": 2.4890147999394685,
+          "text": "Nor is Mr. Quilter's manner less interesting than his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 2,
+          "queue_seconds": 0.0008493999484926462,
+          "inference_seconds": 2.5673575999680907,
+          "text": "He tells us that at this festive season of the year, with Christmas",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 3,
+          "queue_seconds": 0.0011622000019997358,
+          "inference_seconds": 4.276991500053555,
+          "text": "¡Hola! Bienvenidos al teatro. ¡Muchas gracias por venir esta noche!",
+          "translation": "Hello, welcome to the theater. Thank you very much for coming this night.",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 8,
+      "mixed": true,
+      "round": 0,
+      "wall_seconds": 5.3914224000182,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.0003992000129073858,
+          "inference_seconds": 5.310019199969247,
+          "text": "¡Hola! Bienvenidos al teatro. ¡Muchas gracias por venir esta noche!",
+          "translation": "Hello, welcome to the theater. Thank you very much for coming this night.",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.0006792000494897366,
+          "inference_seconds": 3.1662700998131186,
+          "text": "Nor is Mr. Quilter's manner less interesting than his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 2,
+          "queue_seconds": 0.0010050998535007238,
+          "inference_seconds": 3.3766102001536638,
+          "text": "He tells us that at this festive season of the year, with Christmas",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 3,
+          "queue_seconds": 0.0013075999449938536,
+          "inference_seconds": 5.389709200011566,
+          "text": "¡Hola! Bienvenidos al teatro. ¡Muchas gracias por venir esta noche!",
+          "translation": "Hello, welcome to the theater. Thank you very much for coming this night.",
+          "fixture_check": true
+        },
+        {
+          "stream": 4,
+          "queue_seconds": 0.0015141000039875507,
+          "inference_seconds": 3.4213976999744773,
+          "text": "Linnell's pictures are a sort of up-guards-and-adam paintings,",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 5,
+          "queue_seconds": 0.0017760000191628933,
+          "inference_seconds": 3.4143039998598397,
+          "text": "It is obviously unnecessary for us to point out how luminous these",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 6,
+          "queue_seconds": 0.002011700067669153,
+          "inference_seconds": 5.337803199887276,
+          "text": "¡Hola! Bienvenidos al teatro. ¡Muchas gracias por venir esta noche!",
+          "translation": "Hello, welcome to the theater. Thank you very much for coming this night.",
+          "fixture_check": true
+        },
+        {
+          "stream": 7,
+          "queue_seconds": 0.002252900041639805,
+          "inference_seconds": 3.405522699933499,
+          "text": "Painting, he tells us, is of a different quality to mathematics,",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 12,
+      "mixed": true,
+      "round": 0,
+      "wall_seconds": 8.044219800038263,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.0002679999452084303,
+          "inference_seconds": 5.886100400006399,
+          "text": "¡Hola! Bienvenidos al teatro. ¡Muchas gracias por venir esta noche!",
+          "translation": "Hello, welcome to the theater. Thank you very much for coming this night.",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.0005284000653773546,
+          "inference_seconds": 3.0791484999936074,
+          "text": "Nor is Mr. Quilter's manner less interesting than his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 2,
+          "queue_seconds": 0.0008243001066148281,
+          "inference_seconds": 3.3837674998212606,
+          "text": "He tells us that at this festive season of the year, with Christmas",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 3,
+          "queue_seconds": 0.0010631000623106956,
+          "inference_seconds": 5.904963499866426,
+          "text": "¡Hola! Bienvenidos al teatro. ¡Muchas gracias por venir esta noche!",
+          "translation": "Hello, welcome to the theater. Thank you very much for coming this night.",
+          "fixture_check": true
+        },
+        {
+          "stream": 4,
+          "queue_seconds": 0.001276999944821,
+          "inference_seconds": 3.432299700099975,
+          "text": "Linnell's pictures are a sort of up-guards-and-adam paintings,",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 5,
+          "queue_seconds": 0.0014708000235259533,
+          "inference_seconds": 3.329868800006807,
+          "text": "It is obviously unnecessary for us to point out how luminous these",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 6,
+          "queue_seconds": 0.001689000055193901,
+          "inference_seconds": 6.034738099901006,
+          "text": "¡Hola! Bienvenidos al teatro. ¡Muchas gracias por venir esta noche!",
+          "translation": "Hello, welcome to the theater. Thank you very much for coming this night.",
+          "fixture_check": true
+        },
+        {
+          "stream": 7,
+          "queue_seconds": 0.0019916000310331583,
+          "inference_seconds": 3.3283688998781145,
+          "text": "Painting, he tells us, is of a different quality to mathematics,",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 8,
+          "queue_seconds": 3.079698200104758,
+          "inference_seconds": 3.0505087999626994,
+          "text": "As for etchings, they are of two kinds, British and",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 9,
+          "queue_seconds": 3.33037790004164,
+          "inference_seconds": 4.713532899972051,
+          "text": "¡Hola! Bienvenidos al teatro. ¡Muchas gracias por venir esta noche!",
+          "translation": "Hello, welcome to the theater. Thank you very much for coming this night.",
+          "fixture_check": true
+        },
+        {
+          "stream": 10,
+          "queue_seconds": 3.3313605000730604,
+          "inference_seconds": 3.0565030998550355,
+          "text": "near the fire, and the ornaments Fred brought home from India on the mental",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 11,
+          "queue_seconds": 3.384608400054276,
+          "inference_seconds": 2.997062899870798,
+          "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing that",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    }
+  ],
+  "samples": [
+    {
+      "time": 1249389.2587675,
+      "rss_mib": 161.13671875,
+      "cpu_seconds": 0.46875
+    },
+    {
+      "time": 1249389.5164265,
+      "rss_mib": 369.2734375,
+      "cpu_seconds": 0.703125
+    },
+    {
+      "time": 1249389.781371,
+      "rss_mib": 585.41796875,
+      "cpu_seconds": 1.09375
+    },
+    {
+      "time": 1249390.0448481,
+      "rss_mib": 451.98046875,
+      "cpu_seconds": 1.578125
+    },
+    {
+      "time": 1249390.3067874,
+      "rss_mib": 623.02734375,
+      "cpu_seconds": 2.171875
+    },
+    {
+      "time": 1249390.5716215,
+      "rss_mib": 532.2109375,
+      "cpu_seconds": 2.75
+    },
+    {
+      "time": 1249390.8343927,
+      "rss_mib": 527.5546875,
+      "cpu_seconds": 3.28125
+    },
+    {
+      "time": 1249391.0969543,
+      "rss_mib": 576.953125,
+      "cpu_seconds": 3.8125
+    },
+    {
+      "time": 1249391.3472065,
+      "rss_mib": 518.33984375,
+      "cpu_seconds": 4.3125
+    },
+    {
+      "time": 1249391.5975986,
+      "rss_mib": 614.10546875,
+      "cpu_seconds": 4.921875
+    },
+    {
+      "time": 1249391.8603729,
+      "rss_mib": 555.90625,
+      "cpu_seconds": 5.625
+    },
+    {
+      "time": 1249392.1257219,
+      "rss_mib": 587.65234375,
+      "cpu_seconds": 6.140625
+    },
+    {
+      "time": 1249392.3773101,
+      "rss_mib": 568.71484375,
+      "cpu_seconds": 6.65625
+    },
+    {
+      "time": 1249392.6394206,
+      "rss_mib": 651.171875,
+      "cpu_seconds": 7.140625
+    },
+    {
+      "time": 1249392.9031729,
+      "rss_mib": 665.515625,
+      "cpu_seconds": 7.65625
+    },
+    {
+      "time": 1249393.1665301,
+      "rss_mib": 669.05078125,
+      "cpu_seconds": 8.1875
+    },
+    {
+      "time": 1249393.4300286,
+      "rss_mib": 652.03125,
+      "cpu_seconds": 8.921875
+    },
+    {
+      "time": 1249393.6924685,
+      "rss_mib": 556.80078125,
+      "cpu_seconds": 9.46875
+    },
+    {
+      "time": 1249393.9558989,
+      "rss_mib": 815.15234375,
+      "cpu_seconds": 10.484375
+    },
+    {
+      "time": 1249394.2182269,
+      "rss_mib": 808.015625,
+      "cpu_seconds": 11.5625
+    },
+    {
+      "time": 1249394.4831217,
+      "rss_mib": 630.125,
+      "cpu_seconds": 12.59375
+    },
+    {
+      "time": 1249394.748479,
+      "rss_mib": 641.03125,
+      "cpu_seconds": 13.65625
+    },
+    {
+      "time": 1249395.0003471,
+      "rss_mib": 695.2109375,
+      "cpu_seconds": 14.703125
+    },
+    {
+      "time": 1249395.2651448,
+      "rss_mib": 812.66796875,
+      "cpu_seconds": 15.671875
+    },
+    {
+      "time": 1249395.5288012,
+      "rss_mib": 787.32421875,
+      "cpu_seconds": 17.078125
+    },
+    {
+      "time": 1249395.7938224,
+      "rss_mib": 709.1953125,
+      "cpu_seconds": 18.1875
+    },
+    {
+      "time": 1249396.0586423,
+      "rss_mib": 680.02734375,
+      "cpu_seconds": 19.71875
+    },
+    {
+      "time": 1249396.3206186,
+      "rss_mib": 715.11328125,
+      "cpu_seconds": 22.0625
+    },
+    {
+      "time": 1249396.5707187,
+      "rss_mib": 1090.35546875,
+      "cpu_seconds": 24.0625
+    },
+    {
+      "time": 1249396.8352777,
+      "rss_mib": 1014.99609375,
+      "cpu_seconds": 26.171875
+    },
+    {
+      "time": 1249397.0862971,
+      "rss_mib": 786.890625,
+      "cpu_seconds": 28.171875
+    },
+    {
+      "time": 1249397.3493908,
+      "rss_mib": 805.72265625,
+      "cpu_seconds": 30.28125
+    },
+    {
+      "time": 1249397.6131522,
+      "rss_mib": 794.26171875,
+      "cpu_seconds": 32.390625
+    },
+    {
+      "time": 1249397.8772251,
+      "rss_mib": 956.16015625,
+      "cpu_seconds": 35.046875
+    },
+    {
+      "time": 1249398.1415195,
+      "rss_mib": 1039.828125,
+      "cpu_seconds": 37.359375
+    },
+    {
+      "time": 1249398.4045084,
+      "rss_mib": 757.453125,
+      "cpu_seconds": 39.484375
+    },
+    {
+      "time": 1249398.6555854,
+      "rss_mib": 575.87109375,
+      "cpu_seconds": 41.578125
+    },
+    {
+      "time": 1249398.9194629,
+      "rss_mib": 825.99609375,
+      "cpu_seconds": 45.515625
+    },
+    {
+      "time": 1249399.1714296,
+      "rss_mib": 1491.0546875,
+      "cpu_seconds": 49.484375
+    },
+    {
+      "time": 1249399.422388,
+      "rss_mib": 1126.890625,
+      "cpu_seconds": 53.671875
+    },
+    {
+      "time": 1249399.68409,
+      "rss_mib": 1080.14453125,
+      "cpu_seconds": 57.40625
+    },
+    {
+      "time": 1249399.9491756,
+      "rss_mib": 1364.76953125,
+      "cpu_seconds": 61.625
+    },
+    {
+      "time": 1249400.1994389,
+      "rss_mib": 1081.51953125,
+      "cpu_seconds": 65.59375
+    },
+    {
+      "time": 1249400.4503796,
+      "rss_mib": 1217.3203125,
+      "cpu_seconds": 69.5625
+    },
+    {
+      "time": 1249400.7032295,
+      "rss_mib": 1073.18359375,
+      "cpu_seconds": 73.53125
+    },
+    {
+      "time": 1249400.9671894,
+      "rss_mib": 1144.76171875,
+      "cpu_seconds": 77.53125
+    },
+    {
+      "time": 1249401.231893,
+      "rss_mib": 1500.28125,
+      "cpu_seconds": 81.78125
+    },
+    {
+      "time": 1249401.4845705,
+      "rss_mib": 1529.984375,
+      "cpu_seconds": 85.8125
+    },
+    {
+      "time": 1249401.7494787,
+      "rss_mib": 929.640625,
+      "cpu_seconds": 89.6875
+    },
+    {
+      "time": 1249402.0014891,
+      "rss_mib": 617.75390625,
+      "cpu_seconds": 93.375
+    },
+    {
+      "time": 1249402.2653951,
+      "rss_mib": 1592.640625,
+      "cpu_seconds": 96.828125
+    },
+    {
+      "time": 1249402.5297834,
+      "rss_mib": 876.41015625,
+      "cpu_seconds": 101.015625
+    },
+    {
+      "time": 1249402.7947125,
+      "rss_mib": 1500.5078125,
+      "cpu_seconds": 105.21875
+    },
+    {
+      "time": 1249403.058606,
+      "rss_mib": 905.265625,
+      "cpu_seconds": 109.40625
+    },
+    {
+      "time": 1249403.3093294,
+      "rss_mib": 1229.5,
+      "cpu_seconds": 113.375
+    },
+    {
+      "time": 1249403.5742672,
+      "rss_mib": 1095.6875,
+      "cpu_seconds": 117.5625
+    },
+    {
+      "time": 1249403.8246964,
+      "rss_mib": 1045.42578125,
+      "cpu_seconds": 121.53125
+    },
+    {
+      "time": 1249404.0752433,
+      "rss_mib": 1382.62109375,
+      "cpu_seconds": 125.5
+    },
+    {
+      "time": 1249404.3264693,
+      "rss_mib": 943.65234375,
+      "cpu_seconds": 129.46875
+    },
+    {
+      "time": 1249404.5900842,
+      "rss_mib": 1494.6484375,
+      "cpu_seconds": 133.59375
+    },
+    {
+      "time": 1249404.8547789,
+      "rss_mib": 1528.79296875,
+      "cpu_seconds": 137.6875
+    },
+    {
+      "time": 1249405.1188061,
+      "rss_mib": 1148.390625,
+      "cpu_seconds": 141.5625
+    },
+    {
+      "time": 1249405.3844274,
+      "rss_mib": 906.28515625,
+      "cpu_seconds": 145.796875
+    },
+    {
+      "time": 1249405.6354399,
+      "rss_mib": 913.94921875,
+      "cpu_seconds": 149.015625
+    },
+    {
+      "time": 1249405.886532,
+      "rss_mib": 881.6796875,
+      "cpu_seconds": 151.15625
+    },
+    {
+      "time": 1249406.1512608,
+      "rss_mib": 846.96875,
+      "cpu_seconds": 153.25
+    },
+    {
+      "time": 1249406.4020078,
+      "rss_mib": 791.1875,
+      "cpu_seconds": 155.25
+    },
+    {
+      "time": 1249406.6663495,
+      "rss_mib": 821.40234375,
+      "cpu_seconds": 157.375
+    },
+    {
+      "time": 1249406.930722,
+      "rss_mib": 884.89453125,
+      "cpu_seconds": 159.484375
+    },
+    {
+      "time": 1249407.1936515,
+      "rss_mib": 982.18359375,
+      "cpu_seconds": 162.171875
+    },
+    {
+      "time": 1249407.4587524,
+      "rss_mib": 1064.08203125,
+      "cpu_seconds": 164.453125
+    },
+    {
+      "time": 1249407.7237511,
+      "rss_mib": 630.765625,
+      "cpu_seconds": 167.046875
+    },
+    {
+      "time": 1249407.9890927,
+      "rss_mib": 628.40234375,
+      "cpu_seconds": 168.6875
+    },
+    {
+      "time": 1249408.2533602,
+      "rss_mib": 636.91015625,
+      "cpu_seconds": 169.265625
+    },
+    {
+      "time": 1249408.5181799,
+      "rss_mib": 715.84375,
+      "cpu_seconds": 169.796875
+    },
+    {
+      "time": 1249408.7837746,
+      "rss_mib": 720.2421875,
+      "cpu_seconds": 170.328125
+    },
+    {
+      "time": 1249409.0338994,
+      "rss_mib": 620.5859375,
+      "cpu_seconds": 170.828125
+    },
+    {
+      "time": 1249409.299199,
+      "rss_mib": 598.52734375,
+      "cpu_seconds": 171.359375
+    },
+    {
+      "time": 1249409.5516177,
+      "rss_mib": 703.71875,
+      "cpu_seconds": 172.046875
+    },
+    {
+      "time": 1249409.8029043,
+      "rss_mib": 711.4921875,
+      "cpu_seconds": 172.640625
+    },
+    {
+      "time": 1249410.0530878,
+      "rss_mib": 711.4921875,
+      "cpu_seconds": 173.234375
+    },
+    {
+      "time": 1249410.3039793,
+      "rss_mib": 712.28125,
+      "cpu_seconds": 173.734375
+    },
+    {
+      "time": 1249410.5556286,
+      "rss_mib": 714.4921875,
+      "cpu_seconds": 174.234375
+    },
+    {
+      "time": 1249410.8067416,
+      "rss_mib": 676.64453125,
+      "cpu_seconds": 174.734375
+    },
+    {
+      "time": 1249411.0592631,
+      "rss_mib": 605.49609375,
+      "cpu_seconds": 175.234375
+    },
+    {
+      "time": 1249411.3186679,
+      "rss_mib": 688.0703125,
+      "cpu_seconds": 175.875
+    },
+    {
+      "time": 1249411.5695504,
+      "rss_mib": 629.32421875,
+      "cpu_seconds": 176.515625
+    },
+    {
+      "time": 1249411.8336218,
+      "rss_mib": 650.4609375,
+      "cpu_seconds": 177.75
+    },
+    {
+      "time": 1249412.0961496,
+      "rss_mib": 671.2734375,
+      "cpu_seconds": 178.8125
+    },
+    {
+      "time": 1249412.3525869,
+      "rss_mib": 687.32421875,
+      "cpu_seconds": 179.8125
+    },
+    {
+      "time": 1249412.6027663,
+      "rss_mib": 669.953125,
+      "cpu_seconds": 180.8125
+    },
+    {
+      "time": 1249412.8547647,
+      "rss_mib": 646.6953125,
+      "cpu_seconds": 181.8125
+    },
+    {
+      "time": 1249413.1193799,
+      "rss_mib": 629.62109375,
+      "cpu_seconds": 182.875
+    },
+    {
+      "time": 1249413.3715604,
+      "rss_mib": 820.8671875,
+      "cpu_seconds": 184.25
+    },
+    {
+      "time": 1249413.6243177,
+      "rss_mib": 642.44140625,
+      "cpu_seconds": 185.40625
+    },
+    {
+      "time": 1249413.8875017,
+      "rss_mib": 643.6328125,
+      "cpu_seconds": 186.421875
+    },
+    {
+      "time": 1249414.1494546,
+      "rss_mib": 716.96875,
+      "cpu_seconds": 186.953125
+    },
+    {
+      "time": 1249414.4027344,
+      "rss_mib": 716.96875,
+      "cpu_seconds": 187.453125
+    },
+    {
+      "time": 1249414.6552682,
+      "rss_mib": 719.2734375,
+      "cpu_seconds": 187.9375
+    },
+    {
+      "time": 1249414.9130636,
+      "rss_mib": 674.55859375,
+      "cpu_seconds": 188.46875
+    },
+    {
+      "time": 1249415.1724471,
+      "rss_mib": 680.9375,
+      "cpu_seconds": 189.09375
+    },
+    {
+      "time": 1249415.4377509,
+      "rss_mib": 595.76171875,
+      "cpu_seconds": 189.71875
+    },
+    {
+      "time": 1249415.7017447,
+      "rss_mib": 1107.15234375,
+      "cpu_seconds": 191.84375
+    },
+    {
+      "time": 1249415.9574455,
+      "rss_mib": 1044.86328125,
+      "cpu_seconds": 193.9375
+    },
+    {
+      "time": 1249416.2173111,
+      "rss_mib": 785.16015625,
+      "cpu_seconds": 195.921875
+    },
+    {
+      "time": 1249416.4724098,
+      "rss_mib": 746.89453125,
+      "cpu_seconds": 198.046875
+    },
+    {
+      "time": 1249416.7227807,
+      "rss_mib": 921.7109375,
+      "cpu_seconds": 200.046875
+    },
+    {
+      "time": 1249416.9876964,
+      "rss_mib": 906.9375,
+      "cpu_seconds": 202.171875
+    },
+    {
+      "time": 1249417.2384016,
+      "rss_mib": 802.30859375,
+      "cpu_seconds": 204.4375
+    },
+    {
+      "time": 1249417.5033375,
+      "rss_mib": 1051.921875,
+      "cpu_seconds": 207.078125
+    },
+    {
+      "time": 1249417.7669609,
+      "rss_mib": 846.59765625,
+      "cpu_seconds": 209.234375
+    },
+    {
+      "time": 1249418.029321,
+      "rss_mib": 809.046875,
+      "cpu_seconds": 211.796875
+    },
+    {
+      "time": 1249418.2936327,
+      "rss_mib": 842.4375,
+      "cpu_seconds": 213.125
+    },
+    {
+      "time": 1249418.5581476,
+      "rss_mib": 652.06640625,
+      "cpu_seconds": 214.1875
+    },
+    {
+      "time": 1249418.8206605,
+      "rss_mib": 655.01953125,
+      "cpu_seconds": 215.25
+    },
+    {
+      "time": 1249419.0850273,
+      "rss_mib": 683.41015625,
+      "cpu_seconds": 216.3125
+    },
+    {
+      "time": 1249419.3428377,
+      "rss_mib": 645.2578125,
+      "cpu_seconds": 217.359375
+    },
+    {
+      "time": 1249419.5993984,
+      "rss_mib": 816.73046875,
+      "cpu_seconds": 218.78125
+    },
+    {
+      "time": 1249419.8649113,
+      "rss_mib": 1279.54296875,
+      "cpu_seconds": 221.0625
+    },
+    {
+      "time": 1249420.1222647,
+      "rss_mib": 1497.88671875,
+      "cpu_seconds": 225.046875
+    },
+    {
+      "time": 1249420.3845459,
+      "rss_mib": 882.72265625,
+      "cpu_seconds": 229.21875
+    },
+    {
+      "time": 1249420.6382548,
+      "rss_mib": 1502.68359375,
+      "cpu_seconds": 233.203125
+    },
+    {
+      "time": 1249420.8972734,
+      "rss_mib": 1293.3203125,
+      "cpu_seconds": 237.421875
+    },
+    {
+      "time": 1249421.1478247,
+      "rss_mib": 937.11328125,
+      "cpu_seconds": 241.40625
+    },
+    {
+      "time": 1249421.4128402,
+      "rss_mib": 1463.77734375,
+      "cpu_seconds": 245.65625
+    },
+    {
+      "time": 1249421.6638897,
+      "rss_mib": 1033.25390625,
+      "cpu_seconds": 249.640625
+    },
+    {
+      "time": 1249421.9147063,
+      "rss_mib": 1169.7890625,
+      "cpu_seconds": 253.609375
+    },
+    {
+      "time": 1249422.1790246,
+      "rss_mib": 1336.1953125,
+      "cpu_seconds": 257.84375
+    },
+    {
+      "time": 1249422.431681,
+      "rss_mib": 1512.01171875,
+      "cpu_seconds": 261.78125
+    },
+    {
+      "time": 1249422.6839733,
+      "rss_mib": 1436.578125,
+      "cpu_seconds": 265.65625
+    },
+    {
+      "time": 1249422.9348229,
+      "rss_mib": 906.5,
+      "cpu_seconds": 269.46875
+    },
+    {
+      "time": 1249423.1940208,
+      "rss_mib": 702.8671875,
+      "cpu_seconds": 273.171875
+    },
+    {
+      "time": 1249423.4594922,
+      "rss_mib": 715.60546875,
+      "cpu_seconds": 275.328125
+    },
+    {
+      "time": 1249423.7097778,
+      "rss_mib": 798.16796875,
+      "cpu_seconds": 276.828125
+    },
+    {
+      "time": 1249423.9743698,
+      "rss_mib": 751.2421875,
+      "cpu_seconds": 278.421875
+    },
+    {
+      "time": 1249424.2379455,
+      "rss_mib": 781.1015625,
+      "cpu_seconds": 280.015625
+    },
+    {
+      "time": 1249424.5029477,
+      "rss_mib": 778.234375,
+      "cpu_seconds": 281.609375
+    },
+    {
+      "time": 1249424.7631082,
+      "rss_mib": 893.61328125,
+      "cpu_seconds": 283.546875
+    },
+    {
+      "time": 1249425.0151311,
+      "rss_mib": 942.875,
+      "cpu_seconds": 285.21875
+    },
+    {
+      "time": 1249425.2798705,
+      "rss_mib": 1546.81640625,
+      "cpu_seconds": 287.953125
+    },
+    {
+      "time": 1249425.5403024,
+      "rss_mib": 796.03125,
+      "cpu_seconds": 292.171875
+    },
+    {
+      "time": 1249425.7994145,
+      "rss_mib": 986.41015625,
+      "cpu_seconds": 296.40625
+    },
+    {
+      "time": 1249426.0641716,
+      "rss_mib": 1547.4921875,
+      "cpu_seconds": 300.59375
+    },
+    {
+      "time": 1249426.3272505,
+      "rss_mib": 950.42578125,
+      "cpu_seconds": 304.578125
+    },
+    {
+      "time": 1249426.5790004,
+      "rss_mib": 1364.5703125,
+      "cpu_seconds": 308.640625
+    },
+    {
+      "time": 1249426.838172,
+      "rss_mib": 1013.015625,
+      "cpu_seconds": 312.71875
+    },
+    {
+      "time": 1249427.0968312,
+      "rss_mib": 1093.390625,
+      "cpu_seconds": 316.875
+    },
+    {
+      "time": 1249427.3491408,
+      "rss_mib": 1256.3203125,
+      "cpu_seconds": 320.875
+    },
+    {
+      "time": 1249427.6125793,
+      "rss_mib": 1463.4296875,
+      "cpu_seconds": 325.125
+    },
+    {
+      "time": 1249427.8696638,
+      "rss_mib": 1525.4375,
+      "cpu_seconds": 329.09375
+    },
+    {
+      "time": 1249428.1239344,
+      "rss_mib": 1461.65234375,
+      "cpu_seconds": 332.921875
+    },
+    {
+      "time": 1249428.3778197,
+      "rss_mib": 965.734375,
+      "cpu_seconds": 337.140625
+    },
+    {
+      "time": 1249428.6283205,
+      "rss_mib": 1280.8515625,
+      "cpu_seconds": 341.015625
+    },
+    {
+      "time": 1249428.8863096,
+      "rss_mib": 1055.0625,
+      "cpu_seconds": 344.640625
+    },
+    {
+      "time": 1249429.150746,
+      "rss_mib": 1290.94140625,
+      "cpu_seconds": 348.34375
+    },
+    {
+      "time": 1249429.4147066,
+      "rss_mib": 968.73828125,
+      "cpu_seconds": 352.0625
+    },
+    {
+      "time": 1249429.6665258,
+      "rss_mib": 1312.64453125,
+      "cpu_seconds": 355.53125
+    },
+    {
+      "time": 1249429.9286097,
+      "rss_mib": 950.109375,
+      "cpu_seconds": 359.234375
+    },
+    {
+      "time": 1249430.1928694,
+      "rss_mib": 1396.38671875,
+      "cpu_seconds": 362.953125
+    },
+    {
+      "time": 1249430.4573256,
+      "rss_mib": 1237.05078125,
+      "cpu_seconds": 366.84375
+    },
+    {
+      "time": 1249430.7223619,
+      "rss_mib": 1351.25390625,
+      "cpu_seconds": 370.8125
+    },
+    {
+      "time": 1249430.9804114,
+      "rss_mib": 1411.26953125,
+      "cpu_seconds": 374.34375
+    },
+    {
+      "time": 1249431.2366196,
+      "rss_mib": 967.9765625,
+      "cpu_seconds": 377.671875
+    },
+    {
+      "time": 1249431.5005488,
+      "rss_mib": 765.5078125,
+      "cpu_seconds": 380.046875
+    },
+    {
+      "time": 1249431.7647337,
+      "rss_mib": 612.1875,
+      "cpu_seconds": 381.046875
+    },
+    {
+      "time": 1249432.0165784,
+      "rss_mib": 722.94921875,
+      "cpu_seconds": 381.578125
+    },
+    {
+      "time": 1249432.2805442,
+      "rss_mib": 726.63671875,
+      "cpu_seconds": 382.078125
+    },
+    {
+      "time": 1249432.5313541,
+      "rss_mib": 722.125,
+      "cpu_seconds": 382.59375
+    },
+    {
+      "time": 1249432.7940642,
+      "rss_mib": 636.6875,
+      "cpu_seconds": 383.09375
+    },
+    {
+      "time": 1249433.0446817,
+      "rss_mib": 697.75390625,
+      "cpu_seconds": 383.78125
+    }
+  ],
+  "passed": true,
+  "model_load_seconds": 0.9650983000174165,
+  "warmup_seconds": 1.406222099903971,
+  "actual_device": "cpu",
+  "actual_compute_type": "int8_float32"
+}
