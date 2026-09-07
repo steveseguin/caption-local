@@ -10,19 +10,13 @@ person to correct before publishing to OBS, a venue screen, phones, or a webpage
 You do not need an API key, a paid transcription account, or an AI assistant.
 The project is open source and runs independently of caption.ninja.
 
-**New here? [Start here: requirements, installation and your first captions](docs/GETTING-STARTED.md).**
-The guide includes Windows/Linux commands, saving and shutdown, keyboard use,
-privacy, realistic delay and accuracy expectations, and common next steps.
+**New here? [See the workflow and choose your setup](docs/SELF-HOSTING.md).**
+The visual guide covers local captions, optional editing/OBS, fully self-hosted
+delivery, hardware choices and what the capture page looks like.
 
-**Self-hosted caption.ninja capture:** a separate connection/diagnostics page is
-included in the current source. [Setup and sharing guide](docs/CAPTION-NINJA-LOCAL.md).
-Use the bundled `http://localhost:8765/capture-local.html` first; hosted-page access
-is optional and requires explicit origin permission and a service token.
-
-**Private caption delivery:** you can run caption.ninja's optional text relay and
-host its editor/overlay pages yourself. [Private relay setup](https://github.com/steveseguin/captionninja/blob/master/relay/README.md)
-covers room credentials, Windows/Linux commands and recovery limits. It runs
-separately from speech inference.
+[Install and get your first captions](docs/GETTING-STARTED.md) ·
+[Capture and sharing setup](docs/CAPTION-NINJA-LOCAL.md) ·
+[Private relay setup](https://github.com/steveseguin/captionninja/blob/master/relay/README.md)
 
 ## What to expect
 

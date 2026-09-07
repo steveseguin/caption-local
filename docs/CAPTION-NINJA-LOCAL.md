@@ -7,6 +7,9 @@ Models and inference stay in Caption Local; caption.ninja supplies a separate
 capture page and optional text editor/overlay. Existing capture and premium pages
 keep their existing behavior.
 
+For a first look, [the visual introduction](SELF-HOSTING.md) explains what runs
+where, shows the capture screen, and compares local, shared and self-hosted delivery.
+
 Use current Caption Local `main` and captionninja `master` source for this
 integration; published v1.1.0 predates it.
 

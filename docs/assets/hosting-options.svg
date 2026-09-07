@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="470" viewBox="0 0 1000 470" role="img" aria-labelledby="title desc">
+  <title id="title">Choose where speech recognition runs</title>
+  <desc id="desc">On one computer, the browser and Caption Local run together using localhost. With a private server, the microphone browser reaches Caption Local through an SSH tunnel. CPU or supported NVIDIA hardware can run recognition. Hosting caption delivery is a separate optional choice.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#245ac4"/></marker></defs>
+  <rect width="1000" height="470" rx="24" fill="#f5f7fb"/>
+  <g font-family="Segoe UI, Arial, sans-serif" fill="#18283f">
+    <text x="40" y="53" font-size="30" font-weight="700">Where will recognition run?</text>
+    <text x="40" y="83" font-size="18" fill="#495a72">Your microphone stays with you. The processing computer is your choice.</text>
+    <rect x="24" y="113" width="438" height="278" rx="18" fill="#e7eefb"/>
+    <rect x="482" y="113" width="494" height="278" rx="18" fill="#e7eefb"/>
+    <text x="45" y="149" font-size="22" font-weight="700">One computer</text>
+    <text x="503" y="149" font-size="22" font-weight="700">A separate private server</text>
+    <g fill="#fff" stroke="#b5c8e9" stroke-width="1.5">
+      <rect x="46" y="172" width="394" height="72" rx="12"/>
+      <rect x="46" y="292" width="394" height="72" rx="12"/>
+      <rect x="504" y="172" width="450" height="72" rx="12"/>
+      <rect x="504" y="292" width="450" height="72" rx="12"/>
+    </g>
+    <g text-anchor="middle">
+      <g font-size="21" font-weight="600"><text x="243" y="204">Microphone + browser</text><text x="729" y="204">Your microphone + browser</text><text x="243" y="324">Caption Local on the same PC</text><text x="729" y="324">Caption Local on your server</text></g>
+      <g font-size="17" fill="#495a72"><text x="243" y="229">Windows or Linux desktop</text><text x="729" y="229">Open the local tunnel address</text><text x="243" y="349">CPU or supported NVIDIA GPU</text><text x="729" y="349">Linux VPS or Windows/Linux workstation</text></g>
+    </g>
+    <g stroke="#245ac4" stroke-width="2.5" marker-start="url(#arrow)" marker-end="url(#arrow)"><path d="M113 250V286"/><path d="M565 250V286"/></g>
+    <text x="140" y="274" font-size="17" fill="#245ac4">localhost · audio + text</text>
+    <text x="592" y="274" font-size="17" fill="#245ac4">SSH tunnel · audio + text</text>
+    <text x="40" y="426" font-size="18" fill="#495a72">Both routes keep the inference port on localhost. A GPU is optional.</text>
+    <text x="40" y="452" font-size="18" fill="#495a72">Choose public or self-hosted caption delivery separately; see the workflow above.</text>
+  </g>
+</svg>

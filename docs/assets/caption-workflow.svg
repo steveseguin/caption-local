@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="640" viewBox="0 0 1000 640" role="img" aria-labelledby="title desc">
+  <title id="title">From microphone to audience</title>
+  <desc id="desc">A browser sends microphone audio to Caption Local on your computer or private server. Captions return to the browser for reading and download. Optional sharing sends text through a public or self-hosted relay to a human editor, then through the relay to audience overlays. Direct overlays can skip the editor.</desc>
+  <defs>
+    <marker id="blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#245ac4"/></marker>
+    <marker id="green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#16705a"/></marker>
+  </defs>
+  <rect width="1000" height="640" rx="24" fill="#f5f7fb"/>
+  <g font-family="Segoe UI, Arial, sans-serif" fill="#18283f">
+    <text x="40" y="53" font-size="30" font-weight="700">From microphone to audience</text>
+    <text x="40" y="83" font-size="18" fill="#495a72">Start with local captions. Add sharing when you need it.</text>
+    <rect x="24" y="110" width="952" height="188" rx="18" fill="#e7eefb"/>
+    <text x="42" y="141" font-size="16" font-weight="700" fill="#245ac4">LOCAL CAPTIONS · NO RELAY REQUIRED</text>
+    <g fill="#fff" stroke="#b5c8e9" stroke-width="1.5">
+      <rect x="42" y="160" width="266" height="116" rx="12"/>
+      <rect x="366" y="160" width="266" height="116" rx="12"/>
+      <rect x="690" y="160" width="266" height="116" rx="12"/>
+    </g>
+    <g font-size="23" font-weight="700"><text x="60" y="194">1. Capture audio</text><text x="384" y="194">2. Recognize speech</text><text x="708" y="194">3. Read captions</text></g>
+    <g font-size="18" fill="#495a72">
+      <text x="60" y="226">Microphone → browser</text><text x="60" y="251">Choose your audio input</text>
+      <text x="384" y="226">Caption Local + model</text><text x="384" y="251">Your computer or server</text>
+      <text x="708" y="226">Text in the capture tab</text><text x="708" y="251">Download your transcript</text>
+    </g>
+    <g stroke="#245ac4" stroke-width="2.5" fill="none" marker-end="url(#blue)"><path d="M313 218H358"/><path d="M637 218H682"/></g>
+    <path d="M824 280V326H175V350" stroke="#16705a" stroke-width="2.5" fill="none" marker-end="url(#green)"/>
+    <rect x="371" y="308" width="310" height="32" rx="16" fill="#f5f7fb"/>
+    <text x="526" y="330" text-anchor="middle" font-size="17" fill="#16705a">Optional sharing · caption text only</text>
+    <rect x="24" y="358" width="952" height="204" rx="18" fill="#e5f2ed"/>
+    <text x="42" y="389" font-size="16" font-weight="700" fill="#16705a">AUDIENCE DELIVERY · HUMAN REVIEW OPTIONAL</text>
+    <g fill="#fff" stroke="#a9cfc0" stroke-width="1.5">
+      <rect x="42" y="410" width="266" height="128" rx="12"/>
+      <rect x="366" y="410" width="266" height="128" rx="12"/>
+      <rect x="690" y="410" width="266" height="128" rx="12"/>
+    </g>
+    <g font-size="23" font-weight="700"><text x="60" y="445">4. Relay text</text><text x="384" y="445">5. Review + correct</text><text x="708" y="445">6. Display captions</text></g>
+    <g font-size="18" fill="#495a72">
+      <text x="60" y="477">Use caption.ninja's relay</text><text x="60" y="503">or host your own</text>
+      <text x="384" y="477">Human editor in a browser</text><text x="384" y="503">Publish approved captions</text>
+      <text x="708" y="477">OBS, screens or browsers</text><text x="708" y="503">Separate audience room</text>
+    </g>
+    <g stroke="#16705a" stroke-width="2.5" fill="none" marker-end="url(#green)"><path d="M313 474H358"/><path d="M637 474H682"/></g>
+    <text x="40" y="594" font-size="17" fill="#495a72">Approved text travels through the same relay to the audience. Direct overlays skip review.</text>
+    <text x="40" y="620" font-size="17" fill="#495a72">Audio goes to the recognition computer; the relay carries caption text, never microphone audio.</text>
+  </g>
+</svg>

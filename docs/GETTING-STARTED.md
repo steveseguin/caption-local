@@ -5,6 +5,9 @@ The speech model runs on your computer, or on a private server you connect to.
 You operate it through a browser. Start with one microphone and the default
 settings; you can choose a larger model or add producers later.
 
+Still choosing a setup? [See the visual workflow, hosting options and capture
+screen](SELF-HOSTING.md) before installing.
+
 This guide covers [requirements](#what-you-need), [installation](#install-and-open),
 [first captions](#make-your-first-captions), [saving and shutdown](#save-and-stop),
 and [what to expect](#set-realistic-expectations).
