@@ -2,72 +2,72 @@
   "runs": [
     {
       "name": "Private caption relay",
-      "html_url": "https://github.com/steveseguin/captionninja/actions/runs/34155743068",
-      "head_sha": "f059d57a43f7bdffeb7d309afe4d794cc2afc66c",
+      "html_url": "https://github.com/steveseguin/captionninja/actions/runs/34157175239",
+      "head_sha": "b1300f81a27e67121574de80443d6c02049663b2",
       "conclusion": "success",
-      "updated_at": "2026-09-07T19:30:02Z",
+      "updated_at": "2026-09-07T19:52:19Z",
       "jobs": [
         {
           "name": "relay (windows-latest)",
           "conclusion": "success",
-          "html_url": "https://github.com/steveseguin/captionninja/actions/runs/34155743068/job/101847080743"
+          "html_url": "https://github.com/steveseguin/captionninja/actions/runs/34157175239/job/101851310183"
         },
         {
           "name": "relay (ubuntu-latest)",
           "conclusion": "success",
-          "html_url": "https://github.com/steveseguin/captionninja/actions/runs/34155743068/job/101847081026"
+          "html_url": "https://github.com/steveseguin/captionninja/actions/runs/34157175239/job/101851310388"
         }
       ]
     },
     {
       "name": "pages build and deployment",
-      "html_url": "https://github.com/steveseguin/captionninja/actions/runs/34155742388",
-      "head_sha": "f059d57a43f7bdffeb7d309afe4d794cc2afc66c",
+      "html_url": "https://github.com/steveseguin/captionninja/actions/runs/34157174435",
+      "head_sha": "b1300f81a27e67121574de80443d6c02049663b2",
       "conclusion": "success",
-      "updated_at": "2026-09-07T19:30:29Z",
+      "updated_at": "2026-09-07T19:53:06Z",
       "jobs": [
         {
           "name": "build",
           "conclusion": "success",
-          "html_url": "https://github.com/steveseguin/captionninja/actions/runs/34155742388/job/101847081639"
+          "html_url": "https://github.com/steveseguin/captionninja/actions/runs/34157174435/job/101851309855"
         },
         {
           "name": "report-build-status",
           "conclusion": "success",
-          "html_url": "https://github.com/steveseguin/captionninja/actions/runs/34155742388/job/101847266585"
+          "html_url": "https://github.com/steveseguin/captionninja/actions/runs/34157174435/job/101851496316"
         },
         {
           "name": "deploy",
           "conclusion": "success",
-          "html_url": "https://github.com/steveseguin/captionninja/actions/runs/34155742388/job/101847266639"
+          "html_url": "https://github.com/steveseguin/captionninja/actions/runs/34157174435/job/101851496351"
         }
       ]
     },
     {
       "name": "Windows protocol and packaging",
-      "html_url": "https://github.com/steveseguin/caption-local/actions/runs/34155745598",
-      "head_sha": "7af8fcf491ff8789c33b01064ac046e87f0a8d44",
+      "html_url": "https://github.com/steveseguin/caption-local/actions/runs/34157203070",
+      "head_sha": "6a2cdadd0bb045f37ab8d7c840775d2a51165d69",
       "conclusion": "success",
-      "updated_at": "2026-09-07T19:29:52Z",
+      "updated_at": "2026-09-07T19:53:02Z",
       "jobs": [
         {
           "name": "windows-cpu",
           "conclusion": "success",
-          "html_url": "https://github.com/steveseguin/caption-local/actions/runs/34155745598/job/101847087932"
+          "html_url": "https://github.com/steveseguin/caption-local/actions/runs/34157203070/job/101851394371"
         }
       ]
     },
     {
       "name": "CI",
-      "html_url": "https://github.com/steveseguin/caption-local/actions/runs/34155745595",
-      "head_sha": "7af8fcf491ff8789c33b01064ac046e87f0a8d44",
+      "html_url": "https://github.com/steveseguin/caption-local/actions/runs/34157203174",
+      "head_sha": "6a2cdadd0bb045f37ab8d7c840775d2a51165d69",
       "conclusion": "success",
-      "updated_at": "2026-09-07T19:29:59Z",
+      "updated_at": "2026-09-07T19:52:54Z",
       "jobs": [
         {
           "name": "linux-cpu",
           "conclusion": "success",
-          "html_url": "https://github.com/steveseguin/caption-local/actions/runs/34155745595/job/101847087927"
+          "html_url": "https://github.com/steveseguin/caption-local/actions/runs/34157203174/job/101851394691"
         }
       ]
     }

@@ -1,0 +1,128 @@
+{
+  "scope": "real private protocol v2; Node clients and server share a loopback process, no speech inference",
+  "startedAt": "2026-09-07T20:05:14.069Z",
+  "node": "v22.19.0",
+  "platform": "win32",
+  "producerStreams": 32,
+  "viewers": 400,
+  "connections": 432,
+  "requestedSeconds": 60,
+  "elapsedSeconds": 60.018136899999995,
+  "rounds": 300,
+  "captionHz": 5,
+  "expectedDeliveries": 120000,
+  "delivered": 120000,
+  "errors": 0,
+  "duplicates": 0,
+  "gaps": 0,
+  "injectedDisconnectPairs": 2,
+  "latencyMs": {
+    "mean": 8.734724090833266,
+    "p95": 10.3,
+    "p99": 11.9,
+    "max": 2026.1849000000002,
+    "histogramResolution": 0.1
+  },
+  "meanCpuCores": 0.058065781112242434,
+  "peakRssMiB": 95.5234375,
+  "warmRssGrowthMiB": 0,
+  "limits": {
+    "connections": 512,
+    "perIp": 512,
+    "perRoom": 256,
+    "messagesPerSecond": 40,
+    "payloadBytes": 8192,
+    "bufferedBytes": 65536,
+    "joinMs": 10000,
+    "heartbeatMs": 30000,
+    "replayMs": 120000,
+    "replayMessages": 256,
+    "replayTotalMessages": 8192,
+    "replayBytes": 16777216,
+    "slowMs": 10000
+  },
+  "stats": {
+    "accepted": 436,
+    "rejected": 0,
+    "published": 9600,
+    "delivered": 120000,
+    "slowConsumers": 0,
+    "duplicates": 0,
+    "replayed": 22,
+    "gaps": 0
+  },
+  "samples": [
+    {
+      "seconds": 0.008858799999999974,
+      "rss": 74842112,
+      "heap": 16781512,
+      "retainedBytes": 0,
+      "retainedMessages": 0,
+      "maximumQueue": 1,
+      "errors": 0,
+      "gaps": 0,
+      "delivered": 0
+    },
+    {
+      "seconds": 9.9999419,
+      "rss": 94330880,
+      "heap": 25693880,
+      "retainedBytes": 795414,
+      "retainedMessages": 1600,
+      "maximumQueue": 1,
+      "errors": 0,
+      "gaps": 0,
+      "delivered": 20000
+    },
+    {
+      "seconds": 20.0131174,
+      "rss": 95690752,
+      "heap": 16326920,
+      "retainedBytes": 1594866,
+      "retainedMessages": 3200,
+      "maximumQueue": 1,
+      "errors": 0,
+      "gaps": 0,
+      "delivered": 40000
+    },
+    {
+      "seconds": 30.017515500000002,
+      "rss": 97521664,
+      "heap": 22321160,
+      "retainedBytes": 2399134,
+      "retainedMessages": 4800,
+      "maximumQueue": 1,
+      "errors": 0,
+      "gaps": 0,
+      "delivered": 60000
+    },
+    {
+      "seconds": 40.0044097,
+      "rss": 98877440,
+      "heap": 25444368,
+      "retainedBytes": 3203402,
+      "retainedMessages": 6400,
+      "maximumQueue": 1,
+      "errors": 0,
+      "gaps": 0,
+      "delivered": 80000
+    },
+    {
+      "seconds": 50.0161983,
+      "rss": 100163584,
+      "heap": 28598432,
+      "retainedBytes": 4007640,
+      "retainedMessages": 8000,
+      "maximumQueue": 1,
+      "errors": 0,
+      "gaps": 0,
+      "delivered": 100000
+    }
+  ],
+  "sourceSha256": {
+    "client": "2eb1d94490b866aef3189e474ab624927a731626d63d3f26f23b4720ce65af4a",
+    "server": "2d1b7e4954ff70158660242cc9769486ed5fa93b32c8da68ca2cda09a8ac2ec5",
+    "replay": "6d7d5199214a4d73d324c7c4aa108002b43e6f02af36e0b0997835a7c3ed1cfb"
+  },
+  "passed": true
+}
