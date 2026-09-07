@@ -1,0 +1,366 @@
+{
+  "scope": "Capture self-hosted UI review states with local assets and mocked services.\n\nThis checks presentation, not inference, authentication or delivery correctness.\nAll HTTP/WebSocket requests are intercepted. No microphone permission is granted.\n",
+  "browser": "152.0.4191.66",
+  "pages": [
+    {
+      "page": "capture-setup",
+      "viewport": 1280,
+      "metrics": {
+        "width": 1280,
+        "documentWidth": 1280,
+        "height": 1489,
+        "outside": [],
+        "actionTop": 958.4375,
+        "bodyOverflow": "visible",
+        "setupHeight": null
+      },
+      "errors": [],
+      "interactionErrors": []
+    },
+    {
+      "page": "capture-ready",
+      "viewport": 1280,
+      "metrics": {
+        "width": 1280,
+        "documentWidth": 1280,
+        "height": 1276,
+        "outside": [],
+        "actionTop": 745.828125,
+        "bodyOverflow": "visible",
+        "setupHeight": null
+      },
+      "errors": [],
+      "interactionErrors": []
+    },
+    {
+      "page": "capture-sharing",
+      "viewport": 1280,
+      "metrics": {
+        "width": 1280,
+        "documentWidth": 1280,
+        "height": 2221,
+        "outside": [],
+        "actionTop": 745.828125,
+        "bodyOverflow": "visible",
+        "setupHeight": null
+      },
+      "errors": [],
+      "interactionErrors": []
+    },
+    {
+      "page": "local-captions",
+      "viewport": 1280,
+      "metrics": {
+        "width": 1280,
+        "documentWidth": 1280,
+        "height": 1152,
+        "outside": [],
+        "actionTop": 663.828125,
+        "bodyOverflow": "visible",
+        "setupHeight": null
+      },
+      "errors": [],
+      "interactionErrors": []
+    },
+    {
+      "page": "editor-setup",
+      "viewport": 1280,
+      "metrics": {
+        "width": 1280,
+        "documentWidth": 1280,
+        "height": 900,
+        "outside": [],
+        "actionTop": 591,
+        "bodyOverflow": "auto",
+        "setupHeight": 640
+      },
+      "errors": [],
+      "interactionErrors": []
+    },
+    {
+      "page": "editor-ready",
+      "viewport": 1280,
+      "metrics": {
+        "width": 1280,
+        "documentWidth": 1280,
+        "height": 1312,
+        "outside": [],
+        "actionTop": 743.6875,
+        "bodyOverflow": "visible",
+        "setupHeight": null
+      },
+      "errors": [],
+      "interactionErrors": []
+    },
+    {
+      "page": "overlay-setup",
+      "viewport": 1280,
+      "metrics": {
+        "width": 1280,
+        "documentWidth": 1280,
+        "height": 900,
+        "outside": [],
+        "actionTop": 425,
+        "bodyOverflow": "auto",
+        "setupHeight": 486
+      },
+      "errors": [],
+      "interactionErrors": []
+    },
+    {
+      "page": "overlay-ready",
+      "viewport": 1280,
+      "metrics": {
+        "width": 1280,
+        "documentWidth": 1280,
+        "height": 900,
+        "outside": [],
+        "actionTop": null,
+        "bodyOverflow": "hidden",
+        "setupHeight": null
+      },
+      "errors": [],
+      "interactionErrors": []
+    },
+    {
+      "page": "capture-setup",
+      "viewport": 390,
+      "metrics": {
+        "width": 390,
+        "documentWidth": 390,
+        "height": 1811,
+        "outside": [],
+        "actionTop": 1268.671875,
+        "bodyOverflow": "visible",
+        "setupHeight": null
+      },
+      "errors": [],
+      "interactionErrors": []
+    },
+    {
+      "page": "capture-ready",
+      "viewport": 390,
+      "metrics": {
+        "width": 390,
+        "documentWidth": 390,
+        "height": 1538,
+        "outside": [],
+        "actionTop": 996.28125,
+        "bodyOverflow": "visible",
+        "setupHeight": null
+      },
+      "errors": [],
+      "interactionErrors": []
+    },
+    {
+      "page": "capture-sharing",
+      "viewport": 390,
+      "metrics": {
+        "width": 390,
+        "documentWidth": 390,
+        "height": 2691,
+        "outside": [],
+        "actionTop": 996.28125,
+        "bodyOverflow": "visible",
+        "setupHeight": null
+      },
+      "errors": [],
+      "interactionErrors": []
+    },
+    {
+      "page": "local-captions",
+      "viewport": 390,
+      "metrics": {
+        "width": 390,
+        "documentWidth": 390,
+        "height": 1403,
+        "outside": [],
+        "actionTop": 895.0625,
+        "bodyOverflow": "visible",
+        "setupHeight": null
+      },
+      "errors": [],
+      "interactionErrors": []
+    },
+    {
+      "page": "editor-setup",
+      "viewport": 390,
+      "metrics": {
+        "width": 390,
+        "documentWidth": 390,
+        "height": 900,
+        "outside": [],
+        "actionTop": 669,
+        "bodyOverflow": "auto",
+        "setupHeight": 718
+      },
+      "errors": [],
+      "interactionErrors": []
+    },
+    {
+      "page": "editor-ready",
+      "viewport": 390,
+      "metrics": {
+        "width": 390,
+        "documentWidth": 390,
+        "height": 1995,
+        "outside": [],
+        "actionTop": 1166.984375,
+        "bodyOverflow": "visible",
+        "setupHeight": null
+      },
+      "errors": [],
+      "interactionErrors": []
+    },
+    {
+      "page": "overlay-setup",
+      "viewport": 390,
+      "metrics": {
+        "width": 390,
+        "documentWidth": 390,
+        "height": 900,
+        "outside": [],
+        "actionTop": 479,
+        "bodyOverflow": "auto",
+        "setupHeight": 540
+      },
+      "errors": [],
+      "interactionErrors": []
+    },
+    {
+      "page": "overlay-ready",
+      "viewport": 390,
+      "metrics": {
+        "width": 390,
+        "documentWidth": 390,
+        "height": 900,
+        "outside": [],
+        "actionTop": null,
+        "bodyOverflow": "hidden",
+        "setupHeight": null
+      },
+      "errors": [],
+      "interactionErrors": []
+    },
+    {
+      "page": "capture-setup",
+      "viewport": 320,
+      "metrics": {
+        "width": 320,
+        "documentWidth": 320,
+        "height": 2023,
+        "outside": [],
+        "actionTop": 1439.109375,
+        "bodyOverflow": "visible",
+        "setupHeight": null
+      },
+      "errors": [],
+      "interactionErrors": []
+    },
+    {
+      "page": "capture-ready",
+      "viewport": 320,
+      "metrics": {
+        "width": 320,
+        "documentWidth": 320,
+        "height": 1709,
+        "outside": [],
+        "actionTop": 1125.109375,
+        "bodyOverflow": "visible",
+        "setupHeight": null
+      },
+      "errors": [],
+      "interactionErrors": []
+    },
+    {
+      "page": "capture-sharing",
+      "viewport": 320,
+      "metrics": {
+        "width": 320,
+        "documentWidth": 320,
+        "height": 2948,
+        "outside": [],
+        "actionTop": 1125.109375,
+        "bodyOverflow": "visible",
+        "setupHeight": null
+      },
+      "errors": [],
+      "interactionErrors": []
+    },
+    {
+      "page": "local-captions",
+      "viewport": 320,
+      "metrics": {
+        "width": 320,
+        "documentWidth": 320,
+        "height": 1550,
+        "outside": [],
+        "actionTop": 996.28125,
+        "bodyOverflow": "visible",
+        "setupHeight": null
+      },
+      "errors": [],
+      "interactionErrors": []
+    },
+    {
+      "page": "editor-setup",
+      "viewport": 320,
+      "metrics": {
+        "width": 320,
+        "documentWidth": 320,
+        "height": 790,
+        "outside": [],
+        "actionTop": 693,
+        "bodyOverflow": "auto",
+        "setupHeight": 742
+      },
+      "errors": [],
+      "interactionErrors": []
+    },
+    {
+      "page": "editor-ready",
+      "viewport": 320,
+      "metrics": {
+        "width": 320,
+        "documentWidth": 320,
+        "height": 2142,
+        "outside": [],
+        "actionTop": 1236.546875,
+        "bodyOverflow": "visible",
+        "setupHeight": null
+      },
+      "errors": [],
+      "interactionErrors": []
+    },
+    {
+      "page": "overlay-setup",
+      "viewport": 320,
+      "metrics": {
+        "width": 320,
+        "documentWidth": 320,
+        "height": 640,
+        "outside": [],
+        "actionTop": 479,
+        "bodyOverflow": "auto",
+        "setupHeight": 540
+      },
+      "errors": [],
+      "interactionErrors": []
+    },
+    {
+      "page": "overlay-ready",
+      "viewport": 320,
+      "metrics": {
+        "width": 320,
+        "documentWidth": 320,
+        "height": 640,
+        "outside": [],
+        "actionTop": null,
+        "bodyOverflow": "hidden",
+        "setupHeight": null
+      },
+      "errors": [],
+      "interactionErrors": []
+    }
+  ]
+}

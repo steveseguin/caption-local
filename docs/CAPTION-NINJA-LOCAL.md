@@ -1,5 +1,7 @@
 # Self-hosted captions with caption.ninja
 
+[All guides](README.md) · [Install](GETTING-STARTED.md) · [Troubleshooting](TROUBLESHOOTING.md)
+
 Caption Local listens to a browser microphone and turns speech into text on your
 own Windows or Linux computer. No paid transcription account is needed. It can
 transcribe supported languages, translate speech into English, or produce both.
@@ -62,6 +64,8 @@ restrictive connection policy.
 
 1. Click **Connect and check service**. Leave the token empty unless your operator
    configured one. Check the displayed model, device, language and output support.
+   The connection panel then collapses; reopen **Service connected — edit connection**
+   to change it while capture is stopped. Keyboard focus moves to Microphone.
 2. Choose the microphone and spoken language. Start with the six-second interval.
 3. Click **Start captions** and allow microphone access. Read a short passage.
 4. Click **Stop** and wait for buffered audio to finish. Download the transcript.
@@ -72,6 +76,10 @@ Use Tab/Shift+Tab and Enter/Space for controls; fields have visible labels and
 captions use a live region. Screen-reader behavior has not been independently
 certified. Speech recognition can mishear names, accents and noise: review text
 before relying on it for an event.
+
+Start/Stop and transcript download come before the optional sharing and diagnostics
+panels. Use **All guides & help** at the top for installation, hosting and
+troubleshooting, or use the keyboard skip link to reach caption controls.
 
 Stop the foreground service with **Ctrl+C** after all tabs finish draining. For
 Compose, use `docker compose down`; retain its model volume for the next startup.

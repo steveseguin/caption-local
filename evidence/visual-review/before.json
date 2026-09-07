@@ -1,0 +1,248 @@
+{
+  "scope": "Capture self-hosted UI review states with local assets and mocked services.\n\nThis checks presentation, not inference, authentication or delivery correctness.\nAll HTTP/WebSocket requests are intercepted. No microphone permission is granted.\n",
+  "browser": "152.0.4191.66",
+  "pages": [
+    {
+      "page": "capture-setup",
+      "viewport": 1280,
+      "metrics": {
+        "width": 1280,
+        "documentWidth": 1280,
+        "height": 1820,
+        "outside": [],
+        "actionTop": 1374.171875,
+        "bodyOverflow": "visible",
+        "setupHeight": null
+      },
+      "errors": [],
+      "interactionErrors": []
+    },
+    {
+      "page": "capture-ready",
+      "viewport": 1280,
+      "metrics": {
+        "width": 1280,
+        "documentWidth": 1280,
+        "height": 1820,
+        "outside": [],
+        "actionTop": 1374.171875,
+        "bodyOverflow": "visible",
+        "setupHeight": null
+      },
+      "errors": [],
+      "interactionErrors": []
+    },
+    {
+      "page": "capture-sharing",
+      "viewport": 1280,
+      "metrics": {
+        "width": 1280,
+        "documentWidth": 1280,
+        "height": 2937,
+        "outside": [],
+        "actionTop": 2490.640625,
+        "bodyOverflow": "visible",
+        "setupHeight": null
+      },
+      "errors": [],
+      "interactionErrors": []
+    },
+    {
+      "page": "local-captions",
+      "viewport": 1280,
+      "metrics": {
+        "width": 1280,
+        "documentWidth": 1280,
+        "height": 1330,
+        "outside": [],
+        "actionTop": 944.015625,
+        "bodyOverflow": "visible",
+        "setupHeight": null
+      },
+      "errors": [],
+      "interactionErrors": []
+    },
+    {
+      "page": "editor-setup",
+      "viewport": 1280,
+      "metrics": {
+        "width": 1280,
+        "documentWidth": 1280,
+        "height": 1623,
+        "outside": [],
+        "actionTop": 546,
+        "bodyOverflow": "visible",
+        "setupHeight": 599
+      },
+      "errors": [],
+      "interactionErrors": []
+    },
+    {
+      "page": "editor-ready",
+      "viewport": 1280,
+      "metrics": {
+        "width": 1280,
+        "documentWidth": 1280,
+        "height": 1258,
+        "outside": [],
+        "actionTop": 865.25,
+        "bodyOverflow": "visible",
+        "setupHeight": null
+      },
+      "errors": [],
+      "interactionErrors": []
+    },
+    {
+      "page": "overlay-setup",
+      "viewport": 1280,
+      "metrics": {
+        "width": 1280,
+        "documentWidth": 1280,
+        "height": 900,
+        "outside": [],
+        "actionTop": 793,
+        "bodyOverflow": "hidden",
+        "setupHeight": 488.8125
+      },
+      "errors": [],
+      "interactionErrors": []
+    },
+    {
+      "page": "overlay-ready",
+      "viewport": 1280,
+      "metrics": {
+        "width": 1280,
+        "documentWidth": 1280,
+        "height": 900,
+        "outside": [],
+        "actionTop": null,
+        "bodyOverflow": "hidden",
+        "setupHeight": null
+      },
+      "errors": [],
+      "interactionErrors": []
+    },
+    {
+      "page": "capture-setup",
+      "viewport": 390,
+      "metrics": {
+        "width": 390,
+        "documentWidth": 390,
+        "height": 2183,
+        "outside": [],
+        "actionTop": 1737.171875,
+        "bodyOverflow": "visible",
+        "setupHeight": null
+      },
+      "errors": [],
+      "interactionErrors": []
+    },
+    {
+      "page": "capture-ready",
+      "viewport": 390,
+      "metrics": {
+        "width": 390,
+        "documentWidth": 390,
+        "height": 2210,
+        "outside": [],
+        "actionTop": 1764.171875,
+        "bodyOverflow": "visible",
+        "setupHeight": null
+      },
+      "errors": [],
+      "interactionErrors": []
+    },
+    {
+      "page": "capture-sharing",
+      "viewport": 390,
+      "metrics": {
+        "width": 390,
+        "documentWidth": 390,
+        "height": 3570,
+        "outside": [],
+        "actionTop": 3123.640625,
+        "bodyOverflow": "visible",
+        "setupHeight": null
+      },
+      "errors": [],
+      "interactionErrors": []
+    },
+    {
+      "page": "local-captions",
+      "viewport": 390,
+      "metrics": {
+        "width": 390,
+        "documentWidth": 390,
+        "height": 1561,
+        "outside": [],
+        "actionTop": 1175.015625,
+        "bodyOverflow": "visible",
+        "setupHeight": null
+      },
+      "errors": [],
+      "interactionErrors": []
+    },
+    {
+      "page": "editor-setup",
+      "viewport": 390,
+      "metrics": {
+        "width": 390,
+        "documentWidth": 390,
+        "height": 2530,
+        "outside": [],
+        "actionTop": 594,
+        "bodyOverflow": "visible",
+        "setupHeight": 647
+      },
+      "errors": [],
+      "interactionErrors": []
+    },
+    {
+      "page": "editor-ready",
+      "viewport": 390,
+      "metrics": {
+        "width": 390,
+        "documentWidth": 390,
+        "height": 1963,
+        "outside": [],
+        "actionTop": 1355.59375,
+        "bodyOverflow": "visible",
+        "setupHeight": null
+      },
+      "errors": [],
+      "interactionErrors": [
+        "OBS disclosure: TimeoutError"
+      ]
+    },
+    {
+      "page": "overlay-setup",
+      "viewport": 390,
+      "metrics": {
+        "width": 390,
+        "documentWidth": 390,
+        "height": 900,
+        "outside": [],
+        "actionTop": 793,
+        "bodyOverflow": "hidden",
+        "setupHeight": 548.8125
+      },
+      "errors": [],
+      "interactionErrors": []
+    },
+    {
+      "page": "overlay-ready",
+      "viewport": 390,
+      "metrics": {
+        "width": 390,
+        "documentWidth": 390,
+        "height": 900,
+        "outside": [],
+        "actionTop": null,
+        "bodyOverflow": "hidden",
+        "setupHeight": null
+      },
+      "errors": [],
+      "interactionErrors": []
+    }
+  ]
+}

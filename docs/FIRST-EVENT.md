@@ -1,5 +1,7 @@
 # Your first event
 
+[All guides](README.md) · [Install](GETTING-STARTED.md) · [Troubleshooting](TROUBLESHOOTING.md)
+
 Start with one producer and a short rehearsal before adding microphones or relying
 on captions for an audience. Caption Local generates automatic text; a human editor
 can improve it, but the combination still needs an event-specific accessibility plan.

@@ -5,7 +5,7 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-FILES = ('app.js', 'audio-buffer.js', 'pcm-worklet.js', 'ws-publisher.js', 'relay-config.js', 'private-relay-client.js',
+FILES = ('capture.css', 'app.js', 'audio-buffer.js', 'pcm-worklet.js', 'ws-publisher.js', 'relay-config.js', 'private-relay-client.js',
          'local-connection.js', 'local-page.js')
 
 

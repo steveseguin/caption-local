@@ -1,5 +1,7 @@
 # Windows and NVIDIA validation
 
+[All guides](README.md) · [Install](GETTING-STARTED.md) · [Troubleshooting](TROUBLESHOOTING.md)
+
 For a separate caption.ninja-compatible capture page with connection diagnostics,
 follow the [self-hosted capture guide](CAPTION-NINJA-LOCAL.md). It uses the same
 inference settings and retained-audio protocol as the original local page.

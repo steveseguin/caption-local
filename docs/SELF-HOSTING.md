@@ -1,5 +1,7 @@
 # Self-hosted captions: a visual introduction
 
+[All guides](README.md) · [Install](GETTING-STARTED.md) · [Troubleshooting](TROUBLESHOOTING.md)
+
 **Turn speech into captions on hardware you control.** Caption Local runs the
 speech model; a browser captures your microphone and shows the text. Start with
 one computer and one microphone. Caption.ninja's editor and audience overlays are
@@ -14,6 +16,9 @@ software, download a model and keep the service running while you use it.
 ## Follow the captions
 
 ![Workflow: microphone audio goes to Caption Local, captions return to the capture tab, and optional text sharing reaches an editor and audience through a relay.](assets/caption-workflow.svg)
+
+[Open the workflow diagram at full size](assets/caption-workflow.svg), or follow
+the same steps in text:
 
 1. **Capture:** choose a microphone or an audio input in the browser.
 2. **Recognize:** Caption Local processes that audio on your computer or private
@@ -30,11 +35,24 @@ yourself are two independent choices.
 
 ## Choose your setup
 
-| What you want | What you run | What is involved | Setup instructions |
-| --- | --- | --- | --- |
-| **Captions just for you** — start here | Caption Local and one browser tab | Install Python or use existing Docker; download a model; select your microphone. No relay or caption.ninja account needed. | [First local captions](GETTING-STARTED.md) |
-| **Your own recognition, with an editor or OBS** | Caption Local, plus caption.ninja editor/overlay pages | Set separate source and audience rooms and enable text sharing. Caption text travels through the public relay unless you choose a private one. | [Capture, editing and sharing](CAPTION-NINJA-LOCAL.md) |
-| **Your own recognition and caption delivery** | Caption Local, the Node relay, and editor/overlay pages | Add Node.js 22+, generate room credentials, and connect the pages. Serve pages locally for a local setup; internet-facing relay hosting needs HTTPS/WSS. | [Private relay: Windows/Linux commands](https://github.com/steveseguin/captionninja/blob/master/relay/README.md) |
+### Captions just for you — start here
+
+Run Caption Local and one browser tab. Install Python or use existing Docker,
+download a model, and select your microphone. No relay or caption.ninja account
+is needed. [Get your first local captions](GETTING-STARTED.md).
+
+### Your own recognition, with an editor or OBS
+
+Run Caption Local and open caption.ninja's editor/overlay pages. Set separate
+source and audience rooms, then enable sharing. Text travels through the public
+relay unless you choose a private one. [Set up capture, editing and sharing](CAPTION-NINJA-LOCAL.md).
+
+### Your own recognition and caption delivery
+
+Also run the Node relay and your editor/overlay pages. Add Node.js 22+, generate
+room credentials, and connect the pages. A local setup can serve everything on
+localhost; internet-facing relay hosting needs HTTPS/WSS.
+[Follow the private relay setup](https://github.com/steveseguin/captionninja/blob/master/relay/README.md).
 
 For the fully self-hosted route, each relay room has separate publishing and
 viewing tokens. The editor needs permission to read the source room and publish
@@ -54,6 +72,9 @@ The capture page has a service connection, microphone and language selectors,
 output choices, and Start/Stop controls. Captions appear below them. Expand the
 sharing options when you need an editor or overlay. Diagnostics show buffered
 audio, response times and errors; model and worker settings stay on the server.
+After connection, the service panel collapses and focus moves to Microphone.
+Reopen it to edit the connection. Optional sharing and diagnostics follow the
+capture/save controls, and **All guides & help** stays at the top.
 
 <details>
 <summary>See the actual capture page before connecting</summary>
@@ -75,12 +96,17 @@ More viewers mainly add relay traffic; more microphones add speech-processing wo
 
 ![Hosting choices: run the browser and Caption Local on one computer using localhost, or reach Caption Local on a private server through an SSH tunnel.](assets/hosting-options.svg)
 
-| Choice | A useful starting point | Tradeoff |
-| --- | --- | --- |
-| Desktop CPU | Multilingual `small`, one stream | No GPU setup. Larger models and more streams need more CPU time and memory. |
-| Supported NVIDIA GPU | Follow the CUDA guide, then compare multilingual models | More setup and VRAM requirements; benchmark accuracy as well as throughput. A GPU does not guarantee a stream count. |
-| Private Linux VPS or another workstation | Run recognition there and connect through SSH | The server stays running; audio travels to it through the tunnel. Microphone access stays on the producer's computer. |
-| Existing Docker installation | Use the supplied Compose route | Keeps runtime dependencies in a container. Models still need storage; NVIDIA containers have additional prerequisites. |
+[Open the hosting diagram at full size](assets/hosting-options.svg).
+
+- **Desktop CPU:** start with multilingual `small` and one stream. No GPU setup
+  is required; larger models and more streams need more CPU time and memory.
+- **Supported NVIDIA GPU:** follow the CUDA guide, then compare multilingual
+  models. Allow for VRAM and setup requirements; benchmark accuracy and throughput.
+- **Private Linux VPS or another workstation:** run recognition there and connect
+  through SSH. Audio travels through the tunnel; the microphone stays with you.
+- **Existing Docker installation:** use the supplied Compose route to keep runtime
+  dependencies in a container. Models still need storage, and NVIDIA containers
+  have additional prerequisites.
 
 For native installation, **Python 3.12 on Intel/AMD 64-bit Windows or Linux** is
 the tested starting point. Allow at least **4 GiB RAM and several GB of disk** for

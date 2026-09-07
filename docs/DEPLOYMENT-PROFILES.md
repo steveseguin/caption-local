@@ -1,5 +1,7 @@
 # Choose hardware, quality and hosting separately
 
+[All guides](README.md) · [Install](GETTING-STARTED.md) · [Troubleshooting](TROUBLESHOOTING.md)
+
 Caption Local supports native Python on Linux/Windows and supplied Linux Docker
 images for CPU or NVIDIA CUDA. Use the native browser/PCM API for live capture or
 the [OpenAI-style WAV subset](../API.md#openai-style-wav-api) for compatible clients.

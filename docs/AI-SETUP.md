@@ -1,5 +1,7 @@
 # Set up Caption Local with an AI assistant
 
+[All guides](README.md) · [Install](GETTING-STARTED.md) · [Troubleshooting](TROUBLESHOOTING.md)
+
 Using an AI assistant is optional. You can install the service yourself using the
 [README](../README.md). The service itself does not require an AI account or API key.
 

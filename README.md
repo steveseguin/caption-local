@@ -16,7 +16,8 @@ delivery, hardware choices and what the capture page looks like.
 
 [Install and get your first captions](docs/GETTING-STARTED.md) ·
 [Capture and sharing setup](docs/CAPTION-NINJA-LOCAL.md) ·
-[Private relay setup](https://github.com/steveseguin/captionninja/blob/master/relay/README.md)
+[Private relay setup](https://github.com/steveseguin/captionninja/blob/master/relay/README.md) ·
+[All guides and help](docs/README.md)
 
 ## What to expect
 

@@ -66,6 +66,25 @@ Use `CAPTION_TEST_OUTPUT_DIR` with the single-page browser tests or their docume
 baselines. The manually triggered GitHub inference workflow exercises real CPU
 English/Spanish inference; it is not a twelve-stream capacity certification.
 
+## Visual review
+
+For capture, editor or setup-page changes, use the screenshot harnesses and
+inspect both full-page and first-screen images. The [visual review report](evidence/visual-review/report.md)
+records the checked pages, viewport sizes and limits of these checks.
+
+```powershell
+# Windows; use .venv/bin/python on Linux. Requires development dependencies.
+.venv\Scripts\python.exe scripts/review_pages.py --checkout samples/captionninja --output samples/visual-review/ui
+.venv\Scripts\python.exe scripts/review_guides.py --output samples/visual-review/guides
+```
+
+Both commands expect a captionninja checkout at `samples/captionninja`; the UI
+command can use another location with `--checkout`. UI service responses and
+relay traffic are mocked. Guide rendering requires authenticated `gh` access;
+it submits public Markdown to GitHub's renderer and uses a local reading
+stylesheet. It does not reproduce GitHub's surrounding interface. Refresh the
+onboarding screenshot with `scripts/capture_onboarding.py` after capture changes.
+
 ## Changes worth testing
 
 Preserve stream isolation, bounded queues, retained audio on failure, and the

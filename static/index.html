@@ -1,24 +1,42 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Local captions</title><style>
-:root{color-scheme:dark;font:18px system-ui;background:#131923;color:#edf2fb}body{max-width:850px;margin:3rem auto;padding:0 1rem}h1{font-size:2rem}p{line-height:1.5;color:#bac9de}label{display:block;margin:1rem 0}input,select,button{font:inherit;padding:.6rem;border:1px solid #8498b3;border-radius:6px;background:#202d40;color:inherit}input:not([type=checkbox]),select{display:block;width:100%;box-sizing:border-box;margin-top:.4rem}button{cursor:pointer}button:disabled{opacity:.5}a{color:#8fc9ff}#captions{font-size:1.6rem;line-height:1.5;min-height:6rem;white-space:pre-wrap}#error{color:#ffb4ad}details{margin:2rem 0}small{color:#bac9de}#meter{width:100%}
-</style></head><body>
-<h1>Local captions</h1>
-<p><a href="/capture-local.html">Self-hosted connection and diagnostics page</a></p>
+<title>Local captions</title><link rel="stylesheet" href="/static/capture.css"></head><body>
+<a class="skip-link" href="#captureControls">Skip to caption controls</a>
+<header><h1>Local captions</h1>
+<nav aria-label="Setup help"><a href="https://github.com/steveseguin/caption-local/blob/main/docs/SELF-HOSTING.md" rel="noreferrer">How it works</a><a href="https://github.com/steveseguin/caption-local/blob/main/docs/GETTING-STARTED.md" rel="noreferrer">Install and start</a><a href="https://github.com/steveseguin/caption-local/blob/main/docs/README.md" rel="noreferrer">All guides &amp; help</a></nav>
+<p>Speech is processed by your Caption Local service. Choose your audio input, start captions, then Stop and download your transcript.</p></header>
+<main>
 <form id="auth" hidden>
 <label>Service access token<input id="accessToken" type="password" autocomplete="off" spellcheck="false"></label>
 <small>Use the token supplied by the server operator. It stays in this tab and is not sent to caption.ninja.</small>
 <button type="submit">Connect to service</button>
 </form>
-<p>Speech is transcribed on the computer running this service. Audio is not saved. Start with a quiet microphone and review captions before relying on them at an event.</p>
+<p id="capabilities" role="status">Checking model…</p>
+
+<section class="panel" aria-labelledby="audioTitle">
+<h2 id="audioTitle">Choose your audio and output</h2>
+<div class="fields">
 <label>Microphone<select id="microphone"><option value="">System default</option></select></label>
 <label>Spoken language<select id="language"><option value="en">English</option></select></label>
-<small>Use a multilingual model for languages other than English. Automatic detection is less reliable on short phrases.</small>
 <label>Microphone sensitivity<select id="sensitivity"><option value="0.0008">Quiet speech</option><option value="0.002" selected>Normal</option><option value="0.006">Noisy room</option></select></label>
-<label>Caption interval<select id="captionInterval"><option value="3">3 seconds — earlier captions, more processing</option><option value="6" selected>6 seconds — balanced</option><option value="9">9 seconds — more context, later captions</option></select></label>
-<small>Shorter intervals may reduce recognition accuracy and the number of streams this computer can handle.</small>
-<label>Caption output<select id="mode"><option value="transcribe">Transcription in the spoken language</option><option value="translate">English translation</option><option value="both">Transcription and English translation</option></select></label>
-<p id="capabilities" role="status">Checking model…</p>
+<label>Caption interval<select id="captionInterval"><option value="3">3 seconds — earlier</option><option value="6" selected>6 seconds — balanced</option><option value="9">9 seconds — more context</option></select></label>
+<label>Caption output<select id="mode"><option value="transcribe">Spoken-language captions</option><option value="translate">English translation</option><option value="both">Original + English</option></select></label>
+</div>
+<p class="hint">Start with six-second captions. Shorter intervals can reduce accuracy and capacity. English translation means speech translated into English.</p>
+</section>
+<section class="panel" id="captureControls" aria-labelledby="captionsTitle" tabindex="-1">
+<h2 id="captionsTitle">Capture and save</h2>
+<div class="actions">
+<button id="start" disabled>Start captions</button> <button id="stop" disabled>Stop</button>
+<button id="retry" hidden>Retry pending audio</button> <button id="discard" hidden>Discard pending audio</button>
+</div>
+<p id="status" role="status">Ready</p><p id="error" role="alert"></p>
+<label>Microphone level<meter id="meter" min="0" max="0.1" value="0"></meter></label>
+<div id="captions" role="log" aria-live="polite" aria-label="Live captions"></div>
+<button id="download">Download transcript</button>
+
+<p class="hint">Stop and let pending audio finish before downloading. Audio is not saved; closing the tab can lose pending audio and unsaved text.</p>
+</section>
 <details><summary>Send captions to caption.ninja</summary>
 <p>Optional: caption text will travel through the selected relay (caption.ninja’s public relay by default). Audio stays on the inference host. Paste the editor’s <strong>private automatic-caption room</strong> below. The editor reviews these captions before publishing to its separate public room.</p>
 <label>Text to send<select id="relayOutput"><option value="transcript">Original transcription</option><option value="translation">English translation</option></select></label>
@@ -33,11 +51,7 @@
 <label><input id="share" type="checkbox"> Send caption text to caption.ninja</label>
 <p id="relay" role="status">Sharing off</p><a id="editorLink" hidden target="_blank" rel="noopener noreferrer">Open caption editor</a>
 </details>
-<button id="start" disabled>Start captions</button> <button id="stop" disabled>Stop</button>
-<button id="retry" hidden>Retry pending audio</button> <button id="discard" hidden>Discard pending audio</button>
-<p id="status" role="status">Ready</p><p id="error" role="alert"></p>
-<label>Microphone level<meter id="meter" min="0" max="0.1" value="0"></meter></label>
-<div id="captions" role="log" aria-live="polite" aria-label="Live captions"></div>
-<button id="download">Download transcript</button>
+<p><a href="/capture-local.html">Connection settings and capture diagnostics</a></p>
+</main>
 <script src="/static/relay-config.js"></script><script src="/static/private-relay-client.js"></script><script src="/static/ws-publisher.js"></script><script src="/static/audio-buffer.js"></script><script src="/static/app.js"></script>
 </body></html>

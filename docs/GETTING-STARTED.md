@@ -1,5 +1,7 @@
 # Start here: your first local captions
 
+[All guides](README.md) · [Install](GETTING-STARTED.md) · [Troubleshooting](TROUBLESHOOTING.md)
+
 Caption Local listens to an audio input and turns speech into written captions.
 The speech model runs on your computer, or on a private server you connect to.
 You operate it through a browser. Start with one microphone and the default

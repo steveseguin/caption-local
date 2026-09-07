@@ -1,5 +1,7 @@
 # Troubleshooting
 
+[All guides](README.md) · [Install](GETTING-STARTED.md) · [Troubleshooting](TROUBLESHOOTING.md)
+
 Start with the capture page's error/status message. For Docker, check
 `docker compose ps` and `docker compose logs --tail=100`. For a native process,
 read its terminal output. `/health` reports the model, actual device, readiness,
