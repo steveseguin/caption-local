@@ -1,0 +1,18 @@
+{
+  "os": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "packages": {
+    "faster-whisper": "1.2.1",
+    "ctranslate2": "4.8.2",
+    "fastapi": "0.141.1",
+    "uvicorn": "0.52.4",
+    "playwright": "1.62.0",
+    "openai": "3.8.0",
+    "psutil": "7.2.2"
+  },
+  "node": "v22.19.0",
+  "git": "57aeeff8c40633490a2df17a7356e58c536c3d30",
+  "captionninja": "b8c96486e1820ef8a0fdf87b0314e8a3de5464c3",
+  "docker_on_path": false,
+  "gpu_compute_processes": "PID 23688, llama-server.exe (pre-existing, preserved)"
+}

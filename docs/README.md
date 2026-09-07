@@ -46,6 +46,7 @@ captions working, then add an editor, audience displays or more streams.
 - [NVIDIA hour and limitations](../evidence/gpu-sustained/report.md)
 - [Text relay capacity and recovery](../evidence/relay-recovery/report.md)
 - [Page layout and navigation review](../evidence/visual-review/report.md)
+- [Full regression and clean-install checks](../evidence/full-regression/report.md)
 
 Speech recognition and caption delivery have different limits. A relay benchmark
 does not establish how many microphones your inference computer can transcribe.

@@ -1,0 +1,201 @@
+[
+  {
+    "name": "original",
+    "streams": 8,
+    "passed": true,
+    "seconds": 180,
+    "requests": 312,
+    "http_errors": 0,
+    "first_caption_seconds": {
+      "count": 8,
+      "min": 5.7953,
+      "p50": 7.2074,
+      "p95": 7.9074,
+      "max": 7.942
+    },
+    "max_buffer_seconds": 8.3,
+    "inference_seconds": {
+      "count": 312,
+      "min": 1.674,
+      "p50": 2.3345,
+      "p95": 2.7689,
+      "max": 11.589
+    },
+    "queue_seconds": {
+      "count": 312,
+      "min": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "configuration": [
+      {
+        "index": 0,
+        "language": "en",
+        "mode": "transcribe"
+      },
+      {
+        "index": 1,
+        "language": "es",
+        "mode": "transcribe"
+      },
+      {
+        "index": 2,
+        "language": "fr",
+        "mode": "transcribe"
+      },
+      {
+        "index": 3,
+        "language": "de",
+        "mode": "transcribe"
+      },
+      {
+        "index": 4,
+        "language": "it",
+        "mode": "transcribe"
+      },
+      {
+        "index": 5,
+        "language": "pt",
+        "mode": "transcribe"
+      },
+      {
+        "index": 6,
+        "language": "en",
+        "mode": "transcribe"
+      },
+      {
+        "index": 7,
+        "language": "es",
+        "mode": "transcribe"
+      }
+    ],
+    "all_drained": true
+  },
+  {
+    "name": "local-page",
+    "streams": 8,
+    "passed": true,
+    "seconds": 180,
+    "requests": 307,
+    "http_errors": 0,
+    "first_caption_seconds": {
+      "count": 8,
+      "min": 5.744,
+      "p50": 7.1166,
+      "p95": 7.8409,
+      "max": 7.855
+    },
+    "max_buffer_seconds": 8.4,
+    "inference_seconds": {
+      "count": 307,
+      "min": 1.672,
+      "p50": 2.33,
+      "p95": 2.7286,
+      "max": 2.838
+    },
+    "queue_seconds": {
+      "count": 307,
+      "min": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "configuration": [
+      {
+        "index": 0,
+        "language": "en",
+        "mode": "transcribe"
+      },
+      {
+        "index": 1,
+        "language": "es",
+        "mode": "transcribe"
+      },
+      {
+        "index": 2,
+        "language": "fr",
+        "mode": "transcribe"
+      },
+      {
+        "index": 3,
+        "language": "de",
+        "mode": "transcribe"
+      },
+      {
+        "index": 4,
+        "language": "it",
+        "mode": "transcribe"
+      },
+      {
+        "index": 5,
+        "language": "pt",
+        "mode": "transcribe"
+      },
+      {
+        "index": 6,
+        "language": "en",
+        "mode": "transcribe"
+      },
+      {
+        "index": 7,
+        "language": "es",
+        "mode": "transcribe"
+      }
+    ],
+    "all_drained": true
+  },
+  {
+    "name": "mixed",
+    "streams": 4,
+    "passed": true,
+    "seconds": 180,
+    "requests": 160,
+    "http_errors": 0,
+    "first_caption_seconds": {
+      "count": 4,
+      "min": 5.3902,
+      "p50": 6.8465,
+      "p95": 8.4289,
+      "max": 8.6222
+    },
+    "max_buffer_seconds": 10.4,
+    "inference_seconds": {
+      "count": 160,
+      "min": 1.627,
+      "p50": 1.896,
+      "p95": 3.6613,
+      "max": 3.882
+    },
+    "queue_seconds": {
+      "count": 160,
+      "min": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "max": 0.015
+    },
+    "configuration": [
+      {
+        "index": 0,
+        "language": "en",
+        "mode": "both"
+      },
+      {
+        "index": 1,
+        "language": "es",
+        "mode": "transcribe"
+      },
+      {
+        "index": 2,
+        "language": "fr",
+        "mode": "transcribe"
+      },
+      {
+        "index": 3,
+        "language": "de",
+        "mode": "both"
+      }
+    ],
+    "all_drained": true
+  }
+]

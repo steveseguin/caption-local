@@ -1,0 +1,23 @@
+{
+  "scope": "Check that discarding failed capture releases a real server admission slot.\n\nUses a synthetic microphone, the actual HTTP scheduler and a failing fake engine.\nNo real model, physical recording or external caption relay is used.\n",
+  "passed": true,
+  "pages": [
+    {
+      "path": "/",
+      "retained_before_discard": true,
+      "browser_errors": [],
+      "other_producer_before_discard": 429,
+      "sessions_after_discard": 0,
+      "other_producer_after_discard": 200
+    },
+    {
+      "path": "/capture-local.html",
+      "retained_before_discard": true,
+      "browser_errors": [],
+      "other_producer_before_discard": 429,
+      "sessions_after_discard": 0,
+      "other_producer_after_discard": 200
+    }
+  ],
+  "browser": "152.0.4191.66"
+}

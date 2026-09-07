@@ -1,0 +1,632 @@
+{
+  "scope": "Render human guides with GitHub's Markdown API for a local visual review.\n\nRequires gh authentication, development dependencies and a supported browser.\nUses GitHub's renderer with a local reading stylesheet, not GitHub's surrounding UI.\nOnly public documentation is submitted; no captions, audio or credentials.\n",
+  "browser": "152.0.4191.66",
+  "pages": [
+    {
+      "repo": "caption-local",
+      "path": "docs/AI-SETUP.md",
+      "viewport": 1280,
+      "width": 1280,
+      "documentWidth": 1280,
+      "headings": [
+        "Set up Caption Local with an AI assistant",
+        "Copy-and-paste prompt",
+        "Reusable deployment skill",
+        "Check the result"
+      ],
+      "brokenImages": [],
+      "scrollableTables": 0
+    },
+    {
+      "repo": "caption-local",
+      "path": "docs/CAPTION-NINJA-LOCAL.md",
+      "viewport": 1280,
+      "width": 1280,
+      "documentWidth": 1280,
+      "headings": [
+        "Self-hosted captions with caption.ninja",
+        "Optional private caption relay",
+        "Start here: use the bundled page",
+        "Inference on another computer",
+        "Optional: use the separate caption.ninja page",
+        "Sharing and downstream tools",
+        "Capacity, delay and recovery",
+        "Maintaining the shared page"
+      ],
+      "brokenImages": [],
+      "scrollableTables": 0
+    },
+    {
+      "repo": "caption-local",
+      "path": "docs/DEPLOYMENT-PROFILES.md",
+      "viewport": 1280,
+      "width": 1280,
+      "documentWidth": 1280,
+      "headings": [
+        "Choose hardware, quality and hosting separately",
+        "Starting points",
+        "Private VPS example",
+        "Optional shared access token",
+        "Operational logs",
+        "Repeat the measurements"
+      ],
+      "brokenImages": [],
+      "scrollableTables": 0
+    },
+    {
+      "repo": "caption-local",
+      "path": "docs/FIRST-EVENT.md",
+      "viewport": 1280,
+      "width": 1280,
+      "documentWidth": 1280,
+      "headings": [
+        "Your first event",
+        "Rehearse the full route",
+        "Send captions for human review",
+        "During the event",
+        "Finish and save"
+      ],
+      "brokenImages": [],
+      "scrollableTables": 0
+    },
+    {
+      "repo": "caption-local",
+      "path": "docs/GETTING-STARTED.md",
+      "viewport": 1280,
+      "width": 1280,
+      "documentWidth": 1280,
+      "headings": [
+        "Start here: your first local captions",
+        "What it does",
+        "What you need",
+        "Install and open",
+        "Make your first captions",
+        "Save and stop",
+        "Set realistic expectations",
+        "Where to go next"
+      ],
+      "brokenImages": [],
+      "scrollableTables": 0
+    },
+    {
+      "repo": "caption-local",
+      "path": "docs/README.md",
+      "viewport": 1280,
+      "width": 1280,
+      "documentWidth": 1280,
+      "headings": [
+        "Guides and help",
+        "New users",
+        "Choose your setup",
+        "Connect an editor or audience",
+        "Operate or integrate",
+        "Read the measurements"
+      ],
+      "brokenImages": [],
+      "scrollableTables": 0
+    },
+    {
+      "repo": "caption-local",
+      "path": "docs/SELF-HOSTING.md",
+      "viewport": 1280,
+      "width": 1280,
+      "documentWidth": 1280,
+      "headings": [
+        "Self-hosted captions: a visual introduction",
+        "Follow the captions",
+        "Choose your setup",
+        "What you will use",
+        "Choose hardware and quality",
+        "Your first session",
+        "Set expectations before an event"
+      ],
+      "brokenImages": [],
+      "scrollableTables": 0
+    },
+    {
+      "repo": "caption-local",
+      "path": "docs/TROUBLESHOOTING.md",
+      "viewport": 1280,
+      "width": 1280,
+      "documentWidth": 1280,
+      "headings": [
+        "Troubleshooting",
+        "Report a reproducible issue"
+      ],
+      "brokenImages": [],
+      "scrollableTables": 0
+    },
+    {
+      "repo": "caption-local",
+      "path": "docs/WINDOWS-GPU.md",
+      "viewport": 1280,
+      "width": 1280,
+      "documentWidth": 1280,
+      "headings": [
+        "Windows and NVIDIA validation",
+        "Native setup",
+        "Verify before profiling",
+        "Reproducible tests",
+        "WSL2 and Docker"
+      ],
+      "brokenImages": [],
+      "scrollableTables": 0
+    },
+    {
+      "repo": "caption-local",
+      "path": "README.md",
+      "viewport": 1280,
+      "width": 1280,
+      "documentWidth": 1280,
+      "headings": [
+        "Caption Local",
+        "What to expect",
+        "What you need",
+        "Install and start",
+        "Your first captions",
+        "Several microphones or producers",
+        "Guides and help",
+        "License"
+      ],
+      "brokenImages": [],
+      "scrollableTables": 0
+    },
+    {
+      "repo": "caption-local",
+      "path": "DEPLOYMENT.md",
+      "viewport": 1280,
+      "width": 1280,
+      "documentWidth": 1280,
+      "headings": [
+        "Deploy Caption Local",
+        "Choose a method",
+        "Native scripts and Python",
+        "Docker Compose",
+        "CPU and GPU options",
+        "Remote microphone through SSH",
+        "AI prompt / skill",
+        "Verify a deployment",
+        "CPU concurrency"
+      ],
+      "brokenImages": [],
+      "scrollableTables": 0
+    },
+    {
+      "repo": "caption-local",
+      "path": "OPERATIONS.md",
+      "viewport": 1280,
+      "width": 1280,
+      "documentWidth": 1280,
+      "headings": [
+        "Linux CPU operations",
+        "Routine use",
+        "Supervision",
+        "Recovery",
+        "Offline operation, upgrades and rollback",
+        "Privacy and scope"
+      ],
+      "brokenImages": [],
+      "scrollableTables": 0
+    },
+    {
+      "repo": "caption-local",
+      "path": "API.md",
+      "viewport": 1280,
+      "width": 1280,
+      "documentWidth": 1280,
+      "headings": [
+        "Caption Local API v1",
+        "OpenAI-style WAV API",
+        "Health",
+        "Stream scheduling",
+        "Transcribe",
+        "Rolling windows",
+        "Retry and error behavior"
+      ],
+      "brokenImages": [],
+      "scrollableTables": 0
+    },
+    {
+      "repo": "caption-local",
+      "path": "SECURITY.md",
+      "viewport": 1280,
+      "width": 1280,
+      "documentWidth": 1280,
+      "headings": [
+        "Security and deployment scope",
+        "Report a vulnerability"
+      ],
+      "brokenImages": [],
+      "scrollableTables": 0
+    },
+    {
+      "repo": "caption-local",
+      "path": "CONTRIBUTING.md",
+      "viewport": 1280,
+      "width": 1280,
+      "documentWidth": 1280,
+      "headings": [
+        "Contributing",
+        "Local development",
+        "Real inference and browser tests",
+        "Visual review",
+        "Changes worth testing",
+        "Maintainer release procedure"
+      ],
+      "brokenImages": [],
+      "scrollableTables": 0
+    },
+    {
+      "repo": "captionninja",
+      "path": "README.md",
+      "viewport": 1280,
+      "width": 1280,
+      "documentWidth": 1280,
+      "headings": [
+        "CAPTION.Ninja",
+        "Quick Start Guide",
+        "How It Works",
+        "Browser Compatibility",
+        "Setting Up for Streaming",
+        "Using Non-Microphone Audio Sources",
+        "Translation Features",
+        "TTS Integration",
+        "Language Support",
+        "Manual Text Entry Mode",
+        "Transcript Playlist + Credits Roll",
+        "Customizing Appearance",
+        "Additional Features",
+        "Capture Pages",
+        "Self-Hosting",
+        "Need Support?",
+        "Disclaimers",
+        "License"
+      ],
+      "brokenImages": [],
+      "scrollableTables": 0
+    },
+    {
+      "repo": "captionninja",
+      "path": "CAPTION-LOCAL.md",
+      "viewport": 1280,
+      "width": 1280,
+      "documentWidth": 1280,
+      "headings": [
+        "Use your own speech recognition server",
+        "Maintaining the copy"
+      ],
+      "brokenImages": [],
+      "scrollableTables": 0
+    },
+    {
+      "repo": "captionninja",
+      "path": "relay/README.md",
+      "viewport": 1280,
+      "width": 1280,
+      "documentWidth": 1280,
+      "headings": [
+        "Caption Ninja private relay",
+        "Install and start",
+        "Connect capture, editor and overlay",
+        "Internet hosting and Docker",
+        "Bounds, privacy and recovery",
+        "Tests and protocol"
+      ],
+      "brokenImages": [],
+      "scrollableTables": 0
+    },
+    {
+      "repo": "caption-local",
+      "path": "docs/AI-SETUP.md",
+      "viewport": 390,
+      "width": 390,
+      "documentWidth": 390,
+      "headings": [
+        "Set up Caption Local with an AI assistant",
+        "Copy-and-paste prompt",
+        "Reusable deployment skill",
+        "Check the result"
+      ],
+      "brokenImages": [],
+      "scrollableTables": 0
+    },
+    {
+      "repo": "caption-local",
+      "path": "docs/CAPTION-NINJA-LOCAL.md",
+      "viewport": 390,
+      "width": 390,
+      "documentWidth": 390,
+      "headings": [
+        "Self-hosted captions with caption.ninja",
+        "Optional private caption relay",
+        "Start here: use the bundled page",
+        "Inference on another computer",
+        "Optional: use the separate caption.ninja page",
+        "Sharing and downstream tools",
+        "Capacity, delay and recovery",
+        "Maintaining the shared page"
+      ],
+      "brokenImages": [],
+      "scrollableTables": 0
+    },
+    {
+      "repo": "caption-local",
+      "path": "docs/DEPLOYMENT-PROFILES.md",
+      "viewport": 390,
+      "width": 390,
+      "documentWidth": 390,
+      "headings": [
+        "Choose hardware, quality and hosting separately",
+        "Starting points",
+        "Private VPS example",
+        "Optional shared access token",
+        "Operational logs",
+        "Repeat the measurements"
+      ],
+      "brokenImages": [],
+      "scrollableTables": 1
+    },
+    {
+      "repo": "caption-local",
+      "path": "docs/FIRST-EVENT.md",
+      "viewport": 390,
+      "width": 390,
+      "documentWidth": 390,
+      "headings": [
+        "Your first event",
+        "Rehearse the full route",
+        "Send captions for human review",
+        "During the event",
+        "Finish and save"
+      ],
+      "brokenImages": [],
+      "scrollableTables": 0
+    },
+    {
+      "repo": "caption-local",
+      "path": "docs/GETTING-STARTED.md",
+      "viewport": 390,
+      "width": 390,
+      "documentWidth": 390,
+      "headings": [
+        "Start here: your first local captions",
+        "What it does",
+        "What you need",
+        "Install and open",
+        "Make your first captions",
+        "Save and stop",
+        "Set realistic expectations",
+        "Where to go next"
+      ],
+      "brokenImages": [],
+      "scrollableTables": 0
+    },
+    {
+      "repo": "caption-local",
+      "path": "docs/README.md",
+      "viewport": 390,
+      "width": 390,
+      "documentWidth": 390,
+      "headings": [
+        "Guides and help",
+        "New users",
+        "Choose your setup",
+        "Connect an editor or audience",
+        "Operate or integrate",
+        "Read the measurements"
+      ],
+      "brokenImages": [],
+      "scrollableTables": 0
+    },
+    {
+      "repo": "caption-local",
+      "path": "docs/SELF-HOSTING.md",
+      "viewport": 390,
+      "width": 390,
+      "documentWidth": 390,
+      "headings": [
+        "Self-hosted captions: a visual introduction",
+        "Follow the captions",
+        "Choose your setup",
+        "What you will use",
+        "Choose hardware and quality",
+        "Your first session",
+        "Set expectations before an event"
+      ],
+      "brokenImages": [],
+      "scrollableTables": 0
+    },
+    {
+      "repo": "caption-local",
+      "path": "docs/TROUBLESHOOTING.md",
+      "viewport": 390,
+      "width": 390,
+      "documentWidth": 390,
+      "headings": [
+        "Troubleshooting",
+        "Report a reproducible issue"
+      ],
+      "brokenImages": [],
+      "scrollableTables": 0
+    },
+    {
+      "repo": "caption-local",
+      "path": "docs/WINDOWS-GPU.md",
+      "viewport": 390,
+      "width": 390,
+      "documentWidth": 390,
+      "headings": [
+        "Windows and NVIDIA validation",
+        "Native setup",
+        "Verify before profiling",
+        "Reproducible tests",
+        "WSL2 and Docker"
+      ],
+      "brokenImages": [],
+      "scrollableTables": 0
+    },
+    {
+      "repo": "caption-local",
+      "path": "README.md",
+      "viewport": 390,
+      "width": 390,
+      "documentWidth": 390,
+      "headings": [
+        "Caption Local",
+        "What to expect",
+        "What you need",
+        "Install and start",
+        "Your first captions",
+        "Several microphones or producers",
+        "Guides and help",
+        "License"
+      ],
+      "brokenImages": [],
+      "scrollableTables": 0
+    },
+    {
+      "repo": "caption-local",
+      "path": "DEPLOYMENT.md",
+      "viewport": 390,
+      "width": 390,
+      "documentWidth": 390,
+      "headings": [
+        "Deploy Caption Local",
+        "Choose a method",
+        "Native scripts and Python",
+        "Docker Compose",
+        "CPU and GPU options",
+        "Remote microphone through SSH",
+        "AI prompt / skill",
+        "Verify a deployment",
+        "CPU concurrency"
+      ],
+      "brokenImages": [],
+      "scrollableTables": 2
+    },
+    {
+      "repo": "caption-local",
+      "path": "OPERATIONS.md",
+      "viewport": 390,
+      "width": 390,
+      "documentWidth": 390,
+      "headings": [
+        "Linux CPU operations",
+        "Routine use",
+        "Supervision",
+        "Recovery",
+        "Offline operation, upgrades and rollback",
+        "Privacy and scope"
+      ],
+      "brokenImages": [],
+      "scrollableTables": 0
+    },
+    {
+      "repo": "caption-local",
+      "path": "API.md",
+      "viewport": 390,
+      "width": 390,
+      "documentWidth": 390,
+      "headings": [
+        "Caption Local API v1",
+        "OpenAI-style WAV API",
+        "Health",
+        "Stream scheduling",
+        "Transcribe",
+        "Rolling windows",
+        "Retry and error behavior"
+      ],
+      "brokenImages": [],
+      "scrollableTables": 0
+    },
+    {
+      "repo": "caption-local",
+      "path": "SECURITY.md",
+      "viewport": 390,
+      "width": 390,
+      "documentWidth": 390,
+      "headings": [
+        "Security and deployment scope",
+        "Report a vulnerability"
+      ],
+      "brokenImages": [],
+      "scrollableTables": 0
+    },
+    {
+      "repo": "caption-local",
+      "path": "CONTRIBUTING.md",
+      "viewport": 390,
+      "width": 390,
+      "documentWidth": 390,
+      "headings": [
+        "Contributing",
+        "Local development",
+        "Real inference and browser tests",
+        "Visual review",
+        "Changes worth testing",
+        "Maintainer release procedure"
+      ],
+      "brokenImages": [],
+      "scrollableTables": 0
+    },
+    {
+      "repo": "captionninja",
+      "path": "README.md",
+      "viewport": 390,
+      "width": 390,
+      "documentWidth": 390,
+      "headings": [
+        "CAPTION.Ninja",
+        "Quick Start Guide",
+        "How It Works",
+        "Browser Compatibility",
+        "Setting Up for Streaming",
+        "Using Non-Microphone Audio Sources",
+        "Translation Features",
+        "TTS Integration",
+        "Language Support",
+        "Manual Text Entry Mode",
+        "Transcript Playlist + Credits Roll",
+        "Customizing Appearance",
+        "Additional Features",
+        "Capture Pages",
+        "Self-Hosting",
+        "Need Support?",
+        "Disclaimers",
+        "License"
+      ],
+      "brokenImages": [],
+      "scrollableTables": 4
+    },
+    {
+      "repo": "captionninja",
+      "path": "CAPTION-LOCAL.md",
+      "viewport": 390,
+      "width": 390,
+      "documentWidth": 390,
+      "headings": [
+        "Use your own speech recognition server",
+        "Maintaining the copy"
+      ],
+      "brokenImages": [],
+      "scrollableTables": 0
+    },
+    {
+      "repo": "captionninja",
+      "path": "relay/README.md",
+      "viewport": 390,
+      "width": 390,
+      "documentWidth": 390,
+      "headings": [
+        "Caption Ninja private relay",
+        "Install and start",
+        "Connect capture, editor and overlay",
+        "Internet hosting and Docker",
+        "Bounds, privacy and recovery",
+        "Tests and protocol"
+      ],
+      "brokenImages": [],
+      "scrollableTables": 1
+    }
+  ]
+}
