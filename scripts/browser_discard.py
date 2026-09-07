@@ -113,6 +113,8 @@ def main():
                 assert row['sessions_after_discard'] == 0, 'Discard left the service admission slot occupied'
                 assert row['other_producer_after_discard'] == 200
                 assert not errors
+                assert not page.locator('#error').inner_text()
+                assert 'pending audio discarded' in page.locator('#status').inner_text()
                 page.screenshot(path=str(args.output.with_name(f'discard-{slug}-cleared.png')), full_page=True)
                 request('/streams/another-producer', method='DELETE')
                 context.close()
