@@ -215,7 +215,7 @@ def create_app(engine, max_streams=12, queue_timeout=20, api_key=None, log_reque
         response.headers["Cache-Control"] = "no-store"
         response.headers["Content-Security-Policy"] = (
             "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; "
-            "connect-src 'self' wss://api.caption.ninja:443; object-src 'none'; "
+            "connect-src 'self' wss: ws://localhost:* ws://127.0.0.1:* ws://[::1]:*; object-src 'none'; "
             "base-uri 'none'; frame-ancestors 'self'"
         )
         return response

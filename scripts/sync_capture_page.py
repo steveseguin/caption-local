@@ -5,7 +5,7 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-FILES = ('app.js', 'audio-buffer.js', 'pcm-worklet.js', 'ws-publisher.js',
+FILES = ('app.js', 'audio-buffer.js', 'pcm-worklet.js', 'ws-publisher.js', 'relay-config.js',
          'local-connection.js', 'local-page.js')
 
 
@@ -19,6 +19,8 @@ def main():
     outputs = {args.checkout / 'capture-local.html': (ROOT / 'static/capture-local.html').read_bytes().replace(
         b'/static/', b'./caption-local/')}
     outputs[args.checkout / 'caption-local/LICENSE'] = (ROOT / 'LICENSE').read_bytes()
+    outputs[args.checkout / 'relay-config.js'] = (ROOT / 'static/relay-config.js').read_bytes()
+    outputs[args.checkout / 'ws-publisher.js'] = (ROOT / 'static/ws-publisher.js').read_bytes()
     for name in FILES:
         outputs[args.checkout / 'caption-local' / name] = (ROOT / 'static' / name).read_bytes()
     manifest = {path.relative_to(args.checkout).as_posix(): hashlib.sha256(data).hexdigest()

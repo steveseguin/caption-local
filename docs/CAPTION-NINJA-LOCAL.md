@@ -7,8 +7,28 @@ Models and inference stay in Caption Local; caption.ninja supplies a separate
 capture page and optional text editor/overlay. Existing capture and premium pages
 keep their existing behavior.
 
-This integration is development-branch work. Use the matching branches until a
-release includes it; the public caption.ninja site may not have this page yet.
+Use current Caption Local `main` and captionninja `master` source for this
+integration; published v1.1.0 predates it.
+
+## Optional private caption relay
+
+You can also host caption delivery yourself. captionninja includes a new,
+independent Node relay in `relay/`, with per-room viewing/publishing tokens,
+bounded connections and queues, and no stored captions. Follow its
+[Windows/Linux setup and private workflow guide](https://github.com/steveseguin/captionninja/blob/master/relay/README.md).
+
+Expand **Send captions to caption.ninja → Use a private relay** to set the relay
+address, caption website address, source publishing token and editor output room.
+Generated editor/overlay links preserve the selected relay and exclude credentials.
+The custom-relay workflow covers the separate capture page, editor and standard
+overlay; other caption.ninja pages retain their existing behavior. There is no
+fallback to the public relay if the private one fails.
+
+Relay credentials are separate from the inference service token. The editor needs
+the source room's viewing token and its output room's publishing token; viewers
+need only the output room's viewing token. The relay has no replay history:
+captions sent while a viewer is disconnected can be missed, including during
+restart. See the [browser tests and relay load results](../evidence/private-relay/report.md).
 
 ## Start here: use the bundled page
 

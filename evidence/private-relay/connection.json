@@ -1,0 +1,11 @@
+{
+  "wrong_token_rejected": true,
+  "settings_round_trip_without_credentials": true,
+  "direct_overlay_mock_publish": true,
+  "injected_microphone_denial_recovers": true,
+  "cross_origin_capture_and_drain": true,
+  "token_not_persisted": true,
+  "diagnostic_excludes_text_and_token": true,
+  "browser_errors": [],
+  "unapproved_origin_rejected": true
+}

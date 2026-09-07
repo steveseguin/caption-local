@@ -20,8 +20,15 @@
 <label>Caption output<select id="mode"><option value="transcribe">Transcription in the spoken language</option><option value="translate">English translation</option><option value="both">Transcription and English translation</option></select></label>
 <p id="capabilities" role="status">Checking model…</p>
 <details><summary>Send captions to caption.ninja</summary>
-<p>Optional: caption text will travel through caption.ninja’s public relay. Audio stays on the inference host. Paste the editor’s <strong>private automatic-caption room</strong> below. The editor reviews these captions before publishing to its separate public room.</p>
+<p>Optional: caption text will travel through the selected relay (caption.ninja’s public relay by default). Audio stays on the inference host. Paste the editor’s <strong>private automatic-caption room</strong> below. The editor reviews these captions before publishing to its separate public room.</p>
 <label>Text to send<select id="relayOutput"><option value="transcript">Original transcription</option><option value="translation">English translation</option></select></label>
+<details><summary>Use a private relay</summary>
+<label>Relay address<input id="relayAddress" type="url" value="wss://api.caption.ninja:443" spellcheck="false"></label>
+<label>Caption website address<input id="captionSite" type="url" value="https://caption.ninja/" spellcheck="false"></label>
+<label>Room publishing token<input id="relayToken" type="password" autocomplete="off" spellcheck="false"></label>
+<label>Editor output room<input id="reviewRoom" value="output" autocomplete="off" maxlength="128"></label>
+<p>A private relay needs its own room token, separate from the inference service token. The editor needs the source viewing token and output publishing token. Links carry the relay address, never tokens. Turn sharing off before changing these settings.</p>
+</details>
 <label>Source room<input id="room" autocomplete="off" maxlength="128"></label>
 <label><input id="share" type="checkbox"> Send caption text to caption.ninja</label>
 <p id="relay" role="status">Sharing off</p><a id="editorLink" hidden target="_blank" rel="noopener noreferrer">Open caption editor</a>
@@ -32,5 +39,5 @@
 <label>Microphone level<meter id="meter" min="0" max="0.1" value="0"></meter></label>
 <div id="captions" role="log" aria-live="polite" aria-label="Live captions"></div>
 <button id="download">Download transcript</button>
-<script src="/static/ws-publisher.js"></script><script src="/static/audio-buffer.js"></script><script src="/static/app.js"></script>
+<script src="/static/relay-config.js"></script><script src="/static/ws-publisher.js"></script><script src="/static/audio-buffer.js"></script><script src="/static/app.js"></script>
 </body></html>

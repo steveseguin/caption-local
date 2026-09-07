@@ -106,7 +106,7 @@ def main():
             page.get_by_text('Send captions to caption.ninja', exact=True).first.click()
             page.select_option('#relayTarget', 'overlay'); page.fill('#room', 'local-mock-room')
             page.check('#share')
-            assert '/overlay?room=' in page.get_attribute('#editorLink', 'href')
+            assert page.get_attribute('#editorLink', 'href') == 'http://127.0.0.1:8779/overlay.html?room=local-mock-room'
             previous_captions = page.evaluate('transcript.length')
             page.click('#start')
             page.wait_for_function('count => transcript.length > count', arg=previous_captions, timeout=30000)
@@ -134,7 +134,7 @@ def main():
             assert denied.locator('#start').is_disabled()
             result['unapproved_origin_rejected'] = True
             browser.close()
-        target = ROOT/'evidence/capture-local/connection.json'
+        target = Path(os.environ.get('CAPTION_TEST_OUTPUT_DIR', str(ROOT/'evidence/capture-local')))/'connection.json'
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(json.dumps(result, indent=2)+'\n', encoding='utf-8')
         print(json.dumps(result))

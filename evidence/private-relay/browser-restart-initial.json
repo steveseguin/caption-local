@@ -1,0 +1,5 @@
+{
+  "scope": "real relay and browser capture, fake inference, synthetic microphone; no public traffic",
+  "passed": false,
+  "review_to_visible_seconds": 2.0361
+}

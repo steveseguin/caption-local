@@ -19,6 +19,11 @@ included in the current source. [Setup and sharing guide](docs/CAPTION-NINJA-LOC
 Use the bundled `http://localhost:8765/capture-local.html` first; hosted-page access
 is optional and requires explicit origin permission and a service token.
 
+**Private caption delivery:** you can run caption.ninja's optional text relay and
+host its editor/overlay pages yourself. [Private relay setup](https://github.com/steveseguin/captionninja/blob/master/relay/README.md)
+covers room credentials, Windows/Linux commands and recovery limits. It runs
+separately from speech inference.
+
 ## What to expect
 
 - **Transcription:** captions in the language being spoken.

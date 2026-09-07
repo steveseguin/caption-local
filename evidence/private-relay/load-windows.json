@@ -1,0 +1,31 @@
+{
+  "scope": "loopback relay + Node producers/viewers in one process; no speech inference",
+  "node": "v22.19.0",
+  "platform": "win32",
+  "streams": 32,
+  "viewers_per_stream": 2,
+  "connections": 96,
+  "caption_hz_per_stream": 5,
+  "requested_seconds": 60,
+  "elapsed_seconds": 59.8231435,
+  "published": 9600,
+  "delivered": 19200,
+  "errors": 0,
+  "passed": true,
+  "latency_ms": {
+    "median": 2.1119999999991705,
+    "p95": 3.9831000000012864,
+    "p99": 4.744700000000023,
+    "max": 5.782700000000034
+  },
+  "event_loop_p99_ms": 25.591807,
+  "peak_rss_mib": 56.57421875,
+  "mean_cpu_cores": 0.02116237840293364,
+  "relay_counters": {
+    "accepted": 96,
+    "rejected": 0,
+    "published": 9600,
+    "delivered": 19200,
+    "slowConsumers": 0
+  }
+}

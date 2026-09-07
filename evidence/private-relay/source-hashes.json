@@ -1,0 +1,13 @@
+{
+  "caption_local_base": "db94982579ea8940458d6467a878a449a12cfc95",
+  "caption_ninja_base": "c521eb330945bce567118164e3ec8bc322a64f72",
+  "final_source_sha256": {
+    "static/app.js": "02704d8bd6d04d3149bcba468c5022e18501aaa69b0edba9aea022fd55f997da",
+    "static/relay-config.js": "bf26f54df14b42fe782f7678c5b6510c81691991596adc4dd9d043534500de40",
+    "static/ws-publisher.js": "dfebfa9c711ca9affcd450f21f47259c0076869ae1ca37105a0cc90d42926f6c",
+    "samples/captionninja/relay/server.cjs": "f477b11eb74d75e0a227d26e44cb63439c9d857aacd977b31b0312cce897a8db",
+    "samples/captionninja/relay/package-lock.json": "8120520b5db597269e656f86b7e6aa1cf7fd63f0e7c830801729ba67f1282bd8",
+    "samples/captionninja/editor.html": "32e9c5fbdfdaf570896be1369fd67302ef3bb38f5b5c719d26255f9a67865d34",
+    "samples/captionninja/overlay.html": "c375fc5261f5dccc8ed169b6093e52e7a7633c82f8964b79688e167b85ee52b1"
+  }
+}

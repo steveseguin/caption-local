@@ -1,0 +1,149 @@
+"""Synthetic microphone -> fake inference -> real private relay -> editor -> overlay.
+
+Requires npm ci in the captionninja relay directory and samples/jfk.wav.
+All test sockets/HTTP stay on loopback. Does not benchmark speech recognition.
+"""
+import argparse
+import functools
+import http.server
+import json
+import os
+from pathlib import Path
+import secrets
+import subprocess
+import sys
+import tempfile
+import threading
+import time
+import urllib.parse
+import urllib.request
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+from browser_support import browser_options
+from service_test_support import require_free_port
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--checkout', type=Path, default=ROOT/'samples/captionninja')
+    parser.add_argument('--output', type=Path, required=True)
+    args = parser.parse_args()
+    for port in (8778, 8779, 8787): require_free_port(port)
+    import uvicorn
+    from server import create_app
+    from playwright.sync_api import sync_playwright
+    class Engine:
+        workers = 1
+        multilingual = True
+        device = 'cpu'
+        compute_type = 'fake'
+        def transcribe(self, audio, language, task='transcribe'):
+            return 'Synthetic private relay caption.', language or 'en'
+        def window(self, audio, language, context, final):
+            return 'Synthetic private relay caption.', language or 'en', len(audio)/16000 if final else len(audio)/16000-1
+    token = secrets.token_urlsafe(32)
+    inference = uvicorn.Server(uvicorn.Config(create_app(Engine(), api_key=token), host='127.0.0.1', port=8778, log_level='error'))
+    inference_thread = threading.Thread(target=inference.run, daemon=True); inference_thread.start()
+    class QuietHandler(http.server.SimpleHTTPRequestHandler):
+        def log_message(self, *args): pass
+    static = http.server.ThreadingHTTPServer(('127.0.0.1', 8779),
+        functools.partial(QuietHandler, directory=str(args.checkout)))
+    threading.Thread(target=static.serve_forever, daemon=True).start()
+    relay = None
+    config = {'origins': ['http://127.0.0.1:8778', 'http://127.0.0.1:8779'],
+        'rooms': {room: {role: secrets.token_urlsafe(32) for role in ('read', 'write')} for room in ('source', 'output')}}
+    result = {'scope': 'real relay and browser capture, fake inference, synthetic microphone; no public traffic', 'passed': False}
+    with tempfile.TemporaryDirectory(prefix='caption-private-relay-') as tmp:
+        filename = Path(tmp)/'rooms.private.json'; filename.write_text(json.dumps(config), encoding='utf-8')
+        def start_relay():
+            process = subprocess.Popen(['node', str(args.checkout/'relay/server.cjs')],
+                env={**os.environ, 'CAPTION_RELAY_CONFIG': str(filename), 'PORT': '8787', 'HOST': '127.0.0.1'},
+                stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+                creationflags=subprocess.CREATE_NO_WINDOW if os.name == 'nt' else 0)
+            for _ in range(100):
+                if process.poll() is not None: raise RuntimeError('Relay exited')
+                try:
+                    urllib.request.urlopen('http://127.0.0.1:8787/health', timeout=1).close(); return process
+                except OSError: time.sleep(.1)
+            process.terminate(); process.wait(timeout=10); raise TimeoutError('Relay readiness')
+        try:
+            relay = start_relay()
+            for _ in range(100):
+                if inference.started: break
+                time.sleep(.1)
+            assert inference.started
+            with sync_playwright() as p:
+                browser = p.chromium.launch(**browser_options(), headless=True, args=[
+                    '--use-fake-ui-for-media-stream', '--use-fake-device-for-media-stream',
+                    f'--use-file-for-fake-audio-capture={ROOT/"samples/jfk.wav"}'])
+                context = browser.new_context(permissions=['microphone'])
+                external, sockets, errors = [], [], []
+                def guard(route):
+                    if route.request.url.startswith(('http://127.0.0.1:', 'http://localhost:')): route.continue_()
+                    else: external.append(route.request.url); route.abort()
+                context.route('**/*', guard)
+                def socket_guard(ws):
+                    sockets.append(ws.url)
+                    if ws.url == 'ws://127.0.0.1:8787/': ws.connect_to_server()
+                    else: ws.close()
+                context.route_web_socket('**/*', socket_guard)
+                page = context.new_page(); page.on('pageerror', lambda e: errors.append('capture: ' + e.stack))
+                page.goto('http://127.0.0.1:8778/capture-local.html')
+                page.fill('#connectionToken', token); page.click('#connect')
+                page.wait_for_function('() => !document.querySelector("#start").disabled')
+                page.locator('summary').filter(has_text='Send captions to caption.ninja').click()
+                page.locator('summary').filter(has_text='Use a private relay').click()
+                page.fill('#relayAddress', 'ws://127.0.0.1:8787')
+                page.fill('#captionSite', 'http://127.0.0.1:8779/')
+                page.fill('#relayToken', config['rooms']['source']['write']); page.fill('#room', 'source')
+                page.check('#share'); page.wait_for_function('() => document.querySelector("#relay").textContent.includes("connected")')
+                editor_url = page.locator('#editorLink').get_attribute('href')
+                assert 'output=output' in editor_url and 'relay=' in editor_url
+                fragment = urllib.parse.urlencode({'relayReadToken': config['rooms']['source']['read'],
+                    'relayWriteToken': config['rooms']['output']['write']})
+                editor = context.new_page(); editor.on('pageerror', lambda e: errors.append('editor: ' + e.stack))
+                editor.goto(editor_url + '&mode=manual#' + fragment)
+                editor.wait_for_function('() => document.querySelector("#statusText").textContent.includes("Input and output connected")')
+                assert 'Token' not in editor.url
+                overlay_url = editor.locator('#overlayLink').get_attribute('href')
+                assert 'relay=' in overlay_url and config['rooms']['output']['write'] not in overlay_url
+                overlay = context.new_page(); overlay.on('pageerror', lambda e: errors.append('overlay: ' + e.stack))
+                overlay.goto(overlay_url + '#relayReadToken=' + config['rooms']['output']['read'])
+                page.click('#start')
+                editor.wait_for_function('() => document.querySelector("#editor").value.includes("Synthetic private relay caption")', timeout=30000)
+                assert 'Synthetic private relay caption' not in overlay.locator('body').inner_text()
+                editor.fill('#editor', 'Reviewed private caption. Hola. Bonjour.')
+                before = time.perf_counter(); editor.click('#sendButton')
+                overlay.wait_for_function('() => document.querySelector("#output").textContent.includes("Reviewed private caption")')
+                result['review_to_visible_seconds'] = round(time.perf_counter()-before, 4)
+                page.click('#stop'); page.wait_for_function('() => !running && !processing && !pending', timeout=15000)
+                relay.terminate(); relay.wait(timeout=10)
+                page.wait_for_function('() => !publisher.isOpen()', timeout=10000)
+                # The relay has no history. Hold producer reconnect until the reader rejoins,
+                # so this measures the publisher's retained queue independently of audience gaps.
+                page.evaluate('publisher.disconnect()')
+                page.evaluate("publisher.publish({msg:true, final:'Retained during relay restart', id:987654321})")
+                assert page.evaluate('publisher.getSnapshot().queueLength') > 0
+                relay = start_relay()
+                editor.wait_for_function('() => document.querySelector("#statusText").textContent.includes("Input and output connected")', timeout=15000)
+                page.evaluate('publisher.connect()')
+                editor.wait_for_function('() => document.querySelector("#incoming").textContent.includes("Retained during relay restart")', timeout=30000)
+                page.uncheck('#share'); page.fill('#relayToken', 'x'*43); page.check('#share')
+                page.wait_for_function('() => document.querySelector("#relay").textContent.includes("denied")')
+                page.uncheck('#share')
+                assert not errors, errors
+                assert all(url == 'ws://127.0.0.1:8787/' for url in sockets), sockets
+                assert not external, external
+                result.update(passed=True, browser=browser.version, socket_connections=len(sockets),
+                    authorization_denial=True, room_isolation=True, editor_review=True, restart_queue_recovery='reader rejoined before producer; relay has no replay',
+                    stop_drain=True, credentials_removed_from_links=True, browser_errors=errors, external_requests=external)
+                browser.close()
+        finally:
+            if relay and relay.poll() is None: relay.terminate(); relay.wait(timeout=10)
+            static.shutdown(); static.server_close(); inference.should_exit = True; inference_thread.join(timeout=10)
+            args.output.parent.mkdir(parents=True, exist_ok=True)
+            args.output.write_text(json.dumps(result, indent=2)+'\n', encoding='utf-8', newline='\n')
+    print(json.dumps(result, indent=2))
+
+if __name__ == '__main__': main()
