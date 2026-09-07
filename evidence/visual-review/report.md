@@ -74,6 +74,18 @@ images were requested from GitHub.
   oversized multilingual payload handling passed. No browser errors or external
   requests. Its review-to-visible sample includes browser automation and is
   not an isolated latency benchmark.
+- [Deployed-page browser flow](hosted-flow.json): passed against the actual HTTPS
+  GitHub Pages site at captionninja commit `b8c9648`. Capture HTML, stylesheet,
+  editor HTML and relay setup script matched the local reviewed bytes. Browser
+  loopback permission was granted in the test context; inference and caption
+  sockets stayed local. No hosted relay received test captions.
+
+GitHub's [Linux checks](https://github.com/steveseguin/caption-local/actions/runs/34162584242)
+and [Windows checks](https://github.com/steveseguin/caption-local/actions/runs/34162584393)
+passed on Caption Local `fcb12b5`; the companion
+[relay checks](https://github.com/steveseguin/captionninja/actions/runs/34162569247)
+and [Pages deployment](https://github.com/steveseguin/captionninja/actions/runs/34162568067)
+passed on `b8c9648`.
 
 No new recognition, GPU capacity or sustained-operation claim is made by this
 UI review. Physical microphones, assistive technologies, Safari/Firefox and
