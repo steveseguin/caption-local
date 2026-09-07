@@ -76,6 +76,7 @@ records the checked pages, viewport sizes and limits of these checks.
 # Windows; use .venv/bin/python on Linux. Requires development dependencies.
 .venv\Scripts\python.exe scripts/review_pages.py --checkout samples/captionninja --output samples/visual-review/ui
 .venv\Scripts\python.exe scripts/review_guides.py --output samples/visual-review/guides
+.venv\Scripts\python.exe scripts/browser_discard.py --output samples/discard-review/result.json
 ```
 
 Both commands expect a captionninja checkout at `samples/captionninja`; the UI
@@ -84,6 +85,10 @@ relay traffic are mocked. Guide rendering requires authenticated `gh` access;
 it submits public Markdown to GitHub's renderer and uses a local reading
 stylesheet. It does not reproduce GitHub's surrounding interface. Refresh the
 onboarding screenshot with `scripts/capture_onboarding.py` after capture changes.
+The discard probe uses its own temporary synthetic tone, a real loopback HTTP
+scheduler and an injected engine failure. It checks retained audio and admission
+release on both capture pages without downloading a model or recording a microphone.
+Linux CI runs it automatically alongside the protocol tests.
 
 ## Changes worth testing
 

@@ -29,6 +29,11 @@ jobs:
         run: node --test tests/audio-buffer.test.cjs tests/local-connection.test.cjs tests/relay-config.test.cjs tests/relay-publisher.test.cjs
       - name: Documentation and source checks
         run: python scripts/check_release.py
+      - name: Browser discard and admission recovery
+        run: |
+          python -m pip install playwright==1.62.0
+          python -m playwright install --with-deps chromium
+          python scripts/browser_discard.py --output /tmp/caption-discard.json
       - name: Build source archive
         run: python scripts/package_release.py
       - name: Validate Compose configurations

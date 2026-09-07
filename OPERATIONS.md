@@ -63,7 +63,10 @@ or browser audio suspension stops capture and drains already captured speech.
   competing CPU load before starting again. Reduce the active stream count or use a faster model.
 - **Relay disconnected:** caption.ninja output queues at most 100 captions. Queue
   length and dropped messages are visible. Local text remains downloadable.
-  External relay delivery has no acknowledgement or guaranteed replay.
+  The public relay has no acknowledgement or guaranteed replay. The optional
+  [private relay](https://github.com/steveseguin/captionninja/blob/master/relay/README.md)
+  acknowledges delivery and replays bounded in-memory history. Expired history
+  and server restarts can still cause visible gaps; recovery is not durable.
 - **Wrong words at a boundary:** check the recording and sensitivity; use human
   review. This is still automatic recognition, not an exact transcription promise.
 - **Port already used:** stop the previous instance or choose `--port` / CAPTION_PORT.
@@ -100,8 +103,9 @@ are pending, but a crashed browser cannot preserve in-memory work.
 An optional shared service token and request metadata logs are described in
 [deployment profiles](docs/DEPLOYMENT-PROFILES.md). Individual accounts, tenant
 isolation and TLS termination are not supplied.
-For remote microphones, keep the inference host on loopback and use SSH. Room
-names are relay access secrets, not encryption. Do not reuse real event rooms in
+For remote microphones, keep the inference host on loopback and use SSH. Public
+relay room names act as access secrets; the private relay uses separate viewing
+and publishing tokens. Neither replaces encrypted transport. Do not reuse real event rooms in
 tests. Windows CPU development tests are recorded separately from the published
 Linux CPU release. Native Windows and WSL NVIDIA inference are now tested on a
 TITAN RTX; see the [GPU sustained report](evidence/gpu-sustained/report.md) for

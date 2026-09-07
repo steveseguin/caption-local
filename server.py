@@ -167,6 +167,8 @@ def create_app(engine, max_streams=12, queue_timeout=20, api_key=None, log_reque
     def release(stream_id):
         streams[stream_id]["busy"] = False
         streams[stream_id]["seen"] = time.monotonic()
+        if streams[stream_id].get("close_when_idle"):
+            del streams[stream_id]
         running.pop(stream_id, None)
         state["busy_since"] = min(running.values(), default=None)
 
@@ -401,8 +403,14 @@ def create_app(engine, max_streams=12, queue_timeout=20, api_key=None, log_reque
     from api_compat import register_audio_api
     def close_ephemeral(stream_id):
         session = streams.get(stream_id)
-        if session and not session['busy']:
-            streams.pop(stream_id, None)
+        if session:
+            if session['busy']:
+                # A disconnected WAV client has no stream ID to reuse. Keep
+                # admission locked until its shielded worker finishes, then
+                # release the otherwise abandoned session immediately.
+                session['close_when_idle'] = True
+            else:
+                streams.pop(stream_id, None)
     register_audio_api(app, transcribe, close_ephemeral, max_streams, getattr(engine, 'model_name', 'local'))
     app.mount("/static", StaticFiles(directory=ROOT / "static"), name="static")
     return app

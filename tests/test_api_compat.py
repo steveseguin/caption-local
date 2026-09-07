@@ -132,3 +132,39 @@ def test_adapter_disconnect_keeps_worker_and_native_retry_identity():
             assert (await call()).json()=={'text':'Bienvenue.'}
             assert engine.calls==1
     asyncio.run(run())
+
+
+def test_disconnected_ephemeral_upload_releases_session_after_worker_finishes():
+    entered = threading.Event()
+    release = threading.Event()
+
+    class Blocked(Engine):
+        def transcribe(self, audio, language, task='transcribe'):
+            entered.set()
+            assert release.wait(5)
+            return 'Finished.', 'en'
+
+    async def run():
+        app = create_app(Blocked(), max_streams=1)
+        async with httpx.AsyncClient(transport=httpx.ASGITransport(app=app), base_url='http://localhost') as client:
+            async def upload():
+                return await client.post('/v1/audio/transcriptions', files={'file': ('test.wav', wav())},
+                                         data={'model': 'small', 'language': 'en'})
+            pending = asyncio.create_task(upload())
+            assert await asyncio.to_thread(entered.wait, 3)
+            try:
+                pending.cancel()
+                with pytest.raises(asyncio.CancelledError):
+                    await pending
+                health = (await client.get('/health')).json()
+                assert health['running'] == health['sessions'] == 1
+                assert (await upload()).status_code == 429
+            finally:
+                release.set()
+            async with asyncio.timeout(3):
+                while (await client.get('/health')).json()['running']:
+                    await asyncio.sleep(.01)
+            assert (await client.get('/health')).json()['sessions'] == 0
+            assert (await upload()).status_code == 200
+            assert (await client.get('/health')).json()['sessions'] == 0
+    asyncio.run(run())

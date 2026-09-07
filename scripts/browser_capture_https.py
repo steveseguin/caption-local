@@ -2,6 +2,7 @@
 import argparse
 import base64
 import json
+import mimetypes
 from pathlib import Path
 import subprocess
 import sys
@@ -52,7 +53,8 @@ try:
                     base=(ROOT/'samples/captionninja').resolve()
                     if source.is_relative_to(base) and source.is_file():
                         cdp.send('Fetch.fulfillRequest',{'requestId':request_id,'responseCode':200,
-                            'responseHeaders':[{'name':'Content-Type','value':'text/html' if source.suffix=='.html' else 'application/javascript'}],
+                            'responseHeaders':[{'name':'Content-Type','value':mimetypes.guess_type(source)[0] or 'application/octet-stream'},
+                                               {'name':'X-Content-Type-Options','value':'nosniff'}],
                             'body':base64.b64encode(source.read_bytes()).decode('ascii')}); return
                 cdp.send('Fetch.failRequest',{'requestId':request_id,'errorReason':'BlockedByClient'})
             # Probe direct Fetch events without relying on Playwright's usual
@@ -66,7 +68,12 @@ try:
             ready=not page.locator('#start').is_disabled()
             scenario={'permission':permission,'ready':ready,'request_failures':failures,'console':console,
                       'intercepted_paths':intercepted,'secure_context':page.evaluate('isSecureContext')}
+            scenario['stylesheet_loaded']=page.evaluate('''() => [...document.styleSheets].some(sheet => {
+                try { return new URL(sheet.href).pathname.endsWith('/capture.css') && sheet.cssRules.length > 0; }
+                catch (_) { return false; }
+            })''')
             report['scenarios'].append(scenario)
+            assert scenario['stylesheet_loaded'], 'Capture stylesheet did not load in HTTPS preview'
             if ready:
                 page.click('#start')
                 try:

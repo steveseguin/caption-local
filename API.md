@@ -29,8 +29,10 @@ before sending it. Uploads have a ten-second deadline and bounded admission.
 
 The adapter uses the native scheduler and retry cache. Optional `X-Stream-ID` and
 `X-Request-ID` retain native retry identity; keep them stable across retries and
-use distinct stream IDs per producer. Without a stream ID, successful calls use
-temporary independent sessions that are closed afterward. Automatic SDK retries
+use distinct stream IDs per producer. Without a stream ID, calls use temporary
+independent sessions that close afterward. If the client disconnects during
+inference, the temporary session closes when its worker finishes; the running
+worker keeps its admission slot until then. Automatic SDK retries
 without both IDs do not promise idempotency. Native `detail` errors and HTTP
 status codes are retained.
 
