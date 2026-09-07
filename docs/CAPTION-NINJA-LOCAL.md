@@ -14,7 +14,7 @@ integration; published v1.1.0 predates it.
 
 You can also host caption delivery yourself. captionninja includes a new,
 independent Node relay in `relay/`, with per-room viewing/publishing tokens,
-bounded connections and queues, and no stored captions. Follow its
+bounded connections/queues and short-lived caption replay in RAM. Follow its
 [Windows/Linux setup and private workflow guide](https://github.com/steveseguin/captionninja/blob/master/relay/README.md).
 
 Expand **Send captions to caption.ninja → Use a private relay** to set the relay
@@ -26,9 +26,12 @@ fallback to the public relay if the private one fails.
 
 Relay credentials are separate from the inference service token. The editor needs
 the source room's viewing token and its output room's publishing token; viewers
-need only the output room's viewing token. The relay has no replay history:
-captions sent while a viewer is disconnected can be missed, including during
-restart. See the [browser tests and relay load results](../evidence/private-relay/report.md).
+need only the output room's viewing token. Private viewers resume missed captions
+from bounded replay history, and publishers retry unacknowledged messages with
+duplicate suppression. Restarting the relay clears that history; expired or lost
+history produces a visible gap warning. The editor/viewer setup panel replaces
+token prompts, and the editor can create a view-only OBS link. See the
+[recovery tests and load results](../evidence/relay-recovery/report.md).
 
 ## Start here: use the bundled page
 

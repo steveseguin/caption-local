@@ -5,7 +5,7 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-FILES = ('app.js', 'audio-buffer.js', 'pcm-worklet.js', 'ws-publisher.js', 'relay-config.js',
+FILES = ('app.js', 'audio-buffer.js', 'pcm-worklet.js', 'ws-publisher.js', 'relay-config.js', 'private-relay-client.js',
          'local-connection.js', 'local-page.js')
 
 
@@ -20,6 +20,7 @@ def main():
         b'/static/', b'./caption-local/')}
     outputs[args.checkout / 'caption-local/LICENSE'] = (ROOT / 'LICENSE').read_bytes()
     outputs[args.checkout / 'relay-config.js'] = (ROOT / 'static/relay-config.js').read_bytes()
+    outputs[args.checkout / 'private-relay-client.js'] = (ROOT / 'static/private-relay-client.js').read_bytes()
     outputs[args.checkout / 'ws-publisher.js'] = (ROOT / 'static/ws-publisher.js').read_bytes()
     for name in FILES:
         outputs[args.checkout / 'caption-local' / name] = (ROOT / 'static' / name).read_bytes()

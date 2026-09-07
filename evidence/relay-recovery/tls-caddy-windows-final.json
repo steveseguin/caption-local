@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "scope": "WSS through real TLS proxy with explicit test CA; no browser trust bypass",
+  "node": "v22.19.0",
+  "certificateVerification": true,
+  "untrustedCertificateRejected": true,
+  "invalidTokenRejected": true,
+  "acknowledgedPublish": true,
+  "captionDeliveryMs": 0.5561000000000007,
+  "caddy": "v2.11.4 h1:XKxkMTgNSizEvKG6QHue6cAsFOteU2qA61w2tKkCWi0=",
+  "healthProtocol": 2,
+  "caddyBinarySha256": "5cb9ab71e5756ce72840b8234177a2f40c8b4ab47a806b8e841e2b784e9df62b",
+  "trustStoreChanged": false
+}

@@ -103,13 +103,29 @@ def main():
                 fragment = urllib.parse.urlencode({'relayReadToken': config['rooms']['source']['read'],
                     'relayWriteToken': config['rooms']['output']['write']})
                 editor = context.new_page(); editor.on('pageerror', lambda e: errors.append('editor: ' + e.stack))
-                editor.goto(editor_url + '&mode=manual#' + fragment)
+                editor.goto(editor_url + '&mode=manual')
+                editor.locator('#relaySetupReadToken').fill(config['rooms']['source']['read'])
+                editor.locator('#relaySetupWriteToken').fill(config['rooms']['output']['write'])
+                editor.get_by_role('button', name='Connect private relay', exact=True).click()
                 editor.wait_for_function('() => document.querySelector("#statusText").textContent.includes("Input and output connected")')
                 assert 'Token' not in editor.url
                 overlay_url = editor.locator('#overlayLink').get_attribute('href')
                 assert 'relay=' in overlay_url and config['rooms']['output']['write'] not in overlay_url
+                editor.locator('#privateViewerLink summary').click()
+                editor.locator('#viewerLinkToken').fill(config['rooms']['output']['write'])
+                editor.get_by_role('button', name='Create viewer link', exact=True).click()
+                assert editor.locator('#viewerLinkResult').is_hidden(), 'Publishing token must never make an audience link'
+                editor.locator('#viewerLinkToken').fill(config['rooms']['source']['write'])
+                editor.get_by_role('button', name='Create viewer link', exact=True).click()
+                editor.wait_for_function('() => document.querySelector("#privateViewerLink").textContent.includes("not authorized")')
+                assert editor.locator('#viewerLinkResult').is_hidden(), 'A different publishing credential must also be rejected'
+                editor.locator('#viewerLinkToken').fill(config['rooms']['output']['read'])
+                editor.get_by_role('button', name='Create viewer link', exact=True).click()
+                editor.locator('#viewerLinkResult').wait_for(state='visible')
+                viewer_url = editor.locator('#viewerLinkResult').input_value()
+                assert config['rooms']['output']['write'] not in viewer_url
                 overlay = context.new_page(); overlay.on('pageerror', lambda e: errors.append('overlay: ' + e.stack))
-                overlay.goto(overlay_url + '#relayReadToken=' + config['rooms']['output']['read'])
+                overlay.goto(viewer_url)
                 page.click('#start')
                 editor.wait_for_function('() => document.querySelector("#editor").value.includes("Synthetic private relay caption")', timeout=30000)
                 assert 'Synthetic private relay caption' not in overlay.locator('body').inner_text()
@@ -120,15 +136,15 @@ def main():
                 page.click('#stop'); page.wait_for_function('() => !running && !processing && !pending', timeout=15000)
                 relay.terminate(); relay.wait(timeout=10)
                 page.wait_for_function('() => !publisher.isOpen()', timeout=10000)
-                # The relay has no history. Hold producer reconnect until the reader rejoins,
-                # so this measures the publisher's retained queue independently of audience gaps.
+                # Force an unacknowledged queue and resume the producer immediately.
+                # A returning reader must recover current-process history and report the restart gap.
                 page.evaluate('publisher.disconnect()')
                 page.evaluate("publisher.publish({msg:true, final:'Retained during relay restart', id:987654321})")
                 assert page.evaluate('publisher.getSnapshot().queueLength') > 0
                 relay = start_relay()
-                editor.wait_for_function('() => document.querySelector("#statusText").textContent.includes("Input and output connected")', timeout=15000)
                 page.evaluate('publisher.connect()')
                 editor.wait_for_function('() => document.querySelector("#incoming").textContent.includes("Retained during relay restart")', timeout=30000)
+                editor.wait_for_function('() => document.querySelector("#privateRelayStatus").textContent.includes("gap")')
                 page.uncheck('#share'); page.fill('#relayToken', 'x'*43); page.check('#share')
                 page.wait_for_function('() => document.querySelector("#relay").textContent.includes("denied")')
                 page.uncheck('#share')
@@ -136,7 +152,8 @@ def main():
                 assert all(url == 'ws://127.0.0.1:8787/' for url in sockets), sockets
                 assert not external, external
                 result.update(passed=True, browser=browser.version, socket_connections=len(sockets),
-                    authorization_denial=True, room_isolation=True, editor_review=True, restart_queue_recovery='reader rejoined before producer; relay has no replay',
+                    authorization_denial=True, room_isolation=True, editor_review=True, restart_queue_recovery=True,
+                    restart_gap_warning=True, token_setup_panel=True, viewer_link_rejects_publish_token=True,
                     stop_drain=True, credentials_removed_from_links=True, browser_errors=errors, external_requests=external)
                 browser.close()
         finally:

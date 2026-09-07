@@ -1,0 +1,84 @@
+{
+  "scope": "real private protocol v2; Node clients and server share a loopback process, no speech inference",
+  "startedAt": "2026-09-07T19:03:55.086Z",
+  "node": "v22.19.0",
+  "platform": "win32",
+  "producerStreams": 32,
+  "viewers": 100,
+  "connections": 132,
+  "requestedSeconds": 15,
+  "elapsedSeconds": 15.0028887,
+  "rounds": 75,
+  "captionHz": 5,
+  "expectedDeliveries": 7500,
+  "delivered": 7500,
+  "errors": 0,
+  "duplicates": 0,
+  "gaps": 0,
+  "injectedDisconnectPairs": 2,
+  "latencyMs": {
+    "mean": 10.448820786666692,
+    "p95": 7.2,
+    "p99": 9.9,
+    "max": 2005.4766,
+    "histogramResolution": 0.1
+  },
+  "meanCpuCores": 0.05105683414154769,
+  "peakRssMiB": 57.73828125,
+  "warmRssGrowthMiB": 0,
+  "limits": {
+    "connections": 512,
+    "perIp": 512,
+    "perRoom": 256,
+    "messagesPerSecond": 40,
+    "payloadBytes": 8192,
+    "bufferedBytes": 65536,
+    "joinMs": 10000,
+    "heartbeatMs": 30000,
+    "replayMs": 120000,
+    "replayMessages": 256,
+    "replayTotalMessages": 8192,
+    "replayBytes": 16777216,
+    "slowMs": 10000
+  },
+  "stats": {
+    "accepted": 136,
+    "rejected": 0,
+    "published": 2400,
+    "delivered": 7500,
+    "slowConsumers": 0,
+    "duplicates": 0,
+    "replayed": 22,
+    "gaps": 0
+  },
+  "samples": [
+    {
+      "seconds": 0.012286999999999992,
+      "rss": 60542976,
+      "heap": 11537760,
+      "retainedBytes": 0,
+      "retainedMessages": 0,
+      "maximumQueue": 1,
+      "errors": 0,
+      "gaps": 0,
+      "delivered": 0
+    },
+    {
+      "seconds": 10.0127326,
+      "rss": 59695104,
+      "heap": 9929904,
+      "retainedBytes": 794976,
+      "retainedMessages": 1600,
+      "maximumQueue": 1,
+      "errors": 0,
+      "gaps": 0,
+      "delivered": 5000
+    }
+  ],
+  "sourceSha256": {
+    "client": "658653048a2773b0ffc913c8964adcf19b0eeea16d9b27f70548ee7df3e1fcee",
+    "server": "a39700084eaf75e917fc5ee984aa90915cbb479904ca081b379ddf59cdc58d4d",
+    "replay": "6d7d5199214a4d73d324c7c4aa108002b43e6f02af36e0b0997835a7c3ed1cfb"
+  },
+  "passed": true
+}

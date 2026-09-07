@@ -1,0 +1,18 @@
+{
+  "scope": "real relay and browser capture, fake inference, synthetic microphone; no public traffic",
+  "passed": true,
+  "review_to_visible_seconds": 0.0497,
+  "browser": "152.0.4191.66",
+  "socket_connections": 12,
+  "authorization_denial": true,
+  "room_isolation": true,
+  "editor_review": true,
+  "restart_queue_recovery": true,
+  "restart_gap_warning": true,
+  "token_setup_panel": true,
+  "viewer_link_rejects_publish_token": true,
+  "stop_drain": true,
+  "credentials_removed_from_links": true,
+  "browser_errors": [],
+  "external_requests": []
+}

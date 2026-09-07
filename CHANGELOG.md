@@ -1,5 +1,14 @@
 # Changelog
 
+## Unreleased
+
+- Private Caption Ninja relay support with room credentials, acknowledged publishing,
+  bounded replay and visible recovery gaps; the separate relay runs in captionninja.
+- Private editor/viewer setup panels and verified view-only OBS links. The
+  caption.ninja home page and its shared publisher remain unchanged by this work.
+- Reproducible Windows/WSL relay tests, a real local TLS proxy probe and sustained
+  load tooling. See the relay recovery evidence for measured results and limits.
+
 ## 1.1.0 — first public release
 
 - Standalone Linux CPU speech transcription and speech-to-English translation service.
