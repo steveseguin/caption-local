@@ -88,8 +88,29 @@ browser tests do not establish the public HTTPS site's local-network permission
 behavior. The controlled `browser_capture_https.py --output PATH` preview uses
 CDP Fetch interception because ordinary Playwright routing misses the worklet in
 this fixture. Its pass does not establish a deployed public-site or physical-mic
-pass; keep browser security enabled. Keep deployment/model controls server-side. Update copied captionninja
+pass; keep browser security enabled. The later `evidence/relay-recovery/hosted-github-pages.json`
+does validate actual GitHub Pages assets and native private WebSockets in Edge,
+with loopback permission granted by automation and fake inference. At that test
+date, caption.ninja's capture-local URL served the home page; do not assume a
+GitHub push updates the separate custom-domain host. Use the guide's tested URL
+and exact origin for both inference and relay. Keep deployment/model controls server-side. Update copied captionninja
 assets with `scripts/sync_capture_page.py` and verify `--check`; no runtime CDN.
+
+For self-hosted caption text delivery, use captionninja's separate `relay/README.md`
+and `evidence/relay-recovery/report.md` in Caption Local. The relay needs Node 22+
+and no speech model. Generate room credentials outside the static site directory;
+source read/write, output read/write and inference tokens have different roles.
+Private editor/overlay setup panels accept these tokens without browser prompts.
+Generate OBS links with a verified output read token; publishing credentials do
+not belong in audience links. Keep the main caption.ninja capture page unchanged.
+Protocol 2 requires both the new relay and private client assets. It acknowledges
+publishes and replays bounded RAM history, but process restarts clear receipts,
+and page reloads lose cursors/queues. Report visible gaps and possible duplicates
+after restart; do not promise durable or exactly-once delivery. Behind one proxy,
+the default 128-per-IP admission limit includes producers and viewers. Measure text
+relay capacity separately from inference. Use the local browser and Caddy probes
+in the evidence report; Linux Docker CI does not validate Docker Desktop or a
+public WSS deployment. Do not install certificates into system trust to run tests.
 
 Validate the chosen installation with `/health` and `scripts/smoke_api.py`, using
 its public/synthetic fixtures or a user-authorized recording. For offline mode,

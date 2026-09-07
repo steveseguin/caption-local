@@ -89,21 +89,25 @@ Do not expose the inference port publicly as a connection workaround.
 
 ## Optional: use the separate caption.ninja page
 
-The hosted `capture-local.html` page sends audio directly to your selected service.
+The [GitHub Pages capture page](https://steveseguin.github.io/captionninja/capture-local.html)
+sends audio directly to your selected service. On 2026-09-07, the equivalent
+`caption.ninja/capture-local.html` URL served the main capture page instead;
+use the bundled page or the GitHub Pages URL until that separate deployment is
+updated. This integration does not change the main caption.ninja home page.
 It needs a shared service token, an exact allowed origin and browser permission
 to reach a local service. Configure these **before** starting Caption Local:
 
 ```powershell
 # PowerShell: generate a new service token for this process environment.
 $env:CAPTION_API_KEY = .venv\Scripts\python.exe -c "import secrets; print(secrets.token_urlsafe(32))"
-$env:CAPTION_ALLOWED_ORIGINS = 'https://caption.ninja'
+$env:CAPTION_ALLOWED_ORIGINS = 'https://steveseguin.github.io'
 py -3.12 deploy.py run --model small --device cpu
 ```
 
 ```sh
 # Linux shell:
 export CAPTION_API_KEY="$(.venv/bin/python -c 'import secrets; print(secrets.token_urlsafe(32))')"
-export CAPTION_ALLOWED_ORIGINS=https://caption.ninja
+export CAPTION_ALLOWED_ORIGINS=https://steveseguin.github.io
 ./start.sh --model small --device cpu
 ```
 
@@ -124,8 +128,14 @@ cannot connect, use **Open the local capture page**. Do not disable browser secu
 The integration tests cover different localhost origins in Edge. A controlled
 HTTPS-origin preview also passes denied/granted loopback permission, synthetic
 capture and drain in Edge 152.0.4191.66, with page assets intercepted locally and
-fake inference. The deployed public site's permission flow and physical microphone
-remain unvalidated. HTTPS origins are
+fake inference. The later [hosted private-relay test](../evidence/relay-recovery/hosted-github-pages.json)
+loaded the actual GitHub Pages capture, editor and overlay over HTTPS, used native
+browser WebSockets to the local private relay, and passed synthetic capture,
+review, drain and reconnect checks. Loopback permission was granted through browser
+automation; a human permission-prompt flow and physical microphone remain unvalidated.
+When combining those hosted pages with a private relay, add
+`https://steveseguin.github.io` to its configuration's `origins` list too.
+HTTPS origins are
 accepted by the client for deployments with their own secure reverse proxy, but
 public hosting/authentication is outside this guide's tested scope.
 
@@ -185,5 +195,6 @@ python scripts/sync_capture_page.py /path/to/captionninja --check
 ```
 
 Commit the generated `capture-local.html`, `caption-local/` assets and SHA-256
-manifest together. Preserve the MPL-2.0 license for these copied files. The existing
-caption.ninja pages only gain a navigation link and load none of this bundle.
+manifest together. Preserve the MPL-2.0 license for these copied files. The main
+caption.ninja capture page loads none of this bundle. The editor and standard
+overlay use the separate private relay helper only when a custom relay is selected.

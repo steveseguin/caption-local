@@ -211,6 +211,13 @@ Increasing buffers hides delay rather than increasing processing capacity.
 through caption.ninja's relay; room names should be kept private. No sharing is
 needed for local captions or transcript download.
 
+You can also **host caption delivery yourself**, including the human editor and
+OBS/audience overlay. The optional [private relay guide](https://github.com/steveseguin/captionninja/blob/master/relay/README.md)
+walks through Windows and Linux setup, room passwords, viewer links, and shutdown.
+That small Node service carries caption text; Caption Local still does the speech
+recognition. Keep the two services on one computer or separate them as needed.
+Private mode never falls back to the public relay when a connection fails.
+
 ## Where to go next
 
 - [First-event checklist and human editor](FIRST-EVENT.md): rehearse capture,

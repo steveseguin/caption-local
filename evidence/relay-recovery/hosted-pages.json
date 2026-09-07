@@ -1,0 +1,31 @@
+{
+  "scope": "real relay and browser capture, fake inference, synthetic microphone; no public caption traffic",
+  "passed": false,
+  "hosted_capture_response": {
+    "status": 200,
+    "url": "https://caption.ninja/capture-local.html",
+    "title": "CAPTION.Ninja - Free Live Captions & Translation for OBS, vMix, Streaming",
+    "has_endpoint_control": false,
+    "scripts": [
+      "/security-utils.js",
+      "/tts-integration.js",
+      "/ws-publisher.js",
+      "/text-rules.js",
+      "/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495"
+    ]
+  },
+  "failure": "RuntimeError",
+  "failed_stage": "loading capture page",
+  "hosted_asset_paths": [
+    "/capture-local.html",
+    "/favicon.svg",
+    "/fonts/Cousine-Bold.ttf",
+    "/security-utils.js",
+    "/text-rules.js",
+    "/tts-integration.js",
+    "/ws-publisher.js"
+  ],
+  "socket_destinations_intercepted_or_observed": [
+    "wss://api.caption.ninja/"
+  ]
+}

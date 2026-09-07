@@ -1,9 +1,9 @@
 {
-  "scope": "real relay and browser capture, fake inference, synthetic microphone; no public traffic",
+  "scope": "real relay and browser capture, fake inference, synthetic microphone; no public caption traffic",
   "passed": true,
-  "review_to_visible_seconds": 0.0497,
   "browser": "152.0.4191.66",
-  "socket_connections": 12,
+  "review_to_visible_seconds": 0.054,
+  "socket_connections": 13,
   "authorization_denial": true,
   "room_isolation": true,
   "editor_review": true,
@@ -14,5 +14,6 @@
   "stop_drain": true,
   "credentials_removed_from_links": true,
   "browser_errors": [],
-  "external_requests": []
+  "external_requests": [],
+  "oversized_multilingual_payload_stops_retries": true
 }

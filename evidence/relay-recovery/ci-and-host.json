@@ -1,0 +1,96 @@
+{
+  "runs": [
+    {
+      "name": "Private caption relay",
+      "html_url": "https://github.com/steveseguin/captionninja/actions/runs/34155743068",
+      "head_sha": "f059d57a43f7bdffeb7d309afe4d794cc2afc66c",
+      "conclusion": "success",
+      "updated_at": "2026-09-07T19:30:02Z",
+      "jobs": [
+        {
+          "name": "relay (windows-latest)",
+          "conclusion": "success",
+          "html_url": "https://github.com/steveseguin/captionninja/actions/runs/34155743068/job/101847080743"
+        },
+        {
+          "name": "relay (ubuntu-latest)",
+          "conclusion": "success",
+          "html_url": "https://github.com/steveseguin/captionninja/actions/runs/34155743068/job/101847081026"
+        }
+      ]
+    },
+    {
+      "name": "pages build and deployment",
+      "html_url": "https://github.com/steveseguin/captionninja/actions/runs/34155742388",
+      "head_sha": "f059d57a43f7bdffeb7d309afe4d794cc2afc66c",
+      "conclusion": "success",
+      "updated_at": "2026-09-07T19:30:29Z",
+      "jobs": [
+        {
+          "name": "build",
+          "conclusion": "success",
+          "html_url": "https://github.com/steveseguin/captionninja/actions/runs/34155742388/job/101847081639"
+        },
+        {
+          "name": "report-build-status",
+          "conclusion": "success",
+          "html_url": "https://github.com/steveseguin/captionninja/actions/runs/34155742388/job/101847266585"
+        },
+        {
+          "name": "deploy",
+          "conclusion": "success",
+          "html_url": "https://github.com/steveseguin/captionninja/actions/runs/34155742388/job/101847266639"
+        }
+      ]
+    },
+    {
+      "name": "Windows protocol and packaging",
+      "html_url": "https://github.com/steveseguin/caption-local/actions/runs/34155745598",
+      "head_sha": "7af8fcf491ff8789c33b01064ac046e87f0a8d44",
+      "conclusion": "success",
+      "updated_at": "2026-09-07T19:29:52Z",
+      "jobs": [
+        {
+          "name": "windows-cpu",
+          "conclusion": "success",
+          "html_url": "https://github.com/steveseguin/caption-local/actions/runs/34155745598/job/101847087932"
+        }
+      ]
+    },
+    {
+      "name": "CI",
+      "html_url": "https://github.com/steveseguin/caption-local/actions/runs/34155745595",
+      "head_sha": "7af8fcf491ff8789c33b01064ac046e87f0a8d44",
+      "conclusion": "success",
+      "updated_at": "2026-09-07T19:29:59Z",
+      "jobs": [
+        {
+          "name": "linux-cpu",
+          "conclusion": "success",
+          "html_url": "https://github.com/steveseguin/caption-local/actions/runs/34155745595/job/101847087927"
+        }
+      ]
+    }
+  ],
+  "linux_docker_probe": {
+    "passed": true,
+    "scope": "Linux Docker build, unprivileged read-only container, loopback authenticated relay delivery and shutdown",
+    "docker": "28.0.4",
+    "node": "v22.23.2"
+  },
+  "docker_probe_node_version_scope": "host CI runner",
+  "unchanged_captionninja_files_since_a02fe0d": {
+    "index.html": "4578b9c3e362aab4ba6df79dcc86d598738a9bd404e57a7ee75cdb1e20a2a9d1",
+    "ws-publisher.js": "dfebfa9c711ca9affcd450f21f47259c0076869ae1ca37105a0cc90d42926f6c"
+  },
+  "windows_relay_host": {
+    "os": "Windows 11 Pro 10.0.26200",
+    "cpu": "Intel Core Ultra 7 265K",
+    "physical_cores": 20,
+    "logical_processors": 20,
+    "visible_ram_kib": 66547492,
+    "node": "v22.19.0",
+    "browser": "Edge 152.0.4191.66",
+    "note": "Relay tests use no GPU or speech inference; unrelated inference service preserved."
+  }
+}

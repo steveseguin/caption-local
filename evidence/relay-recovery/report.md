@@ -40,8 +40,33 @@ publishing token and another room's publishing token are rejected. The selected
 viewing token passes, and the generated link opens the viewer without a prompt.
 The existing [public capture regression](connection.json) also passes.
 
+[hosted-github-pages.json](hosted-github-pages.json) passed against the actual
+deployed HTTPS capture, editor and overlay at
+`https://steveseguin.github.io/captionninja/`, with fake inference and synthetic
+microphone audio. Private WebSockets used the browser's native network connection;
+other socket destinations were intercepted and never forwarded. The browser's
+normal loopback permission was granted through CDP in the isolated test context.
+This verifies the permitted path, not a human's permission prompt or physical mic.
+No page assets were substituted with local files in this test. Review-to-visible
+was 49.0 ms in this single observation.
+
+The [custom-domain attempt](hosted-pages.json) failed: on 2026-09-07,
+`https://caption.ninja/capture-local.html` returned HTTP 200 with the main capture
+page, without the service endpoint control. GitHub Pages publishes the repository
+at its github.io address; its deployment does not establish that the separate
+custom-domain host has updated. The generated public socket was intercepted before
+any network forwarding. No changes were made to the main page or host routing.
+Use the bundled local page or the tested GitHub Pages URL. Earlier attempts also
+exposed a Windows Playwright callback deadlock when closing a blocked socket;
+the probe now leaves those intercepted sockets unconnected and logs its stages.
+
 Fast checks passed: 52 native Windows Python tests, 14 JavaScript tests and 17
-real-socket/client tests on both Windows and WSL. Python deprecation warnings
+real-socket/client tests on both Windows and WSL. A subsequent regression adds an
+18th passing real-socket test on both systems: a 3,000-character Japanese caption
+exceeds the 8 KiB UTF-8 transport limit. Before the fix, the publisher retried
+forever with no terminal error (the new assertion timed out after 1.5 seconds).
+It now stops retries for rejected format/size, reports the error and retains the
+queue. The final local browser probe also passes that rejection path. Python deprecation warnings
 remain upstream. These tests exercise recovery and protocol behavior, not
 recognition accuracy. The hour test remains separately in progress below.
 
@@ -54,6 +79,13 @@ store, PATH and firewall were unchanged; the Caddy binary stayed under ignored
 This validates real TLS proxying, not a public domain, WAN behavior or browser
 local-network permissions. A public test domain/server has been requested but
 has not been supplied.
+
+[CI and host evidence](ci-and-host.json) records passing Windows/Linux jobs for
+both repositories, exact commits, and the unchanged home-page/publisher hashes.
+Linux CI built the relay image and checked authenticated delivery and shutdown
+in an unprivileged, read-only Docker container (Docker 28.0.4; host Node 22.23.2).
+This is actual Linux Docker validation, separate from the Windows native and
+Caddy checks. Docker Desktop remains absent on this computer.
 
 An initial browser probe used the old test description for its restart assertion;
 its old "no replay" label is superseded by the recovery probe. The initial TLS
@@ -78,6 +110,13 @@ gaps, queue depths, retained history, CPU and sampled RSS. Per-IP admission is
 explicitly 512 because every test connection shares loopback; production defaults
 remain 128. The test does not silently enlarge caption buffers.
 
+The hour run loaded the initial protocol-2 client before the terminal-frame
+rejection fix above; its source hashes identify that version. Server/replay code
+is unchanged. The fix affects rejected frames, not accepted-caption delivery;
+its real-socket and browser regressions are separate. The later larger-audience
+probe will exercise the final client. Do not describe the hour as a test of an
+unrecorded source revision.
+
 ## Reproduction and scope
 
 From captionninja's `relay` directory after `npm ci --ignore-scripts`:
@@ -92,11 +131,12 @@ From Caption Local (Windows Python; use a separate Linux/WSL environment there):
 ```powershell
 .venv\Scripts\python.exe scripts/sync_capture_page.py samples/captionninja --check
 .venv\Scripts\python.exe scripts/browser_private_relay.py --output evidence/relay-recovery/new-browser.json
+.venv\Scripts\python.exe scripts/browser_private_relay.py --hosted-pages --hosted-site https://steveseguin.github.io/captionninja/ --output evidence/relay-recovery/new-hosted.json
 .venv\Scripts\python.exe scripts/test_relay_tls.py --caddy /path/to/caddy.exe --openssl /path/to/openssl.exe --output evidence/relay-recovery/new-tls.json
 ```
 
 The TLS probe needs an existing Caddy and OpenSSL executable, creates credentials
 only in an owned temporary directory, binds only loopback and removes its test
 processes. No certificate is installed into a system/browser store. The Docker
-probe is designed for Linux CI with an existing daemon; Docker Desktop is absent
+probe passed on Linux CI with an existing daemon; Docker Desktop is absent
 on this computer and will not be installed just for this task.
