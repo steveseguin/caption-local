@@ -72,8 +72,9 @@ or browser audio suspension stops capture and drains already captured speech.
 
 The default `small` model is pinned to Hugging Face revision
 `536b0662742c02347bc0e980a01041f333bce120`. The throughput `base` model is pinned to
-`ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66`. Other models use upstream
-resolution unless you supply a local model directory. The runtime graph on Linux
+`ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66`. The `medium` and `large-v3` models are
+also pinned in `server.py`; other model names use upstream resolution unless you
+supply a local model directory. The runtime graph on Linux
 is pinned in `requirements-linux.lock`; Windows uses the direct requirement file
 with tested versions recorded in the [Windows report](evidence/windows-rtx/report.md).
 Model and audio files are excluded from the release.
@@ -102,7 +103,9 @@ isolation and TLS termination are not supplied.
 For remote microphones, keep the inference host on loopback and use SSH. Room
 names are relay access secrets, not encryption. Do not reuse real event rooms in
 tests. Windows CPU development tests are recorded separately from the published
-Linux CPU release. NVIDIA inference, ARM, background mobile capture and full-event
-accessibility validation remain pending.
+Linux CPU release. Native Windows and WSL NVIDIA inference are now tested on a
+TITAN RTX; see the [GPU sustained report](evidence/gpu-sustained/report.md) for
+the hour-tested workload, overload failures and accuracy limits. ARM, background
+mobile capture and full-event accessibility validation remain pending.
 
 For multiple streams, tune model, workers and threads using the [capacity report](evidence/multistream/report.md). Monitor `/health` running/pending counts and response queue times. Stop adding streams when delays grow across successive chunks. A twelve-session limit is an admission bound, not a hardware throughput guarantee.

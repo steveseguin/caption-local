@@ -15,7 +15,7 @@ The guide includes Windows/Linux commands, saving and shutdown, keyboard use,
 privacy, realistic delay and accuracy expectations, and common next steps.
 
 **Self-hosted caption.ninja capture:** a separate connection/diagnostics page is
-available in this development branch. [Setup and sharing guide](docs/CAPTION-NINJA-LOCAL.md).
+included in the current source. [Setup and sharing guide](docs/CAPTION-NINJA-LOCAL.md).
 Use the bundled `http://localhost:8765/capture-local.html` first; hosted-page access
 is optional and requires explicit origin permission and a service token.
 
@@ -68,7 +68,8 @@ cd caption-local
 ```
 
 The newer Windows, access-token and caption-interval improvements described here
-are development changes after v1.1.0, available in [draft PR #1](https://github.com/steveseguin/caption-local/pull/1).
+are included on `main` after v1.1.0. Use the Git command above or
+[download the current source ZIP](https://github.com/steveseguin/caption-local/archive/refs/heads/main.zip).
 They have not been published as a new release. Follow the documentation included
 with the version you download.
 
@@ -124,7 +125,7 @@ unless you intend to delete the model cache. No microphone passthrough is needed
 | Option | Instructions |
 | --- | --- |
 | Windows native Python | Run `py -3.12 deploy.py run`; `.\start.ps1` is also available where scripts are permitted. [Tested setup and scope](docs/WINDOWS-GPU.md) |
-| NVIDIA GPU — not hardware-validated | [GPU requirements and Docker/native commands](DEPLOYMENT.md#cpu-and-gpu-options) |
+| NVIDIA GPU — native Windows and WSL CUDA tested on TITAN RTX | [Tested configurations and limits](docs/WINDOWS-GPU.md) |
 | Linux server, microphone on another computer | [SSH tunnel guide](DEPLOYMENT.md#remote-microphone-through-ssh) |
 | Install with an AI assistant | [Copy-and-paste setup prompt and deployment skill](docs/AI-SETUP.md) |
 | Offline use or automatic restart | [Operations guide](OPERATIONS.md) |

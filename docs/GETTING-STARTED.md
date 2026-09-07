@@ -47,12 +47,12 @@ Keep the extracted folder: it contains `deploy.py`, `README.md` and `static`.
 Open a terminal **inside that folder**, not inside the ZIP archive or its parent.
 Copy only the commands inside the boxes below. Choose your platform's route.
 
-Published releases and development branches can contain different features.
+Published releases and the current source can contain different features.
 The access-token, caption-interval and newer Windows improvements described here
-are development changes after v1.1.0; they are not yet in that published release.
-Use the documentation included with your copy. For the current development work,
-see [draft PR #1](https://github.com/steveseguin/caption-local/pull/1); no new release
-has been published as part of this validation.
+are included on `main` after v1.1.0; they are not yet in that published release.
+For these features, [download and extract the current source ZIP](https://github.com/steveseguin/caption-local/archive/refs/heads/main.zip)
+or use the README's Git clone command. Use the documentation included with your
+copy; no new release has been published as part of this validation.
 
 ### Windows with Python
 
