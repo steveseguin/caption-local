@@ -15,11 +15,22 @@ parser.add_argument('--workers', type=int, nargs='+', default=[1, 2, 4])
 parser.add_argument('--rounds', type=int, default=2)
 parser.add_argument('--skip-cpu', action='store_true')
 args = parser.parse_args()
+active = subprocess.check_output(
+    ['nvidia-smi', '--query-compute-apps=pid', '--format=csv,noheader'], text=True).strip()
+if active:
+    parser.error('GPU occupied; preserve existing workloads and reserve it before the matrix')
 args.output.mkdir(parents=True, exist_ok=True)
 results = []
 
 
 def run(name, command):
+    active = subprocess.check_output(
+        ['nvidia-smi', '--query-compute-apps=pid', '--format=csv,noheader'], text=True).strip()
+    if active:
+        results.append({'name':name, 'exit_code':125, 'wall_seconds':0,
+                        'error':'GPU became occupied; matrix stopped before launching this configuration'})
+        (args.output/'matrix-status.json').write_text(json.dumps(results, indent=2)+'\n', encoding='utf-8')
+        raise SystemExit('GPU became occupied; prior results retained and unrelated workloads preserved')
     started = time.monotonic()
     with (args.output/(name+'.log')).open('w', encoding='utf-8') as log:
         completed = subprocess.run([sys.executable, *command], stdout=log, stderr=log)
@@ -45,3 +56,5 @@ if not args.skip_cpu:
     run('small-cpu-int8-w8-b5', ['scripts/profile_gpu.py', '--model', 'small', '--device', 'cpu',
         '--compute-type', 'int8', '--workers', '8', '--threads', '2', '--rounds', '1',
         '--output', str(args.output/'small-cpu-int8-w8-b5.json')])
+if any(result['exit_code'] for result in results):
+    raise SystemExit('Matrix contains failed configurations; see matrix-status.json and retained logs')

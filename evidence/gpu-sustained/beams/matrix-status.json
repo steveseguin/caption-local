@@ -1,0 +1,22 @@
+[
+  {
+    "name": "large-v3-float16-quality-b1",
+    "exit_code": 0,
+    "wall_seconds": 13.797
+  },
+  {
+    "name": "large-v3-float16-w2-b1",
+    "exit_code": 0,
+    "wall_seconds": 23.219
+  },
+  {
+    "name": "large-v3-float16-quality-b3",
+    "exit_code": 0,
+    "wall_seconds": 15.328
+  },
+  {
+    "name": "large-v3-float16-w2-b3",
+    "exit_code": 0,
+    "wall_seconds": 25.89
+  }
+]

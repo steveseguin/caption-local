@@ -1,0 +1,20 @@
+{
+  "recorded_utc": "2026-09-07T05:18:07.956638+00:00",
+  "python": "3.12.10",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "faster-whisper": "1.2.1",
+    "ctranslate2": "4.8.2",
+    "numpy": "2.5.2",
+    "fastapi": "0.141.1",
+    "uvicorn": "0.52.4",
+    "starlette": "1.6.0",
+    "playwright": "1.62.0",
+    "psutil": "7.2.2",
+    "nvidia-cublas-cu12": "12.9.2.10",
+    "nvidia-cuda-nvrtc-cu12": "12.9.86",
+    "nvidia-cudnn-cu12": "9.10.2.21"
+  },
+  "disk_free_bytes": 106029309952,
+  "server_sha256": "c818fc4e7319a3cade6e60c209d5527f09907b2f8a58c73a10b37112a01b1bbc"
+}

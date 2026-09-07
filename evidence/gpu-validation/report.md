@@ -1,5 +1,9 @@
 # Native Windows CUDA validation — September 5, 2026
 
+**Follow-up:** the [GPU browser and sustained report](../gpu-sustained/report.md)
+now records the completed twelve-stream hour, heavier-translation overload and
+six-language robustness sweep. This report preserves the earlier interrupted phase.
+
 Real NVIDIA decoding is now verified on this host. **No sustained GPU stream count
 or GPU speech-to-visible-caption delay is established yet.** Repeated GPU jobs
 from the unrelated game-capture project interrupted the experiment. They were

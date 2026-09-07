@@ -1,0 +1,9 @@
+{
+  "functional_only": true,
+  "model": "large-v3",
+  "device": "cuda",
+  "compute_type": "float16",
+  "workers": 2,
+  "threads": 4,
+  "output": "evidence\\gpu-sustained\\functional"
+}

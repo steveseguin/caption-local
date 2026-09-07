@@ -10,12 +10,14 @@ RAM. See the [test report](../evidence/windows-rtx/report.md) for exact scope.
 The subsequent [deployment matrix](../evidence/deployment-matrix/report.md) adds
 six-language concurrent capture, translation quality, optional authentication and
 OpenAI SDK compatibility tests, with raw timing and failure evidence.
-**Real CUDA decoding is now verified; sustained GPU capacity remains pending.**
-With the owner's permission, the llama service was temporarily stopped and later
-restored with identical arguments. Small, medium and large-v3 passed the supplied
-quality gate on the TITAN RTX. Recurring unrelated video GPU jobs prevented a
-reliable sustained test. Read the [GPU report](../evidence/gpu-validation/report.md)
-for clean short comparisons, rejected timings and remaining checks.
+**Twelve varied synthetic GPU streams now pass a full hour.** Large-v3/CUDA float16,
+two workers and beam five completed 9,210 requests without HTTP errors on the
+TITAN RTX. First captions appeared in 4.59–8.82 seconds; maximum sampled buffering
+was 10.30 seconds. The six-language workload includes limited bilingual output.
+Read the [GPU hour report](../evidence/gpu-sustained/report.md) for exact scope and
+remaining recognition errors. The [initial GPU matrix](../evidence/gpu-validation/report.md)
+preserves short model/worker comparisons and timings rejected because unrelated
+GPU jobs interrupted them. Existing workloads are stopped only with authorization.
 
 ## Native setup
 
@@ -73,8 +75,8 @@ nvidia-smi
 py -3.12 deploy.py run --model small --device cuda --compute-type float16 --workers 1 --threads 4 --beam-size 5 --offline
 ```
 
-The next accuracy candidate is large-v3, float16, two workers and beam five;
-the next throughput candidate is small with those same settings. Large-v3's
+The tested accuracy-oriented configuration is large-v3, float16, two workers and
+beam five; the throughput candidate is small with those same settings. Large-v3's
 short twelve-task mixed batch took 5.37 seconds, versus small's 1.94–1.96 seconds.
 These are queued engine requests, not sustainable live-stream counts or caption
 delays. Do not copy the CPU worker count to CUDA: four GPU workers were slower
@@ -85,11 +87,22 @@ py -3.12 deploy.py download --model large-v3
 py -3.12 deploy.py run --model large-v3 --device cuda --compute-type float16 --workers 2 --threads 4 --beam-size 5 --max-streams 12 --offline
 ```
 
-The twelve-session limit above is a benchmark starting point, not a capacity
-recommendation. Validate your intended language/output mix with
+The twelve-session limit above passed the documented one-hour workload on this
+host, including two German bilingual producers; English bilingual output reuses
+the transcription. A heavier twelve-stream rotating translation mix hit the
+protective buffer limit after about 135 seconds. Validate your intended language/output mix with
 `scripts/gpu_accuracy.py` and `scripts/gpu_browser_run.py` before an event. Large-v3
 used about 4.7 GiB VRAM and peaked near 2.8 GiB host RSS during model startup in one
 short probe; memory needs and available VRAM vary across hosts.
+
+For heavier translation traffic, large-v3 with eight rotating-mode streams passed
+a three-minute check; twelve overloaded. For throughput, small/float16 with two
+workers and beam five passed twenty-four rotating-mode streams for three minutes:
+first captions 4.37–8.54 seconds, maximum buffering 9.46 seconds, zero HTTP errors.
+These shorter tests are starting points for rehearsal, not hour-qualified counts.
+Small has substantially worse recognition on some noisy fixtures. Change
+`--max-streams` to 8 for the heavier large-v3 trial, or choose `--model small
+--max-streams 24` for the throughput trial; keep the other explicit settings.
 
 Open `http://localhost:8765`. Press **Ctrl+C in the server terminal** to shut down.
 Stop browser capture and wait for drain first. If PowerShell permits scripts,
@@ -176,10 +189,36 @@ or reduce quality silently to make twelve streams fit.
 
 The host has Ubuntu WSL2, Python 3.12.3 and kernel
 6.6.87.2-microsoft-standard-WSL2. A separate `.venv-wsl` preserves the Windows
-environment; Linux regression, release checks and real CPU English/Spanish decode
-pass there using the cached small weights. Docker Desktop and
-a Docker CLI were absent, so container inference has not been tested on this host.
-No Docker/WSL configuration changes were made. WSL device discovery is not WSL
-CUDA inference validation. Use the existing
+environment; use `python3 deploy.py setup --venv .venv-wsl` inside WSL when sharing
+this checkout. The launcher refuses an environment containing the other platform's
+interpreter instead of overwriting it. Linux regression, release checks and real CPU English/Spanish decode
+pass there using the cached small weights. **Real WSL CUDA HTTP inference also
+passes** with small/float16, one worker, four threads and beam five: English,
+Spanish transcription plus English translation, translation-only output and
+silence. The [WSL smoke and NVIDIA evidence](../evidence/gpu-sustained/wsl/smoke.json)
+is separate from the native Windows browser hour; no WSL sustained count is claimed.
+Docker Desktop and a Docker CLI were absent, so container inference has not been
+tested on this host. No Docker/WSL configuration changes were made. Use the existing
 [Docker GPU guide](../DEPLOYMENT.md#nvidia-with-docker-recommended-gpu-packaging)
 on a host with Docker GPU support already configured.
+
+To prepare an independent WSL environment from its Linux terminal, inside this
+checkout, use the same three NVIDIA runtime wheel versions tested here:
+
+```sh
+python3 deploy.py setup --venv .venv-wsl
+.venv-wsl/bin/python -m pip install nvidia-cublas-cu12==12.9.2.10 nvidia-cuda-nvrtc-cu12==12.9.86 nvidia-cudnn-cu12==9.10.2.21
+python3 deploy.py download --venv .venv-wsl --model small
+export LD_LIBRARY_PATH="$PWD/.venv-wsl/lib/python3.12/site-packages/nvidia/cublas/lib:$PWD/.venv-wsl/lib/python3.12/site-packages/nvidia/cuda_nvrtc/lib:$PWD/.venv-wsl/lib/python3.12/site-packages/nvidia/cudnn/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+python3 deploy.py run --venv .venv-wsl --model small --device cuda --compute-type float16 --workers 1 --threads 4 --beam-size 5 --offline
+```
+
+The library path applies only to this shell and its children. The test reused the
+existing Windows model cache through a process-local `HF_HUB_CACHE`; the download
+command above instead populates the normal WSL cache. Reserve GPU memory first.
+Stop browser capture and drain, then Ctrl+C in the WSL server terminal to stop.
+With the documented fixtures present, use a second WSL terminal to verify:
+
+```sh
+.venv-wsl/bin/python scripts/smoke_api.py --url http://127.0.0.1:8765 --spanish samples/spanish.wav --output evidence/my-wsl-smoke.json
+```

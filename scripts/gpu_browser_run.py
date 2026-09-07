@@ -20,7 +20,9 @@ parser.add_argument('--beam-size',type=int,default=5)
 parser.add_argument('--streams',type=int,default=12)
 parser.add_argument('--seconds',type=int,default=180)
 parser.add_argument('--interval',type=int,choices=[3,6,9],default=6)
-parser.add_argument('--mixed',action='store_true')
+modes=parser.add_mutually_exclusive_group()
+modes.add_argument('--mixed',action='store_true')
+modes.add_argument('--rotate-modes',action='store_true')
 parser.add_argument('--output',type=Path,required=True)
 args=parser.parse_args()
 if subprocess.check_output(['nvidia-smi','--query-compute-apps=pid','--format=csv,noheader'],text=True).strip():
@@ -67,6 +69,7 @@ try:
         '--streams',str(args.streams),'--seconds',str(args.seconds),'--interval',str(args.interval),'--varied',
         '--output',str(args.output/'browser.json'),'--stop-file',str(stop_file)]
     if args.mixed: command.append('--mixed')
+    if args.rotate_modes: command.append('--rotate-modes')
     result=subprocess.run(command)
 finally:
     finished.set()

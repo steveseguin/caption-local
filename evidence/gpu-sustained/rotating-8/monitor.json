@@ -1,0 +1,610 @@
+[
+  {
+    "seconds": 0.09,
+    "rss_mib": 607.55,
+    "cpu_seconds": 3.094,
+    "nvidia_smi": "4072, 35, 90.17",
+    "gpu_compute_processes": [
+      "15844, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+    ],
+    "ready": true,
+    "running": 0,
+    "pending": 0,
+    "completed": 0,
+    "failed": 0,
+    "rejected": 0,
+    "queue_timeouts": 0
+  },
+  {
+    "seconds": 5.2,
+    "rss_mib": 611.8,
+    "cpu_seconds": 3.25,
+    "nvidia_smi": "4072, 0, 15.13",
+    "gpu_compute_processes": [
+      "15844, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+    ],
+    "ready": true,
+    "running": 0,
+    "pending": 0,
+    "completed": 0,
+    "failed": 0,
+    "rejected": 0,
+    "queue_timeouts": 0
+  },
+  {
+    "seconds": 10.33,
+    "rss_mib": 657.49,
+    "cpu_seconds": 8.422,
+    "nvidia_smi": "4616, 84, 179.79",
+    "gpu_compute_processes": [
+      "15844, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+    ],
+    "ready": true,
+    "running": 2,
+    "pending": 0,
+    "completed": 6,
+    "failed": 0,
+    "rejected": 0,
+    "queue_timeouts": 0
+  },
+  {
+    "seconds": 15.45,
+    "rss_mib": 657.56,
+    "cpu_seconds": 14.203,
+    "nvidia_smi": "4616, 82, 172.20",
+    "gpu_compute_processes": [
+      "15844, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+    ],
+    "ready": true,
+    "running": 2,
+    "pending": 2,
+    "completed": 13,
+    "failed": 0,
+    "rejected": 0,
+    "queue_timeouts": 0
+  },
+  {
+    "seconds": 20.58,
+    "rss_mib": 663.77,
+    "cpu_seconds": 18.422,
+    "nvidia_smi": "4648, 83, 250.06",
+    "gpu_compute_processes": [
+      "15844, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+    ],
+    "ready": true,
+    "running": 2,
+    "pending": 5,
+    "completed": 18,
+    "failed": 0,
+    "rejected": 0,
+    "queue_timeouts": 0
+  },
+  {
+    "seconds": 25.67,
+    "rss_mib": 664.09,
+    "cpu_seconds": 26.797,
+    "nvidia_smi": "4584, 82, 226.93",
+    "gpu_compute_processes": [
+      "15844, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+    ],
+    "ready": true,
+    "running": 2,
+    "pending": 3,
+    "completed": 28,
+    "failed": 0,
+    "rejected": 0,
+    "queue_timeouts": 0
+  },
+  {
+    "seconds": 30.8,
+    "rss_mib": 661.5,
+    "cpu_seconds": 32.266,
+    "nvidia_smi": "4392, 14, 241.18",
+    "gpu_compute_processes": [
+      "15844, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+    ],
+    "ready": true,
+    "running": 2,
+    "pending": 1,
+    "completed": 38,
+    "failed": 0,
+    "rejected": 0,
+    "queue_timeouts": 0
+  },
+  {
+    "seconds": 36.02,
+    "rss_mib": 660.07,
+    "cpu_seconds": 37.359,
+    "nvidia_smi": "4264, 7, 216.87",
+    "gpu_compute_processes": [
+      "15844, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+    ],
+    "ready": true,
+    "running": 1,
+    "pending": 0,
+    "completed": 45,
+    "failed": 0,
+    "rejected": 0,
+    "queue_timeouts": 0
+  },
+  {
+    "seconds": 41.14,
+    "rss_mib": 662.55,
+    "cpu_seconds": 43.656,
+    "nvidia_smi": "4648, 82, 261.38",
+    "gpu_compute_processes": [
+      "15844, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+    ],
+    "ready": true,
+    "running": 2,
+    "pending": 0,
+    "completed": 53,
+    "failed": 0,
+    "rejected": 0,
+    "queue_timeouts": 0
+  },
+  {
+    "seconds": 46.27,
+    "rss_mib": 662.75,
+    "cpu_seconds": 50.453,
+    "nvidia_smi": "4424, 84, 278.46",
+    "gpu_compute_processes": [
+      "15844, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+    ],
+    "ready": true,
+    "running": 2,
+    "pending": 1,
+    "completed": 63,
+    "failed": 0,
+    "rejected": 0,
+    "queue_timeouts": 0
+  },
+  {
+    "seconds": 51.39,
+    "rss_mib": 659.83,
+    "cpu_seconds": 55.516,
+    "nvidia_smi": "4200, 69, 92.27",
+    "gpu_compute_processes": [
+      "15844, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+    ],
+    "ready": true,
+    "running": 0,
+    "pending": 0,
+    "completed": 72,
+    "failed": 0,
+    "rejected": 0,
+    "queue_timeouts": 0
+  },
+  {
+    "seconds": 56.53,
+    "rss_mib": 662.82,
+    "cpu_seconds": 61.969,
+    "nvidia_smi": "4648, 84, 249.43",
+    "gpu_compute_processes": [
+      "15844, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+    ],
+    "ready": true,
+    "running": 2,
+    "pending": 0,
+    "completed": 80,
+    "failed": 0,
+    "rejected": 0,
+    "queue_timeouts": 0
+  },
+  {
+    "seconds": 61.64,
+    "rss_mib": 662.92,
+    "cpu_seconds": 69.125,
+    "nvidia_smi": "4648, 82, 276.17",
+    "gpu_compute_processes": [
+      "15844, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+    ],
+    "ready": true,
+    "running": 2,
+    "pending": 1,
+    "completed": 90,
+    "failed": 0,
+    "rejected": 0,
+    "queue_timeouts": 0
+  },
+  {
+    "seconds": 66.73,
+    "rss_mib": 662.96,
+    "cpu_seconds": 76.047,
+    "nvidia_smi": "4520, 85, 187.64",
+    "gpu_compute_processes": [
+      "15844, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+    ],
+    "ready": true,
+    "running": 2,
+    "pending": 1,
+    "completed": 99,
+    "failed": 0,
+    "rejected": 0,
+    "queue_timeouts": 0
+  },
+  {
+    "seconds": 71.92,
+    "rss_mib": 661.5,
+    "cpu_seconds": 79.969,
+    "nvidia_smi": "4392, 59, 173.87",
+    "gpu_compute_processes": [
+      "15844, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+    ],
+    "ready": true,
+    "running": 1,
+    "pending": 0,
+    "completed": 106,
+    "failed": 0,
+    "rejected": 0,
+    "queue_timeouts": 0
+  },
+  {
+    "seconds": 77.03,
+    "rss_mib": 663.9,
+    "cpu_seconds": 86.438,
+    "nvidia_smi": "4648, 85, 252.69",
+    "gpu_compute_processes": [
+      "15844, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+    ],
+    "ready": true,
+    "running": 2,
+    "pending": 1,
+    "completed": 115,
+    "failed": 0,
+    "rejected": 0,
+    "queue_timeouts": 0
+  },
+  {
+    "seconds": 82.16,
+    "rss_mib": 661.13,
+    "cpu_seconds": 91.812,
+    "nvidia_smi": "4200, 11, 91.35",
+    "gpu_compute_processes": [
+      "15844, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+    ],
+    "ready": true,
+    "running": 0,
+    "pending": 0,
+    "completed": 125,
+    "failed": 0,
+    "rejected": 0,
+    "queue_timeouts": 0
+  },
+  {
+    "seconds": 87.28,
+    "rss_mib": 661.99,
+    "cpu_seconds": 97.812,
+    "nvidia_smi": "4200, 68, 92.63",
+    "gpu_compute_processes": [
+      "15844, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+    ],
+    "ready": true,
+    "running": 0,
+    "pending": 0,
+    "completed": 133,
+    "failed": 0,
+    "rejected": 0,
+    "queue_timeouts": 0
+  },
+  {
+    "seconds": 92.39,
+    "rss_mib": 666.53,
+    "cpu_seconds": 103.219,
+    "nvidia_smi": "4584, 83, 199.39",
+    "gpu_compute_processes": [
+      "15844, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+    ],
+    "ready": true,
+    "running": 2,
+    "pending": 1,
+    "completed": 138,
+    "failed": 0,
+    "rejected": 0,
+    "queue_timeouts": 0
+  },
+  {
+    "seconds": 97.52,
+    "rss_mib": 666.6,
+    "cpu_seconds": 110.438,
+    "nvidia_smi": "4616, 83, 189.25",
+    "gpu_compute_processes": [
+      "15844, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+    ],
+    "ready": true,
+    "running": 2,
+    "pending": 3,
+    "completed": 148,
+    "failed": 0,
+    "rejected": 0,
+    "queue_timeouts": 0
+  },
+  {
+    "seconds": 102.61,
+    "rss_mib": 666.66,
+    "cpu_seconds": 117.828,
+    "nvidia_smi": "4648, 83, 245.05",
+    "gpu_compute_processes": [
+      "15844, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+    ],
+    "ready": true,
+    "running": 2,
+    "pending": 2,
+    "completed": 159,
+    "failed": 0,
+    "rejected": 0,
+    "queue_timeouts": 0
+  },
+  {
+    "seconds": 107.72,
+    "rss_mib": 666.76,
+    "cpu_seconds": 122.375,
+    "nvidia_smi": "4424, 51, 243.09",
+    "gpu_compute_processes": [
+      "15844, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+    ],
+    "ready": true,
+    "running": 2,
+    "pending": 2,
+    "completed": 167,
+    "failed": 0,
+    "rejected": 0,
+    "queue_timeouts": 0
+  },
+  {
+    "seconds": 112.83,
+    "rss_mib": 665.23,
+    "cpu_seconds": 128.328,
+    "nvidia_smi": "4552, 76, 199.84",
+    "gpu_compute_processes": [
+      "15844, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+    ],
+    "ready": true,
+    "running": 2,
+    "pending": 3,
+    "completed": 176,
+    "failed": 0,
+    "rejected": 0,
+    "queue_timeouts": 0
+  },
+  {
+    "seconds": 117.94,
+    "rss_mib": 665.94,
+    "cpu_seconds": 133.016,
+    "nvidia_smi": "4392, 20, 284.30",
+    "gpu_compute_processes": [
+      "15844, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+    ],
+    "ready": true,
+    "running": 2,
+    "pending": 4,
+    "completed": 183,
+    "failed": 0,
+    "rejected": 0,
+    "queue_timeouts": 0
+  },
+  {
+    "seconds": 123.05,
+    "rss_mib": 663.01,
+    "cpu_seconds": 140.359,
+    "nvidia_smi": "4200, 84, 179.26",
+    "gpu_compute_processes": [
+      "15844, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+    ],
+    "ready": true,
+    "running": 0,
+    "pending": 0,
+    "completed": 194,
+    "failed": 0,
+    "rejected": 0,
+    "queue_timeouts": 0
+  },
+  {
+    "seconds": 128.17,
+    "rss_mib": 665.95,
+    "cpu_seconds": 146.781,
+    "nvidia_smi": "4552, 56, 228.95",
+    "gpu_compute_processes": [
+      "15844, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+    ],
+    "ready": true,
+    "running": 2,
+    "pending": 1,
+    "completed": 203,
+    "failed": 0,
+    "rejected": 0,
+    "queue_timeouts": 0
+  },
+  {
+    "seconds": 133.3,
+    "rss_mib": 665.94,
+    "cpu_seconds": 153.469,
+    "nvidia_smi": "4584, 80, 197.52",
+    "gpu_compute_processes": [
+      "15844, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+    ],
+    "ready": true,
+    "running": 2,
+    "pending": 0,
+    "completed": 214,
+    "failed": 0,
+    "rejected": 0,
+    "queue_timeouts": 0
+  },
+  {
+    "seconds": 138.45,
+    "rss_mib": 662.13,
+    "cpu_seconds": 158.109,
+    "nvidia_smi": "4392, 4, 184.72",
+    "gpu_compute_processes": [
+      "15844, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+    ],
+    "ready": true,
+    "running": 1,
+    "pending": 0,
+    "completed": 222,
+    "failed": 0,
+    "rejected": 0,
+    "queue_timeouts": 0
+  },
+  {
+    "seconds": 143.58,
+    "rss_mib": 661.71,
+    "cpu_seconds": 164.359,
+    "nvidia_smi": "4200, 85, 95.22",
+    "gpu_compute_processes": [
+      "15844, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+    ],
+    "ready": true,
+    "running": 0,
+    "pending": 0,
+    "completed": 232,
+    "failed": 0,
+    "rejected": 0,
+    "queue_timeouts": 0
+  },
+  {
+    "seconds": 148.69,
+    "rss_mib": 661.73,
+    "cpu_seconds": 169.578,
+    "nvidia_smi": "4200, 65, 92.82",
+    "gpu_compute_processes": [
+      "15844, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+    ],
+    "ready": true,
+    "running": 0,
+    "pending": 0,
+    "completed": 240,
+    "failed": 0,
+    "rejected": 0,
+    "queue_timeouts": 0
+  },
+  {
+    "seconds": 153.81,
+    "rss_mib": 666.54,
+    "cpu_seconds": 175.562,
+    "nvidia_smi": "4392, 86, 221.58",
+    "gpu_compute_processes": [
+      "15844, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+    ],
+    "ready": true,
+    "running": 2,
+    "pending": 1,
+    "completed": 248,
+    "failed": 0,
+    "rejected": 0,
+    "queue_timeouts": 0
+  },
+  {
+    "seconds": 158.92,
+    "rss_mib": 666.55,
+    "cpu_seconds": 180.469,
+    "nvidia_smi": "4392, 82, 247.46",
+    "gpu_compute_processes": [
+      "15844, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+    ],
+    "ready": true,
+    "running": 2,
+    "pending": 1,
+    "completed": 255,
+    "failed": 0,
+    "rejected": 0,
+    "queue_timeouts": 0
+  },
+  {
+    "seconds": 164.03,
+    "rss_mib": 667.55,
+    "cpu_seconds": 185.797,
+    "nvidia_smi": "4520, 57, 234.18",
+    "gpu_compute_processes": [
+      "15844, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+    ],
+    "ready": true,
+    "running": 2,
+    "pending": 3,
+    "completed": 263,
+    "failed": 0,
+    "rejected": 0,
+    "queue_timeouts": 0
+  },
+  {
+    "seconds": 169.16,
+    "rss_mib": 666.56,
+    "cpu_seconds": 192.094,
+    "nvidia_smi": "4616, 75, 214.42",
+    "gpu_compute_processes": [
+      "15844, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+    ],
+    "ready": true,
+    "running": 2,
+    "pending": 1,
+    "completed": 272,
+    "failed": 0,
+    "rejected": 0,
+    "queue_timeouts": 0
+  },
+  {
+    "seconds": 174.25,
+    "rss_mib": 663.62,
+    "cpu_seconds": 198.969,
+    "nvidia_smi": "4200, 85, 92.89",
+    "gpu_compute_processes": [
+      "15844, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+    ],
+    "ready": true,
+    "running": 0,
+    "pending": 0,
+    "completed": 283,
+    "failed": 0,
+    "rejected": 0,
+    "queue_timeouts": 0
+  },
+  {
+    "seconds": 179.38,
+    "rss_mib": 666.72,
+    "cpu_seconds": 205.422,
+    "nvidia_smi": "4296, 84, 167.65",
+    "gpu_compute_processes": [
+      "15844, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+    ],
+    "ready": true,
+    "running": 1,
+    "pending": 0,
+    "completed": 291,
+    "failed": 0,
+    "rejected": 0,
+    "queue_timeouts": 0
+  },
+  {
+    "seconds": 184.52,
+    "rss_mib": 667.09,
+    "cpu_seconds": 211.359,
+    "nvidia_smi": "4648, 85, 269.00",
+    "gpu_compute_processes": [
+      "15844, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+    ],
+    "ready": true,
+    "running": 2,
+    "pending": 6,
+    "completed": 300,
+    "failed": 0,
+    "rejected": 0,
+    "queue_timeouts": 0
+  },
+  {
+    "seconds": 189.61,
+    "rss_mib": 664.23,
+    "cpu_seconds": 217.922,
+    "nvidia_smi": "4200, 6, 93.67",
+    "gpu_compute_processes": [
+      "15844, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+    ],
+    "ready": true,
+    "running": 0,
+    "pending": 0,
+    "completed": 311,
+    "failed": 0,
+    "rejected": 0,
+    "queue_timeouts": 0
+  }
+]

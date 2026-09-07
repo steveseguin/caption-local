@@ -16,8 +16,14 @@ from browser_support import browser_options, authenticate_async
 async def main(args):
     root=Path(__file__).resolve().parents[1]
     fixtures=json.loads(args.manifest.read_text(encoding='utf-8'))
+    stream_configuration=[
+        {'index':index,'language':fixtures[index%len(fixtures)]['language'],
+         'mode':(('transcribe','translate','both')[(index+index//len(fixtures))%3]
+                 if args.rotate_modes else 'both' if args.mixed and index%3==0 else 'transcribe')}
+        for index in range(args.streams)]
     report={'streams':args.streams,'capture_seconds':args.seconds,'interval':args.interval,
-            'mixed':args.mixed,'varied_conditions':args.varied,'observations':[],'responses':[],'errors':[]}
+            'mixed':args.mixed,'varied_conditions':args.varied,'observations':[],'responses':[],'errors':[],
+            'rotate_modes':args.rotate_modes,'fixtures':fixtures,'stream_configuration':stream_configuration}
     args.output.parent.mkdir(parents=True,exist_ok=True)
     async with async_playwright() as p:
         browsers=[]; contexts=[]; pages=[]
@@ -28,6 +34,7 @@ async def main(args):
                     '--disable-background-timer-throttling','--disable-renderer-backgrounding',
                     f'--use-file-for-fake-audio-capture={root/fixture["varied_loop_path" if args.varied else "loop_path"]}'])
                 browsers.append(browser)
+                report['browser_version']=browser.version
                 context=await browser.new_context(permissions=['microphone'])
                 await context.route('**/*',lambda route: route.continue_() if route.request.url.startswith(
                     ('http://127.0.0.1:','http://localhost:')) else route.abort())
@@ -45,8 +52,7 @@ async def main(args):
                 await page.wait_for_function('() => !document.querySelector("#start").disabled')
                 await page.locator('#language').select_option(fixtures[index%len(fixtures)]['language'])
                 await page.locator('#captionInterval').select_option(str(args.interval))
-                if args.mixed and index%3==0:
-                    await page.locator('#mode').select_option('both')
+                await page.locator('#mode').select_option(stream_configuration[index]['mode'])
                 await page.evaluate('''() => {
                     window.firstSpeechMs=null; window.firstCaptionMs=null;
                     const originalFrame=frame, originalRender=renderResult;
@@ -76,7 +82,7 @@ async def main(args):
                 if await page.locator('#stop').is_enabled():
                     await page.locator('#stop').click()
             await asyncio.gather(*(page.wait_for_function('() => !processing && !stopping',timeout=120000) for page in pages))
-            report['final']=await asyncio.gather(*(page.evaluate('() => ({streamId,failed,pending:!!pending,buffered:buffer.length/16000,transcript,first_caption_seconds:(firstCaptionMs-firstSpeechMs)/1000})') for page in pages))
+            report['final']=await asyncio.gather(*(page.evaluate('() => ({streamId,failed,pending:!!pending,buffered:buffer.length/16000,transcript,first_caption_seconds:firstCaptionMs===null || firstSpeechMs===null ? null : (firstCaptionMs-firstSpeechMs)/1000})') for page in pages))
             report['wall_seconds']=time.perf_counter()-started
             report['passed']=not report['errors'] and all(s['running'] and not s['failed'] and not s['error'] for o in report['observations'] for s in o['states']) and all(
                 not s['failed'] and not s['pending'] and s['buffered']<=.5 and len(s['transcript'])>=args.seconds/15 for s in report['final'])
@@ -98,7 +104,9 @@ if __name__=='__main__':
     parser.add_argument('--streams',type=int,default=12)
     parser.add_argument('--seconds',type=int,default=180)
     parser.add_argument('--interval',type=int,choices=[3,6,9],default=6)
-    parser.add_argument('--mixed',action='store_true')
+    modes=parser.add_mutually_exclusive_group()
+    modes.add_argument('--mixed',action='store_true')
+    modes.add_argument('--rotate-modes',action='store_true',help='Spread transcription, translation and both across languages')
     parser.add_argument('--varied',action='store_true',help='Cycle clean, quiet and noisy speech with pauses')
     parser.add_argument('--output',type=Path,required=True)
     parser.add_argument('--stop-file',type=Path,help='Drain and fail the run if this monitor signal appears')

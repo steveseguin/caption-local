@@ -1,0 +1,61 @@
+{
+  "scope": "CDP-intercepted HTTPS-origin page assets with real loopback HTTP requests and fake inference; not a deployed HTTPS site",
+  "scenarios": [
+    {
+      "permission": "denied",
+      "ready": false,
+      "request_failures": [
+        {
+          "url": "http://127.0.0.1:8778/health",
+          "error": "net::ERR_FAILED"
+        }
+      ],
+      "console": [
+        "Failed to load resource: net::ERR_BLOCKED_BY_CLIENT.Inspector",
+        "Access to fetch at 'http://127.0.0.1:8778/health' from origin 'https://caption.ninja' has been blocked by CORS policy: Permission was denied for this request to access the `loopback` address space.",
+        "Failed to load resource: net::ERR_FAILED"
+      ],
+      "intercepted_paths": [
+        "/capture-local.html",
+        "/caption-local/ws-publisher.js",
+        "/caption-local/audio-buffer.js",
+        "/caption-local/local-connection.js",
+        "/caption-local/app.js",
+        "/caption-local/local-page.js",
+        "/favicon.ico",
+        "/health"
+      ],
+      "secure_context": true
+    },
+    {
+      "permission": "granted",
+      "ready": true,
+      "request_failures": [],
+      "console": [
+        "Failed to load resource: net::ERR_BLOCKED_BY_CLIENT.Inspector"
+      ],
+      "intercepted_paths": [
+        "/capture-local.html",
+        "/caption-local/ws-publisher.js",
+        "/caption-local/audio-buffer.js",
+        "/caption-local/local-connection.js",
+        "/caption-local/app.js",
+        "/caption-local/local-page.js",
+        "/favicon.ico",
+        "/health",
+        "/health",
+        "/caption-local/pcm-worklet.js",
+        "/transcribe",
+        "/transcribe",
+        "/transcribe",
+        "/transcribe",
+        "/streams/3d2878e4-657e-49d8-938f-4053f53958b1",
+        "/streams/3d2878e4-657e-49d8-938f-4053f53958b1"
+      ],
+      "secure_context": true,
+      "capture_drained": true
+    }
+  ],
+  "browser_version": "152.0.4191.66",
+  "passed": true
+}

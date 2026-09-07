@@ -1,0 +1,135 @@
+{
+  "samples": [
+    {
+      "seconds": 0.19689099600000004,
+      "gpu": "NVIDIA TITAN RTX, 0 MiB, 0 %, 14.09 W",
+      "processes": ""
+    },
+    {
+      "seconds": 0.637441462,
+      "gpu": "NVIDIA TITAN RTX, 0 MiB, 0 %, 14.25 W",
+      "processes": ""
+    },
+    {
+      "seconds": 1.0469735459999998,
+      "gpu": "NVIDIA TITAN RTX, 0 MiB, 0 %, 14.28 W",
+      "processes": ""
+    },
+    {
+      "seconds": 1.4630539310000001,
+      "gpu": "NVIDIA TITAN RTX, 0 MiB, 0 %, 14.77 W",
+      "processes": ""
+    },
+    {
+      "seconds": 1.878475602,
+      "gpu": "NVIDIA TITAN RTX, 0 MiB, 0 %, 14.18 W",
+      "processes": ""
+    },
+    {
+      "seconds": 2.2831883360000003,
+      "gpu": "NVIDIA TITAN RTX, 0 MiB, 0 %, 14.21 W",
+      "processes": ""
+    },
+    {
+      "seconds": 2.700973997,
+      "gpu": "NVIDIA TITAN RTX, 0 MiB, 0 %, 14.17 W",
+      "processes": ""
+    },
+    {
+      "seconds": 3.0945738250000003,
+      "gpu": "NVIDIA TITAN RTX, 0 MiB, 0 %, 14.23 W",
+      "processes": ""
+    },
+    {
+      "seconds": 3.491824693,
+      "gpu": "NVIDIA TITAN RTX, 0 MiB, 0 %, 14.59 W",
+      "processes": ""
+    },
+    {
+      "seconds": 3.888069369,
+      "gpu": "NVIDIA TITAN RTX, 0 MiB, 0 %, 14.15 W",
+      "processes": ""
+    },
+    {
+      "seconds": 4.305793639,
+      "gpu": "NVIDIA TITAN RTX, 0 MiB, 0 %, 14.08 W",
+      "processes": ""
+    },
+    {
+      "seconds": 4.711058136,
+      "gpu": "NVIDIA TITAN RTX, 0 MiB, 0 %, 14.13 W",
+      "processes": "360, [Not Found]"
+    },
+    {
+      "seconds": 5.097628122,
+      "gpu": "NVIDIA TITAN RTX, 164 MiB, 0 %, 58.34 W",
+      "processes": "360, [Not Found]"
+    },
+    {
+      "seconds": 5.484223095,
+      "gpu": "NVIDIA TITAN RTX, 164 MiB, 3 %, 57.99 W",
+      "processes": "360, [Not Found]"
+    },
+    {
+      "seconds": 5.880891955,
+      "gpu": "NVIDIA TITAN RTX, 164 MiB, 3 %, 58.36 W",
+      "processes": "360, [Not Found]"
+    },
+    {
+      "seconds": 6.26054315,
+      "gpu": "NVIDIA TITAN RTX, 324 MiB, 3 %, 57.84 W",
+      "processes": "360, [Not Found]"
+    },
+    {
+      "seconds": 6.608458573,
+      "gpu": "NVIDIA TITAN RTX, 742 MiB, 6 %, 58.08 W",
+      "processes": "360, [Not Found]"
+    },
+    {
+      "seconds": 6.949954592999999,
+      "gpu": "NVIDIA TITAN RTX, 742 MiB, 6 %, 57.83 W",
+      "processes": "360, [Not Found]"
+    },
+    {
+      "seconds": 7.315284688,
+      "gpu": "NVIDIA TITAN RTX, 882 MiB, 6 %, 60.14 W",
+      "processes": "360, [Not Found]"
+    },
+    {
+      "seconds": 7.662740338999999,
+      "gpu": "NVIDIA TITAN RTX, 818 MiB, 4 %, 58.02 W",
+      "processes": "360, [Not Found]"
+    },
+    {
+      "seconds": 8.000276404,
+      "gpu": "NVIDIA TITAN RTX, 818 MiB, 4 %, 57.95 W",
+      "processes": "360, [Not Found]"
+    },
+    {
+      "seconds": 8.356536757,
+      "gpu": "NVIDIA TITAN RTX, 818 MiB, 4 %, 58.08 W",
+      "processes": "360, [Not Found]"
+    },
+    {
+      "seconds": 8.710396196,
+      "gpu": "NVIDIA TITAN RTX, 818 MiB, 0 %, 57.87 W",
+      "processes": "360, [Not Found]"
+    },
+    {
+      "seconds": 9.075922638,
+      "gpu": "NVIDIA TITAN RTX, 818 MiB, 0 %, 57.84 W",
+      "processes": "360, [Not Found]"
+    },
+    {
+      "seconds": 9.529906021,
+      "gpu": "NVIDIA TITAN RTX, 882 MiB, 17 %, 98.25 W",
+      "processes": "360, [Not Found]"
+    },
+    {
+      "seconds": 9.893195067,
+      "gpu": "NVIDIA TITAN RTX, 818 MiB, 17 %, 147.15 W",
+      "processes": "360, [Not Found]"
+    }
+  ],
+  "errors": []
+}

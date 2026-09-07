@@ -30,6 +30,10 @@ def main():
         parser.error('Threads must be positive; workers 1–8; streams 1–64; port 1–65535')
     env_dir = args.venv.expanduser().resolve()
     python = env_dir / ('Scripts/python.exe' if os.name == 'nt' else 'bin/python')
+    other_python = env_dir / ('bin/python' if os.name == 'nt' else 'Scripts/python.exe')
+    if os.path.lexists(other_python):
+        parser.error('This environment contains another platform\'s Python. Preserve it and use a separate '
+                     '--venv directory (for example --venv .venv-wsl inside WSL).')
 
     def run(*command):
         subprocess.run([str(c) for c in command], cwd=ROOT, check=True)

@@ -33,7 +33,7 @@ audio is not captured automatically: it must reach an input your browser can sel
 | Browser | Desktop Chrome or Edge, with permission to use the microphone. |
 | Audio | A microphone, USB audio interface or separately configured virtual audio input visible to the browser. |
 | Internet | Needed initially for software and model downloads. Local captions can work offline afterward; optional caption.ninja sharing still needs connectivity. |
-| GPU | Optional. Start with CPU. Real CUDA decoding is tested on a Windows TITAN RTX; sustained GPU capacity is not yet qualified. See the [GPU guide](WINDOWS-GPU.md). |
+| GPU | Optional. Start with CPU. A Windows TITAN RTX passed an hour of twelve varied synthetic streams with large-v3; counts depend on language and output mix. See the [GPU guide](WINDOWS-GPU.md). |
 
 The **model** is the downloaded speech-recognition data. The default `small`
 model supports multiple languages; its name does not mean it is English-only.
@@ -180,8 +180,13 @@ offline setting; follow [offline operation](../OPERATIONS.md#offline-operation-u
 On the tested Windows CPU, eight synthetic streams showed their first captions
 after 6.35–8.20 seconds. Later noisy sections buffered as much as 19.07 seconds.
 This is not instant transcription, and another computer or workload may be slower.
+On the tested TITAN RTX, twelve streams using large-v3 showed first captions after
+4.59–8.82 seconds and buffered up to 10.30 seconds during an hour. These are initial
+caption delays and sampled audio buffers, not timings for every spoken word.
 The three-second interval can show earlier text but failed one CPU real-time
-quality check; shorter is not automatically better.
+quality check. Large-v3 on CUDA also failed the three-second exact-transcript check
+by repeating and dropping words. Keep six seconds unless your chosen configuration
+passes its quality tests; shorter is not automatically better.
 
 **Accuracy:** names, accents, quiet speech, background noise and overlapping
 speakers can produce wrong or repeated text. Translation may change meaning even
@@ -193,6 +198,9 @@ Eight streams passed an hour on a 20-core Core Ultra 7 265K with specifically tu
 settings; this is not the default single-worker setup or a promise for a laptop.
 Twelve hit the protective buffer limit after 40 minutes. Translation needs more
 work, and dozens of streams require measured capacity on suitable hardware.
+With a TITAN RTX, twelve passed an hour using the larger large-v3 model, two workers
+and beam five. That GPU workload includes six languages but only two non-English
+bilingual producers; it does not guarantee twelve simultaneous translations.
 Use [deployment profiles](DEPLOYMENT-PROFILES.md) for the tested commands and tradeoffs.
 
 **When it falls behind:** stop unnecessary producers or use a rehearsed lighter

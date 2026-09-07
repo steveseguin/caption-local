@@ -20,7 +20,7 @@ multilingual small model on CPU. NVIDIA setup is optional; read the
 Windows PowerShell, from the Caption Local folder:
 
 ```powershell
-.\start.ps1 --model small --device cpu
+py -3.12 deploy.py run --model small --device cpu
 ```
 
 Linux, from the Caption Local folder:
@@ -74,7 +74,7 @@ to reach a local service. Configure these **before** starting Caption Local:
 # PowerShell: generate a new service token for this process environment.
 $env:CAPTION_API_KEY = .venv\Scripts\python.exe -c "import secrets; print(secrets.token_urlsafe(32))"
 $env:CAPTION_ALLOWED_ORIGINS = 'https://caption.ninja'
-.\start.ps1 --model small --device cpu
+py -3.12 deploy.py run --model small --device cpu
 ```
 
 ```sh
@@ -98,8 +98,11 @@ development. CORS does not provide user accounts, tenant isolation or rate limit
 
 If the browser refuses local-network access, denies microphone permission or
 cannot connect, use **Open the local capture page**. Do not disable browser security.
-The integration tests cover different localhost origins in Edge; the production
-HTTPS site's local-network permission flow remains unvalidated. HTTPS origins are
+The integration tests cover different localhost origins in Edge. A controlled
+HTTPS-origin preview also passes denied/granted loopback permission, synthetic
+capture and drain in Edge 152.0.4191.66, with page assets intercepted locally and
+fake inference. The deployed public site's permission flow and physical microphone
+remain unvalidated. HTTPS origins are
 accepted by the client for deployments with their own secure reverse proxy, but
 public hosting/authentication is outside this guide's tested scope.
 

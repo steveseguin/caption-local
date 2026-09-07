@@ -1,0 +1,1403 @@
+{
+  "configuration": {
+    "model": "large-v3",
+    "device": "cuda",
+    "compute_type": "int8_float16",
+    "beam_size": 5,
+    "workers": 2,
+    "threads": 4,
+    "streams": [
+      1,
+      2,
+      4,
+      8,
+      12
+    ],
+    "rounds": 1,
+    "output": "evidence\\gpu-sustained\\quantized\\large-v3-int8_float16-w2-b5.json"
+  },
+  "results": [
+    {
+      "streams": 1,
+      "mixed": false,
+      "round": 0,
+      "wall_seconds": 0.705654599936679,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.00035370001569390297,
+          "inference_seconds": 0.7052249000407755,
+          "text": "Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 2,
+      "mixed": false,
+      "round": 0,
+      "wall_seconds": 0.8805819998960942,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.00026219990104436874,
+          "inference_seconds": 0.8801661999896169,
+          "text": "Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.0004920999053865671,
+          "inference_seconds": 0.6697760000824928,
+          "text": "Nor is Mr. Quilter's manner less interesting than his",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 4,
+      "mixed": false,
+      "round": 0,
+      "wall_seconds": 1.8558610999025404,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.0004439998883754015,
+          "inference_seconds": 0.885206000180915,
+          "text": "Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.000695900060236454,
+          "inference_seconds": 1.021116300020367,
+          "text": "Nor is Mr. Quilter's manner less interesting than his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 2,
+          "queue_seconds": 0.8856653000693768,
+          "inference_seconds": 0.7532512999605387,
+          "text": "He tells us that at this festive season of the year, with Christmas",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 3,
+          "queue_seconds": 1.0218303999863565,
+          "inference_seconds": 0.8339096000418067,
+          "text": "He has grave doubts whether Sir Frederick Leighton's work is really Greek after",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 8,
+      "mixed": false,
+      "round": 0,
+      "wall_seconds": 3.6549273999407887,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.0003162999637424946,
+          "inference_seconds": 0.8573376999702305,
+          "text": "Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.0006194999441504478,
+          "inference_seconds": 1.0883435001596808,
+          "text": "Nor is Mr. Quilter's manner less interesting than his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 2,
+          "queue_seconds": 0.8576744000893086,
+          "inference_seconds": 0.7375582000240684,
+          "text": "He tells us that at this festive season of the year, with Christmas",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 3,
+          "queue_seconds": 1.0889787999913096,
+          "inference_seconds": 1.083985700039193,
+          "text": "He has grave doubts whether Sir Frederick Leighton's work is really Greek after",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 4,
+          "queue_seconds": 1.5952497001271695,
+          "inference_seconds": 0.8176324998494238,
+          "text": "Linnell's pictures are a sort of up-guards-and-atom paintings,",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 5,
+          "queue_seconds": 2.1729788000229746,
+          "inference_seconds": 1.1004345999099314,
+          "text": "It is obviously unnecessary for us to point out how luminous these",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 6,
+          "queue_seconds": 2.4128992001060396,
+          "inference_seconds": 0.5696130997966975,
+          "text": "on the general principles of art mr quilter writes with equal",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 7,
+          "queue_seconds": 2.9825234001036733,
+          "inference_seconds": 0.6722917999140918,
+          "text": "Painting, he tells us, is of a different quality to mathematics,",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 12,
+      "mixed": false,
+      "round": 0,
+      "wall_seconds": 5.327588400105014,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.0003100000321865082,
+          "inference_seconds": 1.1344477001111954,
+          "text": "Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.0005735999438911676,
+          "inference_seconds": 0.7738217001315206,
+          "text": "Nor is Mr. Quilter's manner less interesting than his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 2,
+          "queue_seconds": 0.7744057001546025,
+          "inference_seconds": 0.7957633999176323,
+          "text": "He tells us that at this festive season of the year, with Christmas",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 3,
+          "queue_seconds": 1.1347729000262916,
+          "inference_seconds": 1.0561736999079585,
+          "text": "He has grave doubts whether Sir Frederick Leighton's work is really Greek after",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 4,
+          "queue_seconds": 1.5701884999871254,
+          "inference_seconds": 0.8247102999594063,
+          "text": "Linnell's pictures are a sort of up-guards-and-atom paintings,",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 5,
+          "queue_seconds": 2.1909638000652194,
+          "inference_seconds": 1.1267895998898894,
+          "text": "It is obviously unnecessary for us to point out how luminous these",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 6,
+          "queue_seconds": 2.394915800075978,
+          "inference_seconds": 0.5808128998614848,
+          "text": "on the general principles of art mr quilter writes with equal",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 7,
+          "queue_seconds": 2.9757389000151306,
+          "inference_seconds": 0.8373605001252145,
+          "text": "Painting, he tells us, is of a different quality to mathematics,",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 8,
+          "queue_seconds": 3.3177702000830323,
+          "inference_seconds": 1.006980499951169,
+          "text": "As for etchings, they are of two kinds, British and",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 9,
+          "queue_seconds": 3.8131168000400066,
+          "inference_seconds": 0.6948154999408871,
+          "text": "he laments most bitterly the divorce that has been made between decorative art",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 10,
+          "queue_seconds": 4.32476650015451,
+          "inference_seconds": 1.0027150998357683,
+          "text": "near the fire, and the ornaments Fred brought home from India on the mental",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 11,
+          "queue_seconds": 4.507951400009915,
+          "inference_seconds": 0.8106960000004619,
+          "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing that",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 1,
+      "mixed": true,
+      "round": 0,
+      "wall_seconds": 0.9563009000848979,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.0005828998982906342,
+          "inference_seconds": 0.9556220001541078,
+          "text": "Hola. Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello. Welcome to the theater. Thank you very much for coming tonight.",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 2,
+      "mixed": true,
+      "round": 0,
+      "wall_seconds": 1.2215617999900132,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.0003470999654382467,
+          "inference_seconds": 1.2210635000374168,
+          "text": "Hola. Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello. Welcome to the theater. Thank you very much for coming tonight.",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.0006521998438984156,
+          "inference_seconds": 0.7348615999799222,
+          "text": "Nor is Mr. Quilter's manner less interesting than his",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 4,
+      "mixed": true,
+      "round": 0,
+      "wall_seconds": 2.392383199883625,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.000372899929061532,
+          "inference_seconds": 1.5261591000016779,
+          "text": "Hola. Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello. Welcome to the theater. Thank you very much for coming tonight.",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.0006893000099807978,
+          "inference_seconds": 0.6614490998908877,
+          "text": "Nor is Mr. Quilter's manner less interesting than his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 2,
+          "queue_seconds": 0.6621483999770135,
+          "inference_seconds": 1.0784350999165326,
+          "text": "He tells us that at this festive season of the year, with Christmas",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 3,
+          "queue_seconds": 1.526548899943009,
+          "inference_seconds": 0.8656846999656409,
+          "text": "Hola. Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello. Welcome to the theater. Thank you very much for coming tonight.",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 8,
+      "mixed": true,
+      "round": 0,
+      "wall_seconds": 4.6519758000504225,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.00022109993733465672,
+          "inference_seconds": 1.1568066000472754,
+          "text": "Hola. Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello. Welcome to the theater. Thank you very much for coming tonight.",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.00043240003287792206,
+          "inference_seconds": 1.1537067999597639,
+          "text": "Nor is Mr. Quilter's manner less interesting than his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 2,
+          "queue_seconds": 1.15414909995161,
+          "inference_seconds": 1.2499381999950856,
+          "text": "He tells us that at this festive season of the year, with Christmas",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 3,
+          "queue_seconds": 1.1570659999269992,
+          "inference_seconds": 1.1986426000948995,
+          "text": "Hola. Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello. Welcome to the theater. Thank you very much for coming tonight.",
+          "fixture_check": true
+        },
+        {
+          "stream": 4,
+          "queue_seconds": 2.3557211000006646,
+          "inference_seconds": 1.4302860999014229,
+          "text": "Linnell's pictures are a sort of up-guards-and-atom paintings,",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 5,
+          "queue_seconds": 2.4041039999574423,
+          "inference_seconds": 0.6863051999825984,
+          "text": "It is obviously unnecessary for us to point out how luminous these",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 6,
+          "queue_seconds": 3.0904198000207543,
+          "inference_seconds": 1.1907796999439597,
+          "text": "Hola. Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello. Welcome to the theater. Thank you very much for coming tonight.",
+          "fixture_check": true
+        },
+        {
+          "stream": 7,
+          "queue_seconds": 3.7860232000239193,
+          "inference_seconds": 0.865765199996531,
+          "text": "Painting, he tells us, is of a different quality to mathematics,",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    },
+    {
+      "streams": 12,
+      "mixed": true,
+      "round": 0,
+      "wall_seconds": 6.5840794001705945,
+      "results": [
+        {
+          "stream": 0,
+          "queue_seconds": 0.0002959000412374735,
+          "inference_seconds": 1.492472100071609,
+          "text": "Hola. Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello. Welcome to the theater. Thank you very much for coming tonight.",
+          "fixture_check": true
+        },
+        {
+          "stream": 1,
+          "queue_seconds": 0.0005774002056568861,
+          "inference_seconds": 0.9129608999937773,
+          "text": "Nor is Mr. Quilter's manner less interesting than his",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 2,
+          "queue_seconds": 0.9135497000534087,
+          "inference_seconds": 0.9395169999916106,
+          "text": "He tells us that at this festive season of the year, with Christmas",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 3,
+          "queue_seconds": 1.4927878000307828,
+          "inference_seconds": 1.6607372001744807,
+          "text": "Hola. Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello. Welcome to the theater. Thank you very much for coming tonight.",
+          "fixture_check": true
+        },
+        {
+          "stream": 4,
+          "queue_seconds": 1.8530835001729429,
+          "inference_seconds": 0.9214574999641627,
+          "text": "Linnell's pictures are a sort of up-guards-and-atom paintings,",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 5,
+          "queue_seconds": 2.7745509000960737,
+          "inference_seconds": 0.6927223999518901,
+          "text": "It is obviously unnecessary for us to point out how luminous these",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 6,
+          "queue_seconds": 3.153544900007546,
+          "inference_seconds": 2.0097583001479506,
+          "text": "Hola. Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello. Welcome to the theater. Thank you very much for coming tonight.",
+          "fixture_check": true
+        },
+        {
+          "stream": 7,
+          "queue_seconds": 3.4672877001576126,
+          "inference_seconds": 0.8351898998953402,
+          "text": "Painting, he tells us, is of a different quality to mathematics,",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 8,
+          "queue_seconds": 4.302489700028673,
+          "inference_seconds": 0.6159971000161022,
+          "text": "As for etchings, they are of two kinds, British and",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 9,
+          "queue_seconds": 4.918500600149855,
+          "inference_seconds": 1.1414731000550091,
+          "text": "Hola. Bienvenidos al teatro. Muchas gracias por venir esta noche.",
+          "translation": "Hello. Welcome to the theater. Thank you very much for coming tonight.",
+          "fixture_check": true
+        },
+        {
+          "stream": 10,
+          "queue_seconds": 5.163384000072256,
+          "inference_seconds": 1.1244477999862283,
+          "text": "near the fire, and the ornaments Fred brought home from India on the mental",
+          "translation": "",
+          "fixture_check": true
+        },
+        {
+          "stream": 11,
+          "queue_seconds": 6.059991900110617,
+          "inference_seconds": 0.523962700041011,
+          "text": "In fact, he is quite severe on Mr. Ruskin for not recognizing that",
+          "translation": "",
+          "fixture_check": true
+        }
+      ]
+    }
+  ],
+  "samples": [
+    {
+      "time": 1343913.2255863,
+      "rss_mib": 161.1484375,
+      "cpu_seconds": 0.484375,
+      "nvidia_smi": "0, 34, 90.17",
+      "gpu_compute_processes": []
+    },
+    {
+      "time": 1343913.5650648,
+      "rss_mib": 490.66796875,
+      "cpu_seconds": 0.796875,
+      "nvidia_smi": "146, 34, 87.17",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343913.9328171,
+      "rss_mib": 1110.60546875,
+      "cpu_seconds": 1.15625,
+      "nvidia_smi": "146, 1, 88.18",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343914.2762427,
+      "rss_mib": 1692.96484375,
+      "cpu_seconds": 1.5,
+      "nvidia_smi": "146, 1, 63.19",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343914.6034973,
+      "rss_mib": 2243.265625,
+      "cpu_seconds": 1.828125,
+      "nvidia_smi": "146, 1, 63.82",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343914.9314254,
+      "rss_mib": 2800.15234375,
+      "cpu_seconds": 2.15625,
+      "nvidia_smi": "146, 0, 63.55",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343915.2626335,
+      "rss_mib": 3206.40234375,
+      "cpu_seconds": 2.671875,
+      "nvidia_smi": "146, 0, 63.68",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343915.6081623,
+      "rss_mib": 2956.453125,
+      "cpu_seconds": 4.015625,
+      "nvidia_smi": "146, 0, 63.49",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343915.946722,
+      "rss_mib": 2728.44140625,
+      "cpu_seconds": 5.40625,
+      "nvidia_smi": "146, 0, 63.66",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343916.2830135,
+      "rss_mib": 2517.0390625,
+      "cpu_seconds": 6.765625,
+      "nvidia_smi": "146, 0, 63.46",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343916.6195587,
+      "rss_mib": 2295.2421875,
+      "cpu_seconds": 8.046875,
+      "nvidia_smi": "146, 0, 63.52",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343916.9532137,
+      "rss_mib": 2110.83984375,
+      "cpu_seconds": 9.390625,
+      "nvidia_smi": "146, 0, 63.32",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343917.286771,
+      "rss_mib": 1873.9296875,
+      "cpu_seconds": 10.734375,
+      "nvidia_smi": "146, 0, 63.38",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343917.6262617,
+      "rss_mib": 626.00390625,
+      "cpu_seconds": 12.0625,
+      "nvidia_smi": "1970, 0, 70.31",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343917.9983654,
+      "rss_mib": 627.19140625,
+      "cpu_seconds": 12.375,
+      "nvidia_smi": "2344, 22, 228.89",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343918.3313614,
+      "rss_mib": 711.52734375,
+      "cpu_seconds": 12.90625,
+      "nvidia_smi": "2376, 22, 229.24",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343918.6957925,
+      "rss_mib": 710.62890625,
+      "cpu_seconds": 13.125,
+      "nvidia_smi": "2376, 22, 142.41",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343919.0394078,
+      "rss_mib": 722.51953125,
+      "cpu_seconds": 13.640625,
+      "nvidia_smi": "2728, 64, 278.34",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343919.4020953,
+      "rss_mib": 722.53515625,
+      "cpu_seconds": 14.09375,
+      "nvidia_smi": "2728, 64, 155.41",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343919.7378116,
+      "rss_mib": 723.36328125,
+      "cpu_seconds": 14.609375,
+      "nvidia_smi": "2472, 64, 171.82",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343920.0756987,
+      "rss_mib": 723.4375,
+      "cpu_seconds": 15.125,
+      "nvidia_smi": "2728, 79, 167.29",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343920.4494087,
+      "rss_mib": 723.45703125,
+      "cpu_seconds": 15.515625,
+      "nvidia_smi": "2728, 79, 157.38",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343920.7789393,
+      "rss_mib": 723.484375,
+      "cpu_seconds": 16.171875,
+      "nvidia_smi": "2568, 79, 263.00",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343921.1248992,
+      "rss_mib": 723.48828125,
+      "cpu_seconds": 16.59375,
+      "nvidia_smi": "2728, 73, 155.98",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343921.4939762,
+      "rss_mib": 722.01953125,
+      "cpu_seconds": 16.96875,
+      "nvidia_smi": "2216, 73, 142.61",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343921.8236012,
+      "rss_mib": 724.36328125,
+      "cpu_seconds": 17.625,
+      "nvidia_smi": "2728, 73, 215.69",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343922.207647,
+      "rss_mib": 724.39453125,
+      "cpu_seconds": 18.140625,
+      "nvidia_smi": "2728, 70, 157.52",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343922.5424766,
+      "rss_mib": 724.40625,
+      "cpu_seconds": 18.609375,
+      "nvidia_smi": "2664, 70, 261.60",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343922.9080803,
+      "rss_mib": 724.40625,
+      "cpu_seconds": 19.046875,
+      "nvidia_smi": "2696, 70, 154.86",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343923.2368713,
+      "rss_mib": 724.41015625,
+      "cpu_seconds": 19.671875,
+      "nvidia_smi": "2696, 74, 241.11",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343923.5694047,
+      "rss_mib": 724.41015625,
+      "cpu_seconds": 20.0625,
+      "nvidia_smi": "2728, 74, 160.84",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343923.9480119,
+      "rss_mib": 722.9453125,
+      "cpu_seconds": 20.71875,
+      "nvidia_smi": "2792, 75, 176.29",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343924.2694574,
+      "rss_mib": 724.4140625,
+      "cpu_seconds": 21.171875,
+      "nvidia_smi": "2696, 75, 156.46",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343924.6056319,
+      "rss_mib": 724.41796875,
+      "cpu_seconds": 21.5625,
+      "nvidia_smi": "2792, 75, 267.36",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343924.9364899,
+      "rss_mib": 722.953125,
+      "cpu_seconds": 21.859375,
+      "nvidia_smi": "2632, 73, 143.53",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343925.2662246,
+      "rss_mib": 724.4296875,
+      "cpu_seconds": 22.265625,
+      "nvidia_smi": "2472, 73, 179.52",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343925.6000641,
+      "rss_mib": 724.4296875,
+      "cpu_seconds": 22.734375,
+      "nvidia_smi": "2728, 73, 157.97",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343925.9480179,
+      "rss_mib": 724.4296875,
+      "cpu_seconds": 23.15625,
+      "nvidia_smi": "2728, 70, 159.88",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343926.2819904,
+      "rss_mib": 724.44140625,
+      "cpu_seconds": 23.640625,
+      "nvidia_smi": "2696, 70, 161.10",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343926.627491,
+      "rss_mib": 724.44921875,
+      "cpu_seconds": 24.046875,
+      "nvidia_smi": "2696, 70, 156.42",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343926.9916913,
+      "rss_mib": 724.44921875,
+      "cpu_seconds": 24.546875,
+      "nvidia_smi": "2728, 79, 156.60",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343927.3605661,
+      "rss_mib": 724.44921875,
+      "cpu_seconds": 24.9375,
+      "nvidia_smi": "2696, 79, 160.88",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343927.7003935,
+      "rss_mib": 724.45703125,
+      "cpu_seconds": 25.78125,
+      "nvidia_smi": "2696, 79, 219.75",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343928.0311003,
+      "rss_mib": 724.45703125,
+      "cpu_seconds": 26.109375,
+      "nvidia_smi": "2696, 73, 154.98",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343928.3968522,
+      "rss_mib": 724.45703125,
+      "cpu_seconds": 26.625,
+      "nvidia_smi": "2696, 73, 214.49",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343928.7384887,
+      "rss_mib": 724.4609375,
+      "cpu_seconds": 27.234375,
+      "nvidia_smi": "2696, 73, 165.95",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343929.0883347,
+      "rss_mib": 724.46484375,
+      "cpu_seconds": 27.71875,
+      "nvidia_smi": "2664, 73, 206.64",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343929.4267441,
+      "rss_mib": 724.46484375,
+      "cpu_seconds": 28.15625,
+      "nvidia_smi": "2696, 73, 157.02",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343929.8244906,
+      "rss_mib": 724.46484375,
+      "cpu_seconds": 28.828125,
+      "nvidia_smi": "2696, 73, 247.74",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343930.2386366,
+      "rss_mib": 724.46484375,
+      "cpu_seconds": 29.3125,
+      "nvidia_smi": "2696, 78, 159.06",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343930.6095702,
+      "rss_mib": 722.90625,
+      "cpu_seconds": 29.796875,
+      "nvidia_smi": "2280, 78, 204.23",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343930.9402217,
+      "rss_mib": 722.90625,
+      "cpu_seconds": 29.96875,
+      "nvidia_smi": "2440, 78, 147.68",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343931.2645361,
+      "rss_mib": 722.90625,
+      "cpu_seconds": 30.328125,
+      "nvidia_smi": "2440, 63, 147.96",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343931.5976897,
+      "rss_mib": 724.48828125,
+      "cpu_seconds": 30.90625,
+      "nvidia_smi": "2472, 63, 224.69",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343931.94138,
+      "rss_mib": 724.4921875,
+      "cpu_seconds": 31.34375,
+      "nvidia_smi": "2728, 63, 152.41",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343932.2868492,
+      "rss_mib": 723.02734375,
+      "cpu_seconds": 31.65625,
+      "nvidia_smi": "2344, 69, 166.40",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343932.6377145,
+      "rss_mib": 723.02734375,
+      "cpu_seconds": 32.0,
+      "nvidia_smi": "2184, 69, 179.49",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343933.0001298,
+      "rss_mib": 724.50390625,
+      "cpu_seconds": 32.703125,
+      "nvidia_smi": "2728, 77, 219.57",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343933.3586153,
+      "rss_mib": 723.9453125,
+      "cpu_seconds": 33.078125,
+      "nvidia_smi": "2824, 77, 171.24",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343933.7016814,
+      "rss_mib": 724.50390625,
+      "cpu_seconds": 33.5625,
+      "nvidia_smi": "2760, 77, 165.41",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343934.023,
+      "rss_mib": 724.5078125,
+      "cpu_seconds": 34.0,
+      "nvidia_smi": "2728, 73, 164.03",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343934.3970716,
+      "rss_mib": 724.5078125,
+      "cpu_seconds": 34.671875,
+      "nvidia_smi": "2728, 73, 254.10",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343934.848751,
+      "rss_mib": 723.05078125,
+      "cpu_seconds": 35.03125,
+      "nvidia_smi": "2440, 73, 149.34",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343935.1786329,
+      "rss_mib": 724.52734375,
+      "cpu_seconds": 35.25,
+      "nvidia_smi": "2472, 73, 241.33",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343935.5206523,
+      "rss_mib": 724.52734375,
+      "cpu_seconds": 35.78125,
+      "nvidia_smi": "2728, 73, 161.66",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343935.857234,
+      "rss_mib": 724.52734375,
+      "cpu_seconds": 36.234375,
+      "nvidia_smi": "2728, 73, 214.37",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343936.2089987,
+      "rss_mib": 724.52734375,
+      "cpu_seconds": 36.59375,
+      "nvidia_smi": "2184, 75, 160.58",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343936.5479233,
+      "rss_mib": 725.36328125,
+      "cpu_seconds": 37.140625,
+      "nvidia_smi": "2728, 75, 163.30",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343936.9010095,
+      "rss_mib": 725.36328125,
+      "cpu_seconds": 37.46875,
+      "nvidia_smi": "2824, 75, 159.19",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343937.2439509,
+      "rss_mib": 725.36328125,
+      "cpu_seconds": 37.9375,
+      "nvidia_smi": "2728, 76, 163.53",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343937.6194018,
+      "rss_mib": 725.36328125,
+      "cpu_seconds": 38.671875,
+      "nvidia_smi": "2568, 76, 286.08",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343937.9699749,
+      "rss_mib": 725.3671875,
+      "cpu_seconds": 39.125,
+      "nvidia_smi": "2728, 76, 158.25",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343938.3420622,
+      "rss_mib": 725.37109375,
+      "cpu_seconds": 39.8125,
+      "nvidia_smi": "2728, 72, 274.54",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343938.6890426,
+      "rss_mib": 725.37109375,
+      "cpu_seconds": 40.1875,
+      "nvidia_smi": "2504, 72, 162.51",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343939.0399531,
+      "rss_mib": 725.375,
+      "cpu_seconds": 40.640625,
+      "nvidia_smi": "2760, 77, 277.11",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343939.3785474,
+      "rss_mib": 723.90625,
+      "cpu_seconds": 41.03125,
+      "nvidia_smi": "2536, 77, 153.16",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343939.7005561,
+      "rss_mib": 723.90625,
+      "cpu_seconds": 41.21875,
+      "nvidia_smi": "2216, 77, 146.51",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343940.0356,
+      "rss_mib": 725.38671875,
+      "cpu_seconds": 41.890625,
+      "nvidia_smi": "2728, 68, 240.96",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343940.3880799,
+      "rss_mib": 725.38671875,
+      "cpu_seconds": 42.265625,
+      "nvidia_smi": "2728, 68, 158.87",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343940.7119839,
+      "rss_mib": 725.390625,
+      "cpu_seconds": 42.890625,
+      "nvidia_smi": "2632, 68, 215.92",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343941.04443,
+      "rss_mib": 725.390625,
+      "cpu_seconds": 43.3125,
+      "nvidia_smi": "2728, 72, 163.25",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343941.4175958,
+      "rss_mib": 725.390625,
+      "cpu_seconds": 43.90625,
+      "nvidia_smi": "2728, 72, 223.40",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343941.7587555,
+      "rss_mib": 725.39453125,
+      "cpu_seconds": 44.359375,
+      "nvidia_smi": "2728, 72, 280.95",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343942.1026867,
+      "rss_mib": 725.39453125,
+      "cpu_seconds": 44.96875,
+      "nvidia_smi": "2760, 74, 249.55",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343942.4778292,
+      "rss_mib": 725.39453125,
+      "cpu_seconds": 45.453125,
+      "nvidia_smi": "2664, 74, 160.49",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343942.8148639,
+      "rss_mib": 725.3984375,
+      "cpu_seconds": 45.890625,
+      "nvidia_smi": "2728, 74, 162.19",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343943.1936215,
+      "rss_mib": 725.3984375,
+      "cpu_seconds": 46.625,
+      "nvidia_smi": "2792, 75, 173.43",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343943.5373085,
+      "rss_mib": 725.40625,
+      "cpu_seconds": 47.296875,
+      "nvidia_smi": "2728, 75, 160.25",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343943.8762352,
+      "rss_mib": 723.9375,
+      "cpu_seconds": 47.875,
+      "nvidia_smi": "2760, 75, 161.74",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343944.2197321,
+      "rss_mib": 725.41796875,
+      "cpu_seconds": 48.328125,
+      "nvidia_smi": "2728, 73, 231.13",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343944.5765111,
+      "rss_mib": 725.41796875,
+      "cpu_seconds": 48.703125,
+      "nvidia_smi": "2728, 73, 158.99",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343944.9318355,
+      "rss_mib": 725.72265625,
+      "cpu_seconds": 49.1875,
+      "nvidia_smi": "2728, 73, 168.65",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343945.2680535,
+      "rss_mib": 725.421875,
+      "cpu_seconds": 49.65625,
+      "nvidia_smi": "2760, 78, 173.81",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343945.5984048,
+      "rss_mib": 725.421875,
+      "cpu_seconds": 50.0625,
+      "nvidia_smi": "2696, 78, 159.56",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343945.9680743,
+      "rss_mib": 725.421875,
+      "cpu_seconds": 50.625,
+      "nvidia_smi": "2728, 78, 256.61",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    },
+    {
+      "time": 1343946.2935362,
+      "rss_mib": 723.953125,
+      "cpu_seconds": 50.953125,
+      "nvidia_smi": "2184, 74, 174.09",
+      "gpu_compute_processes": [
+        "21228, C:\\Users\\Steve\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      ]
+    }
+  ],
+  "passed": true,
+  "interference": [],
+  "model_load_seconds": 4.525660200044513,
+  "warmup_seconds": 0.3411644999869168,
+  "actual_device": "cuda",
+  "actual_compute_type": "int8_float16"
+}

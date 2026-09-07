@@ -43,8 +43,14 @@ tested environment and outstanding checks. Optional `requirements-windows-gpu.tx
 installs NVIDIA runtime wheels inside the venv; CUDA engine setup discovers their
 DLL directories without changing system PATH. This fixes DLL discovery but is not
 itself GPU inference validation. The later `evidence/gpu-validation/report.md`
-records real TITAN RTX decoding and short small/medium/large-v3 comparisons, but
-not a sustained GPU stream count. Start candidate profiling with float16, two
+records real TITAN RTX decoding and short small/medium/large-v3 comparisons.
+The later `evidence/gpu-sustained/report.md` records a passing twelve-stream GPU
+hour with large-v3/float16, two workers, four threads each, beam five and six-second
+windows: 9,210 successful requests; first captions 4.59–8.82 seconds; maximum
+sampled buffering 10.30 seconds. Its six-language workload includes only two
+non-English bilingual producers. Do not transfer that count to all-translation
+traffic or other hardware. Noisy French and German errors remain; larger models
+are not uniformly better. Start candidate profiling with float16, two
 workers and beam five; four workers were slower in these measurements. Reserve
 the GPU for a soak: recurring video jobs invalidated several timing cells. Check
 for unrelated GPU compute processes before
@@ -56,6 +62,11 @@ installed Edge/Chrome or accept `CAPTION_TEST_BROWSER`; fake microphone tests do
 not authorize physical recording. Prepare the exact Spanish sentence before the
 quality gate. Save evidence as UTF-8 and use the actual Uvicorn server PID for
 monitoring, because the Windows venv launcher may be a separate parent process.
+When sharing the checkout with WSL, use `--venv .venv-wsl`; the launcher rejects
+an environment containing the other platform's interpreter to preserve it.
+The GPU follow-up also verifies WSL small/float16 HTTP decoding using process-local
+NVIDIA library paths, but not WSL sustained capacity or Docker Desktop. Keep those
+claims separate from native Windows and follow the exact WSL commands in the guide.
 
 Keep the native bind on 127.0.0.1 and Docker's published port bound to 127.0.0.1.
 The container listens on 0.0.0.0 internally solely to permit Docker forwarding.
@@ -74,7 +85,10 @@ Prefer the bundled `/capture-local.html` on localhost or an SSH tunnel. Hosted-p
 access is opt-in via an exact CAPTION_ALLOWED_ORIGINS entry and CAPTION_API_KEY;
 never relax Host checks or browser security to connect. Cross-origin localhost
 browser tests do not establish the public HTTPS site's local-network permission
-behavior. Keep deployment/model controls server-side. Update copied captionninja
+behavior. The controlled `browser_capture_https.py --output PATH` preview uses
+CDP Fetch interception because ordinary Playwright routing misses the worklet in
+this fixture. Its pass does not establish a deployed public-site or physical-mic
+pass; keep browser security enabled. Keep deployment/model controls server-side. Update copied captionninja
 assets with `scripts/sync_capture_page.py` and verify `--check`; no runtime CDN.
 
 Validate the chosen installation with `/health` and `scripts/smoke_api.py`, using
@@ -109,6 +123,12 @@ Use `scripts/prepare_multilingual.py` and `scripts/browser_multilingual.py` for
 independent synthetic capture streams; `--varied` adds quiet/noisy speech and pauses.
 An admission limit is not sustainable capacity. Preserve real-time/accuracy gate
 failures, including shorter caption intervals and noisy speech, in the report.
+`browser_multilingual.py --rotate-modes` spreads transcription, translation and
+both outputs across languages. The older `--mixed` selects English/German bilingual
+tabs for the supplied six-language manifest. Record the actual mode distribution;
+English bilingual output does not add a translation decode. `gpu_browser_run.py`
+owns an isolated CUDA service, NVIDIA monitor and browser run. `gpu_matrix.py`
+returns failure if any cell fails, retaining successful and unsuccessful cells.
 
 On the measured Core Ultra 7 265K Windows host, small/int8 with `--workers 8
 --threads 2 --beam-size 5 --max-streams 8` passed an hour of varied six-language

@@ -10,14 +10,24 @@ from service_test_support import TestService
 parser=argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--port',type=int,default=8774)
 parser.add_argument('--page',choices=['/', '/capture-local.html'],default='/')
+parser.add_argument('--model',default='small')
+parser.add_argument('--device',choices=['cpu','cuda'],default='cpu')
+parser.add_argument('--compute-type',default='int8')
+parser.add_argument('--workers',type=int,default=1)
+parser.add_argument('--threads',type=int,default=4)
+parser.add_argument('--beam-size',type=int,default=5)
 parser.add_argument('--output',type=Path,required=True)
 args=parser.parse_args()
 args.output.parent.mkdir(parents=True,exist_ok=True)
 root=Path(__file__).resolve().parents[1]
-service=TestService(args.port,args.output.with_suffix('.server.log'))
-report={'requests':[],'lost_response':None,'passed':False}
+service=TestService(args.port,args.output.with_suffix('.server.log'),[
+    '--model',args.model,'--device',args.device,'--compute-type',args.compute_type,
+    '--workers',str(args.workers),'--threads',str(args.threads),'--beam-size',str(args.beam_size)])
+report={'requests':[],'lost_response':None,'passed':False,
+        'configuration':{key:value for key,value in vars(args).items() if key!='output'}}
 try:
-    service.start()
+    report['initial_health']=service.start()
+    assert report['initial_health']['device']==args.device
     with sync_playwright() as p:
         browser=p.chromium.launch(**browser_options(),headless=True,args=[
             '--use-fake-ui-for-media-stream','--use-fake-device-for-media-stream',
@@ -37,7 +47,8 @@ try:
                 report['lost_response']=actual.json()
                 route.abort('failed')
                 service.stop()
-                service.start()
+                report['restarted_health']=service.start()
+                assert report['restarted_health']['device']==args.device
             else:
                 route.continue_()
         page.route('**/transcribe?*',infer)

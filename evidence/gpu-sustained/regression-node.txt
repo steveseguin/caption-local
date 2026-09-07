@@ -1,0 +1,58 @@
+TAP version 13
+# Subtest: caption intervals change collection without losing retained audio
+ok 1 - caption intervals change collection without losing retained audio
+  ---
+  duration_ms: 5.1172
+  type: 'test'
+  ...
+# Subtest: idle silence retains only half a second regardless of duration
+ok 2 - idle silence retains only half a second regardless of duration
+  ---
+  duration_ms: 132.6399
+  type: 'test'
+  ...
+# Subtest: overlap commits preserve future audio and precisely retain context
+ok 3 - overlap commits preserve future audio and precisely retain context
+  ---
+  duration_ms: 1.2457
+  type: 'test'
+  ...
+# Subtest: failed snapshot remains byte-identical while new audio arrives
+ok 4 - failed snapshot remains byte-identical while new audio arrives
+  ---
+  duration_ms: 0.8618
+  type: 'test'
+  ...
+# Subtest: long buffers are processed with the API size cap before final flush
+ok 5 - long buffers are processed with the API size cap before final flush
+  ---
+  duration_ms: 2.5324
+  type: 'test'
+  ...
+# Subtest: worklet stop flushes the partial frame exactly once and stops processing
+ok 6 - worklet stop flushes the partial frame exactly once and stops processing
+  ---
+  duration_ms: 0.7459
+  type: 'test'
+  ...
+# Subtest: reject unsafe endpoints and prevent connection changes with retained audio
+ok 7 - reject unsafe endpoints and prevent connection changes with retained audio
+  ---
+  duration_ms: 0.7097
+  type: 'test'
+  ...
+# Subtest: token is confined to selected service; diagnostics bounded and exclude content
+ok 8 - token is confined to selected service; diagnostics bounded and exclude content
+  ---
+  duration_ms: 14.4542
+  type: 'test'
+  ...
+1..8
+# tests 8
+# suites 0
+# pass 8
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 188.5231

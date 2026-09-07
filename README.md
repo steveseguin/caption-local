@@ -34,9 +34,11 @@ five-minute CPU test with the faster preset; that is not a promise of twelve
 accurate multilingual streams on any computer. [Read the measurements and limits](evidence/multistream/report.md).
 
 **Windows development validation:** native Python and synthetic Edge capture now
-pass on Windows 11 with the small CPU model. Real CUDA decoding and short model/
-worker comparisons now pass on a TITAN RTX; sustained GPU capacity remains pending.
-[Windows setup](docs/WINDOWS-GPU.md) and [GPU measurements and interruptions](evidence/gpu-validation/report.md).
+pass on Windows 11 with the small CPU model. On a TITAN RTX, large-v3/CUDA float16
+with two workers passed an hour of twelve varied synthetic streams: 9,210 requests,
+zero HTTP errors, first captions in 4.59–8.82 seconds. The workload includes six
+languages and limited bilingual output; noisy-speech errors remain.
+[Windows setup](docs/WINDOWS-GPU.md) and [GPU hour, workload and limits](evidence/gpu-sustained/report.md).
 Eight six-language synthetic captures passed an hour on the tested Windows CPU;
 twelve hit the protective buffer limit after 40 minutes. Noisy-speech recognition
 errors remain. [Sustained results and failed configurations](evidence/deployment-matrix/report.md).

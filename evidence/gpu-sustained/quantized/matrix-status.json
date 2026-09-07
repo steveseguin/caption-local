@@ -1,0 +1,22 @@
+[
+  {
+    "name": "medium-int8_float16-quality-b5",
+    "exit_code": 0,
+    "wall_seconds": 16.688
+  },
+  {
+    "name": "medium-int8_float16-w2-b5",
+    "exit_code": 0,
+    "wall_seconds": 32.375
+  },
+  {
+    "name": "large-v3-int8_float16-quality-b5",
+    "exit_code": 0,
+    "wall_seconds": 20.531
+  },
+  {
+    "name": "large-v3-int8_float16-w2-b5",
+    "exit_code": 0,
+    "wall_seconds": 33.86
+  }
+]

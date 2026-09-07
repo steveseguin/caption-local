@@ -1,0 +1,6 @@
+Loading speech model; first run downloads weights. Audio stays on this host.
+Inference ready: cuda / float16
+INFO:     Started server process [15248]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8772 (Press CTRL+C to quit)

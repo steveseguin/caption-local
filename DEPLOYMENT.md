@@ -31,8 +31,8 @@ elsewhere, use the SSH instructions below.
 
 ## Native scripts and Python
 
-For the tested Windows CPU setup, environment-local NVIDIA runtime provisioning,
-and outstanding GPU checks, read the [Windows/GPU guide](docs/WINDOWS-GPU.md).
+For tested Windows CPU/CUDA profiles, environment-local NVIDIA runtime provisioning,
+and remaining checks, read the [Windows/GPU guide](docs/WINDOWS-GPU.md).
 
 Linux:
 
@@ -110,7 +110,7 @@ listener is needed for Docker forwarding; it is not a public-hosting setting.
 | Hardware | Current service support | Suggested starting point |
 | --- | --- | --- |
 | Intel/AMD x86-64 CPU | CPU CTranslate2 backend | `--device cpu` (default int8), model small |
-| NVIDIA GPU on Linux/Windows | CUDA backend; needs drivers and runtime libraries | `--device cuda`, model base or small |
+| NVIDIA GPU on Linux/Windows | CUDA backend; needs drivers and runtime libraries | `--device cuda`; start small, compare medium/large-v3 for accuracy |
 | Automatic CPU/NVIDIA choice | Selects CUDA if discovered, otherwise CPU | `--device auto`; inspect `/health` |
 | Intel/AMD GPU, Apple GPU | Not implemented in this backend | CPU now; investigate whisper.cpp/OpenVINO/Vulkan/Metal separately |
 | Browser WebGPU | Not implemented in this service | Future optional Transformers.js capture page |
@@ -164,9 +164,12 @@ system PATH. Docker bundles these libraries if you prefer to avoid native setup.
 Windows can provision pinned NVIDIA runtime wheels inside the project environment
 with `.venv\Scripts\python.exe -m pip install -r requirements-windows-gpu.txt`.
 CUDA engine setup adds those DLL directories to its own process search path.
-Real CUDA decoding now passes on the tested Windows TITAN RTX with these libraries.
-Sustained GPU capacity remains unqualified because other GPU workloads interrupted
-testing. See [GPU evidence and candidate configurations](evidence/gpu-validation/report.md).
+Real CUDA decoding and a twelve-stream hour now pass on the tested Windows TITAN
+RTX with these libraries. That large-v3/two-worker workload includes six languages
+and limited bilingual output; a heavier twelve-stream translation mix overloaded.
+See [GPU capacity, quality and failed configurations](evidence/gpu-sustained/report.md)
+before choosing a stream count. Earlier interrupted timings remain in the
+[initial GPU evidence](evidence/gpu-validation/report.md).
 
 ```sh
 python3 deploy.py doctor

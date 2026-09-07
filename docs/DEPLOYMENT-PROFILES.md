@@ -35,7 +35,8 @@ protective buffer or bypass retained-audio retry behavior.
 On the tested Windows CPU, a three-second interval showed a first English caption
 in 4.70 seconds, but failed the existing real-time gate on a longer fixture. Keep
 six seconds unless the selected hardware and languages pass both latency and
-accuracy checks. Short CPU probes supported twelve transcription producers with
+accuracy checks. Large-v3/CUDA also failed the three-second exact-transcript check,
+despite fast inference, by repeating and dropping words. Short CPU probes supported twelve transcription producers with
 small/int8, eight workers and two threads; mixed transcription/translation kept
 up at eight, while twelve accumulated delay. Twenty-four did not keep up. These
 short measurements are not sustained capacity promises. The twelve-stream varied
@@ -49,7 +50,18 @@ text and the German noise-probe failure. This does not certify arbitrary live au
 For one accuracy-oriented stream on this host, medium/int8/beam five with one
 worker and eight threads passed the complete quality gate at 5.07% mean English
 WER. Four threads failed the real-time check. This supports a single-stream
-starting point; sustained medium concurrency and NVIDIA acceleration remain untested.
+starting point; sustained medium concurrency remains untested.
+
+On the TITAN RTX, large-v3/CUDA float16 with two workers, four threads each and beam
+five passed an hour of twelve varied synthetic streams. First captions appeared in
+4.59–8.82 seconds; inference p95 was 1.32 seconds, maximum buffering 10.30 seconds,
+and all 9,210 requests succeeded. This six-language workload includes two German
+bilingual producers; English bilingual output reuses its transcription. It does
+not qualify twelve simultaneous translations or every noisy room. Large-v3 improved
+the supplied English quality gate but lost to medium on a noisy French fixture.
+See the [GPU hour and robustness evidence](../evidence/gpu-sustained/report.md) and
+[Windows/GPU commands](WINDOWS-GPU.md). Select a model using the actual languages
+and recording conditions, not its size alone.
 
 ## Private VPS example
 

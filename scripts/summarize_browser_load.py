@@ -49,7 +49,7 @@ def summarize(run, samples):
             'queue_seconds':distribution([r['result']['queue_seconds'] for r in stream_responses if r['status']==200])})
     return {'streams':run['streams'],'capture_seconds':run['capture_seconds'],
         'wall_seconds':run.get('wall_seconds'),'varied_conditions':run.get('varied_conditions'),
-        'mixed':run.get('mixed'),'interval':run.get('interval'),
+        'mixed':run.get('mixed'),'rotate_modes':run.get('rotate_modes',False),'interval':run.get('interval'),
         'requests':len(responses),'http_errors':sum(r['status']!=200 for r in responses),
         'checks':checks,'passed':all(checks.values()),
         'first_caption_seconds':distribution([s['first_caption_seconds'] for s in final]),

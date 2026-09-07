@@ -34,7 +34,8 @@ class TestService:
             try:
                 request=urllib.request.Request(f'http://127.0.0.1:{self.port}/health',headers=headers)
                 with urllib.request.urlopen(request,timeout=1) as response:
-                    if json.load(response)['ready']: return
+                    info=json.load(response)
+                    if info['ready']: return info
             except OSError:
                 pass
             time.sleep(.5)
